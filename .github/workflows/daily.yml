@@ -1,0 +1,52 @@
+name: Daily NHL pull
+
+on:
+  schedule:
+    # 12:15 UTC = 8:15am Eastern (7:15am in winter): last night's west-coast
+    # games are final and today's slate is posted.
+    - cron: "15 12 * * *"
+  workflow_dispatch:
+    inputs:
+      teams:
+        description: "Teams: comma-separated (BUF,CBJ), ALL, or blank for teams playing today"
+        required: false
+        default: ""
+      season:
+        description: "Season code for a backfill (e.g. 20252026); blank for current"
+        required: false
+        default: ""
+
+permissions:
+  contents: read
+
+concurrency:
+  group: daily-pull
+  cancel-in-progress: false
+
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Pull NHL data and save to Supabase
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          TEAMS: ${{ inputs.teams }}
+          SEASON: ${{ inputs.season }}
+        run: python ice_engine_daily_pull.py --require-supabase --teams "$TEAMS" --season "$SEASON"
+
+      - name: Keep the raw JSON for debugging
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-data
+          path: daily_data.json
+          if-no-files-found: ignore
+          retention-days: 14
