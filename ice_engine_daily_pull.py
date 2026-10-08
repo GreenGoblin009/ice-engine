@@ -63,8 +63,8 @@ GAME_TYPE_PLAYOFFS = "3"
 # Supabase credentials come from the environment (GitHub Actions secrets in
 # CI). The service key bypasses row-level security, so it must never be
 # committed or shipped to the browser.
-SUPABASE_URL = os.environ.get("SUPABASE_URL", "").rstrip("/")
-SUPABASE_KEY = os.environ.get("SUPABASE_KEY", "")
+SUPABASE_URL = os.environ.get("SUPABASE_URL", "").strip().rstrip("/")
+SUPABASE_KEY = os.environ.get("SUPABASE_KEY", "").strip()  # pasted secrets often carry a newline
 
 # URLs that still failed after all retries. A failed fetch is otherwise
 # indistinguishable from "no games played", so we track them and exit
@@ -257,24 +257,37 @@ def run_daily_pull(teams=None, include_gamelogs=True, sleep_between=0.3,
 # or re-pulling a whole season, never creates duplicate rows.
 # ---------------------------------------------------------------------------
 def supabase_upsert(table, rows, on_conflict, batch_size=500):
-    """POST rows to a table, merging on the conflict key. Raises on failure —
-    a job that can't save its results should fail loudly."""
+    """POST rows to a table, merging on the conflict key. Exits non-zero on
+    failure — a job that can't save its results should fail loudly."""
     url = f"{SUPABASE_URL}/rest/v1/{table}?on_conflict={on_conflict}"
+    headers = {
+        "apikey": SUPABASE_KEY,
+        "Content-Type": "application/json",
+        "Prefer": "resolution=merge-duplicates,return=minimal",
+        "User-Agent": "IceEngine/1.0",
+    }
+    # Legacy service_role keys are JWTs and go in Authorization too. The new
+    # sb_secret_/sb_publishable_ keys are not JWTs: they belong in apikey only.
+    if not SUPABASE_KEY.startswith("sb_"):
+        headers["Authorization"] = f"Bearer {SUPABASE_KEY}"
+
     for i in range(0, len(rows), batch_size):
         body = json.dumps(rows[i:i + batch_size]).encode("utf-8")
-        req = urllib.request.Request(url, data=body, method="POST", headers={
-            "apikey": SUPABASE_KEY,
-            "Authorization": f"Bearer {SUPABASE_KEY}",
-            "Content-Type": "application/json",
-            "Prefer": "resolution=merge-duplicates,return=minimal",
-            "User-Agent": "IceEngine/1.0",
-        })
+        req = urllib.request.Request(url, data=body, method="POST", headers=headers)
         try:
             with urllib.request.urlopen(req, timeout=60) as resp:
                 resp.read()
         except urllib.error.HTTPError as e:
-            detail = e.read().decode("utf-8", "replace")[:500]
-            raise RuntimeError(f"Supabase upsert into {table} failed: HTTP {e.code} {detail}") from None
+            # Print Supabase's own response body: it names the actual cause
+            # (bad key, missing table, unknown column, RLS, ...).
+            detail = e.read().decode("utf-8", "replace")
+            print(f"  [error] Supabase upsert into {table} failed: HTTP {e.code} {e.reason}", flush=True)
+            print(f"  [error] POST {url}", flush=True)
+            print(f"  [error] response body: {detail or '(empty)'}", flush=True)
+            sys.exit(1)
+        except (urllib.error.URLError, socket.timeout, TimeoutError) as e:
+            print(f"  [error] Supabase upsert into {table} failed: could not reach {url}: {e}", flush=True)
+            sys.exit(1)
     print(f"  {table}: upserted {len(rows)} row(s)")
 
 
