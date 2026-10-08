@@ -1,9 +1,10 @@
 """
 Ice Engine — Daily Data Pull
 =============================
-This is the real automation piece: a script meant to run once a day (via a
-scheduler — see the bottom of this file for options) that pulls actual NHL
-data and writes it to a structured JSON file the Props Board can read.
+This is the real automation piece: a script meant to run once a day (via
+GitHub Actions — see .github/workflows/daily.yml) that pulls actual NHL
+data, writes it to a structured JSON file the Props Board can read, and
+upserts it into Supabase.
 
 Data source: api-web.nhle.com — the NHL's own public API. No API key, no
 account, no cost. It's the same feed NHL.com's website itself uses. It is
@@ -20,31 +21,31 @@ WHAT THIS SCRIPT DOES, in order:
      in the Props Board.
   4. Writes everything to daily_data.json in a shape the Props Board's
      JavaScript can load directly.
+  5. If SUPABASE_URL and SUPABASE_KEY are set, upserts the same data
+     into the players / games / player_game_logs tables (supabase/schema.sql).
 
 WHAT THIS SCRIPT DOES NOT DO YET:
   - Multi-season history. NHL's game-log endpoint gives you ONE season at a
-    time (param below). To get "several seasons back" for H2H, this needs
-    to run once per past season too (a backfill), not just daily — see the
-    BACKFILL section near the bottom.
-  - Shot-on-goal totals are included per-game (the 'sog' field) since the
-    real API provides them — this finally makes Shots real everywhere, not
-    just Buffalo/Columbus.
+    time. To get "several seasons back" for H2H, run this once per past
+    season too (a backfill), not just daily — see the BACKFILL section near
+    the bottom.
   - Injuries/scratches: the schedule endpoint doesn't reliably include these.
     That still needs the "lineup projections" article approach we used by
     hand, or a separate source — flagged as a known gap, not silently
     ignored.
 
-IMPORTANT — I have not been able to run this end-to-end myself: my sandbox
-has no network access, so this is written correctly against the documented
-endpoint shapes but hasn't been execution-tested against the live API. Treat
-the first run as a debugging pass, not a guaranteed clean run.
+Verified end-to-end against the live API on 2026-10-02.
 """
 
+import argparse
 import json
+import os
+import socket
+import sys
 import time
 import urllib.request
 import urllib.error
-from datetime import date, datetime
+from datetime import date, datetime, timedelta, timezone
 
 BASE = "https://api-web.nhle.com/v1"
 OUT_FILE = "daily_data.json"
@@ -52,12 +53,46 @@ OUT_FILE = "daily_data.json"
 # All 32 team abbreviations as used by the NHL API
 ALL_TEAMS = [
     "ANA","BOS","BUF","CAR","CBJ","CGY","CHI","COL","DAL","DET","EDM","FLA",
-    "LAK","MIN","MTL","NJD","NYI","NYR","OTT","PHI","PIT","SEA","SJS","STL",
-    "TBL","TOR","UTA","VAN","VGK","WPG","WSH"
+    "LAK","MIN","MTL","NJD","NSH","NYI","NYR","OTT","PHI","PIT","SEA","SJS",
+    "STL","TBL","TOR","UTA","VAN","VGK","WPG","WSH"
 ]
 
-CURRENT_SEASON = "20262027"   # NHL seasons are coded as startyear+endyear
 GAME_TYPE_REGULAR = "2"       # 1=preseason, 2=regular, 3=playoffs
+GAME_TYPE_PLAYOFFS = "3"
+
+# Supabase credentials come from the environment (GitHub Actions secrets in
+# CI). The service key bypasses row-level security, so it must never be
+# committed or shipped to the browser.
+SUPABASE_URL = os.environ.get("SUPABASE_URL", "").rstrip("/")
+SUPABASE_KEY = os.environ.get("SUPABASE_KEY", "")
+
+# URLs that still failed after all retries. A failed fetch is otherwise
+# indistinguishable from "no games played", so we track them and exit
+# non-zero at the end — that turns the scheduled run red instead of quietly
+# saving partial data.
+FAILED_URLS = []
+
+
+def nhl_today():
+    """Today's date on the NHL's calendar (US Eastern), not the machine's.
+    GitHub Actions runners are on UTC, where a late-evening run would
+    otherwise already be asking for tomorrow's schedule."""
+    try:
+        from zoneinfo import ZoneInfo
+        tz = ZoneInfo("America/New_York")
+    except Exception:
+        # No tz database (e.g. Windows without the tzdata package) — fixed
+        # EST offset is only wrong for one hour a night during daylight time.
+        tz = timezone(timedelta(hours=-5))
+    return datetime.now(tz).date()
+
+
+def season_for(day):
+    """NHL seasons are coded as startyear+endyear, e.g. '20262027'. Seasons
+    start in September/October, so anything before September belongs to the
+    season that started the previous year."""
+    start = day.year if day.month >= 9 else day.year - 1
+    return f"{start}{start + 1}"
 
 
 def fetch_json(url, retries=3, pause=1.0):
@@ -68,26 +103,34 @@ def fetch_json(url, retries=3, pause=1.0):
             req = urllib.request.Request(url, headers={"User-Agent": "IceEngine/1.0"})
             with urllib.request.urlopen(req, timeout=15) as resp:
                 return json.loads(resp.read().decode("utf-8"))
-        except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError) as e:
+        except urllib.error.HTTPError as e:
             print(f"  [warn] {url} failed (attempt {attempt+1}/{retries}): {e}")
-            time.sleep(pause)
+            if e.code == 404:
+                break  # a missing resource won't appear on retry
+            time.sleep(pause * (attempt + 1))
+        except (urllib.error.URLError, socket.timeout, TimeoutError, ValueError) as e:
+            print(f"  [warn] {url} failed (attempt {attempt+1}/{retries}): {e}")
+            time.sleep(pause * (attempt + 1))
     print(f"  [error] giving up on {url}")
+    FAILED_URLS.append(url)
     return None
 
 
-def get_todays_schedule():
+def get_todays_schedule(day=None):
     """Real games being played today, with team names and start times."""
-    today_str = date.today().isoformat()
+    today_str = (day or nhl_today()).isoformat()
     data = fetch_json(f"{BASE}/schedule/{today_str}")
     if not data:
         return []
     games = []
-    for day in data.get("gameWeek", []):
-        if day.get("date") != today_str:
+    for d in data.get("gameWeek", []):
+        if d.get("date") != today_str:
             continue
-        for g in day.get("games", []):
+        for g in d.get("games", []):
             games.append({
                 "gameId": g.get("id"),
+                "date": today_str,
+                "gameType": g.get("gameType"),
                 "away": g.get("awayTeam", {}).get("abbrev"),
                 "home": g.get("homeTeam", {}).get("abbrev"),
                 "startTimeUTC": g.get("startTimeUTC"),
@@ -115,17 +158,25 @@ def get_roster(team_abbrev):
     return players
 
 
-def get_player_game_log(player_id, season=CURRENT_SEASON, game_type=GAME_TYPE_REGULAR):
+def get_player_game_log(player_id, season=None, game_type=GAME_TYPE_REGULAR, goalie=False):
     """Every game this player has played this season: date, opponent, goals,
     assists, shots on goal. This is the real version of the Gamelog table —
-    each row here is a real completed game, not a generated one."""
+    each row here is a real completed game, not a generated one.
+
+    Goalies get a different stat line from the API (no shots/points; saves
+    data instead), so pass goalie=True to keep those fields."""
+    season = season or season_for(nhl_today())
     data = fetch_json(f"{BASE}/player/{player_id}/game-log/{season}/{game_type}")
     if not data:
         return []
     log = []
     for g in data.get("gameLog", []):
-        log.append({
+        row = {
+            "gameId": g.get("gameId"),
+            "season": int(season),
+            "gameType": int(game_type),
             "date": g.get("gameDate"),
+            "team": g.get("teamAbbrev"),
             "opponent": g.get("opponentAbbrev"),
             "homeRoad": g.get("homeRoadFlag"),
             "goals": g.get("goals"),
@@ -133,17 +184,31 @@ def get_player_game_log(player_id, season=CURRENT_SEASON, game_type=GAME_TYPE_RE
             "points": g.get("points"),
             "sog": g.get("shots"),
             "toi": g.get("toi"),
-        })
+        }
+        if goalie:
+            row.update({
+                "points": (g.get("goals") or 0) + (g.get("assists") or 0),
+                "gamesStarted": g.get("gamesStarted"),
+                "decision": g.get("decision"),
+                "shotsAgainst": g.get("shotsAgainst"),
+                "goalsAgainst": g.get("goalsAgainst"),
+                "savePctg": g.get("savePctg"),
+            })
+        log.append(row)
     return log
 
 
-def run_daily_pull(teams=None, include_gamelogs=True, sleep_between=0.3):
+def run_daily_pull(teams=None, include_gamelogs=True, sleep_between=0.3,
+                   day=None, season=None, out_file=OUT_FILE):
     """The main job. teams=None means 'every team playing today' — pass an
     explicit list (e.g. ["BUF","CBJ"]) to limit scope while testing, since a
     full 32-team, full-roster gamelog pull is a lot of requests."""
-    print(f"Ice Engine daily pull — {datetime.now().isoformat()}")
+    day = day or nhl_today()
+    season = season or season_for(day)
+    pulled_at = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    print(f"Ice Engine daily pull — {pulled_at} (NHL date {day}, season {season})")
 
-    schedule = get_todays_schedule()
+    schedule = get_todays_schedule(day)
     print(f"Found {len(schedule)} game(s) today.")
 
     if teams is None:
@@ -152,7 +217,14 @@ def run_daily_pull(teams=None, include_gamelogs=True, sleep_between=0.3):
             print("No games today — pulling rosters/gamelogs for ALL 32 teams instead.")
             teams = ALL_TEAMS
 
-    output = {"pulledAt": datetime.now().isoformat(), "schedule": schedule, "teams": {}}
+    # Regular season always; playoffs too once playoff games are on the slate,
+    # otherwise the gamelogs would silently stop growing in April.
+    game_types = [GAME_TYPE_REGULAR]
+    if any(g["gameType"] == int(GAME_TYPE_PLAYOFFS) for g in schedule):
+        game_types.append(GAME_TYPE_PLAYOFFS)
+
+    output = {"pulledAt": pulled_at, "date": day.isoformat(), "season": season,
+              "schedule": schedule, "teams": {}}
 
     for team in teams:
         print(f"Team {team} ...")
@@ -162,22 +234,118 @@ def run_daily_pull(teams=None, include_gamelogs=True, sleep_between=0.3):
 
         if include_gamelogs:
             for p in roster:
-                p["gamelog"] = get_player_game_log(p["id"])
-                time.sleep(sleep_between)  # be a reasonable neighbor to a free, unofficial API
+                p["gamelog"] = []
+                for game_type in game_types:
+                    p["gamelog"] += get_player_game_log(
+                        p["id"], season=season, game_type=game_type, goalie=(p["pos"] == "G"))
+                    time.sleep(sleep_between)  # be a reasonable neighbor to a free, unofficial API
+            print(f"  {sum(len(p['gamelog']) for p in roster)} gamelog rows")
 
         team_data["roster"] = roster
         output["teams"][team] = team_data
 
-    with open(OUT_FILE, "w") as f:
+    with open(out_file, "w") as f:
         json.dump(output, f, indent=2)
-    print(f"Wrote {OUT_FILE}")
+    print(f"Wrote {out_file}")
     return output
+
+
+# ---------------------------------------------------------------------------
+# SUPABASE — upsert the pull into Postgres through Supabase's REST API
+# (PostgREST). Plain urllib, so the job has no dependencies to install.
+# Every write is an upsert on the table's primary key, so re-running a day,
+# or re-pulling a whole season, never creates duplicate rows.
+# ---------------------------------------------------------------------------
+def supabase_upsert(table, rows, on_conflict, batch_size=500):
+    """POST rows to a table, merging on the conflict key. Raises on failure —
+    a job that can't save its results should fail loudly."""
+    url = f"{SUPABASE_URL}/rest/v1/{table}?on_conflict={on_conflict}"
+    for i in range(0, len(rows), batch_size):
+        body = json.dumps(rows[i:i + batch_size]).encode("utf-8")
+        req = urllib.request.Request(url, data=body, method="POST", headers={
+            "apikey": SUPABASE_KEY,
+            "Authorization": f"Bearer {SUPABASE_KEY}",
+            "Content-Type": "application/json",
+            "Prefer": "resolution=merge-duplicates,return=minimal",
+            "User-Agent": "IceEngine/1.0",
+        })
+        try:
+            with urllib.request.urlopen(req, timeout=60) as resp:
+                resp.read()
+        except urllib.error.HTTPError as e:
+            detail = e.read().decode("utf-8", "replace")[:500]
+            raise RuntimeError(f"Supabase upsert into {table} failed: HTTP {e.code} {detail}") from None
+    print(f"  {table}: upserted {len(rows)} row(s)")
+
+
+def build_supabase_rows(output):
+    """Flatten the nested JSON output into one list of rows per table. Rows
+    in a batch must all have the same keys, so skater rows carry the goalie
+    columns as null and vice versa."""
+    pulled_at = output["pulledAt"]
+
+    games = [{
+        "id": g["gameId"],
+        "game_date": g["date"],
+        "game_type": g["gameType"],
+        "away": g["away"],
+        "home": g["home"],
+        "start_time_utc": g["startTimeUTC"],
+        "updated_at": pulled_at,
+    } for g in output["schedule"]]
+
+    players, logs = [], []
+    for team_data in output["teams"].values():
+        for p in team_data["roster"]:
+            players.append({
+                "id": p["id"],
+                "name": p["name"],
+                "team": p["team"],
+                "number": p["number"],
+                "pos": p["pos"],
+                "updated_at": pulled_at,
+            })
+            for g in p.get("gamelog", []):
+                logs.append({
+                    "player_id": p["id"],
+                    "game_id": g["gameId"],
+                    "season": g["season"],
+                    "game_type": g["gameType"],
+                    "game_date": g["date"],
+                    "team": g["team"],
+                    "opponent": g["opponent"],
+                    "home_road": g["homeRoad"],
+                    "goals": g["goals"],
+                    "assists": g["assists"],
+                    "points": g["points"],
+                    "sog": g["sog"],
+                    "toi": g["toi"],
+                    "games_started": g.get("gamesStarted"),
+                    "decision": g.get("decision"),
+                    "shots_against": g.get("shotsAgainst"),
+                    "goals_against": g.get("goalsAgainst"),
+                    "save_pct": g.get("savePctg"),
+                    "updated_at": pulled_at,
+                })
+    return games, players, logs
+
+
+def save_to_supabase(output):
+    games, players, logs = build_supabase_rows(output)
+    print(f"Saving to Supabase ({SUPABASE_URL}) ...")
+    supabase_upsert("games", games, "id")
+    supabase_upsert("players", players, "id")  # before logs: logs reference players
+    supabase_upsert("player_game_logs", logs, "player_id,game_id")
 
 
 # ---------------------------------------------------------------------------
 # BACKFILL — run this ONCE (not daily) per past season you want real H2H
 # history for. This is what actually gives the Head-to-Head filter multiple
 # seasons of real meetings instead of generated placeholder ones.
+#
+# To backfill straight into Supabase instead of a local file, run the pull
+# with a past season:  python ice_engine_daily_pull.py --teams ALL --season 20252026
+# (or use "Run workflow" on the GitHub Actions tab with those inputs).
 # ---------------------------------------------------------------------------
 def backfill_season(season_code, teams=None):
     """e.g. backfill_season('20242025') for last season's full history."""
@@ -187,7 +355,7 @@ def backfill_season(season_code, teams=None):
         roster = get_roster(team)  # note: current roster, not that season's — a real
                                     # backfill should use that season's roster endpoint
         for p in roster:
-            p["gamelog"] = get_player_game_log(p["id"], season=season_code)
+            p["gamelog"] = get_player_game_log(p["id"], season=season_code, goalie=(p["pos"] == "G"))
             time.sleep(0.3)
         output["teams"][team] = {"roster": roster}
     with open(f"season_{season_code}.json", "w") as f:
@@ -195,29 +363,52 @@ def backfill_season(season_code, teams=None):
     print(f"Backfilled {season_code}")
 
 
+def parse_args(argv=None):
+    parser = argparse.ArgumentParser(description="Pull NHL schedule, rosters and gamelogs.")
+    parser.add_argument("--teams", default="",
+                        help="comma-separated abbreviations (e.g. BUF,CBJ) or ALL; "
+                             "default is every team playing today")
+    parser.add_argument("--date", default="",
+                        help="schedule date as YYYY-MM-DD; default is today (US Eastern)")
+    parser.add_argument("--season", default="",
+                        help="season code for gamelogs, e.g. 20252026; default is the current season")
+    parser.add_argument("--no-gamelogs", action="store_true", help="rosters and schedule only")
+    parser.add_argument("--require-supabase", action="store_true",
+                        help="fail if the Supabase env vars are missing instead of skipping the upload")
+    return parser.parse_args(argv)
+
+
+def main(argv=None):
+    args = parse_args(argv)
+
+    teams = None
+    if args.teams.strip().upper() == "ALL":
+        teams = ALL_TEAMS
+    elif args.teams.strip():
+        teams = [t.strip().upper() for t in args.teams.split(",") if t.strip()]
+        unknown = sorted(set(teams) - set(ALL_TEAMS))
+        if unknown:
+            sys.exit(f"Unknown team abbreviation(s): {', '.join(unknown)}")
+
+    supabase_ready = bool(SUPABASE_URL and SUPABASE_KEY)
+    if args.require_supabase and not supabase_ready:
+        sys.exit("SUPABASE_URL and SUPABASE_KEY must be set (see README).")
+
+    output = run_daily_pull(
+        teams=teams,
+        include_gamelogs=not args.no_gamelogs,
+        day=date.fromisoformat(args.date) if args.date.strip() else None,
+        season=args.season.strip() or None,
+    )
+
+    if supabase_ready:
+        save_to_supabase(output)
+    else:
+        print("Supabase env vars not set — skipping upload.")
+
+    if FAILED_URLS:
+        sys.exit(f"{len(FAILED_URLS)} NHL API request(s) failed; saved data is incomplete.")
+
+
 if __name__ == "__main__":
-    # Quick manual test run — limit to Buffalo + Columbus first rather than
-    # all 32 teams, since this hasn't been verified against the live API yet.
-    run_daily_pull(teams=["BUF", "CBJ"])
-
-
-# ---------------------------------------------------------------------------
-# HOW TO ACTUALLY RUN THIS ON A SCHEDULE (pick one — all are free):
-#
-# 1. GitHub Actions (easiest, zero cost, no server to maintain):
-#    - Put this script in a GitHub repo.
-#    - Add .github/workflows/daily.yml with a `schedule: cron: '0 12 * * *'`
-#      trigger (runs once a day) that runs `python ice_engine_daily_pull.py`
-#      and commits daily_data.json back to the repo.
-#    - The Props Board can then fetch the raw JSON straight from GitHub.
-#
-# 2. A free-tier cloud scheduler (Render, Railway, Fly.io cron jobs) —
-#    similar idea, slightly more setup, more control.
-#
-# 3. Run it manually each morning on your own computer — works, but isn't
-#    really "automatic," which defeats the point.
-#
-# This part — writing the workflow file, wiring it to actually run, and
-# debugging the first live execution — is real software engineering, not
-# research. It's a better fit for Claude Code than for this chat.
-# ---------------------------------------------------------------------------
+    main()
