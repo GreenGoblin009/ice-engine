@@ -1,14 +1,20 @@
--- Ice Engine tables. Run once in the Supabase SQL editor
--- (Dashboard -> SQL Editor -> New query -> paste -> Run). Safe to re-run.
+-- Ice Engine tables. Run in the Supabase SQL editor
+-- (Dashboard -> SQL Editor -> New query -> paste -> Run). Safe to re-run:
+-- it creates what's missing and upgrades tables made by an older version.
 
 create table if not exists public.games (
-  id              bigint primary key,          -- NHL gameId
-  game_date       date not null,               -- NHL calendar date (US Eastern)
-  game_type       smallint,                    -- 1=preseason, 2=regular, 3=playoffs
-  away            text not null,
-  home            text not null,
-  start_time_utc  timestamptz,
-  updated_at      timestamptz not null default now()
+  id                bigint primary key,        -- NHL gameId
+  season            integer,                   -- e.g. 20262027
+  game_date         date not null,             -- NHL calendar date (US Eastern)
+  game_type         smallint,                  -- 2=regular, 3=playoffs
+  game_state        text,                      -- FUT, LIVE, FINAL, OFF (OFF = official)
+  away              text not null,
+  home              text not null,
+  start_time_utc    timestamptz,
+  away_score        smallint,                  -- final score; null until the game is over
+  home_score        smallint,
+  last_period_type  text,                      -- REG, OT or SO (SO winner's score includes +1)
+  updated_at        timestamptz not null default now()
 );
 
 create table if not exists public.players (
@@ -33,6 +39,7 @@ create table if not exists public.player_game_logs (
   assists        smallint,
   points         smallint,
   sog            smallint,                     -- skaters only
+  shot_attempts  smallint,                     -- sog + missed + blocked; null until counted
   toi            text,                         -- "MM:SS"
   games_started  smallint,                     -- goalies only, from here down
   decision       text,
@@ -43,12 +50,23 @@ create table if not exists public.player_game_logs (
   primary key (player_id, game_id)
 );
 
+-- Upgrade tables created before final scores and shot attempts were added.
+alter table public.games add column if not exists season integer;
+alter table public.games add column if not exists game_state text;
+alter table public.games add column if not exists away_score smallint;
+alter table public.games add column if not exists home_score smallint;
+alter table public.games add column if not exists last_period_type text;
+alter table public.player_game_logs add column if not exists shot_attempts smallint;
+
 create index if not exists games_game_date_idx on public.games (game_date);
 create index if not exists players_team_idx on public.players (team);
 create index if not exists player_game_logs_player_date_idx
   on public.player_game_logs (player_id, game_date desc);
 create index if not exists player_game_logs_opponent_idx
   on public.player_game_logs (player_id, opponent);
+-- The daily job asks "which rows still need shot attempts?" on every run.
+create index if not exists player_game_logs_missing_attempts_idx
+  on public.player_game_logs (season) where shot_attempts is null;
 
 -- Row-level security: the daily job writes with the service key, which
 -- bypasses RLS. Everyone else (the Props Board, using the public anon key)
