@@ -43,11 +43,13 @@ input[type=date]{min-width:0; -webkit-appearance:none; appearance:none; min-heig
 .side{display:flex; align-items:center; justify-content:center; gap:6px;}
 .side.homeSide{flex-direction:row-reverse;}
 .stext{text-align:center;}
-.tjersey{width:84px; flex:none; filter:drop-shadow(0 2px 4px rgba(0,0,0,.35));}
+.chrow{display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:10px; font-size:11px; color:var(--muted); text-align:center;}
+.chrow b{color:var(--text);}
+.tjersey{width:66px; flex:none; filter:drop-shadow(0 2px 4px rgba(0,0,0,.35));}
 .tabbr{font-family:'Rajdhani',sans-serif; font-weight:700; font-size:20px;}
 .tproj{font-family:'Rajdhani',sans-serif; font-weight:700; font-size:30px; line-height:1;}
 .at{color:var(--muted); font-size:13px;}
-.chip{display:inline-block; font-size:10.5px; font-weight:700; padding:3px 7px; border-radius:5px; margin-top:5px; letter-spacing:.3px;}
+.chip{white-space:nowrap; display:inline-block; font-size:10.5px; font-weight:700; padding:3px 7px; border-radius:5px; margin-top:5px; letter-spacing:.3px;}
 .chip.go{background:rgba(47,191,113,.15); color:var(--green);}
 .chip.no{background:rgba(122,134,153,.15); color:var(--muted);}
 .detail{display:none; margin-top:10px; border-top:1px solid var(--line); padding-top:10px; font-size:12px;}
@@ -118,6 +120,7 @@ const GREEN_LIGHT = 3.35;       // projected team goals at/above this = green li
 const PRIOR_GAMES = 15;         // weight (in games) given to last season's rate
 const LEAGUE_AVG = 3.05;
 const LEAGUE_SV = 0.905;
+const SHRINK_K = 10;           // hit-rate shrink toward the pool rate (in games)
 const MIN_PLAY_HIT = 0.62;      // break-even of -160
 
 const TEAM_COLORS={ANA:'#F47A38',BOS:'#111111',BUF:'#002654',CGY:'#D2001C',CAR:'#CC0000',CHI:'#CF0A2C',COL:'#6F263D',CBJ:'#002654',DAL:'#006847',DET:'#CE1126',EDM:'#FF4C00',FLA:'#C8102E',LAK:'#111111',MIN:'#154734',MTL:'#AF1E2D',NSH:'#FFB81C',NJD:'#CE1126',NYI:'#00539B',NYR:'#0038A8',OTT:'#C52032',PHI:'#F74902',PIT:'#000000',SJS:'#006D75',SEA:'#355464',STL:'#002F87',TBL:'#002868',TOR:'#00205B',UTA:'#71AFE5',VAN:'#00205B',VGK:'#B4975A',WSH:'#C8102E',WPG:'#041E42'};
@@ -179,42 +182,62 @@ function jerseySVG(color,stripe,number,name){
 }
 
 /* ============ TEAM ENGINE ============ */
-// Goals for/against per team per season from final scores. A shootout win is
-// 1 goal inflated for the winner (the SO goal), so it is removed.
+// Goals for/against per team from final scores. A shootout win is 1 goal
+// inflated for the winner (the SO goal), so it is removed.
 function buildTeamStats(){
   const t={};
-  const get=(tm)=>t[tm]||(t[tm]={cur:{gp:0,gf:0,ga:0},prev:{gp:0,gf:0,ga:0},dates:[]});
+  const get=(tm)=>t[tm]||(t[tm]={games:[]});
   S.finals.forEach(g=>{
     let a=g.away_score, h=g.home_score;
     if(g.last_period_type==='SO'){ if(a>h) a--; else h--; }
-    const k=g.season===CUR?'cur':'prev';
-    const A=get(g.away), H=get(g.home);
-    A[k].gp++; A[k].gf+=a; A[k].ga+=h;
-    H[k].gp++; H[k].gf+=h; H[k].ga+=a;
-    A.dates.push(g.game_date); H.dates.push(g.game_date);
+    get(g.away).games.push({date:g.game_date,season:g.season,gf:a,ga:h});
+    get(g.home).games.push({date:g.game_date,season:g.season,gf:h,ga:a});
   });
+  Object.values(t).forEach(x=>x.games.sort((p,q)=>p.date<q.date?-1:1));
   S.teamStats=t;
 }
-function blended(tm){
+// League average goals per team per game (shootout-adjusted), only games before `day`.
+function leagueAvg(day){
+  let cur=0,curN=0,all=0,allN=0;
+  Object.values(S.teamStats).forEach(x=>x.games.forEach(g=>{
+    if(g.date>=day) return;
+    all+=g.gf; allN++;
+    if(g.season===CUR){ cur+=g.gf; curN++; }
+  }));
+  if(curN>=200) return cur/curN;
+  return allN?all/allN:LEAGUE_AVG;
+}
+// Blended rate (last season counts as 15 games) and last-10 rate, using only games before `day`.
+function rates(tm, day){
   const s=S.teamStats[tm];
-  if(!s) return {gf:LEAGUE_AVG, ga:LEAGUE_AVG, gp:0};
-  const pg=s.prev.gp, cg=s.cur.gp;
-  const pgf=pg?s.prev.gf/pg:LEAGUE_AVG, pga=pg?s.prev.ga/pg:LEAGUE_AVG;
-  return {
-    gf:(pgf*PRIOR_GAMES + s.cur.gf)/(PRIOR_GAMES+cg),
-    ga:(pga*PRIOR_GAMES + s.cur.ga)/(PRIOR_GAMES+cg),
-    gp:cg
-  };
+  const gs=s?s.games.filter(g=>g.date<day):[];
+  const prev=gs.filter(g=>g.season!==CUR), cur=gs.filter(g=>g.season===CUR);
+  const sum=(arr,k)=>arr.reduce((a,g)=>a+g[k],0);
+  const pgf=prev.length?sum(prev,'gf')/prev.length:LEAGUE_AVG, pga=prev.length?sum(prev,'ga')/prev.length:LEAGUE_AVG;
+  const gf=(pgf*PRIOR_GAMES+sum(cur,'gf'))/(PRIOR_GAMES+cur.length);
+  const ga=(pga*PRIOR_GAMES+sum(cur,'ga'))/(PRIOR_GAMES+cur.length);
+  const l10=cur.slice(-10), miss=10-l10.length;
+  return {gf,ga,gf10:(sum(l10,'gf')+miss*gf)/10, ga10:(sum(l10,'ga')+miss*ga)/10, gp:cur.length};
+}
+// Fitted team-goals model (Poisson regression on 2025-26 games, from backtest_team_totals.py)
+const TEAM_MODEL={intercept:1.097460, gfBlend:0.649684, oppGaBlend:0.158471, gfLast10:-0.104467, oppGaLast10:0.137525, home:0.043517};
+function projectGoals(gf,oppGa,gf10,oppGa10,isHome,L){
+  const m=TEAM_MODEL, rel=v=>Math.log(Math.max(0.5,v)/L);
+  return Math.exp(m.intercept+m.gfBlend*rel(gf)+m.oppGaBlend*rel(oppGa)+m.gfLast10*rel(gf10)+m.oppGaLast10*rel(oppGa10)+(isHome?m.home:0));
+}
+function chanceAtLeast(mean,k){
+  let below=0, term=Math.exp(-mean);
+  for(let i=0;i<k;i++){ below+=term; term*=mean/(i+1); }
+  return 1-below;
 }
 function restFactor(tm, day){
-  const s=S.teamStats[tm]; if(!s) return {adj:0,label:'Unknown',days:null};
-  const prior=s.dates.filter(d=>d<day).sort();
-  if(!prior.length) return {adj:0,label:'Season opener',days:null};
-  const d=daysBetween(prior[prior.length-1], day);
-  if(d>30) return {adj:0,label:'Season opener',days:d};
-  if(d<=1) return {adj:-0.10,label:'Back-to-back (−10%)',days:d};
-  if(d>=3) return {adj:0.03,label:`${d-1} days off (+3%)`,days:d};
-  return {adj:0,label:'Normal rest',days:d};
+  const s=S.teamStats[tm]; if(!s) return {label:'Unknown',days:null};
+  const prior=s.games.filter(g=>g.date<day);
+  if(!prior.length) return {label:'Season opener',days:null};
+  const d=daysBetween(prior[prior.length-1].date, day);
+  if(d>30) return {label:'Season opener',days:d};
+  if(d<=1) return {label:'Back-to-back',days:d};
+  return {label:`${d-1} day${d-1===1?'':'s'} off`,days:d};
 }
 // Starting goalie for a team on S.day: confirmed starter, else first goalie listed.
 function startingGoalie(tm){
@@ -223,15 +246,15 @@ function startingGoalie(tm){
   return gs.find(g=>g.confirmed_starter)||gs[0];
 }
 function projectTeam(tm, opp, isHome){
-  const A=blended(tm), B=blended(opp);
-  const base=0.6*A.gf+0.4*B.ga;
+  const L=leagueAvg(S.day), A=rates(tm,S.day), B=rates(opp,S.day), m=TEAM_MODEL;
+  const rel=v=>Math.log(Math.max(0.5,v)/L);
+  const proj=projectGoals(A.gf,B.ga,A.gf10,B.ga10,isHome,L);
+  const steps=[['Base (league-average team)',m.intercept],['Team scoring (blended)',m.gfBlend*rel(A.gf)],[opp+' goals allowed (blended)',m.oppGaBlend*rel(B.ga)],['Team last 10 goals',m.gfLast10*rel(A.gf10)],[opp+' last 10 goals allowed',m.oppGaLast10*rel(B.ga10)],['Home ice',isHome?m.home:0]];
+  let cum=0, prevVal=0; const contrib=steps.map(([lab,v],i)=>{ cum+=v; const val=Math.exp(cum); const d=i===0?val:val-prevVal; prevVal=val; return {lab,d}; });
   const g=startingGoalie(opp);
   const sv=g && g.player_id ? S.goalieSV.get(g.player_id) : null;
-  const gAdj=sv!=null ? (sv-LEAGUE_SV)*-4 : 0;
-  const venue=isHome?0.05:-0.05;
-  const rest=restFactor(tm,S.day);
-  const proj=base*(1+gAdj)*(1+venue)*(1+rest.adj);
-  return {tm,opp,proj,base,gf:A.gf,oppGA:B.ga,gp:A.gp,goalie:g,sv,gAdj,venue,rest,green:proj>=GREEN_LIGHT};
+  return {tm,opp,proj,contrib,gp:A.gp,goalie:g,sv,rest:restFactor(tm,S.day),green:proj>=GREEN_LIGHT,
+          p3:chanceAtLeast(proj,3),p4:chanceAtLeast(proj,4),p5:chanceAtLeast(proj,5)};
 }
 
 /* ============ LOGS ============ */
@@ -316,20 +339,19 @@ function renderTeams(){
   $('view').innerHTML=gs.map(g=>{
     const a=projectTeam(g.away,g.home,false), h=projectTeam(g.home,g.away,true);
     const done=g.away_score!=null&&g.home_score!=null&&['FINAL','OFF'].includes(g.game_state);
+    const pc=x=>Math.round(x*100)+'%';
     const side=(p,home)=>`<div class="side ${home?'homeSide':''}"><div class="tjersey">${jerseySVG(teamColor(p.tm),stripeColor(p.tm),'',p.tm)}</div><div class="stext"><div class="tabbr">${esc(p.tm)}</div><div class="tproj" style="color:${p.green?'var(--green)':'var(--text)'}">${p.proj.toFixed(2)}</div><span class="chip ${p.green?'go':'no'}">${p.green?'GREEN LIGHT':'NO PLAY'}</span></div></div>`;
-    const det=(p)=>`<div style="margin-bottom:8px;"><b>${esc(p.tm)}</b><table>
-      <tr><td class="muted">Goals for (blended)</td><td>${p.gf.toFixed(2)}</td></tr>
-      <tr><td class="muted">${esc(p.opp)} goals against (blended)</td><td>${p.oppGA.toFixed(2)}</td></tr>
-      <tr><td class="muted">Base (60/40)</td><td>${p.base.toFixed(2)}</td></tr>
-      <tr><td class="muted">${esc(p.opp)} goalie</td><td>${p.goalie?esc(p.goalie.player_name)+(p.sv!=null?' · '+p.sv.toFixed(3):' · no data'):'Not listed yet'}</td></tr>
-      <tr><td class="muted">Goalie adjust</td><td>${(p.gAdj*100>=0?'+':'')+(p.gAdj*100).toFixed(1)}%</td></tr>
-      <tr><td class="muted">Venue</td><td>${p.venue>0?'Home (+5%)':'Away (−5%)'}</td></tr>
-      <tr><td class="muted">Rest</td><td>${esc(p.rest.label)}</td></tr>
+    const det=(p)=>`<div style="margin-bottom:10px;"><b>${esc(p.tm)}</b><table>
+      ${p.contrib.map((c,i)=>`<tr><td class="muted">${esc(c.lab)}</td><td>${i===0?c.d.toFixed(2):(c.d>=0?'+':'')+c.d.toFixed(2)}</td></tr>`).join('')}
+      <tr><td><b>Projected goals</b></td><td><b>${p.proj.toFixed(2)}</b></td></tr>
+      <tr><td class="muted">${esc(p.opp)} goalie (info only)</td><td>${p.goalie?esc(p.goalie.player_name)+(p.sv!=null?' · '+p.sv.toFixed(3):''):'Not listed yet'}</td></tr>
+      <tr><td class="muted">Rest (info only)</td><td>${esc(p.rest.label)}</td></tr>
       <tr><td class="muted">Games played this season</td><td>${p.gp}</td></tr></table></div>`;
     return `<div class="card game-card" data-g="${g.id}">
       <div class="game-head"><span>${fmtTime(g.start_time_utc)}</span><span>${done?`Final ${g.away_score}-${g.home_score}`:''}</span></div>
       <div class="matchup">${side(a,false)}<div class="at">@</div>${side(h,true)}</div>
-      <div class="detail">${det(a)}${det(h)}<div class="muted" style="font-size:11px;">Last season's rate counts as ${PRIOR_GAMES} games, then this season takes over. Green light at ${GREEN_LIGHT} projected goals.</div></div>
+      <div class="chrow"><div><b>${esc(a.tm)}</b><br>3+ ${pc(a.p3)} · 4+ ${pc(a.p4)} · 5+ ${pc(a.p5)}</div><div><b>${esc(h.tm)}</b><br>3+ ${pc(h.p3)} · 4+ ${pc(h.p4)} · 5+ ${pc(h.p5)}</div></div>
+      <div class="detail">${det(a)}${det(h)}<div class="muted" style="font-size:11px;">Model fitted on real 2025-26 games. Goalie, rest, shot attempts and head to head didn't improve it in testing, so they're shown but not used. Last season counts as ${PRIOR_GAMES} games, then this season takes over. Green light at ${GREEN_LIGHT}+. Percentages are the chance of that many goals or more.</div></div>
     </div>`;
   }).join('');
 }
@@ -405,29 +427,32 @@ async function renderTop(){
       const logs=S.logCache.get(s.player_id)||[];
       ['Points','Goals','Assists','Shots'].forEach(stat=>{
         const line=STATS[stat].line;
-        const l20=hitStats(logs.slice(0,20),stat,line), l10=hitStats(logs.slice(0,10),stat,line);
-        if(l20.n<10) return;
-        rows.push({s,stat,line,l20,l10,tm:s.team});
+        const all=hitStats(logs,stat,line), l10=hitStats(logs.slice(0,10),stat,line);
+        if(all.n<15) return;
+        rows.push({s,stat,line,all,l10,tm:s.team});
       });
     });
+    const pool={};
+    ['Points','Goals','Assists','Shots'].forEach(st=>{ const r=rows.filter(x=>x.stat===st); const o=r.reduce((a,x)=>a+x.all.over,0), n=r.reduce((a,x)=>a+x.all.n,0); pool[st]=n?o/n:0.3; });
+    rows.forEach(r=>{ r.rate=(r.all.over+SHRINK_K*pool[r.stat])/(r.all.n+SHRINK_K); });
     S.topRows=rows;
   }
   const statSel=S.topStat||'best';
-  let rows=S.topRows.filter(r=>r.l20.pct>=MIN_PLAY_HIT && (statSel==='best'||r.stat===statSel));
+  let rows=S.topRows.filter(r=>r.rate>=MIN_PLAY_HIT && (statSel==='best'||r.stat===statSel));
   if(statSel==='best'){          // one best prop per player
     const best=new Map();
-    rows.forEach(r=>{ const k=r.s.player_id; if(!best.has(k)||r.l20.pct>best.get(k).l20.pct) best.set(k,r); });
+    rows.forEach(r=>{ const k=r.s.player_id; if(!best.has(k)||r.rate>best.get(k).rate) best.set(k,r); });
     rows=[...best.values()];
   }
-  rows.sort((a,b)=>b.l20.pct-a.l20.pct || b.l10.pct-a.l10.pct);
+  rows.sort((a,b)=>b.rate-a.rate);
   rows=rows.slice(0,40);
   const filter=`<div class="row" style="grid-template-columns:1fr;"><div><label>Stat</label><select id="topStat">${['best','Points','Goals','Assists','Shots'].map(x=>`<option value="${x}" ${x===statSel?'selected':''}>${x==='best'?'Best prop (auto)':x}</option>`).join('')}</select></div></div>`;
-  const note=`<div class="muted small" style="margin-bottom:10px;">Only players on green-lit teams (${green.map(g=>g.tm).join(', ')}). Ranked by last-20 hit rate; ${Math.round(MIN_PLAY_HIT*100)}%+ only (break-even of −160). Fair price is what the hit rate is worth — compare it to your book.</div>`;
+  const note=`<div class="muted small" style="margin-bottom:10px;">Only players on green-lit teams (${green.map(g=>g.tm).join(', ')}). Ranked by season-long hit rate (this season plus last, the one measure that predicted in testing). ${Math.round(MIN_PLAY_HIT*100)}%+ only (break-even of −160). Fair price is what the rate is worth — compare it to your book.</div>`;
   const list=rows.length?rows.map(r=>{
-    const fo=fairOdds(r.l20.pct);
+    const fo=fairOdds(r.rate);
     return `<div class="prow" data-pid="${r.s.player_id}" data-stat="${r.stat}">
       <div><div class="pname">${esc(r.s.player_name)}</div><div class="pmeta">${esc(r.tm)} · ${r.stat} o${r.line} · L10 ${r.l10.over}/${r.l10.n}</div></div>
-      <div><div class="pbig" style="color:var(--green)">${Math.round(r.l20.pct*100)}%</div><div class="psub">${r.l20.over}/${r.l20.n} · fair ${fmtOdds(fo)}</div></div></div>`;
+      <div><div class="pbig" style="color:var(--green)">${Math.round(r.rate*100)}%</div><div class="psub">${r.all.over}/${r.all.n} · fair ${fmtOdds(fo)}</div></div></div>`;
   }).join(''):'<div class="empty">Nothing clears the bar today.</div>';
   $('view').innerHTML=filter+note+list;
   $('topStat').onchange=e=>{ S.topStat=e.target.value; renderTop(); };
@@ -438,7 +463,7 @@ const M={};
 async function openPlayer(pid, stat){
   const p=S.players.get(pid)||{id:pid,name:'Player',team:'',pos:''};
   M.p=p; M.isG=p.pos==='G';
-  M.stat=stat||(M.isG?'Saves':'Points'); M.window='Last 10'; M.split='Home+Away'; M.vs='';
+  M.stat=stat||(M.isG?'Saves':'Points'); M.window=stat?'All-time':'Last 10'; M.split='Home+Away'; M.vs='';
   M.line=M.isG?24.5:STATS[M.stat].line; M.odds='';
   $('overlay').classList.add('open');
   $('pcard').innerHTML='<div class="empty">Loading game logs…</div>';
