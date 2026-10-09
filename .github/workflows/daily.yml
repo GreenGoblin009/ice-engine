@@ -2,9 +2,20 @@ name: Daily NHL pull
 
 on:
   schedule:
-    # 12:15 UTC = 8:15am Eastern (7:15am in winter): last night's west-coast
-    # games are final and today's slate is posted.
-    - cron: "15 12 * * *"
+    # Wanted run times, US Eastern, all year: 2:00 AM, 5:30 PM, 9:30 PM, 11:00 PM.
+    # GitHub cron is UTC-only and ignores daylight saving, so every time is
+    # listed at both UTC hours it can fall on (EDT = UTC-4, EST = UTC-5). The
+    # script works out which of each pair is right today and the other one
+    # exits within seconds. Keep one time per line: the script reads the
+    # line that fired to know which run it is.
+    - cron: "0 6 * * *"    #  2:00 AM EDT
+    - cron: "0 7 * * *"    #  2:00 AM EST
+    - cron: "30 21 * * *"  #  5:30 PM EDT
+    - cron: "30 22 * * *"  #  5:30 PM EST
+    - cron: "30 1 * * *"   #  9:30 PM EDT
+    - cron: "30 2 * * *"   #  9:30 PM EST
+    - cron: "0 3 * * *"    # 11:00 PM EDT
+    - cron: "0 4 * * *"    # 11:00 PM EST
   workflow_dispatch:
     inputs:
       teams:
@@ -26,7 +37,7 @@ concurrency:
 jobs:
   pull:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 60  # a full-season backfill reads ~1,300 play-by-play feeds
     steps:
       - uses: actions/checkout@v4
 
@@ -38,9 +49,15 @@ jobs:
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          SCHEDULE_CRON: ${{ github.event.schedule }}  # empty on a manual run
           TEAMS: ${{ inputs.teams }}
           SEASON: ${{ inputs.season }}
-        run: python ice_engine_daily_pull.py --require-supabase --teams "$TEAMS" --season "$SEASON"
+        # The 2:00 AM run works on the day before: by then "today" has rolled
+        # over, but the games that just finished belong to yesterday.
+        run: >
+          python ice_engine_daily_pull.py --require-supabase
+          --only-at "02:00@yesterday,17:30,21:30,23:00"
+          --teams "$TEAMS" --season "$SEASON"
 
       - name: Keep the raw JSON for debugging
         if: always()

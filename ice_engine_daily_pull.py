@@ -44,6 +44,7 @@ Verified end-to-end against the live API on 2026-10-08.
 import argparse
 import json
 import os
+import re
 import socket
 import sys
 import time
@@ -103,6 +104,67 @@ def nhl_today():
     GitHub Actions runners are on UTC, where a late-evening run would
     otherwise already be asking for tomorrow's schedule."""
     return datetime.now(nhl_timezone()).date()
+
+
+# ---------------------------------------------------------------------------
+# SCHEDULE GATE — GitHub's cron is UTC-only and ignores daylight saving, so
+# each wanted Eastern time is triggered at BOTH of the UTC times it can fall
+# on (EDT = UTC-4, EST = UTC-5). The workflow passes the cron line that fired
+# in SCHEDULE_CRON, and the script carries on only when that line is the
+# right one for today's Eastern offset; the other one exits quietly.
+#
+# Going by the cron line rather than the clock matters: GitHub often starts
+# scheduled runs late, and a run that fired for 11:00 PM but started at
+# 12:10 AM still belongs to 11:00 PM (and to that day's date).
+# ---------------------------------------------------------------------------
+def scheduled_slot(only_at, cron, now=None, tz=None):
+    """Which wanted Eastern time a cron trigger stands for.
+
+    only_at: 'HH:MM' Eastern times, comma-separated; add '@yesterday' to one
+             to have it work on the previous day ('02:00@yesterday').
+    cron:    the line that fired, e.g. '0 7 * * *' (minute hour, UTC).
+
+    Returns (slot, day, fired): slot is the matching Eastern datetime, or
+    None if this trigger isn't one of the wanted times today; day is the NHL
+    date the run should work on; fired is the trigger time in Eastern."""
+    tz = tz or nhl_timezone()
+    if isinstance(tz, timezone):
+        sys.exit("--only-at needs real timezone data to follow daylight saving "
+                 "(on Windows: pip install tzdata).")
+    m = re.fullmatch(r"(\d{1,2}) (\d{1,2}) \* \* \*", cron.strip())
+    if not m:
+        sys.exit(f"SCHEDULE_CRON '{cron}' is not a plain 'minute hour * * *' line; "
+                 f"each scheduled time needs its own cron line.")
+
+    now = now or datetime.now(timezone.utc)
+    fired = now.replace(hour=int(m.group(2)), minute=int(m.group(1)), second=0, microsecond=0)
+    if fired > now + timedelta(minutes=5):
+        fired -= timedelta(days=1)  # the run started after midnight UTC
+    local = fired.astimezone(tz)
+
+    for part in only_at.split(","):
+        t = re.fullmatch(r"(\d{1,2}):(\d{2})(@yesterday)?", part.strip())
+        if not t:
+            sys.exit(f"--only-at: can't read '{part.strip()}' (expected HH:MM or HH:MM@yesterday)")
+        wanted = datetime(local.year, local.month, local.day, int(t.group(1)), int(t.group(2)), tzinfo=tz)
+        if wanted.astimezone(timezone.utc) == fired:
+            return wanted, local.date() - timedelta(days=1 if t.group(3) else 0), local
+    return None, None, local
+
+
+def gate_on_schedule(only_at):
+    """Apply --only-at to a scheduled run. Returns (go, slot, day). A manual
+    run (no SCHEDULE_CRON) always goes, with slot and day left as None."""
+    cron = os.environ.get("SCHEDULE_CRON", "").strip()
+    if not only_at.strip() or not cron:
+        return True, None, None
+    slot, day, fired = scheduled_slot(only_at, cron)
+    if slot is None:
+        print(f"Trigger '{cron}' (UTC) is {fired:%H:%M} Eastern today — not one of "
+              f"{only_at}. Nothing to do.")
+        return False, None, None
+    print(f"Scheduled run for {slot:%H:%M} Eastern, working on NHL date {day}.")
+    return True, slot, day
 
 
 def season_for(day):
@@ -544,11 +606,18 @@ def parse_args(argv=None):
                         help="skip the play-by-play requests that count shot attempts")
     parser.add_argument("--require-supabase", action="store_true",
                         help="fail if the Supabase env vars are missing instead of skipping the upload")
+    parser.add_argument("--only-at", default="",
+                        help="for scheduled runs: Eastern times to run at, e.g. "
+                             "'02:00@yesterday,17:30'; other triggers exit quietly (see SCHEDULE GATE)")
     return parser.parse_args(argv)
 
 
 def main(argv=None):
     args = parse_args(argv)
+
+    go, _, slot_day = gate_on_schedule(args.only_at)
+    if not go:
+        return
 
     teams = None
     if args.teams.strip().upper() == "ALL":
@@ -566,7 +635,7 @@ def main(argv=None):
     output = run_daily_pull(
         teams=teams,
         include_gamelogs=not args.no_gamelogs,
-        day=date.fromisoformat(args.date) if args.date.strip() else None,
+        day=date.fromisoformat(args.date) if args.date.strip() else slot_day,
         season=args.season.strip() or None,
     )
 

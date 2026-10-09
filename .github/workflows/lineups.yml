@@ -2,12 +2,24 @@ name: Daily projected lineups
 
 on:
   schedule:
-    # GitHub cron is UTC-only and doesn't follow daylight saving, so run at
-    # both hours that can be 4pm Eastern: 20:05 UTC (4:05pm EDT / 3:05pm EST)
-    # and 21:05 UTC (5:05pm EDT / 4:05pm EST). The second run simply
-    # refreshes the first and picks up games posted in between.
-    - cron: "5 20 * * *"
-    - cron: "5 21 * * *"
+    # Wanted run times, US Eastern, all year: 12, 2, 4, 6, 8 and 10 PM.
+    # GitHub cron is UTC-only and ignores daylight saving, so every time is
+    # listed at both UTC hours it can fall on (EDT = UTC-4, EST = UTC-5). The
+    # script works out which of each pair is right today and the other one
+    # exits within seconds. Keep one time per line: the script reads the
+    # line that fired to know which run it is.
+    - cron: "0 16 * * *"  # 12 PM EDT
+    - cron: "0 17 * * *"  # 12 PM EST
+    - cron: "0 18 * * *"  #  2 PM EDT
+    - cron: "0 19 * * *"  #  2 PM EST
+    - cron: "0 20 * * *"  #  4 PM EDT
+    - cron: "0 21 * * *"  #  4 PM EST
+    - cron: "0 22 * * *"  #  6 PM EDT
+    - cron: "0 23 * * *"  #  6 PM EST
+    - cron: "0 0 * * *"   #  8 PM EDT
+    - cron: "0 1 * * *"   #  8 PM EST
+    - cron: "0 2 * * *"   # 10 PM EDT
+    - cron: "0 3 * * *"   # 10 PM EST
   workflow_dispatch:
 
 permissions:
@@ -32,7 +44,10 @@ jobs:
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
-        run: python ice_engine_lineups.py --require-supabase
+          SCHEDULE_CRON: ${{ github.event.schedule }}  # empty on a manual run
+        run: >
+          python ice_engine_lineups.py --require-supabase
+          --only-at "12:00,14:00,16:00,18:00,20:00,22:00"
 
       - name: Keep the raw JSON for debugging
         if: always()

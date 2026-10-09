@@ -343,14 +343,19 @@ def mark_confirmed_starters(game_rows, status_text):
 
 
 def load_players(teams, use_supabase):
-    """{team: [players]} from the Supabase players table (filled by the
-    daily pull). Without Supabase, straight from the NHL API so the script
-    can still be tried locally."""
+    """{team: [players]} from the Supabase players table. The results pull
+    doesn't reach today's teams until the evening, so their current rosters
+    are refreshed in the table here first — otherwise the early runs would
+    miss call-ups and traded players. Without Supabase, straight from the NHL
+    API so the script can still be tried locally."""
+    rosters = [p for team in teams for p in engine.get_roster(team)]
     if use_supabase:
+        refreshed = datetime.now(timezone.utc).isoformat(timespec="seconds")
+        engine.supabase_upsert("players", [dict(p, updated_at=refreshed) for p in rosters], "id")
         players = engine.supabase_select_all(
             f"players?select=id,name,team,pos&team=in.({','.join(teams)})&order=id")
     else:
-        players = [p for team in teams for p in engine.get_roster(team)]
+        players = rosters
     by_team = {team: [] for team in teams}
     for p in players:
         by_team[p["team"]].append(dict(p, key=normalize(p["name"])))
@@ -367,7 +372,9 @@ def save_to_supabase(rows, day, teams, pulled_at):
                   f"&team=in.({','.join(teams)})&updated_at=lt.{pulled_at}")
 
 
-def run(day, use_supabase):
+def run(day, use_supabase, late_in_day=True):
+    """late_in_day: whether an article that still hasn't been updated today
+    is a failure (evening) or just 'not posted yet' (midday runs)."""
     pulled_at = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     print(f"Ice Engine lineups — {pulled_at} (NHL date {day})")
 
@@ -384,8 +391,11 @@ def run(day, use_supabase):
         modified_day = datetime.fromisoformat(modified[:19] + "+00:00").astimezone(engine.nhl_timezone()).date()
         print(f"Article last modified {modified} ({modified_day} Eastern), {len(body)} characters.")
         if modified_day != day:
-            raise PageFormatError(f"the article was last updated on {modified_day}, not {day} — "
-                                  f"today's lineups aren't posted yet")
+            if late_in_day:
+                raise PageFormatError(f"the article was last updated on {modified_day}, not {day} — "
+                                      f"today's lineups were never posted, or the page has moved")
+            print(f"Today's lineups aren't posted yet (article is from {modified_day}) — nothing to do.")
+            return []
 
     games, problems = parse_article(body, schedule, nicknames)
     if not games:
@@ -455,7 +465,19 @@ def main(argv=None):
                         help="date to file the lineups under, YYYY-MM-DD; default is today (US Eastern)")
     parser.add_argument("--require-supabase", action="store_true",
                         help="fail if the Supabase env vars are missing instead of skipping the upload")
+    parser.add_argument("--only-at", default="",
+                        help="for scheduled runs: Eastern times to run at, e.g. '12:00,14:00'; other "
+                             "triggers exit quietly (see SCHEDULE GATE in ice_engine_daily_pull.py)")
     args = parser.parse_args(argv)
+
+    go, slot, slot_day = engine.gate_on_schedule(args.only_at)
+    if not go:
+        return
+    day = date.fromisoformat(args.date) if args.date.strip() else (slot_day or engine.nhl_today())
+    # Lineups go up through the day as teams finish their morning skates. By
+    # 8 PM Eastern a page that still shows an earlier day means something broke.
+    hour = slot.hour if slot else datetime.now(engine.nhl_timezone()).hour
+    late_in_day = hour >= 20 or day != engine.nhl_today()
 
     use_supabase = bool(engine.SUPABASE_URL and engine.SUPABASE_KEY)
     if args.require_supabase and not use_supabase:
@@ -464,7 +486,7 @@ def main(argv=None):
         print("Supabase env vars not set — matching against NHL API rosters and skipping the upload.")
 
     try:
-        run(date.fromisoformat(args.date) if args.date.strip() else engine.nhl_today(), use_supabase)
+        run(day, use_supabase, late_in_day)
     except PageFormatError as e:
         print(f"[error] {e}", flush=True)
         if os.environ.get("GITHUB_ACTIONS"):
