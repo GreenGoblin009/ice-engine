@@ -137,6 +137,8 @@ const GREEN_LIGHT = 3.35;       // projected team goals at/above this = green li
 const PRIOR_GAMES = 15;         // weight (in games) given to last season's rate
 const LEAGUE_AVG = 3.05;
 const LEAGUE_SV = 0.905;
+const PRICE_FLOOR = -140;       // best available Points/Assists price worse than this is hidden
+const MARKET_STAT = {player_points:'Points', player_assists:'Assists'};
 const SHRINK_K = 10;           // hit-rate shrink toward the pool rate (in games)
 const MIN_PLAY_HIT = 0.62;      // break-even of -160
 
@@ -323,6 +325,7 @@ async function loadDay(){
   S.lineups=await sbAll(`daily_lineups?lineup_date=eq.${S.day}&select=*&order=team.asc,list_order.asc`);
   const t=S.lineups.map(l=>l.updated_at).sort().pop();
   S.updatedAt=t||null;
+  try{ S.odds=await sbAll(`player_odds?game_date=eq.${S.day}&side=eq.Over&select=player_id,player_name,market,line,book,price,updated_at`); }catch(e){ S.odds=[]; }
   await loadGoalieSV();
 }
 function dayGames(){ return S.games.filter(g=>g.game_date===S.day); }
@@ -462,7 +465,45 @@ async function renderTop(){
     S.topRows=rows;
   }
   const statSel=S.topStat||'best';
-  let rows=S.topRows.filter(r=>r.rate>=MIN_PLAY_HIT && (statSel==='best'||r.stat===statSel));
+  // ---- priced plays (Points / Assists with real book prices) ----
+  const skaterIds=new Set(S.lineups.filter(l=>green.some(p=>p.tm===l.team)&&l.status==='projected'&&(l.slot==='line'||l.slot==='pair')&&l.player_id).map(l=>l.player_id));
+  const poolMemo={};
+  const poolFor=(stat,line)=>{ const k=stat+'|'+line; if(poolMemo[k]!=null) return poolMemo[k]; let o=0,n=0; skaterIds.forEach(id=>{ const h=hitStats(S.logCache.get(id)||[],stat,line); o+=h.over; n+=h.n; }); return poolMemo[k]=n?o/n:0.3; };
+  const groups=new Map();
+  (S.odds||[]).forEach(o=>{
+    const stat=MARKET_STAT[o.market]; if(!stat||!o.player_id||!skaterIds.has(o.player_id)) return;
+    const k=o.player_id+'|'+stat+'|'+o.line; if(!groups.has(k)) groups.set(k,{pid:o.player_id,stat,line:+o.line,prices:[]});
+    groups.get(k).prices.push(o.price);
+  });
+  const lineupBy=new Map(); S.lineups.forEach(l=>{ if(l.player_id) lineupBy.set(l.player_id,l); });
+  const covered=new Set(); // player|stat combos that have any price today
+  let priced=[];
+  groups.forEach(gp=>{
+    covered.add(gp.pid+'|'+gp.stat);
+    const logs=S.logCache.get(gp.pid)||[];
+    const all=hitStats(logs,gp.stat,gp.line), l10=hitStats(logs.slice(0,10),gp.stat,gp.line);
+    if(all.n<15) return;
+    const rate=(all.over+SHRINK_K*poolFor(gp.stat,gp.line))/(all.n+SHRINK_K);
+    const ps=gp.prices.slice().sort((x,y)=>x-y);
+    const best=ps[ps.length-1], worst=ps[0], mid=ps[Math.floor(ps.length/2)];
+    if(best<PRICE_FLOOR) return;
+    const edge=(rate-impliedProb(mid))*100;
+    if(edge<=0) return;
+    const l=lineupBy.get(gp.pid);
+    priced.push({s:l,stat:gp.stat,line:gp.line,all,l10,rate,best,worst,mid,edge,n:ps.length,tm:l.team});
+  });
+  priced=priced.filter(r=>statSel==='best'||r.stat===statSel);
+  const bestBy=new Map(); priced.forEach(r=>{ const k=r.s.player_id+(statSel==='best'?'':r.stat); if(!bestBy.has(k)||r.edge>bestBy.get(k).edge) bestBy.set(k,r); });
+  priced=[...bestBy.values()].sort((a,b)=>b.edge-a.edge).slice(0,30);
+  const oddsTime=(S.odds||[]).map(o=>o.updated_at).sort().pop();
+  const priceTxt=r=>r.best===r.worst?fmtOdds(r.best):`${fmtOdds(r.best)} to ${fmtOdds(r.worst)}`;
+  const pricedHTML=priced.map(r=>`<div class="prow" data-pid="${r.s.player_id}" data-stat="${r.stat}" data-line="${r.line}" data-odds="${r.mid}">
+      <div><div class="pname">${esc(r.s.player_name)}</div><div class="pmeta">${esc(r.tm)} · ${r.stat} o${r.line} · ${priceTxt(r)}</div><div class="pmeta">Hit rate ${Math.round(r.rate*100)}% (${r.all.over}/${r.all.n}) · fair ${fmtOdds(fairOdds(r.rate))}</div></div>
+      <div><div class="pbig" style="color:var(--green)">+${r.edge.toFixed(1)}</div><div class="psub">EDGE</div></div></div>`).join('');
+  const priceNote=(S.odds&&S.odds.length)?`Prices as of ${new Date(oddsTime).toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit',timeZone:'America/New_York'})} ET. Range is best to worst book; edge uses the middle price. Points and assists worse than ${PRICE_FLOOR} are hidden.`:'Prices for Points and Assists load once a day around 4 PM ET. None are in yet.';
+
+  // ---- hit-rate list (everything else, or no price yet) ----
+  let rows=S.topRows.filter(r=>r.rate>=MIN_PLAY_HIT && (statSel==='best'||r.stat===statSel) && !covered.has(r.s.player_id+'|'+r.stat));
   if(statSel==='best'){          // one best prop per player
     const best=new Map();
     rows.forEach(r=>{ const k=r.s.player_id; if(!best.has(k)||r.rate>best.get(k).rate) best.set(k,r); });
@@ -471,24 +512,27 @@ async function renderTop(){
   rows.sort((a,b)=>b.rate-a.rate);
   rows=rows.slice(0,40);
   const filter=`<div class="row" style="grid-template-columns:1fr;"><div><label>Stat</label><select id="topStat">${['best','Points','Goals','Assists','Shots'].map(x=>`<option value="${x}" ${x===statSel?'selected':''}>${x==='best'?'Best prop (auto)':x}</option>`).join('')}</select></div></div>`;
-  const note=`<div class="muted small" style="margin-bottom:10px;">Only players on green-lit teams (${green.map(g=>g.tm).join(', ')}). Ranked by season-long hit rate (this season plus last, the one measure that predicted in testing). ${Math.round(MIN_PLAY_HIT*100)}%+ only (break-even of −160). Fair price is what the rate is worth — compare it to your book.</div>`;
+  const note=`<div class="muted small" style="margin-bottom:10px;">Only players on green-lit teams (${green.map(g=>g.tm).join(', ')}). Ranked by season-long hit rate (this season plus last, the one measure that predicted in testing).</div>`;
   const list=rows.length?rows.map(r=>{
     const fo=fairOdds(r.rate);
     return `<div class="prow" data-pid="${r.s.player_id}" data-stat="${r.stat}">
       <div><div class="pname">${esc(r.s.player_name)}</div><div class="pmeta">${esc(r.tm)} · ${r.stat} o${r.line} · L10 ${r.l10.over}/${r.l10.n}</div></div>
       <div><div class="pbig" style="color:var(--green)">${Math.round(r.rate*100)}%</div><div class="psub">${r.all.over}/${r.all.n} · fair ${fmtOdds(fo)}</div></div></div>`;
-  }).join(''):'<div class="empty">Nothing clears the bar today.</div>';
-  $('view').innerHTML=filter+note+list;
+  }).join(''):'<div class="empty">Nothing else clears the bar today.</div>';
+  const hdr=(t,sub)=>`<div class="section-label" style="margin:14px 0 6px;">${t}</div>${sub?`<div class="muted small" style="margin-bottom:8px;">${sub}</div>`:''}`;
+  $('view').innerHTML=filter+note+
+    (priced.length?hdr('PRICED PLAYS',priceNote)+pricedHTML:((S.odds&&S.odds.length)?hdr('PRICED PLAYS',priceNote)+'<div class="empty">No priced play beats its break-even today.</div>':hdr('PRICED PLAYS',priceNote)))+
+    hdr('HIT RATE ONLY',`${Math.round(MIN_PLAY_HIT*100)}%+ season-long. Fair price is what the rate is worth — compare it to your book.`)+list;
   $('topStat').onchange=e=>{ S.topStat=e.target.value; renderTop(); };
 }
 
 /* ============ PLAYER MODAL ============ */
 const M={};
-async function openPlayer(pid, stat){
+async function openPlayer(pid, stat, line, odds){
   const p=S.players.get(pid)||{id:pid,name:'Player',team:'',pos:''};
   M.p=p; M.isG=p.pos==='G';
   M.stat=stat||(M.isG?'Saves':'Points'); M.window=stat?'All-time':'Last 10'; M.split='Home+Away'; M.vs='';
-  M.line=M.isG?24.5:STATS[M.stat].line; M.odds='';
+  M.line=line!=null?line:(M.isG?24.5:STATS[M.stat].line); M.odds=odds!=null?String(odds):'';
   $('overlay').classList.add('open');
   $('pcard').innerHTML='<div class="empty">Loading game logs…</div>';
   try{
@@ -565,7 +609,7 @@ function drawPlayer(){
 document.addEventListener('click',e=>{
   const gc=e.target.closest('.game-card'); if(gc){ gc.classList.toggle('open'); return; }
   const j=e.target.closest('.jersey-card'); if(j&&j.dataset.pid){ openPlayer(+j.dataset.pid); return; }
-  const pr=e.target.closest('.prow'); if(pr){ openPlayer(+pr.dataset.pid, pr.dataset.stat); return; }
+  const pr=e.target.closest('.prow'); if(pr){ openPlayer(+pr.dataset.pid, pr.dataset.stat, pr.dataset.line!=null?+pr.dataset.line:null, pr.dataset.odds); return; }
 });
 $('overlay').addEventListener('click',e=>{ if(e.target.id==='overlay') closePlayer(); });
 $('bTeams').onclick=()=>setView('teams');
