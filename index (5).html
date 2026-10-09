@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ice Engine</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0A0E14; --card:#121821; --card2:#171F2B; --line:#232C3A;
+  --text:#E8ECF1; --muted:#7A8699; --amber:#D4A017;
+  --green:#2FBF71; --red:#E5484D; --blue:#5B9CF6;
+}
+*{box-sizing:border-box;}
+html{background:#0A0E14; color-scheme:dark;}
+body{margin:0; min-height:100vh; background:var(--bg); color:var(--text); font-family:'Inter',-apple-system,sans-serif; line-height:1.4; -webkit-font-smoothing:antialiased; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);}
+.wrap{max-width:640px; margin:0 auto; padding:22px 16px 60px;}
+h1{font-family:'Rajdhani',sans-serif; font-weight:700; font-size:32px; margin:0;}
+.top{display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:12px;}
+.updated{color:var(--muted); font-size:11.5px; text-align:right;}
+.reload{background:none; border:1px solid var(--line); color:var(--muted); border-radius:6px; padding:3px 8px; font-size:11.5px; cursor:pointer; margin-top:3px;}
+label{display:block; font-size:12px; color:var(--muted); margin:0 0 5px; font-weight:500;}
+input,select{width:100%; background:var(--card2); border:1px solid var(--line); color:var(--text); padding:10px; border-radius:7px; font-size:15px; font-family:'Inter',sans-serif;}
+input:focus,select:focus{outline:none; border-color:var(--amber);}
+.row{display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:10px;}
+.row3{display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; margin-bottom:10px;}
+.view-toggle{display:flex; gap:6px; margin:12px 0;}
+.view-toggle button{flex:1; background:var(--card2); border:1px solid var(--line); color:var(--muted); padding:9px; border-radius:7px; font-family:'Rajdhani',sans-serif; font-weight:600; font-size:15px; cursor:pointer;}
+.view-toggle button.active{background:var(--amber); color:#0A0E14; border-color:var(--amber);}
+.card{background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px; margin-bottom:10px;}
+.muted{color:var(--muted);} .small{font-size:12px;}
+.empty{color:var(--muted); font-size:13.5px; text-align:center; padding:28px 10px;}
+.err{color:var(--red); font-size:13px; padding:14px; border:1px solid var(--red); border-radius:8px; margin:10px 0;}
+/* Teams */
+.game-card{cursor:pointer;}
+.game-head{display:flex; justify-content:space-between; font-size:12px; color:var(--muted); margin-bottom:8px;}
+.matchup{display:grid; grid-template-columns:1fr auto 1fr; align-items:center; gap:8px;}
+.side{text-align:center;}
+.tabbr{font-family:'Rajdhani',sans-serif; font-weight:700; font-size:20px;}
+.tproj{font-family:'Rajdhani',sans-serif; font-weight:700; font-size:30px; line-height:1;}
+.at{color:var(--muted); font-size:13px;}
+.chip{display:inline-block; font-size:10.5px; font-weight:700; padding:3px 7px; border-radius:5px; margin-top:5px; letter-spacing:.3px;}
+.chip.go{background:rgba(47,191,113,.15); color:var(--green);}
+.chip.no{background:rgba(122,134,153,.15); color:var(--muted);}
+.detail{display:none; margin-top:10px; border-top:1px solid var(--line); padding-top:10px; font-size:12px;}
+.game-card.open .detail{display:block;}
+.detail table{width:100%; border-collapse:collapse;}
+.detail td{padding:3px 0;} .detail td:last-child{text-align:right;}
+/* Jerseys */
+.section-label{background:var(--card2); border:1px solid var(--line); border-radius:7px; padding:8px 0; text-align:center; font-family:'Rajdhani',sans-serif; font-weight:600; font-size:14px; letter-spacing:.5px; margin:14px 0 10px;}
+.jersey-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:10px;}
+.jersey-card{text-align:center; cursor:pointer; background:none; border:none; padding:0; color:var(--text); font-family:'Inter',sans-serif;}
+.jersey-svg{width:68%; margin:0 auto; display:block; filter:drop-shadow(0 2px 4px rgba(0,0,0,.35));}
+.jname{font-size:10.5px; margin-top:4px; color:var(--muted); line-height:1.2;}
+.jstat{font-size:10px; margin-top:2px; font-weight:700;}
+.dim{opacity:.45;}
+/* Top plays */
+.prow{background:var(--card); border:1px solid var(--line); border-radius:9px; padding:12px 14px; margin-bottom:8px; display:flex; justify-content:space-between; align-items:center; cursor:pointer;}
+.pname{font-weight:600; font-size:15px;}
+.pmeta{color:var(--muted); font-size:12px; margin-top:2px;}
+.pbig{font-family:'Rajdhani',sans-serif; font-weight:700; font-size:22px; text-align:right;}
+.psub{color:var(--muted); font-size:11px; text-align:right;}
+/* Modal */
+.overlay{position:fixed; inset:0; background:rgba(5,7,10,.92); z-index:50; display:none; overflow-y:auto; padding:16px;}
+.overlay.open{display:block;}
+.pcard{max-width:520px; margin:12px auto 40px; background:var(--card); border:1px solid var(--line); border-radius:12px; padding:18px;}
+.phead{display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;}
+.pnm{font-family:'Rajdhani',sans-serif; font-weight:700; font-size:22px;}
+.close{background:none; border:none; color:var(--muted); font-size:28px; cursor:pointer; line-height:1; padding:0;}
+.hit{display:flex; justify-content:space-around; text-align:center; background:var(--card2); border:1px solid var(--line); border-radius:9px; padding:14px 6px; margin:12px 0;}
+.hpct{font-family:'Rajdhani',sans-serif; font-weight:700; font-size:24px;}
+.hlab{color:var(--muted); font-size:11px; margin-top:2px;}
+.lineRow{display:flex; align-items:center; justify-content:space-between; margin-top:12px;}
+.step{width:34px; height:34px; border-radius:7px; background:var(--card2); border:1px solid var(--line); color:var(--text); font-size:18px; cursor:pointer;}
+.lineVal{font-family:'Rajdhani',sans-serif; font-weight:600; font-size:18px; min-width:50px; text-align:center;}
+table.gl{width:100%; border-collapse:collapse; font-size:12px; white-space:nowrap;}
+table.gl th{color:var(--muted); text-align:left; padding:4px 8px 4px 0; font-weight:500;}
+table.gl td{padding:5px 8px 5px 0; border-top:1px solid var(--line);}
+.edgebox{background:var(--card2); border:1px solid var(--line); border-radius:9px; padding:10px 12px; margin-top:12px; display:flex; align-items:center; gap:10px; justify-content:space-between;}
+.edgebox input{width:90px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <h1>Ice Engine</h1>
+    <div class="updated"><div id="updated">Loading…</div><button class="reload" id="reload">Refresh</button></div>
+  </div>
+
+  <div class="row" style="grid-template-columns:1fr 1fr;">
+    <div><label>Game day</label><input type="date" id="dayPick"></div>
+    <div id="teamPickWrap" style="display:none;"><label>Team</label><select id="teamPick"></select></div>
+  </div>
+
+  <div class="view-toggle">
+    <button id="bTeams" class="active">Teams</button>
+    <button id="bLineups">Lineups</button>
+    <button id="bTop">Top Plays</button>
+  </div>
+  <div id="msg"></div>
+  <div id="view"></div>
+</div>
+
+<div class="overlay" id="overlay"><div class="pcard" id="pcard"></div></div>
+
+<script>
+/* ============ CONFIG ============ */
+const SB_URL = 'https://fjdakfbvdnolidmgnagr.supabase.co';
+const SB_KEY = 'sb_publishable_IhfYW8SO7YM_8xdx9MWhVA_qlRM_uAc';
+const CUR = 20262027, PREV = 20252026;
+const GREEN_LIGHT = 3.35;       // projected team goals at/above this = green light
+const PRIOR_GAMES = 15;         // weight (in games) given to last season's rate
+const LEAGUE_AVG = 3.05;
+const LEAGUE_SV = 0.905;
+const MIN_PLAY_HIT = 0.62;      // break-even of -160
+
+const TEAM_COLORS={ANA:'#F47A38',BOS:'#111111',BUF:'#002654',CGY:'#D2001C',CAR:'#CC0000',CHI:'#CF0A2C',COL:'#6F263D',CBJ:'#002654',DAL:'#006847',DET:'#CE1126',EDM:'#FF4C00',FLA:'#C8102E',LAK:'#111111',MIN:'#154734',MTL:'#AF1E2D',NSH:'#FFB81C',NJD:'#CE1126',NYI:'#00539B',NYR:'#0038A8',OTT:'#C52032',PHI:'#F74902',PIT:'#000000',SJS:'#006D75',SEA:'#355464',STL:'#002F87',TBL:'#002868',TOR:'#00205B',UTA:'#71AFE5',VAN:'#00205B',VGK:'#B4975A',WSH:'#C8102E',WPG:'#041E42'};
+const TEAM_STRIPE={BUF:'#FFB81C', CBJ:'#CE1126', TOR:'#FFFFFF', FLA:'#FDBB30', CAR:'#FFFFFF', TBL:'#FFFFFF', BOS:'#FFB81C', DET:'#FFFFFF', MTL:'#FFFFFF', NJD:'#FFFFFF', NYR:'#CE1126', PIT:'#FFB81C', NYI:'#F47D30', PHI:'#FFFFFF', WSH:'#FFFFFF', OTT:'#FFFFFF', COL:'#236192', DAL:'#006847', MIN:'#A6192E', WPG:'#7B303E', UTA:'#69B3E7', NSH:'#FFB81C', STL:'#FCB514', CHI:'#FFFFFF', EDM:'#FF4C00', VGK:'#B4975A', ANA:'#F47A38', CGY:'#D2001C', LAK:'#A2AAAD', SJS:'#EA7200', SEA:'#99D9D9', VAN:'#00205B'};
+const teamColor=t=>TEAM_COLORS[(t||'').toUpperCase()]||'#3A4658';
+const stripeColor=t=>TEAM_STRIPE[(t||'').toUpperCase()]||'#FFFFFF';
+
+const STATS = {
+  Points:{col:'points', line:0.5}, Goals:{col:'goals', line:0.5}, Assists:{col:'assists', line:0.5},
+  Shots:{col:'sog', line:2.5}, 'Shot Attempts':{col:'shot_attempts', line:4.5}
+};
+
+/* ============ HELPERS ============ */
+const $=id=>document.getElementById(id);
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function etToday(){ return new Date().toLocaleDateString('en-CA',{timeZone:'America/New_York'}); }
+function daysBetween(a,b){ return Math.round((new Date(b+'T00:00:00Z')-new Date(a+'T00:00:00Z'))/86400000); }
+function fmtOdds(o){ return (o>0?'+':'')+Math.round(o); }
+function fairOdds(p){ if(p<=0) return null; if(p>=1) return -10000; return p>=0.5 ? -Math.round(p/(1-p)*100) : Math.round((1-p)/p*100); }
+function impliedProb(o){ return o<0 ? (-o)/((-o)+100) : 100/(o+100); }
+function fmtDate(d){ const [y,m,dd]=d.split('-'); return `${+m}/${+dd}`; }
+function fmtTime(iso){ try{ return new Date(iso).toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit',timeZone:'America/New_York'})+' ET'; }catch(e){ return ''; } }
+
+async function sb(path){
+  const sep=path.includes('?')?'&':'?';
+  const r=await fetch(`${SB_URL}/rest/v1/${path}${sep}apikey=${SB_KEY}`);
+  if(!r.ok) throw new Error(`Database error ${r.status}`);
+  return r.json();
+}
+async function sbAll(path, pageSize=1000){
+  let out=[], off=0;
+  for(;;){
+    const rows=await sb(`${path}&limit=${pageSize}&offset=${off}`);
+    out=out.concat(rows);
+    if(rows.length<pageSize) break;
+    off+=pageSize;
+  }
+  return out;
+}
+
+/* ============ STATE ============ */
+const S = {
+  view:'teams', day:null, games:[], finals:[], players:new Map(), lineups:[],
+  team:null, logCache:new Map(), goalieSV:new Map(), updatedAt:null,
+  teamStats:null, topRows:null
+};
+
+/* ============ JERSEY ============ */
+function jerseySVG(color,stripe,number,name){
+  return `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <path d="M33,22 L44,22 L50,30 L56,22 L67,22 L97,50 L86,64 L74,45 L74,82 Q74,88 68,88 L32,88 Q26,88 26,82 L26,45 L14,64 L3,50 Z" fill="${color}" stroke="rgba(0,0,0,0.5)" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M50,30 L56,22 L67,22 L97,50 L86,64 L74,45 L74,82 Q74,88 68,88 L50,88 Z" fill="#000" opacity="0.16"/>
+    <polygon points="15,38.8 9,44.4 16.4,60.2 18.8,56.4" fill="${stripe}"/>
+    <polygon points="85,38.8 91,44.4 83.6,60.2 81.2,56.4" fill="${stripe}"/>
+    <rect x="26" y="72" width="48" height="5.5" fill="${stripe}"/>
+    <text x="50" y="43" text-anchor="middle" font-family="Rajdhani, sans-serif" font-weight="700" font-size="7.5" fill="${stripe}" letter-spacing="0.2" stroke="rgba(0,0,0,0.4)" stroke-width="0.4" paint-order="stroke">${esc((name||'').toUpperCase())}</text>
+    <text x="50" y="66" text-anchor="middle" font-family="Rajdhani, sans-serif" font-weight="800" font-size="22" fill="#fff" stroke="rgba(0,0,0,0.5)" stroke-width="0.6" paint-order="stroke">${number!=null?esc(number):'--'}</text>
+  </svg>`;
+}
+
+/* ============ TEAM ENGINE ============ */
+// Goals for/against per team per season from final scores. A shootout win is
+// 1 goal inflated for the winner (the SO goal), so it is removed.
+function buildTeamStats(){
+  const t={};
+  const get=(tm)=>t[tm]||(t[tm]={cur:{gp:0,gf:0,ga:0},prev:{gp:0,gf:0,ga:0},dates:[]});
+  S.finals.forEach(g=>{
+    let a=g.away_score, h=g.home_score;
+    if(g.last_period_type==='SO'){ if(a>h) a--; else h--; }
+    const k=g.season===CUR?'cur':'prev';
+    const A=get(g.away), H=get(g.home);
+    A[k].gp++; A[k].gf+=a; A[k].ga+=h;
+    H[k].gp++; H[k].gf+=h; H[k].ga+=a;
+    A.dates.push(g.game_date); H.dates.push(g.game_date);
+  });
+  S.teamStats=t;
+}
+function blended(tm){
+  const s=S.teamStats[tm];
+  if(!s) return {gf:LEAGUE_AVG, ga:LEAGUE_AVG, gp:0};
+  const pg=s.prev.gp, cg=s.cur.gp;
+  const pgf=pg?s.prev.gf/pg:LEAGUE_AVG, pga=pg?s.prev.ga/pg:LEAGUE_AVG;
+  return {
+    gf:(pgf*PRIOR_GAMES + s.cur.gf)/(PRIOR_GAMES+cg),
+    ga:(pga*PRIOR_GAMES + s.cur.ga)/(PRIOR_GAMES+cg),
+    gp:cg
+  };
+}
+function restFactor(tm, day){
+  const s=S.teamStats[tm]; if(!s) return {adj:0,label:'Unknown',days:null};
+  const prior=s.dates.filter(d=>d<day).sort();
+  if(!prior.length) return {adj:0,label:'Season opener',days:null};
+  const d=daysBetween(prior[prior.length-1], day);
+  if(d>30) return {adj:0,label:'Season opener',days:d};
+  if(d<=1) return {adj:-0.10,label:'Back-to-back (−10%)',days:d};
+  if(d>=3) return {adj:0.03,label:`${d-1} days off (+3%)`,days:d};
+  return {adj:0,label:'Normal rest',days:d};
+}
+// Starting goalie for a team on S.day: confirmed starter, else first goalie listed.
+function startingGoalie(tm){
+  const gs=S.lineups.filter(l=>l.team===tm && l.slot==='goalie' && l.status==='projected').sort((a,b)=>a.list_order-b.list_order);
+  if(!gs.length) return null;
+  return gs.find(g=>g.confirmed_starter)||gs[0];
+}
+function projectTeam(tm, opp, isHome){
+  const A=blended(tm), B=blended(opp);
+  const base=0.6*A.gf+0.4*B.ga;
+  const g=startingGoalie(opp);
+  const sv=g && g.player_id ? S.goalieSV.get(g.player_id) : null;
+  const gAdj=sv!=null ? (sv-LEAGUE_SV)*-4 : 0;
+  const venue=isHome?0.05:-0.05;
+  const rest=restFactor(tm,S.day);
+  const proj=base*(1+gAdj)*(1+venue)*(1+rest.adj);
+  return {tm,opp,proj,base,gf:A.gf,oppGA:B.ga,gp:A.gp,goalie:g,sv,gAdj,venue,rest,green:proj>=GREEN_LIGHT};
+}
+
+/* ============ LOGS ============ */
+const LOG_COLS='player_id,game_id,season,game_date,team,opponent,home_road,goals,assists,points,sog,shot_attempts,shots_against,goals_against';
+async function loadLogs(ids, onlyGoalies=false){
+  const need=ids.filter(id=>!S.logCache.has(id));
+  const chunks=[]; for(let i=0;i<need.length;i+=12) chunks.push(need.slice(i,i+12));
+  let idx=0;
+  async function worker(){
+    while(idx<chunks.length){
+      const c=chunks[idx++];
+      const extra=onlyGoalies?'&shots_against=not.is.null':'';
+      const rows=await sbAll(`player_game_logs?player_id=in.(${c.join(',')})&game_type=eq.2&select=${LOG_COLS}&order=game_date.desc${extra}`);
+      const by={}; c.forEach(id=>by[id]=[]);
+      rows.forEach(r=>{ (by[r.player_id]||(by[r.player_id]=[])).push(r); });
+      c.forEach(id=>S.logCache.set(id,by[id]));
+    }
+  }
+  await Promise.all([worker(),worker(),worker(),worker()]);
+}
+async function loadGoalieSV(){
+  const ids=[...new Set(S.lineups.filter(l=>l.slot==='goalie'&&l.player_id).map(l=>l.player_id))];
+  if(!ids.length) return;
+  await loadLogs(ids,true);
+  ids.forEach(id=>{
+    const rows=(S.logCache.get(id)||[]).filter(r=>r.shots_against!=null);
+    let sa=0, ga=0;
+    rows.forEach(r=>{ sa+=r.shots_against; ga+=r.goals_against||0; });
+    // shrink toward league average so a tiny sample can't swing the number
+    const K=400;
+    S.goalieSV.set(id, ((sa-ga)+LEAGUE_SV*K)/(sa+K));
+  });
+}
+
+/* ============ DATA LOAD ============ */
+async function loadCore(){
+  $('updated').textContent='Loading…';
+  const [games,players]=await Promise.all([
+    sbAll(`games?season=in.(${PREV},${CUR})&game_type=eq.2&select=id,season,game_date,start_time_utc,away,home,away_score,home_score,game_state,last_period_type&order=game_date.asc`),
+    sbAll(`players?select=id,name,team,number,pos&order=id.asc`)
+  ]);
+  S.games=games;
+  S.finals=games.filter(g=>g.away_score!=null && g.home_score!=null && ['FINAL','OFF'].includes(g.game_state));
+  S.players=new Map(players.map(p=>[p.id,p]));
+  buildTeamStats();
+}
+async function loadDay(){
+  S.topRows=null;
+  S.lineups=await sbAll(`daily_lineups?lineup_date=eq.${S.day}&select=*&order=team.asc,list_order.asc`);
+  const t=S.lineups.map(l=>l.updated_at).sort().pop();
+  S.updatedAt=t||null;
+  await loadGoalieSV();
+}
+function dayGames(){ return S.games.filter(g=>g.game_date===S.day); }
+function setUpdated(){
+  const el=$('updated');
+  if(S.updatedAt){
+    const d=new Date(S.updatedAt);
+    el.textContent='Lineups updated '+d.toLocaleString('en-US',{month:'short',day:'numeric',hour:'numeric',minute:'2-digit',timeZone:'America/New_York'})+' ET';
+  } else el.textContent='No lineups for this day yet';
+}
+
+/* ============ VIEWS ============ */
+function setView(v){
+  S.view=v;
+  ['Teams','Lineups','Top'].forEach(n=>$('b'+n).classList.toggle('active',(n.toLowerCase()===v)));
+  $('teamPickWrap').style.display = v==='lineups' ? 'block':'none';
+  render();
+}
+async function render(){
+  $('msg').innerHTML='';
+  try{
+    if(S.view==='teams') renderTeams();
+    else if(S.view==='lineups') renderLineups();
+    else await renderTop();
+  }catch(e){ $('msg').innerHTML=`<div class="err">${esc(e.message)}</div>`; }
+}
+
+function renderTeams(){
+  const gs=dayGames();
+  if(!gs.length){ $('view').innerHTML='<div class="empty">No games on this day.</div>'; return; }
+  $('view').innerHTML=gs.map(g=>{
+    const a=projectTeam(g.away,g.home,false), h=projectTeam(g.home,g.away,true);
+    const done=g.away_score!=null&&g.home_score!=null&&['FINAL','OFF'].includes(g.game_state);
+    const side=(p)=>`<div class="side"><div class="tabbr">${esc(p.tm)}</div><div class="tproj" style="color:${p.green?'var(--green)':'var(--text)'}">${p.proj.toFixed(2)}</div><span class="chip ${p.green?'go':'no'}">${p.green?'GREEN LIGHT':'NO PLAY'}</span></div>`;
+    const det=(p)=>`<div style="margin-bottom:8px;"><b>${esc(p.tm)}</b><table>
+      <tr><td class="muted">Goals for (blended)</td><td>${p.gf.toFixed(2)}</td></tr>
+      <tr><td class="muted">${esc(p.opp)} goals against (blended)</td><td>${p.oppGA.toFixed(2)}</td></tr>
+      <tr><td class="muted">Base (60/40)</td><td>${p.base.toFixed(2)}</td></tr>
+      <tr><td class="muted">${esc(p.opp)} goalie</td><td>${p.goalie?esc(p.goalie.player_name)+(p.sv!=null?' · '+p.sv.toFixed(3):' · no data'):'Not listed yet'}</td></tr>
+      <tr><td class="muted">Goalie adjust</td><td>${(p.gAdj*100>=0?'+':'')+(p.gAdj*100).toFixed(1)}%</td></tr>
+      <tr><td class="muted">Venue</td><td>${p.venue>0?'Home (+5%)':'Away (−5%)'}</td></tr>
+      <tr><td class="muted">Rest</td><td>${esc(p.rest.label)}</td></tr>
+      <tr><td class="muted">Games played this season</td><td>${p.gp}</td></tr></table></div>`;
+    return `<div class="card game-card" data-g="${g.id}">
+      <div class="game-head"><span>${fmtTime(g.start_time_utc)}</span><span>${done?`Final ${g.away_score}-${g.home_score}`:esc(g.game_state||'')}</span></div>
+      <div class="matchup">${side(a)}<div class="at">@</div>${side(h)}</div>
+      <div class="detail">${det(a)}${det(h)}<div class="muted" style="font-size:11px;">Last season's rate counts as ${PRIOR_GAMES} games, then this season takes over. Green light at ${GREEN_LIGHT} projected goals.</div></div>
+    </div>`;
+  }).join('');
+}
+
+function jerseyCard(l){
+  const p=S.players.get(l.player_id)||{};
+  const last=(l.player_name||'').split(' ').slice(-1)[0];
+  const off=l.status!=='projected';
+  return `<button class="jersey-card ${off?'dim':''}" data-pid="${l.player_id||''}">
+    <div class="jersey-svg">${jerseySVG(teamColor(l.team),stripeColor(l.team),p.number,last)}</div>
+    <div class="jname">${esc(l.player_name)}</div>
+    ${off?`<div class="jstat" style="color:var(--red)">${esc(l.status.toUpperCase())}</div>`:''}
+    ${l.slot==='goalie'&&l.confirmed_starter?'<div class="jstat" style="color:var(--green)">STARTER</div>':''}
+  </button>`;
+}
+function renderLineups(){
+  const teams=[...new Set(S.lineups.map(l=>l.team))].sort();
+  const sel=$('teamPick');
+  if(!teams.length){ sel.innerHTML=''; $('view').innerHTML='<div class="empty">No lineups posted for this day yet. They refresh through the day.</div>'; return; }
+  if(!S.team||!teams.includes(S.team)) S.team=teams[0];
+  sel.innerHTML=teams.map(t=>`<option ${t===S.team?'selected':''}>${t}</option>`).join('');
+  const rows=S.lineups.filter(l=>l.team===S.team);
+  const grp=(title,list)=>list.length?`<div class="section-label">${title}</div><div class="jersey-grid">${list.map(jerseyCard).join('')}</div>`:'';
+  const proj=rows.filter(l=>l.status==='projected');
+  const out=rows.filter(l=>l.status!=='projected');
+  const lines=[1,2,3,4].map(n=>grp(`LINE ${n}`,proj.filter(l=>l.slot==='line'&&l.slot_number===n))).join('');
+  const pairs=[1,2,3].map(n=>grp(`PAIR ${n}`,proj.filter(l=>l.slot==='pair'&&l.slot_number===n))).join('');
+  const gl=grp('GOALIES',proj.filter(l=>l.slot==='goalie'));
+  const other=grp('SCRATCHED / INJURED',out);
+  const g=dayGames().find(x=>x.away===S.team||x.home===S.team);
+  const head=g?`<div class="muted small" style="margin-bottom:4px;">${esc(g.away)} @ ${esc(g.home)} · ${fmtTime(g.start_time_utc)}</div>`:'';
+  $('view').innerHTML=head+lines+pairs+gl+other;
+}
+
+/* ---- stats from logs ---- */
+function statVal(r,stat){
+  if(stat==='Saves') return r.shots_against!=null ? r.shots_against-(r.goals_against||0) : null;
+  return r[STATS[stat].col];
+}
+function filterRows(rows, o){
+  let r=rows.slice();
+  if(o.split==='Home') r=r.filter(x=>x.home_road==='H');
+  if(o.split==='Away') r=r.filter(x=>x.home_road==='R');
+  if(o.vs) r=r.filter(x=>x.opponent===o.vs);
+  if(o.vs) return r;                       // head-to-head ignores the timeframe: every meeting we have
+  if(o.window==='Season') r=r.filter(x=>x.season===CUR);
+  else if(o.window!=='All-time') r=r.slice(0,parseInt(o.window.split(' ')[1],10));
+  return r;
+}
+function hitStats(rows, stat, line){
+  const v=rows.map(r=>statVal(r,stat)).filter(x=>x!=null);
+  const n=v.length, over=v.filter(x=>x>line).length;
+  return {n, over, under:n-over, pct:n?over/n:0, avg:n?v.reduce((a,b)=>a+b,0)/n:0};
+}
+
+/* ---- Top Plays ---- */
+async function renderTop(){
+  const gs=dayGames();
+  if(!gs.length){ $('view').innerHTML='<div class="empty">No games on this day.</div>'; return; }
+  if(!S.lineups.length){ $('view').innerHTML='<div class="empty">Lineups for this day aren\'t posted yet.</div>'; return; }
+  $('view').innerHTML='<div class="empty">Crunching real game logs…</div>';
+  const green=[];
+  gs.forEach(g=>{
+    const a=projectTeam(g.away,g.home,false), h=projectTeam(g.home,g.away,true);
+    if(a.green) green.push(a); if(h.green) green.push(h);
+  });
+  if(!green.length){ $('view').innerHTML='<div class="empty">No team clears the green light today, so no player props qualify.</div>'; return; }
+  if(!S.topRows){
+    const skaters=S.lineups.filter(l=>green.some(p=>p.tm===l.team) && l.status==='projected' && (l.slot==='line'||l.slot==='pair') && l.player_id);
+    await loadLogs([...new Set(skaters.map(s=>s.player_id))]);
+    const rows=[];
+    skaters.forEach(s=>{
+      const logs=S.logCache.get(s.player_id)||[];
+      ['Points','Goals','Assists','Shots'].forEach(stat=>{
+        const line=STATS[stat].line;
+        const l20=hitStats(logs.slice(0,20),stat,line), l10=hitStats(logs.slice(0,10),stat,line);
+        if(l20.n<10) return;
+        rows.push({s,stat,line,l20,l10,tm:s.team});
+      });
+    });
+    S.topRows=rows;
+  }
+  const statSel=S.topStat||'best';
+  let rows=S.topRows.filter(r=>r.l20.pct>=MIN_PLAY_HIT && (statSel==='best'||r.stat===statSel));
+  if(statSel==='best'){          // one best prop per player
+    const best=new Map();
+    rows.forEach(r=>{ const k=r.s.player_id; if(!best.has(k)||r.l20.pct>best.get(k).l20.pct) best.set(k,r); });
+    rows=[...best.values()];
+  }
+  rows.sort((a,b)=>b.l20.pct-a.l20.pct || b.l10.pct-a.l10.pct);
+  rows=rows.slice(0,40);
+  const filter=`<div class="row" style="grid-template-columns:1fr;"><div><label>Stat</label><select id="topStat">${['best','Points','Goals','Assists','Shots'].map(x=>`<option value="${x}" ${x===statSel?'selected':''}>${x==='best'?'Best prop (auto)':x}</option>`).join('')}</select></div></div>`;
+  const note=`<div class="muted small" style="margin-bottom:10px;">Only players on green-lit teams (${green.map(g=>g.tm).join(', ')}). Ranked by last-20 hit rate; ${Math.round(MIN_PLAY_HIT*100)}%+ only (break-even of −160). Fair price is what the hit rate is worth — compare it to your book.</div>`;
+  const list=rows.length?rows.map(r=>{
+    const fo=fairOdds(r.l20.pct);
+    return `<div class="prow" data-pid="${r.s.player_id}" data-stat="${r.stat}">
+      <div><div class="pname">${esc(r.s.player_name)}</div><div class="pmeta">${esc(r.tm)} · ${r.stat} o${r.line} · L10 ${r.l10.over}/${r.l10.n}</div></div>
+      <div><div class="pbig" style="color:var(--green)">${Math.round(r.l20.pct*100)}%</div><div class="psub">${r.l20.over}/${r.l20.n} · fair ${fmtOdds(fo)}</div></div></div>`;
+  }).join(''):'<div class="empty">Nothing clears the bar today.</div>';
+  $('view').innerHTML=filter+note+list;
+  $('topStat').onchange=e=>{ S.topStat=e.target.value; renderTop(); };
+}
+
+/* ============ PLAYER MODAL ============ */
+const M={};
+async function openPlayer(pid, stat){
+  const p=S.players.get(pid)||{id:pid,name:'Player',team:'',pos:''};
+  M.p=p; M.isG=p.pos==='G';
+  M.stat=stat||(M.isG?'Saves':'Points'); M.window='Last 10'; M.split='Home+Away'; M.vs='';
+  M.line=M.isG?24.5:STATS[M.stat].line; M.odds='';
+  $('overlay').classList.add('open');
+  $('pcard').innerHTML='<div class="empty">Loading game logs…</div>';
+  try{
+    if(!S.logCache.has(pid)) await loadLogs([pid]);
+    M.logs=S.logCache.get(pid)||[];
+    // suggest today's opponent for head-to-head
+    const g=dayGames().find(x=>x.away===p.team||x.home===p.team);
+    M.todayOpp=g?(g.away===p.team?g.home:g.away):'';
+    drawPlayer();
+  }catch(e){ $('pcard').innerHTML=`<div class="err">${esc(e.message)}</div><button class="close" onclick="closePlayer()">×</button>`; }
+}
+function closePlayer(){ $('overlay').classList.remove('open'); }
+function drawPlayer(){
+  const stats=M.isG?['Saves']:Object.keys(STATS);
+  const rows=filterRows(M.logs,M);
+  const h=hitStats(rows,M.stat,M.line);
+  const opps=[...new Set(M.logs.map(r=>r.opponent))].sort();
+  const vals=rows.map(r=>statVal(r,M.stat)).filter(x=>x!=null);
+  // bars (oldest -> newest)
+  const bars=vals.slice().reverse();
+  const mx=Math.max(M.line*2,...bars,1);
+  const bw=Math.min(26,Math.floor(440/Math.max(bars.length,1)));
+  const W=Math.max(bars.length*(bw+4),40), H=110;
+  const ly=H-(M.line/mx)*(H-14);
+  const svg=bars.length?`<svg viewBox="0 0 ${W} ${H+16}" style="width:100%;height:${H+16}px;" preserveAspectRatio="xMinYMin meet">
+    ${bars.map((v,i)=>{const bh=Math.max(2,(v/mx)*(H-14)); return `<rect x="${i*(bw+4)}" y="${H-bh}" width="${bw}" height="${bh}" rx="2" fill="${v>M.line?'#2FBF71':'#E5484D'}"/><text x="${i*(bw+4)+bw/2}" y="${H-bh-3}" text-anchor="middle" font-size="9" fill="#E8ECF1">${v}</text>`;}).join('')}
+    <line x1="0" x2="${W}" y1="${ly}" y2="${ly}" stroke="#D4A017" stroke-dasharray="4 3"/></svg>`:'';
+  const gamesById=new Map(S.games.map(g=>[g.id,g]));
+  const glRows=rows.slice(0,25).map(r=>{
+    const g=gamesById.get(r.game_id); let res='';
+    if(g&&g.away_score!=null){ const mine=r.team===g.home?g.home_score:g.away_score, th=r.team===g.home?g.away_score:g.home_score; res=(mine>th?'W ':'L ')+mine+'-'+th; }
+    const v=statVal(r,M.stat);
+    return `<tr><td>${fmtDate(r.game_date)}</td><td>${r.home_road==='H'?'vs':'@'} ${esc(r.opponent)}</td><td>${res}</td><td style="text-align:right;font-weight:700;color:${v==null?'var(--muted)':(v>M.line?'var(--green)':'var(--red)')}">${v==null?'—':v}</td></tr>`;
+  }).join('');
+  const odds=parseFloat(M.odds);
+  let edge='';
+  if(!isNaN(odds)){
+    const e=(h.pct-impliedProb(odds))*100;
+    edge=`<div style="text-align:right"><div class="pbig" style="color:${e>=0?'var(--green)':'var(--red)'}">${e>=0?'+':''}${e.toFixed(1)}</div><div class="psub">${odds<-160?'Worse than −160 — pass':'edge vs break-even '+(impliedProb(odds)*100).toFixed(1)+'%'}</div></div>`;
+  }
+  const missing=M.stat==='Shot Attempts' && rows.some(r=>r.shot_attempts==null);
+  $('pcard').innerHTML=`
+    <div class="phead"><div><div class="pnm">${esc(M.p.name)}</div><div class="muted small">${esc(M.p.team)} · ${esc(M.p.pos)} · #${esc(M.p.number??'--')}</div></div><button class="close" id="mClose">&times;</button></div>
+    <div class="row3">
+      <div><label>Bet type</label><select id="mStat">${stats.map(s=>`<option ${s===M.stat?'selected':''}>${s}</option>`).join('')}</select></div>
+      <div><label>Timeframe</label><select id="mWin" ${M.vs?'disabled':''}>${['Last 5','Last 10','Last 20','Last 30','Season','All-time'].map(s=>`<option ${s===M.window?'selected':''}>${s}</option>`).join('')}</select></div>
+      <div><label>Splits</label><select id="mSplit">${['Home+Away','Home','Away'].map(s=>`<option ${s===M.split?'selected':''}>${s}</option>`).join('')}</select></div>
+    </div>
+    <div style="margin-bottom:10px;"><label>Head to head ${M.todayOpp?`(today: ${esc(M.todayOpp)})`:''}</label>
+      <select id="mVs"><option value="">None</option>${opps.map(o=>`<option ${o===M.vs?'selected':''}>${o}</option>`).join('')}</select></div>
+    <div class="hit">
+      <div><div class="hpct" style="color:var(--green)">${h.n?Math.round(h.pct*100)+'%':'--'}</div><div class="hlab">Over ${h.over}/${h.n}</div></div>
+      <div><div class="hpct" style="color:var(--blue)">${h.n?Math.round((1-h.pct)*100)+'%':'--'}</div><div class="hlab">Under ${h.under}/${h.n}</div></div>
+      <div><div class="hpct">${h.n?h.avg.toFixed(2):'--'}</div><div class="hlab">Avg / game</div></div>
+    </div>
+    ${h.n?svg:'<div class="empty">No games match this filter.</div>'}
+    <div class="lineRow"><label style="margin:0;">Line</label><div style="display:flex;align-items:center;gap:8px;"><button class="step" id="mMinus">−</button><div class="lineVal">${M.line}</div><button class="step" id="mPlus">+</button></div></div>
+    <div class="edgebox"><div><label style="margin:0 0 4px;">Your book's odds</label><input id="mOdds" type="number" inputmode="numeric" placeholder="-134" value="${esc(M.odds)}"></div>${edge}</div>
+    ${missing?'<div class="muted small" style="margin-top:8px;">Some older games have no shot-attempt data yet — they\'re skipped.</div>':''}
+    <div style="font-weight:700;font-size:14px;margin:16px 0 2px;">Gamelog</div>
+    <div class="muted small" style="margin-bottom:6px;">${M.vs?`Every ${esc(M.vs)} meeting we have on file (regular season, ${h.n} games)`:'Regular season only'}</div>
+    <div style="overflow-x:auto;"><table class="gl"><thead><tr><th>Date</th><th>Vs</th><th>Result</th><th style="text-align:right">${esc(M.stat)}</th></tr></thead><tbody>${glRows}</tbody></table></div>`;
+  $('mClose').onclick=closePlayer;
+  $('mStat').onchange=e=>{ M.stat=e.target.value; if(!M.isG) M.line=STATS[M.stat].line; drawPlayer(); };
+  $('mWin').onchange=e=>{ M.window=e.target.value; drawPlayer(); };
+  $('mSplit').onchange=e=>{ M.split=e.target.value; drawPlayer(); };
+  $('mVs').onchange=e=>{ M.vs=e.target.value; drawPlayer(); };
+  $('mMinus').onclick=()=>{ M.line=Math.max(0.5,M.line-1); drawPlayer(); };
+  $('mPlus').onclick=()=>{ M.line=M.line+1; drawPlayer(); };
+  $('mOdds').oninput=e=>{ M.odds=e.target.value; const pos=e.target.selectionStart; drawPlayer(); const n=$('mOdds'); n.focus(); try{n.setSelectionRange(pos,pos);}catch(_){} };
+}
+
+/* ============ WIRING ============ */
+document.addEventListener('click',e=>{
+  const gc=e.target.closest('.game-card'); if(gc){ gc.classList.toggle('open'); return; }
+  const j=e.target.closest('.jersey-card'); if(j&&j.dataset.pid){ openPlayer(+j.dataset.pid); return; }
+  const pr=e.target.closest('.prow'); if(pr){ openPlayer(+pr.dataset.pid, pr.dataset.stat); return; }
+});
+$('overlay').addEventListener('click',e=>{ if(e.target.id==='overlay') closePlayer(); });
+$('bTeams').onclick=()=>setView('teams');
+$('bLineups').onclick=()=>setView('lineups');
+$('bTop').onclick=()=>setView('top');
+$('teamPick').onchange=e=>{ S.team=e.target.value; renderLineups(); };
+$('dayPick').onchange=async e=>{ S.day=e.target.value; $('view').innerHTML='<div class="empty">Loading…</div>'; try{ await loadDay(); }catch(err){ $('msg').innerHTML=`<div class="err">${esc(err.message)}</div>`; } setUpdated(); render(); };
+$('reload').onclick=()=>init(true);
+
+async function init(keepDay){
+  $('view').innerHTML='<div class="empty">Loading real NHL data…</div>';
+  try{
+    S.logCache.clear(); S.goalieSV.clear();
+    await loadCore();
+    if(!keepDay||!S.day){
+      let d=etToday();
+      if(!S.games.some(g=>g.game_date===d)){
+        const later=S.games.filter(g=>g.game_date>=d).map(g=>g.game_date).sort()[0];
+        const earlier=S.games.filter(g=>g.game_date<d).map(g=>g.game_date).sort().pop();
+        d=later||earlier||d;
+      }
+      S.day=d;
+    }
+    $('dayPick').value=S.day;
+    await loadDay();
+    setUpdated();
+    render();
+  }catch(e){
+    $('updated').textContent='Offline';
+    $('view').innerHTML=`<div class="err">Couldn't reach the database (${esc(e.message)}). Check your connection and tap Refresh.</div>`;
+  }
+}
+init();
+</script>
+</body>
+</html>
