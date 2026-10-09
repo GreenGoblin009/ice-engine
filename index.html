@@ -141,7 +141,7 @@ const PRICE_FLOOR = -140;       // best available Points/Assists price worse tha
 const MARKET_STAT = {player_points:'Points', player_assists:'Assists', player_goal_scorer_anytime:'Goals', player_shots_on_goal:'Shots'};
 const FLOOR_BY_STAT = {Points:-140, Assists:-140, Goals:-160, Shots:-160};
 const SHRINK_K = 10;           // hit-rate shrink toward the pool rate (in games)
-const MIN_PLAY_HIT = 0.62;      // break-even of -160
+const MIN_PLAY_HIT = 0.583;     // break-even of -140, your worst allowed price for points/assists
 
 const TEAM_COLORS={ANA:'#F47A38',BOS:'#111111',BUF:'#002654',CGY:'#D2001C',CAR:'#CC0000',CHI:'#CF0A2C',COL:'#6F263D',CBJ:'#002654',DAL:'#006847',DET:'#CE1126',EDM:'#FF4C00',FLA:'#C8102E',LAK:'#111111',MIN:'#154734',MTL:'#AF1E2D',NSH:'#FFB81C',NJD:'#CE1126',NYI:'#00539B',NYR:'#0038A8',OTT:'#C52032',PHI:'#F74902',PIT:'#000000',SJS:'#006D75',SEA:'#355464',STL:'#002F87',TBL:'#002868',TOR:'#00205B',UTA:'#71AFE5',VAN:'#00205B',VGK:'#B4975A',WSH:'#C8102E',WPG:'#041E42'};
 const TEAM_STRIPE={BUF:'#FFB81C', CBJ:'#CE1126', TOR:'#FFFFFF', FLA:'#FDBB30', CAR:'#FFFFFF', TBL:'#FFFFFF', BOS:'#FFB81C', DET:'#FFFFFF', MTL:'#FFFFFF', NJD:'#FFFFFF', NYR:'#CE1126', PIT:'#FFB81C', NYI:'#F47D30', PHI:'#FFFFFF', WSH:'#FFFFFF', OTT:'#FFFFFF', COL:'#236192', DAL:'#006847', MIN:'#A6192E', WPG:'#7B303E', UTA:'#69B3E7', NSH:'#FFB81C', STL:'#FCB514', CHI:'#FFFFFF', EDM:'#FF4C00', VGK:'#B4975A', ANA:'#F47A38', CGY:'#D2001C', LAK:'#A2AAAD', SJS:'#EA7200', SEA:'#99D9D9', VAN:'#00205B'};
@@ -187,6 +187,124 @@ const S = {
   team:null, logCache:new Map(), goalieSV:new Map(), updatedAt:null,
   teamStats:null, topRows:null
 };
+
+
+/* ============ FITTED PLAYER MODELS (Assists o0.5, Shots o2.5) ============ */
+// From backtest_player_props_v2.py. They use only this season's games and were
+// tested on players with 10+ games, so until then the board uses the plain
+// season-long hit rate (this season + last).
+// Fitted player-prop models from backtest_player_props_v2.py
+// (logistic regression, 2025-26 skater-games through 2026-01-31).
+const ASSISTS_MODEL = {            // Assists over 0.5
+  intercept: -3.277146,
+  long: 0.527562,                  // logit of the shrunk season hit rate
+  lnToiSeason: -0.161009,          // ln(average minutes, season)
+  lnToiLast10: 1.140031            // ln(average minutes, last 10 games)
+};
+const SHOTS_MODEL = {              // Shots on goal over 2.5
+  intercept: -1.248728,
+  long: 0.605839,
+  lnToiSeason: -0.592917,
+  lnToiLast10: 0.976668,
+  lnOppGa: 0.037397,               // ln(opponent blended GA / league goals per team-game)
+  lnOppAtt: 2.257895,              // ln(opponent shot attempts allowed per game / league average)
+  decay: 0.221963                  // logit of the decay-weighted hit rate (0.80 per game)
+};
+const PROP_SHRINK = 10;            // games of "what his average implies" mixed into the season rate
+const DECAY_SHRINK = 5;            // same, for the decay-weighted rate
+const DECAY = 0.80;                // each game further back counts 0.80 as much
+const ATTEMPT_SHRINK = 10;         // games of league-average attempts mixed into the opponent's rate
+
+function toiMinutes(toi) {         // "18:34" -> 18.5667
+  const [m, s] = String(toi).split(':').map(Number);
+  return m + s / 60;
+}
+function logit(p) {
+  p = Math.min(Math.max(p, 1e-4), 1 - 1e-4);
+  return Math.log(p / (1 - p));
+}
+function poissonAtLeast(mean, need) {   // P(X >= need), X ~ Poisson(mean)
+  let below = 0, term = Math.exp(-mean);
+  for (let i = 0; i < need; i++) { below += term; term *= mean / (i + 1); }
+  return 1 - below;
+}
+
+// stats: the stat in each of the player's earlier games THIS season, oldest first.
+// need: 1 for assists over 0.5, 3 for shots over 2.5.
+// leagueMean: league average of the stat per skater-game, season to date.
+function hitRates(stats, need, leagueMean) {
+  const n = stats.length;
+  const sum = stats.reduce((a, b) => a + b, 0);
+  const hits = stats.filter(v => v >= need).length;
+  // What his (shrunk) per-game average implies his hit rate should be.
+  const implied = poissonAtLeast((sum + leagueMean * PROP_SHRINK) / (n + PROP_SHRINK), need);
+  const longRate = (hits + implied * PROP_SHRINK) / (n + PROP_SHRINK);
+  // Decay-weighted: newest game weight 1, the one before 0.80, then 0.64, ...
+  let wHits = 0, w = 0;
+  for (const v of stats) { wHits = wHits * DECAY + (v >= need ? 1 : 0); w = w * DECAY + 1; }
+  const decayRate = (wHits + implied * DECAY_SHRINK) / (w + DECAY_SHRINK);
+  return { longRate, decayRate };
+}
+
+// toi: "MM:SS" strings for the same earlier games, oldest first (needs 10+).
+function toiInputs(toi) {
+  const mins = toi.map(toiMinutes);
+  const season = mins.reduce((a, b) => a + b, 0) / mins.length;
+  const last10 = mins.slice(-10).reduce((a, b) => a + b, 0) / 10;
+  return { lnSeason: Math.log(Math.max(1, season)), lnLast10: Math.log(Math.max(1, last10)) };
+}
+
+// Chance of 1+ assists. leagueAssists: league assists per skater-game, season to date.
+function assistsOverChance(assists, toi, leagueAssists) {
+  const m = ASSISTS_MODEL, r = hitRates(assists, 1, leagueAssists), t = toiInputs(toi);
+  const z = m.intercept + m.long * logit(r.longRate) + m.lnToiSeason * t.lnSeason + m.lnToiLast10 * t.lnLast10;
+  return 1 / (1 + Math.exp(-z));
+}
+
+// Chance of 3+ shots on goal. leagueSog: league shots per skater-game, season to date.
+// opp = {
+//   gaBlend:         opponent blended goals against per game (the board's blended(opp).ga)
+//   leagueGoals:     league goals per team per game, season to date, shootout goal removed
+//   attemptsAllowed: opponent shot attempts allowed per game, this season (team_attempts_allowed view)
+//   games:           how many games that average covers
+//   leagueAttempts:  league average shot attempts per team per game, this season
+// }
+function shotsOverChance(sog, toi, leagueSog, opp) {
+  const m = SHOTS_MODEL, r = hitRates(sog, 3, leagueSog), t = toiInputs(toi);
+  const oppAtt = (opp.attemptsAllowed * opp.games + opp.leagueAttempts * ATTEMPT_SHRINK) / (opp.games + ATTEMPT_SHRINK);
+  const z = m.intercept + m.long * logit(r.longRate) + m.lnToiSeason * t.lnSeason + m.lnToiLast10 * t.lnLast10 +
+            m.lnOppGa * Math.log(opp.gaBlend / opp.leagueGoals) +
+            m.lnOppAtt * Math.log(oppAtt / opp.leagueAttempts) +
+            m.decay * logit(r.decayRate);
+  return 1 / (1 + Math.exp(-z));
+}
+
+const LEAGUE_ASSISTS=0.3057, LEAGUE_SOG=1.6104;   // full 2025-26 per skater-game, used as the league mean
+const MODEL_MIN_GAMES=10;
+S.attempts=null;
+async function loadAttempts(){
+  if(S.attempts) return;
+  try{ S.attempts=await sb(`team_attempts_allowed?season=eq.${CUR}&select=team,games,attempts_allowed_per_game`); }catch(e){ S.attempts=[]; }
+}
+function leagueAttempts(){
+  let g=0,a=0; (S.attempts||[]).forEach(r=>{ if(r.attempts_allowed_per_game!=null){ g+=r.games; a+=r.games*r.attempts_allowed_per_game; } });
+  return g>=20?a/g:60;
+}
+// Returns the model's chance (0-1) or null when the model can't be used yet.
+function modelChance(pid, stat, line, opp){
+  if(!((stat==='Assists'&&line===0.5)||(stat==='Shots'&&line===2.5))) return null;
+  const logs=(S.logCache.get(pid)||[]).filter(r=>r.season===CUR&&r.toi).slice().reverse();   // oldest first, this season
+  if(logs.length<MODEL_MIN_GAMES) return null;
+  const toi=logs.map(r=>r.toi);
+  try{
+    if(stat==='Assists') return assistsOverChance(logs.map(r=>r.assists||0),toi,LEAGUE_ASSISTS);
+    const a=(S.attempts||[]).find(r=>r.team===opp);
+    const la=leagueAttempts();
+    const rt=rates(opp,S.day);
+    const att=a&&a.attempts_allowed_per_game!=null?+a.attempts_allowed_per_game:la, gm=a&&a.attempts_allowed_per_game!=null?a.games:0;
+    return shotsOverChance(logs.map(r=>r.sog||0),toi,LEAGUE_SOG,{gaBlend:rt.ga,leagueGoals:leagueAvg(S.day),attemptsAllowed:att,games:gm,leagueAttempts:la});
+  }catch(e){ return null; }
+}
 
 /* ============ JERSEY ============ */
 function jerseySVG(color,stripe,number,name){
@@ -278,7 +396,7 @@ function projectTeam(tm, opp, isHome){
 }
 
 /* ============ LOGS ============ */
-const LOG_COLS='player_id,game_id,season,game_date,team,opponent,home_road,goals,assists,points,sog,shot_attempts,shots_against,goals_against';
+const LOG_COLS='player_id,game_id,season,game_date,team,opponent,home_road,goals,assists,points,sog,shot_attempts,shots_against,goals_against,toi';
 async function loadLogs(ids, onlyGoalies=false){
   const need=ids.filter(id=>!S.logCache.has(id));
   const chunks=[]; for(let i=0;i<need.length;i+=12) chunks.push(need.slice(i,i+12));
@@ -447,6 +565,7 @@ async function renderTop(){
     if(a.green) green.push(a); if(h.green) green.push(h);
   });
   if(!green.length){ $('view').innerHTML='<div class="empty">No team clears the green light today, so no player props qualify.</div>'; return; }
+  await loadAttempts();
   if(!S.topRows){
     const skaters=S.lineups.filter(l=>green.some(p=>p.tm===l.team) && l.status==='projected' && (l.slot==='line'||l.slot==='pair') && l.player_id);
     await loadLogs([...new Set(skaters.map(s=>s.player_id))]);
@@ -462,7 +581,11 @@ async function renderTop(){
     });
     const pool={};
     ['Points','Goals','Assists','Shots'].forEach(st=>{ const r=rows.filter(x=>x.stat===st); const o=r.reduce((a,x)=>a+x.all.over,0), n=r.reduce((a,x)=>a+x.all.n,0); pool[st]=n?o/n:0.3; });
-    rows.forEach(r=>{ r.rate=(r.all.over+SHRINK_K*pool[r.stat])/(r.all.n+SHRINK_K); });
+    rows.forEach(r=>{
+      r.rate=(r.all.over+SHRINK_K*pool[r.stat])/(r.all.n+SHRINK_K);
+      const tp=green.find(x=>x.tm===r.tm), mc=modelChance(r.s.player_id,r.stat,r.line,tp?tp.opp:'');
+      if(mc!=null){ r.rate=mc; r.model=true; }
+    });
     S.topRows=rows;
   }
   const statSel=S.topStat||'best';
@@ -484,7 +607,8 @@ async function renderTop(){
     const logs=S.logCache.get(gp.pid)||[];
     const all=hitStats(logs,gp.stat,gp.line), l10=hitStats(logs.slice(0,10),gp.stat,gp.line);
     if(all.n<15) return;
-    const rate=(all.over+SHRINK_K*poolFor(gp.stat,gp.line))/(all.n+SHRINK_K);
+    let rate=(all.over+SHRINK_K*poolFor(gp.stat,gp.line))/(all.n+SHRINK_K), model=false;
+    { const lt=lineupBy.get(gp.pid), tpp=lt?green.find(x=>x.tm===lt.team):null, mc=modelChance(gp.pid,gp.stat,gp.line,tpp?tpp.opp:''); if(mc!=null){ rate=mc; model=true; } }
     const sorted=gp.prices.slice().sort((x,y)=>x.price-y.price);
     const ps=sorted.map(x=>x.price), bestBook=sorted[sorted.length-1].book;
     const best=ps[ps.length-1], worst=ps[0], mid=ps[Math.floor(ps.length/2)];
@@ -493,7 +617,7 @@ async function renderTop(){
     if(edge<=0) return;
     const l=lineupBy.get(gp.pid);
     const tp=green.find(x=>x.tm===l.team);
-    priced.push({s:l,stat:gp.stat,line:gp.line,all,l10,rate,best,worst,mid,edge,n:ps.length,tm:l.team,bestBook,teamProj:tp?tp.proj:null,opp:tp?tp.opp:''});
+    priced.push({s:l,stat:gp.stat,line:gp.line,all,l10,rate,model,best,worst,mid,edge,n:ps.length,tm:l.team,bestBook,teamProj:tp?tp.proj:null,opp:tp?tp.opp:''});
   });
   priced=priced.filter(r=>statSel==='best'||r.stat===statSel);
   const bestBy=new Map(); priced.forEach(r=>{ const k=r.s.player_id+(statSel==='best'?'':r.stat); if(!bestBy.has(k)||r.edge>bestBy.get(k).edge) bestBy.set(k,r); });
@@ -502,7 +626,7 @@ async function renderTop(){
   const bookShort=b=>({DraftKings:'DK',FanDuel:'FD',BetMGM:'MGM','BetOnline.ag':'BetOnline',Bovada:'Bovada'}[b]||b);
   const priceTxt=r=>`<b style="color:var(--text)">Best ${fmtOdds(r.best)}</b> ${esc(bookShort(r.bestBook))}`;
   const pricedHTML=priced.map(r=>`<div class="prow" data-pid="${r.s.player_id}" data-stat="${r.stat}" data-line="${r.line}" data-odds="${r.mid}">
-      <div><div class="pname">${esc(r.s.player_name)}</div><div class="pmeta">${esc(r.tm)} · ${r.stat} o${r.line} · ${priceTxt(r)}</div><div class="pmeta">Hit rate ${Math.round(r.rate*100)}% (${r.all.over}/${r.all.n}) · fair ${fmtOdds(fairOdds(r.rate))}${r.best===r.worst?'':` · worst book ${fmtOdds(r.worst)}`}</div><div class="pmeta">Team projection ${r.teamProj!=null?r.teamProj.toFixed(2)+' goals vs '+esc(r.opp):'—'}</div></div>
+      <div><div class="pname">${esc(r.s.player_name)}</div><div class="pmeta">${esc(r.tm)} · ${r.stat} o${r.line} · ${priceTxt(r)}</div><div class="pmeta">${r.model?'Model chance':'Hit rate'} ${Math.round(r.rate*100)}% (${r.all.over}/${r.all.n}) · fair ${fmtOdds(fairOdds(r.rate))}${r.best===r.worst?'':` · worst book ${fmtOdds(r.worst)}`}</div><div class="pmeta">Team projection ${r.teamProj!=null?r.teamProj.toFixed(2)+' goals vs '+esc(r.opp):'—'}</div></div>
       <div><div class="pbig" style="color:var(--green)">+${r.edge.toFixed(1)}</div><div class="psub">EDGE</div></div></div>`).join('');
   const priceNote=(S.odds&&S.odds.length)?`Prices as of ${new Date(oddsTime).toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit',timeZone:'America/New_York'})} ET. Shows the best book price; edge uses the middle price across books. Points and assists worse than -140 (goals, -160) are hidden.`:'Prices for Points and Assists load once a day around 4 PM ET. None are in yet.';
 
@@ -521,13 +645,13 @@ async function renderTop(){
   const list=rows.length?rows.map(r=>{
     const fo=fairOdds(r.rate);
     return `<div class="prow" data-pid="${r.s.player_id}" data-stat="${r.stat}">
-      <div><div class="pname">${esc(r.s.player_name)}</div><div class="pmeta">${esc(r.tm)} · ${r.stat} o${r.line} · L10 ${r.l10.over}/${r.l10.n}</div></div>
+      <div><div class="pname">${esc(r.s.player_name)}</div><div class="pmeta">${esc(r.tm)} · ${r.stat} o${r.line} · L10 ${r.l10.over}/${r.l10.n}${r.model?' · MODEL':''}</div></div>
       <div><div class="pbig" style="color:var(--green)">${Math.round(r.rate*100)}%</div><div class="psub">${r.all.over}/${r.all.n} · fair ${fmtOdds(fo)}</div></div></div>`;
   }).join(''):'<div class="empty">Nothing else clears the bar today.</div>';
   const hdr=(t,sub)=>`<div class="section-label" style="margin:14px 0 6px;">${t}</div>${sub?`<div class="muted small" style="margin-bottom:8px;">${sub}</div>`:''}`;
   $('view').innerHTML=filter+note+
     (priced.length?hdr('PRICED PLAYS',priceNote)+pricedHTML:((S.odds&&S.odds.length)?hdr('PRICED PLAYS',priceNote)+'<div class="empty">No priced play beats its break-even today.</div>':hdr('PRICED PLAYS',priceNote)))+
-    hdr('HIT RATE ONLY',plusMoney?`${statSel} pay plus money, so there's no 62% bar here. Ranked by season-long hit rate. Take it only if your book pays better than the fair price.`:`${Math.round(MIN_PLAY_HIT*100)}%+ season-long. Fair price is what the rate is worth — compare it to your book.`)+list;
+    hdr('HIT RATE ONLY',plusMoney?`${statSel} pay plus money, so there's no minimum hit rate here. Ranked by season-long hit rate. Take it only if your book pays better than the fair price.`:`${Math.round(MIN_PLAY_HIT*100)}%+ (break-even of −140). Fair price is what the rate is worth — compare it to your book.`)+list;
   $('topStat').onchange=e=>{ S.topStat=e.target.value; renderTop(); };
 }
 
