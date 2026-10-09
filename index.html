@@ -138,7 +138,8 @@ const PRIOR_GAMES = 15;         // weight (in games) given to last season's rate
 const LEAGUE_AVG = 3.05;
 const LEAGUE_SV = 0.905;
 const PRICE_FLOOR = -140;       // best available Points/Assists price worse than this is hidden
-const MARKET_STAT = {player_points:'Points', player_assists:'Assists'};
+const MARKET_STAT = {player_points:'Points', player_assists:'Assists', player_goal_scorer_anytime:'Goals', player_shots_on_goal:'Shots'};
+const FLOOR_BY_STAT = {Points:-140, Assists:-140, Goals:-160, Shots:-160};
 const SHRINK_K = 10;           // hit-rate shrink toward the pool rate (in games)
 const MIN_PLAY_HIT = 0.62;      // break-even of -160
 
@@ -486,7 +487,7 @@ async function renderTop(){
     const rate=(all.over+SHRINK_K*poolFor(gp.stat,gp.line))/(all.n+SHRINK_K);
     const ps=gp.prices.slice().sort((x,y)=>x-y);
     const best=ps[ps.length-1], worst=ps[0], mid=ps[Math.floor(ps.length/2)];
-    if(best<PRICE_FLOOR) return;
+    if(best<FLOOR_BY_STAT[gp.stat]) return;
     const edge=(rate-impliedProb(mid))*100;
     if(edge<=0) return;
     const l=lineupBy.get(gp.pid);
@@ -500,17 +501,18 @@ async function renderTop(){
   const pricedHTML=priced.map(r=>`<div class="prow" data-pid="${r.s.player_id}" data-stat="${r.stat}" data-line="${r.line}" data-odds="${r.mid}">
       <div><div class="pname">${esc(r.s.player_name)}</div><div class="pmeta">${esc(r.tm)} · ${r.stat} o${r.line} · ${priceTxt(r)}</div><div class="pmeta">Hit rate ${Math.round(r.rate*100)}% (${r.all.over}/${r.all.n}) · fair ${fmtOdds(fairOdds(r.rate))}</div></div>
       <div><div class="pbig" style="color:var(--green)">+${r.edge.toFixed(1)}</div><div class="psub">EDGE</div></div></div>`).join('');
-  const priceNote=(S.odds&&S.odds.length)?`Prices as of ${new Date(oddsTime).toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit',timeZone:'America/New_York'})} ET. Range is best to worst book; edge uses the middle price. Points and assists worse than ${PRICE_FLOOR} are hidden.`:'Prices for Points and Assists load once a day around 4 PM ET. None are in yet.';
+  const priceNote=(S.odds&&S.odds.length)?`Prices as of ${new Date(oddsTime).toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit',timeZone:'America/New_York'})} ET. Range is best to worst book; edge uses the middle price. Points and assists worse than -140 (goals and shots, -160) are hidden.`:'Prices for Points and Assists load once a day around 4 PM ET. None are in yet.';
 
   // ---- hit-rate list (everything else, or no price yet) ----
-  let rows=S.topRows.filter(r=>r.rate>=MIN_PLAY_HIT && (statSel==='best'||r.stat===statSel) && !covered.has(r.s.player_id+'|'+r.stat));
+  const plusMoney=(statSel==='Goals'||statSel==='Shots');
+  let rows=S.topRows.filter(r=>(plusMoney||r.rate>=MIN_PLAY_HIT) && (statSel==='best'?r.stat!=='Goals':r.stat===statSel) && !covered.has(r.s.player_id+'|'+r.stat));
   if(statSel==='best'){          // one best prop per player
     const best=new Map();
     rows.forEach(r=>{ const k=r.s.player_id; if(!best.has(k)||r.rate>best.get(k).rate) best.set(k,r); });
     rows=[...best.values()];
   }
   rows.sort((a,b)=>b.rate-a.rate);
-  rows=rows.slice(0,40);
+  rows=rows.slice(0,plusMoney?25:40);
   const filter=`<div class="row" style="grid-template-columns:1fr;"><div><label>Stat</label><select id="topStat">${['best','Points','Goals','Assists','Shots'].map(x=>`<option value="${x}" ${x===statSel?'selected':''}>${x==='best'?'Best prop (auto)':x}</option>`).join('')}</select></div></div>`;
   const note=`<div class="muted small" style="margin-bottom:10px;">Only players on green-lit teams (${green.map(g=>g.tm).join(', ')}). Ranked by season-long hit rate (this season plus last, the one measure that predicted in testing).</div>`;
   const list=rows.length?rows.map(r=>{
@@ -522,7 +524,7 @@ async function renderTop(){
   const hdr=(t,sub)=>`<div class="section-label" style="margin:14px 0 6px;">${t}</div>${sub?`<div class="muted small" style="margin-bottom:8px;">${sub}</div>`:''}`;
   $('view').innerHTML=filter+note+
     (priced.length?hdr('PRICED PLAYS',priceNote)+pricedHTML:((S.odds&&S.odds.length)?hdr('PRICED PLAYS',priceNote)+'<div class="empty">No priced play beats its break-even today.</div>':hdr('PRICED PLAYS',priceNote)))+
-    hdr('HIT RATE ONLY',`${Math.round(MIN_PLAY_HIT*100)}%+ season-long. Fair price is what the rate is worth — compare it to your book.`)+list;
+    hdr('HIT RATE ONLY',plusMoney?`${statSel} pay plus money, so there's no 62% bar here. Ranked by season-long hit rate. Take it only if your book pays better than the fair price.`:`${Math.round(MIN_PLAY_HIT*100)}%+ season-long. Fair price is what the rate is worth — compare it to your book.`)+list;
   $('topStat').onchange=e=>{ S.topStat=e.target.value; renderTop(); };
 }
 
