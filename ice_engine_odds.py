@@ -10,7 +10,7 @@ WHAT IT DOES, in order:
      credits are left; with fewer than MIN_CREDITS the run stops there.
   2. For each game that hasn't started yet, asks for the MARKETS below from
      US bookmakers — one call per game. This is the part that costs credits:
-     1 per market that comes back, so 2 per game with two markets.
+     1 per market that comes back, so 4 per game with four markets.
   3. Matches each player name to the players table (accents and punctuation
      ignored, the two teams in the game used to settle duplicates) and
      prints the names it couldn't match. Those rows are still saved, with an
@@ -42,10 +42,10 @@ from datetime import date, datetime, timezone
 import ice_engine_daily_pull as engine
 from ice_engine_lineups import find_players, normalize
 
-# Markets to pull. Add more keys here (e.g. "player_shots_on_goal",
-# "player_goal_scorer_anytime"); each one adds 1 credit per game.
+# Markets to pull. Add or remove keys here; each one costs 1 credit per game.
 # Full list: https://the-odds-api.com/sports-odds-data/betting-markets.html
-MARKETS = ["player_points", "player_assists"]
+MARKETS = ["player_points", "player_assists", "player_goal_scorer_anytime", "player_shots_on_goal"]
+YES_NO_SIDES = {"Yes": "Over", "No": "Under"}  # how Yes/No markets are stored
 
 REGIONS = "us"
 MIN_CREDITS = 50      # stop before spending anything once fewer than this are left
@@ -144,15 +144,17 @@ def rows_for_event(event, odds, day, home, away, players, pulled_at, unmatched):
                 player_id = match_player(name, home, away, players)
                 if player_id is None:
                     unmatched.add(f"{name} ({away} at {home})")
-                # Yes/No markets (anytime goal scorer) have no line: "Yes" is over 0.5.
+                # Yes/No markets (anytime goal scorer) come with no line: "Yes" to
+                # scoring is the same bet as over 0.5 goals, and is stored that way.
                 line = o["point"] if o.get("point") is not None else 0.5
+                side = YES_NO_SIDES.get(o["name"], o["name"])
                 row = {
                     "game_date": day.isoformat(), "event_id": event["id"], "home": home, "away": away,
                     "player_name": name, "player_id": player_id, "market": market["key"],
-                    "line": line, "side": o["name"], "book": book["title"],
+                    "line": line, "side": side, "book": book["title"],
                     "price": int(round(o["price"])), "updated_at": pulled_at,
                 }
-                rows[(name, market["key"], line, o["name"], book["title"])] = row  # one per primary key
+                rows[(name, market["key"], line, side, book["title"])] = row  # one per primary key
     return list(rows.values())
 
 
