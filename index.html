@@ -474,7 +474,7 @@ async function renderTop(){
   (S.odds||[]).forEach(o=>{
     const stat=MARKET_STAT[o.market]; if(!stat||!o.player_id||!skaterIds.has(o.player_id)) return;
     const k=o.player_id+'|'+stat+'|'+o.line; if(!groups.has(k)) groups.set(k,{pid:o.player_id,stat,line:+o.line,prices:[]});
-    groups.get(k).prices.push(o.price);
+    groups.get(k).prices.push({price:o.price,book:o.book});
   });
   const lineupBy=new Map(); S.lineups.forEach(l=>{ if(l.player_id) lineupBy.set(l.player_id,l); });
   const covered=new Set(); // player|stat combos that have any price today
@@ -485,23 +485,26 @@ async function renderTop(){
     const all=hitStats(logs,gp.stat,gp.line), l10=hitStats(logs.slice(0,10),gp.stat,gp.line);
     if(all.n<15) return;
     const rate=(all.over+SHRINK_K*poolFor(gp.stat,gp.line))/(all.n+SHRINK_K);
-    const ps=gp.prices.slice().sort((x,y)=>x-y);
+    const sorted=gp.prices.slice().sort((x,y)=>x.price-y.price);
+    const ps=sorted.map(x=>x.price), bestBook=sorted[sorted.length-1].book;
     const best=ps[ps.length-1], worst=ps[0], mid=ps[Math.floor(ps.length/2)];
     if(best<FLOOR_BY_STAT[gp.stat]) return;
     const edge=(rate-impliedProb(mid))*100;
     if(edge<=0) return;
     const l=lineupBy.get(gp.pid);
-    priced.push({s:l,stat:gp.stat,line:gp.line,all,l10,rate,best,worst,mid,edge,n:ps.length,tm:l.team});
+    const tp=green.find(x=>x.tm===l.team);
+    priced.push({s:l,stat:gp.stat,line:gp.line,all,l10,rate,best,worst,mid,edge,n:ps.length,tm:l.team,bestBook,teamProj:tp?tp.proj:null,opp:tp?tp.opp:''});
   });
   priced=priced.filter(r=>statSel==='best'||r.stat===statSel);
   const bestBy=new Map(); priced.forEach(r=>{ const k=r.s.player_id+(statSel==='best'?'':r.stat); if(!bestBy.has(k)||r.edge>bestBy.get(k).edge) bestBy.set(k,r); });
   priced=[...bestBy.values()].sort((a,b)=>b.edge-a.edge).slice(0,30);
   const oddsTime=(S.odds||[]).map(o=>o.updated_at).sort().pop();
-  const priceTxt=r=>r.best===r.worst?fmtOdds(r.best):`${fmtOdds(r.best)} to ${fmtOdds(r.worst)}`;
+  const bookShort=b=>({DraftKings:'DK',FanDuel:'FD',BetMGM:'MGM','BetOnline.ag':'BetOnline',Bovada:'Bovada'}[b]||b);
+  const priceTxt=r=>`<b style="color:var(--text)">Best ${fmtOdds(r.best)}</b> ${esc(bookShort(r.bestBook))}`;
   const pricedHTML=priced.map(r=>`<div class="prow" data-pid="${r.s.player_id}" data-stat="${r.stat}" data-line="${r.line}" data-odds="${r.mid}">
-      <div><div class="pname">${esc(r.s.player_name)}</div><div class="pmeta">${esc(r.tm)} · ${r.stat} o${r.line} · ${priceTxt(r)}</div><div class="pmeta">Hit rate ${Math.round(r.rate*100)}% (${r.all.over}/${r.all.n}) · fair ${fmtOdds(fairOdds(r.rate))}</div></div>
+      <div><div class="pname">${esc(r.s.player_name)}</div><div class="pmeta">${esc(r.tm)} · ${r.stat} o${r.line} · ${priceTxt(r)}</div><div class="pmeta">Hit rate ${Math.round(r.rate*100)}% (${r.all.over}/${r.all.n}) · fair ${fmtOdds(fairOdds(r.rate))}${r.best===r.worst?'':` · worst book ${fmtOdds(r.worst)}`}</div><div class="pmeta">Team projection ${r.teamProj!=null?r.teamProj.toFixed(2)+' goals vs '+esc(r.opp):'—'}</div></div>
       <div><div class="pbig" style="color:var(--green)">+${r.edge.toFixed(1)}</div><div class="psub">EDGE</div></div></div>`).join('');
-  const priceNote=(S.odds&&S.odds.length)?`Prices as of ${new Date(oddsTime).toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit',timeZone:'America/New_York'})} ET. Range is best to worst book; edge uses the middle price. Points and assists worse than -140 (goals and shots, -160) are hidden.`:'Prices for Points and Assists load once a day around 4 PM ET. None are in yet.';
+  const priceNote=(S.odds&&S.odds.length)?`Prices as of ${new Date(oddsTime).toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit',timeZone:'America/New_York'})} ET. Shows the best book price; edge uses the middle price across books. Points and assists worse than -140 (goals, -160) are hidden.`:'Prices for Points and Assists load once a day around 4 PM ET. None are in yet.';
 
   // ---- hit-rate list (everything else, or no price yet) ----
   const plusMoney=(statSel==='Goals'||statSel==='Shots');
