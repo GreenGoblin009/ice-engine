@@ -24,6 +24,8 @@ h1{font-family:'Rajdhani',sans-serif; font-weight:700; font-size:32px; margin:0;
 label{display:block; font-size:12px; color:var(--muted); margin:0 0 5px; font-weight:500;}
 input,select{width:100%; background:var(--card2); border:1px solid var(--line); color:var(--text); padding:10px; border-radius:7px; font-size:15px; font-family:'Inter',sans-serif;}
 input:focus,select:focus{outline:none; border-color:var(--amber);}
+.row>div,.row3>div{min-width:0;}
+input[type=date]{min-width:0; -webkit-appearance:none; appearance:none; min-height:42px; text-align:left;}
 .row{display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:10px;}
 .row3{display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; margin-bottom:10px;}
 .view-toggle{display:flex; gap:6px; margin:12px 0;}
@@ -93,10 +95,8 @@ table.gl td{padding:5px 8px 5px 0; border-top:1px solid var(--line);}
     <div class="updated"><div id="updated">Loading…</div><button class="reload" id="reload">Refresh</button></div>
   </div>
 
-  <div class="row" style="grid-template-columns:1fr 1fr;">
-    <div><label>Game day</label><input type="date" id="dayPick"></div>
-    <div id="teamPickWrap" style="display:none;"><label>Team</label><select id="teamPick"></select></div>
-  </div>
+  <div id="dayLabel" class="muted" style="font-size:14px; margin:0 0 10px;"></div>
+  <div id="teamPickWrap" style="display:none; margin-bottom:4px;"><select id="teamPick"></select></div>
 
   <div class="view-toggle">
     <button id="bTeams" class="active">Teams</button>
@@ -523,7 +523,7 @@ $('bTeams').onclick=()=>setView('teams');
 $('bLineups').onclick=()=>setView('lineups');
 $('bTop').onclick=()=>setView('top');
 $('teamPick').onchange=e=>{ S.team=e.target.value; renderLineups(); };
-$('dayPick').onchange=async e=>{ S.day=e.target.value; $('view').innerHTML='<div class="empty">Loading…</div>'; try{ await loadDay(); }catch(err){ $('msg').innerHTML=`<div class="err">${esc(err.message)}</div>`; } setUpdated(); render(); };
+setInterval(()=>{ if(S.autoDay && etToday()!==S.autoDay) init(false); },300000);
 $('reload').onclick=()=>init(true);
 
 async function init(keepDay){
@@ -540,7 +540,8 @@ async function init(keepDay){
       }
       S.day=d;
     }
-    $('dayPick').value=S.day;
+    S.autoDay=etToday();
+    $('dayLabel').textContent=new Date(S.day+'T12:00:00').toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric'});
     await loadDay();
     setUpdated();
     render();
