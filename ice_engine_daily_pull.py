@@ -87,18 +87,22 @@ SUPABASE_KEY = os.environ.get("SUPABASE_KEY", "").strip()  # pasted secrets ofte
 FAILED_URLS = []
 
 
+def nhl_timezone():
+    """US Eastern, the timezone the NHL's calendar runs on."""
+    try:
+        from zoneinfo import ZoneInfo
+        return ZoneInfo("America/New_York")
+    except Exception:
+        # No tz database (e.g. Windows without the tzdata package) — fixed
+        # EST offset is only wrong for one hour a night during daylight time.
+        return timezone(timedelta(hours=-5))
+
+
 def nhl_today():
     """Today's date on the NHL's calendar (US Eastern), not the machine's.
     GitHub Actions runners are on UTC, where a late-evening run would
     otherwise already be asking for tomorrow's schedule."""
-    try:
-        from zoneinfo import ZoneInfo
-        tz = ZoneInfo("America/New_York")
-    except Exception:
-        # No tz database (e.g. Windows without the tzdata package) — fixed
-        # EST offset is only wrong for one hour a night during daylight time.
-        tz = timezone(timedelta(hours=-5))
-    return datetime.now(tz).date()
+    return datetime.now(nhl_timezone()).date()
 
 
 def season_for(day):
@@ -399,19 +403,25 @@ def supabase_upsert(table, rows, on_conflict, batch_size=500):
     print(f"  {table}: upserted {len(rows)} row(s)")
 
 
+def supabase_select_all(query, page_size=1000):
+    """Every row a query matches. Paged, because Supabase returns at most
+    1,000 rows per request; the query needs an order= so pages don't overlap."""
+    found, offset = [], 0
+    while True:
+        rows = supabase_request("GET", f"{query}&limit={page_size}&offset={offset}") or []
+        found += rows
+        if len(rows) < page_size:
+            return found
+        offset += page_size
+
+
 def supabase_rows_missing_shot_attempts(season, page_size=1000):
     """(player_id, game_id) of every saved gamelog row of a season that has
-    no shot attempts yet. Paged, because Supabase returns at most 1,000 rows
-    per request."""
-    missing, offset = set(), 0
-    while True:
-        rows = supabase_request(
-            "GET", "player_game_logs?select=player_id,game_id&shot_attempts=is.null"
-                   f"&season=eq.{season}&order=player_id,game_id&limit={page_size}&offset={offset}")
-        missing.update((r["player_id"], r["game_id"]) for r in rows or [])
-        if not rows or len(rows) < page_size:
-            return missing
-        offset += page_size
+    no shot attempts yet."""
+    rows = supabase_select_all(
+        "player_game_logs?select=player_id,game_id&shot_attempts=is.null"
+        f"&season=eq.{season}&order=player_id,game_id", page_size)
+    return {(r["player_id"], r["game_id"]) for r in rows}
 
 
 def build_supabase_rows(output):
