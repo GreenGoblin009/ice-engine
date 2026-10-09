@@ -1,0 +1,47 @@
+name: Daily player odds
+
+on:
+  schedule:
+    # Wanted run time: 4:00 PM US Eastern, all year. GitHub cron is UTC-only
+    # and ignores daylight saving, so the time is listed at both UTC hours it
+    # can fall on. The script works out which one is right today and the
+    # other exits within seconds. Keep one time per line: the script reads
+    # the line that fired to know which run it is.
+    - cron: "0 20 * * *"  # 4 PM EDT
+    - cron: "0 21 * * *"  # 4 PM EST
+  workflow_dispatch:      # manual run: no time gate
+
+permissions:
+  contents: read
+
+concurrency:
+  group: daily-odds
+  cancel-in-progress: false
+
+jobs:
+  odds:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Pull player odds and save to Supabase
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          SCHEDULE_CRON: ${{ github.event.schedule }}  # empty on a manual run
+        run: python ice_engine_odds.py --require-supabase --only-at "16:00"
+
+      - name: Keep the raw JSON for debugging
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-odds
+          path: daily_odds.json
+          if-no-files-found: ignore
+          retention-days: 14
