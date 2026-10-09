@@ -45,6 +45,23 @@ input[type=date]{min-width:0; -webkit-appearance:none; appearance:none; min-heig
 .stext{text-align:center;}
 .chrow{display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:10px; font-size:11px; color:var(--muted); text-align:center;}
 .chrow b{color:var(--text);}
+.matchup2{display:grid; grid-template-columns:1fr 1fr; gap:10px;}
+.tcol{background:var(--card2); border:1px solid var(--line); border-radius:10px; padding:12px 10px; text-align:center;}
+.tcol.green{border-color:rgba(47,191,113,.55); box-shadow:0 0 0 1px rgba(47,191,113,.15) inset;}
+.thead{display:flex; align-items:center; justify-content:center; gap:8px; margin-bottom:6px;}
+.thead .tjersey{width:52px;}
+.thead .tabbr{text-align:left; line-height:1;}
+.thead .tlabel{text-align:left; margin-top:3px;}
+.tcol .tproj{font-size:44px; margin:2px 0 0;}
+.tlabel{font-size:9.5px; letter-spacing:.6px; color:var(--muted); font-weight:600;}
+.tcol .chip{margin:8px 0 10px;}
+.odds3{display:grid; grid-template-columns:repeat(3,1fr); gap:6px; border-top:1px solid var(--line); padding-top:10px;}
+.o3v{font-family:'Rajdhani',sans-serif; font-weight:700; font-size:17px;}
+.o3bar{height:4px; background:var(--line); border-radius:2px; margin:3px 0 4px; overflow:hidden;}
+.o3bar i{display:block; height:100%; background:var(--amber); border-radius:2px;}
+.o3k{font-size:9.5px; color:var(--muted);}
+.gtotal{text-align:center; font-size:11.5px; color:var(--muted); margin-top:10px;}
+.gtotal b{color:var(--text);}
 .tjersey{width:66px; flex:none; filter:drop-shadow(0 2px 4px rgba(0,0,0,.35));}
 .tabbr{font-family:'Rajdhani',sans-serif; font-weight:700; font-size:20px;}
 .tproj{font-family:'Rajdhani',sans-serif; font-weight:700; font-size:30px; line-height:1;}
@@ -339,8 +356,15 @@ function renderTeams(){
   $('view').innerHTML=gs.map(g=>{
     const a=projectTeam(g.away,g.home,false), h=projectTeam(g.home,g.away,true);
     const done=g.away_score!=null&&g.home_score!=null&&['FINAL','OFF'].includes(g.game_state);
-    const pc=x=>Math.round(x*100)+'%';
-    const side=(p,home)=>`<div class="side ${home?'homeSide':''}"><div class="tjersey">${jerseySVG(teamColor(p.tm),stripeColor(p.tm),'',p.tm)}</div><div class="stext"><div class="tabbr">${esc(p.tm)}</div><div class="tproj" style="color:${p.green?'var(--green)':'var(--text)'}">${p.proj.toFixed(2)}</div><span class="chip ${p.green?'go':'no'}">${p.green?'GREEN LIGHT':'NO PLAY'}</span></div></div>`;
+    const pc=x=>Math.round(x*100);
+    const actual=(tm)=>done?(tm===g.away?g.away_score:g.home_score):null;
+    const side=(p)=>`<div class="tcol ${p.green?'green':''}">
+      <div class="thead"><div class="tjersey">${jerseySVG(teamColor(p.tm),stripeColor(p.tm),'',p.tm)}</div><div><div class="tabbr">${esc(p.tm)}</div><div class="tlabel">${p.tm===g.home?'HOME':'AWAY'}</div></div></div>
+      <div class="tproj" style="color:${p.green?'var(--green)':'var(--text)'}">${p.proj.toFixed(2)}</div>
+      <div class="tlabel">PROJECTED GOALS${actual(p.tm)!=null?` · SCORED <b style="color:var(--text)">${actual(p.tm)}</b>`:''}</div>
+      <span class="chip ${p.green?'go':'no'}">${p.green?'GREEN LIGHT':'NO PLAY'}</span>
+      <div class="odds3">${[['3+',p.p3],['4+',p.p4],['5+',p.p5]].map(([k,v])=>`<div class="o3"><div class="o3v">${pc(v)}%</div><div class="o3bar"><i style="width:${pc(v)}%"></i></div><div class="o3k">${k} goals</div></div>`).join('')}</div>
+    </div>`;
     const det=(p)=>`<div style="margin-bottom:10px;"><b>${esc(p.tm)}</b><table>
       ${p.contrib.map((c,i)=>`<tr><td class="muted">${esc(c.lab)}</td><td>${i===0?c.d.toFixed(2):(c.d>=0?'+':'')+c.d.toFixed(2)}</td></tr>`).join('')}
       <tr><td><b>Projected goals</b></td><td><b>${p.proj.toFixed(2)}</b></td></tr>
@@ -349,8 +373,8 @@ function renderTeams(){
       <tr><td class="muted">Games played this season</td><td>${p.gp}</td></tr></table></div>`;
     return `<div class="card game-card" data-g="${g.id}">
       <div class="game-head"><span>${fmtTime(g.start_time_utc)}</span><span>${done?`Final ${g.away_score}-${g.home_score}`:''}</span></div>
-      <div class="matchup">${side(a,false)}<div class="at">@</div>${side(h,true)}</div>
-      <div class="chrow"><div><b>${esc(a.tm)}</b><br>3+ ${pc(a.p3)} · 4+ ${pc(a.p4)} · 5+ ${pc(a.p5)}</div><div><b>${esc(h.tm)}</b><br>3+ ${pc(h.p3)} · 4+ ${pc(h.p4)} · 5+ ${pc(h.p5)}</div></div>
+      <div class="matchup2">${side(a)}${side(h)}</div>
+      <div class="gtotal">Game total <b>${(a.proj+h.proj).toFixed(1)}</b> projected goals · tap for the breakdown</div>
       <div class="detail">${det(a)}${det(h)}<div class="muted" style="font-size:11px;">Model fitted on real 2025-26 games. Goalie, rest, shot attempts and head to head didn't improve it in testing, so they're shown but not used. Last season counts as ${PRIOR_GAMES} games, then this season takes over. Green light at ${GREEN_LIGHT}+. Percentages are the chance of that many goals or more.</div></div>
     </div>`;
   }).join('');
