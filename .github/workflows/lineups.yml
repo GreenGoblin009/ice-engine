@@ -1,0 +1,44 @@
+name: Daily projected lineups
+
+on:
+  schedule:
+    # GitHub cron is UTC-only and doesn't follow daylight saving, so run at
+    # both hours that can be 4pm Eastern: 20:05 UTC (4:05pm EDT / 3:05pm EST)
+    # and 21:05 UTC (5:05pm EDT / 4:05pm EST). The second run simply
+    # refreshes the first and picks up games posted in between.
+    - cron: "5 20 * * *"
+    - cron: "5 21 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: daily-lineups
+  cancel-in-progress: false
+
+jobs:
+  lineups:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Read NHL.com projected lineups and save to Supabase
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+        run: python ice_engine_lineups.py --require-supabase
+
+      - name: Keep the raw JSON for debugging
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-lineups
+          path: daily_lineups.json
+          if-no-files-found: ignore
+          retention-days: 14
