@@ -10,7 +10,7 @@ WHAT IT DOES, in order:
      credits are left; with fewer than MIN_CREDITS the run stops there.
   2. For each game that hasn't started yet, asks for the MARKETS below from
      US bookmakers — one call per game. This is the part that costs credits:
-     1 per market that comes back, so 4 per game with four markets.
+     1 per market that comes back, so 3 per game with three markets.
   3. Matches each player name to the players table (accents and punctuation
      ignored, the two teams in the game used to settle duplicates) and
      prints the names it couldn't match. Those rows are still saved, with an
@@ -44,7 +44,7 @@ from ice_engine_lineups import find_players, normalize
 
 # Markets to pull. Add or remove keys here; each one costs 1 credit per game.
 # Full list: https://the-odds-api.com/sports-odds-data/betting-markets.html
-MARKETS = ["player_points", "player_assists", "player_goal_scorer_anytime", "player_shots_on_goal"]
+MARKETS = ["player_points", "player_assists", "player_goal_scorer_anytime"]
 YES_NO_SIDES = {"Yes": "Over", "No": "Under"}  # how Yes/No markets are stored
 
 REGIONS = "us"
