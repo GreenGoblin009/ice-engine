@@ -89,6 +89,10 @@ input[type=date]{min-width:0; -webkit-appearance:none; appearance:none; min-heig
 .chips{display:flex; flex-wrap:wrap; gap:6px; padding:2px 0 4px; margin:10px 0 0; -webkit-overflow-scrolling:touch;}
 .mc{flex:none; font:inherit; font-size:12px; font-weight:700; padding:7px 9px; border-radius:999px; border:1px solid var(--line); background:var(--card2); color:var(--muted); cursor:pointer;}
 .mc.on{background:var(--green); color:#04210f; border-color:var(--green);} .mc:disabled{opacity:.4;}
+.chead{display:flex; align-items:center; justify-content:space-between; margin:-2px 0 10px; font-size:12px; font-weight:700; color:#D4A017;}
+.stp{display:flex; align-items:center; gap:2px; background:var(--card); border:1px solid var(--line); border-radius:999px; padding:2px;}
+.stp .step{width:30px; height:28px; border-radius:999px; border:0; background:transparent; color:var(--text); font-size:18px; line-height:1; cursor:pointer;}
+.stp b{min-width:34px; text-align:center; font-size:14px; color:var(--text);}
 .chart2{margin:6px 0 4px; background:var(--card2); border:1px solid var(--line); border-radius:10px; padding:12px 10px 8px;}
 .plot{position:relative; display:flex; align-items:flex-end; gap:3px; border-bottom:1px solid var(--line);}
 .cb{flex:1; min-width:0; display:flex; flex-direction:column; justify-content:flex-end; align-items:center;}
@@ -830,16 +834,17 @@ function drawPlayer(){
   const opps=[...new Set(M.logs.map(r=>r.opponent))].sort();
   const vals=rows.map(r=>statVal(r,M.stat)).filter(x=>x!=null);
   // chart: oldest -> newest, left to right
-  const items=rows.map(r=>({v:statVal(r,M.stat),r})).filter(o=>o.v!=null).reverse();
+  const items=rows.map(r=>({v:statVal(r,M.stat),r})).filter(o=>o.v!=null).slice(0,30).reverse();
   const n=items.length, dense=n>14, vdense=n>24;
   const mx=Math.max(M.line*1.6,...items.map(o=>o.v),1), PH=128;
   const md=d=>{const p=d.slice(5).split('-');return (+p[0])+'/'+(+p[1]);};
-  const svg=n?`<div class="chart2"><div class="plot" style="height:${PH+22}px;">
+  const lineCtl=`<div class="chead"><span>Over line</span><div class="stp"><button class="step" id="mMinus" aria-label="lower line">−</button><b>${M.line}</b><button class="step" id="mPlus" aria-label="raise line">+</button></div></div>`;
+  const svg=n?`<div class="chart2">${lineCtl}<div class="plot" style="height:${PH+22}px;">
       <div class="lineMark" style="bottom:${(M.line/mx)*PH}px;"><span>o${M.line}</span></div>
       ${items.map((o,k)=>{const bh=Math.max(4,(o.v/mx)*PH); const sep=(k>0&&o.r.season!==items[k-1].r.season)?'<div class="ysep"></div>':''; return sep+`<div class="cb"><em ${vdense?'style="display:none"':''}>${o.v}</em><i style="height:${bh}px;background:${o.v>M.line?'var(--green)':'var(--red)'}"></i></div>`;}).join('')}
     </div>
     ${dense?`<div class="cax"><span>${md(items[0].r.game_date)}</span><span>${md(items[n-1].r.game_date)}</span></div>`:`<div class="clab">${items.map(o=>`<div><b>${md(o.r.game_date)}</b><span>${o.r.home_road==='H'?'':'@'}${esc(o.r.opponent)}</span></div>`).join('')}</div>`}
-    <div class="cleg"><span><i style="background:var(--green)"></i>Over ${M.line}</span><span><i style="background:var(--red)"></i>Under</span><span><u></u>Line</span><span class="muted">Oldest → newest</span></div></div>`:'';
+    <div class="cleg"><span><i style="background:var(--green)"></i>Over ${M.line}</span><span><i style="background:var(--red)"></i>Under</span><span><u></u>Line</span><span class="muted">Oldest → newest${h.n>30?` · chart shows last 30 of ${h.n}`:''}</span></div></div>`:'';
   const gamesById=new Map(S.games.map(g=>[g.id,g]));
   const glRows=rows.slice(0,25).map(r=>{
     const g=gamesById.get(r.game_id); let res='';
@@ -862,13 +867,12 @@ function drawPlayer(){
       <div><div class="hpct" style="color:var(--blue)">${h.n?Math.round((1-h.pct)*100)+'%':'--'}</div><div class="hlab">Under ${h.under}/${h.n}</div></div>
       <div><div class="hpct">${h.n?h.avg.toFixed(2):'--'}</div><div class="hlab">Avg / game</div></div>
     </div>
-    ${h.n?svg:'<div class="empty">No games match this filter.</div>'}
+    ${h.n?svg:'<div class="chart2">'+lineCtl+'<div class="empty">No games match this filter.</div></div>'}
     <div class="chips" id="mWins" style="margin-top:12px;">${['Last 5','Last 10','Last 20','Season','All-time'].map(x=>`<button class="mc ${x===M.window&&!M.vs?'on':''}" data-v="${x}" ${M.vs?'disabled':''}>${x}</button>`).join('')}</div>
     ${M.vs?`<div class="muted small" style="margin-top:6px;">Showing every ${esc(M.vs)} meeting on file. Timeframe is ignored.</div>`:''}
     <details class="more" ${(M.split!=='Home+Away'||M.vs)?'open':''}><summary>More filters (home/away, head to head)</summary>
       <div class="row3" style="grid-template-columns:1fr 1fr;"><div><label>Splits</label><select id="mSplit">${['Home+Away','Home','Away'].map(x=>`<option ${x===M.split?'selected':''}>${x}</option>`).join('')}</select></div>
       <div><label>Head to head ${M.todayOpp?`(today: ${esc(M.todayOpp)})`:''}</label><select id="mVs"><option value="">None</option>${opps.map(o=>`<option ${o===M.vs?'selected':''}>${o}</option>`).join('')}</select></div></div></details>
-    <div class="lineRow"><label style="margin:0;">Line</label><div style="display:flex;align-items:center;gap:8px;"><button class="step" id="mMinus">−</button><div class="lineVal">${M.line}</div><button class="step" id="mPlus">+</button></div></div>
     <div class="edgebox"><div><label style="margin:0 0 4px;">Your book's odds</label><input id="mOdds" type="number" inputmode="numeric" placeholder="-134" value="${esc(M.odds)}"></div>${edge}</div>
     ${missing?'<div class="muted small" style="margin-top:8px;">Some older games have no shot-attempt data yet — they\'re skipped.</div>':''}
     <div style="font-weight:700;font-size:14px;margin:16px 0 2px;">Gamelog</div>
