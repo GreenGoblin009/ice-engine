@@ -424,9 +424,9 @@ async function loadLogs(ids, onlyGoalies=false){
     while(idx<chunks.length){
       const c=chunks[idx++];
       const extra=onlyGoalies?'&shots_against=not.is.null':'';
-      const rows=await sbAll(`player_game_logs?player_id=in.(${c.join(',')})&game_type=eq.2&select=${LOG_COLS}&order=game_date.desc${extra}`);
+      const rows=await sbAll(`player_game_logs?player_id=in.(${c.join(',')})&game_type=eq.2&select=${LOG_COLS}&order=game_date.desc,game_id.desc${extra}`);
       const by={}; c.forEach(id=>by[id]=[]);
-      rows.forEach(r=>{ (by[r.player_id]||(by[r.player_id]=[])).push(r); });
+      const seen=new Set(); rows.forEach(r=>{ const k=r.player_id+'_'+r.game_id; if(seen.has(k)) return; seen.add(k); (by[r.player_id]||(by[r.player_id]=[])).push(r); });
       c.forEach(id=>S.logCache.set(id,by[id]));
     }
   }
