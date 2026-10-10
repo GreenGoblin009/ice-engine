@@ -770,7 +770,7 @@ async function renderLeaders(){
     const logs=S.logCache.get(x.player_id)||[];
     const win=filterRows(logs,{window:L.window,split:'Home+Away',vs:''});
     const h=hitStats(win,L.stat,L.line);
-    const l5r=logs.slice(0,5).map(r=>({v:statVal(r,L.stat),d:r.game_date,old:r.season!==CUR})).filter(o=>o.v!=null); const l5=l5r.map(o=>o.v);
+    const l5r=logs.filter(r=>r.season===CUR).slice(0,5).reverse().map(r=>({v:statVal(r,L.stat),d:r.game_date,old:r.season!==CUR})).filter(o=>o.v!=null); const l5=l5r.map(o=>o.v);
     return {x,h,l5,l5r,l5hits:l5.filter(v=>v>L.line).length,pr:best.get(x.player_id)};
   }).filter(r=>r.h.n>=3);
   const key={rate:r=>r.h.pct*1000+r.h.n/1000,avg:r=>r.h.avg,last5:r=>r.l5hits*1000+r.h.pct};
@@ -779,9 +779,9 @@ async function renderLeaders(){
   const list=rows.length?rows.map(r=>`<div class="prow" data-pid="${r.x.player_id}" data-stat="${L.stat}" data-line="${L.line}"${r.pr?` data-odds="${r.pr.price}"`:''}>
       <div><div class="pname">${esc(r.x.player_name)}</div>
         <div class="pmeta">${esc(r.x.team)} ${esc(oppOf(r.x.team))} · avg ${r.h.avg.toFixed(2)}${r.pr?` · <b style="color:var(--text)">${fmtOdds(r.pr.price)}</b> ${esc(bookShort(r.pr.book))}`:''}</div>
-        <div class="dots" title="Last 5 games, newest first">${r.l5r.map((o,i)=>{ const dt=o.d.slice(5).replace('-','/').replace(/^0/,'').replace(/\/0/,'/'); return (i>0&&o.old&&!r.l5r[i-1].old?'<div class="sep"></div>':'')+`<div class="g ${o.v>L.line?'h':'m'}${o.old?' old':''}"><b>${o.v}</b><span>${dt}</span></div>`; }).join('')}${r.l5r.some(o=>o.old)?'<div class="yr">dim = last season</div>':''}</div></div>
+        <div class="dots" title="This season, oldest to newest">${r.l5r.map((o,i)=>{ const dt=o.d.slice(5).replace('-','/').replace(/^0/,'').replace(/\/0/,'/'); return (i>0&&o.old&&!r.l5r[i-1].old?'<div class="sep"></div>':'')+`<div class="g ${o.v>L.line?'h':'m'}${o.old?' old':''}"><b>${o.v}</b><span>${dt}</span></div>`; }).join('')}${r.l5r.some(o=>o.old)?'<div class="yr">dim = last season</div>':''}</div></div>
       <div><div class="pbig" style="color:${r.h.pct>=0.5?'var(--green)':'var(--text)'}">${Math.round(r.h.pct*100)}%</div><div class="psub">${r.h.over}/${r.h.n} · o${L.line} ${esc(L.stat)}</div></div></div>`).join(''):'<div class="empty">No players match.</div>';
-  const note=`<div class="muted small" style="margin-bottom:10px;">Everyone in today's projected lineups. Regular season only. Boxes are the last 5 regular-season games (no preseason), newest on the left, with the stat and date. Green = went over; dim = last season. Tap a player for the full game log.${L.team==='ALL'&&total>50?` Showing the top 50 of ${total}.`:''}</div>`;
+  const note=`<div class="muted small" style="margin-bottom:10px;">Everyone in today's projected lineups. Regular season only. Boxes are this season's last 5 regular-season games (no preseason), oldest on the left, newest on the right, with the stat and date. Green = went over. Tap a player for the full game log.${L.team==='ALL'&&total>50?` Showing the top 50 of ${total}.`:''}</div>`;
   $('view').innerHTML=controls+note+list; wire();
 }
 
