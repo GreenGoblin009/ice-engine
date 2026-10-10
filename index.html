@@ -39,7 +39,7 @@ input[type=date]{min-width:0; -webkit-appearance:none; appearance:none; min-heig
 .row{display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:10px;}
 .row3{display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; margin-bottom:10px;}
 .view-toggle{display:flex; gap:6px; margin:12px 0;}
-.view-toggle button{flex:1; background:var(--card2); border:1px solid var(--line); color:var(--muted); padding:9px; border-radius:7px; font-family:'Rajdhani',sans-serif; font-weight:600; font-size:15px; cursor:pointer;}
+.view-toggle button{white-space:nowrap; padding-left:2px !important; padding-right:2px !important; font-size:14px !important; flex:1; background:var(--card2); border:1px solid var(--line); color:var(--muted); padding:9px; border-radius:7px; font-family:'Rajdhani',sans-serif; font-weight:600; font-size:15px; cursor:pointer;}
 .view-toggle button.active{background:var(--amber); color:#0A0E14; border-color:var(--amber);}
 .card{background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px; margin-bottom:10px;}
 .muted{color:var(--muted);} .small{font-size:12px;}
@@ -70,8 +70,16 @@ input[type=date]{min-width:0; -webkit-appearance:none; appearance:none; min-heig
 .o3bar{height:4px; background:var(--line); border-radius:2px; margin:3px 0 4px; overflow:hidden;}
 .o3bar i{display:block; height:100%; background:var(--amber); border-radius:2px;}
 .o3k{font-size:9.5px; color:var(--muted);}
+.ou3{display:grid; grid-template-columns:repeat(3,1fr); gap:6px; margin-top:10px;}
+.ou{background:var(--card2); border:1px solid var(--line); border-radius:8px; padding:7px 4px; text-align:center;}
+.ouL{font-size:9.5px; letter-spacing:.5px; color:var(--muted); font-weight:600;}
+.ouV{font-family:'Rajdhani',sans-serif; font-weight:700; font-size:14px; margin-top:2px; white-space:nowrap;}
 .gtotal{text-align:center; font-size:11.5px; color:var(--muted); margin-top:10px;}
 .gtotal b{color:var(--text);}
+.dots{display:flex; gap:3px; margin-top:5px;}
+.dots i{width:10px; height:10px; border-radius:2px; background:var(--line); display:block;}
+.dots i.h{background:var(--green);} .dots i.m{background:var(--red); opacity:.75;}
+.lgrid{display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:10px;}
 .tjersey{width:66px; flex:none; filter:drop-shadow(0 2px 4px rgba(0,0,0,.35));}
 .tabbr{font-family:'Rajdhani',sans-serif; font-weight:700; font-size:20px;}
 .tproj{font-family:'Rajdhani',sans-serif; font-weight:700; font-size:30px; line-height:1;}
@@ -131,6 +139,7 @@ table.gl td{padding:5px 8px 5px 0; border-top:1px solid var(--line);}
     <button id="bTeams" class="active">Teams</button>
     <button id="bLineups">Lineups</button>
     <button id="bTop">Top Plays</button>
+    <button id="bLeaders">Leaders</button>
   </div>
   <div id="msg"></div>
   <div id="view"></div>
@@ -469,7 +478,7 @@ function setUpdated(){
 /* ============ VIEWS ============ */
 function setView(v){
   S.view=v;
-  ['Teams','Lineups','Top'].forEach(n=>$('b'+n).classList.toggle('active',(n.toLowerCase()===v)));
+  ['Teams','Lineups','Top','Leaders'].forEach(n=>$('b'+n).classList.toggle('active',(n.toLowerCase()===v)));
   $('teamPickWrap').style.display = v==='lineups' ? 'block':'none';
   render();
 }
@@ -478,6 +487,7 @@ async function render(){
   try{
     if(S.view==='teams') renderTeams();
     else if(S.view==='lineups') renderLineups();
+    else if(S.view==='leaders') await renderLeaders();
     else await renderTop();
   }catch(e){ $('msg').innerHTML=`<div class="err">${esc(e.message)}</div>`; }
 }
@@ -507,6 +517,7 @@ function renderTeams(){
       <div class="game-head"><span>${fmtTime(g.start_time_utc)}</span><span>${done?`Final ${g.away_score}-${g.home_score}`:''}</span></div>
       <div class="matchup2">${side(a)}${side(h)}</div>
       <div class="gtotal">Game total <b>${(a.proj+h.proj).toFixed(1)}</b> projected goals · tap for the breakdown</div>
+      <div class="ou3">${[4.5,5.5,6.5].map(L=>{ const ov=chanceAtLeast(a.proj+h.proj,Math.floor(L)+1); return `<div class="ou"><div class="ouL">O/U ${L}</div><div class="ouV"><span style="color:var(--green)">O ${Math.round(ov*100)}%</span> · <span style="color:var(--blue)">U ${Math.round((1-ov)*100)}%</span></div></div>`; }).join('')}</div>
       <div class="detail">${det(a)}${det(h)}<div class="muted" style="font-size:11px;">Model fitted on real 2025-26 games. Goalie, rest, shot attempts and head to head didn't improve it in testing, so they're shown but not used. Last season counts as ${PRIOR_GAMES} games, then this season takes over. Green light at ${GREEN_LIGHT}+. Percentages are the chance of that many goals or more.</div></div>
     </div>`;
   }).join('');
@@ -565,6 +576,7 @@ function hitStats(rows, stat, line){
 
 /* ---- Top Plays ---- */
 async function renderTop(){
+  if((S.topStat||'best')==='plus') return renderPlus();
   const gs=dayGames();
   if(!gs.length){ $('view').innerHTML='<div class="empty">No games on this day.</div>'; return; }
   if(!S.lineups.length){ $('view').innerHTML='<div class="empty">Lineups for this day aren\'t posted yet.</div>'; return; }
@@ -650,7 +662,7 @@ async function renderTop(){
   }
   rows.sort((a,b)=>b.rate-a.rate);
   rows=rows.slice(0,plusMoney?25:40);
-  const filter=`<div class="row" style="grid-template-columns:1fr;"><div><label>Stat</label><select id="topStat">${['best','Points','Goals','Assists','Shots'].map(x=>`<option value="${x}" ${x===statSel?'selected':''}>${x==='best'?'Best prop (auto)':x}</option>`).join('')}</select></div></div>`;
+  const filter=`<div class="row" style="grid-template-columns:1fr;"><div><label>Stat</label><select id="topStat">${['best','plus','Points','Goals','Assists','Shots'].map(x=>`<option value="${x}" ${x===statSel?'selected':''}>${x==='best'?'Best prop (auto)':(x==='plus'?'Plus-money finder (all teams)':x)}</option>`).join('')}</select></div></div>`;
   const note=`<div class="muted small" style="margin-bottom:10px;">Only players on green-lit teams (${green.map(g=>g.tm).join(', ')}). Ranked by season-long hit rate (this season plus last, the one measure that predicted in testing).</div>`;
   const list=rows.length?rows.map(r=>{
     const fo=fairOdds(r.rate);
@@ -663,6 +675,109 @@ async function renderTop(){
     (priced.length?hdr('PRICED PLAYS',priceNote)+pricedHTML:((S.odds&&S.odds.length)?hdr('PRICED PLAYS',priceNote)+'<div class="empty">No priced play beats its break-even today.</div>':hdr('PRICED PLAYS',priceNote)))+
     hdr('HIT RATE ONLY',plusMoney?`${statSel} pay plus money, so there's no minimum hit rate here. Ranked by season-long hit rate. Take it only if your book pays better than the fair price.`:`${Math.round(MIN_PLAY_HIT*100)}%+ (break-even of −140). Fair price is what the rate is worth — compare it to your book.`)+list;
   $('topStat').onchange=e=>{ S.topStat=e.target.value; renderTop(); };
+}
+
+
+/* ---- Plus-money finder: every team, no green-light gate, prices +100 or better ---- */
+async function renderPlus(){
+  const sel=`<div class="row" style="grid-template-columns:1fr;"><div><label>Stat</label><select id="topStat">${['best','plus','Points','Goals','Assists','Shots'].map(x=>`<option value="${x}" ${x==='plus'?'selected':''}>${x==='best'?'Best prop (auto)':(x==='plus'?'Plus-money finder (all teams)':x)}</option>`).join('')}</select></div></div>`;
+  const wire=()=>{ $('topStat').onchange=e=>{ S.topStat=e.target.value; renderTop(); }; };
+  if(!S.odds||!S.odds.length){
+    $('view').innerHTML=sel+'<div class="empty">No prices yet. They load once a day around 4 PM ET, and this view needs them.</div>'; wire(); return;
+  }
+  $('view').innerHTML=sel+'<div class="empty">Checking every priced player against his real game log…</div>'; wire();
+  await loadAttempts();
+  const ids=[...new Set(S.odds.filter(o=>MARKET_STAT[o.market]&&o.player_id).map(o=>o.player_id))];
+  await loadLogs(ids);
+  const groups=new Map();
+  S.odds.forEach(o=>{
+    const stat=MARKET_STAT[o.market]; if(!stat||!o.player_id) return;
+    const k=o.player_id+'|'+stat+'|'+o.line; if(!groups.has(k)) groups.set(k,{pid:o.player_id,stat,line:+o.line,prices:[]});
+    groups.get(k).prices.push({price:o.price,book:o.book});
+  });
+  const poolMemo={};
+  const poolFor=(stat,line)=>{ const k=stat+'|'+line; if(poolMemo[k]!=null) return poolMemo[k]; let o=0,n=0; ids.forEach(id=>{ const h=hitStats(S.logCache.get(id)||[],stat,line); o+=h.over; n+=h.n; }); return poolMemo[k]=n?o/n:0.3; };
+  const bookShort=b=>({DraftKings:'DK',FanDuel:'FD',BetMGM:'MGM','BetOnline.ag':'BetOnline',Bovada:'Bovada'}[b]||b);
+  const out=[];
+  groups.forEach(gp=>{
+    const logs=S.logCache.get(gp.pid)||[];
+    const all=hitStats(logs,gp.stat,gp.line);
+    if(all.n<40) return;                              // need a real sample for a "consistent" read
+    const sorted=gp.prices.slice().sort((x,y)=>x.price-y.price);
+    const best=sorted[sorted.length-1].price, bestBook=sorted[sorted.length-1].book, mid=sorted[Math.floor(sorted.length/2)].price;
+    if(best<100) return;                              // plus money only
+    let rate=(all.over+SHRINK_K*poolFor(gp.stat,gp.line))/(all.n+SHRINK_K), model=false;
+    const mc=modelChance(gp.pid,gp.stat,gp.line,''); if(mc!=null){ rate=mc; model=true; }
+    const edge=(rate-impliedProb(mid))*100;
+    if(edge<=0) return;
+    const cur=hitStats(logs.filter(r=>r.season===CUR),gp.stat,gp.line), prev=hitStats(logs.filter(r=>r.season!==CUR),gp.stat,gp.line);
+    const pl=S.players.get(gp.pid)||{name:'Player',team:''};
+    out.push({pid:gp.pid,name:pl.name,team:pl.team,stat:gp.stat,line:gp.line,all,rate,model,best,bestBook,mid,edge,cur,prev});
+  });
+  out.sort((a,b)=>b.edge-a.edge);
+  const top=out.slice(0,40);
+  const pctTxt=h=>h.n?Math.round(h.pct*100)+'% ('+h.over+'/'+h.n+')':'—';
+  const list=top.length?top.map(r=>`<div class="prow" data-pid="${r.pid}" data-stat="${r.stat}" data-line="${r.line}" data-odds="${r.mid}">
+      <div><div class="pname">${esc(r.name)}</div><div class="pmeta">${esc(r.team)} · ${r.stat} o${r.line} · <b style="color:var(--text)">Best ${fmtOdds(r.best)}</b> ${esc(bookShort(r.bestBook))}</div>
+      <div class="pmeta">${r.model?'Model chance':'Hit rate'} ${Math.round(r.rate*100)}% · fair ${fmtOdds(fairOdds(r.rate))}</div>
+      <div class="pmeta">Last season ${pctTxt(r.prev)} · this season ${pctTxt(r.cur)}</div></div>
+      <div><div class="pbig" style="color:var(--green)">+${r.edge.toFixed(1)}</div><div class="psub">EDGE</div></div></div>`).join(''):'<div class="empty">No plus-money play beats its break-even right now.</div>';
+  const t=S.odds.map(o=>o.updated_at).sort().pop();
+  const note=`<div class="muted small" style="margin-bottom:10px;">Every team, no green-light gate. Plus-money prices only (+100 or better), players with 40+ regular-season games. Prices as of ${new Date(t).toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit',timeZone:'America/New_York'})} ET. A steady rate across both seasons is a better sign than one hot year.</div>`;
+  $('view').innerHTML=sel+note+list; wire();
+}
+
+
+/* ============ LEADERS: sort players by category, no clicking team by team ============ */
+const LEAD_LINES={Points:[0.5,1.5],Goals:[0.5],Assists:[0.5,1.5],Shots:[1.5,2.5,3.5],'Shot Attempts':[3.5,4.5,5.5,6.5]};
+S.lead=S.lead||{stat:'Assists',window:'Last 10',team:'ALL',sort:'rate',line:0.5};
+async function renderLeaders(){
+  const L=S.lead;
+  if(!LEAD_LINES[L.stat].includes(L.line)) L.line=STATS[L.stat].line;
+  const gs=dayGames();
+  const sk=S.lineups.filter(l=>l.status==='projected'&&(l.slot==='line'||l.slot==='pair')&&l.player_id);
+  if(!gs.length||!sk.length){ $('view').innerHTML='<div class="empty">Leaders fills in once the day\'s lineups are posted (first update is 12 PM ET).</div>'; return; }
+  const teams=[...new Set(sk.map(x=>x.team))].sort();
+  if(L.team!=='ALL'&&!teams.includes(L.team)) L.team='ALL';
+  const opt=(arr,cur,fmt)=>arr.map(x=>`<option value="${x}" ${String(x)===String(cur)?'selected':''}>${fmt?fmt(x):x}</option>`).join('');
+  const controls=`<div class="lgrid">
+    <div><label>Category</label><select id="ldStat">${opt(Object.keys(LEAD_LINES),L.stat)}</select></div>
+    <div><label>Line (over)</label><select id="ldLine">${opt(LEAD_LINES[L.stat],L.line)}</select></div>
+    <div><label>Timeframe</label><select id="ldWin">${opt(['Last 5','Last 10','Last 20','Season','All-time'],L.window)}</select></div>
+    <div><label>Team</label><select id="ldTeam"><option value="ALL">All teams today</option>${opt(teams,L.team)}</select></div>
+    <div style="grid-column:1/3;"><label>Sort by</label><select id="ldSort">${opt(['rate','avg','last5'],L.sort,x=>({rate:'Hit rate',avg:'Average per game',last5:'Last 5 games'}[x]))}</select></div></div>`;
+  const wire=()=>{
+    $('ldStat').onchange=e=>{ L.stat=e.target.value; L.line=STATS[L.stat].line; renderLeaders(); };
+    $('ldLine').onchange=e=>{ L.line=+e.target.value; renderLeaders(); };
+    $('ldWin').onchange=e=>{ L.window=e.target.value; renderLeaders(); };
+    $('ldTeam').onchange=e=>{ L.team=e.target.value; renderLeaders(); };
+    $('ldSort').onchange=e=>{ L.sort=e.target.value; renderLeaders(); };
+  };
+  const need=[...new Set(sk.map(x=>x.player_id))].filter(id=>!S.logCache.has(id));
+  if(need.length){ $('view').innerHTML=controls+`<div class="empty">Loading real game logs for ${need.length} players (first time only)…</div>`; wire(); await loadLogs(need); if(S.view!=='leaders') return; }
+  // best price lookup for the chosen stat/line
+  const mk={Points:'player_points',Assists:'player_assists',Goals:'player_goal_scorer_anytime'}[L.stat];
+  const best=new Map();
+  if(mk) (S.odds||[]).forEach(o=>{ if(o.market===mk&&+o.line===L.line&&o.player_id){ const b=best.get(o.player_id); if(!b||o.price>b.price) best.set(o.player_id,{price:o.price,book:o.book}); } });
+  const bookShort=b=>({DraftKings:'DK',FanDuel:'FD',BetMGM:'MGM','BetOnline.ag':'BetOnline',Bovada:'Bovada'}[b]||b);
+  const oppOf=tm=>{ const g=gs.find(x=>x.away===tm||x.home===tm); return g?(g.away===tm?'@ '+g.home:'vs '+g.away):''; };
+  let rows=sk.filter(x=>L.team==='ALL'||x.team===L.team).map(x=>{
+    const logs=S.logCache.get(x.player_id)||[];
+    const win=filterRows(logs,{window:L.window,split:'Home+Away',vs:''});
+    const h=hitStats(win,L.stat,L.line);
+    const l5=logs.slice(0,5).map(r=>statVal(r,L.stat)).filter(v=>v!=null);
+    return {x,h,l5,l5hits:l5.filter(v=>v>L.line).length,pr:best.get(x.player_id)};
+  }).filter(r=>r.h.n>=3);
+  const key={rate:r=>r.h.pct*1000+r.h.n/1000,avg:r=>r.h.avg,last5:r=>r.l5hits*1000+r.h.pct};
+  rows.sort((a,b)=>key[L.sort](b)-key[L.sort](a));
+  const total=rows.length; if(L.team==='ALL') rows=rows.slice(0,50);
+  const list=rows.length?rows.map(r=>`<div class="prow" data-pid="${r.x.player_id}" data-stat="${L.stat}" data-line="${L.line}"${r.pr?` data-odds="${r.pr.price}"`:''}>
+      <div><div class="pname">${esc(r.x.player_name)}</div>
+        <div class="pmeta">${esc(r.x.team)} ${esc(oppOf(r.x.team))} · avg ${r.h.avg.toFixed(2)}${r.pr?` · <b style="color:var(--text)">${fmtOdds(r.pr.price)}</b> ${esc(bookShort(r.pr.book))}`:''}</div>
+        <div class="dots" title="Last 5 games, newest first">${r.l5.map(v=>`<i class="${v>L.line?'h':'m'}"></i>`).join('')}</div></div>
+      <div><div class="pbig" style="color:${r.h.pct>=0.5?'var(--green)':'var(--text)'}">${Math.round(r.h.pct*100)}%</div><div class="psub">${r.h.over}/${r.h.n} · o${L.line} ${esc(L.stat)}</div></div></div>`).join(''):'<div class="empty">No players match.</div>';
+  const note=`<div class="muted small" style="margin-bottom:10px;">Everyone in today's projected lineups. Regular season only. Squares are the last 5 games, newest on the left (green = went over). Tap a player for the full game log.${L.team==='ALL'&&total>50?` Showing the top 50 of ${total}.`:''}</div>`;
+  $('view').innerHTML=controls+note+list; wire();
 }
 
 /* ============ PLAYER MODAL ============ */
@@ -754,6 +869,7 @@ $('overlay').addEventListener('click',e=>{ if(e.target.id==='overlay') closePlay
 $('bTeams').onclick=()=>setView('teams');
 $('bLineups').onclick=()=>setView('lineups');
 $('bTop').onclick=()=>setView('top');
+$('bLeaders').onclick=()=>setView('leaders');
 $('teamPick').onchange=e=>{ S.team=e.target.value; renderLineups(); };
 setInterval(()=>{ if(S.autoDay && etToday()!==S.autoDay) init(false); },300000);
 $('reload').onclick=()=>init(true);
