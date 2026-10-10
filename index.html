@@ -76,9 +76,11 @@ input[type=date]{min-width:0; -webkit-appearance:none; appearance:none; min-heig
 .ouV{font-family:'Rajdhani',sans-serif; font-weight:700; font-size:14px; margin-top:2px; white-space:nowrap;}
 .gtotal{text-align:center; font-size:11.5px; color:var(--muted); margin-top:10px;}
 .gtotal b{color:var(--text);}
-.dots{display:flex; gap:4px; margin-top:6px; align-items:flex-start;}
+.dots{display:flex; gap:3px; margin-top:6px; align-items:flex-start;}
 .dots .g{display:flex; flex-direction:column; align-items:center; gap:2px;}
-.dots .g b{width:26px; height:22px; border-radius:4px; background:var(--line); display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:700; color:#fff;}
+.lrow{flex-wrap:wrap;} .lrow .dots{flex-basis:100%; order:3;}
+.dots .g{flex:1; max-width:30px; min-width:0;}
+.dots .g b{width:100%; height:22px; border-radius:4px; background:var(--line); display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:700; color:#fff;}
 .dots .g.h b{background:var(--green); color:#04210f;} .dots .g.m b{background:var(--red); opacity:.8;}
 .dots .g span{font-size:9px; color:var(--muted,#8a93a6); line-height:1;}
 .dots .g.old b{opacity:.45;}
@@ -770,18 +772,18 @@ async function renderLeaders(){
     const logs=S.logCache.get(x.player_id)||[];
     const win=filterRows(logs,{window:L.window,split:'Home+Away',vs:''});
     const h=hitStats(win,L.stat,L.line);
-    const l5r=logs.filter(r=>r.season===CUR).slice(0,5).reverse().map(r=>({v:statVal(r,L.stat),d:r.game_date,old:r.season!==CUR})).filter(o=>o.v!=null); const l5=l5r.map(o=>o.v);
-    return {x,h,l5,l5r,l5hits:l5.filter(v=>v>L.line).length,pr:best.get(x.player_id)};
+    const l5r=logs.filter(r=>r.season===CUR).slice(0,10).reverse().map(r=>({v:statVal(r,L.stat),d:r.game_date,old:r.season!==CUR})).filter(o=>o.v!=null); const l5=l5r.map(o=>o.v);
+    return {x,h,l5,l5r,l5hits:l5.slice(-5).filter(v=>v>L.line).length,pr:best.get(x.player_id)};
   }).filter(r=>r.h.n>=3);
   const key={rate:r=>r.h.pct*1000+r.h.n/1000,avg:r=>r.h.avg,last5:r=>r.l5hits*1000+r.h.pct};
   rows.sort((a,b)=>key[L.sort](b)-key[L.sort](a));
   const total=rows.length; if(L.team==='ALL') rows=rows.slice(0,50);
-  const list=rows.length?rows.map(r=>`<div class="prow" data-pid="${r.x.player_id}" data-stat="${L.stat}" data-line="${L.line}"${r.pr?` data-odds="${r.pr.price}"`:''}>
+  const list=rows.length?rows.map(r=>`<div class="prow lrow" data-pid="${r.x.player_id}" data-stat="${L.stat}" data-line="${L.line}"${r.pr?` data-odds="${r.pr.price}"`:''}>
       <div><div class="pname">${esc(r.x.player_name)}</div>
         <div class="pmeta">${esc(r.x.team)} ${esc(oppOf(r.x.team))} · avg ${r.h.avg.toFixed(2)}${r.pr?` · <b style="color:var(--text)">${fmtOdds(r.pr.price)}</b> ${esc(bookShort(r.pr.book))}`:''}</div>
-        <div class="dots" title="This season, oldest to newest">${r.l5r.map((o,i)=>{ const dt=o.d.slice(5).replace('-','/').replace(/^0/,'').replace(/\/0/,'/'); return (i>0&&o.old&&!r.l5r[i-1].old?'<div class="sep"></div>':'')+`<div class="g ${o.v>L.line?'h':'m'}${o.old?' old':''}"><b>${o.v}</b><span>${dt}</span></div>`; }).join('')}${r.l5r.some(o=>o.old)?'<div class="yr">dim = last season</div>':''}</div></div>
-      <div><div class="pbig" style="color:${r.h.pct>=0.5?'var(--green)':'var(--text)'}">${Math.round(r.h.pct*100)}%</div><div class="psub">${r.h.over}/${r.h.n} · o${L.line} ${esc(L.stat)}</div></div></div>`).join(''):'<div class="empty">No players match.</div>';
-  const note=`<div class="muted small" style="margin-bottom:10px;">Everyone in today's projected lineups. Regular season only. Boxes are this season's last 5 regular-season games (no preseason), oldest on the left, newest on the right, with the stat and date. Green = went over. Tap a player for the full game log.${L.team==='ALL'&&total>50?` Showing the top 50 of ${total}.`:''}</div>`;
+        </div>
+      <div><div class="pbig" style="color:${r.h.pct>=0.5?'var(--green)':'var(--text)'}">${Math.round(r.h.pct*100)}%</div><div class="psub">${r.h.over}/${r.h.n} · o${L.line} ${esc(L.stat)}</div></div><div class="dots" title="This season, oldest to newest">${r.l5r.map((o,i)=>{ const dt=o.d.slice(5).replace('-','/').replace(/^0/,'').replace(/\/0/,'/'); return (i>0&&o.old&&!r.l5r[i-1].old?'<div class="sep"></div>':'')+`<div class="g ${o.v>L.line?'h':'m'}${o.old?' old':''}"><b>${o.v}</b><span>${dt}</span></div>`; }).join('')}${r.l5r.some(o=>o.old)?'<div class="yr">dim = last season</div>':''}</div></div>`).join(''):'<div class="empty">No players match.</div>';
+  const note=`<div class="muted small" style="margin-bottom:10px;">Everyone in today's projected lineups. Regular season only. Boxes are this season's last 10 regular-season games (no preseason), oldest on the left, newest on the right, with the stat and date. Green = went over. Tap a player for the full game log.${L.team==='ALL'&&total>50?` Showing the top 50 of ${total}.`:''}</div>`;
   $('view').innerHTML=controls+note+list; wire();
 }
 
