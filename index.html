@@ -86,6 +86,23 @@ input[type=date]{min-width:0; -webkit-appearance:none; appearance:none; min-heig
 .dots .g.old b{opacity:.45;}
 .dots .sep{width:1px; align-self:stretch; background:var(--muted,#8a93a6); opacity:.5; margin:0 3px;}
 .dots .yr{font-size:9px; color:var(--muted,#8a93a6); align-self:center; margin-left:2px;}
+.chips{display:flex; flex-wrap:wrap; gap:6px; padding:2px 0 4px; margin:10px 0 0; -webkit-overflow-scrolling:touch;}
+.mc{flex:none; font:inherit; font-size:12px; font-weight:700; padding:7px 9px; border-radius:999px; border:1px solid var(--line); background:var(--card2); color:var(--muted); cursor:pointer;}
+.mc.on{background:var(--green); color:#04210f; border-color:var(--green);} .mc:disabled{opacity:.4;}
+.chart2{margin:6px 0 4px; background:var(--card2); border:1px solid var(--line); border-radius:10px; padding:12px 10px 8px;}
+.plot{position:relative; display:flex; align-items:flex-end; gap:3px; border-bottom:1px solid var(--line);}
+.cb{flex:1; min-width:0; display:flex; flex-direction:column; justify-content:flex-end; align-items:center;}
+.cb i{display:block; width:100%; max-width:34px; border-radius:5px 5px 0 0;}
+.cb em{font-style:normal; font-size:11px; font-weight:700; margin-bottom:2px; color:var(--text);}
+.lineMark{position:absolute; left:0; right:0; border-top:2px dashed #D4A017; pointer-events:none; z-index:2;}
+.lineMark span{position:absolute; right:0; top:-17px; font-size:10px; font-weight:700; color:#D4A017; background:var(--card2); padding:0 4px; border-radius:4px;}
+.ysep{width:0; align-self:stretch; border-left:1px dashed var(--muted); opacity:.5; margin:0 2px;}
+.clab{display:flex; gap:3px; margin-top:5px;} .clab div{flex:1; min-width:0; text-align:center; display:flex; flex-direction:column; line-height:1.15;}
+.clab b{font-size:9.5px;} .clab span{font-size:8.5px; color:var(--muted); overflow:hidden;}
+.cax{display:flex; justify-content:space-between; font-size:10px; color:var(--muted); margin-top:5px;}
+.cleg{display:flex; flex-wrap:wrap; gap:4px 12px; font-size:10.5px; color:var(--muted); margin-top:8px;}
+.cleg i{display:inline-block; width:9px; height:9px; border-radius:2px; margin-right:4px;} .cleg u{display:inline-block; width:12px; border-top:2px dashed #D4A017; margin-right:4px; vertical-align:middle;}
+.more{margin-top:10px;} .more summary{font-size:12px; color:var(--muted); cursor:pointer; padding:4px 0;}
 .lgrid{display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:10px;}
 .tjersey{width:66px; flex:none; filter:drop-shadow(0 2px 4px rgba(0,0,0,.35));}
 .tabbr{font-family:'Rajdhani',sans-serif; font-weight:700; font-size:20px;}
@@ -812,15 +829,17 @@ function drawPlayer(){
   const h=hitStats(rows,M.stat,M.line);
   const opps=[...new Set(M.logs.map(r=>r.opponent))].sort();
   const vals=rows.map(r=>statVal(r,M.stat)).filter(x=>x!=null);
-  // bars (oldest -> newest)
-  const bars=vals.slice().reverse();
-  const mx=Math.max(M.line*2,...bars,1);
-  const bw=Math.min(26,Math.floor(440/Math.max(bars.length,1)));
-  const W=Math.max(bars.length*(bw+4),40), H=110;
-  const ly=H-(M.line/mx)*(H-14);
-  const svg=bars.length?`<svg viewBox="0 0 ${W} ${H+16}" style="width:100%;height:${H+16}px;" preserveAspectRatio="xMinYMin meet">
-    ${bars.map((v,i)=>{const bh=Math.max(2,(v/mx)*(H-14)); return `<rect x="${i*(bw+4)}" y="${H-bh}" width="${bw}" height="${bh}" rx="2" fill="${v>M.line?'#2FBF71':'#E5484D'}"/><text x="${i*(bw+4)+bw/2}" y="${H-bh-3}" text-anchor="middle" font-size="9" fill="#E8ECF1">${v}</text>`;}).join('')}
-    <line x1="0" x2="${W}" y1="${ly}" y2="${ly}" stroke="#D4A017" stroke-dasharray="4 3"/></svg>`:'';
+  // chart: oldest -> newest, left to right
+  const items=rows.map(r=>({v:statVal(r,M.stat),r})).filter(o=>o.v!=null).reverse();
+  const n=items.length, dense=n>14, vdense=n>24;
+  const mx=Math.max(M.line*1.6,...items.map(o=>o.v),1), PH=128;
+  const md=d=>{const p=d.slice(5).split('-');return (+p[0])+'/'+(+p[1]);};
+  const svg=n?`<div class="chart2"><div class="plot" style="height:${PH+22}px;">
+      <div class="lineMark" style="bottom:${(M.line/mx)*PH}px;"><span>o${M.line}</span></div>
+      ${items.map((o,k)=>{const bh=Math.max(4,(o.v/mx)*PH); const sep=(k>0&&o.r.season!==items[k-1].r.season)?'<div class="ysep"></div>':''; return sep+`<div class="cb"><em ${vdense?'style="display:none"':''}>${o.v}</em><i style="height:${bh}px;background:${o.v>M.line?'var(--green)':'var(--red)'}"></i></div>`;}).join('')}
+    </div>
+    ${dense?`<div class="cax"><span>${md(items[0].r.game_date)}</span><span>${md(items[n-1].r.game_date)}</span></div>`:`<div class="clab">${items.map(o=>`<div><b>${md(o.r.game_date)}</b><span>${o.r.home_road==='H'?'':'@'}${esc(o.r.opponent)}</span></div>`).join('')}</div>`}
+    <div class="cleg"><span><i style="background:var(--green)"></i>Over ${M.line}</span><span><i style="background:var(--red)"></i>Under</span><span><u></u>Line</span><span class="muted">Oldest → newest</span></div></div>`:'';
   const gamesById=new Map(S.games.map(g=>[g.id,g]));
   const glRows=rows.slice(0,25).map(r=>{
     const g=gamesById.get(r.game_id); let res='';
@@ -837,19 +856,18 @@ function drawPlayer(){
   const missing=M.stat==='Shot Attempts' && rows.some(r=>r.shot_attempts==null);
   $('pcard').innerHTML=`
     <div class="phead"><div><div class="pnm">${esc(M.p.name)}</div><div class="muted small">${esc(M.p.team)} · ${esc(M.p.pos)} · #${esc(M.p.number??'--')}</div></div><button class="close" id="mClose">&times;</button></div>
-    <div class="row3">
-      <div><label>Bet type</label><select id="mStat">${stats.map(s=>`<option ${s===M.stat?'selected':''}>${s}</option>`).join('')}</select></div>
-      <div><label>Timeframe</label><select id="mWin" ${M.vs?'disabled':''}>${['Last 5','Last 10','Last 20','Last 30','Season','All-time'].map(s=>`<option ${s===M.window?'selected':''}>${s}</option>`).join('')}</select></div>
-      <div><label>Splits</label><select id="mSplit">${['Home+Away','Home','Away'].map(s=>`<option ${s===M.split?'selected':''}>${s}</option>`).join('')}</select></div>
-    </div>
-    <div style="margin-bottom:10px;"><label>Head to head ${M.todayOpp?`(today: ${esc(M.todayOpp)})`:''}</label>
-      <select id="mVs"><option value="">None</option>${opps.map(o=>`<option ${o===M.vs?'selected':''}>${o}</option>`).join('')}</select></div>
+    <div class="chips" id="mStats">${stats.map(x=>`<button class="mc ${x===M.stat?'on':''}" data-v="${x}">${x}</button>`).join('')}</div>
     <div class="hit">
       <div><div class="hpct" style="color:var(--green)">${h.n?Math.round(h.pct*100)+'%':'--'}</div><div class="hlab">Over ${h.over}/${h.n}</div></div>
       <div><div class="hpct" style="color:var(--blue)">${h.n?Math.round((1-h.pct)*100)+'%':'--'}</div><div class="hlab">Under ${h.under}/${h.n}</div></div>
       <div><div class="hpct">${h.n?h.avg.toFixed(2):'--'}</div><div class="hlab">Avg / game</div></div>
     </div>
     ${h.n?svg:'<div class="empty">No games match this filter.</div>'}
+    <div class="chips" id="mWins" style="margin-top:12px;">${['Last 5','Last 10','Last 20','Season','All-time'].map(x=>`<button class="mc ${x===M.window&&!M.vs?'on':''}" data-v="${x}" ${M.vs?'disabled':''}>${x}</button>`).join('')}</div>
+    ${M.vs?`<div class="muted small" style="margin-top:6px;">Showing every ${esc(M.vs)} meeting on file. Timeframe is ignored.</div>`:''}
+    <details class="more" ${(M.split!=='Home+Away'||M.vs)?'open':''}><summary>More filters (home/away, head to head)</summary>
+      <div class="row3" style="grid-template-columns:1fr 1fr;"><div><label>Splits</label><select id="mSplit">${['Home+Away','Home','Away'].map(x=>`<option ${x===M.split?'selected':''}>${x}</option>`).join('')}</select></div>
+      <div><label>Head to head ${M.todayOpp?`(today: ${esc(M.todayOpp)})`:''}</label><select id="mVs"><option value="">None</option>${opps.map(o=>`<option ${o===M.vs?'selected':''}>${o}</option>`).join('')}</select></div></div></details>
     <div class="lineRow"><label style="margin:0;">Line</label><div style="display:flex;align-items:center;gap:8px;"><button class="step" id="mMinus">−</button><div class="lineVal">${M.line}</div><button class="step" id="mPlus">+</button></div></div>
     <div class="edgebox"><div><label style="margin:0 0 4px;">Your book's odds</label><input id="mOdds" type="number" inputmode="numeric" placeholder="-134" value="${esc(M.odds)}"></div>${edge}</div>
     ${missing?'<div class="muted small" style="margin-top:8px;">Some older games have no shot-attempt data yet — they\'re skipped.</div>':''}
@@ -857,8 +875,8 @@ function drawPlayer(){
     <div class="muted small" style="margin-bottom:6px;">${M.vs?`Every ${esc(M.vs)} meeting we have on file (regular season, ${h.n} games)`:'Regular season only'}</div>
     <div style="overflow-x:auto;"><table class="gl"><thead><tr><th>Date</th><th>Vs</th><th>Result</th><th style="text-align:right">${esc(M.stat)}</th></tr></thead><tbody>${glRows}</tbody></table></div>`;
   $('mClose').onclick=closePlayer;
-  $('mStat').onchange=e=>{ M.stat=e.target.value; if(!M.isG) M.line=STATS[M.stat].line; drawPlayer(); };
-  $('mWin').onchange=e=>{ M.window=e.target.value; drawPlayer(); };
+  document.querySelectorAll('#mStats .mc').forEach(b=>b.onclick=()=>{ M.stat=b.dataset.v; if(!M.isG) M.line=STATS[M.stat].line; drawPlayer(); });
+  document.querySelectorAll('#mWins .mc').forEach(b=>b.onclick=()=>{ M.window=b.dataset.v; drawPlayer(); });
   $('mSplit').onchange=e=>{ M.split=e.target.value; drawPlayer(); };
   $('mVs').onchange=e=>{ M.vs=e.target.value; drawPlayer(); };
   $('mMinus').onclick=()=>{ M.line=Math.max(0.5,M.line-1); drawPlayer(); };
