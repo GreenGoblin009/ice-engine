@@ -113,6 +113,8 @@ input[type=date]{min-width:0; -webkit-appearance:none; appearance:none; min-heig
 .cax{padding-left:24px; display:flex; justify-content:space-between; font-size:10px; color:var(--muted); margin-top:5px;}
 .cleg{display:flex; flex-wrap:wrap; gap:4px 12px; font-size:10.5px; color:var(--muted); margin-top:8px;}
 .cleg i{display:inline-block; width:9px; height:9px; border-radius:2px; margin-right:4px;} .cleg u{display:inline-block; width:12px; border-top:2px dashed #D4A017; margin-right:4px; vertical-align:middle;}
+.jersey-card{position:relative;}
+.ppbadge{position:absolute; top:4px; right:4px; font-size:10px; font-weight:800; padding:2px 5px; border-radius:5px; background:#D4A017; color:#1a1300; letter-spacing:.3px;}
 .flab{font-size:11px; color:var(--muted); margin:10px 0 0; font-weight:700; letter-spacing:.3px; text-transform:uppercase;}
 .mini{font:inherit; font-size:12px; padding:6px 8px; border-radius:999px; background:var(--card2); color:var(--muted); border:1px solid var(--line);}
 .more{margin-top:10px;} .more summary{font-size:12px; color:var(--muted); cursor:pointer; padding:4px 0;}
@@ -569,6 +571,7 @@ function jerseyCard(l){
     <div class="jname">${esc(l.player_name)}</div>
     ${off?`<div class="jstat" style="color:var(--red)">${esc(l.status.toUpperCase())}</div>`:''}
     ${l.slot==='goalie'&&l.confirmed_starter?'<div class="jstat" style="color:var(--green)">STARTER</div>':''}
+    ${!off&&l.pp_unit?`<div class="ppbadge">PP${l.pp_unit}</div>`:''}
   </button>`;
 }
 function renderLineups(){
@@ -583,11 +586,13 @@ function renderLineups(){
   const out=rows.filter(l=>l.status!=='projected');
   const lines=[1,2,3,4].map(n=>grp(`LINE ${n}`,proj.filter(l=>l.slot==='line'&&l.slot_number===n))).join('');
   const pairs=[1,2,3].map(n=>grp(`PAIR ${n}`,proj.filter(l=>l.slot==='pair'&&l.slot_number===n))).join('');
+  const ppg=[1,2].map(n=>grp(`POWER PLAY ${n}`,proj.filter(l=>(l.slot==='line'||l.slot==='pair')&&l.pp_unit===n))).join('');
+  const ppNote=(proj.some(l=>l.pp_unit)?'':'<div class="muted small" style="margin:10px 0;">Power-play units aren\'t saved for this team yet. They fill in with the next lineup refresh.</div>');
   const gl=grp('GOALIES',proj.filter(l=>l.slot==='goalie'));
   const other=grp('SCRATCHED / INJURED',out);
   const g=dayGames().find(x=>x.away===S.team||x.home===S.team);
   const head=g?`<div class="muted small" style="margin-bottom:4px;">${esc(g.away)} @ ${esc(g.home)} · ${fmtTime(g.start_time_utc)}</div>`:'';
-  $('view').innerHTML=head+lines+pairs+gl+other;
+  $('view').innerHTML=head+lines+pairs+ppg+ppNote+gl+other;
 }
 
 /* ---- stats from logs ---- */
