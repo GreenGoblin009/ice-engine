@@ -515,24 +515,20 @@ def build_supabase_rows(output):
     day), and the rows whose shot attempts were counted in this run WITH it."""
     pulled_at = output["pulledAt"]
 
-    # Today's slate is normally part of the season list already; it's the
-    # fallback if that list couldn't be fetched.
-    season_games = {g["gameId"]: g for g in output["schedule"]}
-    season_games.update({g["gameId"]: g for g in output.get("games", [])})
     games = [{
         "id": g["gameId"],
-        "season": g.get("season", int(output["season"])),
+        "season": g["season"],
         "game_date": g["date"],
         "game_type": g["gameType"],
-        "game_state": g.get("gameState"),
+        "game_state": g["gameState"],
         "away": g["away"],
         "home": g["home"],
         "start_time_utc": g["startTimeUTC"],
-        "away_score": g.get("awayScore"),
-        "home_score": g.get("homeScore"),
-        "last_period_type": g.get("lastPeriodType"),
+        "away_score": g["awayScore"],
+        "home_score": g["homeScore"],
+        "last_period_type": g["lastPeriodType"],
         "updated_at": pulled_at,
-    } for g in season_games.values()]
+    } for g in output.get("games", [])]
 
     players, logs, logs_with_attempts = [], [], []
     for team_data in output["teams"].values():
@@ -572,10 +568,34 @@ def build_supabase_rows(output):
     return games, players, logs, logs_with_attempts
 
 
+def schedule_only_game_rows(output):
+    """Rows for games on the day's slate that the season list doesn't cover:
+    either that list couldn't be fetched, or the pull is for another season
+    (a backfill run today still reads today's schedule).
+
+    Each game is filed under its OWN season, worked out from its date — not
+    the season being pulled. State and score are left out altogether, so the
+    upsert can't blank a result an earlier run saved."""
+    listed = {g["gameId"] for g in output.get("games", [])}
+    return [{
+        "id": g["gameId"],
+        "season": int(season_for(date.fromisoformat(g["date"]))),
+        "game_date": g["date"],
+        "game_type": g["gameType"],
+        "away": g["away"],
+        "home": g["home"],
+        "start_time_utc": g["startTimeUTC"],
+        "updated_at": output["pulledAt"],
+    } for g in output["schedule"] if g["gameId"] not in listed]
+
+
 def save_to_supabase(output):
     games, players, logs, _ = build_supabase_rows(output)
     print(f"Saving to Supabase ({SUPABASE_URL}) ...")
     supabase_upsert("games", games, "id")
+    extra = schedule_only_game_rows(output)
+    if extra:
+        supabase_upsert("games", extra, "id")
     supabase_upsert("players", players, "id")  # before logs: logs reference players
     supabase_upsert("player_game_logs", logs, "player_id,game_id")
 
