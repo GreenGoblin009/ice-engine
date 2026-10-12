@@ -41,6 +41,7 @@ create table if not exists public.player_game_logs (
   sog            smallint,                     -- skaters only
   shot_attempts  smallint,                     -- sog + missed + blocked; null until counted
   toi            text,                         -- "MM:SS"
+  pp_toi         integer,                      -- power-play seconds, skaters, regular season; null until filled
   games_started  smallint,                     -- goalies only, from here down
   decision       text,
   shots_against  smallint,
@@ -65,6 +66,7 @@ create table if not exists public.daily_lineups (
   status             text not null check (status in ('projected', 'scratched', 'injured', 'suspended')),
   confirmed_starter  boolean not null default false,  -- status report says this goalie starts
   detail             text,                     -- injury, or the sentence naming the starter
+  pp_unit            smallint check (pp_unit in (1, 2)),  -- from recent pp_toi, not the article; null = neither
   updated_at         timestamptz not null default now(),
   primary key (lineup_date, team, list_order)
 );
@@ -76,6 +78,10 @@ alter table public.games add column if not exists away_score smallint;
 alter table public.games add column if not exists home_score smallint;
 alter table public.games add column if not exists last_period_type text;
 alter table public.player_game_logs add column if not exists shot_attempts smallint;
+-- Power-play units (same statements as supabase/pp_units.sql).
+alter table public.player_game_logs add column if not exists pp_toi integer;
+alter table public.daily_lineups add column if not exists pp_unit smallint
+  check (pp_unit in (1, 2));
 
 create index if not exists games_game_date_idx on public.games (game_date);
 create index if not exists players_team_idx on public.players (team);
@@ -86,6 +92,9 @@ create index if not exists player_game_logs_opponent_idx
 -- The daily job asks "which rows still need shot attempts?" on every run.
 create index if not exists player_game_logs_missing_attempts_idx
   on public.player_game_logs (season) where shot_attempts is null;
+
+create index if not exists player_game_logs_missing_pp_toi_idx
+  on public.player_game_logs (season) where pp_toi is null;
 
 create index if not exists daily_lineups_player_idx
   on public.daily_lineups (player_id, lineup_date desc);

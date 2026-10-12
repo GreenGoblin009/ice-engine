@@ -27,6 +27,9 @@ WHAT THIS SCRIPT DOES, in order:
      JavaScript can load directly.
   7. If SUPABASE_URL and SUPABASE_KEY are set, upserts the same data
      into the players / games / player_game_logs tables (supabase/schema.sql).
+  8. Fills in each skater's power-play ice time (pp_toi) for every official
+     regular-season game that doesn't have it yet — Supabase only. The
+     lineups script turns these into power-play units.
 
 WHAT THIS SCRIPT DOES NOT DO YET:
   - Multi-season history. NHL's game-log endpoint gives you ONE season at a
@@ -53,6 +56,10 @@ import urllib.error
 from datetime import date, datetime, timedelta, timezone
 
 BASE = "https://api-web.nhle.com/v1"
+# The NHL's stats API (what nhl.com/stats is built on). Its "timeonice" report
+# is the only place power-play ice time per game is published; the boxscore
+# has total ice time only.
+STATS_BASE = "https://api.nhle.com/stats/rest/en"
 OUT_FILE = "daily_data.json"
 
 # All 32 team abbreviations as used by the NHL API
@@ -355,6 +362,18 @@ def add_shot_attempts(output, only=None, sleep_between=0.3):
     print(f"  {filled} gamelog row(s) filled in")
 
 
+def get_game_pp_toi(game_id):
+    """Power-play ice time, in seconds, of every skater in one game:
+    {player_id: seconds}. One request per game on purpose — the report
+    silently stops at 10,000 rows, which a whole season overruns. Returns
+    None if the fetch failed or the report has nothing for the game yet, so
+    the caller leaves it blank and a later run picks it up."""
+    data = fetch_json(f"{STATS_BASE}/skater/timeonice?isGame=true&limit=-1&cayenneExp=gameId={game_id}")
+    rows = (data or {}).get("data") or []
+    seconds = {r["playerId"]: r["ppTimeOnIce"] for r in rows if r.get("ppTimeOnIce") is not None}
+    return seconds or None
+
+
 def write_output(output, out_file=OUT_FILE):
     with open(out_file, "w") as f:
         json.dump(output, f, indent=2)
@@ -567,6 +586,58 @@ def save_shot_attempts_to_supabase(output):
     supabase_upsert("player_game_logs", logs_with_attempts, "player_id,game_id")
 
 
+def fill_pp_toi(season, sleep_between=0.5, save_every=25):
+    """Fill pp_toi on saved gamelog rows that don't have it, one stats request
+    per game. Works from what is missing in Supabase, so it is its own
+    backfill and is safe to stop and re-run: games already filled are never
+    asked for again. Regular season only, skaters only, and only games the
+    NHL has made official (OFF) — before that the report can be incomplete.
+
+    A skater the report doesn't list is left blank rather than given a 0."""
+    missing = supabase_select_all(
+        "player_game_logs?select=player_id,game_id,season,game_type,game_date,players!inner(pos)"
+        f"&players.pos=neq.G&pp_toi=is.null&season=eq.{season}&game_type=eq.{GAME_TYPE_REGULAR}"
+        "&order=player_id,game_id")
+    official = {g["id"] for g in supabase_select_all(
+        f"games?select=id&season=eq.{season}&game_type=eq.{GAME_TYPE_REGULAR}&game_state=eq.OFF&order=id")}
+    rows_by_game = {}
+    for r in missing:
+        if r["game_id"] in official:
+            rows_by_game.setdefault(r["game_id"], []).append(r)
+
+    print(f"Power-play ice time ({season}): {len(rows_by_game)} game(s) to read ...")
+    pending, filled, blank, no_report = [], 0, 0, 0
+
+    def save():
+        if pending:
+            supabase_upsert("player_game_logs", pending, "player_id,game_id")
+            pending.clear()
+
+    for n, game_id in enumerate(sorted(rows_by_game), 1):
+        seconds = get_game_pp_toi(game_id)
+        if seconds is None:
+            no_report += 1
+        else:
+            for r in rows_by_game[game_id]:
+                if r["player_id"] not in seconds:
+                    blank += 1
+                    continue
+                # The key and not-null columns as they already are, plus the
+                # new value: the upsert only touches the columns it is given.
+                pending.append({k: r[k] for k in ("player_id", "game_id", "season", "game_type", "game_date")})
+                pending[-1]["pp_toi"] = seconds[r["player_id"]]
+                filled += 1
+        if n % save_every == 0:
+            save()  # keep what's done if a long backfill is cut short
+        time.sleep(sleep_between)
+    save()
+    print(f"  {filled} gamelog row(s) filled in")
+    if no_report:
+        print(f"  [warn] {no_report} game(s) had no report yet — they'll be tried again next run")
+    if blank:
+        print(f"  [warn] {blank} row(s) left blank: the skater isn't in the NHL's report for that game")
+
+
 # ---------------------------------------------------------------------------
 # BACKFILL — run this ONCE (not daily) per past season you want real H2H
 # history for. This is what actually gives the Head-to-Head filter multiple
@@ -604,6 +675,11 @@ def parse_args(argv=None):
     parser.add_argument("--no-gamelogs", action="store_true", help="rosters and schedule only")
     parser.add_argument("--no-shot-attempts", action="store_true",
                         help="skip the play-by-play requests that count shot attempts")
+    parser.add_argument("--no-pp-toi", action="store_true",
+                        help="skip the stats requests that fill power-play ice time")
+    parser.add_argument("--pp-toi-only", action="store_true",
+                        help="only fill power-play ice time for --season (default: current) and stop; "
+                             "this is the backfill, e.g. --pp-toi-only --season 20252026")
     parser.add_argument("--require-supabase", action="store_true",
                         help="fail if the Supabase env vars are missing instead of skipping the upload")
     parser.add_argument("--only-at", default="",
@@ -632,6 +708,14 @@ def main(argv=None):
     if args.require_supabase and not supabase_ready:
         sys.exit("SUPABASE_URL and SUPABASE_KEY must be set (see README).")
 
+    if args.pp_toi_only:
+        if not supabase_ready:
+            sys.exit("--pp-toi-only needs SUPABASE_URL and SUPABASE_KEY: pp_toi is only kept in Supabase.")
+        fill_pp_toi(args.season.strip() or season_for(slot_day or nhl_today()))
+        if FAILED_URLS:
+            sys.exit(f"{len(FAILED_URLS)} NHL API request(s) failed; run again to fill the rest.")
+        return
+
     output = run_daily_pull(
         teams=teams,
         include_gamelogs=not args.no_gamelogs,
@@ -653,6 +737,9 @@ def main(argv=None):
         write_output(output)
         if supabase_ready:
             save_shot_attempts_to_supabase(output)
+
+    if supabase_ready and not (args.no_gamelogs or args.no_pp_toi):
+        fill_pp_toi(output["season"])
 
     if FAILED_URLS:
         sys.exit(f"{len(FAILED_URLS)} NHL API request(s) failed; saved data is incomplete.")

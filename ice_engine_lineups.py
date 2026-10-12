@@ -36,6 +36,11 @@ far steadier than the visible HTML.
 The starting-goalie detection reads free-form sentences, so treat
 confirmed_starter as "the article said so in a way this script understood".
 The matched sentence is saved in the detail column so it can be checked.
+
+POWER-PLAY UNITS are not in the article. pp_unit is worked out from the
+power-play ice time the daily pull saves (player_game_logs.pp_toi): see
+add_pp_units. It describes how each team has used its players lately, not
+an announced plan for tonight.
 """
 
 import argparse
@@ -56,6 +61,8 @@ OUT_FILE = "daily_lineups.json"
 
 STATUS_LABELS = ("scratched", "injured", "suspended")
 MIN_MATCH_RATE = 0.85  # share of dressed players that must be found in the players table
+PP_GAMES = 5      # a team's most recent regular-season games that decide its power-play units
+PP_UNIT_SIZE = 5  # skaters per unit
 
 MATCHUP = re.compile(r"^(.+?)(?:\s*\([^)]*\))?\s+at\s+(.+?)(?:\s*\([^)]*\))?$", re.I)
 TEAM_BLOCK = re.compile(r"^(.+?) projected (?:lineup|lines)$", re.I)
@@ -294,6 +301,7 @@ def build_team_rows(block, team_players):
             "status": status,
             "confirmed_starter": False,
             "detail": detail,
+            "pp_unit": None,
         })
 
     for slot, group, slot_lines in (("line", "F", forwards), ("pair", "D", defense)):
@@ -340,6 +348,69 @@ def mark_confirmed_starters(game_rows, status_text):
             if id(r) in starters:
                 r["confirmed_starter"] = True
                 r["detail"] = starters[id(r)][:300]
+
+
+def add_pp_units(rows, day):
+    """Set pp_unit on tonight's projected skaters: per team, the five with
+    the most power-play ice time over the team's last PP_GAMES regular-season
+    games before `day` are unit 1 and the next five unit 2 (fewer games early
+    in the season). A skater who played none of those games for the team is
+    placed by last season's power-play time instead. So the two can be
+    compared, everyone is ranked on seconds per game — for the players in the
+    recent games that is the same order as their totals.
+
+    Nobody is given a unit without power-play time behind it: a team with no
+    data keeps pp_unit empty, and a unit can come up short."""
+    season = int(engine.season_for(day))
+    last_season = season - 10001  # 20262027 -> 20252026
+    regular = engine.GAME_TYPE_REGULAR
+    skaters = {}
+    for r in rows:
+        if r["status"] == "projected" and r["slot"] in ("line", "pair") and r["player_id"]:
+            skaters.setdefault(r["team"], []).append(r)
+
+    per_game, need_last_season = {}, []
+    for team, team_rows in skaters.items():
+        # Newest first; 200 rows is far more than five games of one team's skaters.
+        logs = engine.supabase_request(
+            "GET", f"player_game_logs?select=player_id,game_id,pp_toi&team=eq.{team}&season=eq.{season}"
+                   f"&game_type=eq.{regular}&pp_toi=not.is.null&game_date=lt.{day.isoformat()}"
+                   f"&order=game_date.desc,game_id.desc&limit=200") or []
+        recent = []
+        for g in logs:
+            if g["game_id"] not in recent and len(recent) < PP_GAMES:
+                recent.append(g["game_id"])
+        totals = {}
+        for g in logs:
+            if g["game_id"] in recent:
+                totals[g["player_id"]] = totals.get(g["player_id"], 0) + g["pp_toi"]
+        for r in team_rows:
+            if r["player_id"] in totals:
+                per_game[r["player_id"]] = totals[r["player_id"]] / len(recent)
+            else:
+                need_last_season.append(r["player_id"])
+
+    if need_last_season:
+        logs = engine.supabase_select_all(
+            f"player_game_logs?select=player_id,pp_toi&season=eq.{last_season}&game_type=eq.{regular}"
+            f"&pp_toi=not.is.null&player_id=in.({','.join(map(str, need_last_season))})"
+            f"&order=player_id,game_id")
+        played = {}
+        for g in logs:
+            played.setdefault(g["player_id"], []).append(g["pp_toi"])
+        for player_id, seconds in played.items():
+            per_game[player_id] = sum(seconds) / len(seconds)
+
+    for team in sorted(skaters):
+        ranked = sorted((r for r in skaters[team] if per_game.get(r["player_id"], 0) > 0),
+                        key=lambda r: (-per_game[r["player_id"]], r["list_order"]))
+        for place, r in enumerate(ranked[:2 * PP_UNIT_SIZE]):
+            r["pp_unit"] = 1 + place // PP_UNIT_SIZE
+        if not ranked:
+            print(f"  [warn] {team}: no power-play ice time saved for these players — pp_unit left empty")
+            continue
+        units = [", ".join(r["player_name"] for r in ranked if r["pp_unit"] == u) for u in (1, 2)]
+        print(f"  {team} PP1: {units[0]} | PP2: {units[1] or 'none'}")
 
 
 def load_players(teams, use_supabase):
@@ -446,6 +517,16 @@ def run(day, use_supabase, late_in_day=True):
         if rate < MIN_MATCH_RATE:
             problems.append(f"only {rate:.0%} of dressed players were found in the players table — "
                             f"has the daily pull run today, or did the name format change?")
+
+    if use_supabase and rows:
+        try:
+            add_pp_units(rows, day)
+        except (SystemExit, Exception) as e:
+            # Units are an extra: the lineups are still worth saving without them.
+            for r in rows:
+                r["pp_unit"] = None
+            reason = "Supabase request failed" if isinstance(e, SystemExit) else repr(e)
+            print(f"  [warn] power-play units not worked out ({reason}) — saving the lineups without them")
 
     with open(OUT_FILE, "w") as f:
         json.dump({"pulledAt": pulled_at, "date": day.isoformat(), "lineups": rows}, f, indent=2)
