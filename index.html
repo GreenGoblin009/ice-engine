@@ -163,16 +163,18 @@ table.gl td{padding:5px 8px 5px 0; border-top:1px solid var(--line);}
 .edgebox{background:var(--card2); border:1px solid var(--line); border-radius:9px; padding:10px 12px; margin-top:12px; display:flex; align-items:center; gap:10px; justify-content:space-between;}
 .edgebox input{width:90px;}
 
-.gbar{margin:0 0 12px; padding:10px; background:var(--card); border:1px solid var(--line); border-radius:10px;}
-.gbar-top{display:flex; align-items:center; gap:8px; margin-bottom:8px; flex-wrap:wrap;}
-.gbar-top .gt{font-size:12px; font-weight:600; color:var(--muted); flex:1; min-width:90px;}
-.gbar-top select{width:auto; padding:6px 8px; font-size:12.5px; border-radius:6px;}
-.gbar-top button{font:inherit; font-size:12px; font-weight:600; padding:6px 9px; border-radius:6px; border:1px solid var(--line); background:var(--card2); color:var(--muted); cursor:pointer;}
-.gchips{display:flex; flex-wrap:wrap; gap:6px;}
-.gchip{font:inherit; font-size:12px; font-weight:600; padding:6px 9px; border-radius:8px; border:1px solid var(--green); background:rgba(47,191,113,.14); color:var(--text); cursor:pointer; text-align:left; line-height:1.25;}
-.gchip small{display:block; font-weight:500; font-size:10.5px; color:var(--muted);}
-.gchip.off{border-color:var(--line); background:var(--card2); color:var(--muted); text-decoration:line-through; opacity:.7;}
-.gchip.off small{text-decoration:none;}
+.gbar{margin:0 0 12px; padding:8px 10px 9px; background:var(--card); border:1px solid var(--line); border-radius:10px;}
+.gbar-top{display:flex; align-items:center; gap:6px; margin-bottom:7px;}
+.gbar-top .gt{font-size:12px; font-weight:600; color:var(--muted); flex:1; white-space:nowrap;}
+.gbar-top .gt b{color:var(--text);}
+.gbar-top select{width:auto; max-width:128px; padding:5px 6px; font-size:12px; border-radius:6px;}
+.gbar-top button{font:inherit; font-size:12px; font-weight:600; padding:5px 8px; border-radius:6px; border:1px solid var(--line); background:var(--card2); color:var(--muted); cursor:pointer; white-space:nowrap;}
+.gchips{display:flex; flex-wrap:nowrap; gap:6px; overflow-x:auto; -webkit-overflow-scrolling:touch; scrollbar-width:none; padding-bottom:1px;}
+.gchips::-webkit-scrollbar{display:none;}
+.gchip{flex:none; font:inherit; font-size:11.5px; font-weight:700; padding:5px 9px; border-radius:8px; border:1px solid var(--green); background:rgba(47,191,113,.14); color:var(--text); cursor:pointer; text-align:center; line-height:1.2; white-space:nowrap;}
+.gchip small{display:block; font-weight:500; font-size:10px; color:var(--muted);}
+.gchip.off{border-color:var(--line); background:var(--card2); color:var(--muted); opacity:.6;}
+.gchip.off span{text-decoration:line-through;}
 </style>
 </head>
 <body>
@@ -535,15 +537,15 @@ function etMinutes(iso){
 function loadHide(){
   S.hide=new Set(); S.cutoff='';
   try{
-    const raw=localStorage.getItem('ie_hide_'+S.day);
+    const raw=localStorage.getItem('ie2_hide_'+S.day);
     if(raw) JSON.parse(raw).forEach(id=>S.hide.add(id));
-    S.cutoff=localStorage.getItem('ie_cut_'+S.day)||'';
+    S.cutoff=localStorage.getItem('ie2_cut_'+S.day)||'';
   }catch(e){}
 }
 function saveHide(){
   try{
-    localStorage.setItem('ie_hide_'+S.day, JSON.stringify([...S.hide]));
-    localStorage.setItem('ie_cut_'+S.day, S.cutoff||'');
+    localStorage.setItem('ie2_hide_'+S.day, JSON.stringify([...S.hide]));
+    localStorage.setItem('ie2_cut_'+S.day, S.cutoff||'');
   }catch(e){}
 }
 function applyGameFilter(){
@@ -562,10 +564,11 @@ function renderGameBar(){
   bar.style.display='block';
   const hrs=[[17,'5 PM'],[18,'6 PM'],[19,'7 PM'],[20,'8 PM'],[21,'9 PM'],[22,'10 PM']];
   const shown=gs.filter(g=>!S.hide.has(g.id)).length;
-  bar.innerHTML=`<div class="gbar-top"><span class="gt">Games shown: ${shown} of ${gs.length}</span>
-    <select id="gCut" aria-label="Hide games starting after"><option value="">Hide after…</option>${hrs.map(([h,t])=>`<option value="${h}" ${String(h)===S.cutoff?'selected':''}>Hide after ${t} ET</option>`).join('')}</select>
+  const short=iso=>fmtTime(iso).replace(' ET','');
+  bar.innerHTML=`<div class="gbar-top"><span class="gt">Games <b>${shown}/${gs.length}</b></span>
+    <select id="gCut" aria-label="Hide games that start before"><option value="">Hide before…</option><option value="started" ${S.cutoff==='started'?'selected':''}>Hide started</option>${hrs.map(([h,t])=>`<option value="${h}" ${String(h)===S.cutoff?'selected':''}>Before ${t}</option>`).join('')}</select>
     <button id="gAll">Show all</button></div>
-    <div class="gchips">${gs.map(g=>`<button class="gchip ${S.hide.has(g.id)?'off':''}" data-id="${esc(g.id)}">${esc(g.away)} @ ${esc(g.home)}<small>${esc(fmtTime(g.start_time_utc))}</small></button>`).join('')}</div>`;
+    <div class="gchips">${gs.map(g=>`<button class="gchip ${S.hide.has(g.id)?'off':''}" data-id="${esc(g.id)}"><span>${esc(g.away)} @ ${esc(g.home)}</span><small>${esc(short(g.start_time_utc))}</small></button>`).join('')}</div>`;
   bar.querySelectorAll('.gchip').forEach(b=>b.onclick=()=>{
     const id=b.dataset.id; const g=gs.find(x=>String(x.id)===id); if(!g) return;
     if(S.hide.has(g.id)) S.hide.delete(g.id); else S.hide.add(g.id);
@@ -573,11 +576,15 @@ function renderGameBar(){
   });
   $('gCut').onchange=e=>{
     const v=e.target.value; S.cutoff=v; S.hide=new Set();
-    if(v){ const lim=(+v)*60; gs.forEach(g=>{ if(etMinutes(g.start_time_utc)>lim) S.hide.add(g.id); }); }
+    if(v==='started'){ const now=Date.now(); gs.forEach(g=>{ if(new Date(g.start_time_utc).getTime()<now) S.hide.add(g.id); }); }
+    else if(v){ const lim=(+v)*60; gs.forEach(g=>{ if(etMinutes(g.start_time_utc)<lim) S.hide.add(g.id); }); }
     saveHide(); applyGameFilter(); renderGameBar(); render();
   };
   $('gAll').onclick=()=>{ S.hide=new Set(); S.cutoff=''; saveHide(); applyGameFilter(); renderGameBar(); render(); };
+  const strip=bar.querySelector('.gchips'), first=strip.querySelector('.gchip:not(.off)');
+  if(first) strip.scrollLeft=Math.max(0,first.offsetLeft-strip.offsetLeft-2);
 }
+
 function setUpdated(){
   const el=$('updated');
   if(S.updatedAt){
