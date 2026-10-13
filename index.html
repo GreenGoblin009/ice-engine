@@ -175,6 +175,11 @@ table.gl td{padding:5px 8px 5px 0; border-top:1px solid var(--line);}
 .gchip small{display:block; font-weight:500; font-size:10px; color:var(--muted);}
 .gchip.off{border-color:var(--line); background:var(--card2); color:var(--muted); opacity:.6;}
 .gchip.off span{text-decoration:line-through;}
+.pstats{display:grid; grid-template-columns:repeat(5,1fr); gap:5px; margin:8px 0 2px;}
+.ps{min-width:0; background:var(--card2); border:1px solid var(--line); border-radius:8px; padding:5px 2px 4px; text-align:center;}
+.ps b{display:block; font-size:13px; line-height:1.15; white-space:nowrap;}
+.ps span{display:block; font-size:8.5px; letter-spacing:.05em; font-weight:600; color:var(--muted); margin-top:2px; white-space:nowrap;}
+.ptag{font-size:9.5px; font-weight:700; letter-spacing:.04em; padding:1px 6px; border-radius:999px; margin-left:7px; vertical-align:middle; border:1px solid currentColor;}
 </style>
 </head>
 <body>
@@ -899,11 +904,11 @@ async function renderLeaders(){
   rows.sort((a,b)=>key[L.sort](b)-key[L.sort](a));
   const total=rows.length; if(L.team==='ALL') rows=rows.slice(0,50);
   const list=rows.length?rows.map(r=>`<div class="prow lrow" data-pid="${r.x.player_id}" data-stat="${L.stat}" data-line="${L.line}" data-split="${L.split}" data-vs="${L.vs==='opp'?oppOf(r.x.team).replace(/^(vs|@) /,''):''}" data-win="${L.window==='Season'?'Season':L.window}"${r.pr?` data-odds="${r.pr.price}"`:''}>
-      <div><div class="pname">${esc(r.x.player_name)}</div>
+      <div><div class="pname">${esc(r.x.player_name)}${profTag(r.prof)}</div>
         <div class="pmeta">${esc(r.x.team)} ${esc(oppOf(r.x.team))} · avg ${r.h.avg.toFixed(2)}${r.pr?` · <b style="color:var(--text)">${fmtOdds(r.pr.price)}</b> ${esc(bookShort(r.pr.book))}`:''}</div>
-        ${profLine(r.prof)}</div>
+        ${profStrip(r.prof)}</div>
       <div><div class="pbig" style="color:${r.h.pct>=0.5?'var(--green)':'var(--text)'}">${Math.round(r.h.pct*100)}%</div><div class="psub">${r.h.over}/${r.h.n} · o${L.line} ${esc(L.stat)}</div></div><div class="dots" title="This season, oldest to newest">${r.l5r.map((o,i)=>{ const dt=o.d.slice(5).replace('-','/').replace(/^0/,'').replace(/\/0/,'/'); return (i>0&&o.old&&!r.l5r[i-1].old?'<div class="sep"></div>':'')+`<div class="g ${o.v>L.line?'h':'m'}${o.old?' old':''}"><b>${o.v}</b><span>${dt}</span></div>`; }).join('')}${r.l5r.some(o=>o.old)?'<div class="yr">dim = earlier season</div>':''}</div></div>`).join(''):'<div class="empty">No players match.</div>';
-  const note=`<div class="muted small" style="margin-bottom:10px;">Everyone in today's projected lineups. Regular season only. Boxes are this season's last 10 regular-season games (no preseason; with Head to head they are the last 10 meetings with tonight's opponent), oldest on the left, newest on the right, with the stat and date. Green = went over. Under each name: how often he scores (this and last season), what share of his shots go in, shots on goal and attempts per game, and goals in his last 10. SNIPER = scores a lot on few shots, VOLUME = 3+ shots a game. Tap a player for the full game log.${L.team==='ALL'&&total>50?` Showing the top 50 of ${total}.`:''}</div>`;
+  const note=`<div class="muted small" style="margin-bottom:10px;">Everyone in today's projected lineups. Regular season only. Boxes are this season's last 10 regular-season games (no preseason; with Head to head they are the last 10 meetings with tonight's opponent), oldest on the left, newest on the right, with the stat and date. Green = went over. The five boxes under each name: SCORES = how often he scores (this and last season), SHOOT % = share of his shots that go in, SHOTS/G and ATT/G = shots on goal and attempts per game, GOALS L10 = goals in his last 10. SNIPER = scores a lot on few shots; VOLUME = 3+ shots a game. Tap a player for the full game log.${L.team==='ALL'&&total>50?` Showing the top 50 of ${total}.`:''}</div>`;
   $('view').innerHTML=controls+note+list; wire();
 }
 
@@ -920,11 +925,18 @@ function scoreProfile(logs){
   const last10=g.slice(0,10).reduce((a,r)=>a+(r.goals||0),0);
   return {n,gg,every:gg?n/gg:null,goals,sog,shootPct:sog?goals/sog:null,sogPg:sog/n,att,last10};
 }
-function profLine(f){
+function profTag(f){
   if(!f) return '';
-  const tag=(f.shootPct!=null&&f.sog>=50&&f.shootPct>=0.16&&f.sogPg<2.6)?' <b style="color:var(--amber)">SNIPER</b>':(f.sogPg>=3.0?' <b style="color:var(--blue)">VOLUME</b>':'');
-  return `<div class="pmeta">${f.every?`Scores 1 in ${f.every.toFixed(1)} games`:`No goals in ${f.n} games`} · ${f.shootPct!=null?Math.round(f.shootPct*100)+'% of shots go in':'–'} · ${f.sogPg.toFixed(1)} SOG${f.att!=null?` · ${f.att.toFixed(1)} att`:''}/g · ${f.last10} G last 10${tag}</div>`;
+  if(f.shootPct!=null&&f.sog>=50&&f.shootPct>=0.16&&f.sogPg<2.6) return '<span class="ptag" style="color:var(--amber)">SNIPER</span>';
+  if(f.sogPg>=3.0) return '<span class="ptag" style="color:var(--blue)">VOLUME</span>';
+  return '';
 }
+function profStrip(f){
+  if(!f) return '';
+  const cell=(v,l,c)=>`<div class="ps"><b${c?` style="color:${c}"`:''}>${v}</b><span>${l}</span></div>`;
+  return `<div class="pstats">${cell(f.every?`1 in ${f.every.toFixed(1)}`:`0 in ${f.n}`,'SCORES')}${cell(f.shootPct!=null?Math.round(f.shootPct*100)+'%':'–','SHOOT %',f.shootPct!=null&&f.sog>=50&&f.shootPct>=0.16?'var(--amber)':'')}${cell(f.sogPg.toFixed(1),'SHOTS/G',f.sogPg>=3.0?'var(--blue)':'')}${cell(f.att!=null?f.att.toFixed(1):'–','ATT/G')}${cell(f.last10,'GOALS L10')}</div>`;
+}
+
 /* ============ PLAYER MODAL ============ */
 const M={};
 async function openPlayer(pid, stat, line, odds, split, vsTeam, win){
