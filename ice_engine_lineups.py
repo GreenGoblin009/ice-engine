@@ -256,12 +256,39 @@ def parse_article(body, schedule, nicknames):
     return games, problems
 
 
+# First names that are one name spelled or shortened differently by different
+# sources. Only needed where the first letter differs: same surname and same
+# first initial already match ('Matt' / 'Matthew', 'Alexei' / 'Alexey').
+FIRST_NAME_VARIANTS = [
+    {"egor", "yegor"},
+    {"evgeni", "evgeny", "evgenii", "yevgeni", "yevgeny", "jevgeni"},
+    {"yaroslav", "jaroslav"},
+    {"yakov", "jakov", "jakob", "jacob"},
+    {"yuri", "juri"},
+    {"alexander", "aleksander", "aleksandr", "alexandre", "alex", "oleksandr", "sasha"},
+    {"alexei", "alexey", "aleksei", "oleksii"},
+    {"anthony", "tony"},
+    {"william", "bill", "billy"},
+    {"robert", "bob", "bobby"},
+    {"edward", "ted", "teddy"},
+    {"theodore", "ted", "teddy"},
+]
+
+
 def normalize(name):
-    """Name as a matching key: no accents, case, periods, apostrophes or
-    hyphens ("Zachary L’Heureux" == "Zachary L'Heureux", "J.J." == "JJ")."""
+    """Name as a matching key: no accents, case, periods or apostrophes, and
+    a hyphen counts as a space ("Zachary L’Heureux" == "Zachary L'Heureux",
+    "J.J." == "JJ", "Sandin-Pellikka" == "Sandin Pellikka")."""
     s = unicodedata.normalize("NFKD", name)
     s = "".join(c for c in s if not unicodedata.combining(c)).lower()
+    s = re.sub(r"[-‐‑–—]", " ", s)
     return " ".join(re.sub(r"[^a-z ]", "", s).split())
+
+
+def same_first_name(a, b):
+    """Whether two first names are one name: same first letter, or listed
+    together in FIRST_NAME_VARIANTS."""
+    return a[:1] == b[:1] or any(a in names and b in names for names in FIRST_NAME_VARIANTS)
 
 
 def position_group(pos):
@@ -269,15 +296,19 @@ def position_group(pos):
 
 
 def find_players(name, team_players, group=None):
-    """Players on the team this name could be. Exact name first; failing
-    that, same surname and same first initial ('Matt' / 'Matthew'). `group`
+    """Players on the team this name could be. Exact name first (spacing
+    ignored: 'De Haan' / 'DeHaan'); failing that, same surname and a first
+    name that is the same name ('Matt' / 'Matthew', 'Yegor' / 'Egor'). `group`
     ('F', 'D', 'G') settles two teammates with the same name."""
     key = normalize(name)
     found = [p for p in team_players if p["key"] == key]
+    if not found:
+        found = [p for p in team_players if p["key"].replace(" ", "") == key.replace(" ", "")]
     if not found and " " in key:
         first, last = key.split(" ", 1)
         found = [p for p in team_players
-                 if " " in p["key"] and p["key"].split(" ", 1)[1] == last and p["key"][0] == first[0]]
+                 if " " in p["key"] and p["key"].split(" ", 1)[1] == last
+                 and same_first_name(first, p["key"].split(" ", 1)[0])]
     if len(found) > 1 and group:
         found = [p for p in found if position_group(p["pos"]) == group] or found
     return found

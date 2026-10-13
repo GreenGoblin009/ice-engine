@@ -242,7 +242,38 @@ def get_roster(team_abbrev):
                 "number": p.get("sweaterNumber"),
                 "pos": p.get("positionCode"),
             })
-    return players
+    return players + get_roster_extras(team_abbrev, {p["id"] for p in players})
+
+
+def get_roster_extras(team_abbrev, on_roster):
+    """Players who are with the team but missing from its roster endpoint
+    (Damon Severson, CBJ, October 2026: playing every night, not listed).
+    Without them a dressed player has no row in the players table, so no
+    player id, no gamelog and no props.
+
+    The club-stats endpoint lists everyone who has played for the team this
+    season. Each one the roster lacks is checked against his own player page
+    and kept only if it still says this team, so a traded player isn't pulled
+    back. This is an extra: if either call fails the roster is used as is."""
+    failed_before = len(FAILED_URLS)
+    extras = []
+    stats = fetch_json(f"{BASE}/club-stats/{team_abbrev}/now", retries=1) or {}
+    for p in stats.get("skaters", []) + stats.get("goalies", []):
+        if p.get("playerId") in on_roster:
+            continue
+        page = fetch_json(f"{BASE}/player/{p['playerId']}/landing", retries=1) or {}
+        if page.get("currentTeamAbbrev") != team_abbrev or not page.get("isActive"):
+            continue
+        extras.append({
+            "id": p["playerId"],
+            "name": f"{page['firstName']['default']} {page['lastName']['default']}",
+            "team": team_abbrev,
+            "number": page.get("sweaterNumber"),
+            "pos": page.get("position") or p.get("positionCode"),
+        })
+        print(f"  [note] {extras[-1]['name']} ({team_abbrev}) is not on the roster endpoint — added from his player page")
+    del FAILED_URLS[failed_before:]
+    return extras
 
 
 def get_player_game_log(player_id, season=None, game_type=GAME_TYPE_REGULAR, goalie=False):
