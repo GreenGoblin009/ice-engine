@@ -10,6 +10,9 @@ Unlike the daily pull, this is NOT an API. The article is written by hand
 every day, so this script is a scraper and is deliberately strict: anything
 it doesn't recognise is reported and the run exits non-zero, rather than
 guessing and saving bad data. Games that parse cleanly are still saved.
+The one exception is the scratched / injured / suspended lists: a line or
+name there that can't be read is skipped with a warning, and the game's
+lines, pairs and goalies are saved as usual.
 
 HOW THE ARTICLE IS LAID OUT (as of October 2026) — this is what the parser
 expects, and what to compare against when it starts failing:
@@ -140,10 +143,10 @@ def get_schedule(day):
 
 
 def clean_line(raw):
-    """One article line as plain text: no Markdown emphasis, heading marks
-    or links, single spaces."""
+    """One article line as plain text: no Markdown emphasis, escapes, heading
+    marks or links, single spaces."""
     line = re.sub(r"\[([^\]]+)\]\([^)]*\)", r"\1", raw)
-    return " ".join(line.replace("*", " ").strip().lstrip("#").split())
+    return " ".join(re.sub(r"[*\\]", " ", line).strip().lstrip("#").split())
 
 
 def split_entries(text):
@@ -161,7 +164,11 @@ def split_entries(text):
 def parse_article(body, schedule, nicknames):
     """Split the article into games and team blocks. Returns (games,
     problems): each game is {gameId, away, home, status, blocks: {abbrev:
-    {lines, scratched, injured, suspended}}, problems: [...]}."""
+    {lines, scratched, injured, suspended}}, problems: [...], warnings: [...]}.
+
+    A game with problems isn't saved. Warnings are for the scratched / injured
+    / suspended lists only: a line or name there that can't be read is left
+    out and the rest of the game is kept."""
     # Game headings run straight on from the previous paragraph, so put
     # every heading on a line of its own first.
     body = re.sub(r"(?<!#)(#{2,}\s)", r"\n\1", body)
@@ -190,7 +197,7 @@ def parse_article(body, schedule, nicknames):
                 continue
             game = {"gameId": schedule[(away, home)], "away": away, "home": home,
                     "nick": {away_nick: away, home_nick: home},
-                    "status": "", "blocks": {}, "problems": []}
+                    "status": "", "blocks": {}, "problems": [], "warnings": []}
             games.append(game)
             continue
 
@@ -220,17 +227,29 @@ def parse_article(body, schedule, nicknames):
 
         m = LABEL.match(line)
         if m:
-            label = m.group(1).strip().lower()
+            # Hand-typed emphasis sometimes lands inside the word ("*I\**njured:**"
+            # reads as "I njured:"), so the label is compared without its spaces.
+            label = m.group(1).replace(" ", "").lower()
             if label not in STATUS_LABELS:
-                game["problems"].append(f"unknown label '{m.group(1)}:' in '{line}'")
+                game["warnings"].append(f"skipped unknown label '{m.group(1)}:' in '{line}'")
                 continue
-            block[label] += split_entries(m.group(2))
+            for name, detail in split_entries(m.group(2)):
+                if PLAYER_NAME.match(name):
+                    block[label].append((name, detail))
+                else:
+                    game["warnings"].append(f"skipped '{name}' in the {label} list: not a player name")
             continue
 
         names = [n.strip() for n in NAME_SEPARATOR.split(line) if n.strip()]
         bad = [n for n in names if not PLAYER_NAME.match(n)]
         if bad or len(names) > 3:
-            game["problems"].append(f"can't read '{line}' as a line of player names")
+            # A status list whose label is too garbled to recognise is skipped;
+            # anything else unreadable could be a line, pair or goalie.
+            if ":" in line or re.sub(r"[^a-z]", "", line.lower()).startswith(STATUS_LABELS):
+                game["warnings"].append(f"skipped '{line}': looks like a scratched / injured list "
+                                        f"but the label can't be read")
+            else:
+                game["problems"].append(f"can't read '{line}' as a line of player names")
             continue
         block["lines"].append(names)
 
@@ -312,8 +331,6 @@ def build_team_rows(block, team_players):
         add(names[0], "projected", "goalie", number, "G")
     for status in STATUS_LABELS:
         for name, detail in block[status]:
-            if not PLAYER_NAME.match(name):
-                raise PageFormatError(f"can't read '{name}' in the {status} list as a player name")
             add(name, status, detail=detail)
 
     wrong = [r["player_name"] for r in rows if r["slot"] == "goalie" for p in team_players
@@ -480,6 +497,8 @@ def run(day, use_supabase, late_in_day=True):
     for g in games:
         label = f"{g['away']} at {g['home']}"
         game_rows, game_problems = [], list(g["problems"])
+        for w in g["warnings"]:
+            print(f"  [warn] {label}: {w}")
         for team, opponent in ((g["away"], g["home"]), (g["home"], g["away"])):
             if team not in g["blocks"]:
                 game_problems.append(f"no '{team} projected lineup' section")
