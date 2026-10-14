@@ -10,7 +10,9 @@ WHAT IT DOES, in order:
      credits are left; with fewer than MIN_CREDITS the run stops there.
   2. For each game that hasn't started yet, asks for the MARKETS below from
      US bookmakers — one call per game. This is the part that costs credits:
-     1 per market that comes back, so 3 per game with three markets.
+     1 per market that comes back, so 3 per game with three markets. A
+     scheduled run can ask for fewer (--markets-at): the 7 PM refresh skips
+     assists, and the assists prices saved at 4 PM are left as they are.
   3. Matches each player name to the players table: accents, punctuation
      and spelling variants ignored, the two teams in the game and tonight's
      saved lineup used to settle shared names. Rows it can't match are still
@@ -185,7 +187,7 @@ def rows_for_event(event, odds, day, home, away, players, pulled_at, unmatched, 
     """One row per price: player x market x line x side x bookmaker.
     unmatched and settled collect {name (game): reason} for the end-of-run report."""
     outcomes = [(book, market, o) for book in odds.get("bookmakers", []) for market in book.get("markets", [])
-                if market["key"] in MARKETS for o in market.get("outcomes", [])
+                if market["key"] in MARKETS for o in market.get("outcomes", [])  # a short pull returns only its own
                 if (o.get("description") or "").strip() and o.get("price") is not None]
     # Names carrying a birth-year tag first: what they match tells a plain
     # "Elias Pettersson" in the same game which of the two it must be.
@@ -229,20 +231,40 @@ def report_names(unmatched, settled):
         print(f"  - {name}: {unmatched[name]}")
 
 
-def save_to_supabase(rows, day, event_ids, pulled_at):
+def save_to_supabase(rows, day, event_ids, pulled_at, markets=MARKETS):
     print(f"Saving to Supabase ({engine.SUPABASE_URL}) ...")
     engine.supabase_upsert("player_odds", rows, "game_date,player_name,market,line,side,book")
-    # Drop these games' rows from an earlier run today that this run didn't rewrite.
+    # Drop these games' rows from an earlier run today that this run didn't
+    # rewrite — only in the markets this run asked for, so a pull without
+    # assists doesn't wipe the assists prices saved earlier.
     engine.supabase_request(
         "DELETE", f"player_odds?game_date=eq.{day.isoformat()}"
-                  f"&event_id=in.({','.join(event_ids)})&updated_at=lt.{pulled_at}")
+                  f"&event_id=in.({','.join(event_ids)})&market=in.({','.join(markets)})"
+                  f"&updated_at=lt.{pulled_at}")
 
 
-def run(day, key, use_supabase, max_events=None):
+def markets_for(markets_at, slot):
+    """The markets a scheduled run should pull. markets_at is
+    'HH:MM=market,market' (several times separated by ';'); a run at any
+    other time, or a manual run (no slot), pulls all of MARKETS."""
+    for part in filter(None, (p.strip() for p in markets_at.split(";"))):
+        when, _, keys = part.partition("=")
+        wanted = [k.strip() for k in keys.split(",") if k.strip()]
+        unknown = [k for k in wanted if k not in MARKETS]
+        if not re.fullmatch(r"\d{1,2}:\d{2}", when.strip()) or not wanted or unknown:
+            sys.exit(f"--markets-at: can't read '{part}' (expected HH:MM=market,market with markets from "
+                     f"{', '.join(MARKETS)})")
+        hour, minute = map(int, when.split(":"))
+        if slot is not None and (slot.hour, slot.minute) == (hour, minute):
+            return wanted
+    return list(MARKETS)
+
+
+def run(day, key, use_supabase, max_events=None, markets=MARKETS):
     pulled_at = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     now = datetime.now(timezone.utc)
     tz = engine.nhl_timezone()
-    print(f"Ice Engine odds — {pulled_at} (NHL date {day}); markets: {', '.join(MARKETS)}")
+    print(f"Ice Engine odds — {pulled_at} (NHL date {day}); markets: {', '.join(markets)}")
 
     events, headers = odds_api("/events", key)  # free
     left = int(float(headers.get("x-requests-remaining") or 0))
@@ -274,7 +296,7 @@ def run(day, key, use_supabase, max_events=None):
             problems.append(f"{label}: skipped, only {left} credits left")
             continue
         odds, headers = odds_api(f"/events/{e['id']}/odds", key, regions=REGIONS,
-                                 markets=",".join(MARKETS), oddsFormat="american")
+                                 markets=",".join(markets), oddsFormat="american")
         cost = int(float(headers.get("x-requests-last") or 0))
         spent += cost
         left = int(float(headers.get("x-requests-remaining") or left))
@@ -299,7 +321,7 @@ def run(day, key, use_supabase, max_events=None):
     print(f"Wrote {OUT_FILE} ({len(rows)} rows)")
 
     if use_supabase and rows:
-        save_to_supabase(rows, day, saved_events, pulled_at)
+        save_to_supabase(rows, day, saved_events, pulled_at, markets)
     print(f"Credits: this run used {spent}; {left} left.")
     report_names(unmatched, settled)
     if problems:
@@ -317,9 +339,12 @@ def main(argv=None):
     parser.add_argument("--only-at", default="",
                         help="for scheduled runs: Eastern times to run at, e.g. '16:00'; other triggers "
                              "exit quietly (see SCHEDULE GATE in ice_engine_daily_pull.py)")
+    parser.add_argument("--markets-at", default="",
+                        help="for scheduled runs: a shorter list of markets at some times, e.g. "
+                             "'19:00=player_points,player_goal_scorer_anytime'; other runs pull every market")
     args = parser.parse_args(argv)
 
-    go, _, slot_day = engine.gate_on_schedule(args.only_at)
+    go, slot, slot_day = engine.gate_on_schedule(args.only_at)
     if not go:
         return
     day = date.fromisoformat(args.date) if args.date.strip() else (slot_day or engine.nhl_today())
@@ -334,7 +359,7 @@ def main(argv=None):
         print("Supabase env vars not set — matching against NHL API rosters and skipping the upload.")
 
     try:
-        run(day, key, use_supabase, args.max_events or None)
+        run(day, key, use_supabase, args.max_events or None, markets_for(args.markets_at, slot))
     except OddsError as e:
         print(f"[error] {e}", flush=True)
         if os.environ.get("GITHUB_ACTIONS"):

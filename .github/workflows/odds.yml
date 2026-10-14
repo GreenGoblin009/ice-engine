@@ -4,7 +4,9 @@ on:
   schedule:
     # Wanted run times: 4:00 PM and 7:00 PM US Eastern, all year. The 7 PM
     # run refreshes prices for games that haven't started; games under way
-    # are skipped and keep their 4 PM prices. GitHub cron is UTC-only and
+    # are skipped and keep their 4 PM prices. It pulls points and anytime
+    # goal only (2 credits a game, not 3); assists keep their 4 PM prices.
+    # GitHub cron is UTC-only and
     # ignores daylight saving, so each time is listed at both UTC hours it
     # can fall on. The script works out which one is right today and the
     # other exits within seconds. Keep one time per line: the script reads
@@ -39,7 +41,9 @@ jobs:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
           SCHEDULE_CRON: ${{ github.event.schedule }}  # empty on a manual run
-        run: python ice_engine_odds.py --require-supabase --only-at "16:00,19:00"
+        run: >
+          python ice_engine_odds.py --require-supabase --only-at "16:00,19:00"
+          --markets-at "19:00=player_points,player_goal_scorer_anytime"
 
       - name: Keep the raw JSON for debugging
         if: always()
