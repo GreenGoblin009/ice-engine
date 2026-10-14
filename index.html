@@ -947,7 +947,7 @@ function profStrip(f){
 
 
 /* ============ HOT TONIGHT: form + role, not just edge ============ */
-S.hot=S.hot||{stat:'Goals',price:'any',sort:'blend'};
+S.hot=S.hot||{stat:'Goals',price:'any',sort:'edge'};
 function avgToiMin(logs){
   let r=logs.filter(x=>x.season===CUR&&x.toi); if(r.length<5) r=logs.filter(x=>x.toi);
   r=r.slice(0,25); if(!r.length) return null;
@@ -967,7 +967,7 @@ async function renderHot(){
   const controls=`<div class="lgrid">
     <div><label>Stat</label><select id="hStat">${['Goals','Points','Assists'].map(x=>`<option ${x===H.stat?'selected':''}>${x}</option>`).join('')}</select></div>
     <div><label>Price</label><select id="hPrice">${[['any','Any price'],['180','+180 or longer'],['100','+100 or longer'],['safe','−140 or better (safe)']].map(([v,t])=>`<option value="${v}" ${v===H.price?'selected':''}>${t}</option>`).join('')}</select></div>
-    <div style="grid-column:1/3;"><label>Rank by</label><select id="hSort">${[['blend','Hot + value (default)'],['form','Hottest form'],['edge','Biggest edge'],['chance','Highest chance']].map(([v,t])=>`<option value="${v}" ${v===H.sort?'selected':''}>${t}</option>`).join('')}</select></div></div>`;
+    <div style="grid-column:1/3;"><label>Rank by</label><select id="hSort">${[['edge','Best value (default)'],['chance','Highest chance'],['form','Hottest streak (info only)']].map(([v,t])=>`<option value="${v}" ${v===H.sort?'selected':''}>${t}</option>`).join('')}</select></div></div>`;
   const wire=()=>{ $('hStat').onchange=e=>{H.stat=e.target.value;renderHot();}; $('hPrice').onchange=e=>{H.price=e.target.value;renderHot();}; $('hSort').onchange=e=>{H.sort=e.target.value;renderHot();}; };
   if(!gs.length||!sk.length){ $('view').innerHTML=controls+`<div class="empty">${dayGamesAll().length?'Every game is hidden or lineups are not posted yet.':'No games on this day.'}</div>`; wire(); return; }
   const need=sk.map(x=>x.player_id).filter(id=>!S.logCache.has(id));
@@ -997,7 +997,7 @@ async function renderHot(){
     const pc=best.get(r.l.player_id);
     const be=pc?impliedProb(pc.price):null;
     const edge=pc?(adj-be)*100:null;
-    const blend=(edge!=null?edge:(adj-pr)*100)+0.5*form*100;
+    const blend=(edge!=null?edge:(adj-pr)*100);
     const tp=projBy.get(r.l.team);
     const sh=r.logs.slice(0,10).filter(x=>x.sog!=null);
     const shpg=sh.length?sh.reduce((a,x)=>a+x.sog,0)/sh.length:null;
@@ -1005,7 +1005,7 @@ async function renderHot(){
   });
   // price filter
   if(H.price!=='any') rows=rows.filter(r=>r.pc&&(H.price==='180'?r.pc.price>=180:(H.price==='100'?r.pc.price>=100:r.pc.price>=-140)));
-  const key={blend:r=>r.blend,form:r=>r.form,edge:r=>(r.edge==null?-99:r.edge),chance:r=>r.adj};
+  const key={blend:r=>r.blend,form:r=>r.form,edge:r=>(r.edge==null?r.blend-100:r.edge),chance:r=>r.adj};
   rows.sort((a,b)=>key[H.sort](b)-key[H.sort](a));
   const total=rows.length; rows=rows.slice(0,40);
   const list=rows.length?rows.map(r=>{
@@ -1016,16 +1016,15 @@ async function renderHot(){
     if(r.toi!=null) why.push(`<span class="hw">${r.toi.toFixed(0)} MIN</span>`);
     if(r.shpg!=null) why.push(`<span class="hw ${r.shpg>=3?'b':''}">${r.shpg.toFixed(1)} SHOTS/G</span>`);
     if(r.tp&&r.tp.proj>=GREEN_LIGHT) why.push('<span class="hw a">HIGH-SCORING TEAM</span>');
-    if(r.form<-0.08) why.push('<span class="hw r">COLD</span>');
     const opp=r.tp?(r.tp.g.away===r.l.team?'@ '+r.tp.g.home:'vs '+r.tp.g.away):'';
     return `<div class="prow" data-pid="${r.l.player_id}" data-stat="${H.stat}" data-line="0.5"${r.pc?` data-odds="${r.pc.price}"`:''}>
       <div><div class="pname">${esc(r.l.player_name)}</div>
         <div class="pmeta">${esc(r.l.team)} ${esc(opp)} · ${r.pc?`<b style="color:var(--text)">${fmtOdds(r.pc.price)}</b> ${esc(bookShort(r.pc.book))}`:'no price yet'}${r.tp?` · team ${r.tp.proj.toFixed(2)} goals`:''}</div>
         <div class="pmeta">Role-adjusted chance ${Math.round(r.adj*100)}% (vs ${Math.round(r.pr*100)}% for ${ROLE_NAME[r.bucket]||'similar players'})${r.be!=null?` · break-even ${Math.round(r.be*100)}%`:''}</div>
         <div class="hotwhy">${why.join('')}</div></div>
-      <div><div class="pbig" style="color:${r.form>=0.1?'var(--green)':(r.form<-0.08?'var(--red)':'var(--text)')}">${r.form>=0?'+':''}${Math.round(r.form*100)}</div><div class="psub">FORM</div>${r.edge!=null?`<div class="psub" style="margin-top:4px;color:${r.edge>=0?'var(--green)':'var(--red)'}">${r.edge>=0?'+':''}${r.edge.toFixed(1)} edge</div>`:''}</div></div>`;
+      <div><div class="pbig" style="color:var(--text)">${Math.round(r.adj*100)}%</div><div class="psub">CHANCE</div>${r.edge!=null?`<div class="psub" style="margin-top:4px;color:${r.edge>=0?'var(--green)':'var(--red)'}">${r.edge>=0?'+':''}${r.edge.toFixed(1)} edge</div>`:''}</div></div>`;
   }).join(''):'<div class="empty">No players match this filter.</div>';
-  const note=`<div class="muted small" style="margin-bottom:10px;">Everyone in tonight's shown games. Regular season only. <b>FORM</b> = how far his last 5 and last 10 games sit above his usual rate, in points of percentage. <b>Role-adjusted chance</b> compares him to players who play similar minutes, so a fourth-liner is not lifted by the league average. The default ranking is edge plus half of form. Prices come from the last odds pull${(S.odds&&S.odds.length)?'':' (none loaded yet)'}; check your book for the live number.${total>40?` Showing the top 40 of ${total}.`:''}</div>`;
+  const note=`<div class="muted small" style="margin-bottom:10px;">Everyone in tonight's shown games. Regular season only. <b>Chance</b> is his two-season rate, compared with players who play similar minutes (so a fourth-liner or depth defenseman is not lifted by the league average). In a test over 115 past game days this beat the plain method on honesty for depth players and matched it for picking. <b>Last 5 / last 10 chips</b> are shown for context only: in the same test, hot streaks did not predict the next game beyond his long-run rate, so streaks are not part of the ranking. Prices come from the last odds pull${(S.odds&&S.odds.length)?'':' (none loaded yet)'}; check your book for the live number.${total>40?` Showing the top 40 of ${total}.`:''}</div>`;
   $('view').innerHTML=controls+note+list; wire();
 }
 
