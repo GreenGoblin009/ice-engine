@@ -959,6 +959,19 @@ function roleBucket(pos,toi){
   return toi<12.5?'F1':(toi<15.5?'F2':(toi<18?'F3':'F4'));
 }
 const ROLE_NAME={F1:'bottom six, low minutes',F2:'third line minutes',F3:'second line minutes',F4:'top line minutes',D1:'depth D',D2:'middle pair D',D3:'top pair D'};
+function dueInfo(logs,stat){
+  const g=logs.filter(r=>statVal(r,stat)!=null);
+  const n=g.length; if(n<15) return null;
+  const hits=g.filter(r=>statVal(r,stat)>0.5).length; if(!hits) return null;
+  const usual=n/hits;                                  // usual games between hits
+  const w=g.slice(0,30);
+  let m=w.findIndex(r=>statVal(r,stat)>0.5); if(m<0) m=w.length;   // current miss streak
+  let maxGap=m, last=m;
+  for(let i=m+1;i<w.length;i++){ if(statVal(w[i],stat)>0.5){ maxGap=Math.max(maxGap,i-last-1); last=i; } }
+  const steady=maxGap<=Math.max(3,Math.ceil(2*usual));   // no drought much longer than twice his usual gap
+  const due=m>=1&&m>=Math.round(usual)-1&&steady&&hits/n>=0.3;
+  return {usual,m,steady,maxGap,due,rate:hits/n};
+}
 async function renderHot(){
   const H=S.hot;
   const gs=dayGames();
@@ -967,7 +980,7 @@ async function renderHot(){
   const controls=`<div class="lgrid">
     <div><label>Stat</label><select id="hStat">${['Goals','Points','Assists'].map(x=>`<option ${x===H.stat?'selected':''}>${x}</option>`).join('')}</select></div>
     <div><label>Price</label><select id="hPrice">${[['any','Any price'],['180','+180 or longer'],['100','+100 or longer'],['safe','−140 or better (safe)']].map(([v,t])=>`<option value="${v}" ${v===H.price?'selected':''}>${t}</option>`).join('')}</select></div>
-    <div style="grid-column:1/3;"><label>Rank by</label><select id="hSort">${[['edge','Best value (default)'],['chance','Highest chance'],['form','Hottest streak (info only)']].map(([v,t])=>`<option value="${v}" ${v===H.sort?'selected':''}>${t}</option>`).join('')}</select></div></div>`;
+    <div style="grid-column:1/3;"><label>Rank by</label><select id="hSort">${[['edge','Best value (default)'],['chance','Highest chance'],['due','Drought shortlist (no proven edge)'],['form','Hottest streak (info only)']].map(([v,t])=>`<option value="${v}" ${v===H.sort?'selected':''}>${t}</option>`).join('')}</select></div></div>`;
   const wire=()=>{ $('hStat').onchange=e=>{H.stat=e.target.value;renderHot();}; $('hPrice').onchange=e=>{H.price=e.target.value;renderHot();}; $('hSort').onchange=e=>{H.sort=e.target.value;renderHot();}; };
   if(!gs.length||!sk.length){ $('view').innerHTML=controls+`<div class="empty">${dayGamesAll().length?'Every game is hidden or lineups are not posted yet.':'No games on this day.'}</div>`; wire(); return; }
   const need=sk.map(x=>x.player_id).filter(id=>!S.logCache.has(id));
@@ -1001,11 +1014,13 @@ async function renderHot(){
     const tp=projBy.get(r.l.team);
     const sh=r.logs.slice(0,10).filter(x=>x.sog!=null);
     const shpg=sh.length?sh.reduce((a,x)=>a+x.sog,0)/sh.length:null;
-    return {...r,pr,adj,l10,l5,form,pc,be,edge,blend,tp,shpg};
+    const di=dueInfo(r.logs,H.stat);
+    return {...r,pr,adj,l10,l5,form,pc,be,edge,blend,tp,shpg,di};
   });
   // price filter
   if(H.price!=='any') rows=rows.filter(r=>r.pc&&(H.price==='180'?r.pc.price>=180:(H.price==='100'?r.pc.price>=100:r.pc.price>=-140)));
-  const key={blend:r=>r.blend,form:r=>r.form,edge:r=>(r.edge==null?r.blend-100:r.edge),chance:r=>r.adj};
+  if(H.sort==='due') rows=rows.filter(r=>r.di&&r.di.due);
+  const key={due:r=>r.adj+(r.shpg||0)*0.01,blend:r=>r.blend,form:r=>r.form,edge:r=>(r.edge==null?r.blend-100:r.edge),chance:r=>r.adj};
   rows.sort((a,b)=>key[H.sort](b)-key[H.sort](a));
   const total=rows.length; rows=rows.slice(0,40);
   const list=rows.length?rows.map(r=>{
@@ -1015,6 +1030,7 @@ async function renderHot(){
     if(r.l.pp_unit===1) why.push('<span class="hw b">PP1</span>'); else if(r.l.pp_unit===2) why.push('<span class="hw">PP2</span>');
     if(r.toi!=null) why.push(`<span class="hw">${r.toi.toFixed(0)} MIN</span>`);
     if(r.shpg!=null) why.push(`<span class="hw ${r.shpg>=3?'b':''}">${r.shpg.toFixed(1)} SHOTS/G</span>`);
+    if(r.di){ if(r.di.m>=1) why.push(`<span class="hw ${r.di.due?'a':''}">MISSED ${r.di.m} IN A ROW · USUALLY HITS 1 IN ${r.di.usual.toFixed(1)}</span>`); if(r.di.steady&&r.di.rate>=0.3) why.push('<span class="hw g">STEADY</span>'); }
     if(r.tp&&r.tp.proj>=GREEN_LIGHT) why.push('<span class="hw a">HIGH-SCORING TEAM</span>');
     const opp=r.tp?(r.tp.g.away===r.l.team?'@ '+r.tp.g.home:'vs '+r.tp.g.away):'';
     return `<div class="prow" data-pid="${r.l.player_id}" data-stat="${H.stat}" data-line="0.5"${r.pc?` data-odds="${r.pc.price}"`:''}>
@@ -1024,7 +1040,7 @@ async function renderHot(){
         <div class="hotwhy">${why.join('')}</div></div>
       <div><div class="pbig" style="color:var(--text)">${Math.round(r.adj*100)}%</div><div class="psub">CHANCE</div>${r.edge!=null?`<div class="psub" style="margin-top:4px;color:${r.edge>=0?'var(--green)':'var(--red)'}">${r.edge>=0?'+':''}${r.edge.toFixed(1)} edge</div>`:''}</div></div>`;
   }).join(''):'<div class="empty">No players match this filter.</div>';
-  const note=`<div class="muted small" style="margin-bottom:10px;">Everyone in tonight's shown games. Regular season only. <b>Chance</b> is his two-season rate, compared with players who play similar minutes (so a fourth-liner or depth defenseman is not lifted by the league average). In a test over 115 past game days this beat the plain method on honesty for depth players and matched it for picking. <b>Last 5 / last 10 chips</b> are shown for context only: in the same test, hot streaks did not predict the next game beyond his long-run rate, so streaks are not part of the ranking. Prices come from the last odds pull${(S.odds&&S.odds.length)?'':' (none loaded yet)'}; check your book for the live number.${total>40?` Showing the top 40 of ${total}.`:''}</div>`;
+  const note=`<div class="muted small" style="margin-bottom:10px;">Everyone in tonight's shown games. Regular season only. <b>Chance</b> is his two-season rate, compared with players who play similar minutes (so a fourth-liner or depth defenseman is not lifted by the league average). In a test over 115 past game days this beat the plain method on honesty for depth players and matched it for picking. <b>Drought shortlist</b> lists steady players who have missed the prop about as long as his usual gap. We tested this over 122 past game days (about 25,000 player-games per stat): after a drought, players hit at their normal long-run rate, not more, so it does not add an edge. It is here to see the pattern, not as a reason to bet. <b>Last 5 / last 10 chips</b> are shown for context only: in the same test, hot streaks did not predict the next game beyond his long-run rate, so streaks are not part of the ranking. Prices come from the last odds pull${(S.odds&&S.odds.length)?'':' (none loaded yet)'}; check your book for the live number.${total>40?` Showing the top 40 of ${total}.`:''}</div>`;
   $('view').innerHTML=controls+note+list; wire();
 }
 
