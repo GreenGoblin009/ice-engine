@@ -180,6 +180,8 @@ table.gl td{padding:5px 8px 5px 0; border-top:1px solid var(--line);}
 .ps b{display:block; font-size:13px; line-height:1.15; white-space:nowrap;}
 .ps span{display:block; font-size:8.5px; letter-spacing:.05em; font-weight:600; color:var(--muted); margin-top:2px; white-space:nowrap;}
 .ptag{font-size:9.5px; font-weight:700; letter-spacing:.04em; padding:1px 6px; border-radius:999px; margin-left:7px; vertical-align:middle; border:1px solid currentColor;}
+.tlink{width:100%; margin-top:10px; font:inherit; font-size:12px; font-weight:700; padding:8px 0; border-radius:8px; border:1px solid var(--line); background:var(--card2); color:var(--text); cursor:pointer; letter-spacing:.03em;}
+.tlink:active{border-color:var(--amber);}
 </style>
 </head>
 <body>
@@ -629,6 +631,7 @@ function renderTeams(){
       <div class="tlabel">PROJECTED GOALS${actual(p.tm)!=null?` · SCORED <b style="color:var(--text)">${actual(p.tm)}</b>`:''}</div>
       <span class="chip ${p.green?'go':'no'}">${p.green?'GREEN LIGHT':'NO PLAY'}</span>
       <div class="odds3">${[['3+',p.p3],['4+',p.p4],['5+',p.p5]].map(([k,v])=>`<div class="o3"><div class="o3v">${pc(v)}%</div><div class="o3bar"><i style="width:${pc(v)}%"></i></div><div class="o3k">${k} goals</div></div>`).join('')}</div>
+      <button class="tlink" data-tm="${esc(p.tm)}" data-opp="${esc(p.tm===g.home?g.away:g.home)}">Trends &#9656;</button>
     </div>`;
     const det=(p)=>`<div style="margin-bottom:10px;"><b>${esc(p.tm)}</b><table>
       ${p.contrib.map((c,i)=>`<tr><td class="muted">${esc(c.lab)}</td><td>${i===0?c.d.toFixed(2):(c.d>=0?'+':'')+c.d.toFixed(2)}</td></tr>`).join('')}
@@ -1020,8 +1023,96 @@ function drawPlayer(){
   $('mOdds').oninput=e=>{ M.odds=e.target.value; const pos=e.target.selectionStart; drawPlayer(); const n=$('mOdds'); n.focus(); try{n.setSelectionRange(pos,pos);}catch(_){} };
 }
 
+
+/* ============ TEAM TRENDS MODAL ============ */
+const T={};
+const T_LINES={'Team Total':2.5,'Game Total':5.5,'Moneyline':0};
+function teamLogRows(tm){
+  const out=[];
+  S.finals.forEach(g=>{
+    if(g.away!==tm&&g.home!==tm) return;
+    const a=g.away_score, h=g.home_score;
+    let aa=a, hh=h; if(g.last_period_type==='SO'){ if(aa>hh) aa--; else hh--; }   // shootout goal is not a real goal
+    const home=g.home===tm;
+    const rawFor=home?h:a, rawAg=home?a:h;
+    out.push({game_id:g.id,season:g.season,game_date:g.game_date,home_road:home?'H':'R',opponent:home?g.away:g.home,
+      gf:home?hh:aa, ga:home?aa:hh, win:rawFor>rawAg?1:0, rawFor, rawAg, ot:g.last_period_type});
+  });
+  out.sort((x,y)=>x.game_date<y.game_date?1:(x.game_date>y.game_date?-1:(y.game_id-x.game_id)));
+  return out;
+}
+function openTeam(tm,opp){
+  T.tm=tm; T.stat='Team Total'; T.line=T_LINES['Team Total']; T.window='Last 10'; T.split='Home+Away'; T.vs=''; T.odds=''; T.todayOpp=opp||'';
+  T.logs=teamLogRows(tm);
+  $('overlay').classList.add('open');
+  drawTeam();
+}
+function drawTeam(){
+  const ml=T.stat==='Moneyline';
+  const val=r=>T.stat==='Team Total'?r.gf:(T.stat==='Game Total'?r.gf+r.ga:r.gf);   // bar height
+  const hit=r=>ml?r.win===1:val(r)>T.line;
+  const rows=filterRows(T.logs,T);
+  const n=rows.length, over=rows.filter(hit).length, pct=n?over/n:0;
+  const avg=n?rows.reduce((a,r)=>a+val(r),0)/n:0;
+  const avgOpp=n?rows.reduce((a,r)=>a+r.ga,0)/n:0;
+  const opps=[...new Set(T.logs.map(r=>r.opponent))].sort();
+  const items=rows.slice(0,30).reverse();
+  const m=items.length, dense=m>14, vdense=m>24;
+  const mx=Math.max(ml?2:Math.ceil(T.line+0.5),...items.map(val),2), PH=128;
+  const gstep=Math.max(1,Math.ceil(mx/4)); const grids=[]; for(let g=0;g<=mx;g+=gstep) grids.push(g);
+  const md=d=>{const q=d.slice(5).split('-');return (+q[0])+'/'+(+q[1]);};
+  const word=ml?'Win':'Over '+T.line;
+  const lineCtl=ml?`<div class="chead"><span>Bars = goals scored · green = win, red = loss</span></div>`:`<div class="chead"><span>Over line</span><div class="stp"><button class="step" id="tMinus" aria-label="lower line">−</button><b>${T.line}</b><button class="step" id="tPlus" aria-label="raise line">+</button></div></div>`;
+  const svg=m?`<div class="chart2">${lineCtl}<div class="plot" style="height:${PH+22}px;">
+      ${grids.map(g=>`<div class="grid" style="bottom:${(g/mx)*PH}px;"><span>${g}</span></div>`).join('')}
+      ${ml?'':`<div class="lineMark" style="bottom:${(T.line/mx)*PH}px;"><span>o${T.line}</span></div>`}
+      ${items.map((o,k)=>{const v=val(o); const bh=Math.max(4,(v/mx)*PH); const sep=(k>0&&o.season!==items[k-1].season)?'<div class="ysep"></div>':''; return sep+`<div class="cb"><em ${vdense?'style="display:none"':''}>${v}</em><i style="height:${bh}px;background:${hit(o)?'var(--green)':'var(--red)'}"></i></div>`;}).join('')}
+    </div>
+    ${dense?`<div class="cax"><span>${md(items[0].game_date)}</span><span>${md(items[m-1].game_date)}</span></div>`:`<div class="clab">${items.map(o=>`<div><b>${md(o.game_date)}</b><span>${o.home_road==='H'?'':'@'}${esc(o.opponent)}</span></div>`).join('')}</div>`}
+    <div class="cleg"><span><i style="background:var(--green)"></i>${ml?'Win':'Over '+T.line}</span><span><i style="background:var(--red)"></i>${ml?'Loss':'Under'}</span>${ml?'':'<span><u></u>Line</span>'}<span class="muted">Oldest → newest${n>30?` · chart shows last 30 of ${n}`:''}</span></div></div>`:'';
+  const odds=parseFloat(T.odds);
+  let edge='';
+  if(!isNaN(odds)){
+    const e=(pct-impliedProb(odds))*100;
+    edge=`<div style="text-align:right"><div class="pbig" style="color:${e>=0?'var(--green)':'var(--red)'}">${e>=0?'+':''}${e.toFixed(1)}</div><div class="psub">edge vs break-even ${(impliedProb(odds)*100).toFixed(1)}%</div></div>`;
+  }
+  const glRows=rows.slice(0,25).map(r=>{
+    const v=ml?(r.win?'W':'L'):val(r);
+    const tag=r.ot==='OT'?' (OT)':(r.ot==='SO'?' (SO)':'');
+    return `<tr><td>${fmtDate(r.game_date)}</td><td>${r.home_road==='H'?'vs':'@'} ${esc(r.opponent)}</td><td>${r.win?'W':'L'} ${r.rawFor}-${r.rawAg}${tag}</td><td style="text-align:right;font-weight:700;color:${hit(r)?'var(--green)':'var(--red)'}">${v}</td></tr>`;
+  }).join('');
+  const colHead=T.stat==='Team Total'?'Team goals':(T.stat==='Game Total'?'Game goals':'Result');
+  $('pcard').innerHTML=`
+    <div class="phead"><div><div class="pnm">${esc(T.tm)}</div><div class="muted small">Team trends · regular season only</div></div><button class="close" id="tClose">&times;</button></div>
+    <div class="chips" id="tStats">${['Team Total','Game Total','Moneyline'].map(x=>`<button class="mc ${x===T.stat?'on':''}" data-v="${x}">${x}</button>`).join('')}</div>
+    <div class="ou">
+      <div class="ourow"><span class="oul">${ml?'Wins':'Over'}</span><span class="oup" style="color:var(--green)">${n?(pct*100).toFixed(1)+'%':'--'}</span><span class="oun">${over}/${n}</span><span class="muted small" style="margin-left:6px;">${ml?`scores ${n?avg.toFixed(2):'--'} · allows ${n?avgOpp.toFixed(2):'--'}`:`avg ${n?avg.toFixed(2):'--'}`}</span>${!isNaN(odds)?`<span class="oupr">${fmtOdds(odds)}</span>`:''}</div>
+    </div>
+    ${n?svg:'<div class="chart2">'+lineCtl+'<div class="empty">No games match this filter.</div></div>'}
+    <div class="chips" id="tWins" style="margin-top:12px;">${['Last 5','Last 10','Last 20','Season','All-time'].map(x=>`<button class="mc ${x===T.window&&!T.vs?'on':''}" data-v="${x}" ${T.vs?'disabled':''}>${x}</button>`).join('')}</div>
+    ${T.vs?`<div class="muted small" style="margin-top:6px;">Showing every ${esc(T.vs)} meeting on file. Timeframe is ignored.</div>`:''}
+    <div class="flab">Venue</div>
+    <div class="chips" id="tSplits">${[['Home+Away','All games'],['Home','Home'],['Away','Away']].map(([v,t])=>`<button class="mc ${v===T.split?'on':''}" data-v="${v}">${t}</button>`).join('')}</div>
+    <div class="flab">Opponent</div>
+    <div class="chips" id="tVsC"><button class="mc ${!T.vs?'on':''}" data-v="">Any</button>${T.todayOpp?`<button class="mc ${T.vs===T.todayOpp?'on':''}" data-v="${esc(T.todayOpp)}">vs ${esc(T.todayOpp)} (tonight)</button>`:''}
+      <select id="tVs" class="mini"><option value="">Other team…</option>${opps.filter(o=>o!==T.todayOpp).map(o=>`<option ${o===T.vs?'selected':''}>${o}</option>`).join('')}</select></div>
+    <div class="edgebox"><div><label style="margin:0 0 4px;">Your book's odds</label><input id="tOdds" type="number" inputmode="numeric" placeholder="-134" value="${esc(T.odds)}"></div>${edge}</div>
+    <div style="font-weight:700;font-size:14px;margin:16px 0 2px;">Gamelog</div>
+    <div class="muted small" style="margin-bottom:6px;">${T.vs?`Every ${esc(T.vs)} meeting we have on file (regular season, ${n} games)`:'Regular season only. Shootout goals are not counted in team or game totals.'}</div>
+    <div style="overflow-x:auto;"><table class="gl"><thead><tr><th>Date</th><th>Vs</th><th>Score</th><th style="text-align:right">${colHead}</th></tr></thead><tbody>${glRows}</tbody></table></div>`;
+  $('tClose').onclick=closePlayer;
+  document.querySelectorAll('#tStats .mc').forEach(b=>b.onclick=()=>{ T.stat=b.dataset.v; T.line=T_LINES[T.stat]; drawTeam(); });
+  document.querySelectorAll('#tWins .mc').forEach(b=>b.onclick=()=>{ T.window=b.dataset.v; drawTeam(); });
+  document.querySelectorAll('#tSplits .mc').forEach(b=>b.onclick=()=>{ T.split=b.dataset.v; drawTeam(); });
+  document.querySelectorAll('#tVsC .mc').forEach(b=>b.onclick=()=>{ T.vs=b.dataset.v; drawTeam(); });
+  $('tVs').onchange=e=>{ T.vs=e.target.value; drawTeam(); };
+  if(!ml){ $('tMinus').onclick=()=>{ T.line=Math.max(0.5,T.line-1); drawTeam(); }; $('tPlus').onclick=()=>{ T.line=T.line+1; drawTeam(); }; }
+  $('tOdds').oninput=e=>{ T.odds=e.target.value; const pos=e.target.selectionStart; drawTeam(); const q=$('tOdds'); q.focus(); try{q.setSelectionRange(pos,pos);}catch(_){} };
+}
+
 /* ============ WIRING ============ */
 document.addEventListener('click',e=>{
+  const tl=e.target.closest('.tlink'); if(tl){ openTeam(tl.dataset.tm, tl.dataset.opp); return; }
   const gc=e.target.closest('.game-card'); if(gc){ gc.classList.toggle('open'); return; }
   const j=e.target.closest('.jersey-card'); if(j&&j.dataset.pid){ openPlayer(+j.dataset.pid); return; }
   const pr=e.target.closest('.prow'); if(pr){ openPlayer(+pr.dataset.pid, pr.dataset.stat, pr.dataset.line!=null?+pr.dataset.line:null, pr.dataset.odds, pr.dataset.split, pr.dataset.vs, pr.dataset.win); return; }
