@@ -2,13 +2,17 @@ name: Daily player odds
 
 on:
   schedule:
-    # Wanted run time: 4:00 PM US Eastern, all year. GitHub cron is UTC-only
-    # and ignores daylight saving, so the time is listed at both UTC hours it
+    # Wanted run times: 4:00 PM and 7:00 PM US Eastern, all year. The 7 PM
+    # run refreshes prices for games that haven't started; games under way
+    # are skipped and keep their 4 PM prices. GitHub cron is UTC-only and
+    # ignores daylight saving, so each time is listed at both UTC hours it
     # can fall on. The script works out which one is right today and the
     # other exits within seconds. Keep one time per line: the script reads
     # the line that fired to know which run it is.
     - cron: "0 20 * * *"  # 4 PM EDT
     - cron: "0 21 * * *"  # 4 PM EST
+    - cron: "0 23 * * *"  # 7 PM EDT
+    - cron: "0 0 * * *"   # 7 PM EST
   workflow_dispatch:      # manual run: no time gate
 
 permissions:
@@ -35,7 +39,7 @@ jobs:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
           SCHEDULE_CRON: ${{ github.event.schedule }}  # empty on a manual run
-        run: python ice_engine_odds.py --require-supabase --only-at "16:00"
+        run: python ice_engine_odds.py --require-supabase --only-at "16:00,19:00"
 
       - name: Keep the raw JSON for debugging
         if: always()
