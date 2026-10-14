@@ -182,6 +182,9 @@ table.gl td{padding:5px 8px 5px 0; border-top:1px solid var(--line);}
 .ptag{font-size:9.5px; font-weight:700; letter-spacing:.04em; padding:1px 6px; border-radius:999px; margin-left:7px; vertical-align:middle; border:1px solid currentColor;}
 .tlink{width:100%; margin-top:10px; font:inherit; font-size:12px; font-weight:700; padding:8px 0; border-radius:8px; border:1px solid var(--line); background:var(--card2); color:var(--text); cursor:pointer; letter-spacing:.03em;}
 .tlink:active{border-color:var(--amber);}
+.hotwhy{display:flex; flex-wrap:wrap; gap:5px; margin-top:6px;}
+.hw{font-size:10.5px; font-weight:700; letter-spacing:.03em; padding:3px 7px; border-radius:6px; background:var(--card2); border:1px solid var(--line); color:var(--muted);}
+.hw.g{color:var(--green);} .hw.a{color:var(--amber);} .hw.b{color:var(--blue);} .hw.r{color:var(--red);}
 </style>
 </head>
 <body>
@@ -198,7 +201,8 @@ table.gl td{padding:5px 8px 5px 0; border-top:1px solid var(--line);}
   <div class="view-toggle">
     <button id="bTeams" class="active">Teams</button>
     <button id="bLineups">Lineups</button>
-    <button id="bTop">Top Plays</button>
+    <!-- Top Plays tab parked: code kept (renderTop), button removed for now -->
+    <button id="bHot">Hot</button>
     <button id="bLeaders">Leaders</button>
   </div>
   <div id="msg"></div>
@@ -603,7 +607,7 @@ function setUpdated(){
 /* ============ VIEWS ============ */
 function setView(v){
   S.view=v;
-  ['Teams','Lineups','Top','Leaders'].forEach(n=>$('b'+n).classList.toggle('active',(n.toLowerCase()===v)));
+  ['Teams','Lineups','Hot','Leaders'].forEach(n=>$('b'+n).classList.toggle('active',(n.toLowerCase()===v)));
   $('teamPickWrap').style.display = v==='lineups' ? 'block':'none';
   render();
 }
@@ -613,6 +617,7 @@ async function render(){
     if(S.view==='teams') renderTeams();
     else if(S.view==='lineups') renderLineups();
     else if(S.view==='leaders') await renderLeaders();
+    else if(S.view==='hot') await renderHot();
     else await renderTop();
   }catch(e){ $('msg').innerHTML=`<div class="err">${esc(e.message)}</div>`; }
 }
@@ -940,6 +945,90 @@ function profStrip(f){
   return `<div class="pstats">${cell(f.every?`1 in ${f.every.toFixed(1)}`:`0 in ${f.n}`,'SCORES')}${cell(f.shootPct!=null?Math.round(f.shootPct*100)+'%':'–','SHOOT %',f.shootPct!=null&&f.sog>=50&&f.shootPct>=0.16?'var(--amber)':'')}${cell(f.sogPg.toFixed(1),'SHOTS/G',f.sogPg>=3.0?'var(--blue)':'')}${cell(f.att!=null?f.att.toFixed(1):'–','ATT/G')}${cell(f.last10,'GOALS L10')}</div>`;
 }
 
+
+/* ============ HOT TONIGHT: form + role, not just edge ============ */
+S.hot=S.hot||{stat:'Goals',price:'any',sort:'blend'};
+function avgToiMin(logs){
+  let r=logs.filter(x=>x.season===CUR&&x.toi); if(r.length<5) r=logs.filter(x=>x.toi);
+  r=r.slice(0,25); if(!r.length) return null;
+  return r.reduce((a,x)=>a+toiMinutes(x.toi),0)/r.length;
+}
+function roleBucket(pos,toi){
+  if(toi==null) return null;
+  if(pos==='D') return toi<18.5?'D1':(toi<21.5?'D2':'D3');
+  return toi<12.5?'F1':(toi<15.5?'F2':(toi<18?'F3':'F4'));
+}
+const ROLE_NAME={F1:'bottom six, low minutes',F2:'third line minutes',F3:'second line minutes',F4:'top line minutes',D1:'depth D',D2:'middle pair D',D3:'top pair D'};
+async function renderHot(){
+  const H=S.hot;
+  const gs=dayGames();
+  const sk=[]; const seen=new Set();
+  S.lineups.forEach(l=>{ if(l.status==='projected'&&(l.slot==='line'||l.slot==='pair')&&l.player_id&&!seen.has(l.player_id)){ seen.add(l.player_id); sk.push(l); } });
+  const controls=`<div class="lgrid">
+    <div><label>Stat</label><select id="hStat">${['Goals','Points','Assists'].map(x=>`<option ${x===H.stat?'selected':''}>${x}</option>`).join('')}</select></div>
+    <div><label>Price</label><select id="hPrice">${[['any','Any price'],['180','+180 or longer'],['100','+100 or longer'],['safe','−140 or better (safe)']].map(([v,t])=>`<option value="${v}" ${v===H.price?'selected':''}>${t}</option>`).join('')}</select></div>
+    <div style="grid-column:1/3;"><label>Rank by</label><select id="hSort">${[['blend','Hot + value (default)'],['form','Hottest form'],['edge','Biggest edge'],['chance','Highest chance']].map(([v,t])=>`<option value="${v}" ${v===H.sort?'selected':''}>${t}</option>`).join('')}</select></div></div>`;
+  const wire=()=>{ $('hStat').onchange=e=>{H.stat=e.target.value;renderHot();}; $('hPrice').onchange=e=>{H.price=e.target.value;renderHot();}; $('hSort').onchange=e=>{H.sort=e.target.value;renderHot();}; };
+  if(!gs.length||!sk.length){ $('view').innerHTML=controls+`<div class="empty">${dayGamesAll().length?'Every game is hidden or lineups are not posted yet.':'No games on this day.'}</div>`; wire(); return; }
+  const need=sk.map(x=>x.player_id).filter(id=>!S.logCache.has(id));
+  if(need.length){ $('view').innerHTML=controls+`<div class="empty">Loading real game logs for ${need.length} players (first time only)…</div>`; wire(); await loadLogs(need); if(S.view!=='hot') return; }
+  const col={Goals:'goals',Points:'points',Assists:'assists'}[H.stat], mk={Goals:'player_goal_scorer_anytime',Points:'player_points',Assists:'player_assists'}[H.stat];
+  const projBy=new Map(); gs.forEach(g=>{ projBy.set(g.away,{...projectTeam(g.away,g.home,false),g}); projBy.set(g.home,{...projectTeam(g.home,g.away,true),g}); });
+  const best=new Map(); (S.odds||[]).forEach(o=>{ if(o.market===mk&&+o.line===0.5&&o.player_id){ const b=best.get(o.player_id); if(!b||o.price>b.price) best.set(o.player_id,{price:o.price,book:o.book}); } });
+  // 1) per player base numbers + role bucket
+  const base=sk.map(l=>{
+    const logs=S.logCache.get(l.player_id)||[];
+    const h=hitStats(logs,H.stat,0.5); if(h.n<15) return null;
+    const pos=(S.players.get(l.player_id)||{}).pos||'F';
+    const toi=avgToiMin(logs);
+    return {l,logs,h,pos,toi,bucket:roleBucket(pos,toi)};
+  }).filter(Boolean);
+  // 2) pool rate per role bucket (players with similar minutes), fallback to everyone
+  const pool={}, tot={o:0,n:0};
+  base.forEach(r=>{ tot.o+=r.h.over; tot.n+=r.h.n; if(r.bucket){ const b=pool[r.bucket]||(pool[r.bucket]={o:0,n:0,c:0}); b.o+=r.h.over; b.n+=r.h.n; b.c++; } });
+  const allRate=tot.n?tot.o/tot.n:0.3;
+  const poolRate=b=>(b&&pool[b]&&pool[b].c>=8)?pool[b].o/pool[b].n:allRate;
+  const bookShort=b=>({DraftKings:'DK',FanDuel:'FD',BetMGM:'MGM','BetOnline.ag':'BetOnline',Bovada:'Bovada'}[b]||b);
+  let rows=base.map(r=>{
+    const pr=poolRate(r.bucket);
+    const adj=(r.h.over+SHRINK_K*pr)/(r.h.n+SHRINK_K);
+    const l10=hitStats(r.logs.slice(0,10),H.stat,0.5), l5=hitStats(r.logs.slice(0,5),H.stat,0.5);
+    const form=((l10.n?l10.pct:adj)+(l5.n?l5.pct:adj))/2-adj;
+    const pc=best.get(r.l.player_id);
+    const be=pc?impliedProb(pc.price):null;
+    const edge=pc?(adj-be)*100:null;
+    const blend=(edge!=null?edge:(adj-pr)*100)+0.5*form*100;
+    const tp=projBy.get(r.l.team);
+    const sh=r.logs.slice(0,10).filter(x=>x.sog!=null);
+    const shpg=sh.length?sh.reduce((a,x)=>a+x.sog,0)/sh.length:null;
+    return {...r,pr,adj,l10,l5,form,pc,be,edge,blend,tp,shpg};
+  });
+  // price filter
+  if(H.price!=='any') rows=rows.filter(r=>r.pc&&(H.price==='180'?r.pc.price>=180:(H.price==='100'?r.pc.price>=100:r.pc.price>=-140)));
+  const key={blend:r=>r.blend,form:r=>r.form,edge:r=>(r.edge==null?-99:r.edge),chance:r=>r.adj};
+  rows.sort((a,b)=>key[H.sort](b)-key[H.sort](a));
+  const total=rows.length; rows=rows.slice(0,40);
+  const list=rows.length?rows.map(r=>{
+    const why=[];
+    if(r.l5.n&&r.l5.over>=3) why.push(`<span class="hw g">${r.l5.over}/${r.l5.n} LAST 5</span>`);
+    if(r.l10.n&&r.l10.over>=6) why.push(`<span class="hw g">${r.l10.over}/${r.l10.n} LAST 10</span>`);
+    if(r.l.pp_unit===1) why.push('<span class="hw b">PP1</span>'); else if(r.l.pp_unit===2) why.push('<span class="hw">PP2</span>');
+    if(r.toi!=null) why.push(`<span class="hw">${r.toi.toFixed(0)} MIN</span>`);
+    if(r.shpg!=null) why.push(`<span class="hw ${r.shpg>=3?'b':''}">${r.shpg.toFixed(1)} SHOTS/G</span>`);
+    if(r.tp&&r.tp.proj>=GREEN_LIGHT) why.push('<span class="hw a">HIGH-SCORING TEAM</span>');
+    if(r.form<-0.08) why.push('<span class="hw r">COLD</span>');
+    const opp=r.tp?(r.tp.g.away===r.l.team?'@ '+r.tp.g.home:'vs '+r.tp.g.away):'';
+    return `<div class="prow" data-pid="${r.l.player_id}" data-stat="${H.stat}" data-line="0.5"${r.pc?` data-odds="${r.pc.price}"`:''}>
+      <div><div class="pname">${esc(r.l.player_name)}</div>
+        <div class="pmeta">${esc(r.l.team)} ${esc(opp)} · ${r.pc?`<b style="color:var(--text)">${fmtOdds(r.pc.price)}</b> ${esc(bookShort(r.pc.book))}`:'no price yet'}${r.tp?` · team ${r.tp.proj.toFixed(2)} goals`:''}</div>
+        <div class="pmeta">Role-adjusted chance ${Math.round(r.adj*100)}% (vs ${Math.round(r.pr*100)}% for ${ROLE_NAME[r.bucket]||'similar players'})${r.be!=null?` · break-even ${Math.round(r.be*100)}%`:''}</div>
+        <div class="hotwhy">${why.join('')}</div></div>
+      <div><div class="pbig" style="color:${r.form>=0.1?'var(--green)':(r.form<-0.08?'var(--red)':'var(--text)')}">${r.form>=0?'+':''}${Math.round(r.form*100)}</div><div class="psub">FORM</div>${r.edge!=null?`<div class="psub" style="margin-top:4px;color:${r.edge>=0?'var(--green)':'var(--red)'}">${r.edge>=0?'+':''}${r.edge.toFixed(1)} edge</div>`:''}</div></div>`;
+  }).join(''):'<div class="empty">No players match this filter.</div>';
+  const note=`<div class="muted small" style="margin-bottom:10px;">Everyone in tonight's shown games. Regular season only. <b>FORM</b> = how far his last 5 and last 10 games sit above his usual rate, in points of percentage. <b>Role-adjusted chance</b> compares him to players who play similar minutes, so a fourth-liner is not lifted by the league average. The default ranking is edge plus half of form. Prices come from the last odds pull${(S.odds&&S.odds.length)?'':' (none loaded yet)'}; check your book for the live number.${total>40?` Showing the top 40 of ${total}.`:''}</div>`;
+  $('view').innerHTML=controls+note+list; wire();
+}
+
 /* ============ PLAYER MODAL ============ */
 const M={};
 async function openPlayer(pid, stat, line, odds, split, vsTeam, win){
@@ -1120,8 +1209,8 @@ document.addEventListener('click',e=>{
 $('overlay').addEventListener('click',e=>{ if(e.target.id==='overlay') closePlayer(); });
 $('bTeams').onclick=()=>setView('teams');
 $('bLineups').onclick=()=>setView('lineups');
-$('bTop').onclick=()=>setView('top');
 $('bLeaders').onclick=()=>setView('leaders');
+$('bHot').onclick=()=>setView('hot');
 $('teamPick').onchange=e=>{ S.team=e.target.value; renderLineups(); };
 setInterval(()=>{ if(S.autoDay && etToday()!==S.autoDay) init(false); },300000);
 $('reload').onclick=()=>init(true);
