@@ -1,0 +1,62 @@
+name: Slate report
+
+on:
+  schedule:
+    # Wanted run times, US Eastern, all year: 11:00 AM, 4:30 PM, 7:15 PM.
+    # GitHub cron is UTC-only and ignores daylight saving, so every time is
+    # listed at both UTC hours it can fall on (EDT = UTC-4, EST = UTC-5). The
+    # script works out which of each pair is right today and the other one
+    # exits within seconds. Keep one time per line: the script reads the
+    # line that fired to know which run it is.
+    - cron: "0 15 * * *"    # 11:00 AM EDT
+    - cron: "0 16 * * *"    # 11:00 AM EST
+    - cron: "30 20 * * *"   #  4:30 PM EDT
+    - cron: "30 21 * * *"   #  4:30 PM EST
+    - cron: "15 23 * * *"   #  7:15 PM EDT
+    - cron: "15 0 * * *"    #  7:15 PM EST
+  workflow_dispatch:        # manual run: no time gate
+
+permissions:
+  contents: write           # commits reports/slate_latest.txt
+
+concurrency:
+  group: slate-report
+  cancel-in-progress: false
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build the slate report (read-only)
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          SCHEDULE_CRON: ${{ github.event.schedule }}  # empty on a manual run
+        run: >
+          python tools/slate_report.py --out reports/slate_latest.txt
+          --only-at "11:00,16:30,19:15"
+
+      - name: Commit the report if it changed
+        run: |
+          git add reports/slate_latest.txt 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "Report unchanged (or this trigger was skipped); nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898341+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Slate report $(TZ=America/New_York date '+%Y-%m-%d %H:%M') ET"
+          # Other workflows may have pushed since checkout: rebase onto them.
+          for attempt in 1 2 3; do
+            git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            echo "Push attempt $attempt failed; retrying."
+            sleep $((attempt * 10))
+          done
+          exit 1
