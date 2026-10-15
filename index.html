@@ -1060,8 +1060,8 @@ async function renderHot(){
 }
 
 /* ============ ICE COLD PICKS: our own slips, from picks/picks.json (no database) ============ */
-// The file holds no money on purpose (it is public): just slip type, book,
-// boost, status and legs. Placeholder slips (details not entered yet) are
+// The file holds no money or boosts on purpose (it is public): just slip
+// type, book, status and legs. Placeholder slips (details not entered yet) are
 // shown but left out of the track record.
 const SLIP_STATUS=['pending','hit','miss','void'];
 async function renderPicks(){
@@ -1080,7 +1080,7 @@ async function renderPicks(){
     const k=st(s.status);
     if(s.placeholder) return `<div class="card slip"><div class="slip-head"><div><div class="pname">Slip ${esc(s.id)}</div><div class="pmeta">Details not entered yet</div></div><span class="st void">TBD</span></div></div>`;
     const legs=(s.legs||[]).map(l=>`<div class="leg"><i class="${esc(st(l.result))}"></i><div><b>${esc(l.player)}</b> <span class="muted">${esc(l.team||'')}</span><div class="muted small">${esc(l.market||'')}</div></div><span class="lp">${esc(l.price||'')}</span></div>`).join('');
-    return `<div class="card slip ${k}"><div class="slip-head"><div><div class="pname">${esc(s.type||'Slip')}</div><div class="pmeta">${esc(s.book||'')}${s.boost?` · ${esc(s.boost)}`:''} · ${(s.legs||[]).length} leg${(s.legs||[]).length===1?'':'s'}</div></div><span class="st ${k}">${k}</span></div>
+    return `<div class="card slip ${k}"><div class="slip-head"><div><div class="pname">${esc(s.type||'Slip')}</div><div class="pmeta">${esc(s.book||'')} ·${(s.legs||[]).length} leg${(s.legs||[]).length===1?'':'s'}</div></div><span class="st ${k}">${k}</span></div>
       ${legs?`<div class="legs">${legs}</div>`:''}</div>`;
   };
   const today=etToday();
