@@ -1,7 +1,7 @@
 ICE ENGINE SLATE REPORT  2026-10-15
-Lineups pulled: Oct 15, 5:06 PM ET
-Prices pulled:  Oct 15, 4:16 PM ET
-Goalies pulled: Oct 15, 5:06 PM ET
+Lineups pulled: Oct 15, 7:12 PM ET
+Prices pulled:  Oct 15, 7:11 PM ET
+Goalies pulled: Oct 15, 7:12 PM ET
 Times are US Eastern. Read-only: built from the same models as the board.
 
 GAMES (start, projected goals, model game total; book game totals are not pulled)
@@ -92,19 +92,19 @@ TEAM FORM, last 10 regular-season games (per game: GF / GA | shots for / against
 
 TOP 15 GOALS BY ROLE-ADJUSTED CHANCE
 1. Kirill Kaprizov MIN 46%; best +125 MGM; edge +2.0; DK +125; FD +115; L10 5/10; 2.9 shots; 21.1 min; PP1
-2. Tage Thompson BUF 43%; best +140 FD; edge +1.3; DK +135; FD +140; L10 5/10; 4.1 shots; 19.9 min; PP1
-3. Nikita Kucherov TBL 42%; best +135 MGM; edge -0.1; DK +135; FD +120; L10 2/10; 1.6 shots; 21.8 min; PP1
+2. Tage Thompson BUF 43%; best +135 MGM; edge +0.4; DK +130; FD +125; L10 5/10; 4.1 shots; 19.9 min; PP1
+3. Nikita Kucherov TBL 42%; best +135 MGM; edge -0.1; DK +130; FD +125; L10 2/10; 1.6 shots; 21.8 min; PP1
 4. Leon Draisaitl EDM 42%; best +115 FD; edge -4.4; DK +110; FD +115; L10 4/10; 3.4 shots; 21.2 min; PP1
-5. Matt Boldy MIN 42%; best +165 DK; edge +4.3; DK +165; FD +160; L10 3/10; 3.7 shots; 21.1 min; PP1
-6. Connor McDavid EDM 42%; best +120 MGM; edge -3.5; DK +115; FD +110; L10 6/10; 3.1 shots; 23.6 min; PP1
-7. Kyle Connor WPG 42%; best +130 FD; edge -1.5; DK +120; FD +130; L10 6/10; 4.8 shots; 20.7 min; PP1
-8. Macklin Celebrini SJS 42%; best +150 FD; edge +1.8; DK +130; FD +150; L10 5/10; 3.5 shots; 21.5 min; PP2
-9. Brandon Hagel TBL 40%; best +140 MGM; edge -1.3; DK +140; FD +130; L10 4/10; 4.6 shots; 21.9 min; PP1
-10. Alex DeBrincat DET 40%; best +160 DK; edge +1.4; DK +160; FD +155; L10 4/10; 3.5 shots; 20.2 min; PP1
-11. Dylan Guenther UTA 40%; best +200 MGM; edge +6.5; DK +165; FD +155; L10 4/10; 3.0 shots; 16.6 min; PP1
-12. William Nylander TOR 39%; best +165 BR; edge +1.4; DK +155; FD +165; L10 6/10; 3.3 shots; 20.4 min; PP1
-13. Auston Matthews TOR 39%; best +130 MGM; edge -4.4; DK +125; FD +125; L10 5/10; 3.5 shots; 21.9 min; PP1
-14. Steven Stamkos NSH 39%; best +165 DK; edge +1.1; DK +165; FD +160; L10 4/10; 2.9 shots; 19.5 min; PP1
+5. Matt Boldy MIN 42%; best +170 DK; edge +5.0; DK +170; FD +160; L10 3/10; 3.7 shots; 21.1 min; PP1
+6. Connor McDavid EDM 42%; best +120 MGM; edge -3.5; DK +110; FD +110; L10 6/10; 3.1 shots; 23.6 min; PP1
+7. Kyle Connor WPG 42%; best +130 FD; edge -1.5; DK +125; FD +130; L10 6/10; 4.8 shots; 20.7 min; PP1
+8. Macklin Celebrini SJS 42%; best +150 DK; edge +1.8; DK +150; FD +145; L10 5/10; 3.5 shots; 21.5 min; PP2
+9. Brandon Hagel TBL 40%; best +140 MGM; edge -1.3; DK +135; FD +135; L10 4/10; 4.6 shots; 21.9 min; PP1
+10. Alex DeBrincat DET 40%; best +165 MGM; edge +2.2; DK +145; FD +150; L10 4/10; 3.5 shots; 20.2 min; PP1
+11. Dylan Guenther UTA 40%; best +200 MGM; edge +6.5; DK +170; FD +155; L10 4/10; 3.0 shots; 16.6 min; PP1
+12. William Nylander TOR 39%; best +175 DK; edge +2.8; DK +175; FD +160; L10 6/10; 3.3 shots; 20.4 min; PP1
+13. Auston Matthews TOR 39%; best +130 MGM; edge -4.4; DK +130; FD +130; L10 5/10; 3.5 shots; 21.9 min; PP1
+14. Steven Stamkos NSH 39%; best +165 DK; edge +1.1; DK +165; FD +155; L10 4/10; 2.9 shots; 19.5 min; PP1
 15. Sam Reinhart FLA 38%; best +145 MGM; edge -2.4; DK +145; FD +130; L10 3/10; 3.0 shots; 21.1 min; PP1
 
 TOP 15 POINTS BY ROLE-ADJUSTED CHANCE
@@ -112,16 +112,16 @@ TOP 15 POINTS BY ROLE-ADJUSTED CHANCE
 2. Macklin Celebrini SJS 73%; best -285 MGM; edge -1.2; DK -; FD -; L10 8/10; 3.5 shots; 21.5 min; PP2
 3. Kirill Kaprizov MIN 71%; best -275 MGM; edge -1.8; DK -; FD -; L10 7/10; 2.9 shots; 21.1 min; PP1
 4. Mark Stone VGK 70%; best -220 DK; edge +1.7; DK -220; FD -; L10 7/10; 2.1 shots; 19.1 min; PP1
-5. William Nylander TOR 69%; best -233 BOL; edge -0.6; DK -235; FD -; L10 8/10; 3.3 shots; 20.4 min; PP1
+5. William Nylander TOR 69%; best -225 DK; edge +0.2; DK -225; FD -; L10 8/10; 3.3 shots; 20.4 min; PP1
 6. Jack Hughes NJD 69%; best -275 MGM; edge -4.6; DK -; FD -; L10 8/10; 3.8 shots; 21.5 min; PP1
 7. Tim Stutzle OTT 68%; best -200 BOL; edge +1.3; DK -205; FD -; L10 8/10; 2.2 shots; 21.8 min; PP1
 8. Kirill Marchenko TOR 68%; best -150 DK; edge +7.7; DK -150; FD -; L10 7/10; 2.8 shots; 19.0 min; PP1
 9. Evan Bouchard EDM 67%; best -250 MGM; edge -4.1; DK -; FD -; L10 8/10; 2.4 shots; 25.1 min; PP1
-10. Jake Guentzel TBL 67%; best -220 DK; edge -1.8; DK -220; FD -; L10 5/10; 2.6 shots; 20.5 min; PP1
+10. Jake Guentzel TBL 67%; best -222 BOL; edge -2.0; DK -225; FD -; L10 5/10; 2.6 shots; 20.5 min; PP1
 11. Mark Scheifele WPG 66%; best -250 MGM; edge -5.2; DK -; FD -; L10 5/10; 1.7 shots; 20.5 min; PP1
-12. Tage Thompson BUF 65%; best -204 BOL; edge -1.9; DK -220; FD -; L10 6/10; 4.1 shots; 19.9 min; PP1
-13. Connor Bedard CHI 65%; best -220 MGM; edge -3.8; DK -230; FD -; L10 7/10; 3.0 shots; 20.7 min; PP2
-14. Alex DeBrincat DET 64%; best -185 DK; edge -0.7; DK -185; FD -; L10 7/10; 3.5 shots; 20.2 min; PP1
+12. Tage Thompson BUF 65%; best -213 BOL; edge -2.8; DK -230; FD -; L10 6/10; 4.1 shots; 19.9 min; PP1
+13. Connor Bedard CHI 65%; best -220 MGM; edge -3.8; DK -245; FD -; L10 7/10; 3.0 shots; 20.7 min; PP2
+14. Alex DeBrincat DET 64%; best -190 MGM; edge -1.3; DK -205; FD -; L10 7/10; 3.5 shots; 20.2 min; PP1
 15. Quinn Hughes MIN 64%; best -275 MGM; edge -9.6; DK -; FD -; L10 8/10; 2.2 shots; 26.9 min; PP1
 
 TOP 15 ASSISTS BY ROLE-ADJUSTED CHANCE
@@ -142,62 +142,62 @@ TOP 15 ASSISTS BY ROLE-ADJUSTED CHANCE
 15. Mark Scheifele WPG 49%; best -135 MGM; edge -8.4; DK -140; FD -; L10 5/10; 1.7 shots; 20.5 min; PP1
 
 TOP 15 BY EDGE (all three markets)
-1. Jared McCann SEA Points 58%; best +110 MGM; edge +10.8; DK +100; FD -; L10 7/10; 2.9 shots; 15.5 min; PP2
+1. Jared McCann SEA Points 58%; best +110 MGM; edge +10.8; DK -105; FD -; L10 7/10; 2.9 shots; 15.5 min; PP2
 2. Anthony Mantha NJD Goals 32%; best +380 DK; edge +10.7; DK +380; FD +360; L10 3/10; 1.3 shots; 13.2 min; PP2
 3. Shane Pinto OTT Points 56%; best +120 DK; edge +10.6; DK +120; FD -; L10 9/10; 1.8 shots; 19.9 min; PP2
-4. Josh Norris BUF Points 53%; best +135 DK; edge +10.4; DK +135; FD -; L10 5/10; 1.3 shots; 14.8 min; PP2
-5. Kaapo Kakko SEA Points 47%; best +175 MGM; edge +10.4; DK +160; FD -; L10 5/10; 1.0 shots; 14.3 min; PP1
-6. Max Sasson VAN Goals 20%; best +950 FD; edge +10.2; DK +850; FD +950; L10 2/10; 1.1 shots; 13.5 min; no PP
-7. Trevor Zegras PHI Assists 45%; best +190 DK; edge +10.1; DK +190; FD -; L10 2/10; 1.5 shots; 18.5 min; PP1
-8. Collin Graf SJS Goals 23%; best +650 BR; edge +10.0; DK +550; FD +550; L10 2/10; 1.3 shots; 14.7 min; no PP
-9. Bobby McMann SEA Goals 34%; best +310 MGM; edge +9.6; DK +245; FD +270; L10 4/10; 3.3 shots; 16.6 min; PP2
-10. Jordan Eberle SEA Points 55%; best +120 BOL; edge +9.6; DK +120; FD -; L10 6/10; 1.9 shots; 16.5 min; PP2
-11. Trevor Zegras PHI Points 61%; best -105 DK; edge +9.3; DK -105; FD -; L10 4/10; 1.5 shots; 18.5 min; PP1
-12. Drew O'Connor VAN Goals 19%; best +900 FD; edge +9.3; DK +550; FD +900; L10 1/10; 1.2 shots; 15.8 min; no PP
-13. Chandler Stephenson SEA Points 49%; best +150 DK; edge +8.8; DK +150; FD -; L10 7/10; 0.7 shots; 17.5 min; PP1
-14. Anthony Mantha NJD Points 52%; best +132 BOL; edge +8.8; DK +130; FD -; L10 3/10; 1.3 shots; 13.2 min; PP2
-15. Josh Norris BUF Assists 35%; best +285 DK; edge +8.6; DK +285; FD -; L10 2/10; 1.3 shots; 14.8 min; PP2
-257 of 776 priced legs show a positive edge at the best book.
+4. Kaapo Kakko SEA Points 47%; best +175 MGM; edge +10.4; DK +175; FD -; L10 5/10; 1.0 shots; 14.3 min; PP1
+5. Max Sasson VAN Goals 20%; best +950 FD; edge +10.2; DK +850; FD +950; L10 2/10; 1.1 shots; 13.5 min; no PP
+6. Trevor Zegras PHI Assists 45%; best +190 DK; edge +10.1; DK +190; FD -; L10 2/10; 1.5 shots; 18.5 min; PP1
+7. Collin Graf SJS Goals 23%; best +650 BR; edge +10.0; DK +500; FD +550; L10 2/10; 1.3 shots; 14.7 min; no PP
+8. Bobby McMann SEA Goals 34%; best +310 MGM; edge +9.6; DK +265; FD +260; L10 4/10; 3.3 shots; 16.6 min; PP2
+9. Jordan Eberle SEA Points 55%; best +120 DK; edge +9.6; DK +120; FD -; L10 6/10; 1.9 shots; 16.5 min; PP2
+10. Josh Norris BUF Points 53%; best +130 DK; edge +9.5; DK +130; FD -; L10 5/10; 1.3 shots; 14.8 min; PP2
+11. Drew O'Connor VAN Goals 19%; best +900 FD; edge +9.3; DK +550; FD +900; L10 1/10; 1.2 shots; 15.8 min; no PP
+12. Anthony Mantha NJD Points 52%; best +132 BOL; edge +8.8; DK +130; FD -; L10 3/10; 1.3 shots; 13.2 min; PP2
+13. Josh Norris BUF Assists 35%; best +285 DK; edge +8.6; DK +285; FD -; L10 2/10; 1.3 shots; 14.8 min; PP2
+14. Vladislav Gavrikov NYR Goals 16%; best +1300 FD; edge +8.5; DK +1200; FD +1300; L10 1/10; 1.6 shots; 21.1 min; no PP
+15. Cody Glass NJD Goals 21%; best +700 FD; edge +8.4; DK +650; FD +700; L10 1/10; 1.3 shots; 11.8 min; no PP
+261 of 797 priced legs show a positive edge at the best book.
 
 ALL PRICED SKATERS (shots/game last 10, minutes, PP unit | G | P | A: chance, best price, edge, last 10)
 BUF
-- Tage Thompson (4.1, 19.9, PP1): G 43% +140 FD +1.3, L10 5/10 | P 65% -204 BOL -1.9, L10 6/10 | A 40% +130 MGM -3.6, L10 4/10
-- Josh Norris (1.3, 14.8, PP2): G 22% +370 BR +1.0, L10 3/10 | P 53% +135 DK +10.4, L10 5/10 | A 35% +285 DK +8.6, L10 2/10
-- Zach Benson (2.0, 19.5, PP1): G 18% +300 FD -6.6, L10 1/10 | P 51% -114 BOL -2.1, L10 6/10 | A 38% +155 DK -1.3, L10 6/10
-- Ryan McLeod (0.8, 15.1, PP2): G 16% +500 FD -0.8, L10 3/10 | P 47% +150 DK +7.3, L10 4/10 | A 37% +245 DK +7.8, L10 2/10
-- Jack Quinn (2.7, 19.5, PP1): G 21% +235 FD -8.5, L10 3/10 | P 46% -132 BOL -10.5, L10 4/10 | A 32% +165 DK -5.3, L10 1/10
-- Josh Doan (1.8, 16.2, PP2): G 24% +270 DK -3.5, L10 2/10 | P 45% +110 DK -2.8, L10 3/10 | A 26% +235 DK -3.8, L10 1/10
-- Noah Ostlund (2.1, 18.4, PP1): G 18% +425 MGM -0.7, L10 2/10 | P 41% +118 BOL -4.4, L10 4/10 | A 25% no price, L10 2/10
-- Mattias Samuelsson (1.0, 22.1, no PP): G 14% +900 FD +3.8, L10 1/10 | P 40% +164 BOL +2.1, L10 3/10 | A 30% no price, L10 2/10
-- Peyton Krebs (0.9, 14.5, no PP): G 14% +600 MGM -0.6, L10 1/10 | P 40% +155 BOL +0.5, L10 4/10 | A 30% no price, L10 3/10
-- Owen Power (0.9, 26.4, PP1): G 10% +525 MGM -5.7, L10 1/10 | P 35% -105 MGM -16.6, L10 6/10 | A 28% +130 MGM -15.6, L10 6/10
+- Tage Thompson (4.1, 19.9, PP1): G 43% +135 MGM +0.4, L10 5/10 | P 65% -213 BOL -2.8, L10 6/10 | A 40% +130 MGM -3.6, L10 4/10
+- Josh Norris (1.3, 14.8, PP2): G 22% +330 FD -1.0, L10 3/10 | P 53% +130 DK +9.5, L10 5/10 | A 35% +285 DK +8.6, L10 2/10
+- Zach Benson (1.9, 19.5, PP1): G 18% +290 FD -7.2, L10 1/10 | P 51% -120 BOL -3.4, L10 6/10 | A 38% +155 DK -1.3, L10 6/10
+- Ryan McLeod (0.8, 15.1, PP2): G 16% +490 FD -1.0, L10 3/10 | P 47% +126 BOL +3.0, L10 4/10 | A 37% +245 DK +7.8, L10 2/10
+- Jack Quinn (2.7, 19.5, PP1): G 21% +230 MGM -9.0, L10 3/10 | P 46% -139 BOL -11.8, L10 4/10 | A 32% +165 DK -5.3, L10 1/10
+- Josh Doan (1.8, 16.2, PP2): G 24% +260 FD -4.3, L10 2/10 | P 45% +100 DK -5.2, L10 3/10 | A 26% +235 DK -3.8, L10 1/10
+- Noah Ostlund (2.1, 18.4, PP1): G 18% +425 MGM -0.7, L10 2/10 | P 41% +105 DK -7.3, L10 4/10 | A 25% no price, L10 2/10
+- Mattias Samuelsson (1.0, 22.1, no PP): G 14% +800 DK +2.7, L10 1/10 | P 40% +174 BOL +3.5, L10 3/10 | A 30% no price, L10 2/10
+- Peyton Krebs (0.9, 14.5, no PP): G 14% +600 MGM -0.6, L10 1/10 | P 40% +146 BOL -0.9, L10 4/10 | A 30% no price, L10 3/10
+- Owen Power (0.9, 26.4, PP1): G 10% +525 MGM -5.7, L10 1/10 | P 35% -103 BOL -16.1, L10 6/10 | A 28% +130 MGM -15.6, L10 6/10
 - Jiri Kulich (1.2, 13.1, PP2): G 20% +425 MGM +0.9, L10 1/10 | P 33% +174 BOL -3.2, L10 3/10 | A 18% +330 DK -5.1, L10 2/10
-- Olen Zellweger (1.3, 18.7, no PP): G 9% +600 MGM -4.8, L10 1/10 | P 28% +144 BOL -13.1, L10 3/10 | A 19% no price, L10 2/10
+- Olen Zellweger (1.3, 18.7, no PP): G 9% +600 MGM -4.8, L10 1/10 | P 28% +150 DK -12.1, L10 3/10 | A 19% no price, L10 2/10
 - Konsta Helenius (1.3, 14.3, PP2): G 14% +450 MGM -3.8, L10 1/10 | P 25% +152 BOL -14.4, L10 1/10 | A 16% no price, L10 0/10
-- Louis Crevier (1.2, 14.8, no PP): G 7% +1300 FD -0.3, L10 1/10 | P 22% no price, L10 2/10 | A 19% no price, L10 1/10
-- Beck Malenstyn (0.3, 9.9, no PP): G 8% +1200 FD +0.5, L10 0/10 | P 17% no price, L10 1/10 | A 9% no price, L10 1/10
+- Louis Crevier (1.2, 14.8, no PP): G 7% +1200 FD -0.8, L10 1/10 | P 22% no price, L10 2/10 | A 19% no price, L10 1/10
+- Beck Malenstyn (0.3, 9.9, no PP): G 8% +1100 DK -0.2, L10 0/10 | P 17% no price, L10 1/10 | A 9% no price, L10 1/10
 - Zach Metsa (0.2, 12.7, no PP): G 4% +1900 FD -0.8, L10 0/10 | P 14% no price, L10 1/10 | A 11% no price, L10 1/10
 TOR
-- William Nylander (3.3, 20.4, PP1): G 39% +165 BR +1.4, L10 6/10 | P 69% -233 BOL -0.6, L10 8/10 | A 53% +100 MGM +2.6, L10 5/10
-- Kirill Marchenko (2.8, 19.0, PP1): G 28% +215 DK -3.7, L10 2/10 | P 68% -150 DK +7.7, L10 7/10 | A 47% +138 MGM +5.4, L10 6/10
-- Auston Matthews (3.5, 21.9, PP1): G 39% +130 MGM -4.4, L10 5/10 | P 62% -250 MGM -9.2, L10 6/10 | A 42% +110 MGM -5.9, L10 4/10
-- John Tavares (2.2, 17.3, PP1): G 33% +200 MGM -0.4, L10 3/10 | P 61% -145 DK +1.4, L10 7/10 | A 40% +150 DK -0.5, L10 5/10
-- Darren Raddysh (2.8, 23.4, PP1): G 22% +500 BR +5.6, L10 1/10 | P 53% -115 DK -0.2, L10 4/10 | A 43% +125 DK -1.9, L10 3/10
-- Jack Roslovic (2.8, 16.6, PP2): G 27% +340 DK +4.3, L10 3/10 | P 42% +135 DK -0.3, L10 4/10 | A 22% +260 DK -6.0, L10 2/10
-- Easton Cowan (1.9, 14.9, PP2): G 19% +460 FD +0.9, L10 3/10 | P 41% +140 DK -0.3, L10 6/10 | A 25% +225 DK -5.4, L10 4/10
-- Morgan Rielly (1.0, 19.5, PP2): G 12% +850 FD +1.8, L10 0/10 | P 38% +167 BOL +0.1, L10 4/10 | A 27% +230 DK -2.8, L10 4/10
+- William Nylander (3.3, 20.4, PP1): G 39% +175 DK +2.8, L10 6/10 | P 69% -225 DK +0.2, L10 8/10 | A 53% +100 MGM +2.6, L10 5/10
+- Kirill Marchenko (2.8, 19.0, PP1): G 28% +200 MGM -5.3, L10 2/10 | P 68% -150 DK +7.7, L10 7/10 | A 47% +138 MGM +5.4, L10 6/10
+- Auston Matthews (3.5, 21.9, PP1): G 39% +130 MGM -4.4, L10 5/10 | P 62% -240 DK -8.4, L10 6/10 | A 42% +110 MGM -5.9, L10 4/10
+- John Tavares (2.2, 17.3, PP1): G 33% +200 MGM -0.4, L10 3/10 | P 61% -150 DK +0.6, L10 7/10 | A 40% +150 DK -0.5, L10 5/10
+- Darren Raddysh (2.8, 23.4, PP1): G 22% +500 FD +5.6, L10 1/10 | P 53% -115 DK -0.2, L10 4/10 | A 43% +125 DK -1.9, L10 3/10
+- Jack Roslovic (2.8, 16.6, PP2): G 27% +330 FD +3.8, L10 3/10 | P 42% +118 BOL -3.6, L10 4/10 | A 22% +260 DK -6.0, L10 2/10
+- Easton Cowan (1.9, 14.9, PP2): G 19% +450 DK +0.6, L10 3/10 | P 41% +145 DK +0.5, L10 6/10 | A 25% +225 DK -5.4, L10 4/10
+- Morgan Rielly (1.0, 19.5, PP2): G 12% +900 FD +2.3, L10 0/10 | P 38% +175 DK +1.1, L10 4/10 | A 27% +230 DK -2.8, L10 4/10
 - Oliver Ekman-Larsson (0.5, 16.5, no PP): G 9% +1300 DK +1.8, L10 0/10 | P 34% no price, L10 0/10 | A 29% no price, L10 0/10
 - Nick Blankenburg (1.4, 14.0, no PP): G 13% +1000 FD +3.9, L10 3/10 | P 33% no price, L10 4/10 | A 22% no price, L10 1/10
-- Nick Paul (1.3, 15.7, PP2): G 15% +475 DK -2.3, L10 1/10 | P 31% +195 BOL -2.5, L10 3/10 | A 19% +340 DK -4.0, L10 2/10
+- Nick Paul (1.3, 15.7, PP2): G 15% +500 DK -1.6, L10 1/10 | P 31% +199 BOL -2.0, L10 3/10 | A 19% +340 DK -4.0, L10 2/10
 - Teddy Blueger (0.5, 11.3, no PP): G 17% +700 MGM +4.8, L10 0/10 | P 29% no price, L10 0/10 | A 14% no price, L10 0/10
-- Jake McCabe (1.0, 19.3, no PP): G 6% +1500 DK -0.4, L10 0/10 | P 26% no price, L10 1/10 | A 22% no price, L10 1/10
-- Troy Stecher (0.8, 17.5, no PP): G 4% +2100 FD -0.2, L10 0/10 | P 19% no price, L10 1/10 | A 16% no price, L10 1/10
-- Colton Sissons (1.1, 14.6, no PP): G 10% +725 FD -1.8, L10 1/10 | P 17% no price, L10 1/10 | A 9% no price, L10 0/10
-- Brandon Duhaime (0.9, 11.0, no PP): G 5% +1300 FD -2.1, L10 0/10 | P 10% no price, L10 0/10 | A 6% no price, L10 0/10
+- Jake McCabe (1.0, 19.3, no PP): G 6% +1600 DK -0.0, L10 0/10 | P 26% no price, L10 1/10 | A 22% no price, L10 1/10
+- Troy Stecher (0.8, 17.5, no PP): G 4% +2000 DK -0.4, L10 0/10 | P 19% no price, L10 1/10 | A 16% no price, L10 1/10
+- Colton Sissons (1.1, 14.6, no PP): G 10% +700 DK -2.1, L10 1/10 | P 17% no price, L10 1/10 | A 9% no price, L10 0/10
+- Brandon Duhaime (0.9, 11.0, no PP): G 5% +1200 DK -2.6, L10 0/10 | P 10% no price, L10 0/10 | A 6% no price, L10 0/10
 NYI
 - Bo Horvat (2.9, 19.4, PP1): G 37% +220 MGM +5.8, L10 4/10 | P 62% -115 MGM +8.3, L10 8/10 | A 32% +200 MGM -1.1, L10 4/10
 - Matthew Schaefer (3.9, 25.4, PP1): G 20% +425 MGM +1.4, L10 1/10 | P 55% -111 MGM +2.5, L10 5/10 | A 40% +130 MGM -3.4, L10 4/10
-- Kyle Palmieri (2.1, 15.9, PP1): G 23% +285 DK -3.4, L10 1/10 | P 50% +115 DK +3.2, L10 3/10 | A 34% +245 DK +4.6, L10 2/10
+- Kyle Palmieri (2.1, 15.9, PP1): G 23% +285 DK -3.4, L10 1/10 | P 50% +115 DK +3.1, L10 3/10 | A 34% +245 DK +4.6, L10 2/10
 - Matias Maccelli (1.3, 15.3, PP1): G 18% +500 DK +1.3, L10 1/10 | P 43% +120 BOL -2.6, L10 5/10 | A 30% +170 DK -7.0, L10 5/10
 - Jean-Gabriel Pageau (1.1, 14.7, no PP): G 21% +700 FD +8.2, L10 2/10 | P 39% no price, L10 4/10 | A 22% no price, L10 2/10
 - Simon Holmstrom (1.1, 15.7, PP2): G 21% +550 FD +6.0, L10 1/10 | P 38% +220 BOL +7.0, L10 1/10 | A 24% +380 DK +3.1, L10 1/10
@@ -216,7 +216,7 @@ OTT
 - Tim Stutzle (2.2, 21.8, PP1): G 38% +210 MGM +6.0, L10 5/10 | P 68% -200 BOL +1.3, L10 8/10 | A 51% -105 DK -0.6, L10 8/10
 - Drake Batherson (2.1, 17.4, PP1): G 32% +205 BR -1.3, L10 4/10 | P 60% -147 BOL +0.2, L10 6/10 | A 37% +180 MGM +1.5, L10 3/10
 - Shane Pinto (1.8, 19.9, PP2): G 28% +285 DK +2.2, L10 2/10 | P 56% +120 DK +10.6, L10 9/10 | A 33% +250 DK +4.1, L10 7/10
-- Dylan Cozens (2.3, 18.5, PP1): G 28% +275 DK +1.7, L10 1/10 | P 50% -110 DK -2.0, L10 4/10 | A 30% +175 DK -5.9, L10 3/10
+- Dylan Cozens (2.4, 18.5, PP1): G 28% +275 DK +1.7, L10 1/10 | P 50% -110 DK -2.0, L10 4/10 | A 30% +175 DK -5.9, L10 3/10
 - Claude Giroux (1.8, 17.4, PP1): G 17% +380 DK -3.4, L10 1/10 | P 47% +117 BOL +0.7, L10 6/10 | A 34% +195 DK +0.2, L10 5/10
 - Thomas Chabot (2.2, 27.3, PP1): G 11% +575 BR -3.9, L10 1/10 | P 43% +106 BOL -5.3, L10 3/10 | A 36% +150 DK -4.5, L10 3/10
 - Michael Amadio (1.3, 16.5, no PP): G 20% +475 DK +2.3, L10 4/10 | P 37% no price, L10 5/10 | A 23% no price, L10 3/10
@@ -230,41 +230,41 @@ OTT
 - Warren Foegele (0.8, 11.2, no PP): G 16% +600 FD +2.2, L10 1/10 | P 22% no price, L10 2/10 | A 7% no price, L10 1/10
 SEA
 - Jared McCann (2.9, 15.5, PP2): G 33% +310 MGM +8.4, L10 3/10 | P 58% +110 MGM +10.8, L10 7/10 | A 35% +205 DK +2.1, L10 4/10
-- Jordan Eberle (1.9, 16.5, PP2): G 28% +333 MGM +5.0, L10 3/10 | P 55% +120 BOL +9.6, L10 6/10 | A 33% +240 DK +3.3, L10 3/10
-- Chandler Stephenson (0.7, 17.5, PP1): G 19% +550 MGM +3.5, L10 1/10 | P 49% +150 DK +8.8, L10 7/10 | A 36% +230 DK +5.5, L10 6/10
-- Kaapo Kakko (1.0, 14.3, PP1): G 19% +575 FD +4.2, L10 2/10 | P 47% +175 MGM +10.4, L10 5/10 | A 34% +275 DK +7.6, L10 4/10
-- Matty Beniers (0.8, 17.1, PP1): G 22% +425 MGM +3.4, L10 1/10 | P 46% +152 BOL +6.1, L10 3/10 | A 30% +265 DK +2.7, L10 3/10
+- Jordan Eberle (1.9, 16.5, PP2): G 28% +333 MGM +5.0, L10 3/10 | P 55% +120 DK +9.6, L10 6/10 | A 33% +240 DK +3.3, L10 3/10
+- Chandler Stephenson (0.7, 17.5, PP1): G 19% +575 FD +4.0, L10 1/10 | P 49% +139 BOL +7.0, L10 7/10 | A 36% +230 DK +5.5, L10 6/10
+- Kaapo Kakko (1.0, 14.3, PP1): G 19% +550 FD +3.6, L10 2/10 | P 47% +175 MGM +10.4, L10 5/10 | A 34% +275 DK +7.6, L10 4/10
+- Matty Beniers (0.8, 17.1, PP1): G 22% +450 FD +4.3, L10 1/10 | P 46% +155 DK +6.6, L10 3/10 | A 30% +265 DK +2.7, L10 3/10
 - Bobby McMann (3.3, 16.6, PP2): G 34% +310 MGM +9.6, L10 4/10 | P 46% +115 MGM -0.9, L10 5/10 | A 21% +280 MGM -5.5, L10 1/10
-- Vince Dunn (2.2, 22.7, PP1): G 14% +850 DK +3.8, L10 2/10 | P 42% +140 DK +0.1, L10 4/10 | A 33% +180 DK -2.8, L10 3/10
-- Brandon Montour (2.3, 24.5, PP1): G 12% +725 FD +0.3, L10 0/10 | P 39% +150 DK -0.5, L10 3/10 | A 30% +210 DK -2.3, L10 3/10
-- Mackie Samoskevich (1.7, 15.4, no PP): G 17% +470 FD -0.8, L10 4/10 | P 36% +178 BOL -0.1, L10 6/10 | A 22% +310 DK -2.8, L10 3/10
-- Shane Wright (1.3, 14.0, PP2): G 15% +600 FD +0.7, L10 3/10 | P 33% no price, L10 4/10 | A 20% no price, L10 1/10
+- Vince Dunn (2.2, 22.7, PP1): G 14% +800 DK +3.3, L10 2/10 | P 42% +145 DK +1.0, L10 4/10 | A 33% +180 DK -2.8, L10 3/10
+- Brandon Montour (2.3, 24.5, PP1): G 12% +700 FD -0.1, L10 0/10 | P 39% +155 BOL +0.2, L10 3/10 | A 30% +210 DK -2.3, L10 3/10
+- Mackie Samoskevich (1.7, 15.4, no PP): G 17% +460 FD -1.1, L10 4/10 | P 36% +178 BOL -0.1, L10 6/10 | A 22% +310 DK -2.8, L10 3/10
+- Shane Wright (1.3, 14.0, PP2): G 15% +600 FD +0.7, L10 3/10 | P 33% +175 DK -3.0, L10 4/10 | A 20% no price, L10 1/10
 - Frederick Gaudreau (1.2, 14.9, no PP): G 14% +800 FD +2.5, L10 4/10 | P 33% no price, L10 4/10 | A 21% no price, L10 1/10
-- Adam Larsson (1.3, 21.8, no PP): G 8% +2100 FD +3.6, L10 1/10 | P 28% no price, L10 2/10 | A 21% no price, L10 1/10
-- Ryan Winterton (1.6, 13.4, no PP): G 8% +1050 BR -0.9, L10 1/10 | P 26% no price, L10 3/10 | A 21% no price, L10 3/10
-- Ben Meyers (0.8, 12.1, no PP): G 13% +1300 FD +6.3, L10 1/10 | P 25% no price, L10 2/10 | A 17% no price, L10 2/10
+- Adam Larsson (1.3, 21.8, no PP): G 8% +2000 FD +3.4, L10 1/10 | P 28% +340 DK +5.5, L10 2/10 | A 21% no price, L10 1/10
+- Ryan Winterton (1.6, 13.4, no PP): G 8% +1000 FD -1.3, L10 1/10 | P 26% no price, L10 3/10 | A 21% no price, L10 3/10
+- Ben Meyers (0.8, 12.1, no PP): G 13% +1200 FD +5.8, L10 1/10 | P 25% no price, L10 2/10 | A 17% no price, L10 2/10
 - Ryker Evans (0.7, 21.9, no PP): G 11% +2300 FD +6.6, L10 0/10 | P 25% no price, L10 3/10 | A 16% no price, L10 3/10
-- Berkly Catton (1.3, 15.2, PP2): G 12% +625 FD -2.2, L10 2/10 | P 24% no price, L10 2/10 | A 17% no price, L10 2/10
-- Josh Mahura (0.5, 15.2, no PP): G 4% +2200 DK -0.3, L10 0/10 | P 19% no price, L10 3/10 | A 15% no price, L10 3/10
+- Berkly Catton (1.3, 15.2, PP2): G 12% +650 FD -1.8, L10 2/10 | P 24% +195 BOL -9.4, L10 2/10 | A 17% no price, L10 2/10
+- Josh Mahura (0.5, 15.2, no PP): G 4% +3000 FD +0.9, L10 0/10 | P 19% no price, L10 3/10 | A 15% no price, L10 3/10
 TBL
 - Nikita Kucherov (1.6, 21.8, PP1): G 42% +135 MGM -0.1, L10 2/10 | P 77% no price, L10 7/10 | A 62% -210 DK -5.7, L10 6/10
-- Jake Guentzel (2.6, 20.5, PP1): G 38% +155 MGM -1.0, L10 3/10 | P 67% -220 DK -1.8, L10 5/10 | A 45% +105 MGM -3.3, L10 3/10
-- Brandon Hagel (4.6, 21.9, PP1): G 40% +140 MGM -1.3, L10 4/10 | P 59% -213 BOL -9.5, L10 6/10 | A 42% +110 DK -6.1, L10 3/10
-- Brayden Point (2.3, 19.7, PP1): G 25% +190 DK -9.1, L10 1/10 | P 57% -185 DK -8.1, L10 5/10 | A 41% +120 MGM -4.8, L10 4/10
-- John Carlson (2.4, 19.9, PP1): G 16% +425 BR -3.3, L10 2/10 | P 51% -155 DK -9.5, L10 5/10 | A 41% -110 MGM -10.9, L10 3/10
+- Jake Guentzel (2.6, 20.5, PP1): G 38% +155 MGM -1.0, L10 3/10 | P 67% -222 BOL -2.0, L10 5/10 | A 45% +105 MGM -3.3, L10 3/10
+- Brandon Hagel (4.6, 21.9, PP1): G 40% +140 MGM -1.3, L10 4/10 | P 59% -217 BOL -9.9, L10 6/10 | A 42% +110 DK -6.1, L10 3/10
+- Brayden Point (2.3, 19.7, PP1): G 25% +190 DK -9.1, L10 1/10 | P 57% -185 BOL -8.1, L10 5/10 | A 41% +120 MGM -4.8, L10 4/10
+- John Carlson (2.4, 19.9, PP1): G 16% +450 DK -2.4, L10 2/10 | P 51% -150 DK -8.7, L10 5/10 | A 41% -110 MGM -10.9, L10 3/10
 - Anthony Cirelli (1.5, 17.9, PP2): G 24% +280 MGM -1.9, L10 1/10 | P 44% -105 MGM -7.1, L10 2/10 | A 30% +195 DK -4.3, L10 1/10
-- Victor Hedman (0.9, 13.9, no PP): G 3% +700 DK -9.4, L10 0/10 | P 37% no price, L10 3/10 | A 36% no price, L10 3/10
-- Ryan McDonagh (0.7, 15.4, no PP): G 10% +1500 DK +3.9, L10 0/10 | P 35% no price, L10 4/10 | A 28% no price, L10 4/10
-- Ilya Mikheyev (1.1, 14.3, no PP): G 18% +420 BR -1.4, L10 2/10 | P 32% no price, L10 4/10 | A 21% no price, L10 3/10
-- J.J. Moser (1.0, 16.9, no PP): G 8% +775 MGM -3.5, L10 0/10 | P 30% no price, L10 1/10 | A 23% no price, L10 1/10
-- Pontus Holmberg (1.6, 14.8, PP2): G 16% +425 MGM -3.2, L10 1/10 | P 28% no price, L10 2/10 | A 16% no price, L10 2/10
-- Zemgus Girgensons (0.9, 13.5, no PP): G 12% +650 BR -1.6, L10 1/10 | P 26% no price, L10 4/10 | A 15% no price, L10 3/10
-- Max Crozier (1.6, 17.2, PP2): G 3% +1100 DK -5.2, L10 0/10 | P 25% no price, L10 1/10 | A 22% no price, L10 1/10
-- Dominic James (2.2, 12.2, PP2): G 15% +550 BR -0.3, L10 3/10 | P 25% no price, L10 4/10 | A 14% no price, L10 1/10
-- Conor Geekie (1.1, 11.5, PP2): G 10% +550 FD -5.3, L10 2/10 | P 20% no price, L10 2/10 | A 11% no price, L10 0/10
+- Victor Hedman (0.9, 13.9, no PP): G 3% +700 DK -9.4, L10 0/10 | P 37% +186 BOL +2.0, L10 3/10 | A 36% no price, L10 3/10
+- Ryan McDonagh (0.7, 15.4, no PP): G 10% +1600 FD +4.3, L10 0/10 | P 35% +250 DK +6.0, L10 4/10 | A 28% no price, L10 4/10
+- Ilya Mikheyev (1.1, 14.3, no PP): G 18% +425 DK -1.2, L10 2/10 | P 32% +160 DK -6.9, L10 4/10 | A 21% no price, L10 3/10
+- J.J. Moser (1.0, 16.9, no PP): G 8% +800 DK -3.2, L10 0/10 | P 30% +225 DK -1.2, L10 1/10 | A 23% no price, L10 1/10
+- Pontus Holmberg (1.6, 14.8, PP2): G 16% +425 MGM -3.2, L10 1/10 | P 28% +128 BOL -15.6, L10 2/10 | A 16% no price, L10 2/10
+- Zemgus Girgensons (0.9, 13.5, no PP): G 12% +600 DK -2.5, L10 1/10 | P 26% +310 DK +1.5, L10 4/10 | A 15% no price, L10 3/10
+- Max Crozier (1.6, 17.2, PP2): G 3% +1700 FD -2.5, L10 0/10 | P 25% no price, L10 1/10 | A 22% no price, L10 1/10
+- Dominic James (2.2, 12.2, PP2): G 15% +470 FD -2.4, L10 3/10 | P 25% no price, L10 4/10 | A 14% no price, L10 1/10
+- Conor Geekie (1.1, 11.5, PP2): G 10% +550 DK -5.3, L10 2/10 | P 20% no price, L10 2/10 | A 11% no price, L10 0/10
 - Emil Lilleberg (0.7, 17.4, no PP): G 7% +1100 DK -0.9, L10 1/10 | P 20% no price, L10 2/10 | A 14% no price, L10 1/10
-- Jeffrey Viel (1.2, 8.5, no PP): G 7% +650 BR -6.6, L10 0/10 | P 18% no price, L10 1/10 | A 12% no price, L10 1/10
-- Erik Cernak (1.3, 19.1, no PP): G 5% +1500 DK -1.5, L10 1/10 | P 18% no price, L10 2/10 | A 13% no price, L10 1/10
+- Jeffrey Viel (1.2, 8.5, no PP): G 7% +650 FD -6.6, L10 0/10 | P 18% no price, L10 1/10 | A 12% no price, L10 1/10
+- Erik Cernak (1.3, 19.1, no PP): G 5% +1600 DK -1.1, L10 1/10 | P 18% no price, L10 2/10 | A 13% no price, L10 1/10
 VAN
 - Elias Pettersson (1.5, 19.5, PP1): G 20% +350 BR -2.6, L10 2/10 | P 54% -114 BOL +1.0, L10 7/10 | A 39% +135 DK -3.3, L10 6/10
 - Filip Hronek (1.2, 24.9, PP1): G 9% +800 FD -2.0, L10 0/10 | P 46% +100 MGM -4.0, L10 5/10 | A 40% +120 MGM -5.2, L10 5/10
@@ -323,7 +323,7 @@ NJD
 - Jesper Bratt (2.8, 18.3, PP1): G 25% +260 BR -3.2, L10 3/10 | P 56% -155 DK -4.7, L10 5/10 | A 45% +115 DK -1.5, L10 5/10
 - Anthony Mantha (1.3, 13.2, PP2): G 32% +380 DK +10.7, L10 3/10 | P 52% +132 BOL +8.8, L10 3/10 | A 31% +245 DK +2.0, L10 2/10
 - Nico Hischier (2.1, 19.1, PP1): G 29% +180 BR -7.1, L10 3/10 | P 51% -150 DK -9.1, L10 4/10 | A 34% +160 DK -4.7, L10 3/10
-- Timo Meier (3.5, 16.9, PP1): G 28% +230 FD -2.1, L10 0/10 | P 46% +100 BOL -4.4, L10 3/10 | A 26% +240 DK -3.9, L10 3/10
+- Timo Meier (3.5, 16.9, PP1): G 28% +230 FD -2.1, L10 0/10 | P 46% +100 BOL -4.5, L10 3/10 | A 26% +240 DK -3.9, L10 3/10
 - Luke Hughes (2.4, 23.9, PP1): G 10% +650 FD -3.7, L10 1/10 | P 39% -102 BOL -11.3, L10 2/10 | A 35% +130 DK -8.6, L10 1/10
 - Dawson Mercer (2.5, 14.6, no PP): G 18% +450 DK -0.2, L10 2/10 | P 39% +165 DK +1.4, L10 3/10 | A 25% +300 DK -0.4, L10 2/10
 - Dougie Hamilton (3.0, 21.4, PP2): G 14% +650 BR +0.3, L10 1/10 | P 37% +144 BOL -3.7, L10 5/10 | A 28% +205 DK -4.7, L10 4/10
@@ -337,108 +337,108 @@ NJD
 - Jonas Siegenthaler (0.5, 19.2, no PP): G 1% +2000 DK -4.1, L10 0/10 | P 18% no price, L10 3/10 | A 17% no price, L10 3/10
 - Brett Pesce (0.9, 21.1, no PP): G 3% +1700 DK -2.4, L10 0/10 | P 16% no price, L10 1/10 | A 13% no price, L10 1/10
 PHI
-- Trevor Zegras (1.5, 18.5, PP1): G 25% +310 MGM +1.0, L10 2/10 | P 61% -105 DK +9.3, L10 4/10 | A 45% +190 DK +10.1, L10 2/10
-- Christian Dvorak (1.1, 16.8, PP2): G 21% +350 MGM -1.5, L10 2/10 | P 46% +130 MGM +2.8, L10 4/10 | A 34% +230 MGM +4.1, L10 2/10
-- Tyson Foerster (1.9, 17.5, PP1): G 30% +300 MGM +5.4, L10 1/10 | P 43% +132 BOL +0.2, L10 2/10 | A 14% +350 DK -7.8, L10 1/10
-- Matvei Michkov (2.0, 15.1, PP1): G 21% +360 MGM -0.9, L10 4/10 | P 43% +115 DK -3.8, L10 4/10 | A 26% +210 DK -5.9, L10 1/10
+- Trevor Zegras (1.5, 18.5, PP1): G 25% +310 MGM +1.0, L10 2/10 | P 61% -110 DK +8.1, L10 4/10 | A 45% +190 DK +10.1, L10 2/10
+- Christian Dvorak (1.1, 16.8, PP2): G 21% +360 MGM -1.1, L10 2/10 | P 46% +130 MGM +2.8, L10 4/10 | A 34% +230 MGM +4.1, L10 2/10
+- Tyson Foerster (1.9, 17.5, PP1): G 30% +300 MGM +5.4, L10 1/10 | P 43% +130 BOL -0.2, L10 2/10 | A 14% +350 DK -7.9, L10 1/10
+- Matvei Michkov (2.0, 15.1, PP1): G 21% +360 MGM -0.9, L10 4/10 | P 43% +115 BOL -3.8, L10 4/10 | A 26% +210 DK -5.9, L10 1/10
 - Porter Martone (1.1, 13.3, PP2): G 24% +350 MGM +2.2, L10 2/10 | P 42% +115 MGM -4.6, L10 3/10 | A 30% +240 DK +0.5, L10 2/10
 - Owen Tippett (2.5, 16.5, PP2): G 26% +310 MGM +1.1, L10 1/10 | P 42% +120 MGM -3.7, L10 2/10 | A 24% +240 DK -5.4, L10 1/10
-- Noah Cates (1.4, 12.6, no PP): G 20% +600 FD +5.3, L10 0/10 | P 39% +190 BOL +4.8, L10 1/10 | A 27% +310 DK +2.7, L10 1/10
-- Travis Sanheim (1.6, 25.3, no PP): G 13% +1100 DK +4.9, L10 2/10 | P 37% +205 DK +4.6, L10 3/10 | A 30% +260 DK +1.8, L10 2/10
-- Sean Couturier (1.5, 17.0, no PP): G 13% +550 FD -2.6, L10 1/10 | P 34% +171 BOL -3.2, L10 3/10 | A 24% +290 DK -1.9, L10 3/10
-- Denver Barkey (0.5, 13.9, PP2): G 11% +575 FD -3.4, L10 0/10 | P 33% +167 BOL -4.1, L10 5/10 | A 24% +245 DK -4.7, L10 5/10
-- Jamie Drysdale (1.0, 22.1, PP1): G 9% +850 FD -1.1, L10 0/10 | P 33% +165 DK -4.4, L10 0/10 | A 25% +220 DK -6.0, L10 0/10
+- Noah Cates (1.4, 12.6, no PP): G 20% +625 FD +5.8, L10 0/10 | P 39% +195 BOL +5.4, L10 1/10 | A 27% +310 DK +2.7, L10 1/10
+- Travis Sanheim (1.6, 25.3, no PP): G 13% +1100 DK +4.9, L10 2/10 | P 37% +209 BOL +5.0, L10 3/10 | A 30% +260 DK +1.8, L10 2/10
+- Sean Couturier (1.5, 17.0, no PP): G 13% +575 FD -2.0, L10 1/10 | P 34% +174 BOL -2.8, L10 3/10 | A 24% +290 DK -1.9, L10 3/10
+- Denver Barkey (0.5, 13.9, PP2): G 11% +575 FD -3.4, L10 0/10 | P 33% +171 BOL -3.6, L10 5/10 | A 24% +245 DK -4.7, L10 5/10
+- Jamie Drysdale (1.0, 22.1, PP1): G 9% +900 FD -0.5, L10 0/10 | P 33% +165 DK -4.4, L10 0/10 | A 25% +220 DK -6.0, L10 0/10
 - Michael Bunting (1.0, 13.0, PP2): G 18% +550 DK +2.3, L10 0/10 | P 31% no price, L10 0/10 | A 21% no price, L10 0/10
-- Noel Acciari (0.4, 14.2, no PP): G 16% +700 BR +3.5, L10 1/10 | P 30% no price, L10 1/10 | A 15% no price, L10 0/10
-- Nick Seeler (0.6, 19.4, no PP): G 5% +2000 FD +0.0, L10 0/10 | P 14% no price, L10 2/10 | A 10% no price, L10 2/10
-- Simon Benoit (1.1, 14.3, no PP): G 1% +1700 DK -5.0, L10 0/10 | P 9% no price, L10 1/10 | A 9% no price, L10 1/10
+- Noel Acciari (0.4, 14.2, no PP): G 16% +800 FD +4.9, L10 1/10 | P 30% no price, L10 1/10 | A 15% no price, L10 0/10
+- Nick Seeler (0.6, 19.4, no PP): G 5% +2200 FD +0.4, L10 0/10 | P 14% no price, L10 2/10 | A 10% no price, L10 2/10
+- Simon Benoit (1.1, 14.3, no PP): G 1% +3000 FD -2.7, L10 0/10 | P 9% no price, L10 1/10 | A 9% no price, L10 1/10
 - David Jiricek (1.0, 15.7, PP1): G 1% +1050 MGM -7.5, L10 0/10 | P 7% no price, L10 1/10 | A 6% no price, L10 1/10
 DET
-- Alex DeBrincat (3.5, 20.2, PP1): G 40% +160 DK +1.4, L10 4/10 | P 64% -185 DK -0.7, L10 7/10 | A 43% +125 MGM -1.5, L10 5/10
-- Lucas Raymond (2.6, 20.3, PP1): G 27% +280 DK +0.9, L10 0/10 | P 62% -145 DK +3.2, L10 4/10 | A 46% +120 DK +0.5, L10 4/10
-- Dylan Larkin (3.4, 20.2, PP1): G 36% +195 FD +2.6, L10 3/10 | P 62% -172 BOL -0.8, L10 5/10 | A 38% +125 MGM -6.8, L10 5/10
-- Viktor Arvidsson (2.3, 18.7, PP1): G 33% +225 BR +2.3, L10 4/10 | P 59% -135 DK +1.3, L10 5/10 | A 34% +155 MGM -5.0, L10 2/10
-- Moritz Seider (2.1, 25.1, PP1): G 11% +650 FD -2.0, L10 1/10 | P 50% -111 BOL -2.6, L10 4/10 | A 45% +105 MGM -3.6, L10 4/10
-- Andrew Copp (1.8, 19.6, PP2): G 13% +400 DK -7.3, L10 0/10 | P 42% +135 DK -0.5, L10 1/10 | A 33% +240 DK +3.3, L10 1/10
-- Justin Faulk (2.0, 19.3, PP2): G 17% +850 FD +6.2, L10 3/10 | P 39% +165 MGM +1.2, L10 5/10 | A 26% +210 MGM -6.6, L10 3/10
-- Emmitt Finnie (1.7, 16.8, PP2): G 17% +380 BR -4.2, L10 3/10 | P 33% +150 DK -7.0, L10 3/10 | A 20% +295 DK -5.2, L10 2/10
-- Axel Sandin-Pellikka (1.2, 13.3, no PP): G 9% +850 MGM -1.5, L10 1/10 | P 25% no price, L10 2/10 | A 19% no price, L10 2/10
-- Michael Brandsegg-Nygard (2.3, 15.0, PP2): G 12% +380 DK -8.8, L10 2/10 | P 24% +140 DK -17.2, L10 3/10 | A 20% +255 DK -7.9, L10 3/10
-- Nate Danielson (0.5, 9.2, no PP): G 7% +650 MGM -6.3, L10 0/10 | P 21% +160 DK -17.5, L10 1/10 | A 17% +300 DK -8.3, L10 1/10
+- Alex DeBrincat (3.5, 20.2, PP1): G 40% +165 MGM +2.2, L10 4/10 | P 64% -190 MGM -1.3, L10 7/10 | A 43% +125 MGM -1.5, L10 5/10
+- Lucas Raymond (2.6, 20.3, PP1): G 27% +270 DK +0.2, L10 0/10 | P 62% -150 DK +2.4, L10 4/10 | A 46% +120 DK +0.5, L10 4/10
+- Dylan Larkin (3.4, 20.2, PP1): G 36% +195 DK +2.6, L10 3/10 | P 62% -169 BOL -0.4, L10 5/10 | A 38% +125 MGM -6.8, L10 5/10
+- Viktor Arvidsson (2.3, 18.7, PP1): G 33% +230 DK +2.7, L10 4/10 | P 59% -130 DK +2.2, L10 5/10 | A 34% +155 MGM -5.0, L10 2/10
+- Moritz Seider (2.1, 25.1, PP1): G 11% +700 FD -1.2, L10 1/10 | P 50% -111 BOL -2.6, L10 4/10 | A 45% +105 MGM -3.6, L10 4/10
+- Andrew Copp (1.8, 19.6, PP2): G 13% +380 BR -8.1, L10 0/10 | P 42% +130 MGM -1.5, L10 1/10 | A 33% +240 DK +3.3, L10 1/10
+- Justin Faulk (2.0, 19.3, PP2): G 17% +900 DK +6.7, L10 3/10 | P 39% +167 BOL +1.5, L10 5/10 | A 26% +210 MGM -6.6, L10 3/10
+- Emmitt Finnie (1.7, 16.8, PP2): G 17% +380 BR -4.2, L10 3/10 | P 33% +145 DK -7.8, L10 3/10 | A 20% +295 DK -5.2, L10 2/10
+- Axel Sandin-Pellikka (1.2, 13.3, no PP): G 9% +850 MGM -1.5, L10 1/10 | P 25% +240 DK -4.0, L10 2/10 | A 19% no price, L10 2/10
+- Michael Brandsegg-Nygard (2.3, 15.0, PP2): G 12% +390 MGM -8.4, L10 2/10 | P 24% +135 MGM -18.1, L10 3/10 | A 20% +255 DK -7.9, L10 3/10
+- Nate Danielson (0.5, 9.2, no PP): G 7% +575 MGM -7.8, L10 0/10 | P 21% +158 BOL -17.8, L10 1/10 | A 17% +300 DK -8.3, L10 1/10
 - Michael Rasmussen (0.9, 17.0, PP2): G 10% +500 BR -6.3, L10 0/10 | P 19% no price, L10 0/10 | A 13% no price, L10 0/10
-- Ben Chiarot (1.0, 18.6, no PP): G 6% +1300 DK -1.3, L10 0/10 | P 18% no price, L10 3/10 | A 13% no price, L10 3/10
-- Keegan Kolesar (0.4, 12.4, no PP): G 7% +850 FD -3.4, L10 0/10 | P 17% no price, L10 0/10 | A 12% no price, L10 0/10
-- Albert Johansson (1.3, 16.3, no PP): G 4% +1800 DK -1.7, L10 0/10 | P 13% no price, L10 1/10 | A 10% no price, L10 1/10
+- Ben Chiarot (1.0, 18.6, no PP): G 6% +1500 FD -0.4, L10 0/10 | P 18% +330 DK -5.3, L10 3/10 | A 13% no price, L10 3/10
+- Keegan Kolesar (0.4, 12.4, no PP): G 7% +950 DK -2.4, L10 0/10 | P 17% no price, L10 0/10 | A 12% no price, L10 0/10
+- Albert Johansson (1.3, 16.3, no PP): G 4% +1600 DK -2.3, L10 0/10 | P 13% no price, L10 1/10 | A 10% no price, L10 1/10
 WPG
 - Kyle Connor (4.8, 20.7, PP1): G 42% +130 FD -1.5, L10 6/10 | P 73% -275 MGM +0.1, L10 7/10 | A 50% -118 MGM -4.0, L10 5/10
-- Mark Scheifele (1.7, 20.5, PP1): G 34% +175 DK -2.6, L10 3/10 | P 66% -250 MGM -5.2, L10 5/10 | A 49% -135 MGM -8.4, L10 5/10
-- Gabriel Vilardi (1.4, 16.7, PP1): G 29% +240 DK -0.6, L10 1/10 | P 54% -130 BOL -2.1, L10 5/10 | A 41% +140 DK -1.1, L10 5/10
+- Mark Scheifele (1.7, 20.5, PP1): G 34% +190 DK -0.7, L10 3/10 | P 66% -250 MGM -5.2, L10 5/10 | A 49% -135 MGM -8.4, L10 5/10
+- Gabriel Vilardi (1.4, 16.7, PP1): G 29% +245 DK -0.1, L10 1/10 | P 54% -130 BOL -2.1, L10 5/10 | A 41% +140 DK -1.1, L10 5/10
 - Cole Perfetti (2.0, 18.6, PP1): G 23% +250 MGM -5.8, L10 4/10 | P 46% -155 MGM -14.5, L10 5/10 | A 28% +120 MGM -17.9, L10 2/10
 - Morgan Barron (1.1, 15.9, no PP): G 16% +650 BR +3.0, L10 0/10 | P 33% no price, L10 1/10 | A 18% no price, L10 1/10
-- Alex Iafallo (1.9, 13.3, PP2): G 16% +470 FD -1.1, L10 2/10 | P 31% +174 BOL -5.6, L10 3/10 | A 19% +295 DK -6.3, L10 2/10
-- Adam Lowry (0.9, 15.1, no PP): G 9% +625 FD -5.0, L10 1/10 | P 28% +209 BOL -4.1, L10 2/10 | A 21% +370 DK -0.2, L10 1/10
+- Alex Iafallo (1.9, 13.3, PP2): G 16% +480 FD -0.8, L10 2/10 | P 31% +178 BOL -5.1, L10 3/10 | A 19% +295 DK -6.3, L10 2/10
+- Adam Lowry (0.9, 15.1, no PP): G 9% +600 FD -5.5, L10 1/10 | P 28% +220 BOL -3.0, L10 2/10 | A 21% +370 DK -0.2, L10 1/10
 - Neal Pionk (1.7, 23.4, PP1): G 6% +700 MGM -6.4, L10 0/10 | P 25% +109 BOL -22.5, L10 4/10 | A 21% +150 DK -18.7, L10 4/10
-- Mario Ferraro (1.3, 20.1, no PP): G 9% +1800 DK +3.6, L10 2/10 | P 25% +370 DK +3.9, L10 3/10 | A 18% +450 DK +0.3, L10 1/10
-- Dylan DeMelo (0.5, 21.9, no PP): G 5% +2200 DK +0.8, L10 1/10 | P 24% +370 DK +3.2, L10 3/10 | A 20% +450 DK +1.5, L10 2/10
+- Mario Ferraro (1.3, 20.1, no PP): G 9% +1700 DK +3.3, L10 2/10 | P 25% +370 DK +3.9, L10 3/10 | A 18% +450 DK +0.3, L10 1/10
+- Dylan DeMelo (0.5, 21.9, no PP): G 5% +2000 DK +0.4, L10 1/10 | P 24% +320 DK +0.6, L10 3/10 | A 20% +450 DK +1.5, L10 2/10
 - Cole Koepke (1.4, 11.1, no PP): G 13% +800 FD +1.4, L10 2/10 | P 24% no price, L10 3/10 | A 13% no price, L10 1/10
-- Nino Niederreiter (1.2, 13.5, no PP): G 12% +525 FD -4.4, L10 0/10 | P 23% +178 BOL -12.6, L10 0/10 | A 16% +285 DK -9.6, L10 0/10
-- Isak Rosén (1.4, 12.3, PP2): G 11% +550 FD -4.0, L10 1/10 | P 21% +186 BOL -14.2, L10 1/10 | A 10% +320 DK -14.0, L10 0/10
-- Vladislav Namestnikov (1.3, 12.1, PP2): G 12% +600 FD -2.4, L10 1/10 | P 20% no price, L10 2/10 | A 9% no price, L10 1/10
-- Dylan Samberg (1.6, 22.5, no PP): G 3% +1500 DK -3.7, L10 0/10 | P 19% +210 DK -12.8, L10 1/10 | A 19% +245 DK -10.3, L10 1/10
+- Nino Niederreiter (1.2, 13.5, no PP): G 12% +575 FD -3.2, L10 0/10 | P 23% +178 BOL -12.6, L10 0/10 | A 16% +285 DK -9.6, L10 0/10
+- Isak Rosén (1.4, 12.3, PP2): G 11% +575 FD -3.5, L10 1/10 | P 21% +199 BOL -12.7, L10 1/10 | A 10% +320 DK -14.0, L10 0/10
+- Vladislav Namestnikov (1.3, 12.1, PP2): G 12% +625 FD -1.9, L10 1/10 | P 20% no price, L10 2/10 | A 9% no price, L10 1/10
+- Dylan Samberg (1.6, 22.5, no PP): G 3% +1700 DK -3.0, L10 0/10 | P 19% +220 DK -11.8, L10 1/10 | A 19% +245 DK -10.3, L10 1/10
 - Jack St. Ivany (0.2, 16.1, no PP): G 2% +2500 DK -2.2, L10 0/10 | P 19% no price, L10 2/10 | A 18% no price, L10 2/10
-- Haydn Fleury (0.9, 13.4, PP2): G 5% +1400 FD -1.6, L10 1/10 | P 10% no price, L10 2/10 | A 7% no price, L10 1/10
+- Haydn Fleury (0.9, 13.4, PP2): G 5% +1300 FD -2.1, L10 1/10 | P 10% no price, L10 2/10 | A 7% no price, L10 1/10
 CHI
 - Connor Bedard (3.0, 20.7, PP2): G 35% +200 MGM +1.8, L10 0/10 | P 65% -220 MGM -3.8, L10 7/10 | A 44% -105 MGM -7.3, L10 7/10
-- Patrick Kane (1.5, 19.6, PP1): G 22% +280 BR -4.8, L10 1/10 | P 57% -145 DK -2.1, L10 4/10 | A 45% +120 DK -0.1, L10 3/10
-- Anton Frondell (2.3, 18.1, PP1): G 21% +380 BR +0.2, L10 1/10 | P 55% +100 BOL +4.9, L10 4/10 | A 42% +195 DK +7.9, L10 4/10
-- Tyler Bertuzzi (1.1, 17.6, PP1): G 29% +235 BR -0.4, L10 2/10 | P 50% -115 MGM -3.1, L10 5/10 | A 30% +200 MGM -3.4, L10 4/10
-- Frank Nazar (1.6, 18.8, PP2): G 24% +340 FD +0.8, L10 3/10 | P 44% +120 BOL -1.1, L10 3/10 | A 33% +220 DK +2.2, L10 2/10
-- Teuvo Teravainen (1.0, 13.5, no PP): G 17% +500 MGM +0.7, L10 1/10 | P 38% +130 DK -5.3, L10 4/10 | A 26% +205 DK -7.1, L10 4/10
-- Ryan Greene (1.1, 15.2, no PP): G 14% +700 FD +1.4, L10 3/10 | P 34% no price, L10 5/10 | A 20% no price, L10 2/10
-- Artyom Levshunov (1.7, 20.2, PP2): G 3% +1300 FD -4.0, L10 0/10 | P 33% +245 DK +3.5, L10 2/10 | A 30% +310 DK +5.1, L10 2/10
-- Oliver Moore (1.0, 11.7, PP2): G 12% +550 MGM -3.6, L10 2/10 | P 29% +171 BOL -7.5, L10 4/10 | A 21% +270 DK -6.2, L10 2/10
+- Patrick Kane (1.5, 19.6, PP1): G 22% +280 BR -4.8, L10 1/10 | P 57% -145 BOL -2.1, L10 4/10 | A 45% +120 DK -0.1, L10 3/10
+- Anton Frondell (2.3, 18.1, PP1): G 21% +380 BR +0.2, L10 1/10 | P 55% +103 BOL +5.6, L10 4/10 | A 42% +195 DK +7.9, L10 4/10
+- Tyler Bertuzzi (1.1, 17.6, PP1): G 29% +230 BR -0.9, L10 2/10 | P 50% -115 MGM -3.1, L10 5/10 | A 30% +200 MGM -3.4, L10 4/10
+- Frank Nazar (1.6, 18.8, PP2): G 24% +350 FD +1.3, L10 3/10 | P 44% +117 BOL -1.7, L10 3/10 | A 33% +220 DK +2.2, L10 2/10
+- Teuvo Teravainen (1.0, 13.5, no PP): G 17% +525 FD +1.3, L10 1/10 | P 38% +130 DK -5.3, L10 4/10 | A 26% +205 DK -7.1, L10 4/10
+- Ryan Greene (1.1, 15.2, no PP): G 14% +650 FD +0.5, L10 3/10 | P 34% no price, L10 5/10 | A 20% no price, L10 2/10
+- Artyom Levshunov (1.7, 20.2, PP2): G 3% +1400 FD -3.5, L10 0/10 | P 33% +239 BOL +3.0, L10 2/10 | A 30% +310 DK +5.1, L10 2/10
+- Oliver Moore (1.0, 11.7, PP2): G 12% +550 MGM -3.6, L10 2/10 | P 29% +175 DK -6.9, L10 4/10 | A 21% +270 DK -6.2, L10 2/10
 - Ryan Donato (1.7, 10.6, PP1): G 15% +500 DK -1.5, L10 1/10 | P 27% +174 BOL -9.2, L10 3/10 | A 14% +275 DK -12.3, L10 2/10
-- Sam Rinzel (1.2, 17.5, PP2): G 8% +950 FD -1.6, L10 2/10 | P 24% no price, L10 3/10 | A 17% no price, L10 1/10
-- Ian Cole (0.8, 16.9, no PP): G 4% +2200 DK -0.8, L10 0/10 | P 22% +370 DK +1.1, L10 0/10 | A 20% +450 DK +1.7, L10 0/10
-- Alex Vlasic (0.9, 19.9, no PP): G 3% +1500 DK -3.5, L10 0/10 | P 22% +425 DK +3.0, L10 1/10 | A 19% +600 DK +5.2, L10 1/10
+- Sam Rinzel (1.2, 17.5, PP2): G 8% +900 DK -2.1, L10 2/10 | P 24% +209 BOL -7.9, L10 3/10 | A 17% no price, L10 1/10
+- Ian Cole (0.8, 16.9, no PP): G 4% +2200 DK -0.8, L10 0/10 | P 22% +390 DK +1.9, L10 0/10 | A 20% +450 DK +1.7, L10 0/10
+- Alex Vlasic (0.9, 19.9, no PP): G 3% +1600 FD -3.1, L10 0/10 | P 22% +340 DK -0.6, L10 1/10 | A 19% +600 DK +5.2, L10 1/10
 - Wyatt Kaiser (0.8, 18.8, no PP): G 7% +1800 DK +1.9, L10 0/10 | P 22% no price, L10 3/10 | A 15% no price, L10 3/10
-- Cole Smith (0.8, 14.5, no PP): G 13% +1100 FD +4.9, L10 1/10 | P 22% no price, L10 2/10 | A 9% no price, L10 1/10
-- Jordan Greenway (1.4, 14.4, no PP): G 6% +1000 FD -2.8, L10 1/10 | P 18% no price, L10 1/10 | A 12% no price, L10 0/10
+- Cole Smith (0.8, 14.5, no PP): G 13% +950 BR +3.7, L10 1/10 | P 22% no price, L10 2/10 | A 9% no price, L10 1/10
+- Jordan Greenway (1.4, 14.4, no PP): G 6% +1100 FD -2.0, L10 1/10 | P 18% no price, L10 1/10 | A 12% no price, L10 0/10
 - Ethan Del Mastro (0.9, 14.2, no PP): G 2% +1400 FD -5.0, L10 0/10 | P 10% no price, L10 1/10 | A 9% no price, L10 1/10
 SJS
-- Macklin Celebrini (3.5, 21.5, PP2): G 42% +150 FD +1.8, L10 5/10 | P 73% -285 MGM -1.2, L10 8/10 | A 55% -145 MGM -3.9, L10 5/10
+- Macklin Celebrini (3.5, 21.5, PP2): G 42% +150 DK +1.8, L10 5/10 | P 73% -285 MGM -1.2, L10 8/10 | A 55% -145 MGM -3.9, L10 5/10
 - Will Smith (2.2, 19.0, PP1): G 28% +280 MGM +2.0, L10 2/10 | P 54% -125 MGM -1.5, L10 4/10 | A 37% +145 DK -4.2, L10 4/10
-- Alexander Wennberg (1.4, 19.8, PP1): G 21% +450 MGM +2.7, L10 0/10 | P 51% +115 BOL +4.4, L10 2/10 | A 39% +190 DK +4.2, L10 2/10
-- Mason Marchment (1.9, 16.3, PP1): G 22% +390 DK +1.3, L10 2/10 | P 44% +130 DK +1.0, L10 4/10 | A 29% +235 DK -0.4, L10 2/10
+- Alexander Wennberg (1.4, 19.8, PP1): G 21% +450 MGM +2.7, L10 0/10 | P 51% +117 BOL +4.9, L10 2/10 | A 39% +190 DK +4.2, L10 2/10
+- Mason Marchment (1.9, 16.3, PP1): G 22% +380 FD +0.9, L10 2/10 | P 44% +135 DK +1.9, L10 4/10 | A 29% +235 DK -0.4, L10 2/10
 - Tyler Toffoli (2.4, 13.0, PP2): G 21% +320 BR -3.2, L10 3/10 | P 44% +126 BOL -0.7, L10 4/10 | A 32% +260 DK +3.9, L10 3/10
 - Collin Graf (1.3, 14.7, no PP): G 23% +650 BR +10.0, L10 2/10 | P 43% no price, L10 3/10 | A 24% no price, L10 1/10
 - Michael Misa (1.6, 13.6, PP2): G 17% +525 MGM +1.4, L10 2/10 | P 40% +160 MGM +1.4, L10 7/10 | A 26% +220 DK -4.9, L10 5/10
 - Igor Chernyshov (1.6, 14.4, PP2): G 22% +350 MGM -0.4, L10 4/10 | P 39% +125 MGM -5.1, L10 4/10 | A 27% +230 MGM -2.8, L10 2/10
 - Dmitri Orlov (0.6, 18.6, no PP): G 4% +950 MGM -5.8, L10 0/10 | P 38% +161 BOL +0.1, L10 3/10 | A 36% +220 DK +4.6, L10 3/10
-- Jacob Trouba (1.5, 21.3, no PP): G 12% +1200 DK +4.4, L10 1/10 | P 37% no price, L10 4/10 | A 27% no price, L10 3/10
-- Kiefer Sherwood (1.4, 14.8, PP2): G 22% +500 DK +5.6, L10 1/10 | P 36% +204 BOL +2.7, L10 4/10 | A 16% +370 DK -5.3, L10 3/10
-- Darnell Nurse (1.9, 20.6, no PP): G 7% +1300 DK -0.3, L10 1/10 | P 25% no price, L10 2/10 | A 18% no price, L10 1/10
-- Sam Dickinson (0.3, 18.4, no PP): G 2% +2000 DK -3.0, L10 0/10 | P 19% no price, L10 2/10 | A 17% no price, L10 2/10
-- Barclay Goodrow (0.7, 12.0, no PP): G 5% +1300 DK -2.0, L10 0/10 | P 12% no price, L10 0/10 | A 8% no price, L10 0/10
+- Jacob Trouba (1.5, 21.3, no PP): G 12% +1100 DK +3.7, L10 1/10 | P 37% +186 BOL +1.8, L10 4/10 | A 27% no price, L10 3/10
+- Kiefer Sherwood (1.4, 14.8, PP2): G 22% +480 FD +5.0, L10 1/10 | P 36% +199 BOL +2.2, L10 4/10 | A 16% +370 DK -5.3, L10 3/10
+- Darnell Nurse (1.9, 20.6, no PP): G 7% +1200 DK -0.9, L10 1/10 | P 25% +220 BOL -6.1, L10 2/10 | A 18% no price, L10 1/10
+- Sam Dickinson (0.3, 18.4, no PP): G 2% +1900 DK -3.2, L10 0/10 | P 19% no price, L10 2/10 | A 17% no price, L10 2/10
+- Barclay Goodrow (0.7, 12.0, no PP): G 5% +1200 FD -2.6, L10 0/10 | P 12% no price, L10 0/10 | A 8% no price, L10 0/10
 - Zack Ostapchuk (1.0, 10.8, no PP): G 7% +1200 DK -1.0, L10 0/10 | P 11% no price, L10 0/10 | A 6% no price, L10 0/10
-- Michael Kesselring (1.1, 19.5, no PP): G 1% +1800 FD -3.9, L10 0/10 | P 9% no price, L10 1/10 | A 8% no price, L10 1/10
+- Michael Kesselring (1.1, 19.5, no PP): G 1% +1700 FD -4.2, L10 0/10 | P 9% no price, L10 1/10 | A 8% no price, L10 1/10
 NSH
-- Filip Forsberg (2.5, 20.9, PP1): G 38% +175 FD +1.5, L10 1/10 | P 61% -190 DK -4.4, L10 5/10 | A 39% +120 DK -6.6, L10 4/10
+- Filip Forsberg (2.5, 20.9, PP1): G 38% +180 FD +2.1, L10 1/10 | P 61% -190 DK -4.4, L10 5/10 | A 39% +120 DK -6.6, L10 4/10
 - Ryan O’Reilly (1.7, 21.8, PP1): G 26% +220 BR -5.4, L10 2/10 | P 61% -155 DK -0.0, L10 6/10 | A 47% +130 DK +3.0, L10 5/10
-- Roman Josi (1.9, 25.2, PP1): G 17% +390 FD -3.6, L10 2/10 | P 58% -160 MGM -3.2, L10 8/10 | A 47% -120 MGM -7.8, L10 7/10
+- Roman Josi (1.9, 25.2, PP1): G 17% +370 BR -4.5, L10 2/10 | P 58% -160 MGM -3.2, L10 8/10 | A 47% -120 MGM -7.8, L10 7/10
 - Steven Stamkos (2.9, 19.5, PP1): G 39% +165 DK +1.1, L10 4/10 | P 55% -175 DK -8.6, L10 7/10 | A 29% +135 DK -13.9, L10 5/10
 - Jonathan Marchessault (1.5, 16.7, PP1): G 18% +260 MGM -9.5, L10 1/10 | P 38% -118 MGM -16.5, L10 1/10 | A 21% +165 MGM -16.3, L10 0/10
 - Alexander Kerfoot (0.8, 15.8, PP2): G 19% +525 MGM +2.5, L10 2/10 | P 35% +150 DK -5.3, L10 4/10 | A 24% +240 DK -5.9, L10 3/10
-- Matthew Wood (1.3, 15.5, PP2): G 19% +340 FD -3.6, L10 2/10 | P 34% +134 BOL -9.0, L10 3/10 | A 17% +270 MGM -9.7, L10 1/10
-- Ross Colton (0.9, 12.6, no PP): G 13% +425 DK -6.0, L10 1/10 | P 30% +190 DK -4.9, L10 2/10 | A 17% +380 DK -3.9, L10 1/10
-- Brady Skjei (0.7, 20.2, PP2): G 4% +800 MGM -7.3, L10 0/10 | P 29% +182 BOL -6.2, L10 3/10 | A 27% +245 DK -2.4, L10 3/10
+- Matthew Wood (1.3, 15.5, PP2): G 19% +330 FD -4.2, L10 2/10 | P 34% +134 BOL -9.0, L10 3/10 | A 17% +270 MGM -9.7, L10 1/10
+- Ross Colton (0.9, 12.6, no PP): G 13% +425 DK -6.0, L10 1/10 | P 30% +195 DK -4.3, L10 2/10 | A 17% +380 DK -3.9, L10 1/10
+- Brady Skjei (0.8, 20.2, PP2): G 4% +850 FD -6.8, L10 0/10 | P 29% +182 BOL -6.2, L10 3/10 | A 27% +245 DK -2.4, L10 3/10
 - Jack Drury (1.6, 15.8, no PP): G 12% +750 FD -0.3, L10 0/10 | P 29% no price, L10 1/10 | A 19% no price, L10 1/10
-- Adam Wilsby (0.9, 17.7, no PP): G 2% +1300 DK -5.1, L10 0/10 | P 23% no price, L10 2/10 | A 21% no price, L10 2/10
-- Nicolas Hague (0.7, 18.0, no PP): G 5% +1300 FD -2.6, L10 0/10 | P 19% no price, L10 1/10 | A 16% no price, L10 1/10
+- Adam Wilsby (0.9, 17.7, no PP): G 2% +1200 DK -5.6, L10 0/10 | P 23% no price, L10 2/10 | A 21% no price, L10 2/10
+- Nicolas Hague (0.7, 18.0, no PP): G 5% +1300 DK -2.6, L10 0/10 | P 19% no price, L10 1/10 | A 16% no price, L10 1/10
 - Jayden Struble (0.4, 14.4, no PP): G 3% +1300 MGM -3.7, L10 0/10 | P 19% no price, L10 0/10 | A 16% no price, L10 0/10
 - Adam Edstrom (1.4, 13.2, no PP): G 13% +575 BR -1.9, L10 2/10 | P 18% no price, L10 2/10 | A 6% no price, L10 0/10
 - Nils Hoglander (1.3, 11.7, PP2): G 9% +475 MGM -8.1, L10 2/10 | P 17% no price, L10 3/10 | A 8% no price, L10 1/10
-- Reid Schaefer (0.9, 8.9, no PP): G 12% +850 BOV +1.2, L10 0/10 | P 17% no price, L10 0/10 | A 5% no price, L10 0/10
+- Reid Schaefer (0.9, 8.9, no PP): G 12% +850 DK +1.2, L10 0/10 | P 17% no price, L10 0/10 | A 5% no price, L10 0/10
 - Nick Perbix (0.5, 18.7, no PP): G 4% +1300 FD -3.3, L10 0/10 | P 15% no price, L10 2/10 | A 13% no price, L10 2/10
 STL
 - Robert Thomas (1.3, 19.5, PP1): G 26% +330 DK +3.1, L10 1/10 | P 62% -140 DK +4.1, L10 5/10 | A 48% +115 DK +1.1, L10 4/10
@@ -446,106 +446,107 @@ STL
 - Mason McTavish (3.6, 15.8, PP1): G 23% +325 MGM -0.2, L10 4/10 | P 50% +105 MGM +1.1, L10 9/10 | A 28% +230 DK -2.0, L10 6/10
 - Jimmy Snuggerud (2.5, 16.8, PP1): G 26% +280 MGM -0.4, L10 5/10 | P 47% -105 MGM -4.3, L10 6/10 | A 32% +185 MGM -2.8, L10 4/10
 - Connor McMichael (1.5, 15.8, PP1): G 17% +320 FD -6.5, L10 3/10 | P 40% +115 MGM -6.8, L10 6/10 | A 33% +240 DK +3.3, L10 5/10
-- Philip Broberg (1.5, 22.6, PP2): G 7% +1500 FD +1.0, L10 0/10 | P 38% +195 BOL +4.2, L10 5/10 | A 32% +230 DK +1.9, L10 5/10
-- Pius Suter (1.3, 13.9, no PP): G 21% +540 BR +5.1, L10 2/10 | P 38% no price, L10 4/10 | A 24% no price, L10 4/10
+- Philip Broberg (1.5, 22.6, PP2): G 7% +1400 DK +0.6, L10 0/10 | P 38% +190 BOL +3.6, L10 5/10 | A 32% +230 DK +1.9, L10 5/10
+- Pius Suter (1.3, 13.9, no PP): G 21% +550 DK +5.4, L10 2/10 | P 38% no price, L10 4/10 | A 24% no price, L10 4/10
 - Jake Neighbours (1.4, 14.4, PP2): G 17% +350 MGM -5.0, L10 3/10 | P 36% +135 MGM -6.9, L10 5/10 | A 21% +220 DK -10.0, L10 2/10
 - Jonatan Berggren (0.9, 14.5, no PP): G 16% +650 DK +2.5, L10 1/10 | P 32% +215 DK +0.1, L10 4/10 | A 21% +340 DK -1.7, L10 3/10
-- Cam Fowler (1.0, 22.6, PP2): G 5% +1000 DK -3.9, L10 1/10 | P 32% +170 DK -5.4, L10 4/10 | A 29% +220 DK -2.4, L10 3/10
+- Cam Fowler (1.0, 22.6, PP2): G 5% +1100 DK -3.1, L10 1/10 | P 32% +170 DK -5.4, L10 4/10 | A 29% +220 DK -2.4, L10 3/10
 - Dalibor Dvorsky (1.7, 13.2, PP2): G 17% +450 MGM -1.4, L10 3/10 | P 29% +175 DK -7.3, L10 4/10 | A 13% +370 DK -8.5, L10 1/10
 - Colton Parayko (1.4, 21.2, no PP): G 5% +1100 DK -3.3, L10 1/10 | P 23% +205 DK -9.5, L10 4/10 | A 19% +260 DK -8.3, L10 3/10
 - Justin Barron (0.7, 15.1, no PP): G 1% +1400 FD -5.9, L10 0/10 | P 19% +380 DK -2.2, L10 1/10 | A 18% +550 DK +2.7, L10 1/10
-- Ross Johnston (0.5, 8.7, no PP): G 5% +2500 DK +1.4, L10 0/10 | P 18% no price, L10 1/10 | A 16% no price, L10 1/10
-- Brandon Carlo (0.8, 17.7, no PP): G 1% +1600 DK -5.2, L10 0/10 | P 14% no price, L10 1/10 | A 14% no price, L10 1/10
+- Ross Johnston (0.5, 8.7, no PP): G 5% +1300 DK -1.9, L10 0/10 | P 18% no price, L10 1/10 | A 16% no price, L10 1/10
+- Brandon Carlo (0.8, 17.7, no PP): G 1% +1700 FD -4.8, L10 0/10 | P 14% no price, L10 1/10 | A 14% no price, L10 1/10
 MIN
 - Kirill Kaprizov (2.9, 21.1, PP1): G 46% +125 MGM +2.0, L10 5/10 | P 71% -275 MGM -1.8, L10 7/10 | A 41% +100 MGM -8.8, L10 3/10
 - Quinn Hughes (2.2, 26.9, PP1): G 11% +425 MGM -8.0, L10 3/10 | P 64% -275 MGM -9.6, L10 8/10 | A 61% -175 MGM -2.9, L10 8/10
-- Matt Boldy (3.7, 21.1, PP1): G 42% +165 DK +4.3, L10 3/10 | P 61% -200 MGM -5.5, L10 4/10 | A 41% +110 DK -6.6, L10 3/10
+- Matt Boldy (3.7, 21.1, PP1): G 42% +170 DK +5.0, L10 3/10 | P 61% -200 MGM -5.5, L10 4/10 | A 41% +110 DK -6.6, L10 3/10
 - Joel Eriksson Ek (2.9, 19.7, PP1): G 25% +230 MGM -4.9, L10 2/10 | P 52% -115 MGM -1.9, L10 5/10 | A 37% +188 MGM +2.2, L10 4/10
 - Ryan Hartman (1.2, 13.3, PP2): G 23% +450 DK +5.0, L10 1/10 | P 40% +170 DK +3.1, L10 3/10 | A 22% +295 DK -3.7, L10 2/10
-- Blake Coleman (2.0, 15.4, PP2): G 25% +300 DK +0.1, L10 3/10 | P 40% +145 DK -0.9, L10 5/10 | A 19% +340 DK -4.0, L10 2/10
+- Blake Coleman (2.0, 15.4, PP2): G 25% +300 DK +0.1, L10 3/10 | P 40% +149 BOL -0.2, L10 5/10 | A 19% +340 DK -4.0, L10 2/10
 - Maxim Shabanov (1.3, 15.3, PP1): G 12% +360 MGM -9.3, L10 3/10 | P 37% +120 DK -8.9, L10 6/10 | A 26% +220 DK -4.9, L10 3/10
 - Bobby Brink (1.5, 12.1, PP2): G 18% +550 FD +2.3, L10 0/10 | P 34% +149 BOL -6.0, L10 4/10 | A 23% +225 DK -8.2, L10 4/10
-- Danila Yurov (1.5, 13.0, PP2): G 16% +550 MGM +0.8, L10 4/10 | P 33% +178 BOL -3.4, L10 5/10 | A 18% +310 DK -6.5, L10 1/10
-- Yakov Trenin (1.1, 13.0, no PP): G 8% +850 DK -2.9, L10 0/10 | P 25% no price, L10 1/10 | A 18% no price, L10 1/10
+- Danila Yurov (1.5, 13.0, PP2): G 16% +550 MGM +0.8, L10 4/10 | P 33% +182 BOL -2.9, L10 5/10 | A 18% +310 DK -6.5, L10 1/10
+- Yakov Trenin (1.1, 13.0, no PP): G 8% +900 DK -2.3, L10 0/10 | P 25% no price, L10 1/10 | A 18% no price, L10 1/10
 - Jonas Brodin (0.9, 21.5, PP2): G 6% +1100 MGM -2.4, L10 0/10 | P 24% +280 DK -2.7, L10 2/10 | A 19% +400 DK -0.9, L10 2/10
-- Michael McCarron (2.0, 14.3, no PP): G 10% +900 FD -0.0, L10 2/10 | P 23% no price, L10 5/10 | A 15% no price, L10 3/10
+- Michael McCarron (2.0, 14.3, no PP): G 10% +700 BR -2.5, L10 2/10 | P 23% no price, L10 5/10 | A 15% no price, L10 3/10
 - Daemon Hunt (0.6, 12.2, no PP): G 1% +1800 FD -4.2, L10 0/10 | P 17% no price, L10 1/10 | A 16% no price, L10 1/10
 - Zach Bogosian (0.7, 16.6, no PP): G 4% +1450 MGM -2.0, L10 0/10 | P 14% +425 DK -4.8, L10 0/10 | A 10% +700 DK -2.5, L10 0/10
-- Tyler Pitlick (0.8, 7.7, no PP): G 7% +900 BR -3.0, L10 1/10 | P 9% no price, L10 1/10 | A 3% no price, L10 0/10
+- Tyler Pitlick (0.8, 7.7, no PP): G 7% +950 FD -2.5, L10 1/10 | P 9% no price, L10 1/10 | A 3% no price, L10 0/10
 UTA
-- Clayton Keller (2.2, 17.8, PP1): G 25% +220 MGM -6.7, L10 1/10 | P 59% -208 BOL -8.6, L10 9/10 | A 51% -115 DK -2.2, L10 9/10
+- Clayton Keller (2.2, 17.8, PP1): G 25% +220 MGM -6.7, L10 1/10 | P 59% -200 BOL -7.7, L10 9/10 | A 51% -115 DK -2.2, L10 9/10
 - Dylan Guenther (3.0, 16.6, PP1): G 40% +200 MGM +6.5, L10 4/10 | P 59% -155 DK -2.1, L10 6/10 | A 33% +160 DK -5.4, L10 4/10
-- Nick Schmaltz (3.7, 18.4, PP1): G 31% +200 MGM -1.9, L10 6/10 | P 59% -165 DK -3.8, L10 7/10 | A 42% +140 DK -0.1, L10 2/10
+- Nick Schmaltz (3.7, 18.4, PP1): G 31% +200 MGM -1.9, L10 6/10 | P 59% -155 DK -2.3, L10 7/10 | A 42% +140 DK -0.1, L10 2/10
 - Vincent Trocheck (1.6, 17.0, PP2): G 22% +360 FD +0.0, L10 2/10 | P 55% +110 MGM +7.6, L10 3/10 | A 38% +190 MGM +3.3, L10 1/10
 - Mikhail Sergachev (2.5, 22.3, PP1): G 14% +650 BR +0.4, L10 2/10 | P 55% -130 BOL -1.8, L10 6/10 | A 47% -105 MGM -4.6, L10 6/10
-- Logan Cooley (0.9, 18.5, PP1): G 25% +230 MGM -4.8, L10 1/10 | P 53% -139 BOL -4.7, L10 6/10 | A 37% +150 DK -3.2, L10 6/10
-- Anders Lee (2.1, 12.9, PP2): G 21% +300 DK -4.2, L10 2/10 | P 42% +130 DK -1.7, L10 4/10 | A 25% +285 DK -0.6, L10 3/10
+- Logan Cooley (0.9, 18.5, PP1): G 25% +230 MGM -4.8, L10 1/10 | P 53% -140 DK -4.9, L10 6/10 | A 37% +150 DK -3.2, L10 6/10
+- Anders Lee (2.1, 12.9, PP2): G 21% +320 DK -3.0, L10 2/10 | P 42% +130 DK -1.7, L10 4/10 | A 25% +285 DK -0.6, L10 3/10
 - Lawson Crouse (1.7, 14.9, no PP): G 24% +390 FD +3.7, L10 3/10 | P 40% +158 BOL +1.4, L10 4/10 | A 22% +330 DK -1.7, L10 1/10
 - Barrett Hayton (1.6, 13.5, PP2): G 14% +500 DK -2.9, L10 0/10 | P 35% +174 BOL -1.6, L10 4/10 | A 24% +290 DK -1.7, L10 4/10
-- John Marino (0.8, 20.2, PP2): G 6% +1300 DK -1.3, L10 1/10 | P 35% +171 BOL -2.2, L10 3/10 | A 32% +200 DK -1.3, L10 3/10
-- Kailer Yamamoto (2.0, 12.2, no PP): G 18% +500 MGM +1.7, L10 4/10 | P 31% +195 BOL -2.9, L10 6/10 | A 17% no price, L10 3/10
+- John Marino (0.8, 20.2, PP2): G 6% +1200 DK -1.8, L10 1/10 | P 35% +171 BOL -2.2, L10 3/10 | A 32% +200 DK -1.3, L10 3/10
+- Kailer Yamamoto (2.0, 12.2, no PP): G 18% +500 MGM +1.7, L10 4/10 | P 31% +199 BOL -2.4, L10 6/10 | A 17% no price, L10 3/10
 - MacKenzie Weegar (1.6, 20.5, no PP): G 7% +1200 DK -0.7, L10 2/10 | P 29% +215 DK -3.0, L10 4/10 | A 22% +280 DK -4.4, L10 2/10
 - Jack McBain (0.9, 12.7, no PP): G 13% +725 FD +0.5, L10 2/10 | P 28% no price, L10 3/10 | A 16% no price, L10 1/10
 - Nate Schmidt (1.3, 20.8, no PP): G 5% +1700 FD -0.8, L10 0/10 | P 22% no price, L10 2/10 | A 18% no price, L10 2/10
 - Daniil But (1.1, 10.7, PP2): G 13% +700 FD +0.6, L10 2/10 | P 22% no price, L10 2/10 | A 11% no price, L10 0/10
 - Kevin Stenlund (0.6, 13.9, no PP): G 6% +950 FD -3.8, L10 0/10 | P 20% no price, L10 2/10 | A 16% no price, L10 2/10
-- Andrew Peeke (0.9, 15.3, no PP): G 7% +2000 DK +2.2, L10 1/10 | P 18% no price, L10 3/10 | A 11% no price, L10 2/10
+- Andrew Peeke (0.9, 15.3, no PP): G 7% +2200 DK +2.6, L10 1/10 | P 18% no price, L10 3/10 | A 11% no price, L10 2/10
 - Dmitri Simashev (1.0, 15.0, no PP): G 1% +1900 FD -3.9, L10 0/10 | P 11% no price, L10 2/10 | A 11% no price, L10 2/10
 EDM
 - Connor McDavid (3.1, 23.6, PP1): G 42% +120 MGM -3.5, L10 6/10 | P 82% no price, L10 9/10 | A 64% -245 DK -6.6, L10 8/10
 - Leon Draisaitl (3.4, 21.2, PP1): G 42% +115 FD -4.4, L10 4/10 | P 78% no price, L10 9/10 | A 56% -165 MGM -6.6, L10 7/10
 - Evan Bouchard (2.4, 25.1, PP1): G 23% +320 DK -1.3, L10 3/10 | P 67% -250 MGM -4.1, L10 8/10 | A 60% -155 MGM -0.3, L10 8/10
-- Vasily Podkolzin (2.9, 19.0, PP1): G 27% +210 DK -5.6, L10 6/10 | P 45% -140 MGM -13.5, L10 7/10 | A 24% +155 MGM -15.6, L10 3/10
-- Mattias Ekholm (0.7, 21.7, PP2): G 6% +1100 DK -2.1, L10 1/10 | P 40% +171 BOL +2.9, L10 3/10 | A 36% +215 DK +4.3, L10 2/10
+- Vasily Podkolzin (2.9, 19.0, PP1): G 27% +210 FD -5.6, L10 6/10 | P 45% -140 MGM -13.5, L10 7/10 | A 24% +155 MGM -15.6, L10 3/10
+- Mattias Ekholm (0.7, 21.7, PP2): G 6% +1100 DK -2.1, L10 1/10 | P 40% +175 DK +3.4, L10 3/10 | A 36% +215 DK +4.3, L10 2/10
 - Kasperi Kapanen (1.3, 17.7, PP1): G 20% +275 MGM -6.9, L10 2/10 | P 37% +100 DK -12.5, L10 2/10 | A 22% +215 DK -9.4, L10 1/10
-- Ryan Shea (0.7, 23.1, PP2): G 8% +1100 FD +0.1, L10 1/10 | P 35% +190 BOL +0.9, L10 6/10 | A 29% no price, L10 5/10
-- Filip Hallander (1.6, 12.7, no PP): G 13% +550 BR -2.1, L10 1/10 | P 31% no price, L10 3/10 | A 23% no price, L10 3/10
+- Ryan Shea (0.7, 23.1, PP2): G 8% +1200 DK +0.7, L10 1/10 | P 35% +195 BOL +1.5, L10 6/10 | A 29% no price, L10 5/10
+- Filip Hallander (1.6, 12.7, no PP): G 13% +600 BR -1.0, L10 1/10 | P 31% no price, L10 3/10 | A 23% no price, L10 3/10
 - Jason Dickinson (1.1, 14.8, no PP): G 11% +550 DK -4.2, L10 0/10 | P 26% no price, L10 3/10 | A 16% no price, L10 3/10
-- Isaac Howard (1.3, 9.5, PP2): G 7% +950 DK -2.8, L10 0/10 | P 20% no price, L10 3/10 | A 14% no price, L10 3/10
+- Isaac Howard (1.3, 9.5, PP2): G 7% +800 DK -4.4, L10 0/10 | P 20% no price, L10 3/10 | A 14% no price, L10 3/10
 - Mathieu Joseph (0.9, 15.2, no PP): G 5% +950 DK -4.2, L10 0/10 | P 20% no price, L10 2/10 | A 17% no price, L10 2/10
-- Connor Murphy (0.8, 21.8, no PP): G 6% +1700 FD +0.8, L10 0/10 | P 20% +226 BOL -10.9, L10 2/10 | A 16% no price, L10 2/10
-- Shakir Mukhamadullin (0.7, 17.0, no PP): G 9% +1300 DK +1.5, L10 1/10 | P 19% no price, L10 1/10 | A 11% no price, L10 0/10
-- Josh Samanski (0.5, 7.5, PP2): G 8% +800 DK -3.4, L10 1/10 | P 18% no price, L10 2/10 | A 11% no price, L10 1/10
-- Ty Emberson (0.6, 13.8, no PP): G 3% +2200 DK -1.4, L10 0/10 | P 18% no price, L10 1/10 | A 15% no price, L10 1/10
-- Trent Frederic (1.4, 9.6, PP2): G 7% +750 DK -5.1, L10 1/10 | P 11% no price, L10 1/10 | A 5% no price, L10 0/10
+- Connor Murphy (0.8, 21.8, no PP): G 6% +1700 FD +0.8, L10 0/10 | P 20% +225 DK -11.0, L10 2/10 | A 16% no price, L10 2/10
+- Shakir Mukhamadullin (0.7, 17.0, no PP): G 9% +1200 DK +0.9, L10 1/10 | P 19% no price, L10 1/10 | A 11% no price, L10 0/10
+- Josh Samanski (0.5, 7.5, PP2): G 8% +850 DK -2.8, L10 1/10 | P 18% no price, L10 2/10 | A 11% no price, L10 1/10
+- Ty Emberson (0.6, 13.9, no PP): G 3% +2200 DK -1.4, L10 0/10 | P 18% no price, L10 1/10 | A 15% no price, L10 1/10
+- Trent Frederic (1.4, 9.6, PP2): G 7% +700 DK -5.8, L10 1/10 | P 11% no price, L10 1/10 | A 5% no price, L10 0/10
 CGY
-- Mikael Backlund (3.0, 18.3, no PP): G 19% +500 DK +2.8, L10 2/10 | P 43% +185 DK +7.7, L10 4/10 | A 30% +340 DK +7.0, L10 2/10
+- Mikael Backlund (3.0, 18.3, no PP): G 19% +475 MGM +2.1, L10 2/10 | P 43% +178 BOL +6.8, L10 4/10 | A 30% +340 DK +7.0, L10 2/10
 - Matvei Gridin (1.7, 14.6, PP1): G 14% +475 MGM -3.1, L10 0/10 | P 42% +145 MGM +1.3, L10 3/10 | A 32% +255 DK +4.1, L10 3/10
-- Matt Coronato (2.3, 17.6, PP1): G 21% +300 MGM -3.9, L10 2/10 | P 42% +100 DK -8.0, L10 6/10 | A 28% +210 DK -4.4, L10 4/10
-- Joel Farabee (2.4, 17.9, PP1): G 21% +340 MGM -2.0, L10 1/10 | P 41% +118 BOL -4.7, L10 5/10 | A 25% +235 DK -4.6, L10 4/10
-- Morgan Frost (2.1, 15.7, PP1): G 26% +340 FD +3.1, L10 3/10 | P 41% +125 DK -3.3, L10 4/10 | A 21% +250 DK -7.4, L10 1/10
-- Ryan Strome (1.7, 14.0, PP2): G 16% +650 FD +2.3, L10 1/10 | P 36% no price, L10 4/10 | A 24% no price, L10 3/10
-- Yegor Sharangovich (1.5, 17.3, PP2): G 18% +450 MGM +0.2, L10 1/10 | P 33% no price, L10 3/10 | A 18% no price, L10 2/10
-- Simon Nemec (1.6, 21.0, PP2): G 12% +1100 DK +3.2, L10 0/10 | P 31% no price, L10 2/10 | A 19% no price, L10 2/10
-- Kevin Bahl (0.6, 21.7, no PP): G 7% +2100 FD +2.1, L10 1/10 | P 24% no price, L10 2/10 | A 18% no price, L10 1/10
-- Adam Klapka (1.0, 10.3, no PP): G 9% +900 FD -0.5, L10 2/10 | P 21% no price, L10 2/10 | A 13% no price, L10 0/10
-- Zayne Parekh (2.1, 18.1, PP1): G 9% +900 DK -1.5, L10 1/10 | P 21% +190 DK -13.5, L10 3/10 | A 15% +250 DK -14.0, L10 2/10
-- Yan Kuznetsov (1.4, 18.7, no PP): G 7% +1900 FD +1.5, L10 0/10 | P 20% no price, L10 1/10 | A 15% no price, L10 1/10
-- Jake Middleton (1.1, 17.5, no PP): G 3% +2400 FD -1.2, L10 0/10 | P 20% no price, L10 0/10 | A 17% no price, L10 0/10
-- Martin Pospisil (1.4, 13.0, no PP): G 9% +1100 FD +1.1, L10 1/10 | P 19% no price, L10 2/10 | A 11% no price, L10 1/10
-- Zach Whitecloud (0.7, 20.8, no PP): G 3% +2600 FD -0.8, L10 0/10 | P 19% no price, L10 2/10 | A 16% no price, L10 2/10
+- Matt Coronato (2.3, 17.6, PP1): G 21% +300 MGM -3.9, L10 2/10 | P 42% -105 DK -9.2, L10 6/10 | A 28% +210 DK -4.4, L10 4/10
+- Morgan Frost (2.1, 15.7, PP1): G 26% +330 FD +2.5, L10 3/10 | P 41% +120 DK -4.3, L10 4/10 | A 21% +250 DK -7.4, L10 1/10
+- Joel Farabee (2.4, 17.9, PP1): G 21% +340 MGM -2.0, L10 1/10 | P 40% +115 MGM -6.3, L10 4/10 | A 24% +235 DK -5.6, L10 3/10
+- Ryan Strome (1.7, 14.0, PP2): G 16% +600 BR +1.3, L10 1/10 | P 36% +164 BOL -2.1, L10 4/10 | A 24% no price, L10 3/10
+- Yegor Sharangovich (1.5, 17.3, PP2): G 18% +450 MGM +0.2, L10 1/10 | P 33% +164 BOL -4.5, L10 3/10 | A 18% no price, L10 2/10
+- Simon Nemec (1.6, 21.0, PP2): G 12% +1000 FD +2.4, L10 0/10 | P 31% +182 BOL -4.9, L10 2/10 | A 19% no price, L10 2/10
+- Kevin Bahl (0.6, 21.7, no PP): G 7% +2400 FD +2.6, L10 1/10 | P 24% +380 DK +3.0, L10 2/10 | A 18% no price, L10 1/10
+- Adam Klapka (1.0, 10.3, no PP): G 9% +850 FD -1.0, L10 2/10 | P 21% no price, L10 2/10 | A 13% no price, L10 0/10
+- Zayne Parekh (2.1, 18.1, PP1): G 9% +700 DK -4.0, L10 1/10 | P 21% +170 DK -16.1, L10 3/10 | A 15% +250 DK -14.0, L10 2/10
+- Yan Kuznetsov (1.4, 18.7, no PP): G 7% +2100 FD +2.0, L10 0/10 | P 20% no price, L10 1/10 | A 15% no price, L10 1/10
+- Jake Middleton (1.1, 17.5, no PP): G 3% +2700 FD -0.8, L10 0/10 | P 20% no price, L10 0/10 | A 17% no price, L10 0/10
+- Martin Pospisil (1.4, 13.0, no PP): G 9% +1000 FD +0.4, L10 1/10 | P 19% no price, L10 2/10 | A 11% no price, L10 1/10
+- Zach Whitecloud (0.7, 20.8, no PP): G 3% +2300 FD -1.3, L10 0/10 | P 19% no price, L10 2/10 | A 16% no price, L10 2/10
 - Maksim Tsyplakov (0.3, 11.5, PP2): G 5% +900 FD -5.3, L10 0/10 | P 11% no price, L10 1/10 | A 7% no price, L10 1/10
 VGK
-- Mark Stone (2.1, 19.1, PP1): G 37% +155 MGM -1.9, L10 4/10 | P 70% -220 DK +1.7, L10 7/10 | A 48% +100 DK -2.4, L10 5/10
+- Mark Stone (2.1, 19.1, PP1): G 37% +160 DK -1.2, L10 4/10 | P 70% -220 DK +1.7, L10 7/10 | A 48% +100 DK -2.4, L10 5/10
 - Jack Eichel (3.2, 20.9, PP1): G 33% +155 MGM -6.5, L10 5/10 | P 67% no price, L10 8/10 | A 56% -150 DK -4.4, L10 7/10
 - Mitch Marner (2.5, 20.4, PP1): G 25% +180 BR -10.4, L10 3/10 | P 62% no price, L10 7/10 | A 50% -125 DK -5.9, L10 5/10
-- Ivan Barbashev (1.1, 16.2, PP2): G 24% +275 MGM -2.4, L10 1/10 | P 52% +105 MGM +3.6, L10 4/10 | A 37% +188 MGM +2.0, L10 4/10
-- Tomas Hertl (2.4, 16.2, PP1): G 27% +205 DK -5.5, L10 3/10 | P 50% -140 DK -8.0, L10 5/10 | A 34% +160 DK -4.7, L10 3/10
-- Shea Theodore (2.4, 21.8, PP2): G 14% +525 FD -2.3, L10 2/10 | P 45% -116 BOL -8.3, L10 3/10 | A 33% +115 MGM -13.2, L10 1/10
-- William Karlsson (2.0, 17.9, PP2): G 23% +320 FD -1.1, L10 2/10 | P 42% -110 MGM -10.6, L10 4/10 | A 21% no price, L10 2/10
-- Rasmus Andersson (2.5, 18.4, PP2): G 19% +525 MGM +2.7, L10 2/10 | P 41% no price, L10 5/10 | A 27% no price, L10 4/10
-- Brett Howden (1.6, 15.9, no PP): G 21% +300 MGM -3.6, L10 2/10 | P 37% +134 BOL -5.4, L10 4/10 | A 21% +300 DK -4.3, L10 3/10
-- Braeden Bowman (1.0, 13.0, PP2): G 15% +450 DK -3.5, L10 1/10 | P 37% no price, L10 2/10 | A 25% no price, L10 1/10
-- Noah Hanifin (1.3, 20.3, no PP): G 5% +825 MGM -5.5, L10 1/10 | P 31% no price, L10 3/10 | A 26% no price, L10 2/10
-- Nic Dowd (0.5, 11.6, no PP): G 6% +700 BR -6.0, L10 0/10 | P 25% no price, L10 3/10 | A 21% no price, L10 3/10
-- Brayden McNabb (0.9, 18.7, no PP): G 7% +1400 DK +0.4, L10 0/10 | P 22% no price, L10 5/10 | A 15% no price, L10 5/10
-- Jeremy Lauzon (1.3, 16.6, no PP): G 2% +1700 DK -3.8, L10 0/10 | P 16% no price, L10 0/10 | A 16% no price, L10 0/10
-- Marc Gatcomb (1.7, 9.8, no PP): G 7% +700 DK -5.0, L10 1/10 | P 15% no price, L10 2/10 | A 9% no price, L10 1/10
+- Ivan Barbashev (1.1, 16.2, PP2): G 24% +275 MGM -2.4, L10 1/10 | P 52% -105 MGM +1.1, L10 4/10 | A 37% +188 MGM +2.0, L10 4/10
+- Tomas Hertl (2.4, 16.2, PP1): G 27% +215 DK -4.5, L10 3/10 | P 50% -130 DK -6.2, L10 5/10 | A 34% +160 DK -4.7, L10 3/10
+- Shea Theodore (2.4, 21.8, PP2): G 14% +525 FD -2.3, L10 2/10 | P 45% -105 DK -5.8, L10 3/10 | A 33% +115 MGM -13.2, L10 1/10
+- William Karlsson (2.0, 17.9, PP2): G 23% +330 DK -0.5, L10 2/10 | P 42% +102 BOL -7.8, L10 4/10 | A 21% no price, L10 2/10
+- Rasmus Andersson (2.5, 18.4, PP2): G 19% +550 DK +3.3, L10 2/10 | P 41% +152 BOL +0.8, L10 5/10 | A 27% no price, L10 4/10
+- Brett Howden (1.6, 15.9, no PP): G 21% +300 MGM -3.6, L10 2/10 | P 37% +141 BOL -4.2, L10 4/10 | A 21% +300 DK -4.3, L10 3/10
+- Braeden Bowman (1.0, 13.0, PP2): G 15% +475 DK -2.7, L10 1/10 | P 37% no price, L10 2/10 | A 25% no price, L10 1/10
+- Noah Hanifin (1.3, 20.3, no PP): G 5% +825 MGM -5.5, L10 1/10 | P 31% +164 BOL -6.8, L10 3/10 | A 26% no price, L10 2/10
+- Nic Dowd (0.5, 11.6, no PP): G 6% +800 DK -4.6, L10 0/10 | P 25% no price, L10 3/10 | A 21% no price, L10 3/10
+- Brayden McNabb (0.9, 18.7, no PP): G 7% +1600 DK +1.1, L10 0/10 | P 22% +239 BOL -7.7, L10 5/10 | A 15% no price, L10 5/10
+- Jeremy Lauzon (1.3, 16.6, no PP): G 2% +1800 DK -3.5, L10 0/10 | P 16% no price, L10 0/10 | A 16% no price, L10 0/10
+- Marc Gatcomb (1.7, 9.8, no PP): G 7% +750 DK -4.3, L10 1/10 | P 15% no price, L10 2/10 | A 9% no price, L10 1/10
 
 DATA CHECKS
 Games with no prices: none
 Priced players missing from the projected lineups:
 - Luke Schenn VAN (listed scratched)
+- Sam Carrick BUF (listed scratched)
 - Dominic Toninato CHI (listed scratched)
 - Pavel Buchnevich STL (listed scratched)
 - Andreas Englund DET (listed scratched)
@@ -553,7 +554,6 @@ Priced players missing from the projected lineups:
 - Bo Groulx TOR (listed scratched)
 - Bowen Byram CHI (listed injured, upper body)
 - Gage Goncalves TBL (listed scratched)
-- Tyrel Bauer WPG (listed scratched)
 - Nolan Allan SJS (listed scratched)
 - Arshdeep Bains VAN (listed scratched)
 - Jorian Donovan OTT (not on any lineup)
