@@ -185,6 +185,21 @@ table.gl td{padding:5px 8px 5px 0; border-top:1px solid var(--line);}
 .hotwhy{display:flex; flex-wrap:wrap; gap:5px; margin-top:6px;}
 .hw{font-size:10.5px; font-weight:700; letter-spacing:.03em; padding:3px 7px; border-radius:6px; background:var(--card2); border:1px solid var(--line); color:var(--muted);}
 .hw.g{color:var(--green);} .hw.a{color:var(--amber);} .hw.b{color:var(--blue);} .hw.r{color:var(--red);}
+/* Ice Cold Picks */
+#bPicks{white-space:normal !important; line-height:1.05; font-size:13px !important;}
+.bank{display:grid; grid-template-columns:repeat(4,1fr); gap:6px; margin-bottom:12px;}
+.slip{border-left:4px solid var(--line);}
+.slip.pending{border-left-color:var(--amber);} .slip.hit{border-left-color:var(--green);} .slip.miss{border-left-color:var(--red);} .slip.void{border-left-color:var(--muted);}
+.slip-head{display:flex; justify-content:space-between; align-items:flex-start; gap:8px;}
+.st{font-size:10.5px; font-weight:700; letter-spacing:.4px; padding:3px 7px; border-radius:5px; white-space:nowrap; text-transform:uppercase;}
+.st.pending{background:rgba(212,160,23,.15); color:var(--amber);} .st.hit{background:rgba(47,191,113,.15); color:var(--green);}
+.st.miss{background:rgba(229,72,77,.15); color:var(--red);} .st.void{background:rgba(122,134,153,.15); color:var(--muted);}
+.legs{margin-top:8px; border-top:1px solid var(--line);}
+.leg{display:flex; align-items:center; gap:8px; padding:7px 0; font-size:13px;} .leg+.leg{border-top:1px solid var(--line);}
+.leg i{flex:none; width:9px; height:9px; border-radius:50%; background:var(--amber);}
+.leg i.hit{background:var(--green);} .leg i.miss{background:var(--red);} .leg i.void{background:var(--muted);}
+.leg .lp{margin-left:auto; font-family:'Rajdhani',sans-serif; font-weight:700; font-size:15px;}
+.stake{display:flex; gap:14px; font-size:12px; color:var(--muted); margin-top:6px;} .stake b{color:var(--text);}
 </style>
 </head>
 <body>
@@ -204,6 +219,7 @@ table.gl td{padding:5px 8px 5px 0; border-top:1px solid var(--line);}
     <!-- Top Plays tab parked: code kept (renderTop), button removed for now -->
     <button id="bHot">Hot</button>
     <button id="bLeaders">Leaders</button>
+    <button id="bPicks">Ice Cold Picks</button>
   </div>
   <div id="msg"></div>
   <div id="view"></div>
@@ -607,7 +623,7 @@ function setUpdated(){
 /* ============ VIEWS ============ */
 function setView(v){
   S.view=v;
-  ['Teams','Lineups','Hot','Leaders'].forEach(n=>$('b'+n).classList.toggle('active',(n.toLowerCase()===v)));
+  ['Teams','Lineups','Hot','Leaders','Picks'].forEach(n=>$('b'+n).classList.toggle('active',(n.toLowerCase()===v)));
   $('teamPickWrap').style.display = v==='lineups' ? 'block':'none';
   render();
 }
@@ -618,6 +634,7 @@ async function render(){
     else if(S.view==='lineups') renderLineups();
     else if(S.view==='leaders') await renderLeaders();
     else if(S.view==='hot') await renderHot();
+    else if(S.view==='picks') await renderPicks();
     else await renderTop();
   }catch(e){ $('msg').innerHTML=`<div class="err">${esc(e.message)}</div>`; }
 }
@@ -1044,6 +1061,64 @@ async function renderHot(){
   $('view').innerHTML=controls+note+list; wire();
 }
 
+/* ============ ICE COLD PICKS: our own slips, from picks/picks.json (no database) ============ */
+// payout is the total return (stake included) if the slip hits. Placeholder
+// slips (details not entered yet) are shown but left out of every total.
+const SLIP_STATUS=['pending','hit','miss','void'];
+const money=v=>(v<0?'-$':'$')+Math.abs(v).toFixed(2);
+function slipReturn(s){ return s.status==='hit'?+s.payout||0:(s.status==='void'?+s.stake||0:0); }
+async function renderPicks(){
+  $('view').innerHTML='<div class="empty">Loading picks…</div>';
+  let data;
+  try{
+    const r=await fetch('picks/picks.json',{cache:'no-store'});
+    if(!r.ok) throw new Error(`picks file ${r.status}`);
+    data=await r.json();
+  }catch(e){ if(S.view==='picks') $('view').innerHTML=`<div class="err">Couldn't load picks (${esc(e.message)}).</div>`; return; }
+  if(S.view!=='picks') return;
+  const days=(data.days||[]).slice().sort((a,b)=>a.date<b.date?-1:1);
+  const real=days.flatMap(d=>(d.slips||[]).filter(s=>!s.placeholder));
+  const st=s=>SLIP_STATUS.includes(s)?s:'pending';
+  // bankroll: every real slip's stake is out once placed; returns come back when settled
+  const start=+data.bankroll_start||0;
+  const staked=real.reduce((a,s)=>a+(+s.stake||0),0);
+  const returned=real.reduce((a,s)=>a+slipReturn(s),0);
+  const atRisk=real.filter(s=>st(s.status)==='pending').reduce((a,s)=>a+(+s.stake||0),0);
+  const bal=start-staked+returned;
+  const cell=(v,l,c)=>`<div class="ps"><b${c?` style="color:${c}"`:''}>${v}</b><span>${l}</span></div>`;
+  const bank=`<div class="bank">${cell(money(start),'START')}${cell(money(staked),'STAKED')}${cell(money(returned),'RETURNED')}${cell(money(bal),'BALANCE',bal>=start?'var(--green)':'var(--red)')}</div>
+    <div class="muted small" style="margin:-6px 0 12px;">${atRisk?`${money(atRisk)} still riding on pending slips (counted as staked, nothing returned yet).`:'No pending slips.'}</div>`;
+  const card=s=>{
+    const k=st(s.status);
+    if(s.placeholder) return `<div class="card slip"><div class="slip-head"><div><div class="pname">Slip ${esc(s.id)}</div><div class="pmeta">Details not entered yet</div></div><span class="st void">TBD</span></div></div>`;
+    const legs=(s.legs||[]).map(l=>`<div class="leg"><i class="${esc(st(l.result))}"></i><div><b>${esc(l.player)}</b> <span class="muted">${esc(l.team||'')}</span><div class="muted small">${esc(l.market||'')}</div></div><span class="lp">${esc(l.price||'')}</span></div>`).join('');
+    return `<div class="card slip ${k}"><div class="slip-head"><div><div class="pname">${esc(s.type||'Slip')}</div><div class="pmeta">${esc(s.book||'')}${s.boost?` · boost ${esc(s.boost)}`:''} · ${(s.legs||[]).length} leg${(s.legs||[]).length===1?'':'s'}</div></div><span class="st ${k}">${k}</span></div>
+      <div class="stake"><span>Stake <b>${money(+s.stake||0)}</b></span><span>Pays <b>${money(+s.payout||0)}</b></span>${k!=='pending'?`<span>Returned <b style="color:${slipReturn(s)>0?'var(--green)':'var(--red)'}">${money(slipReturn(s))}</b></span>`:''}</div>
+      ${legs?`<div class="legs">${legs}</div>`:''}</div>`;
+  };
+  const today=etToday();
+  const cur=days.find(d=>d.date===today)||days[days.length-1];
+  const label=d=>new Date(d.date+'T12:00:00').toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric'});
+  const tonight=cur?`<div class="section-label">${cur.date===today?'TONIGHT':esc(label(cur).toUpperCase())}</div>${(cur.slips||[]).map(card).join('')||'<div class="empty">No slips for this day.</div>'}`:'<div class="empty">No slips yet.</div>';
+  const past=days.filter(d=>d!==cur).reverse();
+  const earlier=past.length?`<details class="more"><summary>Earlier days (${past.length})</summary>${past.map(d=>`<div class="section-label">${esc(label(d).toUpperCase())}</div>${(d.slips||[]).map(card).join('')}`).join('')}</details>`:'';
+  // track record: settled slips only (hit / miss / void), grouped by slip type
+  const by=new Map();
+  real.forEach(s=>{
+    const t=s.type||'Other'; if(!by.has(t)) by.set(t,{n:0,hit:0,miss:0,pend:0,stk:0,ret:0});
+    const r=by.get(t), k=st(s.status); r.n++;
+    if(k==='pending'){ r.pend++; return; }
+    if(k==='hit') r.hit++; if(k==='miss') r.miss++;
+    r.stk+=+s.stake||0; r.ret+=slipReturn(s);
+  });
+  const rows=[...by.entries()].sort((a,b)=>b[1].n-a[1].n).map(([t,r])=>{
+    const p=r.ret-r.stk;
+    return `<tr><td>${esc(t)}</td><td>${r.hit}-${r.miss}${r.pend?` <span class="muted">(${r.pend} open)</span>`:''}</td><td>${money(r.stk)}</td><td style="color:${p>=0?'var(--green)':'var(--red)'}">${p>=0?'+':''}${money(p)}</td><td>${r.stk?((p/r.stk)*100).toFixed(0)+'%':'—'}</td></tr>`;
+  }).join('');
+  const record=`<div class="section-label">TRACK RECORD BY SLIP TYPE</div>${rows?`<div class="card" style="overflow-x:auto;"><table class="gl"><thead><tr><th>Type</th><th>W-L</th><th>Staked</th><th>Profit</th><th>ROI</th></tr></thead><tbody>${rows}</tbody></table><div class="muted small" style="margin-top:8px;">Staked, profit and ROI count settled slips only.</div></div>`:'<div class="empty">No slips entered yet.</div>'}`;
+  $('view').innerHTML=bank+tonight+earlier+record;
+}
+
 /* ============ PLAYER MODAL ============ */
 const M={};
 async function openPlayer(pid, stat, line, odds, split, vsTeam, win){
@@ -1226,6 +1301,8 @@ $('bTeams').onclick=()=>setView('teams');
 $('bLineups').onclick=()=>setView('lineups');
 $('bLeaders').onclick=()=>setView('leaders');
 $('bHot').onclick=()=>setView('hot');
+$('bPicks').onclick=()=>setView('picks');
+if(location.hash==='#picks') setView('picks');   // direct link to the picks tab
 $('teamPick').onchange=e=>{ S.team=e.target.value; renderLineups(); };
 setInterval(()=>{ if(S.autoDay && etToday()!==S.autoDay) init(false); },300000);
 $('reload').onclick=()=>init(true);

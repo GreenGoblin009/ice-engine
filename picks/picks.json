@@ -1,0 +1,27 @@
+{
+  "bankroll_start": 76,
+  "days": [
+    {
+      "date": "2026-10-15",
+      "slips": [
+        {
+          "id": 1,
+          "type": "Plus-money single",
+          "book": "theScore",
+          "boost": null,
+          "stake": 7,
+          "payout": 15.40,
+          "status": "pending",
+          "legs": [
+            {"player": "Shane Pinto", "team": "OTT", "market": "1+ pt", "price": "+120", "result": "pending"}
+          ]
+        },
+        {"id": 2, "placeholder": true, "type": "TBD", "book": null, "boost": null, "stake": null, "payout": null, "status": "pending", "legs": []},
+        {"id": 3, "placeholder": true, "type": "TBD", "book": null, "boost": null, "stake": null, "payout": null, "status": "pending", "legs": []},
+        {"id": 4, "placeholder": true, "type": "TBD", "book": null, "boost": null, "stake": null, "payout": null, "status": "pending", "legs": []},
+        {"id": 5, "placeholder": true, "type": "TBD", "book": null, "boost": null, "stake": null, "payout": null, "status": "pending", "legs": []},
+        {"id": 6, "placeholder": true, "type": "TBD", "book": null, "boost": null, "stake": null, "payout": null, "status": "pending", "legs": []}
+      ]
+    }
+  ]
+}
