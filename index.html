@@ -187,7 +187,6 @@ table.gl td{padding:5px 8px 5px 0; border-top:1px solid var(--line);}
 .hw.g{color:var(--green);} .hw.a{color:var(--amber);} .hw.b{color:var(--blue);} .hw.r{color:var(--red);}
 /* Ice Cold Picks */
 #bPicks{white-space:normal !important; line-height:1.05; font-size:13px !important;}
-.bank{display:grid; grid-template-columns:repeat(4,1fr); gap:6px; margin-bottom:12px;}
 .slip{border-left:4px solid var(--line);}
 .slip.pending{border-left-color:var(--amber);} .slip.hit{border-left-color:var(--green);} .slip.miss{border-left-color:var(--red);} .slip.void{border-left-color:var(--muted);}
 .slip-head{display:flex; justify-content:space-between; align-items:flex-start; gap:8px;}
@@ -1064,6 +1063,8 @@ async function renderHot(){
 /* ============ ICE COLD PICKS: our own slips, from picks/picks.json (no database) ============ */
 // payout is the total return (stake included) if the slip hits. Placeholder
 // slips (details not entered yet) are shown but left out of every total.
+// bankroll_start and each day's "note" stay in the file but are not shown:
+// together they would give away the total bankroll.
 const SLIP_STATUS=['pending','hit','miss','void'];
 const money=v=>(v<0?'-$':'$')+Math.abs(v).toFixed(2);
 function slipReturn(s){ return s.status==='hit'?+s.payout||0:(s.status==='void'?+s.stake||0:0); }
@@ -1079,15 +1080,6 @@ async function renderPicks(){
   const days=(data.days||[]).slice().sort((a,b)=>a.date<b.date?-1:1);
   const real=days.flatMap(d=>(d.slips||[]).filter(s=>!s.placeholder));
   const st=s=>SLIP_STATUS.includes(s)?s:'pending';
-  // bankroll: every real slip's stake is out once placed; returns come back when settled
-  const start=+data.bankroll_start||0;
-  const staked=real.reduce((a,s)=>a+(+s.stake||0),0);
-  const returned=real.reduce((a,s)=>a+slipReturn(s),0);
-  const atRisk=real.filter(s=>st(s.status)==='pending').reduce((a,s)=>a+(+s.stake||0),0);
-  const bal=start-staked+returned;
-  const cell=(v,l,c)=>`<div class="ps"><b${c?` style="color:${c}"`:''}>${v}</b><span>${l}</span></div>`;
-  const bank=`<div class="bank">${cell(money(start),'START')}${cell(money(staked),'STAKED')}${cell(money(returned),'RETURNED')}${cell(money(bal),'BALANCE',bal>=start?'var(--green)':'var(--red)')}</div>
-    <div class="muted small" style="margin:-6px 0 12px;">${atRisk?`${money(atRisk)} still riding on pending slips (counted as staked, nothing returned yet).`:'No pending slips.'}</div>`;
   const card=s=>{
     const k=st(s.status);
     if(s.placeholder) return `<div class="card slip"><div class="slip-head"><div><div class="pname">Slip ${esc(s.id)}</div><div class="pmeta">Details not entered yet</div></div><span class="st void">TBD</span></div></div>`;
@@ -1099,10 +1091,9 @@ async function renderPicks(){
   const today=etToday();
   const cur=days.find(d=>d.date===today)||days[days.length-1];
   const label=d=>new Date(d.date+'T12:00:00').toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric'});
-  const note=d=>d.note?`<div class="muted small" style="margin:-4px 0 10px;">${esc(d.note)}</div>`:'';   // optional per-day note
-  const tonight=cur?`<div class="section-label">${cur.date===today?'TONIGHT':esc(label(cur).toUpperCase())}</div>${note(cur)}${(cur.slips||[]).map(card).join('')||'<div class="empty">No slips for this day.</div>'}`:'<div class="empty">No slips yet.</div>';
+  const tonight=cur?`<div class="section-label">${cur.date===today?'TONIGHT':esc(label(cur).toUpperCase())}</div>${(cur.slips||[]).map(card).join('')||'<div class="empty">No slips for this day.</div>'}`:'<div class="empty">No slips yet.</div>';
   const past=days.filter(d=>d!==cur).reverse();
-  const earlier=past.length?`<details class="more"><summary>Earlier days (${past.length})</summary>${past.map(d=>`<div class="section-label">${esc(label(d).toUpperCase())}</div>${note(d)}${(d.slips||[]).map(card).join('')}`).join('')}</details>`:'';
+  const earlier=past.length?`<details class="more"><summary>Earlier days (${past.length})</summary>${past.map(d=>`<div class="section-label">${esc(label(d).toUpperCase())}</div>${(d.slips||[]).map(card).join('')}`).join('')}</details>`:'';
   // track record: settled slips only (hit / miss / void), grouped by slip type
   const by=new Map();
   real.forEach(s=>{
@@ -1117,7 +1108,7 @@ async function renderPicks(){
     return `<tr><td>${esc(t)}</td><td>${r.hit}-${r.miss}${r.pend?` <span class="muted">(${r.pend} open)</span>`:''}</td><td>${money(r.stk)}</td><td style="color:${p>=0?'var(--green)':'var(--red)'}">${p>=0?'+':''}${money(p)}</td><td>${r.stk?((p/r.stk)*100).toFixed(0)+'%':'—'}</td></tr>`;
   }).join('');
   const record=`<div class="section-label">TRACK RECORD BY SLIP TYPE</div>${rows?`<div class="card" style="overflow-x:auto;"><table class="gl"><thead><tr><th>Type</th><th>W-L</th><th>Staked</th><th>Profit</th><th>ROI</th></tr></thead><tbody>${rows}</tbody></table><div class="muted small" style="margin-top:8px;">Staked, profit and ROI count settled slips only.</div></div>`:'<div class="empty">No slips entered yet.</div>'}`;
-  $('view').innerHTML=bank+tonight+earlier+record;
+  $('view').innerHTML=tonight+earlier+record;
 }
 
 /* ============ PLAYER MODAL ============ */
