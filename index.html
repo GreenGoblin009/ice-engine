@@ -1092,16 +1092,17 @@ async function renderPicks(){
     const k=st(s.status);
     if(s.placeholder) return `<div class="card slip"><div class="slip-head"><div><div class="pname">Slip ${esc(s.id)}</div><div class="pmeta">Details not entered yet</div></div><span class="st void">TBD</span></div></div>`;
     const legs=(s.legs||[]).map(l=>`<div class="leg"><i class="${esc(st(l.result))}"></i><div><b>${esc(l.player)}</b> <span class="muted">${esc(l.team||'')}</span><div class="muted small">${esc(l.market||'')}</div></div><span class="lp">${esc(l.price||'')}</span></div>`).join('');
-    return `<div class="card slip ${k}"><div class="slip-head"><div><div class="pname">${esc(s.type||'Slip')}</div><div class="pmeta">${esc(s.book||'')}${s.boost?` · boost ${esc(s.boost)}`:''} · ${(s.legs||[]).length} leg${(s.legs||[]).length===1?'':'s'}</div></div><span class="st ${k}">${k}</span></div>
+    return `<div class="card slip ${k}"><div class="slip-head"><div><div class="pname">${esc(s.type||'Slip')}</div><div class="pmeta">${esc(s.book||'')}${s.boost?` · ${esc(s.boost)}`:''} · ${(s.legs||[]).length} leg${(s.legs||[]).length===1?'':'s'}</div></div><span class="st ${k}">${k}</span></div>
       <div class="stake"><span>Stake <b>${money(+s.stake||0)}</b></span><span>Pays <b>${money(+s.payout||0)}</b></span>${k!=='pending'?`<span>Returned <b style="color:${slipReturn(s)>0?'var(--green)':'var(--red)'}">${money(slipReturn(s))}</b></span>`:''}</div>
       ${legs?`<div class="legs">${legs}</div>`:''}</div>`;
   };
   const today=etToday();
   const cur=days.find(d=>d.date===today)||days[days.length-1];
   const label=d=>new Date(d.date+'T12:00:00').toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric'});
-  const tonight=cur?`<div class="section-label">${cur.date===today?'TONIGHT':esc(label(cur).toUpperCase())}</div>${(cur.slips||[]).map(card).join('')||'<div class="empty">No slips for this day.</div>'}`:'<div class="empty">No slips yet.</div>';
+  const note=d=>d.note?`<div class="muted small" style="margin:-4px 0 10px;">${esc(d.note)}</div>`:'';   // optional per-day note
+  const tonight=cur?`<div class="section-label">${cur.date===today?'TONIGHT':esc(label(cur).toUpperCase())}</div>${note(cur)}${(cur.slips||[]).map(card).join('')||'<div class="empty">No slips for this day.</div>'}`:'<div class="empty">No slips yet.</div>';
   const past=days.filter(d=>d!==cur).reverse();
-  const earlier=past.length?`<details class="more"><summary>Earlier days (${past.length})</summary>${past.map(d=>`<div class="section-label">${esc(label(d).toUpperCase())}</div>${(d.slips||[]).map(card).join('')}`).join('')}</details>`:'';
+  const earlier=past.length?`<details class="more"><summary>Earlier days (${past.length})</summary>${past.map(d=>`<div class="section-label">${esc(label(d).toUpperCase())}</div>${note(d)}${(d.slips||[]).map(card).join('')}`).join('')}</details>`:'';
   // track record: settled slips only (hit / miss / void), grouped by slip type
   const by=new Map();
   real.forEach(s=>{
