@@ -3,23 +3,23 @@
     {
       "date": "2026-10-15",
       "slips": [
-        {"id": 1, "type": "Plus-money single", "book": "theScore", "status": "pending",
-         "legs":[{"player": "Shane Pinto", "team": "OTT", "market": "1+ pt", "price": "+120", "result": "pending"}]},
-        {"id": 2, "type": "Money back", "book": "Fanatics", "status": "pending",
-         "legs":[{"player": "Adam Fox", "team": "NYR", "market": "1+ pt", "price": "-119", "result": "pending"}]},
-        {"id": 3, "type": "Mid-lotto", "book": "Fanatics", "status": "pending",
-         "legs":[{"player": "Jack Hughes", "team": "NJD", "market": "1+ ast", "price": "", "result": "pending"},
-                 {"player": "William Nylander", "team": "TOR", "market": "1+ ast", "price": "", "result": "pending"}]},
-        {"id": 4, "type": "Value points", "book": "theScore", "status": "pending",
-         "legs":[{"player": "Jared McCann", "team": "SEA", "market": "1+ pt", "price": "-105", "result": "pending"},
-                 {"player": "Josh Norris", "team": "BUF", "market": "1+ pt", "price": "+125", "result": "pending"},
-                 {"player": "Viktor Arvidsson", "team": "DET", "market": "1+ pt", "price": "-150", "result": "pending"}]},
-        {"id": 5, "type": "Goals 2-leg", "book": "Fanatics", "status": "pending",
-         "legs":[{"player": "Matt Boldy", "team": "MIN", "market": "Anytime goal", "price": "", "result": "pending"},
-                 {"player": "Macklin Celebrini", "team": "SJS", "market": "Anytime goal", "price": "", "result": "pending"}]},
-        {"id": 6, "type": "Favorites 2-leg", "book": "Fanatics", "status": "pending",
-         "legs":[{"player": "Robert Thomas", "team": "STL", "market": "1+ pt", "price": "", "result": "pending"},
-                 {"player": "Clayton Keller", "team": "UTA", "market": "1+ ast", "price": "", "result": "pending"}]}
+        {"id": 1, "type": "Plus-money single", "book": "theScore", "status": "miss",
+         "legs":[{"player": "Shane Pinto", "team": "OTT", "market": "1+ pt", "price": "+120", "result": "miss"}]},
+        {"id": 2, "type": "Money back", "book": "Fanatics", "status": "hit",
+         "legs":[{"player": "Adam Fox", "team": "NYR", "market": "1+ pt", "price": "-130", "result": "hit"}]},
+        {"id": 3, "type": "Mid-lotto", "book": "Fanatics", "status": "miss",
+         "legs":[{"player": "Jack Hughes", "team": "NJD", "market": "1+ ast", "price": "", "result": "hit"},
+                 {"player": "William Nylander", "team": "TOR", "market": "1+ ast", "price": "", "result": "miss"}]},
+        {"id": 4, "type": "Value points", "book": "theScore", "status": "miss",
+         "legs":[{"player": "Jared McCann", "team": "SEA", "market": "1+ pt", "price": "-105", "result": "hit"},
+                 {"player": "Josh Norris", "team": "BUF", "market": "1+ pt", "price": "+125", "result": "miss"},
+                 {"player": "Viktor Arvidsson", "team": "DET", "market": "1+ pt", "price": "-150", "result": "miss"}]},
+        {"id": 5, "type": "Goals 2-leg", "book": "Fanatics", "status": "miss",
+         "legs":[{"player": "Matt Boldy", "team": "MIN", "market": "Anytime goal", "price": "", "result": "hit"},
+                 {"player": "Macklin Celebrini", "team": "SJS", "market": "Anytime goal", "price": "", "result": "miss"}]},
+        {"id": 6, "type": "Favorites 2-leg", "book": "Fanatics", "status": "miss",
+         "legs":[{"player": "Robert Thomas", "team": "STL", "market": "1+ pt", "price": "", "result": "hit"},
+                 {"player": "Clayton Keller", "team": "UTA", "market": "1+ ast", "price": "", "result": "miss"}]}
       ]
     }
   ]
