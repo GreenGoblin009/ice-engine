@@ -31,6 +31,8 @@ expects, and what to compare against when it starts failing:
     ...
     Status report
     Free text. "... Fowler will start after being recalled ..."
+    ## SATURDAY              optional: the next day's early games follow,
+    ## DEVILS (4-3-0) at ... posted ahead of time; they're skipped
 
 The text comes from the page's embedded structured data (a JSON-LD
 "NewsArticle" block whose articleBody is the article in Markdown), which is
@@ -68,6 +70,10 @@ PP_GAMES = 5      # a team's most recent regular-season games that decide its po
 PP_UNIT_SIZE = 5  # skaters per unit
 
 MATCHUP = re.compile(r"^(.+?)(?:\s*\([^)]*\))?\s+at\s+(.+?)(?:\s*\([^)]*\))?$", re.I)
+# "## SATURDAY" (or "## SATURDAY, OCT. 17"): the games after it are another
+# day's, posted early.
+DAY_HEADING = re.compile(r"^(MONDAY|TUESDAY|WEDNESDAY|THURSDAY|FRIDAY|SATURDAY|SUNDAY)"
+                         r"(?:,?\s+[A-Za-z]{3,9}\.?\s+\d{1,2})?$", re.I)
 TEAM_BLOCK = re.compile(r"^(.+?) projected (?:lineup|lines)$", re.I)
 LABEL = re.compile(r"^([A-Za-z][A-Za-z ]{2,24}):\s*(.*)$")
 NAME_SEPARATOR = re.compile(r"\s*(?:-{2,}|[–—]+)\s*")
@@ -81,10 +87,13 @@ STARTING = re.compile(
     r"(?:start|make his\b[^.;]{0,40}?\bstart|get the (?:start|nod)|be in (?:goal|net))\b"
     r"|\bgets? the (?:start|nod)\b|\bconfirmed (?:as )?the starter\b", re.I)
 # ... and the look-alikes that mean the opposite, or another night.
+# Checked against the clause the phrase is in (see CLAUSE), so "A will start
+# and B will start on Saturday" still credits A.
 NOT_TONIGHT = re.compile(
     r"\b(?:not|won't|won’t)\s+(?:expected to\s+)?start\b"
-    r"|\bstart\b[^.;]{0,25}\b(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday|tomorrow)\b"
+    r"|\bstart\b[^.;]{0,60}\b(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday|tomorrow)\b"
     r"|\bstart the (?:next|second|third)\b", re.I)
+CLAUSE = re.compile(r";|,?\s+(?:and|but)\s+")
 
 
 class PageFormatError(Exception):
@@ -161,10 +170,12 @@ def split_entries(text):
     return entries
 
 
-def parse_article(body, schedule, nicknames):
+def parse_article(body, schedule, nicknames, day):
     """Split the article into games and team blocks. Returns (games,
-    problems): each game is {gameId, away, home, status, blocks: {abbrev:
-    {lines, scratched, injured, suspended}}, problems: [...], warnings: [...]}.
+    problems, other_day): each game is {gameId, away, home, status, blocks:
+    {abbrev: {lines, scratched, injured, suspended}}, problems: [...],
+    warnings: [...]}. other_day lists the headings of games the article
+    files under another day ("## SATURDAY"); those are left alone.
 
     A game with problems isn't saved. Warnings are for the scratched / injured
     / suspended lists only: a line or name there that can't be read is left
@@ -173,9 +184,10 @@ def parse_article(body, schedule, nicknames):
     # every heading on a line of its own first.
     body = re.sub(r"(?<!#)(#{2,}\s)", r"\n\1", body)
 
-    games, problems = [], []
+    games, problems, other_day = [], [], []
     game = block = None
     in_status = False
+    later_day = None  # set while under a "## SATURDAY" heading for another day
 
     for raw in body.splitlines():
         heading = re.match(r"\s*(#+)", raw)
@@ -186,9 +198,16 @@ def parse_article(body, schedule, nicknames):
         if heading and len(heading.group(1)) == 2:  # "## AWAY (1-0-0) at HOME (0-1-0)"
             game = block = None
             in_status = False
+            d = DAY_HEADING.match(line)
+            if d:
+                later_day = None if d.group(1).upper() == day.strftime("%A").upper() else line
+                continue
             m = MATCHUP.match(line)
             if not m:
                 continue  # some other section (e.g. the fantasy links at the top)
+            if later_day:
+                other_day.append(f"{line} ({later_day})")
+                continue
             away_nick, home_nick = m.group(1).strip().upper(), m.group(2).strip().upper()
             away, home = nicknames.get(away_nick), nicknames.get(home_nick)
             if (away, home) not in schedule:
@@ -253,7 +272,7 @@ def parse_article(body, schedule, nicknames):
             continue
         block["lines"].append(names)
 
-    return games, problems
+    return games, problems, other_day
 
 
 # First names that are one name spelled or shortened differently by different
@@ -379,9 +398,12 @@ def mark_confirmed_starters(game_rows, status_text):
     surname = {id(r): r["player_name"].split(" ", 1)[1] for r in goalies}
     said = {}  # team -> {id(row): sentence}
     for sentence in re.split(r"\s*(?:…|\.{3}|(?<=[a-z)])\.\s+(?=[A-Z]))\s*", status_text):
-        if NOT_TONIGHT.search(sentence):
-            continue
+        bounds = [0] + [b for m in CLAUSE.finditer(sentence) for b in (m.start(), m.end())] + [len(sentence)]
+        clauses = list(zip(bounds[::2], bounds[1::2]))
         for phrase in STARTING.finditer(sentence):
+            clause = next((sentence[a:b] for a, b in clauses if a <= phrase.start() < b), sentence)
+            if NOT_TONIGHT.search(clause):
+                continue
             before = sentence[:phrase.start()]
             mentions = [(m.start(), r) for r in goalies
                         for m in re.finditer(rf"\b{re.escape(surname[id(r)])}\b", before)]
@@ -516,7 +538,9 @@ def run(day, use_supabase, late_in_day=True):
             print(f"Today's lineups aren't posted yet (article is from {modified_day}) — nothing to do.")
             return []
 
-    games, problems = parse_article(body, schedule, nicknames)
+    games, problems, other_day = parse_article(body, schedule, nicknames, day)
+    if other_day:
+        print(f"Skipping {len(other_day)} game(s) the article lists under another day: {'; '.join(other_day)}")
     if not games:
         raise PageFormatError("no game sections found in the article — the heading format "
                               "('## AWAY (w-l-otl) at HOME (w-l-otl)') has probably changed. " +
