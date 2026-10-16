@@ -1,7 +1,7 @@
 ICE ENGINE SLATE REPORT  2026-10-16
-Lineups pulled: Oct 16, 4:57 PM ET
-Prices pulled:  Oct 16, 4:13 PM ET
-Goalies pulled: Oct 16, 4:57 PM ET
+Lineups pulled: Oct 16, 7:13 PM ET
+Prices pulled:  Oct 16, 7:13 PM ET
+Goalies pulled: Oct 16, 7:13 PM ET
 Times are US Eastern. Read-only: built from the same models as the board.
 
 GAMES (start, projected goals, model game total; book game totals are not pulled)
@@ -28,38 +28,38 @@ TEAM FORM, last 10 regular-season games (per game: GF / GA | shots for / against
 - ANA: 3.6 / 2.9 | 27.5 / 24.8 | PP 34.3% (12/35) | PK 78.6%
 
 TOP 15 GOALS BY ROLE-ADJUSTED CHANCE
-1. Nathan MacKinnon COL 47%; best -105 MGM; edge -4.6; DK -130; FD -120; L10 4/10; 4.1 shots; 20.6 min; PP1
-2. Martin Necas COL 40%; best +170 DK; edge +3.2; DK +170; FD +170; L10 2/10; 2.7 shots; 20.9 min; PP1
-3. Cutter Gauthier ANA 40%; best +175 MGM; edge +3.7; DK +125; FD +135; L10 5/10; 3.7 shots; 16.7 min; PP1
-4. Bryan Rust PIT 36%; best +275 DK; edge +9.6; DK +275; FD +270; L10 5/10; 1.4 shots; 19.4 min; PP2
-5. Morgan Geekie BOS 34%; best +200 MGM; edge +0.8; DK +195; FD +200; L10 3/10; 1.2 shots; 17.4 min; PP1
+1. Nathan MacKinnon COL 47%; best -105 MGM; edge -4.6; DK -125; FD -120; L10 4/10; 4.1 shots; 20.6 min; PP1
+2. Martin Necas COL 40%; best +175 DK; edge +3.8; DK +175; FD +175; L10 2/10; 2.7 shots; 20.9 min; PP1
+3. Cutter Gauthier ANA 40%; best +175 MGM; edge +3.7; DK +130; FD +135; L10 5/10; 3.7 shots; 16.7 min; PP1
+4. Bryan Rust PIT 36%; best +280 BR; edge +10.0; DK +275; FD +270; L10 5/10; 1.4 shots; 19.4 min; PP2
+5. Morgan Geekie BOS 34%; best +200 MGM; edge +0.8; DK +200; FD +200; L10 3/10; 1.2 shots; 17.4 min; PP1
 6. Leo Carlsson ANA 34%; best +200 MGM; edge +0.6; DK +165; FD +170; L10 4/10; 2.6 shots; 20.1 min; PP1
-7. Brock Nelson COL 34%; best +240 FD; edge +4.5; DK +230; FD +240; L10 3/10; 1.7 shots; 18.3 min; PP2
-8. Sidney Crosby PIT 33%; best +250 FD; edge +4.6; DK +245; FD +250; L10 2/10; 2.8 shots; 19.8 min; PP1
-9. Rickard Rakell PIT 31%; best +260 MGM; edge +3.6; DK +245; FD +250; L10 0/10; 2.6 shots; 19.9 min; PP1
-10. Evgeni Malkin PIT 29%; best +280 MGM; edge +2.7; DK +260; FD +280; L10 4/10; 2.2 shots; 18.3 min; PP1
+7. Brock Nelson COL 34%; best +250 FD; edge +5.3; DK +245; FD +250; L10 3/10; 1.7 shots; 18.3 min; PP2
+8. Sidney Crosby PIT 33%; best +240 MGM; edge +3.8; DK +240; FD +240; L10 2/10; 2.8 shots; 19.8 min; PP1
+9. Rickard Rakell PIT 31%; best +260 MGM; edge +3.6; DK +250; FD +250; L10 0/10; 2.6 shots; 19.9 min; PP1
+10. Evgeni Malkin PIT 29%; best +300 FD; edge +4.0; DK +275; FD +300; L10 4/10; 2.2 shots; 18.3 min; PP1
 11. David Pastrnak BOS 29%; best +143 BR; edge -12.2; DK +140; FD +140; L10 1/10; 3.5 shots; 19.4 min; PP1
-12. Pavel Zacha BOS 29%; best +260 MGM; edge +0.9; DK +215; FD +240; L10 3/10; 1.5 shots; 18.2 min; PP1
-13. Artturi Lehkonen COL 28%; best +275 FD; edge +1.1; DK +270; FD +275; L10 4/10; 1.5 shots; 19.4 min; PP2
-14. JJ Peterka BOS 28%; best +300 MGM; edge +2.7; DK +260; FD +250; L10 3/10; 2.0 shots; 16.6 min; PP2
-15. Beckett Sennecke ANA 27%; best +200 MGM; edge -6.6; DK +185; FD +190; L10 3/10; 2.5 shots; 20.9 min; PP1
+12. Pavel Zacha BOS 29%; best +260 MGM; edge +0.9; DK +225; FD +240; L10 3/10; 1.5 shots; 18.2 min; PP1
+13. Artturi Lehkonen COL 28%; best +270 FD; edge +0.8; DK +255; FD +270; L10 4/10; 1.5 shots; 19.4 min; PP2
+14. JJ Peterka BOS 28%; best +300 MGM; edge +2.7; DK +250; FD +250; L10 3/10; 2.0 shots; 16.6 min; PP2
+15. Beckett Sennecke ANA 27%; best +200 MGM; edge -6.6; DK +170; FD +190; L10 3/10; 2.5 shots; 20.9 min; PP1
 
 TOP 15 POINTS BY ROLE-ADJUSTED CHANCE
 1. David Pastrnak BOS 72%; best -275 MGM; edge -1.8; DK -; FD -; L10 5/10; 3.5 shots; 19.4 min; PP1
-2. Martin Necas COL 70%; best -225 MGM; edge +0.5; DK -230; FD -; L10 6/10; 2.7 shots; 20.9 min; PP1
-3. Evgeni Malkin PIT 67%; best -128 BOL; edge +11.3; DK -140; FD -; L10 5/10; 2.2 shots; 18.3 min; PP1
+2. Martin Necas COL 70%; best -217 BOL; edge +1.3; DK -230; FD -; L10 6/10; 2.7 shots; 20.9 min; PP1
+3. Evgeni Malkin PIT 67%; best -130 BOL; edge +10.9; DK -135; FD -; L10 5/10; 2.2 shots; 18.3 min; PP1
 4. Cale Makar COL 67%; best -250 MGM; edge -4.3; DK -; FD -; L10 8/10; 2.7 shots; 21.7 min; PP1
-5. Sidney Crosby PIT 65%; best -149 BOL; edge +5.1; DK -165; FD -; L10 5/10; 2.8 shots; 19.8 min; PP1
-6. Charlie McAvoy BOS 64%; best -125 MGM; edge +8.3; DK -130; FD -; L10 5/10; 1.7 shots; 24.8 min; no PP
+5. Sidney Crosby PIT 65%; best -152 BOL; edge +4.7; DK -165; FD -; L10 5/10; 2.8 shots; 19.8 min; PP1
+6. Charlie McAvoy BOS 64%; best -123 BOL; edge +8.7; DK -130; FD -; L10 5/10; 1.7 shots; 24.8 min; no PP
 7. Bryan Rust PIT 63%; best -110 BOL; edge +10.7; DK -115; FD -; L10 6/10; 1.4 shots; 19.4 min; PP2
-8. Leo Carlsson ANA 62%; best -175 BOL; edge -1.7; DK -185; FD -; L10 8/10; 2.6 shots; 20.1 min; PP1
-9. Pavel Zacha BOS 61%; best -135 MGM; edge +3.8; DK -170; FD -; L10 5/10; 1.5 shots; 18.2 min; PP1
+8. Leo Carlsson ANA 62%; best -185 MGM; edge -3.0; DK -185; FD -; L10 8/10; 2.6 shots; 20.1 min; PP1
+9. Pavel Zacha BOS 61%; best -135 MGM; edge +3.8; DK -155; FD -; L10 5/10; 1.5 shots; 18.2 min; PP1
 10. Brock Nelson COL 59%; best -108 BOL; edge +7.5; DK -115; FD -; L10 5/10; 1.7 shots; 18.3 min; PP2
-11. Jackson LaCombe ANA 59%; best -135 BOL; edge +1.9; DK -140; FD -; L10 8/10; 1.5 shots; 26.6 min; PP1
-12. Cutter Gauthier ANA 59%; best -160 MGM; edge -3.0; DK -195; FD -; L10 7/10; 3.7 shots; 16.7 min; PP1
+11. Jackson LaCombe ANA 59%; best -135 BOL; edge +1.9; DK -145; FD -; L10 8/10; 1.5 shots; 26.6 min; PP1
+12. Cutter Gauthier ANA 59%; best -160 MGM; edge -3.0; DK -190; FD -; L10 7/10; 3.7 shots; 16.7 min; PP1
 13. Rickard Rakell PIT 57%; best -105 MGM; edge +6.2; DK -110; FD -; L10 2/10; 2.6 shots; 19.9 min; PP1
-14. Beckett Sennecke ANA 56%; best -154 BOL; edge -4.3; DK -160; FD -; L10 6/10; 2.5 shots; 20.9 min; PP1
-15. Morgan Geekie BOS 54%; best -139 BOL; edge -3.8; DK -145; FD -; L10 5/10; 1.2 shots; 17.4 min; PP1
+14. Beckett Sennecke ANA 56%; best -160 MGM; edge -5.2; DK -165; FD -; L10 6/10; 2.5 shots; 20.9 min; PP1
+15. Morgan Geekie BOS 54%; best -135 DK; edge -3.1; DK -135; FD -; L10 5/10; 1.2 shots; 17.4 min; PP1
 
 TOP 15 ASSISTS BY ROLE-ADJUSTED CHANCE
 1. David Pastrnak BOS 60%; best -118 MGM; edge +5.8; DK -125; FD -; L10 5/10; 3.5 shots; 19.4 min; PP1
@@ -80,88 +80,88 @@ TOP 15 ASSISTS BY ROLE-ADJUSTED CHANCE
 
 TOP 15 BY EDGE (all three markets)
 1. Evgeni Malkin PIT Assists 53%; best +145 MGM; edge +11.7; DK +130; FD -; L10 3/10; 2.2 shots; 18.3 min; PP1
-2. Evgeni Malkin PIT Points 67%; best -128 BOL; edge +11.3; DK -140; FD -; L10 5/10; 2.2 shots; 18.3 min; PP1
+2. Evgeni Malkin PIT Points 67%; best -130 BOL; edge +10.9; DK -135; FD -; L10 5/10; 2.2 shots; 18.3 min; PP1
 3. Bryan Rust PIT Points 63%; best -110 BOL; edge +10.7; DK -115; FD -; L10 6/10; 1.4 shots; 19.4 min; PP2
-4. Bryan Rust PIT Goals 36%; best +275 DK; edge +9.6; DK +275; FD +270; L10 5/10; 1.4 shots; 19.4 min; PP2
-5. Parker Kelly COL Goals 22%; best +700 DK; edge +9.4; DK +700; FD +700; L10 2/10; 1.1 shots; 12.5 min; no PP
-6. Bryan Rust PIT Assists 41%; best +210 MGM; edge +8.9; DK +170; FD -; L10 3/10; 1.4 shots; 19.4 min; PP2
-7. Charlie McAvoy BOS Points 64%; best -125 MGM; edge +8.3; DK -130; FD -; L10 5/10; 1.7 shots; 24.8 min; no PP
+4. Bryan Rust PIT Goals 36%; best +280 BR; edge +10.0; DK +275; FD +270; L10 5/10; 1.4 shots; 19.4 min; PP2
+5. Bryan Rust PIT Assists 41%; best +210 MGM; edge +8.9; DK +170; FD -; L10 3/10; 1.4 shots; 19.4 min; PP2
+6. Charlie McAvoy BOS Points 64%; best -123 BOL; edge +8.7; DK -130; FD -; L10 5/10; 1.7 shots; 24.8 min; no PP
+7. Parker Kelly COL Goals 22%; best +650 BR; edge +8.6; DK +600; FD +550; L10 2/10; 1.1 shots; 12.5 min; no PP
 8. Brock Nelson COL Points 59%; best -108 BOL; edge +7.5; DK -115; FD -; L10 5/10; 1.7 shots; 18.3 min; PP2
 9. Nick Robertson PIT Goals 21%; best +600 DK; edge +7.1; DK +600; FD +600; L10 4/10; 2.1 shots; 12.1 min; no PP
 10. Charlie McAvoy BOS Assists 54%; best +115 MGM; edge +7.1; DK +100; FD -; L10 4/10; 1.7 shots; 24.8 min; no PP
-11. Artturi Lehkonen COL Points 54%; best +110 MGM; edge +6.7; DK -105; FD -; L10 5/10; 1.5 shots; 19.4 min; PP2
+11. Marat Khusnutdinov BOS Points 38%; best +220 BOL; edge +6.6; DK +215; FD -; L10 3/10; 0.6 shots; 13.8 min; no PP
 12. Rickard Rakell PIT Points 57%; best -105 MGM; edge +6.2; DK -110; FD -; L10 2/10; 2.6 shots; 19.9 min; PP1
-13. Egor Chinakhov PIT Goals 26%; best +390 MGM; edge +6.0; DK +370; FD +370; L10 2/10; 2.0 shots; 15.9 min; PP2
+13. Egor Chinakhov PIT Goals 26%; best +390 MGM; edge +6.0; DK +380; FD +380; L10 2/10; 2.0 shots; 15.9 min; PP2
 14. Casey Mittelstadt BOS Goals 21%; best +550 FD; edge +5.9; DK +500; FD +550; L10 2/10; 1.4 shots; 13.9 min; PP2
 15. David Pastrnak BOS Assists 60%; best -118 MGM; edge +5.8; DK -125; FD -; L10 5/10; 3.5 shots; 19.4 min; PP1
-62 of 124 priced legs show a positive edge at the best book.
+64 of 126 priced legs show a positive edge at the best book.
 
 ALL PRICED SKATERS (shots/game last 10, minutes, PP unit | G | P | A: chance, best price, edge, last 10)
 PIT
-- Evgeni Malkin (2.2, 18.3, PP1): G 29% +280 MGM +2.7, L10 4/10 | P 67% -128 BOL +11.3, L10 5/10 | A 53% +145 MGM +11.7, L10 3/10
-- Sidney Crosby (2.8, 19.8, PP1): G 33% +250 FD +4.6, L10 2/10 | P 65% -149 BOL +5.1, L10 5/10 | A 50% +110 DK +2.2, L10 4/10
-- Bryan Rust (1.4, 19.4, PP2): G 36% +275 DK +9.6, L10 5/10 | P 63% -110 BOL +10.7, L10 6/10 | A 41% +210 MGM +8.9, L10 3/10
+- Evgeni Malkin (2.2, 18.3, PP1): G 29% +300 FD +4.0, L10 4/10 | P 67% -130 BOL +10.9, L10 5/10 | A 53% +145 MGM +11.7, L10 3/10
+- Sidney Crosby (2.8, 19.8, PP1): G 33% +240 MGM +3.8, L10 2/10 | P 65% -152 BOL +4.7, L10 5/10 | A 50% +110 DK +2.2, L10 4/10
+- Bryan Rust (1.4, 19.4, PP2): G 36% +280 BR +10.0, L10 5/10 | P 63% -110 BOL +10.7, L10 6/10 | A 41% +210 MGM +8.9, L10 3/10
 - Rickard Rakell (2.6, 19.9, PP1): G 31% +260 MGM +3.6, L10 0/10 | P 57% -105 MGM +6.2, L10 2/10 | A 37% +200 MGM +3.5, L10 2/10
-- Erik Karlsson (1.5, 23.0, PP1): G 16% +550 BR +0.7, L10 1/10 | P 52% -111 BOL -0.3, L10 6/10 | A 46% +120 DK +0.1, L10 6/10
+- Erik Karlsson (1.5, 23.0, PP1): G 16% +575 FD +1.3, L10 1/10 | P 52% -111 BOL -0.3, L10 6/10 | A 46% +120 DK +0.1, L10 6/10
 - Tommy Novak (1.6, 15.4, PP2): G 20% +400 MGM -0.1, L10 2/10 | P 42% +145 DK +1.2, L10 4/10 | A 27% +295 DK +2.2, L10 3/10
-- Egor Chinakhov (2.0, 15.9, PP2): G 26% +390 MGM +6.0, L10 2/10 | P 42% +149 BOL +1.7, L10 3/10 | A 22% +285 DK -4.1, L10 2/10
-- Kris Letang (1.6, 19.9, PP2): G 4% +1100 DK -4.3, L10 0/10 | P 37% +182 BOL +1.7, L10 3/10 | A 34% +220 DK +3.1, L10 3/10
+- Egor Chinakhov (2.0, 15.9, PP2): G 26% +390 MGM +6.0, L10 2/10 | P 42% +150 DK +1.9, L10 3/10 | A 22% +285 DK -4.1, L10 2/10
+- Kris Letang (1.6, 19.9, PP2): G 4% +1100 FD -4.3, L10 0/10 | P 37% +182 BOL +1.7, L10 3/10 | A 34% +220 DK +3.1, L10 3/10
 - Andrei Kuzmenko (1.2, 15.2, PP2): G 21% +550 DK +5.7, L10 2/10 | P 36% no price, L10 3/10 | A 20% no price, L10 1/10
-- Ben Kindel (1.9, 17.7, PP1): G 20% +400 MGM -0.1, L10 2/10 | P 36% +139 BOL -6.1, L10 4/10 | A 21% +270 DK -6.1, L10 3/10
+- Ben Kindel (1.9, 17.7, PP1): G 20% +400 MGM -0.1, L10 2/10 | P 36% +141 BOL -5.7, L10 4/10 | A 21% +270 DK -6.1, L10 3/10
 - Nick Robertson (2.1, 12.1, no PP): G 21% +600 DK +7.1, L10 4/10 | P 34% no price, L10 4/10 | A 16% no price, L10 0/10
-- Connor Dewar (1.2, 13.3, no PP): G 15% +900 FD +5.5, L10 1/10 | P 32% no price, L10 3/10 | A 18% no price, L10 2/10
-- Samuel Girard (1.0, 19.6, no PP): G 6% +2100 FD +1.5, L10 1/10 | P 31% no price, L10 6/10 | A 26% no price, L10 5/10
-- Blake Lizotte (1.1, 13.0, no PP): G 12% +1100 FD +3.8, L10 0/10 | P 30% no price, L10 3/10 | A 18% no price, L10 3/10
-- Kaedan Korczak (1.1, 17.4, no PP): G 4% +2400 FD -0.3, L10 0/10 | P 22% no price, L10 5/10 | A 18% no price, L10 5/10
+- Connor Dewar (1.2, 13.3, no PP): G 15% +800 DK +4.4, L10 1/10 | P 32% no price, L10 3/10 | A 18% no price, L10 2/10
+- Samuel Girard (1.0, 19.6, no PP): G 6% +2000 DK +1.3, L10 1/10 | P 31% no price, L10 6/10 | A 26% no price, L10 5/10
+- Blake Lizotte (1.1, 13.0, no PP): G 12% +1000 FD +3.0, L10 0/10 | P 30% no price, L10 3/10 | A 18% no price, L10 3/10
+- Kaedan Korczak (1.1, 17.4, no PP): G 4% +2500 FD -0.1, L10 0/10 | P 22% no price, L10 5/10 | A 18% no price, L10 5/10
 - Elmer Soderblom (1.0, 11.4, no PP): G 12% +750 FD -0.1, L10 3/10 | P 19% no price, L10 5/10 | A 11% no price, L10 3/10
-- Spencer Stastney (0.3, 15.1, no PP): G 3% +2500 DK -0.6, L10 0/10 | P 16% no price, L10 0/10 | A 13% no price, L10 0/10
-- Declan Carlile (1.5, 18.6, no PP): G 6% +1700 DK +0.6, L10 2/10 | P 15% no price, L10 3/10 | A 11% no price, L10 2/10
+- Spencer Stastney (0.3, 15.1, no PP): G 3% +2800 DK -0.2, L10 0/10 | P 16% no price, L10 0/10 | A 13% no price, L10 0/10
+- Declan Carlile (1.5, 18.6, no PP): G 6% +1800 DK +0.9, L10 2/10 | P 15% no price, L10 3/10 | A 11% no price, L10 2/10
 COL
 - Nathan MacKinnon (4.1, 20.6, PP1): G 47% -105 MGM -4.6, L10 4/10 | P 74% no price, L10 6/10 | A 54% -165 MGM -8.3, L10 3/10
-- Martin Necas (2.7, 20.9, PP1): G 40% +170 DK +3.2, L10 2/10 | P 70% -225 MGM +0.5, L10 6/10 | A 47% -105 MGM -4.5, L10 5/10
-- Cale Makar (2.7, 21.7, PP1): G 23% +265 BR -4.5, L10 2/10 | P 67% -250 MGM -4.3, L10 8/10 | A 56% -210 DK -11.8, L10 7/10
-- Brock Nelson (1.7, 18.3, PP2): G 34% +240 FD +4.5, L10 3/10 | P 59% -108 BOL +7.5, L10 5/10 | A 35% +220 MGM +3.8, L10 3/10
-- Artturi Lehkonen (1.5, 19.4, PP2): G 28% +275 FD +1.1, L10 4/10 | P 54% +110 MGM +6.7, L10 5/10 | A 34% +210 MGM +1.5, L10 2/10
-- Gabriel Landeskog (1.9, 16.0, PP2): G 23% +320 DK -1.1, L10 3/10 | P 48% +120 BOL +3.0, L10 5/10 | A 29% +220 DK -2.1, L10 2/10
-- Nazem Kadri (2.5, 19.9, PP1): G 18% +270 DK -8.7, L10 0/10 | P 48% -147 BOL -11.4, L10 3/10 | A 37% +125 MGM -7.9, L10 3/10
-- Jaden Schwartz (1.5, 13.1, PP2): G 19% +360 MGM -2.8, L10 2/10 | P 43% +107 BOL -5.6, L10 5/10 | A 29% +225 DK -2.1, L10 4/10
-- Brent Burns (1.3, 16.6, no PP): G 12% +1300 FD +4.5, L10 0/10 | P 38% no price, L10 4/10 | A 29% no price, L10 4/10
-- Sam Malinski (1.8, 17.1, no PP): G 8% +800 DK -3.4, L10 1/10 | P 37% no price, L10 3/10 | A 34% no price, L10 2/10
-- Parker Kelly (1.1, 12.5, no PP): G 22% +700 DK +9.4, L10 2/10 | P 34% no price, L10 4/10 | A 17% no price, L10 3/10
-- Josh Manson (1.7, 16.6, no PP): G 6% +1700 DK +0.2, L10 1/10 | P 32% no price, L10 3/10 | A 28% no price, L10 3/10
-- Devon Toews (1.8, 20.9, PP2): G 5% +600 DK -8.8, L10 2/10 | P 32% +120 BOL -13.9, L10 5/10 | A 26% +165 DK -11.5, L10 3/10
-- Fedor Svechkov (1.1, 13.4, no PP): G 8% +900 FD -2.3, L10 1/10 | P 25% no price, L10 2/10 | A 19% no price, L10 2/10
-- Noah Juulsen (0.4, 11.9, no PP): G 2% +1800 DK -3.0, L10 0/10 | P 20% no price, L10 2/10 | A 18% no price, L10 2/10
-- Brett Kulak (0.7, 18.4, no PP): G 2% +2000 DK -3.2, L10 0/10 | P 17% no price, L10 4/10 | A 15% no price, L10 4/10
+- Martin Necas (2.7, 20.9, PP1): G 40% +175 DK +3.8, L10 2/10 | P 70% -217 BOL +1.3, L10 6/10 | A 47% -105 MGM -4.5, L10 5/10
+- Cale Makar (2.7, 21.7, PP1): G 23% +275 FD -3.8, L10 2/10 | P 67% -250 MGM -4.3, L10 8/10 | A 56% -210 DK -11.8, L10 7/10
+- Brock Nelson (1.7, 18.3, PP2): G 34% +250 FD +5.3, L10 3/10 | P 59% -108 BOL +7.5, L10 5/10 | A 35% +220 MGM +3.8, L10 3/10
+- Artturi Lehkonen (1.5, 19.4, PP2): G 28% +270 FD +0.8, L10 4/10 | P 54% +100 MGM +4.3, L10 5/10 | A 34% +210 MGM +1.5, L10 2/10
+- Gabriel Landeskog (1.9, 16.0, PP2): G 23% +310 FD -1.7, L10 3/10 | P 48% +118 BOL +2.5, L10 5/10 | A 29% +220 DK -2.1, L10 2/10
+- Nazem Kadri (2.5, 19.9, PP1): G 18% +260 FD -9.5, L10 0/10 | P 48% -160 DK -13.4, L10 3/10 | A 37% +125 MGM -7.9, L10 3/10
+- Jaden Schwartz (1.5, 13.1, PP2): G 19% +360 MGM -2.8, L10 2/10 | P 43% +105 DK -6.1, L10 5/10 | A 29% +225 DK -2.1, L10 4/10
+- Brent Burns (1.3, 16.6, no PP): G 12% +1200 FD +3.9, L10 0/10 | P 38% no price, L10 4/10 | A 29% no price, L10 4/10
+- Sam Malinski (1.8, 17.1, no PP): G 8% +750 DK -4.1, L10 1/10 | P 37% no price, L10 3/10 | A 34% no price, L10 2/10
+- Parker Kelly (1.1, 12.5, no PP): G 22% +650 BR +8.6, L10 2/10 | P 34% no price, L10 4/10 | A 17% no price, L10 3/10
+- Josh Manson (1.7, 16.6, no PP): G 6% +1600 DK -0.1, L10 1/10 | P 32% no price, L10 3/10 | A 28% no price, L10 3/10
+- Devon Toews (1.8, 20.9, PP2): G 5% +600 DK -8.8, L10 2/10 | P 32% +117 BOL -14.6, L10 5/10 | A 26% +165 DK -11.5, L10 3/10
+- Fedor Svechkov (1.1, 13.4, no PP): G 8% +900 DK -2.3, L10 1/10 | P 25% no price, L10 2/10 | A 19% no price, L10 2/10
+- Noah Juulsen (0.4, 11.9, no PP): G 2% +1900 DK -2.7, L10 0/10 | P 20% no price, L10 2/10 | A 18% no price, L10 2/10
+- Brett Kulak (0.7, 18.4, no PP): G 2% +2200 DK -2.8, L10 0/10 | P 17% no price, L10 4/10 | A 15% no price, L10 4/10
 BOS
 - David Pastrnak (3.5, 19.4, PP1): G 29% +143 BR -12.2, L10 1/10 | P 72% -275 MGM -1.8, L10 5/10 | A 60% -118 MGM +5.8, L10 5/10
-- Charlie McAvoy (1.7, 24.8, no PP): G 16% +525 MGM +0.0, L10 2/10 | P 64% -125 MGM +8.3, L10 5/10 | A 54% +115 MGM +7.1, L10 4/10
+- Charlie McAvoy (1.7, 24.8, no PP): G 16% +550 DK +0.6, L10 2/10 | P 64% -123 BOL +8.7, L10 5/10 | A 54% +115 MGM +7.1, L10 4/10
 - Pavel Zacha (1.5, 18.2, PP1): G 29% +260 MGM +0.9, L10 3/10 | P 61% -135 MGM +3.8, L10 5/10 | A 39% +150 MGM -0.7, L10 3/10
-- Morgan Geekie (1.2, 17.4, PP1): G 34% +200 MGM +0.8, L10 3/10 | P 54% -139 BOL -3.8, L10 5/10 | A 28% +180 MGM -7.7, L10 3/10
-- Elias Lindholm (1.1, 16.0, PP1): G 21% +375 BR +0.4, L10 1/10 | P 48% +120 DK +2.5, L10 4/10 | A 35% +220 DK +4.1, L10 3/10
-- JJ Peterka (2.0, 16.6, PP2): G 28% +300 MGM +2.7, L10 3/10 | P 47% +115 DK +0.2, L10 6/10 | A 23% +260 DK -5.1, L10 3/10
+- Morgan Geekie (1.2, 17.4, PP1): G 34% +200 MGM +0.8, L10 3/10 | P 54% -135 DK -3.1, L10 5/10 | A 28% +180 MGM -7.7, L10 3/10
+- Elias Lindholm (1.1, 16.0, PP1): G 21% +375 BR +0.4, L10 1/10 | P 48% +118 BOL +2.1, L10 4/10 | A 35% +220 DK +4.1, L10 3/10
+- JJ Peterka (2.0, 16.6, PP2): G 28% +300 MGM +2.7, L10 3/10 | P 47% +117 BOL +0.7, L10 6/10 | A 23% +260 DK -5.1, L10 3/10
 - Casey Mittelstadt (1.4, 13.9, PP2): G 21% +550 FD +5.9, L10 2/10 | P 46% +145 DK +5.3, L10 3/10 | A 28% +230 DK -2.8, L10 1/10
-- Marat Khusnutdinov (0.6, 13.8, no PP): G 16% +850 FD +5.1, L10 1/10 | P 38% no price, L10 3/10 | A 24% no price, L10 2/10
+- Marat Khusnutdinov (0.6, 13.8, no PP): G 16% +750 DK +3.9, L10 1/10 | P 38% +220 BOL +6.6, L10 3/10 | A 24% no price, L10 2/10
 - Fraser Minten (2.2, 15.8, PP2): G 20% +390 MGM -0.7, L10 3/10 | P 34% +130 MGM -9.9, L10 4/10 | A 20% +225 DK -11.1, L10 3/10
 - Mason Lohrei (0.9, 18.6, PP2): G 10% +1100 FD +1.3, L10 2/10 | P 32% no price, L10 6/10 | A 23% no price, L10 4/10
 - Hampus Lindholm (1.1, 20.1, no PP): G 8% +1100 FD -0.4, L10 2/10 | P 31% no price, L10 6/10 | A 25% no price, L10 4/10
 - Tanner Jeannot (0.4, 11.7, no PP): G 9% +1100 DK +0.5, L10 1/10 | P 26% no price, L10 2/10 | A 18% no price, L10 1/10
-- Mark Kastelic (1.5, 11.7, no PP): G 12% +700 DK -0.1, L10 3/10 | P 26% no price, L10 7/10 | A 16% no price, L10 5/10
+- Mark Kastelic (1.5, 11.7, no PP): G 12% +750 DK +0.7, L10 3/10 | P 26% +350 DK +3.6, L10 7/10 | A 16% no price, L10 5/10
 - Nikita Zadorov (1.3, 20.2, no PP): G 3% +1700 FD -2.8, L10 0/10 | P 25% no price, L10 2/10 | A 23% no price, L10 2/10
 - Will Borgen (0.4, 19.1, no PP): G 7% +2000 DK +2.5, L10 1/10 | P 22% no price, L10 3/10 | A 16% no price, L10 2/10
 ANA
-- Leo Carlsson (2.6, 20.1, PP1): G 34% +200 MGM +0.6, L10 4/10 | P 62% -175 BOL -1.7, L10 8/10 | A 43% +125 DK -1.0, L10 5/10
+- Leo Carlsson (2.6, 20.1, PP1): G 34% +200 MGM +0.6, L10 4/10 | P 62% -185 MGM -3.0, L10 8/10 | A 43% +125 DK -1.0, L10 5/10
 - Jackson LaCombe (1.5, 26.6, PP1): G 13% +500 DK -3.6, L10 2/10 | P 59% -135 BOL +1.9, L10 8/10 | A 52% -105 MGM +0.7, L10 6/10
 - Cutter Gauthier (3.7, 16.7, PP1): G 40% +175 MGM +3.7, L10 5/10 | P 59% -160 MGM -3.0, L10 7/10 | A 32% +155 MGM -6.9, L10 3/10
-- Beckett Sennecke (2.5, 20.9, PP1): G 27% +200 MGM -6.6, L10 3/10 | P 56% -154 BOL -4.3, L10 6/10 | A 38% +140 MGM -3.5, L10 3/10
+- Beckett Sennecke (2.5, 20.9, PP1): G 27% +200 MGM -6.6, L10 3/10 | P 56% -160 MGM -5.2, L10 6/10 | A 38% +140 MGM -3.5, L10 3/10
 - Alex Killorn (2.2, 15.8, PP2): G 19% +360 MGM -2.9, L10 3/10 | P 33% +125 MGM -11.5, L10 5/10 | A 18% +220 DK -13.5, L10 2/10
 - A.J. Greer (2.0, 12.2, no PP): G 18% +650 BR +4.2, L10 2/10 | P 31% no price, L10 4/10 | A 19% no price, L10 3/10
 - Pavel Mintyukov (0.8, 19.5, PP2): G 10% +1200 DK +2.0, L10 0/10 | P 24% no price, L10 2/10 | A 18% no price, L10 2/10
 - Drew Helleson (0.5, 15.2, no PP): G 4% +2300 FD -0.6, L10 0/10 | P 23% no price, L10 2/10 | A 20% no price, L10 2/10
-- Nikita Nesterenko (1.3, 12.1, no PP): G 10% +500 MGM -7.1, L10 2/10 | P 21% +161 BOL -17.1, L10 2/10 | A 14% +300 DK -10.6, L10 0/10
+- Nikita Nesterenko (1.3, 12.1, no PP): G 10% +500 MGM -7.1, L10 2/10 | P 21% +152 BOL -18.5, L10 2/10 | A 14% +300 DK -10.6, L10 0/10
 - Tim Washe (0.6, 15.8, PP2): G 10% +850 DK -0.6, L10 1/10 | P 21% no price, L10 2/10 | A 14% no price, L10 2/10
 - Frank Vatrano (0.9, 11.0, PP2): G 12% +450 FD -6.6, L10 2/10 | P 20% no price, L10 2/10 | A 9% no price, L10 0/10
-- Jeff Malott (1.0, 9.8, no PP): G 7% +950 DK -2.4, L10 1/10 | P 18% no price, L10 2/10 | A 11% no price, L10 1/10
+- Jeff Malott (1.0, 9.8, no PP): G 7% +1000 DK -1.9, L10 1/10 | P 18% no price, L10 2/10 | A 11% no price, L10 1/10
 
 DATA CHECKS
 Games with no prices: none
