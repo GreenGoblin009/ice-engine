@@ -1,7 +1,7 @@
 ICE ENGINE SLATE REPORT  2026-10-16
-Lineups pulled: Oct 16, 4:30 PM ET
+Lineups pulled: Oct 16, 4:46 PM ET
 Prices pulled:  Oct 16, 4:13 PM ET
-Goalies pulled: Oct 16, 4:30 PM ET
+Goalies pulled: Oct 16, 4:46 PM ET
 Times are US Eastern. Read-only: built from the same models as the board.
 
 GAMES (start, projected goals, model game total; book game totals are not pulled)
@@ -11,7 +11,7 @@ GAMES (start, projected goals, model game total; book game totals are not pulled
 GOALIES (shrunk two-season save %, raw save % and games)
 - PIT: Arturs Silovs CONFIRMED 0.892 (0.887 raw, 43 GP)
 - COL: Mackenzie Blackwood expected 0.902 (0.901 raw, 44 GP)  | also listed: Scott Wedgewood 0.916 (0.920 raw, 47 GP)
-- BOS: Michael DiPietro expected 0.905 (0.903 raw, 2 GP)  | also listed: Jeremy Swayman 0.908 (0.909 raw, 61 GP)
+- BOS: Michael DiPietro CONFIRMED 0.905 (0.903 raw, 2 GP)
 - ANA: Lukas Dostal expected 0.892 (0.889 raw, 61 GP)  | also listed: Ville Husso 0.894 (0.887 raw, 22 GP)
 
 INJURED / OUT (scratches in brackets)
@@ -168,5 +168,4 @@ Games with no prices: none
 Priced players missing from the projected lineups: none
 Unconfirmed goalies:
 - COL: Mackenzie Blackwood (expected, not confirmed)
-- BOS: Michael DiPietro (expected, not confirmed)
 - ANA: Lukas Dostal (expected, not confirmed)
