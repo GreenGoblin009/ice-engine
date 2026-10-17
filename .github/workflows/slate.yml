@@ -18,7 +18,7 @@ on:
   # Rebuild the report right after fresh lineups/goalies or fresh prices land,
   # so it never waits for the next clock time. No time gate on these runs.
   workflow_run:
-    workflows: ["Daily projected lineups", "Daily player odds"]
+    workflows: ["Daily projected lineups", "Daily player odds", "Daily player odds (SportsGameOdds)"]
     types: [completed]
 
 permissions:
