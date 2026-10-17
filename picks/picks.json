@@ -61,6 +61,21 @@
               "result": "pending"
             }
           ]
+        },
+        {
+          "id": 4,
+          "type": "Plus-money single",
+          "book": "DraftKings",
+          "status": "pending",
+          "legs": [
+            {
+              "player": "Jake DeBrusk",
+              "team": "VAN",
+              "market": "1+ pt",
+              "price": "+135",
+              "result": "pending"
+            }
+          ]
         }
       ]
     },
