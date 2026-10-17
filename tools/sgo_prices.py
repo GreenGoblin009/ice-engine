@@ -4,8 +4,8 @@ to a plain text file in the repo, so Claude can read them when building cards.
 
 Read-only toward Supabase (touches nothing there). Output lines look like
   Mitch Marner: goals+assists O0.5 FD -135 DK -130 | assists O0.5 FD +110 DK +105 | points Yes FD +140 DK +135
-statID names are kept exactly as SportsGameOdds gives them; which one is
-'goals' vs 'points' is confirmed from the probe. Key: SPORTSGAMEODDS_KEY.
+Labels: pts = 1+ point lines (goals+assists), ast = assists, goal = anytime goal
+(SportsGameOdds calls goals 'points'). Each book's OWN line is used. Key: SPORTSGAMEODDS_KEY.
 """
 import argparse, collections, datetime as dt, json, os, sys, urllib.parse, urllib.request
 from zoneinfo import ZoneInfo
@@ -50,26 +50,32 @@ def main():
             continue
         t = ev.get("teams", {})
         nm = [(t.get(s, {}).get("names", {}) or {}).get("long", "?") for s in ("away", "home")]
-        players = collections.defaultdict(dict)
+        players = collections.defaultdict(lambda: collections.defaultdict(dict))
         for oid, o in (ev.get("odds") or {}).items():
-            pid, stat = o.get("playerID"), o.get("statID")
-            if not pid or stat not in STATS or o.get("sideID") not in ("over", "yes"):
+            pid, stat, bt, side = o.get("playerID"), o.get("statID"), o.get("betTypeID"), o.get("sideID")
+            if not pid:
                 continue
             by = o.get("byBookmaker") or {}
-            line = next((by[b].get("overUnder") for b, _ in BOOKS if b in by and by[b].get("overUnder") is not None),
-                        o.get("bookOverUnder"))
-            side = "Yes" if o.get("sideID") == "yes" else f"O{line}"
-            prices = " ".join(f"{ab} {by[b]['odds']}" if b in by and by[b].get("available", True) else f"{ab} -"
-                              for b, ab in BOOKS)
-            if all(b not in by for b, _ in BOOKS):
-                continue
-            players[pid][(stat, side)] = prices
+            for b, ab in BOOKS:
+                d = by.get(b)
+                if not d or not d.get("available", True) or d.get("odds") is None:
+                    continue
+                if stat == "goals+assists" and bt == "ou" and side == "over":
+                    label = f"pts O{d.get('overUnder')}"
+                elif stat == "assists" and bt == "ou" and side == "over":
+                    label = f"ast O{d.get('overUnder')}"
+                elif stat == "points" and bt == "yn" and side == "yes":
+                    label = "goal"
+                else:
+                    continue
+                players[pid][label][ab] = d["odds"]
         if not players:
             continue
         games += 1
         lines.append(f"== {nm[0]} @ {nm[1]}  {start.astimezone(ET):%a %I:%M %p} ET ==")
         for pid in sorted(players):
-            bits = [f"{st} {sd} {pr}" for (st, sd), pr in sorted(players[pid].items())]
+            bits = [f"{lb} " + " ".join(f"{ab} {pr.get(ab, '-')}" for _, ab in BOOKS)
+                    for lb, pr in sorted(players[pid].items())]
             lines.append(f"{pretty(pid)}: " + " | ".join(bits))
         lines.append("")
     os.makedirs(os.path.dirname(a.out), exist_ok=True)

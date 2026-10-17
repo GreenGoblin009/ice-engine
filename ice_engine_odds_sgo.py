@@ -13,9 +13,8 @@ between now and the end of today (US Eastern) are asked for.
 Markets (SportsGameOdds name -> board market):
   goals+assists, over/under   -> player_points   (1+ point = over 0.5)
   assists, over/under         -> player_assists
-  --goal-stat NAME            -> player_goal_scorer_anytime, from that statID's
-                                 yes side or over 0.5. Left off until the probe
-                                 confirms which statID is goals.
+  points, yes/no, yes side    -> player_goal_scorer_anytime (SportsGameOdds calls
+                                 goals "points"; confirmed from the probe)
 
 The key comes from SPORTSGAMEODDS_KEY and is never printed.
 """
@@ -78,23 +77,25 @@ def rows_for_event(ev, day, home, away, players, pulled_at, unmatched, settled, 
             market, store_side = "player_points", "Over"
         elif stat == "assists" and bt == "ou" and side == "over":
             market, store_side = "player_assists", "Over"
-        elif goal_stat and stat == goal_stat and (bt == "yn" and side == "yes" or bt == "ou" and side == "over"):
-            market, store_side = "player_goal_scorer_anytime", "Over"
+        elif stat == goal_stat and bt == "yn" and side == "yes":
+            market, store_side = "player_goal_scorer_anytime", "Over"   # SGO names goals "points"
         else:
             continue
         for book_id, b in (o.get("byBookmaker") or {}).items():
             if book_id not in BOOKS or not b.get("available", True):
                 continue
             price = american(b.get("odds"))
-            line = b.get("overUnder", o.get("bookOverUnder"))
             if price is None:
                 continue
-            try:
-                line = float(line) if line is not None else 0.5
-            except ValueError:
-                continue
-            if market == "player_goal_scorer_anytime" and bt == "ou" and line != 0.5:
-                continue
+            if market == "player_goal_scorer_anytime":
+                line = 0.5                       # yes/no market, stored as over 0.5
+            else:
+                # Each book posts its OWN line (DraftKings 1.5 where FanDuel has 0.5).
+                # Use that book's line, never the shared one, or prices get mixed.
+                try:
+                    line = float(b.get("overUnder"))
+                except (TypeError, ValueError):
+                    continue
             nm = names[pid]
             out[(nm, market, line, store_side, BOOKS[book_id])] = {
                 "game_date": day.isoformat(), "event_id": ev["eventID"], "home": home, "away": away,
@@ -143,9 +144,16 @@ def run(day, key, use_supabase, goal_stat):
         json.dump({"pulledAt": pulled_at, "date": day.isoformat(), "odds": rows}, f, indent=2)
     print(f"Wrote daily_odds_sgo.json ({len(rows)} rows)")
     if use_supabase and rows:
-        # Upsert only: rows from other sources/books for the same players stay.
         engine.supabase_upsert("player_odds", rows, "game_date,player_name,market,line,side,book")
         print("Saved to Supabase.")
+        # SportsGameOdds is now the only source: remove every older row (any book, any
+        # earlier feed) for the games priced this run, in the markets this job writes.
+        mk = "player_points,player_assists,player_goal_scorer_anytime"
+        for h, a in sorted({(r["home"], r["away"]) for r in rows}):
+            engine.supabase_request(
+                "DELETE", f"player_odds?game_date=eq.{day.isoformat()}&home=eq.{h}&away=eq.{a}"
+                          f"&market=in.({mk})&updated_at=lt.{pulled_at}")
+        print("Removed older prices for these games.")
     base.report_names(unmatched, settled)
     if problems:
         raise base.OddsError(f"{len(problems)} problem(s):\n  - " + "\n  - ".join(problems))
@@ -154,7 +162,7 @@ def run(day, key, use_supabase, goal_stat):
 def main():
     ap = argparse.ArgumentParser(description="Save FanDuel/DraftKings NHL player props (SportsGameOdds) to Supabase.")
     ap.add_argument("--date", default="")
-    ap.add_argument("--goal-stat", default="", help="SportsGameOdds statID that is anytime goal (after the probe confirms)")
+    ap.add_argument("--goal-stat", default="points", help="SportsGameOdds statID that is goals (it calls them 'points')")
     ap.add_argument("--require-supabase", action="store_true")
     ap.add_argument("--only-at", default="", help="Eastern times for scheduled runs, e.g. '09:00,11:30'")
     a = ap.parse_args()

@@ -1,20 +1,11 @@
 name: Daily player odds
 
 on:
-  schedule:
-    # Wanted run times: 4:00 PM and 7:00 PM US Eastern, all year. The 7 PM
-    # run refreshes prices for games that haven't started; games under way
-    # are skipped and keep their 4 PM prices. It pulls points and anytime
-    # goal only (2 credits a game, not 3); assists keep their 4 PM prices.
-    # GitHub cron is UTC-only and
-    # ignores daylight saving, so each time is listed at both UTC hours it
-    # can fall on. The script works out which one is right today and the
-    # other exits within seconds. Keep one time per line: the script reads
-    # the line that fired to know which run it is.
-    - cron: "0 20 * * *"  # 4 PM EDT
-    - cron: "0 21 * * *"  # 4 PM EST
-    - cron: "0 23 * * *"  # 7 PM EDT
-    - cron: "0 0 * * *"   # 7 PM EST
+  # The Odds API runs are OFF: FanDuel and DraftKings prices now come from
+  # SportsGameOdds (odds_sgo.yml), which is free. This workflow stays for a
+  # manual run only. To bring the old schedule back, restore the cron lines:
+  #   "0 20 * * *" (4 PM EDT), "0 21 * * *" (4 PM EST),
+  #   "0 23 * * *" (7 PM EDT), "0 0 * * *" (7 PM EST)
   workflow_dispatch:      # manual run: no time gate
 
 permissions:
