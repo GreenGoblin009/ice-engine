@@ -2,12 +2,12 @@ name: Settle picks
 
 on:
   schedule:
-    # 6:00 AM Eastern, all year (listed at both UTC hours; the second run
-    # finds nothing pending and changes nothing). Late West Coast games are
-    # final by then. Run it by hand any time with the button.
-    - cron: "0 10 * * *"   # 6:00 AM EDT
-    - cron: "0 11 * * *"   # 6:00 AM EST
-    - cron: "30 4 * * *"   # 12:30 AM EDT: catches early games
+    # Every 30 minutes through the game window (about 6 PM to 4 AM Eastern,
+    # both daylight and standard time) so results land on the tab as games
+    # finish. Plus a 6 AM ET sweep for anything late. Runs with nothing
+    # pending change nothing and commit nothing.
+    - cron: "*/30 23,0-8 * * *"
+    - cron: "0 10,11 * * *"
   workflow_dispatch:
 
 permissions:
