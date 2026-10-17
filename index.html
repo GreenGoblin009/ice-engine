@@ -1171,7 +1171,6 @@ function drawPlayer(){
     <div class="flab">Opponent</div>
     <div class="chips" id="mVsC"><button class="mc ${!M.vs?'on':''}" data-v="">Any</button>${M.todayOpp?`<button class="mc ${M.vs===M.todayOpp?'on':''}" data-v="${esc(M.todayOpp)}">vs ${esc(M.todayOpp)} (tonight)</button>`:''}
       <select id="mVs" class="mini"><option value="">Other team…</option>${opps.filter(o=>o!==M.todayOpp).map(o=>`<option ${o===M.vs?'selected':''}>${o}</option>`).join('')}</select></div>
-    <div class="edgebox"><div><label style="margin:0 0 4px;">Your book's odds</label><input id="mOdds" type="number" inputmode="numeric" placeholder="-134" value="${esc(M.odds)}"></div>${edge}</div>
     ${missing?'<div class="muted small" style="margin-top:8px;">Some older games have no shot-attempt data yet — they\'re skipped.</div>':''}
     <div style="font-weight:700;font-size:14px;margin:16px 0 2px;">Gamelog</div>
     <div class="muted small" style="margin-bottom:6px;">${M.vs?`Every ${esc(M.vs)} meeting we have on file (regular season, ${h.n} games)`:'Regular season only'}</div>
@@ -1184,7 +1183,6 @@ function drawPlayer(){
   $('mVs').onchange=e=>{ M.vs=e.target.value; drawPlayer(); };
   $('mMinus').onclick=()=>{ M.line=Math.max(0.5,M.line-1); drawPlayer(); };
   $('mPlus').onclick=()=>{ M.line=M.line+1; drawPlayer(); };
-  $('mOdds').oninput=e=>{ M.odds=e.target.value; const pos=e.target.selectionStart; drawPlayer(); const n=$('mOdds'); n.focus(); try{n.setSelectionRange(pos,pos);}catch(_){} };
 }
 
 
