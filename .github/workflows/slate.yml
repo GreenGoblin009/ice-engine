@@ -15,6 +15,11 @@ on:
     - cron: "15 23 * * *"   #  7:15 PM EDT
     - cron: "15 0 * * *"    #  7:15 PM EST
   workflow_dispatch:        # manual run: no time gate
+  # Rebuild the report right after fresh lineups/goalies or fresh prices land,
+  # so it never waits for the next clock time. No time gate on these runs.
+  workflow_run:
+    workflows: ["Daily projected lineups", "Daily player odds"]
+    types: [completed]
 
 permissions:
   contents: write           # commits reports/slate_latest.txt
@@ -25,6 +30,7 @@ concurrency:
 
 jobs:
   report:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
