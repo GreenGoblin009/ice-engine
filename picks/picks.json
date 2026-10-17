@@ -1,451 +1,451 @@
 {
- "days": [
-  {
-   "date": "2026-10-17",
-   "slips": [
+  "days": [
     {
-     "id": 1,
-     "type": "Money back",
-     "book": "theScore",
-     "status": "hit",
-     "legs": [
-      {
-       "player": "Alex Tuch",
-       "team": "WSH",
-       "market": "1+ pt",
-       "price": "-120",
-       "result": "hit"
-      }
-     ]
+      "date": "2026-10-17",
+      "slips": [
+        {
+          "id": 1,
+          "type": "Money back",
+          "book": "theScore",
+          "status": "hit",
+          "legs": [
+            {
+              "player": "Alex Tuch",
+              "team": "WSH",
+              "market": "1+ pt",
+              "price": "-120",
+              "result": "hit"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "type": "Points 2-leg",
+          "book": "theScore",
+          "status": "miss",
+          "legs": [
+            {
+              "player": "Tom Wilson",
+              "team": "WSH",
+              "market": "1+ pt",
+              "price": "-110",
+              "result": "miss"
+            },
+            {
+              "player": "Shayne Gostisbehere",
+              "team": "CAR",
+              "market": "1+ pt",
+              "price": "-105",
+              "result": "hit"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "type": "Lotto 2-leg",
+          "book": "FanDuel",
+          "status": "miss",
+          "legs": [
+            {
+              "player": "Cole Hutson",
+              "team": "WSH",
+              "market": "1+ pt",
+              "price": "+150",
+              "result": "miss"
+            },
+            {
+              "player": "Brandon Hagel",
+              "team": "TBL",
+              "market": "Anytime goal",
+              "price": "+125",
+              "result": "pending"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "type": "Plus-money single",
+          "book": "DraftKings",
+          "status": "pending",
+          "legs": [
+            {
+              "player": "Jake DeBrusk",
+              "team": "VAN",
+              "market": "1+ pt",
+              "price": "+135",
+              "result": "pending"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "type": "Plus-money single",
+          "book": "theScore",
+          "status": "hit",
+          "legs": [
+            {
+              "player": "Shayne Gostisbehere",
+              "team": "CAR",
+              "market": "1+ pt",
+              "price": "+100",
+              "result": "hit"
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "type": "Money back",
+          "book": "theScore",
+          "status": "pending",
+          "legs": [
+            {
+              "player": "Evgeni Malkin",
+              "team": "PIT",
+              "market": "1+ pt",
+              "price": "-120",
+              "result": "pending"
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "type": "Points 2-leg",
+          "book": "Other",
+          "status": "pending",
+          "legs": [
+            {
+              "player": "Charlie McAvoy",
+              "team": "BOS",
+              "market": "1+ pt",
+              "price": "-115",
+              "result": "pending"
+            },
+            {
+              "player": "Zach Hyman",
+              "team": "EDM",
+              "market": "1+ pt",
+              "price": "-110",
+              "result": "pending"
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "type": "Point + goal 2-leg",
+          "book": "theScore",
+          "status": "pending",
+          "legs": [
+            {
+              "player": "Zach Benson",
+              "team": "BUF",
+              "market": "1+ pt",
+              "price": "+115",
+              "result": "pending"
+            },
+            {
+              "player": "Macklin Celebrini",
+              "team": "SJS",
+              "market": "Anytime goal",
+              "price": "+135",
+              "result": "pending"
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "type": "Goals 2-leg",
+          "book": "FanDuel",
+          "status": "pending",
+          "legs": [
+            {
+              "player": "William Nylander",
+              "team": "TOR",
+              "market": "Anytime goal",
+              "price": "+170",
+              "result": "pending"
+            },
+            {
+              "player": "Mika Zibanejad",
+              "team": "NYR",
+              "market": "Anytime goal",
+              "price": "+220",
+              "result": "pending"
+            }
+          ]
+        }
+      ]
     },
     {
-     "id": 2,
-     "type": "Points 2-leg",
-     "book": "theScore",
-     "status": "miss",
-     "legs": [
-      {
-       "player": "Tom Wilson",
-       "team": "WSH",
-       "market": "1+ pt",
-       "price": "-110",
-       "result": "miss"
-      },
-      {
-       "player": "Shayne Gostisbehere",
-       "team": "CAR",
-       "market": "1+ pt",
-       "price": "-105",
-       "result": "hit"
-      }
-     ]
+      "date": "2026-10-16",
+      "slips": [
+        {
+          "id": 1,
+          "type": "Money back",
+          "book": "FanDuel",
+          "status": "hit",
+          "legs": [
+            {
+              "player": "Evgeni Malkin",
+              "team": "PIT",
+              "market": "1+ pt",
+              "price": "-130",
+              "result": "hit"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "type": "Points 2-leg",
+          "book": "FanDuel",
+          "status": "miss",
+          "legs": [
+            {
+              "player": "Brock Nelson",
+              "team": "COL",
+              "market": "1+ pt",
+              "price": "-111",
+              "result": "hit"
+            },
+            {
+              "player": "Charlie McAvoy",
+              "team": "BOS",
+              "market": "1+ pt",
+              "price": "-130",
+              "result": "miss"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "type": "Goals 2-leg",
+          "book": "theScore",
+          "status": "miss",
+          "legs": [
+            {
+              "player": "Nathan Necas",
+              "team": "COL",
+              "market": "Anytime goal",
+              "price": "+160",
+              "result": "miss"
+            },
+            {
+              "player": "Cutter Gauthier",
+              "team": "ANA",
+              "market": "Anytime goal",
+              "price": "+150",
+              "result": "miss"
+            }
+          ]
+        }
+      ]
     },
     {
-     "id": 3,
-     "type": "Lotto 2-leg",
-     "book": "FanDuel",
-     "status": "miss",
-     "legs": [
-      {
-       "player": "Cole Hutson",
-       "team": "WSH",
-       "market": "1+ pt",
-       "price": "+150",
-       "result": "miss"
-      },
-      {
-       "player": "Brandon Hagel",
-       "team": "TBL",
-       "market": "Anytime goal",
-       "price": "+125",
-       "result": "pending"
-      }
-     ]
+      "date": "2026-10-15",
+      "slips": [
+        {
+          "id": 1,
+          "type": "Plus-money single",
+          "book": "theScore",
+          "status": "miss",
+          "legs": [
+            {
+              "player": "Shane Pinto",
+              "team": "OTT",
+              "market": "1+ pt",
+              "price": "+120",
+              "result": "miss"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "type": "Money back",
+          "book": "Fanatics",
+          "status": "hit",
+          "legs": [
+            {
+              "player": "Adam Fox",
+              "team": "NYR",
+              "market": "1+ pt",
+              "price": "-130",
+              "result": "hit"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "type": "Mid-lotto",
+          "book": "Fanatics",
+          "status": "miss",
+          "legs": [
+            {
+              "player": "Jack Hughes",
+              "team": "NJD",
+              "market": "1+ ast",
+              "price": "",
+              "result": "hit"
+            },
+            {
+              "player": "William Nylander",
+              "team": "TOR",
+              "market": "1+ ast",
+              "price": "",
+              "result": "miss"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "type": "Value points",
+          "book": "theScore",
+          "status": "miss",
+          "legs": [
+            {
+              "player": "Jared McCann",
+              "team": "SEA",
+              "market": "1+ pt",
+              "price": "-105",
+              "result": "hit"
+            },
+            {
+              "player": "Josh Norris",
+              "team": "BUF",
+              "market": "1+ pt",
+              "price": "+125",
+              "result": "miss"
+            },
+            {
+              "player": "Viktor Arvidsson",
+              "team": "DET",
+              "market": "1+ pt",
+              "price": "-150",
+              "result": "miss"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "type": "Goals 2-leg",
+          "book": "Fanatics",
+          "status": "miss",
+          "legs": [
+            {
+              "player": "Matt Boldy",
+              "team": "MIN",
+              "market": "Anytime goal",
+              "price": "",
+              "result": "hit"
+            },
+            {
+              "player": "Macklin Celebrini",
+              "team": "SJS",
+              "market": "Anytime goal",
+              "price": "",
+              "result": "miss"
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "type": "Favorites 2-leg",
+          "book": "Fanatics",
+          "status": "miss",
+          "legs": [
+            {
+              "player": "Robert Thomas",
+              "team": "STL",
+              "market": "1+ pt",
+              "price": "",
+              "result": "hit"
+            },
+            {
+              "player": "Clayton Keller",
+              "team": "UTA",
+              "market": "1+ ast",
+              "price": "",
+              "result": "miss"
+            }
+          ]
+        }
+      ]
     },
     {
-     "id": 4,
-     "type": "Plus-money single",
-     "book": "DraftKings",
-     "status": "pending",
-     "legs": [
-      {
-       "player": "Jake DeBrusk",
-       "team": "VAN",
-       "market": "1+ pt",
-       "price": "+135",
-       "result": "pending"
-      }
-     ]
-    },
-    {
-     "id": 5,
-     "type": "Plus-money single",
-     "book": "theScore",
-     "status": "hit",
-     "legs": [
-      {
-       "player": "Shayne Gostisbehere",
-       "team": "CAR",
-       "market": "1+ pt",
-       "price": "+100",
-       "result": "hit"
-      }
-     ]
-    },
-    {
-     "id": "6",
-     "type": "Money back",
-     "book": "theScore",
-     "status": "pending",
-     "legs": [
-      {
-       "player": "Evgeni Malkin",
-       "team": "PIT",
-       "market": "1+ pt",
-       "price": "-120",
-       "result": "pending"
-      }
-     ]
-    },
-    {
-     "id": "7",
-     "type": "Points 2-leg",
-     "book": "Other",
-     "status": "pending",
-     "legs": [
-      {
-       "player": "Charlie McAvoy",
-       "team": "BOS",
-       "market": "1+ pt",
-       "price": "-115",
-       "result": "pending"
-      },
-      {
-       "player": "Zach Hyman",
-       "team": "EDM",
-       "market": "1+ pt",
-       "price": "-110",
-       "result": "pending"
-      }
-     ]
-    },
-    {
-     "id": "8",
-     "type": "Point + goal 2-leg",
-     "book": "theScore",
-     "status": "pending",
-     "legs": [
-      {
-       "player": "Zach Benson",
-       "team": "BUF",
-       "market": "1+ pt",
-       "price": "+115",
-       "result": "pending"
-      },
-      {
-       "player": "Macklin Celebrini",
-       "team": "SJS",
-       "market": "Anytime goal",
-       "price": "+135",
-       "result": "pending"
-      }
-     ]
-    },
-    {
-     "id": "9",
-     "type": "Goals 2-leg",
-     "book": "FanDuel",
-     "status": "pending",
-     "legs": [
-      {
-       "player": "William Nylander",
-       "team": "TOR",
-       "market": "Anytime goal",
-       "price": "+170",
-       "result": "pending"
-      },
-      {
-       "player": "Mika Zibanejad",
-       "team": "NYR",
-       "market": "Anytime goal",
-       "price": "+220",
-       "result": "pending"
-      }
-     ]
+      "date": "2026-10-14",
+      "slips": [
+        {
+          "id": 1,
+          "type": "Money back",
+          "book": "DraftKings",
+          "status": "hit",
+          "legs": [
+            {
+              "player": "Alex Tuch",
+              "team": "WSH",
+              "market": "1+ pt",
+              "price": "-135",
+              "result": "hit"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "type": "Mid-lotto",
+          "book": "theScore",
+          "status": "miss",
+          "legs": [
+            {
+              "player": "Nick Suzuki",
+              "team": "MTL",
+              "market": "1+ ast",
+              "price": "-135",
+              "result": "miss"
+            },
+            {
+              "player": "Brock Nelson",
+              "team": "COL",
+              "market": "1+ pt",
+              "price": "",
+              "result": "hit"
+            },
+            {
+              "player": "Mikko Rantanen",
+              "team": "DAL",
+              "market": "1+ ast",
+              "price": "",
+              "result": "hit"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "type": "Goals lotto",
+          "book": "Fanatics",
+          "status": "miss",
+          "legs": [
+            {
+              "player": "Cole Caufield",
+              "team": "MTL",
+              "market": "Anytime goal",
+              "price": "+125",
+              "result": "miss"
+            },
+            {
+              "player": "Tom Wilson",
+              "team": "WSH",
+              "market": "Anytime goal",
+              "price": "+210",
+              "result": "miss"
+            },
+            {
+              "player": "Nathan Necas",
+              "team": "COL",
+              "market": "Anytime goal",
+              "price": "+175",
+              "result": "miss"
+            }
+          ]
+        }
+      ]
     }
-   ]
-  },
-  {
-   "date": "2026-10-16",
-   "slips": [
-    {
-     "id": 1,
-     "type": "Money back",
-     "book": "FanDuel",
-     "status": "hit",
-     "legs": [
-      {
-       "player": "Evgeni Malkin",
-       "team": "PIT",
-       "market": "1+ pt",
-       "price": "-130",
-       "result": "hit"
-      }
-     ]
-    },
-    {
-     "id": 2,
-     "type": "Points 2-leg",
-     "book": "FanDuel",
-     "status": "miss",
-     "legs": [
-      {
-       "player": "Brock Nelson",
-       "team": "COL",
-       "market": "1+ pt",
-       "price": "-111",
-       "result": "hit"
-      },
-      {
-       "player": "Charlie McAvoy",
-       "team": "BOS",
-       "market": "1+ pt",
-       "price": "-130",
-       "result": "miss"
-      }
-     ]
-    },
-    {
-     "id": 3,
-     "type": "Goals 2-leg",
-     "book": "theScore",
-     "status": "miss",
-     "legs": [
-      {
-       "player": "Nathan Necas",
-       "team": "COL",
-       "market": "Anytime goal",
-       "price": "+160",
-       "result": "miss"
-      },
-      {
-       "player": "Cutter Gauthier",
-       "team": "ANA",
-       "market": "Anytime goal",
-       "price": "+150",
-       "result": "miss"
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "date": "2026-10-15",
-   "slips": [
-    {
-     "id": 1,
-     "type": "Plus-money single",
-     "book": "theScore",
-     "status": "miss",
-     "legs": [
-      {
-       "player": "Shane Pinto",
-       "team": "OTT",
-       "market": "1+ pt",
-       "price": "+120",
-       "result": "miss"
-      }
-     ]
-    },
-    {
-     "id": 2,
-     "type": "Money back",
-     "book": "Fanatics",
-     "status": "hit",
-     "legs": [
-      {
-       "player": "Adam Fox",
-       "team": "NYR",
-       "market": "1+ pt",
-       "price": "-130",
-       "result": "hit"
-      }
-     ]
-    },
-    {
-     "id": 3,
-     "type": "Mid-lotto",
-     "book": "Fanatics",
-     "status": "miss",
-     "legs": [
-      {
-       "player": "Jack Hughes",
-       "team": "NJD",
-       "market": "1+ ast",
-       "price": "",
-       "result": "hit"
-      },
-      {
-       "player": "William Nylander",
-       "team": "TOR",
-       "market": "1+ ast",
-       "price": "",
-       "result": "miss"
-      }
-     ]
-    },
-    {
-     "id": 4,
-     "type": "Value points",
-     "book": "theScore",
-     "status": "miss",
-     "legs": [
-      {
-       "player": "Jared McCann",
-       "team": "SEA",
-       "market": "1+ pt",
-       "price": "-105",
-       "result": "hit"
-      },
-      {
-       "player": "Josh Norris",
-       "team": "BUF",
-       "market": "1+ pt",
-       "price": "+125",
-       "result": "miss"
-      },
-      {
-       "player": "Viktor Arvidsson",
-       "team": "DET",
-       "market": "1+ pt",
-       "price": "-150",
-       "result": "miss"
-      }
-     ]
-    },
-    {
-     "id": 5,
-     "type": "Goals 2-leg",
-     "book": "Fanatics",
-     "status": "miss",
-     "legs": [
-      {
-       "player": "Matt Boldy",
-       "team": "MIN",
-       "market": "Anytime goal",
-       "price": "",
-       "result": "hit"
-      },
-      {
-       "player": "Macklin Celebrini",
-       "team": "SJS",
-       "market": "Anytime goal",
-       "price": "",
-       "result": "miss"
-      }
-     ]
-    },
-    {
-     "id": 6,
-     "type": "Favorites 2-leg",
-     "book": "Fanatics",
-     "status": "miss",
-     "legs": [
-      {
-       "player": "Robert Thomas",
-       "team": "STL",
-       "market": "1+ pt",
-       "price": "",
-       "result": "hit"
-      },
-      {
-       "player": "Clayton Keller",
-       "team": "UTA",
-       "market": "1+ ast",
-       "price": "",
-       "result": "miss"
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "date": "2026-10-14",
-   "slips": [
-    {
-     "id": 1,
-     "type": "Money back",
-     "book": "DraftKings",
-     "status": "hit",
-     "legs": [
-      {
-       "player": "Alex Tuch",
-       "team": "WSH",
-       "market": "1+ pt",
-       "price": "-135",
-       "result": "hit"
-      }
-     ]
-    },
-    {
-     "id": 2,
-     "type": "Mid-lotto",
-     "book": "theScore",
-     "status": "miss",
-     "legs": [
-      {
-       "player": "Nick Suzuki",
-       "team": "MTL",
-       "market": "1+ ast",
-       "price": "-135",
-       "result": "miss"
-      },
-      {
-       "player": "Brock Nelson",
-       "team": "COL",
-       "market": "1+ pt",
-       "price": "",
-       "result": "hit"
-      },
-      {
-       "player": "Mikko Rantanen",
-       "team": "DAL",
-       "market": "1+ ast",
-       "price": "",
-       "result": "hit"
-      }
-     ]
-    },
-    {
-     "id": 3,
-     "type": "Goals lotto",
-     "book": "Fanatics",
-     "status": "miss",
-     "legs": [
-      {
-       "player": "Cole Caufield",
-       "team": "MTL",
-       "market": "Anytime goal",
-       "price": "+125",
-       "result": "miss"
-      },
-      {
-       "player": "Tom Wilson",
-       "team": "WSH",
-       "market": "Anytime goal",
-       "price": "+210",
-       "result": "miss"
-      },
-      {
-       "player": "Nathan Necas",
-       "team": "COL",
-       "market": "Anytime goal",
-       "price": "+175",
-       "result": "miss"
-      }
-     ]
-    }
-   ]
-  }
- ]
+  ]
 }
