@@ -36,7 +36,7 @@
               "team": "CAR",
               "market": "1+ pt",
               "price": "-105",
-              "result": "pending"
+              "result": "hit"
             }
           ]
         },
@@ -81,14 +81,14 @@
           "id": 5,
           "type": "Plus-money single",
           "book": "theScore",
-          "status": "pending",
+          "status": "hit",
           "legs": [
             {
               "player": "Shayne Gostisbehere",
               "team": "CAR",
               "market": "1+ pt",
               "price": "+100",
-              "result": "pending"
+              "result": "hit"
             }
           ]
         }
