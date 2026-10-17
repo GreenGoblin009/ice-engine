@@ -7,14 +7,14 @@
           "id": 1,
           "type": "Money back",
           "book": "theScore",
-          "status": "pending",
+          "status": "hit",
           "legs": [
             {
               "player": "Alex Tuch",
               "team": "WSH",
               "market": "1+ pt",
               "price": "-120",
-              "result": "pending"
+              "result": "hit"
             }
           ]
         },
