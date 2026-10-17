@@ -22,14 +22,14 @@
           "id": 2,
           "type": "Points 2-leg",
           "book": "theScore",
-          "status": "pending",
+          "status": "miss",
           "legs": [
             {
               "player": "Tom Wilson",
               "team": "WSH",
               "market": "1+ pt",
               "price": "-110",
-              "result": "pending"
+              "result": "miss"
             },
             {
               "player": "Shayne Gostisbehere",
@@ -44,14 +44,14 @@
           "id": 3,
           "type": "Lotto 2-leg",
           "book": "FanDuel",
-          "status": "pending",
+          "status": "miss",
           "legs": [
             {
               "player": "Cole Hutson",
               "team": "WSH",
               "market": "1+ pt",
               "price": "+150",
-              "result": "pending"
+              "result": "miss"
             },
             {
               "player": "Brandon Hagel",
