@@ -1,6 +1,70 @@
 {
   "days": [
     {
+      "date": "2026-10-17",
+      "slips": [
+        {
+          "id": 1,
+          "type": "Money back",
+          "book": "",
+          "status": "pending",
+          "legs": [
+            {
+              "player": "Alex Tuch",
+              "team": "WSH",
+              "market": "1+ pt",
+              "price": "-120",
+              "result": "pending"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "type": "Points 2-leg",
+          "book": "",
+          "status": "pending",
+          "legs": [
+            {
+              "player": "Tom Wilson",
+              "team": "WSH",
+              "market": "1+ pt",
+              "price": "-110",
+              "result": "pending"
+            },
+            {
+              "player": "Shayne Gostisbehere",
+              "team": "CAR",
+              "market": "1+ pt",
+              "price": "-105",
+              "result": "pending"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "type": "Lotto 2-leg",
+          "book": "FanDuel",
+          "status": "pending",
+          "legs": [
+            {
+              "player": "Cole Hutson",
+              "team": "WSH",
+              "market": "1+ pt",
+              "price": "+150",
+              "result": "pending"
+            },
+            {
+              "player": "Brandon Hagel",
+              "team": "TBL",
+              "market": "Anytime goal",
+              "price": "+125",
+              "result": "pending"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "date": "2026-10-16",
       "slips": [
         {
