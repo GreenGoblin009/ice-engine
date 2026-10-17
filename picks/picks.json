@@ -257,6 +257,84 @@
           ]
         }
       ]
+    },
+    {
+      "date": "2026-10-14",
+      "slips": [
+        {
+          "id": 1,
+          "type": "Money back",
+          "book": "DraftKings",
+          "status": "hit",
+          "legs": [
+            {
+              "player": "Alex Tuch",
+              "team": "WSH",
+              "market": "1+ pt",
+              "price": "-135",
+              "result": "hit"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "type": "Mid-lotto",
+          "book": "theScore",
+          "status": "miss",
+          "legs": [
+            {
+              "player": "Nick Suzuki",
+              "team": "MTL",
+              "market": "1+ ast",
+              "price": "-135",
+              "result": "miss"
+            },
+            {
+              "player": "Brock Nelson",
+              "team": "COL",
+              "market": "1+ pt",
+              "price": "",
+              "result": "hit"
+            },
+            {
+              "player": "Mikko Rantanen",
+              "team": "DAL",
+              "market": "1+ ast",
+              "price": "",
+              "result": "hit"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "type": "Goals lotto",
+          "book": "Fanatics",
+          "status": "miss",
+          "legs": [
+            {
+              "player": "Cole Caufield",
+              "team": "MTL",
+              "market": "Anytime goal",
+              "price": "+125",
+              "result": "miss"
+            },
+            {
+              "player": "Tom Wilson",
+              "team": "WSH",
+              "market": "Anytime goal",
+              "price": "+210",
+              "result": "miss"
+            },
+            {
+              "player": "Nathan Necas",
+              "team": "COL",
+              "market": "Anytime goal",
+              "price": "+175",
+              "result": "miss"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
