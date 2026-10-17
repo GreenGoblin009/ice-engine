@@ -47,12 +47,22 @@ for stat, c in sorted(by_stat_book.items()):
 print("\nAll bookmakers on player props:", ", ".join(f"{b}={n}" for b, n in books_all.most_common()))
 for want in ("fanduel", "draftkings", "thescore", "fanatics"):
     print(f"  {want}: {'YES' if books_all.get(want) else 'not seen'} ({books_all.get(want, 0)} lines)")
-# one sample so the response shape is visible
-for ev in events:
-    for oid, o in (ev.get("odds") or {}).items():
-        if o.get("playerID") and o.get("byBookmaker"):
-            sample = {k: o.get(k) for k in ("oddID", "statID", "betTypeID", "sideID", "playerID", "bookOdds", "bookOverUnder")}
-            sample["byBookmaker"] = {b: {k: v for k, v in d.items() if k in ("odds", "available", "overUnder")}
-                                     for b, d in list(o["byBookmaker"].items())[:5]}
-            print("\nSample:", json.dumps(sample)[:900])
-            sys.exit(0)
+# Market meaning check: for the first game, show a few players' lines for the
+# stats we care about, with each book's price and line, so we can confirm which
+# statID is goals, which is points (G+A) and which is assists.
+ev = events[0] if events else {}
+print("\nMARKET CHECK (first game):")
+shown = collections.Counter()
+for oid, o in (ev.get("odds") or {}).items():
+    stat = o.get("statID")
+    if not o.get("playerID") or stat not in ("points", "goals+assists", "assists", "goals"):
+        continue
+    key = (stat, o.get("betTypeID"), o.get("sideID"))
+    if shown[key] >= 2:
+        continue
+    shown[key] += 1
+    row = {b: (d.get("odds"), d.get("overUnder")) for b, d in (o.get("byBookmaker") or {}).items()
+           if b in ("fanduel", "draftkings")}
+    print(f"  {oid} | line={o.get('bookOverUnder')} | {row}")
+print("stat/bet/side combos seen:", sorted({(o.get('statID'), o.get('betTypeID'), o.get('sideID'))
+      for o in (ev.get('odds') or {}).values() if o.get('playerID')}))
