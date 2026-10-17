@@ -53,8 +53,8 @@ def main():
         players = collections.defaultdict(lambda: collections.defaultdict(dict))
         for oid, o in (ev.get("odds") or {}).items():
             pid, stat, bt, side = o.get("playerID"), o.get("statID"), o.get("betTypeID"), o.get("sideID")
-            if not pid:
-                continue
+            if not pid or o.get("periodID", "game") != "game" or "-game-" not in oid:
+                continue   # full-game props only, never 1st/2nd-period ones
             by = o.get("byBookmaker") or {}
             for b, ab in BOOKS:
                 d = by.get(b)

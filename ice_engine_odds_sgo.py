@@ -69,9 +69,13 @@ def rows_for_event(ev, day, home, away, players, pulled_at, unmatched, settled, 
             claimed.add(mid)
         if note:
             (unmatched if mid is None else settled)[f"{nm} ({away} at {home})"] = note
-    for o in (ev.get("odds") or {}).values():
+    for oid, o in (ev.get("odds") or {}).items():
         pid, stat, bt, side = o.get("playerID"), o.get("statID"), o.get("betTypeID"), o.get("sideID")
         if not pid:
+            continue
+        # Full-game props only. SportsGameOdds also lists 1st/2nd/3rd-period props
+        # (oddIDs ending "-1p-", "-2p-", ...); those must never overwrite game prices.
+        if o.get("periodID", "game") != "game" or "-game-" not in oid:
             continue
         if stat == "goals+assists" and bt == "ou" and side == "over":
             market, store_side = "player_points", "Over"
