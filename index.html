@@ -920,7 +920,7 @@ async function renderLeaders(){
     const oppT=L.vs==='opp'?(oppOf(x.team).replace(/^(vs|@) /,'')):'';
     const win=filterRows(logs,{window:L.window,split:L.split,vs:oppT});
     const h=hitStats(win,L.stat,L.line);
-    const l5r=filterRows(logs,{window:'All-time',split:L.split,vs:oppT}).filter(r=>oppT||r.season===CUR).slice(0,10).reverse().map(r=>({v:statVal(r,L.stat),d:r.game_date,old:r.season!==CUR})).filter(o=>o.v!=null); const l5=l5r.map(o=>o.v);
+    const l5r=filterRows(logs,{window:'All-time',split:L.split,vs:oppT}).filter(r=>oppT||r.season===CUR).slice(0,L.window==='Last 5'?5:10).reverse().map(r=>({v:statVal(r,L.stat),d:r.game_date,old:r.season!==CUR})).filter(o=>o.v!=null); const l5=l5r.map(o=>o.v);
     return {x,h,l5,l5r,l5hits:l5.slice(-5).filter(v=>v>L.line).length,pr:best.get(x.player_id),prof:scoreProfile(logs)};
   }).filter(r=>r.h.n>=(L.vs==='opp'?1:3));
   const key={rate:r=>r.h.pct*1000+r.h.n/1000,avg:r=>r.h.avg,last5:r=>r.l5hits*1000+r.h.pct};
@@ -931,7 +931,7 @@ async function renderLeaders(){
         <div class="pmeta">${esc(r.x.team)} ${esc(oppOf(r.x.team))} · avg ${r.h.avg.toFixed(2)}${r.pr?` · <b style="color:var(--text)">${fmtOdds(r.pr.price)}</b> ${esc(bookShort(r.pr.book))}`:''}</div>
         ${profStrip(r.prof)}</div>
       <div><div class="pbig" style="color:${r.h.pct>=0.5?'var(--green)':'var(--text)'}">${Math.round(r.h.pct*100)}%</div><div class="psub">${r.h.over}/${r.h.n} · o${L.line} ${esc(L.stat)}</div></div><div class="dots" title="This season, oldest to newest">${r.l5r.map((o,i)=>{ const dt=o.d.slice(5).replace('-','/').replace(/^0/,'').replace(/\/0/,'/'); return (i>0&&o.old&&!r.l5r[i-1].old?'<div class="sep"></div>':'')+`<div class="g ${o.v>L.line?'h':'m'}${o.old?' old':''}"><b>${o.v}</b><span>${dt}</span></div>`; }).join('')}${r.l5r.some(o=>o.old)?'<div class="yr">dim = earlier season</div>':''}</div></div>`).join(''):'<div class="empty">No players match.</div>';
-  const note=`<div class="muted small" style="margin-bottom:10px;">Everyone in today's projected lineups. Regular season only. Boxes are this season's last 10 regular-season games (no preseason; with Head to head they are the last 10 meetings with tonight's opponent), oldest on the left, newest on the right, with the stat and date. Green = went over. The five boxes under each name: SCORES = how often he scores (this and last season), SHOOT % = share of his shots that go in, SHOTS/G and ATT/G = shots on goal and attempts per game, GOALS L10 = goals in his last 10. SNIPER = scores a lot on few shots; VOLUME = 3+ shots a game. Tap a player for the full game log.${L.team==='ALL'&&total>50?` Showing the top 50 of ${total}.`:''}</div>`;
+  const note=`<div class="muted small" style="margin-bottom:10px;">Everyone in today's projected lineups. Regular season only. Boxes are this season's last 10 regular-season games, or just the last 5 when the timeframe is Last 5 (no preseason; with Head to head they are the last games against tonight's opponent), oldest on the left, newest on the right, with the stat and date. Green = went over. The five boxes under each name: SCORES = how often he scores (this and last season), SHOOT % = share of his shots that go in, SHOTS/G and ATT/G = shots on goal and attempts per game, GOALS L10 = goals in his last 10. SNIPER = scores a lot on few shots; VOLUME = 3+ shots a game. Tap a player for the full game log.${L.team==='ALL'&&total>50?` Showing the top 50 of ${total}.`:''}</div>`;
   $('view').innerHTML=controls+note+list; wire();
 }
 
@@ -1258,7 +1258,6 @@ function drawTeam(){
     <div class="flab">Opponent</div>
     <div class="chips" id="tVsC"><button class="mc ${!T.vs?'on':''}" data-v="">Any</button>${T.todayOpp?`<button class="mc ${T.vs===T.todayOpp?'on':''}" data-v="${esc(T.todayOpp)}">vs ${esc(T.todayOpp)} (tonight)</button>`:''}
       <select id="tVs" class="mini"><option value="">Other team…</option>${opps.filter(o=>o!==T.todayOpp).map(o=>`<option ${o===T.vs?'selected':''}>${o}</option>`).join('')}</select></div>
-    <div class="edgebox"><div><label style="margin:0 0 4px;">Your book's odds</label><input id="tOdds" type="number" inputmode="numeric" placeholder="-134" value="${esc(T.odds)}"></div>${edge}</div>
     <div style="font-weight:700;font-size:14px;margin:16px 0 2px;">Gamelog</div>
     <div class="muted small" style="margin-bottom:6px;">${T.vs?`Every ${esc(T.vs)} meeting we have on file (regular season, ${n} games)`:'Regular season only. Shootout goals are not counted in team or game totals.'}</div>
     <div style="overflow-x:auto;"><table class="gl"><thead><tr><th>Date</th><th>Vs</th><th>Score</th><th style="text-align:right">${colHead}</th></tr></thead><tbody>${glRows}</tbody></table></div>`;
@@ -1269,7 +1268,6 @@ function drawTeam(){
   document.querySelectorAll('#tVsC .mc').forEach(b=>b.onclick=()=>{ T.vs=b.dataset.v; drawTeam(); });
   $('tVs').onchange=e=>{ T.vs=e.target.value; drawTeam(); };
   if(!ml){ $('tMinus').onclick=()=>{ T.line=Math.max(0.5,T.line-1); drawTeam(); }; $('tPlus').onclick=()=>{ T.line=T.line+1; drawTeam(); }; }
-  $('tOdds').oninput=e=>{ T.odds=e.target.value; const pos=e.target.selectionStart; drawTeam(); const q=$('tOdds'); q.focus(); try{q.setSelectionRange(pos,pos);}catch(_){} };
 }
 
 /* ============ WIRING ============ */
