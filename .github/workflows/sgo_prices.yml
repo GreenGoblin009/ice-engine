@@ -1,0 +1,43 @@
+name: SportsGameOdds prices
+
+on:
+  schedule:
+    # Noon and 4:45 PM Eastern (each at both UTC hours; the off-season-hour
+    # twin is harmless, it just refreshes the file once more).
+    - cron: "0 16 * * *"
+    - cron: "45 20 * * *"
+    - cron: "45 21 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sgo-prices
+  cancel-in-progress: false
+
+jobs:
+  prices:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Pull FanDuel and DraftKings prices
+        env:
+          SPORTSGAMEODDS_KEY: ${{ secrets.SPORTSGAMEODDS_KEY }}
+        run: python tools/sgo_prices.py
+      - name: Commit if it changed
+        run: |
+          git add reports/sgo_prices.txt
+          if git diff --cached --quiet; then echo "No change."; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898341+github-actions[bot]@users.noreply.github.com"
+          git commit -m "SportsGameOdds prices $(TZ=America/New_York date '+%Y-%m-%d %H:%M') ET"
+          for attempt in 1 2 3; do
+            git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            sleep $((attempt * 10))
+          done
+          exit 1
