@@ -169,7 +169,7 @@ table.gl td{padding:5px 8px 5px 0; border-top:1px solid var(--line);}
 .gbar-top{display:flex; align-items:center; gap:6px; margin-bottom:7px;}
 .gbar-top .gt{font-size:12px; font-weight:600; color:var(--muted); flex:1; white-space:nowrap;}
 .gbar-top .gt b{color:var(--text);}
-.gbar-top select{width:auto; max-width:128px; padding:5px 6px; font-size:12px; border-radius:6px;}
+.gbar-top select{width:auto; max-width:104px; padding:5px 6px; font-size:12px; border-radius:6px;}
 .gbar-top button{font:inherit; font-size:12px; font-weight:600; padding:5px 8px; border-radius:6px; border:1px solid var(--line); background:var(--card2); color:var(--muted); cursor:pointer; white-space:nowrap;}
 .gchips{display:flex; flex-wrap:nowrap; gap:6px; overflow-x:auto; -webkit-overflow-scrolling:touch; scrollbar-width:none; padding-bottom:1px;}
 .gchips::-webkit-scrollbar{display:none;}
@@ -594,7 +594,7 @@ function renderGameBar(){
   const short=iso=>fmtTime(iso).replace(' ET','');
   bar.innerHTML=`<div class="gbar-top"><span class="gt">Games <b>${shown}/${gs.length}</b></span>
     <select id="gCut" aria-label="Hide games that start before"><option value="">Hide before…</option><option value="started" ${S.cutoff==='started'?'selected':''}>Hide started</option>${hrs.map(([h,t])=>`<option value="${h}" ${String(h)===S.cutoff?'selected':''}>Before ${t}</option>`).join('')}</select>
-    <button id="gAll">Show all</button></div>
+    <button id="gAll">Show all</button><button id="gNone">Show none</button></div>
     <div class="gchips">${gs.map(g=>`<button class="gchip ${S.hide.has(g.id)?'off':''}" data-id="${esc(g.id)}"><span>${esc(g.away)} @ ${esc(g.home)}</span><small>${esc(short(g.start_time_utc))}</small></button>`).join('')}</div>`;
   bar.querySelectorAll('.gchip').forEach(b=>b.onclick=()=>{
     const id=b.dataset.id; const g=gs.find(x=>String(x.id)===id); if(!g) return;
@@ -608,6 +608,7 @@ function renderGameBar(){
     saveHide(); applyGameFilter(); renderGameBar(); render();
   };
   $('gAll').onclick=()=>{ S.hide=new Set(); S.cutoff=''; saveHide(); applyGameFilter(); renderGameBar(); render(); };
+  $('gNone').onclick=()=>{ S.hide=new Set(gs.map(g=>g.id)); S.cutoff=''; saveHide(); applyGameFilter(); renderGameBar(); render(); };
   const strip=bar.querySelector('.gchips'), first=strip.querySelector('.gchip:not(.off)');
   if(first) strip.scrollLeft=Math.max(0,first.offsetLeft-strip.offsetLeft-2);
 }
