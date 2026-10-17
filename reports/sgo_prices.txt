@@ -1,514 +1,510 @@
-SPORTSGAMEODDS PRICES (FanDuel, DraftKings)  pulled Oct 17 10:52 AM ET
+SPORTSGAMEODDS PRICES (FanDuel, DraftKings)  pulled Oct 17 12:17 PM ET
 Over/Yes sides only. FD/DK = American odds; '-' = book not offering.
 
 == New Jersey Devils @ Washington Capitals  Sat 01:00 PM ET ==
-Alex Ovechkin: assists O0.5 FD - DK +750 | assists Yes FD - DK +750 | goals+assists O0.5 FD -122 DK -110 | goals+assists Yes FD -122 DK -110 | points O1.5 FD +1600 DK +1900 | points Yes FD +650 DK -
-Alex Tuch: assists O0.5 FD - DK +650 | assists Yes FD - DK +650 | goals+assists O0.5 FD -128 DK -125 | goals+assists Yes FD -128 DK -125 | points O0.5 FD +210 DK +1800 | points Yes FD +600 DK -
-Aliaksei Protas: assists O0.5 FD - DK +1000 | assists Yes FD - DK +1000 | goals+assists O0.5 FD - DK +600 | goals+assists Yes FD - DK +600 | points O1.5 FD +4000 DK +4500 | points Yes FD +1200 DK -
-Amadeus Lombardi: points O1.5 FD +8000 DK +9000 | points Yes FD +1700 DK -
-Anthony Beauvillier: points O1.5 FD +8000 DK +8000 | points Yes FD +1600 DK -
-Anthony Mantha: points O1.5 FD +4500 DK +4000 | points Yes FD +1000 DK -
-Arseny Gritsyuk: assists O0.5 FD - DK +950 | assists Yes FD - DK +950 | goals+assists O0.5 FD +460 DK - | goals+assists Yes FD +460 DK - | points O1.5 FD +4000 DK +4000 | points Yes FD +1100 DK -
-Boone Jenner: points O1.5 FD +5500 DK +6500 | points Yes FD +1200 DK -
-Brett Pesce: points O1.5 FD - DK - | points Yes FD - DK -
-Cody Glass: points O1.5 FD +8000 DK +7500 | points Yes FD +1500 DK -
-Cole Hutson: assists O0.5 FD - DK +700 | assists Yes FD - DK +700 | goals+assists O0.5 FD +142 DK +145 | goals+assists Yes FD +142 DK +145 | points O1.5 FD - DK - | points Yes FD +2000 DK -
-Dawson Mercer: points O1.5 FD +3500 DK +3500 | points Yes FD +1000 DK -
-Declan Chisholm: points O1.5 FD - DK - | points Yes FD +3000 DK -
-Dougie Hamilton: assists O0.5 FD - DK +700 | assists Yes FD - DK +700 | goals+assists O0.5 FD +415 DK - | goals+assists Yes FD +415 DK - | points O1.5 FD +10000 DK +7500 | points Yes FD +1700 DK -
-Dylan Strome: assists O0.5 FD - DK +500 | assists Yes FD - DK +500 | goals+assists O0.5 FD -128 DK -130 | goals+assists Yes FD -128 DK -130 | points O0.5 FD +290 DK +2500 | points Yes FD +900 DK -
-Ethen Frank: points O0.5 FD +700 DK +800 | points Yes FD +1600 DK -
-Evan Rodrigues: assists O0.5 FD - DK +1000 | assists Yes FD - DK +1000 | goals+assists O0.5 FD +500 DK - | goals+assists Yes FD +500 DK - | points O1.5 FD +4000 DK +4500 | points Yes FD +1200 DK -
-Ilya Protas: assists O0.5 FD - DK +1000 | assists Yes FD - DK +1000 | goals+assists O0.5 FD +410 DK - | goals+assists Yes FD +410 DK - | points O0.5 FD +380 DK +425 | points Yes FD +1000 DK -
-Ivan Miroshnichenko: points O1.5 FD +6500 DK +7000 | points Yes FD +1300 DK -
-Jack Hughes: assists O0.5 FD - DK +390 | assists Yes FD - DK +390 | goals+assists O0.5 FD -230 DK -210 | goals+assists Yes FD -230 DK -210 | points O0.5 FD +180 DK +1600 | points Yes FD +550 DK -
-Jakob Chychrun: assists O0.5 FD - DK +450 | assists Yes FD - DK +450 | goals+assists O0.5 FD -142 DK -135 | goals+assists Yes FD -142 DK -135 | points O1.5 FD +3000 DK +3500 | points Yes FD +1000 DK -
-Jesper Boqvist: points O1.5 FD +10000 DK +10000 | points Yes FD +2000 DK -
-Jesper Bratt: assists O0.5 FD - DK +450 | assists Yes FD - DK +450 | goals+assists O0.5 FD -150 DK -155 | goals+assists Yes FD -150 DK -155 | points O0.5 FD +330 DK +2500 | points Yes FD +1000 DK -
-Johnathan Kovacevic: points O1.5 FD - DK - | points Yes FD - DK -
-Jonas Siegenthaler: points O1.5 FD - DK - | points Yes FD - DK -
-Jordan Kyrou: assists O0.5 FD - DK +700 | assists Yes FD - DK +700 | goals+assists O0.5 FD +360 DK - | goals+assists Yes FD +360 DK - | points O0.5 FD +320 DK +310 | points Yes FD +900 DK -
-Luke Hughes: assists O0.5 FD - DK +500 | assists Yes FD - DK +500 | goals+assists O0.5 FD -111 DK -110 | goals+assists Yes FD -111 DK -110 | points O1.5 FD +6500 DK +8000 | points Yes FD +1500 DK -
-Martin Fehervary: points O1.5 FD - DK - | points Yes FD - DK -
-Nico Hischier: assists O0.5 FD - DK +550 | assists Yes FD - DK +550 | goals+assists O0.5 FD -150 DK -140 | goals+assists Yes FD -150 DK -140 | points O0.5 FD +220 DK +1800 | points Yes FD +650 DK -
-Ryan Leonard: assists O0.5 FD - DK +800 | assists Yes FD - DK +800 | goals+assists O0.5 FD +360 DK - | goals+assists Yes FD +360 DK - | points O1.5 FD +3000 DK +2800 | points Yes FD +900 DK -
-Stefan Noesen: points O1.5 FD +6500 DK +6500 | points Yes FD +1600 DK -
-Timothy Liljegren: points O0.5 FD +1700 DK +2200 | points Yes FD +3500 DK -
-Timo Meier: assists O0.5 FD - DK +900 | assists Yes FD - DK +900 | goals+assists O0.5 FD +360 DK - | goals+assists Yes FD +360 DK - | points O0.5 FD +270 DK +2800 | points Yes FD +750 DK -
-Tom Wilson: assists O0.5 FD - DK +700 | assists Yes FD - DK +700 | goals+assists O0.5 FD +320 DK - | goals+assists Yes FD +320 DK - | points O0.5 FD +235 DK +2000 | points Yes FD +700 DK -
-Vincent Desharnais: assists O0.5 FD - DK +1200 | assists Yes FD - DK +1200 | goals+assists O0.5 FD - DK +1000 | goals+assists Yes FD - DK +1000 | points O1.5 FD - DK - | points Yes FD +3500 DK -
+Alex Ovechkin: ast O0.5 FD +200 DK +205 | goal FD +210 DK +230 | pts O0.5 FD -122 DK -110
+Alex Tuch: ast O0.5 FD +196 DK +195 | goal FD +210 DK +215 | pts O0.5 FD -125 DK -120
+Aliaksei Protas: ast O0.5 FD - DK +295 | goal FD +460 DK +425 | pts O0.5 FD - DK +165
+Amadeus Lombardi: goal FD +700 DK +700
+Anthony Beauvillier: ast O0.5 FD - DK +450 | goal FD +650 DK +600 | pts O0.5 FD - DK +255
+Anthony Mantha: ast O0.5 FD - DK +275 | goal FD +410 DK +400 | pts O0.5 FD - DK +150
+Arseny Gritsyuk: ast O0.5 FD +265 DK +265 | goal FD +390 DK +380 | pts O0.5 FD +144 DK +145
+Boone Jenner: goal FD +480 DK +500
+Brett Pesce: goal FD +1900 DK +1700
+Cody Glass: goal FD +700 DK +650
+Cole Hutson: ast O0.5 FD +200 DK +205 | goal FD +850 DK +800 | pts O0.5 FD +150 DK +150
+Dawson Mercer: goal FD +370 DK +360
+Declan Chisholm: goal FD +1300 DK +1400
+Dougie Hamilton: ast O0.5 FD +190 DK +190 | goal FD +700 DK +750 | pts O0.5 FD +134 DK +140
+Dylan Strome: ast O0.5 FD +144 DK +130 | goal FD +300 DK +300 | pts O0.5 FD -128 DK -130
+Ethen Frank: goal FD - DK +800
+Evan Rodrigues: ast O0.5 FD +310 DK +300 | goal FD +420 DK +400 | pts O0.5 FD +164 DK +160
+Ilya Protas: ast O0.5 FD +255 DK +300 | goal FD +400 DK +425 | pts O0.5 FD +142 DK +165
+Ivan Miroshnichenko: goal FD +500 DK +600
+Jack Hughes: ast O0.5 FD -106 DK -110 | goal FD +180 DK +195 | pts O0.5 FD -230 DK -205
+Jakob Chychrun: ast O0.5 FD +112 DK +120 | goal FD +370 DK +360 | pts O0.5 FD -140 DK -130
+Jesper Boqvist: goal FD +750 DK +700
+Jesper Bratt: ast O0.5 FD +112 DK +110 | goal FD +310 DK +295 | pts O0.5 FD -154 DK -145
+Johnathan Kovacevic: goal FD +2400 DK +2200
+Jonas Siegenthaler: goal FD +2200 DK +2200
+Jordan Kyrou: ast O0.5 FD +210 DK +210 | goal FD +330 DK +310 | pts O0.5 FD +110 DK +110
+Luke Hughes: ast O0.5 FD +130 DK +130 | goal FD +500 DK +500 | pts O0.5 FD -113 DK -110
+Martin Fehervary: goal FD +1700 DK +2000
+Nico Hischier: ast O0.5 FD +144 DK +140 | goal FD +220 DK +225 | pts O0.5 FD -150 DK -140
+Ryan Leonard: ast O0.5 FD +230 DK +240 | goal FD +320 DK +300 | pts O0.5 FD +116 DK +120
+Stefan Noesen: goal FD +575 DK +550
+Timothy Liljegren: goal FD +1600 DK +2200
+Timo Meier: ast O0.5 FD +235 DK +250 | goal FD +280 DK +280 | pts O0.5 FD +110 DK +115
+Tom Wilson: ast O0.5 FD +200 DK +200 | goal FD +240 DK +245 | pts O0.5 FD -111 DK -110
+Vincent Desharnais: ast O0.5 FD - DK +360 | goal FD +1800 DK +1700 | pts O0.5 FD - DK +295
 
 == Carolina Hurricanes @ Winnipeg Jets  Sat 03:30 PM ET ==
-Adam Lowry: points O1.5 FD +10000 DK +10000 | points Yes FD +750 DK +750
-Alex Iafallo: points O1.5 FD +8000 DK +6000 | points Yes FD +600 DK +500
-Andrei Svechnikov: assists O0.5 FD - DK +550 | assists Yes FD - DK +550 | goals+assists O0.5 FD -205 DK -165 | goals+assists Yes FD -205 DK -165 | points O0.5 FD +160 DK +7500 | points Yes FD +160 DK +175
-Bradly Nadeau: points O1.5 FD +3500 DK +4000 | points Yes FD +380 DK +360
-Brad Lambert: points O1.5 FD +10000 DK +8000 | points Yes FD +1900 DK -
-Cole Koepke: points O1.5 FD - DK - | points Yes FD +1100 DK +1000
-Cole Perfetti: assists O0.5 FD - DK +600 | assists Yes FD - DK +600 | goals+assists O0.5 FD -122 DK -120 | goals+assists Yes FD -122 DK -120 | points O0.5 FD +270 DK +2200 | points Yes FD +270 DK +245
-Dylan Demelo: points O1.5 FD - DK - | points Yes FD +2200 DK +1600
-Dylan Samberg: points O1.5 FD - DK - | points Yes FD +1800 DK +1600
-Eric Robinson: points O1.5 FD +6000 DK +7500 | points Yes FD +550 DK +550
-Felix Unger Sorum: points O1.5 FD +4000 DK +7000 | points Yes FD - DK +1800
-Gabriel Vilardi: assists O0.5 FD - DK +650 | assists Yes FD - DK +650 | goals+assists O0.5 FD -111 DK -110 | goals+assists Yes FD -111 DK -110 | points O0.5 FD +280 DK +2500 | points Yes FD +280 DK +270
-Haydn Fleury: points O1.5 FD - DK - | points Yes FD +1600 DK +1800
-Isak Rosen: points O1.5 FD +10000 DK +8000 | points Yes FD +725 DK +650
-Jaccob Slavin: points O1.5 FD - DK - | points Yes FD +1200 DK +1600
-Jackson Blake: assists O0.5 FD - DK +600 | assists Yes FD - DK +600 | goals+assists O0.5 FD -162 DK -140 | goals+assists Yes FD -162 DK -140 | points O0.5 FD +210 DK +1700 | points Yes FD +210 DK +215
-Jack St Ivany: points O1.5 FD - DK - | points Yes FD +2100 DK +2200
-Jalen Chatfield: points O1.5 FD - DK - | points Yes FD +1100 DK +1400
-Jesperi Kotkaniemi: points O1.5 FD +10000 DK +9000 | points Yes FD +650 DK +600
-Jordan Martinook: points O1.5 FD +5000 DK +5000 | points Yes FD +440 DK +425
-Kandre Miller: points O1.5 FD +10000 DK +10000 | points Yes FD +750 DK +700
-Kyle Connor: assists O0.5 FD - DK +500 | assists Yes FD - DK +500 | goals+assists O0.5 FD -188 DK -180 | goals+assists Yes FD -188 DK -180 | points O0.5 FD +170 DK +6500 | points Yes FD +170 DK +160
-Logan Stankoven: assists O0.5 FD - DK +700 | assists Yes FD - DK +700 | goals+assists O0.5 FD -125 DK -120 | goals+assists Yes FD -125 DK -120 | points O0.5 FD +220 DK +10000 | points Yes FD +220 DK +215
-Mario Ferraro: points O1.5 FD - DK - | points Yes FD +1700 DK +1400
-Mark Jankowski: points O1.5 FD +4000 DK +4500 | points Yes FD +400 DK +380
-Mark Scheifele: assists O0.5 FD - DK +390 | assists Yes FD - DK +390 | goals+assists O0.5 FD -205 DK -195 | goals+assists Yes FD -205 DK -195 | points O0.5 FD +220 DK - | points Yes FD +220 DK +215
-Mike Reilly: points O1.5 FD - DK - | points Yes FD - DK +2200
-Morgan Barron: points O1.5 FD - DK - | points Yes FD +900 DK +850
-Neal Pionk: assists O0.5 FD - DK +500 | assists Yes FD - DK +500 | goals+assists O0.5 FD +100 DK +105 | goals+assists Yes FD +100 DK +105 | points O1.5 FD +10000 DK - | points Yes FD +700 DK +750
-Nikolaj Ehlers: assists O0.5 FD - DK +600 | assists Yes FD - DK +600 | goals+assists O0.5 FD +260 DK - | goals+assists Yes FD +260 DK - | points O0.5 FD +220 DK - | points Yes FD +220 DK +225
-Nino Niederreiter: points O1.5 FD +7500 DK +8000 | points Yes FD +650 DK +650
-Sean Walker: points O1.5 FD - DK - | points Yes FD +850 DK +850
-Sebastian Aho: assists O0.5 FD - DK +425 | assists Yes FD - DK +425 | goals+assists O0.5 FD - DK +255 | goals+assists Yes FD - DK +255 | points O0.5 FD +170 DK +7000 | points Yes FD - DK +650
-Shayne Gostisbehere: assists O0.5 FD - DK +475 | assists Yes FD - DK +475 | goals+assists O0.5 FD -115 DK -120 | goals+assists Yes FD -115 DK -120 | points O1.5 FD +5500 DK +6000 | points Yes FD +470 DK +500
-Vladislav Namestnikov: points O1.5 FD - DK - | points Yes FD - DK -
-William Carrier: points O1.5 FD +4000 DK +4500 | points Yes FD +380 DK +425
+Adam Lowry: goal FD +750 DK +750
+Alex Iafallo: goal FD +600 DK +500
+Andrei Svechnikov: ast O0.5 FD +126 DK +135 | goal FD +160 DK +170 | pts O0.5 FD -194 DK -170
+Bradly Nadeau: goal FD +380 DK +360
+Brad Lambert: goal FD +800 DK +700
+Cole Koepke: goal FD +1000 DK +1000
+Cole Perfetti: ast O0.5 FD +164 DK +165 | goal FD +280 DK +245 | pts O0.5 FD -118 DK -120
+Dylan Demelo: goal FD +2200 DK +1600
+Dylan Samberg: goal FD +1800 DK +1500
+Eric Robinson: goal FD +550 DK +550
+Felix Unger Sorum: goal FD +400 DK +550
+Gabriel Vilardi: ast O0.5 FD +176 DK +180 | goal FD +290 DK +265 | pts O0.5 FD -111 DK -110
+Haydn Fleury: goal FD +1500 DK +1800
+Isak Rosen: goal FD +750 DK +650
+Jaccob Slavin: goal FD +1200 DK +1600
+Jackson Blake: ast O0.5 FD +140 DK +145 | goal FD +210 DK +215 | pts O0.5 FD -156 DK -140
+Jack St Ivany: goal FD +2500 DK +2200
+Jalen Chatfield: goal FD +1100 DK +1300
+Jesperi Kotkaniemi: goal FD +650 DK +600
+Jordan Martinook: goal FD +440 DK +425
+Kandre Miller: goal FD +800 DK +700
+Kyle Connor: ast O0.5 FD +128 DK +130 | goal FD +175 DK +160 | pts O0.5 FD -184 DK -180
+Logan Stankoven: ast O0.5 FD +190 DK +185 | goal FD +220 DK +210 | pts O0.5 FD -125 DK -125
+Mario Ferraro: goal FD +1600 DK +1500
+Mark Jankowski: goal FD +380 DK +390
+Mark Scheifele: ast O0.5 FD +100 DK -105 | goal FD +210 DK +215 | pts O0.5 FD -192 DK -195
+Mike Reilly: goal FD - DK +2200
+Morgan Barron: goal FD +900 DK +850
+Neal Pionk: ast O0.5 FD +128 DK +130 | goal FD +650 DK +750 | pts O0.5 FD -104 DK +105
+Nikolaj Ehlers: ast O0.5 FD +142 DK +140 | goal FD +220 DK +225 | pts O0.5 FD -150 DK -145
+Nino Niederreiter: goal FD +650 DK +650
+Sean Walker: goal FD +800 DK +850
+Sebastian Aho: ast O0.5 FD -108 DK +100 | goal FD +180 DK +170 | pts O0.5 FD -230 DK -205
+Shayne Gostisbehere: ast O0.5 FD +122 DK +115 | goal FD +460 DK +475 | pts O0.5 FD -125 DK -120
+William Carrier: goal FD +390 DK +425
 
 == Vancouver Canucks @ Tampa Bay Lightning  Sat 04:00 PM ET ==
-Anthony Cirelli: assists O0.5 FD - DK +750 | assists Yes FD - DK +750 | goals+assists O0.5 FD +325 DK - | goals+assists Yes FD +325 DK - | points O0.5 FD +240 DK +1900 | points Yes FD +240 DK +220
-Brandon Hagel: assists O0.5 FD - DK +425 | assists Yes FD - DK +425 | goals+assists O0.5 FD +175 DK - | goals+assists O1.5 FD +196 DK +165 | goals+assists Yes FD -265 DK -265 | points O0.5 FD +125 DK +650 | points Yes FD +125 DK +105
-Brayden Point: assists O0.5 FD - DK +425 | assists Yes FD - DK +425 | goals+assists O0.5 FD -225 DK -225 | goals+assists Yes FD -225 DK -225 | points O0.5 FD +165 DK +1100 | points Yes FD +165 DK +155
-Brendan Gallagher: points O1.5 FD - DK - | points Yes FD +900 DK +1000
-Brock Boeser: assists O0.5 FD - DK +800 | assists Yes FD - DK +800 | goals+assists O0.5 FD +114 DK +115 | goals+assists Yes FD +114 DK +115 | points O0.5 FD +300 DK +2800 | points Yes FD +300 DK +290
-Conor Geekie: points O1.5 FD +5000 DK +5500 | points Yes FD +440 DK +475
-Dominic James: points O1.5 FD +4500 DK - | points Yes FD +410 DK -
-Drew Oconnor: points O1.5 FD +10000 DK +9000 | points Yes FD +800 DK +650
-Elias Pettersson: points O1.5 FD - DK - | points Yes FD +1800 DK -
-Erik Cernak: points O1.5 FD - DK - | points Yes FD +1300 DK +1300
-Filip Chytil: points O1.5 FD +6500 DK +6000 | points Yes FD +550 DK +500
-Filip Hronek: assists O0.5 FD - DK +500 | assists Yes FD - DK +500 | goals+assists O0.5 FD +116 DK +105 | goals+assists Yes FD +116 DK +105 | points O1.5 FD +10000 DK - | points Yes FD +800 DK +750
-Gage Goncalves: assists O0.5 FD - DK +800 | assists Yes FD - DK +800 | goals+assists O0.5 FD +340 DK - | goals+assists Yes FD +340 DK - | points O1.5 FD +3000 DK +2500 | points Yes FD +330 DK +295
-Ilya Mikheyev: points O1.5 FD +3500 DK +4000 | points Yes FD +360 DK +360
-Jake Debrusk: assists O0.5 FD - DK +1100 | assists Yes FD - DK +1100 | goals+assists O0.5 FD +122 DK +140 | goals+assists Yes FD +122 DK +140 | points O0.5 FD +290 DK +2800 | points Yes FD +290 DK +285
-Jake Guentzel: assists O0.5 FD - DK +400 | assists Yes FD - DK +400 | goals+assists O0.5 FD +168 DK - | goals+assists O1.5 FD +190 DK +165 | goals+assists Yes FD -290 DK -270 | points O0.5 FD +130 DK +750 | points Yes FD +130 DK +120
-Jamie Oleksiak: points O1.5 FD - DK - | points Yes FD +2800 DK +1400
-Janis Moser: assists O0.5 FD - DK +700 | assists Yes FD - DK +700 | goals+assists O0.5 FD +430 DK - | goals+assists Yes FD +430 DK - | points O1.5 FD +8000 DK - | points Yes FD +750 DK +800
-Jeffrey Viel: points O1.5 FD +8000 DK - | points Yes FD +650 DK +750
-John Carlson: assists O0.5 FD - DK +340 | assists Yes FD - DK +340 | goals+assists O0.5 FD -186 DK -195 | goals+assists Yes FD -186 DK -195 | points O1.5 FD +3500 DK +4000 | points Yes FD +340 DK +330
-Jonathan Lekkerimaki: assists O0.5 FD - DK +1000 | assists Yes FD - DK +1000 | goals+assists O0.5 FD - DK +600 | goals+assists Yes FD - DK +600 | points O1.5 FD +5000 DK +5500 | points Yes FD +450 DK +475
-Liam Ohgren: points O1.5 FD +8000 DK +8000 | points Yes FD +625 DK +650
-Linus Karlsson: points O1.5 FD +6000 DK +6500 | points Yes FD +550 DK +550
-Marco Rossi: assists O0.5 FD - DK +1100 | assists Yes FD - DK +1100 | goals+assists O0.5 FD +158 DK +175 | goals+assists Yes FD +158 DK +175 | points O1.5 FD +5500 DK +5000 | points Yes FD +500 DK +425
-Maxwell Crozier: points O1.5 FD - DK - | points Yes FD +1400 DK +1500
-Max Sasson: points O1.5 FD - DK - | points Yes FD +1000 DK +850
-Nikita Kucherov: assists O0.5 FD - DK +250 | assists Yes FD - DK +250 | goals+assists O0.5 FD -106 DK - | goals+assists O1.5 FD -138 DK -110 | goals+assists Yes FD -750 DK -500 | points O0.5 FD +110 DK +700 | points Yes FD +110 DK +115
-Paul Cotter: points O1.5 FD +10000 DK +9000 | points Yes FD +700 DK +700
-Pontus Holmberg: points O1.5 FD +3000 DK +3000 | points Yes FD +350 DK +300
-Ryan Mcdonagh: points O1.5 FD - DK - | points Yes FD +1200 DK +1200
-Tom Willander: points O1.5 FD - DK - | points Yes FD +1800 DK +1300
-Victor Hedman: points O1.5 FD +8000 DK +10000 | points Yes FD +600 DK +700
-Vittorio Mancini: points O1.5 FD - DK - | points Yes FD +2800 DK +2500
-Zeev Buium: assists O0.5 FD - DK +1000 | assists Yes FD - DK +1000 | goals+assists O0.5 FD - DK +850 | goals+assists Yes FD - DK +850 | points O1.5 FD - DK - | points Yes FD +1400 DK +1300
-Zemgus Girgensons: points O1.5 FD +6000 DK +5500 | points Yes FD +525 DK +450
+Anthony Cirelli: ast O0.5 FD +215 DK +200 | goal FD +240 DK +220 | pts O0.5 FD -106 DK -115
+Brandon Hagel: ast O0.5 FD +104 DK +100 | goal FD +125 DK +105 | pts O1.5 FD +196 DK +160
+Brayden Point: ast O0.5 FD +106 DK +100 | goal FD +165 DK +155 | pts O0.5 FD -225 DK -225
+Brendan Gallagher: goal FD +950 DK +1000
+Brock Boeser: ast O0.5 FD +230 DK +240 | goal FD +310 DK +285 | pts O0.5 FD +118 DK +115
+Conor Geekie: goal FD +440 DK +475
+Dominic James: goal FD +410 DK -
+Drew Oconnor: goal FD +750 DK +650
+Elias Pettersson: goal FD +1800 DK -
+Erik Cernak: goal FD +1300 DK +1300
+Filip Chytil: goal FD +600 DK +500
+Filip Hronek: ast O0.5 FD +146 DK +130 | goal FD +800 DK +750 | pts O0.5 FD +116 DK +105
+Gage Goncalves: ast O0.5 FD +210 DK +210 | goal FD +330 DK +285 | pts O0.5 FD +108 DK +105
+Ilya Mikheyev: goal FD +360 DK +350
+Jake Debrusk: ast O0.5 FD +255 DK +350 | goal FD +290 DK +280 | pts O0.5 FD +122 DK +140
+Jake Guentzel: ast O0.5 FD -111 DK -110 | goal FD +130 DK +120 | pts O1.5 FD +190 DK +160
+Jamie Oleksiak: goal FD +1900 DK +1400
+Janis Moser: ast O0.5 FD +196 DK +185 | goal FD +750 DK +800 | pts O0.5 FD +142 DK +140
+Jeffrey Viel: goal FD +650 DK +750
+John Carlson: ast O0.5 FD -122 DK -135 | goal FD +330 DK +330 | pts O0.5 FD -188 DK -195
+Jonathan Lekkerimaki: ast O0.5 FD - DK +310 | goal FD +460 DK +475 | pts O0.5 FD - DK +170
+Liam Ohgren: goal FD +625 DK +650
+Linus Karlsson: goal FD +550 DK +500
+Marco Rossi: ast O0.5 FD +260 DK +330 | goal FD +500 DK +425 | pts O0.5 FD +162 DK +175
+Maxwell Crozier: goal FD +1400 DK +1600
+Max Sasson: goal FD +1100 DK +850
+Nikita Kucherov: ast O0.5 FD -310 DK -225 | goal FD +110 DK +110 | pts O1.5 FD -138 DK -120
+Paul Cotter: goal FD +700 DK +700
+Pontus Holmberg: goal FD +350 DK +300
+Ryan Mcdonagh: goal FD +1200 DK +1200
+Tom Willander: goal FD +1800 DK +1300
+Victor Hedman: goal FD +600 DK +700
+Vittorio Mancini: goal FD +2900 DK +2500
+Zeev Buium: ast O0.5 FD - DK +300 | goal FD +1400 DK +1200 | pts O0.5 FD - DK +235
+Zemgus Girgensons: goal FD +525 DK +450
 
 == Seattle Kraken @ Florida Panthers  Sat 06:00 PM ET ==
-Aaron Ekblad: points O1.5 FD - DK - | points Yes FD +800 DK +900
-Adam Larsson: points O1.5 FD - DK - | points Yes FD +1700 DK +1500
-Anton Lundell: assists O0.5 FD - DK +800 | assists Yes FD - DK +800 | goals+assists O0.5 FD +330 DK - | goals+assists Yes FD +330 DK - | points O1.5 FD +2700 DK +2800 | points Yes FD +290 DK +285
-Ben Meyers: points O1.5 FD - DK - | points Yes FD +1000 DK +900
-Berkly Catton: points O1.5 FD +8000 DK +7000 | points Yes FD +550 DK +550
-Bobby Mcmann: assists O0.5 FD - DK +800 | assists Yes FD - DK +800 | goals+assists O0.5 FD +106 DK -105 | goals+assists Yes FD +106 DK -105 | points O0.5 FD +250 DK +2000 | points Yes FD +250 DK +230
-Bokondji Imama: points O1.5 FD - DK - | points Yes FD +1100 DK +1000
-Brady Tkachuk: assists O0.5 FD - DK +475 | assists Yes FD - DK +475 | goals+assists O0.5 FD -210 DK -195 | goals+assists Yes FD -210 DK -195 | points O0.5 FD +145 DK +1000 | points Yes FD +145 DK +150
-Brandon Montour: points O1.5 FD - DK +8000 | points Yes FD - DK +2000
-Carter Verhaeghe: assists O0.5 FD - DK +500 | assists Yes FD - DK +500 | goals+assists O0.5 FD -162 DK -150 | goals+assists Yes FD -162 DK -150 | points O0.5 FD +180 DK +1700 | points Yes FD +180 DK +210
-Chandler Stephenson: assists O0.5 FD - DK +650 | assists Yes FD - DK +650 | goals+assists O0.5 FD +430 DK - | goals+assists Yes FD +430 DK - | points O1.5 FD +4500 DK +6000 | points Yes FD +470 DK +450
-Dmitry Kulikov: points O1.5 FD - DK - | points Yes FD +2000 DK +2200
-Eetu Luostarinen: points O1.5 FD +3500 DK +4000 | points Yes FD +400 DK +380
-Frederick Gaudreau: points O1.5 FD +8000 DK +9000 | points Yes FD +700 DK +700
-Garnet Hathaway: points O1.5 FD - DK - | points Yes FD +1100 DK +1100
-Gustav Forsling: points O1.5 FD - DK - | points Yes FD +1100 DK +1000
-Jared Mccann: assists O0.5 FD - DK +600 | assists Yes FD - DK +600 | goals+assists O0.5 FD -120 DK -115 | goals+assists Yes FD -120 DK -115 | points O0.5 FD +250 DK +2200 | points Yes FD +250 DK +260
-Jordan Eberle: assists O0.5 FD - DK +800 | assists Yes FD - DK +800 | goals+assists O0.5 FD +116 DK +110 | goals+assists Yes FD +116 DK +110 | points O0.5 FD +275 DK +2500 | points Yes FD +275 DK +270
-Josh Mahura: points O1.5 FD - DK - | points Yes FD +2500 DK +2500
-Kaapo Kakko: assists O0.5 FD - DK +850 | assists Yes FD - DK +850 | goals+assists O0.5 FD +490 DK - | goals+assists Yes FD +490 DK - | points O1.5 FD +4500 DK +5000 | points Yes FD +440 DK +425
-Lars Eller: points O1.5 FD +5500 DK +5500 | points Yes FD +450 DK +500
-Mackie Samoskevich: assists O0.5 FD - DK +1100 | assists Yes FD - DK +1100 | goals+assists O0.5 FD +530 DK - | goals+assists Yes FD +530 DK - | points O1.5 FD +4500 DK +4000 | points Yes FD +390 DK +390
-Matthew Tkachuk: assists O0.5 FD - DK +320 | assists Yes FD - DK +320 | goals+assists O0.5 FD +162 DK - | goals+assists O1.5 FD +164 DK +165 | goals+assists Yes FD -295 DK -270 | points O0.5 FD +160 DK +1100 | points Yes FD +160 DK +160
-Matty Beniers: assists O0.5 FD - DK +750 | assists Yes FD - DK +750 | goals+assists O0.5 FD +120 DK +120 | goals+assists Yes FD +120 DK +120 | points O0.5 FD +360 DK +3500 | points Yes FD +360 DK +350
-Niko Mikkola: points O1.5 FD - DK - | points Yes FD +1500 DK +1600
-Ryan Winterton: points O1.5 FD - DK +9000 | points Yes FD +850 DK +650
-Ryker Evans: points O1.5 FD - DK - | points Yes FD +1400 DK +1200
-Sam Bennett: assists O0.5 FD - DK +600 | assists Yes FD - DK +600 | goals+assists O0.5 FD +265 DK - | goals+assists Yes FD +265 DK - | points O0.5 FD +220 DK +1800 | points Yes FD +220 DK +205
-Sam Lafferty: points O1.5 FD - DK - | points Yes FD +1100 DK +1000
-Sam Reinhart: assists O0.5 FD - DK +475 | assists Yes FD - DK +475 | goals+assists O0.5 FD -215 DK -185 | goals+assists Yes FD -215 DK -185 | points O0.5 FD +155 DK +1200 | points Yes FD +155 DK +160
-Sandis Vilmanis: points O1.5 FD +7500 DK +8000 | points Yes FD +600 DK +600
-Seth Jones: assists O0.5 FD - DK +500 | assists Yes FD - DK +500 | goals+assists O0.5 FD -106 DK -105 | goals+assists Yes FD -106 DK -105 | points O1.5 FD +6500 DK +6500 | points Yes FD +500 DK +550
-Shane Wright: points O1.5 FD +6000 DK +4000 | points Yes FD +500 DK +400
-Uvis Balinskis: points O1.5 FD - DK - | points Yes FD +1600 DK +1100
-Vince Dunn: assists O0.5 FD - DK +550 | assists Yes FD - DK +550 | goals+assists O0.5 FD +100 DK +105 | goals+assists Yes FD +100 DK +105 | points O1.5 FD +6500 DK +7500 | points Yes FD +550 DK +550
+Aaron Ekblad: goal FD +800 DK +900
+Adam Larsson: goal FD +1700 DK +1500
+Anton Lundell: ast O0.5 FD +200 DK +215 | goal FD +290 DK +285 | pts O0.5 FD +102 DK +105
+Ben Meyers: goal FD +1000 DK +900
+Berkly Catton: goal FD +550 DK +550
+Bobby Mcmann: ast O0.5 FD +240 DK +230 | goal FD +250 DK +230 | pts O0.5 FD +106 DK -105
+Bokondji Imama: goal FD +1100 DK +1000
+Brady Tkachuk: ast O0.5 FD +126 DK +125 | goal FD +145 DK +150 | pts O0.5 FD -210 DK -195
+Brandon Montour: goal FD - DK +650
+Carter Verhaeghe: ast O0.5 FD +154 DK +135 | goal FD +180 DK +210 | pts O0.5 FD -162 DK -150
+Chandler Stephenson: ast O0.5 FD +215 DK +185 | goal FD +470 DK +450 | pts O0.5 FD +132 DK +115
+Dmitry Kulikov: goal FD +2000 DK +2200
+Eetu Luostarinen: goal FD +400 DK +380
+Frederick Gaudreau: goal FD +700 DK +700
+Garnet Hathaway: goal FD +1100 DK +1100
+Gustav Forsling: goal FD +1100 DK +1000
+Jared Mccann: ast O0.5 FD +172 DK +170 | goal FD +250 DK +260 | pts O0.5 FD -120 DK -115
+Jordan Eberle: ast O0.5 FD +255 DK +230 | goal FD +275 DK +270 | pts O0.5 FD +116 DK +110
+Josh Mahura: goal FD +2500 DK +2500
+Kaapo Kakko: ast O0.5 FD +255 DK +265 | goal FD +440 DK +425 | pts O0.5 FD +150 DK +150
+Lars Eller: goal FD +450 DK +500
+Mackie Samoskevich: ast O0.5 FD +320 DK +320 | goal FD +390 DK +390 | pts O0.5 FD +164 DK +160
+Matthew Tkachuk: ast O0.5 FD -136 DK -135 | goal FD +160 DK +160 | pts O1.5 FD +164 DK +170
+Matty Beniers: ast O0.5 FD +220 DK +220 | goal FD +360 DK +350 | pts O0.5 FD +120 DK +120
+Niko Mikkola: goal FD +1500 DK +1600
+Ryan Winterton: goal FD +850 DK +650
+Ryker Evans: goal FD +1400 DK +1200
+Sam Bennett: ast O0.5 FD +150 DK +145 | goal FD +220 DK +205 | pts O0.5 FD -142 DK -145
+Sam Lafferty: goal FD +1100 DK +1000
+Sam Reinhart: ast O0.5 FD +116 DK +120 | goal FD +155 DK +160 | pts O0.5 FD -215 DK -185
+Sandis Vilmanis: goal FD +600 DK +600
+Seth Jones: ast O0.5 FD +136 DK +135 | goal FD +500 DK +550 | pts O0.5 FD -106 DK -105
+Shane Wright: goal FD +500 DK +400
+Uvis Balinskis: goal FD +1600 DK +1100
+Vince Dunn: ast O0.5 FD +142 DK +150 | goal FD +550 DK +550 | pts O0.5 FD +100 DK +105
 
 == Ottawa Senators @ Philadelphia Flyers  Sat 07:00 PM ET ==
-Andre Burakovsky: assists O0.5 FD - DK +800 | assists Yes FD - DK +800 | goals+assists O0.5 FD - DK +550 | goals+assists Yes FD - DK +550 | points O1.5 FD - DK +8000 | points Yes FD - DK +550
-Artem Zub: points O1.5 FD - DK - | points Yes FD - DK +1200
-Cameron Crotty: points Yes FD - DK +5500
-Carter Yakemchuk: assists O0.5 FD - DK +750 | assists Yes FD - DK +750 | goals+assists O0.5 FD - DK +550 | goals+assists Yes FD - DK +550 | points O1.5 FD - DK +7500 | points Yes FD - DK +550
-Christian Dvorak: assists O0.5 FD - DK +900 | assists Yes FD - DK +900 | goals+assists O0.5 FD - DK +500 | goals+assists Yes FD - DK +500 | points O1.5 FD - DK +3500 | points Yes FD - DK +340
-Claude Giroux: assists O0.5 FD - DK +650 | assists Yes FD - DK +650 | goals+assists O0.5 FD - DK +115 | goals+assists Yes FD - DK +115 | points O1.5 FD - DK +5500 | points Yes FD - DK +425
-David Jiricek: points O1.5 FD - DK - | points Yes FD - DK +750
-Denver Barkey: points O1.5 FD - DK +8000 | points Yes FD - DK +650
-Drake Batherson: assists O0.5 FD - DK +500 | assists Yes FD - DK +500 | goals+assists O0.5 FD - DK -155 | goals+assists Yes FD - DK -155 | points O0.5 FD +200 DK +1500 | points Yes FD +200 DK +195
-Dylan Cozens: assists O0.5 FD - DK +700 | assists Yes FD - DK +700 | goals+assists O0.5 FD - DK -110 | goals+assists Yes FD - DK -110 | points O1.5 FD - DK +1900 | points Yes FD - DK +235
-Fabian Zetterlund: points O1.5 FD - DK +4500 | points Yes FD - DK +425
-Jack Studnicka: points O1.5 FD - DK - | points Yes FD - DK +900
-Jamie Drysdale: points O1.5 FD - DK +10000 | points Yes FD - DK +750
-Jordan Spence: points O1.5 FD - DK - | points Yes FD - DK +900
-Matvei Michkov: assists O0.5 FD - DK +800 | assists Yes FD - DK +800 | goals+assists O0.5 FD - DK +120 | goals+assists Yes FD - DK +120 | points O1.5 FD - DK +3500 | points Yes FD - DK +330
-Michael Amadio: points O1.5 FD - DK +6000 | points Yes FD - DK +475
-Nick Cousins: points O1.5 FD - DK - | points Yes FD - DK +900
-Nick Seeler: points O1.5 FD - DK - | points Yes FD - DK +1600
-Noah Cates: points O1.5 FD - DK +7500 | points Yes FD - DK +550
-Noel Acciari: points O1.5 FD - DK +10000 | points Yes FD - DK +750
-Oliver Bonk: points O1.5 FD - DK - | points Yes FD - DK +1600
-Owen Tippett: assists O0.5 FD - DK +950 | assists Yes FD - DK +950 | goals+assists O0.5 FD - DK +125 | goals+assists Yes FD - DK +125 | points O1.5 FD - DK +3000 | points Yes FD - DK +295
-Porter Martone: assists O0.5 FD - DK +850 | assists Yes FD - DK +850 | goals+assists O0.5 FD - DK +115 | goals+assists Yes FD - DK +115 | points O1.5 FD - DK +2500 | points Yes FD - DK +270
-Ridly Greig: points O1.5 FD - DK +6500 | points Yes FD - DK +475
-Sean Couturier: points O1.5 FD - DK +8000 | points Yes FD - DK +600
-Shane Pinto: points O1.5 FD - DK +2500 | points Yes FD - DK +295
-Simon Benoit: points O1.5 FD - DK - | points Yes FD - DK +2500
-Stephen Halliday: assists O0.5 FD - DK +1000 | assists Yes FD - DK +1000 | goals+assists O0.5 FD - DK +550 | goals+assists Yes FD - DK +550 | points O1.5 FD - DK +4000 | points Yes FD - DK +360
-Thomas Chabot: assists O0.5 FD - DK +650 | assists Yes FD - DK +650 | goals+assists O0.5 FD - DK +475 | goals+assists Yes FD - DK +475 | points O1.5 FD - DK +6500 | points Yes FD - DK +475
-Tim Stutzle: assists O0.5 FD - DK +340 | assists Yes FD - DK +340 | goals+assists O0.5 FD - DK -230 | goals+assists Yes FD - DK -230 | points O0.5 FD +190 DK +1600 | points Yes FD +190 DK +205
-Travis Sanheim: points O1.5 FD - DK - | points Yes FD - DK +1100
-Trevor Zegras: assists O0.5 FD - DK +650 | assists Yes FD - DK +650 | goals+assists O0.5 FD - DK -105 | goals+assists Yes FD - DK -105 | points O1.5 FD - DK +2800 | points Yes FD - DK +285
-Tyler Kleven: points Yes FD - DK +5500
-Tyson Foerster: assists O0.5 FD - DK +950 | assists Yes FD - DK +950 | goals+assists O0.5 FD - DK +475 | goals+assists Yes FD - DK +475 | points O1.5 FD - DK +2500 | points Yes FD - DK +275
-Warren Foegele: points O1.5 FD - DK +7000 | points Yes FD - DK +550
+Andre Burakovsky: ast O0.5 FD - DK +220 | goal FD +500 DK +550 | pts O0.5 FD - DK +150
+Artem Zub: goal FD +1100 DK +1200
+Carter Yakemchuk: ast O0.5 FD - DK +205 | goal FD +650 DK +600 | pts O0.5 FD - DK +140
+Christian Dvorak: ast O0.5 FD - DK +230 | goal FD +360 DK +360 | pts O0.5 FD - DK +125
+Claude Giroux: ast O0.5 FD +190 DK +180 | goal FD +430 DK +425 | pts O0.5 FD +116 DK +115
+David Jiricek: ast O0.5 FD - DK +195 | goal FD +800 DK +850 | pts O0.5 FD - DK +155
+Denver Barkey: ast O0.5 FD - DK +295 | goal FD +480 DK +475 | pts O0.5 FD - DK +170
+Drake Batherson: ast O0.5 FD +134 DK +135 | goal FD +200 DK +190 | pts O0.5 FD -166 DK -155
+Dylan Cozens: ast O0.5 FD +150 DK +190 | goal FD +240 DK +230 | pts O0.5 FD -138 DK -110
+Fabian Zetterlund: goal FD +440 DK +425
+Jack Studnicka: goal FD +1100 DK +850
+Jamie Drysdale: ast O0.5 FD - DK +185 | goal FD +950 DK +750 | pts O0.5 FD - DK +145
+Jordan Spence: goal FD +850 DK +950
+Matvei Michkov: ast O0.5 FD +158 DK +170 | goal FD +275 DK +275 | pts O0.5 FD -120 DK -110
+Michael Amadio: goal FD +500 DK +475
+Nick Cousins: goal FD +900 DK +900
+Nick Seeler: goal FD +2000 DK +1500
+Nikolas Matinpalo: goal FD +2500 DK +2500
+Noah Cates: ast O0.5 FD - DK +280 | goal FD +600 DK +550 | pts O0.5 FD - DK +175
+Noel Acciari: goal FD +800 DK +750
+Oliver Bonk: goal FD +1500 DK +1500
+Porter Martone: ast O0.5 FD +250 DK +240 | goal FD +290 DK +270 | pts O0.5 FD +122 DK +110
+Ridly Greig: goal FD +600 DK +500
+Sean Couturier: ast O0.5 FD - DK +245 | goal FD +575 DK +550 | pts O0.5 FD - DK +160
+Shane Pinto: goal FD +300 DK +280
+Simon Benoit: goal FD +2700 DK +2500
+Stephen Halliday: ast O0.5 FD - DK +295 | goal FD +360 DK +360 | pts O0.5 FD - DK +145
+Thomas Chabot: ast O0.5 FD - DK +165 | goal FD +480 DK +475 | pts O0.5 FD - DK +110
+Tim Stutzle: ast O0.5 FD -146 DK -135 | goal FD +200 DK +200 | pts O0.5 FD -280 DK -240
+Travis Sanheim: ast O0.5 FD - DK +240 | goal FD +1100 DK +900 | pts O0.5 FD - DK +185
+Trevor Zegras: ast O0.5 FD +154 DK +145 | goal FD +275 DK +265 | pts O0.5 FD -122 DK -130
+Tyler Kleven: goal FD +1600 DK +1900
+Tyson Foerster: ast O0.5 FD - DK +230 | goal FD +260 DK +255 | pts O0.5 FD - DK +105
+Warren Foegele: goal FD +700 DK +550
 
 == New York Islanders @ Toronto Maple Leafs  Sat 07:00 PM ET ==
-Adam Pelech: points O1.5 FD - DK - | points Yes FD +2100 DK +2000
-Anthony Duclair: points O1.5 FD +5500 DK +5500 | points Yes FD +460 DK +475
-Auston Matthews: assists O0.5 FD - DK +475 | assists Yes FD - DK +475 | goals+assists O0.5 FD +182 DK - | goals+assists Yes FD +182 DK - | points O0.5 FD +130 DK +850 | points Yes FD +130 DK +135
-Bo Groulx: points O1.5 FD +8000 DK -
-Bo Horvat: assists O0.5 FD - DK +550 | assists Yes FD - DK +550 | goals+assists O0.5 FD -174 DK -150 | goals+assists Yes FD -174 DK -150 | points O0.5 FD +175 DK +1400 | points Yes FD +175 DK +185
-Brandon Duhaime: points O1.5 FD +10000 DK +7500 | points Yes FD +750 DK +650
-Brayden Schenn: assists O0.5 FD - DK +650 | assists Yes FD - DK +650 | goals+assists O0.5 FD -111 DK -110 | goals+assists Yes FD -111 DK -110 | points O0.5 FD +300 DK +2800 | points Yes FD +300 DK +300
-Calum Ritchie: assists O0.5 FD - DK +1000 | assists Yes FD - DK +1000 | goals+assists O0.5 FD - DK +600 | goals+assists Yes FD - DK +600 | points O1.5 FD +4000 DK +5000 | points Yes FD +430 DK +450
-Casey Cizikas: points O1.5 FD +10000 DK +10000 | points Yes FD +750 DK +800
-Colton Sissons: points O1.5 FD +10000 DK +7500 | points Yes FD +750 DK +600
-Darren Raddysh: assists O0.5 FD - DK +475 | assists Yes FD - DK +475 | goals+assists O0.5 FD - DK +380 | goals+assists Yes FD - DK +380 | points O1.5 FD +5500 DK +6000 | points Yes FD +525 DK +550
-Easton Cowan: assists O0.5 FD - DK +1000 | assists Yes FD - DK +1000 | goals+assists O0.5 FD - DK +550 | goals+assists Yes FD - DK +550 | points O1.5 FD +3000 DK +3000 | points Yes FD +330 DK +360
-Emil Heineman: points O1.5 FD +4000 DK +5500 | points Yes FD +410 DK +425
-Jack Roslovic: assists O0.5 FD - DK +800 | assists Yes FD - DK +800 | goals+assists O0.5 FD - DK +425 | goals+assists Yes FD - DK +425 | points O1.5 FD +2200 DK +1700 | points Yes FD +250 DK +240
-Jake Mccabe: assists O0.5 FD - DK +850 | assists Yes FD - DK +850 | goals+assists O0.5 FD - DK +700 | goals+assists Yes FD - DK +700 | points O1.5 FD - DK - | points Yes FD +1700 DK +1500
-Jeangabriel Pageau: points O1.5 FD +8000 DK +9000 | points Yes FD +600 DK +600
-John Tavares: points O1.5 FD - DK +1900 | points Yes FD - DK +850
-Kyle Palmieri: assists O0.5 FD - DK +700 | assists Yes FD - DK +700 | goals+assists O0.5 FD -115 DK -115 | goals+assists Yes FD -115 DK -115 | points O0.5 FD +235 DK +2200 | points Yes FD +235 DK +235
-Matias Maccelli: assists O0.5 FD - DK +700 | assists Yes FD - DK +700 | goals+assists O0.5 FD +360 DK - | goals+assists Yes FD +360 DK - | points O1.5 FD +3300 DK +4500 | points Yes FD +370 DK +380
-Matthew Kessel: points O1.5 FD - DK - | points Yes FD +1900 DK +1800
-Matthew Schaefer: assists O0.5 FD - DK +400 | assists Yes FD - DK +400 | goals+assists O0.5 FD -172 DK -155 | goals+assists Yes FD -172 DK -155 | points O1.5 FD +3300 DK +4000 | points Yes FD +340 DK +360
-Morgan Rielly: assists O0.5 FD - DK +750 | assists Yes FD - DK +750 | goals+assists O0.5 FD - DK +650 | goals+assists Yes FD - DK +650 | points O1.5 FD - DK - | points Yes FD +1000 DK +1000
-Nick Paul: points O1.5 FD +4000 DK +3500 | points Yes FD - DK +1400
-Oliver Ekmanlarsson: assists O0.5 FD - DK +950 | assists Yes FD - DK +950 | goals+assists O0.5 FD - DK +850 | goals+assists Yes FD - DK +850 | points O1.5 FD - DK - | points Yes FD +1200 DK +1500
-Ondrej Palat: points O1.5 FD - DK - | points Yes FD +800 DK +850
-Ryan Pulock: points O1.5 FD - DK - | points Yes FD +1300 DK +1300
-Simon Holmstrom: assists O0.5 FD - DK +1100 | assists Yes FD - DK +1100 | goals+assists O0.5 FD - DK +650 | goals+assists Yes FD - DK +650 | points O1.5 FD +5000 DK +5000 | points Yes FD +440 DK +425
-Teddy Blueger: points O1.5 FD +10000 DK +6500 | points Yes FD +700 DK +600
-Tony Deangelo: assists O0.5 FD - DK +850 | assists Yes FD - DK +850 | goals+assists O0.5 FD +500 DK - | goals+assists Yes FD +500 DK - | points O1.5 FD - DK - | points Yes FD +900 DK +900
-Troy Stecher: points O1.5 FD - DK - | points Yes FD - DK +2200
-William Nylander: assists O0.5 FD - DK +400 | assists Yes FD - DK +400 | goals+assists O0.5 FD +182 DK - | goals+assists Yes FD +182 DK - | points O0.5 FD +170 DK +1100 | points Yes FD +170 DK +175
-Zack Macewen: points O1.5 FD - DK - | points Yes FD +1100 DK +1200
+Adam Pelech: goal FD +2100 DK +2200
+Anthony Duclair: goal FD +450 DK +475
+Auston Matthews: ast O0.5 FD +116 DK - | goal FD +130 DK +140 | pts O0.5 FD -245 DK -
+Bo Groulx: goal FD +700 DK -
+Bo Horvat: ast O0.5 FD +154 DK +150 | goal FD +180 DK +175 | pts O0.5 FD -162 DK -155
+Brandon Duhaime: goal FD +750 DK +750
+Brayden Schenn: ast O0.5 FD +164 DK +165 | goal FD +300 DK +300 | pts O0.5 FD -113 DK -110
+Calum Ritchie: ast O0.5 FD - DK +300 | goal FD +430 DK +450 | pts O0.5 FD - DK +165
+Casey Cizikas: goal FD +750 DK +750
+Colton Sissons: goal FD +750 DK +700
+Darren Raddysh: ast O0.5 FD +112 DK - | goal FD +525 DK +500 | pts O0.5 FD -128 DK -
+Easton Cowan: ast O0.5 FD +255 DK - | goal FD +340 DK +330 | pts O0.5 FD +128 DK -
+Emil Heineman: goal FD +420 DK +400
+Jack Roslovic: ast O0.5 FD +220 DK - | goal FD +250 DK +245 | pts O0.5 FD +100 DK -
+Jake Mccabe: goal FD +1700 DK +1900
+Jeangabriel Pageau: goal FD +600 DK +600
+John Tavares: goal FD - DK +235
+Kyle Palmieri: ast O0.5 FD - DK +180 | goal FD +275 DK +230 | pts O0.5 FD - DK -120
+Matias Maccelli: ast O0.5 FD +172 DK +175 | goal FD +330 DK +360 | pts O0.5 FD -104 DK +105
+Matthew Kessel: goal FD +1900 DK +2000
+Matthew Schaefer: ast O0.5 FD -106 DK -105 | goal FD +350 DK +350 | pts O0.5 FD -170 DK -155
+Morgan Rielly: ast O0.5 FD +220 DK - | goal FD +1000 DK +950 | pts O0.5 FD +168 DK -
+Nick Paul: goal FD +420 DK +425
+Oliver Ekmanlarsson: goal FD +1200 DK +1200
+Ondrej Palat: goal FD +800 DK +750
+Ryan Pulock: goal FD +1300 DK +1200
+Simon Holmstrom: ast O0.5 FD +260 DK +310 | goal FD +370 DK +425 | pts O0.5 FD +140 DK +170
+Teddy Blueger: goal FD +650 DK +700
+Tony Deangelo: ast O0.5 FD +220 DK +230 | goal FD +900 DK +850 | pts O0.5 FD +164 DK +170
+Troy Stecher: goal FD - DK +2500
+William Nylander: ast O0.5 FD -113 DK - | goal FD +170 DK +170 | pts O0.5 FD -250 DK -
+Zack Macewen: goal FD +1100 DK +1100
 
 == New York Rangers @ Columbus Blue Jackets  Sat 07:00 PM ET ==
-Adam Fox: assists O0.5 FD - DK +370 | assists Yes FD - DK +370 | goals+assists O0.5 FD +265 DK - | goals+assists Yes FD +265 DK - | points O1.5 FD +8000 DK +10000 | points Yes FD +625 DK +700
-Alexis Lafreniere: assists O0.5 FD - DK +650 | assists Yes FD - DK +650 | goals+assists O0.5 FD +275 DK - | goals+assists Yes FD +275 DK - | points O0.5 FD +175 DK +1100 | points Yes FD +175 DK +155
-Braden Schneider: points O1.5 FD - DK - | points Yes FD +2400 DK +2800
-Charlie Coyle: assists O0.5 FD - DK +650 | assists Yes FD - DK +650 | goals+assists O0.5 FD +325 DK - | goals+assists Yes FD +325 DK - | points O0.5 FD +270 DK +2200 | points Yes FD +270 DK +260
-Cole Sillinger: points O1.5 FD - DK +5000 | points Yes FD - DK +1500
-Conor Garland: points O1.5 FD +3500 DK +4000 | points Yes FD +370 DK +400
-Damon Severson: points O1.5 FD +10000 DK - | points Yes FD +700 DK +900
-Danton Heinen: points O1.5 FD +8000 DK +10000 | points Yes FD +700 DK +750
-Denton Mateychuk: points O1.5 FD +8000 DK +10000 | points Yes FD +650 DK +750
-Dmitri Voronkov: points O1.5 FD +3500 DK +4500 | points Yes FD +380 DK +390
-Eeli Tolvanen: points O1.5 FD +6500 DK +5000 | points Yes FD +500 DK +450
-Erik Gudbranson: points O1.5 FD - DK - | points Yes FD +1900 DK +2800
-Gabe Perreault: assists O0.5 FD - DK +1000 | assists Yes FD - DK +1000 | goals+assists O0.5 FD +350 DK - | goals+assists Yes FD +350 DK - | points O1.5 FD +2700 DK +2800 | points Yes FD +300 DK +300
-Jake Christiansen: points O1.5 FD - DK - | points Yes FD +1700 DK +1800
-Jaroslav Chmelar: points O1.5 FD - DK - | points Yes FD +1000 DK -
-Jt Miller: assists O0.5 FD - DK +475 | assists Yes FD - DK +475 | goals+assists O0.5 FD +275 DK - | goals+assists Yes FD +275 DK - | points O0.5 FD +275 DK +2200 | points Yes FD +275 DK +260
-Kent Johnson: assists O0.5 FD - DK +600 | assists Yes FD - DK +600 | goals+assists O0.5 FD +310 DK - | goals+assists Yes FD +310 DK - | points O1.5 FD +2700 DK +3000 | points Yes FD +280 DK +320
-Luca Del Bel Belluz: points O1.5 FD +6000 DK - | points Yes FD +500 DK -
-Marcus Pettersson: points O1.5 FD - DK - | points Yes FD +2600 DK +2000
-Mathieu Olivier: points O1.5 FD +5500 DK +5500 | points Yes FD +480 DK +475
-Mika Zibanejad: assists O0.5 FD - DK +500 | assists Yes FD - DK +500 | goals+assists O0.5 FD +235 DK - | goals+assists Yes FD +235 DK - | points O0.5 FD +210 DK +1600 | points Yes FD +210 DK +205
-Noah Laba: points O1.5 FD - DK - | points Yes FD +800 DK +800
-Oliver Bjorkstrand: points O1.5 FD +6000 DK +6000 | points Yes FD +525 DK +500
-Pavel Dorofeyev: assists O0.5 FD - DK +750 | assists Yes FD - DK +750 | goals+assists O0.5 FD +300 DK - | goals+assists Yes FD +300 DK - | points O0.5 FD +190 DK +1300 | points Yes FD +190 DK +175
-Ryan Lomberg: points O1.5 FD - DK +10000 | points Yes FD - DK +2200
-Sean Durzi: points O1.5 FD - DK - | points Yes FD +900 DK +850
-Sean Monahan: assists O0.5 FD - DK +950 | assists Yes FD - DK +950 | goals+assists O0.5 FD +325 DK - | goals+assists Yes FD +325 DK - | points O1.5 FD +3000 DK +3500 | points Yes FD +320 DK +330
-Tye Kartye: points O1.5 FD +7000 DK +7000 | points Yes FD +525 DK +550
-Valeri Nichushkin: assists O0.5 FD - DK +750 | assists Yes FD - DK +750 | goals+assists O0.5 FD +285 DK - | goals+assists Yes FD +285 DK - | points O0.5 FD +290 DK +2800 | points Yes FD +290 DK +300
-Vladislav Gavrikov: points O1.5 FD - DK - | points Yes FD +1300 DK +1500
-Will Cuylle: points O1.5 FD +2700 DK +2500 | points Yes FD +320 DK +285
-Zach Werenski: assists O0.5 FD - DK +320 | assists Yes FD - DK +320 | goals+assists O0.5 FD +195 DK - | goals+assists Yes FD +195 DK - | points O1.5 FD +2700 DK +3000 | points Yes FD +310 DK +300
+Adam Fox: ast O0.5 FD -113 DK -120 | goal FD +650 DK +700 | pts O0.5 FD -148 DK -145
+Alexis Lafreniere: ast O0.5 FD +168 DK +180 | goal FD +180 DK +165 | pts O0.5 FD -154 DK -145
+Braden Schneider: goal FD +2200 DK +2500
+Charlie Coyle: ast O0.5 FD +180 DK +170 | goal FD +275 DK +265 | pts O0.5 FD -113 DK -115
+Conor Garland: goal FD +380 DK +425
+Damon Severson: goal FD +750 DK +800
+Danton Heinen: goal FD +725 DK +700
+Denton Mateychuk: goal FD +650 DK +650
+Dmitri Voronkov: goal FD +370 DK +400
+Eeli Tolvanen: goal FD +500 DK +425
+Erik Gudbranson: goal FD +2200 DK +2500
+Gabe Perreault: ast O0.5 FD +196 DK +275 | goal FD +300 DK +320 | pts O0.5 FD +100 DK +135
+Jake Christiansen: goal FD +1700 DK +1900
+Jt Miller: ast O0.5 FD +116 DK +120 | goal FD +280 DK +255 | pts O0.5 FD -156 DK -150
+Kent Johnson: ast O0.5 FD +164 DK +160 | goal FD +280 DK +330 | pts O0.5 FD -115 DK -110
+Luca Del Bel Belluz: goal FD +500 DK +500
+Marcus Pettersson: goal FD +2500 DK +2000
+Mathieu Olivier: goal FD +460 DK +475
+Mika Zibanejad: ast O0.5 FD +116 DK +130 | goal FD +210 DK +220 | pts O0.5 FD -178 DK -155
+Noah Laba: goal FD +900 DK +900
+Oliver Bjorkstrand: goal FD +550 DK +550
+Pavel Dorofeyev: ast O0.5 FD +190 DK +215 | goal FD +195 DK +175 | pts O0.5 FD -138 DK -125
+Ryan Lomberg: goal FD - DK +650
+Sean Durzi: goal FD +950 DK +800
+Sean Monahan: ast O0.5 FD +176 DK +250 | goal FD +310 DK +310 | pts O0.5 FD -104 DK +125
+Taylor Raddysh: goal FD +750 DK +800
+Tye Kartye: goal FD +550 DK +550
+Valeri Nichushkin: ast O0.5 FD +140 DK +195 | goal FD +290 DK +320 | pts O0.5 FD -130 DK +105
+Vladislav Gavrikov: goal FD +1300 DK +1500
+Will Cuylle: goal FD +300 DK +275
+Zach Werenski: ast O0.5 FD -154 DK -150 | goal FD +290 DK +295 | pts O0.5 FD -235 DK -225
 
 == Dallas Stars @ Chicago Blackhawks  Sat 07:00 PM ET ==
-Alex Vlasic: points O1.5 FD - DK - | points Yes FD +1800 DK +1500
-Anton Frondell: assists O0.5 FD - DK +850 | assists Yes FD - DK +850 | goals+assists O0.5 FD - DK +500 | goals+assists Yes FD - DK +500 | points O1.5 FD +4000 DK +4500 | points Yes FD +400 DK +400
-Arttu Hyry: points O1.5 FD +7000 DK +8000 | points Yes FD +550 DK +600
-Artyom Levshunov: points O1.5 FD - DK - | points Yes FD +1700 DK +1400
-Cole Smith: points O1.5 FD - DK - | points Yes FD +1300 DK +1300
-Colin Blackwell: points O1.5 FD +10000 DK +10000 | points Yes FD +700 DK +700
-Connor Bedard: assists O0.5 FD - DK +475 | assists Yes FD - DK +475 | goals+assists O0.5 FD +230 DK - | goals+assists Yes FD +230 DK - | points O0.5 FD +210 DK +1600 | points Yes FD +210 DK +205
-Esa Lindell: points O1.5 FD - DK - | points Yes FD +1100 DK +1200
-Frank Nazar: assists O0.5 FD - DK +800 | assists Yes FD - DK +800 | goals+assists O0.5 FD - DK +500 | goals+assists Yes FD - DK +500 | points O1.5 FD +4500 DK +4500 | points Yes FD +430 DK +400
-Ian Cole: points O1.5 FD - DK - | points Yes FD +2200 DK +2200
-Jamie Benn: points O1.5 FD +3300 DK +3500 | points Yes FD +350 DK +380
-Jason Robertson: assists O0.5 FD - DK +390 | assists Yes FD - DK +390 | goals+assists O0.5 FD +148 DK - | goals+assists O1.5 FD +144 DK +155 | goals+assists Yes FD +148 DK - | points O0.5 FD +120 DK +700 | points Yes FD +120 DK +120
-Joel Kiviranta: points O1.5 FD - DK +10000 | points Yes FD +800 DK +800
-Jordan Greenway: points O1.5 FD - DK - | points Yes FD +1300 DK +1100
-Justin Hryckowian: points O1.5 FD +2000 DK +2200 | points Yes FD +230 DK +265
-Lian Bichsel: points O1.5 FD - DK - | points Yes FD +1900 DK +1700
-Mikko Rantanen: assists O0.5 FD - DK +350 | assists Yes FD - DK +350 | goals+assists O0.5 FD +148 DK - | goals+assists O1.5 FD +142 DK +160 | goals+assists Yes FD +148 DK - | points O0.5 FD +150 DK +950 | points Yes FD +150 DK +150
-Miro Heiskanen: assists O0.5 FD - DK +390 | assists Yes FD - DK +390 | goals+assists O0.5 FD +240 DK - | goals+assists Yes FD +240 DK - | points O1.5 FD +5500 DK +5000 | points Yes FD +440 DK +425
-Nils Lundkvist: points O1.5 FD - DK - | points Yes FD +1600 DK +1800
-Oliver Moore: points O1.5 FD +8000 DK +10000 | points Yes FD +650 DK +700
-Patrick Kane: assists O0.5 FD - DK +500 | assists Yes FD - DK +500 | goals+assists O0.5 FD +310 DK - | goals+assists Yes FD +310 DK - | points O1.5 FD +2700 DK +2800 | points Yes FD +320 DK +310
-Radek Faksa: points O1.5 FD +10000 DK +8000 | points Yes FD +750 DK +700
-Roope Hintz: assists O0.5 FD - DK +500 | assists Yes FD - DK +500 | goals+assists O0.5 FD +198 DK - | goals+assists Yes FD +198 DK - | points O0.5 FD +180 DK +1200 | points Yes FD +180 DK +175
-Ryan Donato: points O1.5 FD +7500 DK +6500 | points Yes FD +600 DK +500
-Ryan Greene: points O1.5 FD +10000 DK +10000 | points Yes FD +850 DK +700
-Sam Rinzel: points O1.5 FD - DK - | points Yes FD +900 DK +850
-Sam Steel: points O1.5 FD +3300 DK +3000 | points Yes FD +340 DK +330
-Teuvo Teravainen: assists O0.5 FD - DK +700 | assists Yes FD - DK +700 | goals+assists O0.5 FD - DK +475 | goals+assists Yes FD - DK +475 | points O1.5 FD +6500 DK +6500 | points Yes FD +525 DK +475
-Thomas Harley: assists O0.5 FD - DK +650 | assists Yes FD - DK +650 | goals+assists O0.5 FD +390 DK - | goals+assists Yes FD +390 DK - | points O1.5 FD +8000 DK - | points Yes FD +650 DK +800
-Tyler Bertuzzi: assists O0.5 FD - DK +750 | assists Yes FD - DK +750 | goals+assists O0.5 FD +375 DK - | goals+assists Yes FD +375 DK - | points O0.5 FD +275 DK +2500 | points Yes FD +275 DK +275
-Tyler Myers: points O1.5 FD - DK - | points Yes FD +1800 DK +2200
-Tyler Seguin: points O1.5 FD +1600 DK +1800 | points Yes FD +210 DK +220
-Wyatt Johnston: points O1.5 FD - DK +700 | points Yes FD - DK +650
-Wyatt Kaiser: points O1.5 FD - DK - | points Yes FD +1400 DK +1500
+Alex Vlasic: goal FD +1800 DK +1500
+Anton Frondell: ast O0.5 FD - DK +235 | goal FD +400 DK +400 | pts O0.5 FD - DK +135
+Arttu Hyry: goal FD +550 DK +600
+Artyom Levshunov: goal FD +1700 DK +1400
+Cole Smith: goal FD +1300 DK +1400
+Colin Blackwell: goal FD +700 DK +700
+Connor Bedard: ast O0.5 FD +104 DK +120 | goal FD +210 DK +205 | pts O0.5 FD -194 DK -165
+Esa Lindell: goal FD +1100 DK +1100
+Frank Nazar: ast O0.5 FD - DK +230 | goal FD +430 DK +400 | pts O0.5 FD - DK +135
+Ian Cole: goal FD +2200 DK +2200
+Jamie Benn: goal FD +350 DK +380
+Jason Robertson: ast O0.5 FD -136 DK -120 | goal FD +120 DK +120 | pts O1.5 FD +144 DK +155
+Joel Kiviranta: goal FD +800 DK +800
+Jordan Greenway: goal FD +1300 DK +1100
+Justin Hryckowian: goal FD +230 DK +260
+Lian Bichsel: goal FD +1900 DK +1800
+Mikko Rantanen: ast O0.5 FD -158 DK -140 | goal FD +150 DK +150 | pts O1.5 FD +142 DK +155
+Miro Heiskanen: ast O0.5 FD -128 DK -120 | goal FD +440 DK +425 | pts O0.5 FD -180 DK -160
+Nils Lundkvist: goal FD +1600 DK +1800
+Oliver Moore: goal FD +650 DK +750
+Patrick Kane: ast O0.5 FD +140 DK +135 | goal FD +320 DK +320 | pts O0.5 FD -122 DK -120
+Radek Faksa: goal FD +750 DK +700
+Roope Hintz: ast O0.5 FD +112 DK +130 | goal FD +180 DK +180 | pts O0.5 FD -205 DK -170
+Ryan Donato: goal FD +600 DK +500
+Ryan Greene: goal FD +850 DK +700
+Sam Rinzel: goal FD +900 DK +850
+Sam Steel: goal FD +340 DK +330
+Teuvo Teravainen: ast O0.5 FD - DK +200 | goal FD +525 DK +500 | pts O0.5 FD - DK +130
+Thomas Harley: ast O0.5 FD +164 DK +170 | goal FD +650 DK +750 | pts O0.5 FD +122 DK +130
+Tyler Bertuzzi: ast O0.5 FD +230 DK +230 | goal FD +275 DK +280 | pts O0.5 FD +110 DK +110
+Tyler Myers: goal FD +1800 DK +2200
+Tyler Seguin: goal FD +210 DK +220
+Wyatt Johnston: goal FD - DK +170
+Wyatt Kaiser: goal FD +1400 DK +1500
 
 == Buffalo Sabres @ Montréal Canadiens  Sat 07:00 PM ET ==
-Adam Engstrom: points O1.5 FD - DK - | points Yes FD +1700 DK +1700
-Alexandre Carrier: points O1.5 FD - DK - | points Yes FD +2100 DK +1900
-Alexandre Texier: points O1.5 FD +5500 DK +5000 | points Yes FD +480 DK +450
-Alex Newhook: points O1.5 FD +4000 DK +4000 | points Yes FD +400 DK +400
-Arber Xhekaj: points O1.5 FD - DK - | points Yes FD +2400 DK +2800
-Beck Malenstyn: points O1.5 FD - DK - | points Yes FD +1200 DK +1200
-Chris Kreider: assists O0.5 FD - DK +700 | assists Yes FD - DK +700 | goals+assists O0.5 FD +320 DK - | goals+assists Yes FD +320 DK - | points O0.5 FD +230 DK +2000 | points Yes FD +230 DK +250
-Cole Caufield: assists O0.5 FD - DK +475 | assists Yes FD - DK +475 | goals+assists O0.5 FD -250 DK -230 | goals+assists Yes FD -250 DK -230 | points O0.5 FD +110 DK +700 | points Yes FD +110 DK +115
-Dennis Gilbert: points O1.5 FD - DK - | points Yes FD +1900 DK +2200
-Jack Quinn: assists O0.5 FD - DK +650 | assists Yes FD - DK +650 | goals+assists O0.5 FD -128 DK -130 | goals+assists Yes FD -128 DK -130 | points O0.5 FD +230 DK +1600 | points Yes FD +230 DK +210
-Jake Evans: points O1.5 FD +10000 DK +9000 | points Yes FD +650 DK +700
-Jiri Kulich: points O1.5 FD - DK +4500 | points Yes FD - DK +1400
-Josh Anderson: points O1.5 FD +4500 DK +3500 | points Yes FD +400 DK +350
-Josh Doan: assists O0.5 FD - DK +850 | assists Yes FD - DK +850 | goals+assists O0.5 FD +118 DK +120 | goals+assists Yes FD +118 DK +120 | points O0.5 FD +300 DK +3000 | points Yes FD +300 DK +320
-Josh Norris: points O1.5 FD +3500 DK +3500 | points Yes FD +370 DK +360
-Juraj Slafkovsky: assists O0.5 FD - DK +475 | assists Yes FD - DK +475 | goals+assists O0.5 FD -186 DK -175 | goals+assists Yes FD -186 DK -175 | points O0.5 FD +200 DK +1500 | points Yes FD +200 DK +195
-Justin Danforth: points O1.5 FD - DK - | points Yes FD +850 DK +850
-Kaiden Guhle: points O1.5 FD - DK - | points Yes FD +1000 DK +1100
-Kirby Dach: points O1.5 FD +6000 DK +6500 | points Yes FD +500 DK +500
-Konsta Helenius: points O1.5 FD +4000 DK +4500 | points Yes FD +430 DK +400
-Lane Hutson: assists O0.5 FD - DK +310 | assists Yes FD - DK +310 | goals+assists O0.5 FD -205 DK -190 | goals+assists Yes FD -205 DK -190 | points O1.5 FD +6000 DK +8000 | points Yes FD +550 DK +600
-Louis Crevier: points O1.5 FD - DK - | points Yes FD +1500 DK +1500
-Mattias Samuelsson: points O1.5 FD - DK - | points Yes FD +850 DK +800
-Nick Suzuki: assists O0.5 FD - DK +300 | assists Yes FD - DK +300 | goals+assists O0.5 FD +165 DK - | goals+assists O1.5 FD +164 DK +155 | goals+assists Yes FD -310 DK -285 | points O0.5 FD +190 DK +1300 | points Yes FD +190 DK +175
-Noah Dobson: assists O0.5 FD - DK +700 | assists Yes FD - DK +700 | goals+assists O0.5 FD +415 DK - | goals+assists Yes FD +415 DK - | points O1.5 FD +10000 DK +10000 | points Yes FD +700 DK +650
-Noah Ostlund: assists O0.5 FD - DK +650 | assists Yes FD - DK +650 | goals+assists O0.5 FD +340 DK - | goals+assists Yes FD +340 DK - | points O1.5 FD +3300 DK +3500 | points Yes FD +350 DK +340
-Olen Zellweger: assists O0.5 FD - DK +750 | assists Yes FD - DK +750 | goals+assists O0.5 FD +490 DK - | goals+assists Yes FD +490 DK - | points O1.5 FD +10000 DK +7000 | points Yes FD +700 DK +550
-Owen Beck: points O1.5 FD +10000 DK - | points Yes FD +700 DK +800
-Owen Power: assists O0.5 FD - DK +500 | assists Yes FD - DK +500 | goals+assists O0.5 FD -118 DK -105 | goals+assists Yes FD -118 DK -105 | points O1.5 FD +6000 DK +6500 | points Yes FD +500 DK +550
-Peyton Krebs: points O1.5 FD +7000 DK +6500 | points Yes FD +550 DK +550
-Phillip Danault: points O1.5 FD +8000 DK +6000 | points Yes FD +700 DK +500
-Ryan Mcleod: assists O0.5 FD - DK +800 | assists Yes FD - DK +800 | goals+assists O0.5 FD +450 DK - | goals+assists Yes FD +450 DK - | points O1.5 FD +7000 DK +5500 | points Yes FD +525 DK +475
-Sam Carrick: points O1.5 FD - DK - | points Yes FD +1000 DK -
-Tage Thompson: assists O0.5 FD - DK +500 | assists Yes FD - DK +500 | goals+assists O0.5 FD -215 DK -200 | goals+assists Yes FD -215 DK -200 | points O0.5 FD +145 DK +1000 | points Yes FD +145 DK +140
-Zach Benson: assists O0.5 FD - DK +700 | assists Yes FD - DK +700 | goals+assists O0.5 FD -104 DK +105 | goals+assists Yes FD -104 DK +105 | points O1.5 FD +3000 DK +3500 | points Yes FD +320 DK +330
-Zach Metsa: points O1.5 FD - DK - | points Yes FD +2200 DK +2000
-Zack Bolduc: points O1.5 FD +3000 DK +2800 | points Yes FD +340 DK +320
+Alexandre Carrier: goal FD +2500 DK +1900
+Alexandre Texier: goal FD +490 DK +450
+Alex Newhook: goal FD +380 DK +390
+Arber Xhekaj: goal FD - DK +3000
+Beck Malenstyn: goal FD +1200 DK +1300
+Chris Kreider: ast O0.5 FD +210 DK +195 | goal FD +240 DK +245 | pts O0.5 FD -106 DK -110
+Cole Caufield: ast O0.5 FD +126 DK +130 | goal FD +115 DK +115 | pts O0.5 FD -250 DK -220
+David Reinbacher: goal FD +1300 DK +1300
+Dennis Gilbert: goal FD +1700 DK +2200
+Jack Quinn: ast O0.5 FD +182 DK +175 | goal FD +240 DK +215 | pts O0.5 FD -120 DK -125
+Jake Evans: goal FD +700 DK +700
+Jiri Kulich: goal FD +440 DK +425
+Josh Anderson: goal FD +400 DK +360
+Josh Doan: ast O0.5 FD +235 DK +235 | goal FD +310 DK +310 | pts O0.5 FD +116 DK +120
+Josh Norris: goal FD +380 DK +360
+Juraj Slafkovsky: ast O0.5 FD +124 DK +115 | goal FD +210 DK +195 | pts O0.5 FD -172 DK -175
+Justin Danforth: goal FD - DK +850
+Kaiden Guhle: goal FD +1100 DK +1100
+Kirby Dach: goal FD +525 DK +550
+Konsta Helenius: goal FD +430 DK +390
+Lane Hutson: ast O0.5 FD -160 DK -150 | goal FD +550 DK +600 | pts O0.5 FD -210 DK -185
+Louis Crevier: goal FD +1600 DK +1600
+Mattias Samuelsson: goal FD +850 DK +800
+Nick Suzuki: ast O0.5 FD -150 DK -150 | goal FD +195 DK +180 | pts O1.5 FD +172 DK +160
+Noah Dobson: ast O0.5 FD +200 DK +195 | goal FD +725 DK +700 | pts O0.5 FD +142 DK +140
+Noah Ostlund: ast O0.5 FD +176 DK +175 | goal FD +370 DK +340 | pts O0.5 FD +102 DK +100
+Olen Zellweger: ast O0.5 FD +230 DK +200 | goal FD +700 DK +550 | pts O0.5 FD +162 DK +135
+Oliver Kapanen: goal FD +490 DK +600
+Owen Power: ast O0.5 FD +130 DK +130 | goal FD +525 DK +500 | pts O0.5 FD -108 DK -105
+Peyton Krebs: goal FD +600 DK +500
+Phillip Danault: goal FD +700 DK +500
+Ryan Mcleod: ast O0.5 FD +230 DK +230 | goal FD +575 DK +475 | pts O0.5 FD +150 DK +140
+Sam Carrick: goal FD +1000 DK -
+Tage Thompson: ast O0.5 FD +118 DK +125 | goal FD +155 DK +145 | pts O0.5 FD -210 DK -195
+Zach Benson: ast O0.5 FD +200 DK +200 | goal FD +330 DK +320 | pts O0.5 FD +108 DK +110
+Zach Metsa: goal FD +2300 DK +2000
+Zack Bolduc: goal FD +330 DK +310
 
 == San Jose Sharks @ Detroit Red Wings  Sat 07:00 PM ET ==
-Albert Johansson: points O1.5 FD - DK - | points Yes FD +1400 DK +1300
-Alexander Wennberg: assists O0.5 FD - DK +650 | assists Yes FD - DK +650 | goals+assists O0.5 FD +365 DK - | goals+assists Yes FD +365 DK - | points O1.5 FD +4000 DK +5500 | points Yes FD +440 DK +450
-Alex Debrincat: assists O0.5 FD - DK +450 | assists Yes FD - DK +450 | goals+assists O0.5 FD -265 DK -225 | goals+assists Yes FD -265 DK -225 | points O0.5 FD +140 DK +900 | points Yes FD +140 DK +135
-Andrew Copp: assists O0.5 FD - DK +900 | assists Yes FD - DK +900 | goals+assists O0.5 FD - DK +550 | goals+assists Yes FD - DK +550 | points O1.5 FD +3300 DK +3500 | points Yes FD +350 DK +350
-Axel Sandinpellikka: points O1.5 FD - DK - | points Yes FD +1400 DK +1200
-Barclay Goodrow: points O1.5 FD - DK - | points Yes FD +1300 DK +1600
-Ben Chiarot: points O1.5 FD - DK - | points Yes FD +1200 DK +1100
-Collin Graf: points O1.5 FD +8000 DK +8000 | points Yes FD +575 DK +650
-Dmitry Orlov: points O1.5 FD +10000 DK - | points Yes FD +850 DK +850
-Dylan Larkin: assists O0.5 FD - DK +500 | assists Yes FD - DK +500 | goals+assists O0.5 FD -215 DK -180 | goals+assists Yes FD -215 DK -180 | points O0.5 FD +170 DK +1200 | points Yes FD +170 DK +170
-Emmitt Finnie: assists O0.5 FD - DK +750 | assists Yes FD - DK +750 | goals+assists O0.5 FD +340 DK - | goals+assists Yes FD +340 DK - | points O1.5 FD +3000 DK +3500 | points Yes FD +300 DK +340
-Igor Chernyshov: assists O0.5 FD - DK +900 | assists Yes FD - DK +900 | goals+assists O0.5 FD - DK +500 | goals+assists Yes FD - DK +500 | points O0.5 FD +310 DK +3500 | points Yes FD +310 DK +350
-Jacob Trouba: points O1.5 FD - DK - | points Yes FD +1200 DK +1200
-Justin Faulk: assists O0.5 FD - DK +900 | assists Yes FD - DK +900 | goals+assists O0.5 FD - DK +700 | goals+assists Yes FD - DK +700 | points O1.5 FD +10000 DK +10000 | points Yes FD +800 DK +750
-Keegan Kolesar: points O1.5 FD +10000 DK +11000 | points Yes FD +800 DK +750
-Kiefer Sherwood: assists O0.5 FD - DK +1300 | assists Yes FD - DK +1300 | goals+assists O0.5 FD - DK +750 | goals+assists Yes FD - DK +750 | points O1.5 FD +6500 DK +4500 | points Yes FD +490 DK +450
-Lucas Raymond: assists O0.5 FD - DK +475 | assists Yes FD - DK +475 | goals+assists O0.5 FD -170 DK -165 | goals+assists Yes FD -170 DK -165 | points O0.5 FD +240 DK +1800 | points Yes FD +240 DK +220
-Luca Cagnoni: assists O0.5 FD - DK +650 | assists Yes FD - DK +650 | goals+assists O0.5 FD - DK +550 | goals+assists Yes FD - DK +550 | points O1.5 FD - DK - | points Yes FD +900 DK +850
-Macklin Celebrini: assists O0.5 FD -162 DK - | assists Yes FD -162 DK - | goals+assists O0.5 FD +154 DK - | goals+assists O1.5 FD +142 DK - | goals+assists Yes FD -330 DK - | points O0.5 FD +155 DK +700 | points Yes FD +155 DK +110
-Mason Marchment: assists O0.5 FD - DK +850 | assists Yes FD - DK +850 | goals+assists O0.5 FD +410 DK - | goals+assists Yes FD +410 DK - | points O1.5 FD +4000 DK +3500 | points Yes FD +390 DK +330
-Michael Brandseggnygard: assists O0.5 FD - DK +900 | assists Yes FD - DK +900 | goals+assists O0.5 FD - DK +550 | goals+assists Yes FD - DK +550 | points O1.5 FD +3300 DK +4500 | points Yes FD +350 DK +400
-Michael Kesselring: points O1.5 FD - DK - | points Yes FD +2000 DK +2000
-Michael Misa: assists O0.5 FD - DK +850 | assists Yes FD - DK +850 | goals+assists O0.5 FD +132 DK +140 | goals+assists Yes FD +132 DK +140 | points O1.5 FD +5000 DK +5500 | points Yes FD +430 DK +500
-Michael Rasmussen: points O1.5 FD +3500 DK +4500 | points Yes FD +400 DK +425
-Moritz Seider: assists O0.5 FD - DK +425 | assists Yes FD - DK +425 | goals+assists O0.5 FD -142 DK -125 | goals+assists Yes FD -142 DK -125 | points O1.5 FD +8000 DK +10000 | points Yes FD +625 DK +600
-Nate Danielson: assists O0.5 FD - DK +1100 | assists Yes FD - DK +1100 | goals+assists O0.5 FD - DK +550 | goals+assists Yes FD - DK +550 | points O1.5 FD +3300 DK +3000 | points Yes FD +320 DK +340
-Nolan Allan: points Yes FD - DK +4000
-Sam Dickinson: points O1.5 FD - DK - | points Yes FD +1500 DK +1700
-Sheldon Dries: points O1.5 FD +10000 DK +11000 | points Yes FD +800 DK +700
-Tyler Toffoli: assists O0.5 FD - DK +1000 | assists Yes FD - DK +1000 | goals+assists O0.5 FD +144 DK +130 | goals+assists Yes FD +144 DK +130 | points O1.5 FD +3300 DK +2800 | points Yes FD +340 DK +310
-Viktor Arvidsson: assists O0.5 FD - DK +600 | assists Yes FD - DK +600 | goals+assists O0.5 FD -150 DK -145 | goals+assists Yes FD -150 DK -145 | points O0.5 FD +210 DK +1600 | points Yes FD +210 DK +205
-William Wallinder: points O1.5 FD - DK - | points Yes FD +1500 DK +1300
-Will Smith: assists O0.5 FD - DK +500 | assists Yes FD - DK +500 | goals+assists O0.5 FD -164 DK -160 | goals+assists Yes FD -164 DK -160 | points O0.5 FD +230 DK +1600 | points Yes FD +230 DK +205
-Zack Ostapchuk: points O1.5 FD - DK - | points Yes FD +1400 DK +1200
+Albert Johansson: goal FD +1400 DK +1200
+Alexander Wennberg: ast O0.5 FD +176 DK +175 | goal FD +440 DK +475 | pts O0.5 FD +110 DK +115
+Alex Debrincat: ast O0.5 FD +100 DK +105 | goal FD +140 DK +125 | pts O0.5 FD -250 DK -240
+Andrew Copp: ast O0.5 FD - DK +260 | goal FD +370 DK +340 | pts O0.5 FD - DK +140
+Axel Sandinpellikka: goal FD - DK +1100
+Barclay Goodrow: goal FD +1300 DK +1600
+Ben Chiarot: goal FD +1200 DK +1100
+Carter Mazur: goal FD +800 DK -
+Collin Graf: goal FD +575 DK +650
+Dmitry Orlov: goal FD +800 DK +850
+Dylan Larkin: ast O0.5 FD +106 DK +115 | goal FD +170 DK +165 | pts O0.5 FD -220 DK -190
+Emmitt Finnie: ast O0.5 FD +210 DK +210 | goal FD +310 DK +350 | pts O0.5 FD +108 DK +115
+Igor Chernyshov: ast O0.5 FD - DK +255 | goal FD +310 DK +350 | pts O0.5 FD - DK +130
+Jacob Trouba: goal FD +1200 DK +1200
+Justin Faulk: ast O0.5 FD - DK +245 | goal FD +850 DK +750 | pts O0.5 FD - DK +170
+Keegan Kolesar: goal FD +850 DK +800
+Kiefer Sherwood: ast O0.5 FD - DK +380 | goal FD +490 DK +475 | pts O0.5 FD - DK +195
+Lucas Raymond: ast O0.5 FD -102 DK +115 | goal FD +240 DK +260 | pts O0.5 FD -188 DK -155
+Luca Cagnoni: ast O0.5 FD - DK +175 | goal FD +900 DK +900 | pts O0.5 FD - DK +140
+Macklin Celebrini: ast O0.5 FD -158 DK - | goal FD +155 DK +110 | pts O1.5 FD +144 DK -
+Mason Marchment: ast O0.5 FD +240 DK +235 | goal FD +380 DK +330 | pts O0.5 FD +130 DK +120
+Michael Brandseggnygard: ast O0.5 FD - DK +275 | goal FD +370 DK +425 | pts O0.5 FD - DK +150
+Michael Kesselring: goal FD +2000 DK +2000
+Michael Misa: ast O0.5 FD +200 DK +230 | goal FD +440 DK +500 | pts O0.5 FD +124 DK +145
+Michael Rasmussen: goal FD +400 DK +390
+Moritz Seider: ast O0.5 FD -111 DK +100 | goal FD +600 DK +550 | pts O0.5 FD -146 DK -130
+Nate Danielson: ast O0.5 FD - DK +310 | goal FD +330 DK +450 | pts O0.5 FD - DK +165
+Nolan Allan: goal FD - DK +1300
+Sam Dickinson: goal FD +1500 DK +1700
+Sheldon Dries: goal FD +850 DK +750
+Tyler Toffoli: ast O0.5 FD +255 DK +285 | goal FD +340 DK +310 | pts O0.5 FD +132 DK +130
+Viktor Arvidsson: ast O0.5 FD +146 DK +150 | goal FD +210 DK +185 | pts O0.5 FD -148 DK -150
+William Wallinder: goal FD +1400 DK +1200
+Will Smith: ast O0.5 FD +126 DK +130 | goal FD +230 DK +205 | pts O0.5 FD -162 DK -160
+Zack Ostapchuk: goal FD +1300 DK +1300
 
 == St. Louis Blues @ Nashville Predators  Sat 08:00 PM ET ==
-Adam Edstrom: points O1.5 FD +10000 DK +7000 | points Yes FD +650 DK +550
-Adam Jiricek: assists O0.5 FD - DK +700 | assists Yes FD - DK +700 | goals+assists O0.5 FD - DK +550 | goals+assists Yes FD - DK +550 | points O1.5 FD +8000 DK +10000 | points Yes FD +650 DK +700
-Adam Wilsby: points O1.5 FD - DK - | points Yes FD +2300 DK +2200
-Alexander Kerfoot: assists O0.5 FD - DK +900 | assists Yes FD - DK +900 | goals+assists O0.5 FD +450 DK - | goals+assists Yes FD +450 DK - | points O1.5 FD +5000 DK +6000 | points Yes FD +440 DK +450
-Brady Skjei: points O1.5 FD - DK - | points Yes FD +1100 DK +1000
-Brandon Carlo: points O1.5 FD - DK - | points Yes FD +2000 DK +1700
-Cam Fowler: assists O0.5 FD - DK +800 | assists Yes FD - DK +800 | goals+assists O0.5 FD - DK +650 | goals+assists Yes FD - DK +650 | points O1.5 FD - DK - | points Yes FD +800 DK +800
-Colton Parayko: points O1.5 FD - DK - | points Yes FD +1000 DK +1000
-Connor Mcmichael: assists O0.5 FD - DK +850 | assists Yes FD - DK +850 | goals+assists O0.5 FD +350 DK - | goals+assists Yes FD +350 DK - | points O1.5 FD +2500 DK +2500 | points Yes FD +275 DK +310
-Dalibor Dvorsky: points O1.5 FD +3300 DK +4000 | points Yes FD +340 DK +360
-Dylan Holloway: assists O0.5 FD - DK +475 | assists Yes FD - DK +475 | goals+assists O0.5 FD -178 DK -175 | goals+assists Yes FD -178 DK -175 | points O0.5 FD +210 DK +1400 | points Yes FD +210 DK +195
-Filip Forsberg: assists O0.5 FD - DK +550 | assists Yes FD - DK +550 | goals+assists O0.5 FD +255 DK - | goals+assists Yes FD +255 DK - | points O0.5 FD +200 DK +1200 | points Yes FD +200 DK +165
-Jack Drury: points O1.5 FD - DK +10000 | points Yes FD +850 DK +750
-Jake Neighbours: assists O0.5 FD - DK +1000 | assists Yes FD - DK +1000 | goals+assists O0.5 FD - DK +550 | goals+assists Yes FD - DK +550 | points O1.5 FD +2700 DK +4000 | points Yes FD +320 DK +350
-Jimmy Snuggerud: assists O0.5 FD - DK +500 | assists Yes FD - DK +500 | goals+assists O0.5 FD -162 DK -155 | goals+assists Yes FD -162 DK -155 | points O0.5 FD +210 DK +1500 | points Yes FD +210 DK +195
-Jonatan Berggren: points O1.5 FD +5000 DK +5500 | points Yes FD +470 DK +500
-Jonathan Marchessault: assists O0.5 FD - DK +700 | assists Yes FD - DK +700 | goals+assists O0.5 FD +350 DK - | goals+assists Yes FD +350 DK - | points O1.5 FD +2500 DK +2500 | points Yes FD +275 DK +290
-Justin Barron: points O1.5 FD - DK - | points Yes FD +2000 DK +2000
-Mason Mctavish: assists O0.5 FD - DK +700 | assists Yes FD - DK +700 | goals+assists O0.5 FD +300 DK - | goals+assists Yes FD +300 DK - | points O1.5 FD +1900 DK +1900 | points Yes FD +240 DK +250
-Matthew Wood: assists O0.5 FD - DK +900 | assists Yes FD - DK +900 | goals+assists O0.5 FD +450 DK - | goals+assists Yes FD +450 DK - | points O1.5 FD +4500 DK +4000 | points Yes FD +390 DK +340
-Mavrik Bourque: points Yes FD - DK +1600
-Nick Perbix: points O1.5 FD - DK - | points Yes FD +1600 DK +2000
-Nicolas Hague: points O1.5 FD - DK - | points Yes FD +1700 DK +1400
-Nils Hoglander: points O1.5 FD +7500 DK +6500 | points Yes FD +550 DK +475
-Philip Broberg: points O1.5 FD - DK - | points Yes FD +1300 DK +1100
-Pius Suter: points O1.5 FD +4000 DK +4500 | points Yes FD +400 DK +425
-Reid Schaefer: points O1.5 FD - DK +9000 | points Yes FD +1100 DK +700
-Robert Thomas: assists O0.5 FD - DK +390 | assists Yes FD - DK +390 | goals+assists O0.5 FD -192 DK -175 | goals+assists Yes FD -192 DK -175 | points O1.5 FD +2700 DK +2500 | points Yes FD +280 DK +285
-Roman Josi: assists O0.5 FD - DK +400 | assists Yes FD - DK +400 | goals+assists O0.5 FD +275 DK - | goals+assists Yes FD +275 DK - | points O1.5 FD +4500 DK +6000 | points Yes FD +430 DK +475
-Ross Colton: points O1.5 FD +5000 DK +6500 | points Yes FD +460 DK +475
-Ross Johnston: points O1.5 FD - DK - | points Yes FD +1100 DK +1200
-Ryan Oreilly: assists O0.5 FD - DK +500 | assists Yes FD - DK +500 | goals+assists O0.5 FD +260 DK - | goals+assists Yes FD +260 DK - | points O1.5 FD +2000 DK +1800 | points Yes FD +240 DK +215
-Steven Stamkos: assists O0.5 FD - DK +550 | assists Yes FD - DK +550 | goals+assists O0.5 FD +245 DK - | goals+assists Yes FD +245 DK - | points O0.5 FD +180 DK +1200 | points Yes FD +180 DK +160
-Zach Dean: points O1.5 FD +10000 DK - | points Yes FD +750 DK +850
+Adam Edstrom: goal FD +650 DK +550
+Adam Jiricek: ast O0.5 FD - DK +210 | goal FD +650 DK +700 | pts O0.5 FD - DK +155
+Adam Wilsby: goal FD +2200 DK +2200
+Alexander Kerfoot: ast O0.5 FD +250 DK +245 | goal FD +460 DK +450 | pts O0.5 FD +146 DK +145
+Brady Skjei: goal FD +1100 DK +1000
+Brandon Carlo: goal FD +2000 DK +1700
+Cam Fowler: ast O0.5 FD - DK +225 | goal FD +800 DK +800 | pts O0.5 FD - DK +165
+Colton Parayko: goal FD +950 DK +1000
+Connor Mcmichael: ast O0.5 FD +220 DK +235 | goal FD +275 DK +310 | pts O0.5 FD +106 DK +115
+Dalibor Dvorsky: goal FD +330 DK +360
+Dylan Holloway: ast O0.5 FD +118 DK +115 | goal FD +210 DK +195 | pts O0.5 FD -174 DK -175
+Filip Forsberg: ast O0.5 FD +144 DK +135 | goal FD +200 DK +165 | pts O0.5 FD -156 DK -170
+Jack Drury: goal FD +850 DK +750
+Jake Neighbours: ast O0.5 FD - DK +285 | goal FD +320 DK +350 | pts O0.5 FD - DK +140
+Jimmy Snuggerud: ast O0.5 FD +132 DK +135 | goal FD +210 DK +195 | pts O0.5 FD -162 DK -155
+Jonatan Berggren: goal FD +460 DK +500
+Jonathan Marchessault: ast O0.5 FD +200 DK +190 | goal FD +275 DK +290 | pts O0.5 FD -102 DK -105
+Justin Barron: goal FD +2000 DK +2000
+Mason Mctavish: ast O0.5 FD +172 DK +180 | goal FD +240 DK +250 | pts O0.5 FD -122 DK -110
+Matthew Wood: ast O0.5 FD +260 DK +240 | goal FD +390 DK +340 | pts O0.5 FD +144 DK +125
+Nick Perbix: goal FD +1600 DK +2000
+Nicolas Hague: goal FD +1700 DK +1400
+Nils Hoglander: goal FD +525 DK +475
+Philip Broberg: goal FD +1300 DK +1100
+Pius Suter: goal FD +410 DK +425
+Reid Schaefer: goal FD +900 DK +700
+Robert Thomas: ast O0.5 FD -113 DK -110 | goal FD +280 DK +285 | pts O0.5 FD -192 DK -175
+Roman Josi: ast O0.5 FD +102 DK -105 | goal FD +430 DK +475 | pts O0.5 FD -146 DK -140
+Ross Colton: goal FD +480 DK +475
+Ross Johnston: goal FD +1100 DK +1200
+Ryan Oreilly: ast O0.5 FD +126 DK +125 | goal FD +240 DK +215 | pts O0.5 FD -156 DK -155
+Steven Stamkos: ast O0.5 FD +146 DK +140 | goal FD +180 DK +160 | pts O0.5 FD -166 DK -170
+Zach Dean: goal FD +750 DK +850
 
 == Boston Bruins @ Los Angeles Kings  Sat 09:00 PM ET ==
-Adrian Kempe: assists O0.5 FD - DK +500 | assists Yes FD - DK +500 | goals+assists O0.5 FD -186 DK -160 | goals+assists Yes FD -186 DK -160 | points O0.5 FD +165 DK +1300 | points Yes FD +165 DK +175
-Alex Laferriere: assists O0.5 FD - DK +700 | assists Yes FD - DK +700 | goals+assists O0.5 FD -128 DK -115 | goals+assists Yes FD -128 DK -115 | points O0.5 FD +210 DK +1900 | points Yes FD +210 DK +235
-Artemi Panarin: assists O0.5 FD - DK +380 | assists Yes FD - DK +380 | goals+assists O0.5 FD -250 DK -230 | goals+assists Yes FD -250 DK -230 | points O0.5 FD +180 DK +1200 | points Yes FD +180 DK +170
-Brandt Clarke: assists O0.5 FD - DK +500 | assists Yes FD - DK +500 | goals+assists O0.5 FD -104 DK +100 | goals+assists Yes FD -104 DK +100 | points O1.5 FD +6500 DK +7500 | points Yes FD +550 DK +600
-Brian Dumoulin: points O1.5 FD - DK - | points Yes FD +2000 DK +2200
-Casey Mittelstadt: assists O0.5 FD - DK +900 | assists Yes FD - DK +900 | goals+assists O0.5 FD +470 DK - | goals+assists Yes FD +470 DK - | points O1.5 FD +7500 DK +6000 | points Yes FD +575 DK +475
-Charlie Mcavoy: assists O0.5 FD - DK +500 | assists Yes FD - DK +500 | goals+assists O0.5 FD +330 DK - | goals+assists Yes FD +330 DK - | points O1.5 FD +6500 DK +7000 | points Yes FD +575 DK +550
-Corey Perry: points O1.5 FD +4000 DK +3500 | points Yes FD +400 DK +340
-David Pastrnak: assists O0.5 FD - DK +400 | assists Yes FD - DK +400 | goals+assists O0.5 FD +205 DK - | goals+assists Yes FD +205 DK - | points O0.5 FD +165 DK +1000 | points Yes FD +165 DK +155
-Drew Doughty: points O1.5 FD +10000 DK - | points Yes FD +800 DK +750
-Elias Lindholm: assists O0.5 FD - DK +750 | assists Yes FD - DK +750 | goals+assists O0.5 FD +410 DK - | goals+assists Yes FD +410 DK - | points O1.5 FD +5500 DK +3500 | points Yes FD +400 DK +360
-Erik Gustafsson: points O1.5 FD - DK - | points Yes FD +850 DK +1000
-Erik Haula: points O1.5 FD +5000 DK +3500 | points Yes FD +440 DK +360
-Fraser Minten: assists O0.5 FD - DK +1100 | assists Yes FD - DK +1100 | goals+assists O0.5 FD - DK +600 | goals+assists Yes FD - DK +600 | points O1.5 FD +3500 DK +3500 | points Yes FD +360 DK +370
-Frederic Brunet: points O1.5 FD - DK - | points Yes FD +1100 DK +1700
-Hampus Lindholm: assists O0.5 FD - DK +900 | assists Yes FD - DK +900 | goals+assists O0.5 FD - DK +750 | goals+assists Yes FD - DK +750 | points O1.5 FD - DK - | points Yes FD +1100 DK +1200
-James Hagens: points O1.5 FD +6000 DK +6500 | points Yes FD +480 DK +500
-Jared Wright: points O1.5 FD +10000 DK - | points Yes FD +700 DK +1000
-Jj Peterka: assists O0.5 FD - DK +750 | assists Yes FD - DK +750 | goals+assists O0.5 FD +325 DK - | goals+assists Yes FD +325 DK - | points O0.5 FD +300 DK +2800 | points Yes FD +300 DK +285
-Joel Armia: points O1.5 FD +7500 DK +6000 | points Yes FD +575 DK +500
-Joel Edmundson: points O1.5 FD - DK - | points Yes FD +1900 DK +1900
-Marat Khusnutdinov: points O1.5 FD +10000 DK +10000 | points Yes FD +700 DK +700
-Mark Kastelic: points O1.5 FD - DK +11000 | points Yes FD +900 DK +650
-Mason Lohrei: points O1.5 FD - DK - | points Yes FD +1300 DK +1100
-Matthew Poitras: points O1.5 FD - DK - | points Yes FD +950 DK +850
-Mikey Anderson: points O1.5 FD - DK - | points Yes FD +1900 DK +1700
-Morgan Geekie: assists O0.5 FD - DK +650 | assists Yes FD - DK +650 | goals+assists O0.5 FD +305 DK - | goals+assists Yes FD +305 DK - | points O0.5 FD +230 DK +1900 | points Yes FD +230 DK +230
-Nikita Zadorov: points O1.5 FD - DK - | points Yes FD +2100 DK +1400
-Pavel Zacha: assists O0.5 FD - DK +650 | assists Yes FD - DK +650 | goals+assists O0.5 FD +330 DK - | goals+assists Yes FD +330 DK - | points O0.5 FD +270 DK +2000 | points Yes FD +270 DK +250
-Quinton Byfield: assists O0.5 FD - DK +550 | assists Yes FD - DK +550 | goals+assists O0.5 FD +265 DK - | goals+assists Yes FD +265 DK - | points O0.5 FD +230 DK +1600 | points Yes FD +230 DK +210
-Samuel Helenius: points O1.5 FD - DK - | points Yes FD +1100 DK +1000
-Scott Laughton: points O1.5 FD +6500 DK +5000 | points Yes FD +600 DK +450
-Tanner Jeannot: points O1.5 FD - DK - | points Yes FD +1100 DK +900
-Trevor Moore: points O0.5 FD +310 DK +3000 | points Yes FD +310 DK +310
-Will Borgen: points Yes FD - DK +8000
+Adrian Kempe: ast O0.5 FD +134 DK +140 | goal FD +165 DK +175 | pts O0.5 FD -186 DK -160
+Alex Laferriere: ast O0.5 FD +190 DK +185 | goal FD +210 DK +240 | pts O0.5 FD -128 DK -115
+Artemi Panarin: ast O0.5 FD -115 DK -115 | goal FD +180 DK +170 | pts O0.5 FD -250 DK -230
+Brandt Clarke: ast O0.5 FD +134 DK +130 | goal FD +550 DK +600 | pts O0.5 FD -104 DK +100
+Brian Dumoulin: goal FD +2000 DK +2200
+Casey Mittelstadt: ast O0.5 FD +250 DK +255 | goal FD +575 DK +475 | pts O0.5 FD +162 DK +155
+Charlie Mcavoy: ast O0.5 FD +134 DK +125 | goal FD +575 DK +550 | pts O0.5 FD -104 DK -110
+Corey Perry: goal FD +400 DK +340
+David Pastrnak: ast O0.5 FD +106 DK -105 | goal FD +165 DK +155 | pts O0.5 FD -220 DK -225
+Drew Doughty: goal FD +800 DK +750
+Elias Lindholm: ast O0.5 FD +215 DK +210 | goal FD +400 DK +360 | pts O0.5 FD +124 DK +120
+Erik Gustafsson: goal FD +850 DK +1000
+Erik Haula: goal FD +440 DK +370
+Fraser Minten: ast O0.5 FD - DK +360 | goal FD +360 DK +380 | pts O0.5 FD - DK +170
+Frederic Brunet: goal FD +1100 DK +1800
+Hampus Lindholm: ast O0.5 FD - DK +270 | goal FD +1100 DK +1200 | pts O0.5 FD - DK +210
+James Hagens: goal FD +480 DK +500
+Jared Wright: goal FD +700 DK +1000
+Jj Peterka: ast O0.5 FD +176 DK +210 | goal FD +300 DK +285 | pts O0.5 FD -106 DK +105
+Joel Armia: goal FD +575 DK +500
+Joel Edmundson: goal FD +1900 DK +1900
+Marat Khusnutdinov: goal FD +700 DK +650
+Mark Kastelic: goal FD +900 DK +650
+Mason Lohrei: goal FD +1300 DK +1100
+Matthew Poitras: goal FD +950 DK +900
+Mikey Anderson: goal FD +1900 DK +1700
+Morgan Geekie: ast O0.5 FD +186 DK +185 | goal FD +230 DK +230 | pts O0.5 FD -122 DK -115
+Nikita Zadorov: goal FD +2100 DK +1400
+Pavel Zacha: ast O0.5 FD +182 DK +180 | goal FD +270 DK +250 | pts O0.5 FD -111 DK -115
+Quinton Byfield: ast O0.5 FD +154 DK +145 | goal FD +230 DK +210 | pts O0.5 FD -140 DK -145
+Samuel Helenius: goal FD +1100 DK +1000
+Scott Laughton: goal FD +600 DK +475
+Tanner Jeannot: goal FD +1100 DK +900
+Trevor Moore: goal FD +310 DK +310
+Will Borgen: goal FD - DK +3000
 
 == Edmonton Oilers @ Utah Mammoth  Sat 10:00 PM ET ==
-Anders Lee: assists O0.5 FD - DK +1000 | assists Yes FD - DK +1000 | goals+assists O0.5 FD +365 DK - | goals+assists Yes FD +365 DK - | points O1.5 FD +2500 DK +2500 | points Yes FD +750 DK -
-Andrew Peeke: points O1.5 FD - DK - | points Yes FD +3000 DK -
-Barrett Hayton: points O1.5 FD +5500 DK +5500 | points Yes FD +1200 DK -
-Clayton Keller: assists O0.5 FD - DK +370 | assists Yes FD - DK +370 | goals+assists O0.5 FD +178 DK - | goals+assists Yes FD +178 DK - | points O0.5 FD +190 DK +1400 | points Yes FD +600 DK -
-Colton Dach: points O1.5 FD +6500 DK +9000 | points Yes FD +1500 DK -
-Connor Mcdavid: assists O0.5 FD - DK +240 | assists Yes FD - DK +240 | goals+assists O0.5 FD +120 DK - | goals+assists O1.5 FD -104 DK -110 | goals+assists Yes FD +120 DK - | points O0.5 FD +125 DK +650 | points Yes FD +420 DK -
-Connor Murphy: points Yes FD - DK +4500
-Daniil But: points O1.5 FD +10000 DK - | points Yes FD +1700 DK -
-Dmitri Simashev: points O1.5 FD - DK - | points Yes FD +1700 DK +1600
-Dylan Guenther: assists O0.5 FD - DK +600 | assists Yes FD - DK +600 | goals+assists O0.5 FD +210 DK - | goals+assists Yes FD +210 DK - | points O0.5 FD +140 DK +950 | points Yes FD +460 DK -
-Evan Bouchard: assists O0.5 FD - DK +310 | assists Yes FD - DK +310 | goals+assists O0.5 FD +188 DK - | goals+assists Yes FD +188 DK - | points O1.5 FD +3500 DK +3500 | points Yes FD +1000 DK -
-Isaac Howard: points O1.5 FD +10000 DK - | points Yes FD - DK +3000
-Jack Mcbain: points O1.5 FD +8000 DK +9000 | points Yes FD +1700 DK -
-Jake Walman: points O1.5 FD - DK - | points Yes FD +2700 DK -
-John Marino: points O1.5 FD - DK - | points Yes FD +2500 DK -
-Kailer Yamamoto: points O1.5 FD +5000 DK +4500 | points Yes FD +1200 DK -
-Kasperi Kapanen: points O1.5 FD +4500 DK +4500 | points Yes FD +1000 DK -
-Kevin Stenlund: points O1.5 FD - DK +9000 | points Yes FD +2200 DK -
-Lawson Crouse: assists O0.5 FD - DK +1100 | assists Yes FD - DK +1100 | goals+assists O0.5 FD +430 DK - | goals+assists Yes FD +430 DK - | points O1.5 FD +3500 DK +3500 | points Yes FD +1000 DK -
-Leon Draisaitl: assists O0.5 FD - DK +290 | assists Yes FD - DK +290 | goals+assists O0.5 FD +144 DK - | goals+assists O1.5 FD +126 DK +130 | goals+assists Yes FD +144 DK - | points O0.5 FD +125 DK +850 | points Yes FD +440 DK -
-Logan Cooley: assists O0.5 FD - DK +500 | assists Yes FD - DK +500 | goals+assists O0.5 FD +270 DK - | goals+assists Yes FD +270 DK - | points O1.5 FD +1700 DK +2000 | points Yes FD +650 DK -
-Mackenzie Weegar: assists O0.5 FD - DK +950 | assists Yes FD - DK +950 | goals+assists O0.5 FD +500 DK - | goals+assists Yes FD +500 DK - | points O1.5 FD - DK - | points Yes FD +2200 DK -
-Mathieu Joseph: points Yes FD - DK +3500
-Mattias Ekholm: assists O0.5 FD - DK +800 | assists Yes FD - DK +800 | goals+assists O0.5 FD +550 DK - | goals+assists Yes FD +550 DK - | points O1.5 FD - DK - | points Yes FD +2500 DK -
-Mikhail Sergachev: assists O0.5 FD - DK +400 | assists Yes FD - DK +400 | goals+assists O0.5 FD +265 DK - | goals+assists Yes FD +265 DK - | points O1.5 FD +7000 DK +9000 | points Yes FD +1500 DK -
-Nate Schmidt: points O1.5 FD - DK - | points Yes FD +3500 DK -
-Nick Schmaltz: assists O0.5 FD - DK +500 | assists Yes FD - DK +500 | goals+assists O0.5 FD +215 DK - | goals+assists Yes FD +215 DK - | points O0.5 FD +175 DK +1000 | points Yes FD +550 DK -
-Ryan Shea: points O1.5 FD - DK - | points Yes FD +2700 DK -
-Trent Frederic: points O1.5 FD +10000 DK - | points Yes FD +2200 DK -
-Ty Emberson: points O1.5 FD - DK - | points Yes FD - DK -
-Vasily Podkolzin: assists O0.5 FD - DK +750 | assists Yes FD - DK +750 | goals+assists O0.5 FD +330 DK - | goals+assists Yes FD +330 DK - | points O1.5 FD +1800 DK +1800 | points Yes FD +750 DK -
-Vincent Trocheck: assists O0.5 FD - DK +650 | assists Yes FD - DK +650 | goals+assists O0.5 FD +310 DK - | goals+assists Yes FD +310 DK - | points O1.5 FD +3000 DK +3500 | points Yes FD +950 DK -
-Zach Hyman: assists O0.5 FD - DK +800 | assists Yes FD - DK +800 | goals+assists O0.5 FD +310 DK - | goals+assists Yes FD +310 DK - | points O1.5 FD +1500 DK +1700 | points Yes FD +600 DK -
+Anders Lee: ast O0.5 FD +240 DK +280 | goal FD +260 DK +275 | pts O0.5 FD +108 DK +125
+Andrew Peeke: goal FD +1600 DK +1400
+Barrett Hayton: goal FD +460 DK +475
+Clayton Keller: ast O0.5 FD -136 DK -125 | goal FD +190 DK +185 | pts O0.5 FD -265 DK -240
+Colton Dach: goal FD +550 DK +600
+Connor Mcdavid: ast O0.5 FD -235 DK -210 | goal FD +125 DK +110 | pts O1.5 FD -104 DK -110
+Connor Murphy: goal FD +1900 DK +1700
+Daniil But: goal FD +700 DK +850
+Dmitri Simashev: goal FD +1700 DK +1600
+Dylan Guenther: ast O0.5 FD +138 DK +145 | goal FD +140 DK +135 | pts O0.5 FD -205 DK -180
+Evan Bouchard: ast O0.5 FD -172 DK -145 | goal FD +340 DK +350 | pts O0.5 FD -260 DK -210
+Isaac Howard: goal FD +800 DK +900
+Jack Mcbain: goal FD +700 DK +650
+Jake Walman: goal FD +1100 DK +1300
+John Marino: goal FD +1000 DK +1200
+Kailer Yamamoto: goal FD +440 DK +400
+Kasperi Kapanen: goal FD +400 DK +425
+Kevin Stenlund: goal FD +1000 DK +700
+Lawson Crouse: ast O0.5 FD +285 DK +300 | goal FD +350 DK +330 | pts O0.5 FD +140 DK +140
+Leon Draisaitl: ast O0.5 FD -164 DK -165 | goal FD +125 DK +130 | pts O1.5 FD +126 DK +125
+Logan Cooley: ast O0.5 FD +154 DK +115 | goal FD +210 DK +230 | pts O0.5 FD -150 DK -160
+Mackenzie Weegar: ast O0.5 FD +230 DK +260 | goal FD +1000 DK +1200 | pts O0.5 FD +176 DK +215
+Mathieu Joseph: goal FD - DK +1300
+Mattias Ekholm: ast O0.5 FD +240 DK +215 | goal FD +1100 DK +1100 | pts O0.5 FD +190 DK +175
+Mikhail Sergachev: ast O0.5 FD -111 DK -115 | goal FD +575 DK +550 | pts O0.5 FD -146 DK -150
+Nate Schmidt: goal FD +1600 DK +2500
+Nick Schmaltz: ast O0.5 FD +116 DK +135 | goal FD +175 DK +140 | pts O0.5 FD -205 DK -190
+Ryan Shea: goal FD +1200 DK +1400
+Trent Frederic: goal FD +850 DK +950
+Ty Emberson: goal FD +2000 DK +2200
+Vasily Podkolzin: ast O0.5 FD +200 DK +210 | goal FD +230 DK +220 | pts O0.5 FD -113 DK -110
+Vincent Trocheck: ast O0.5 FD +146 DK +165 | goal FD +340 DK +340 | pts O0.5 FD -115 DK -105
+Zach Hyman: ast O0.5 FD +210 DK +225 | goal FD +210 DK +210 | pts O0.5 FD -118 DK -110
 
 == Pittsburgh Penguins @ Vegas Golden Knights  Sat 10:00 PM ET ==
-Andrei Kuzmenko: points O1.5 FD +6500 DK +8000 | points Yes FD +1300 DK -
-Ben Kindel: assists O0.5 FD - DK +1100 | assists Yes FD - DK +1100 | goals+assists O0.5 FD +450 DK - | goals+assists Yes FD +450 DK - | points O1.5 FD +3000 DK +3000 | points Yes FD +310 DK +300
-Blake Lizotte: points O1.5 FD - DK - | points Yes FD +1100 DK +1000
-Braeden Bowman: points O1.5 FD +5000 DK +4500 | points Yes FD +1600 DK +1300
-Brayden Mcnabb: points O1.5 FD - DK - | points Yes FD +1400 DK +1600
-Brett Howden: points O1.5 FD +3000 DK +2800 | points Yes FD +320 DK +290
-Bryan Rust: assists O0.5 FD - DK +750 | assists Yes FD - DK +750 | goals+assists O0.5 FD +365 DK - | goals+assists Yes FD +365 DK - | points O0.5 FD +300 DK +3000 | points Yes FD +300 DK +300
-Connor Dewar: points O1.5 FD - DK - | points Yes FD +2200 DK -
-Declan Carlile: points O1.5 FD - DK - | points Yes FD +1400 DK +1700
-Dylan Coghlan: points O1.5 FD - DK - | points Yes FD +1900 DK +1900
-Elmer Soderblom: points O1.5 FD +10000 DK +9000 | points Yes FD +750 DK +750
-Erik Karlsson: assists O0.5 FD - DK +450 | assists Yes FD - DK +450 | goals+assists O0.5 FD +320 DK - | goals+assists Yes FD +320 DK - | points O1.5 FD +7000 DK +8000 | points Yes FD +600 DK +600
-Evgeni Malkin: assists O0.5 FD - DK +500 | assists Yes FD - DK +500 | goals+assists O0.5 FD +310 DK - | goals+assists Yes FD +310 DK - | points O0.5 FD +290 DK +2800 | points Yes FD +950 DK -
-Ivan Barbashev: assists O0.5 FD - DK +650 | assists Yes FD - DK +650 | goals+assists O0.5 FD +325 DK - | goals+assists Yes FD +325 DK - | points O0.5 FD +260 DK +2200 | points Yes FD +260 DK +250
-Jack Eichel: assists O0.5 FD - DK +270 | assists Yes FD - DK +270 | goals+assists O0.5 FD +130 DK - | goals+assists O1.5 FD +118 DK +110 | goals+assists Yes FD +130 DK - | points O0.5 FD +150 DK +950 | points Yes FD +480 DK -
-Jeremy Lauzon: points O1.5 FD - DK - | points Yes FD +3500 DK -
-Kaedan Korczak: points O1.5 FD - DK - | points Yes FD +2000 DK +2500
-Kris Letang: points O1.5 FD - DK - | points Yes FD +1100 DK +1200
-Marc Gatcomb: points O1.5 FD +10000 DK - | points Yes FD +750 DK +800
-Mark Stone: assists O0.5 FD - DK +425 | assists Yes FD - DK +425 | goals+assists O0.5 FD +185 DK - | goals+assists O1.5 FD +200 DK -215 | goals+assists Yes FD +185 DK - | points O0.5 FD +155 DK +1100 | points Yes FD +155 DK +160
-Mitch Marner: assists O0.5 FD -148 DK -135 | assists Yes FD -148 DK -135 | goals+assists O1.5 FD +164 DK +160 | goals+assists Yes FD -295 DK -280 | points O0.5 FD +175 DK +1100 | points Yes FD +175 DK +155
-Nicholas Robertson: points O1.5 FD +8000 DK +8000 | points Yes FD +600 DK +600
-Nic Dowd: points O1.5 FD +10000 DK - | points Yes FD +750 DK +850
-Noah Hanifin: points O1.5 FD - DK - | points Yes FD +2200 DK -
-Raphael Lavoie: points O1.5 FD +7000 DK +9000 | points Yes FD +600 DK +600
-Rasmus Andersson: points O1.5 FD +8000 DK +8000 | points Yes FD +600 DK +550
-Rickard Rakell: assists O0.5 FD - DK +650 | assists Yes FD - DK +650 | goals+assists O0.5 FD +340 DK - | goals+assists Yes FD +340 DK - | points O0.5 FD +250 DK +2500 | points Yes FD +250 DK +280
-Samuel Girard: points O1.5 FD - DK - | points Yes FD - DK -
-Shea Theodore: assists O0.5 FD - DK +700 | assists Yes FD - DK +700 | goals+assists O0.5 FD +410 DK - | goals+assists Yes FD +410 DK - | points O1.5 FD +6000 DK +6000 | points Yes FD +525 DK +500
-Sidney Crosby: assists O0.5 FD - DK +450 | assists Yes FD - DK +450 | goals+assists O0.5 FD +245 DK - | goals+assists Yes FD +245 DK - | points O0.5 FD +240 DK +2200 | points Yes FD +750 DK -
-Tomas Hertl: assists O0.5 FD - DK +650 | assists Yes FD - DK +650 | goals+assists O0.5 FD +280 DK - | goals+assists Yes FD +280 DK - | points O0.5 FD +210 DK +9000 | points Yes FD +210 DK +200
-Tommy Novak: points O1.5 FD +3500 DK +5000 | points Yes FD +370 DK +400
-Trevor Connelly: assists O0.5 FD - DK +700 | assists Yes FD - DK +700 | goals+assists O0.5 FD +320 DK - | goals+assists Yes FD +320 DK - | points O2.5 FD +12500 DK +2000 | points Yes FD +1000 DK +850
-Ville Koivunen: points O1.5 FD +4000 DK +6000 | points Yes FD +1200 DK -
-William Karlsson: assists O0.5 FD - DK +800 | assists Yes FD - DK +800 | goals+assists O0.5 FD +365 DK - | goals+assists Yes FD +365 DK - | points O1.5 FD +3000 DK +4000 | points Yes FD +330 DK +350
-Yegor Chinakhov: points O1.5 FD - DK - | points Yes FD - DK -
+Andrei Kuzmenko: goal FD +550 DK +550
+Ben Kindel: ast O0.5 FD +285 DK +320 | goal FD +310 DK +300 | pts O0.5 FD +134 DK +140
+Blake Lizotte: goal FD +1100 DK +1000
+Braeden Bowman: goal FD +440 DK +400
+Brayden Mcnabb: goal FD +1500 DK +1600
+Brett Howden: goal FD +330 DK +290
+Bryan Rust: ast O0.5 FD +210 DK +200 | goal FD +300 DK +300 | pts O0.5 FD +106 DK +105
+Connor Dewar: goal FD +900 DK +900
+Declan Carlile: goal FD +1600 DK +1800
+Dylan Coghlan: goal FD +1800 DK +1800
+Elmer Soderblom: goal FD +700 DK +750
+Erik Karlsson: ast O0.5 FD +112 DK +115 | goal FD +550 DK +600 | pts O0.5 FD -125 DK -115
+Evgeni Malkin: ast O0.5 FD +124 DK +135 | goal FD +290 DK +300 | pts O0.5 FD -142 DK -130
+Ivan Barbashev: ast O0.5 FD +190 DK +165 | goal FD +260 DK +255 | pts O0.5 FD -111 DK -115
+Jack Eichel: ast O0.5 FD -192 DK -195 | goal FD +150 DK +140 | pts O1.5 FD +122 DK +110
+Jeremy Lauzon: goal FD +1900 DK +1600
+Kaedan Korczak: goal FD +2100 DK +2500
+Kris Letang: goal FD +1000 DK +1200
+Marc Gatcomb: goal FD +725 DK +800
+Mark Stone: ast O0.5 FD -102 DK +100 | goal FD +165 DK +160 | pts O0.5 FD - DK -210 | pts O1.5 FD +215 DK -
+Mitch Marner: ast O0.5 FD -138 DK -135 | goal FD +180 DK +155 | pts O1.5 FD +176 DK +160
+Nicholas Robertson: goal FD +625 DK +600
+Nic Dowd: goal FD +750 DK +850
+Noah Hanifin: goal FD +800 DK +800
+Raphael Lavoie: goal FD +600 DK +600
+Rasmus Andersson: goal FD +550 DK +600
+Rickard Rakell: ast O0.5 FD +196 DK +185 | goal FD +240 DK +280 | pts O0.5 FD -111 DK -105
+Samuel Girard: goal FD +2000 DK +2200
+Shea Theodore: ast O0.5 FD +182 DK +195 | goal FD +550 DK +500 | pts O0.5 FD +122 DK +125
+Sidney Crosby: ast O0.5 FD +100 DK +110 | goal FD +235 DK +245 | pts O0.5 FD -184 DK -160
+Tomas Hertl: ast O0.5 FD +158 DK +175 | goal FD +210 DK +205 | pts O0.5 FD -142 DK -130
+Tommy Novak: goal FD +360 DK +400
+Trevor Connelly: ast O0.5 FD +172 DK +185 | goal FD +240 DK +240 | pts O0.5 FD -125 DK -115
+Ville Koivunen: goal FD +460 DK +500
+William Karlsson: ast O0.5 FD +210 DK +210 | goal FD +340 DK +360 | pts O0.5 FD +110 DK +115
 
