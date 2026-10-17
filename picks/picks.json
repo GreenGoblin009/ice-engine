@@ -22,7 +22,7 @@
           "id": 2,
           "type": "Points 2-leg",
           "book": "FanDuel",
-          "status": "pending",
+          "status": "miss",
           "legs": [
             {
               "player": "Brock Nelson",
@@ -36,7 +36,7 @@
               "team": "BOS",
               "market": "1+ pt",
               "price": "-130",
-              "result": "pending"
+              "result": "miss"
             }
           ]
         },
@@ -44,21 +44,21 @@
           "id": 3,
           "type": "Goals 2-leg",
           "book": "theScore",
-          "status": "pending",
+          "status": "miss",
           "legs": [
             {
               "player": "Nathan Necas",
               "team": "COL",
               "market": "Anytime goal",
               "price": "+160",
-              "result": "pending"
+              "result": "miss"
             },
             {
               "player": "Cutter Gauthier",
               "team": "ANA",
               "market": "Anytime goal",
               "price": "+150",
-              "result": "pending"
+              "result": "miss"
             }
           ]
         }
