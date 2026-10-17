@@ -76,6 +76,28 @@
               "result": "pending"
             }
           ]
+        },
+        {
+          "id": 5,
+          "type": "2+ points 2-leg",
+          "book": "FanDuel",
+          "status": "pending",
+          "legs": [
+            {
+              "player": "Kyle Connor",
+              "team": "WPG",
+              "market": "2+ pts",
+              "price": "+265",
+              "result": "pending"
+            },
+            {
+              "player": "Jake Guentzel",
+              "team": "TBL",
+              "market": "2+ pts",
+              "price": "+180",
+              "result": "pending"
+            }
+          ]
         }
       ]
     },
