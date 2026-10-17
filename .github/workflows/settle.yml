@@ -1,0 +1,49 @@
+name: Settle picks
+
+on:
+  schedule:
+    # 6:00 AM Eastern, all year (listed at both UTC hours; the second run
+    # finds nothing pending and changes nothing). Late West Coast games are
+    # final by then. Run it by hand any time with the button.
+    - cron: "0 10 * * *"   # 6:00 AM EDT
+    - cron: "0 11 * * *"   # 6:00 AM EST
+    - cron: "30 4 * * *"   # 12:30 AM EDT: catches early games
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: settle-picks
+  cancel-in-progress: false
+
+jobs:
+  settle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Settle pending legs from final box scores
+        run: python tools/settle_picks.py
+
+      - name: Commit if anything was settled
+        run: |
+          git add picks/picks.json
+          if git diff --cached --quiet; then
+            echo "Nothing settled; nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898341+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Settle picks $(TZ=America/New_York date '+%Y-%m-%d %H:%M') ET"
+          for attempt in 1 2 3; do
+            git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            echo "Push attempt $attempt failed; retrying."
+            sleep $((attempt * 10))
+          done
+          exit 1
