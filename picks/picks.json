@@ -58,7 +58,7 @@
               "team": "TBL",
               "market": "Anytime goal",
               "price": "+125",
-              "result": "pending"
+              "result": "miss"
             }
           ]
         },
@@ -66,14 +66,14 @@
           "id": 4,
           "type": "Plus-money single",
           "book": "DraftKings",
-          "status": "pending",
+          "status": "miss",
           "legs": [
             {
               "player": "Jake DeBrusk",
               "team": "VAN",
               "market": "1+ pt",
               "price": "+135",
-              "result": "pending"
+              "result": "miss"
             }
           ]
         },
