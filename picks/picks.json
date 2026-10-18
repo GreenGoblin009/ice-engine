@@ -110,15 +110,15 @@
         {
           "id": 7,
           "type": "Points 2-leg",
-          "book": "Other",
-          "status": "miss",
+          "book": "DraftKings",
+          "status": "hit",
           "legs": [
             {
               "player": "Charlie McAvoy",
               "team": "BOS",
               "market": "1+ pt",
               "price": "-115",
-              "result": "miss"
+              "result": "hit"
             },
             {
               "player": "Zach Hyman",
