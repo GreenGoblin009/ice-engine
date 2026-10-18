@@ -155,14 +155,14 @@
           "id": 9,
           "type": "Goals 2-leg",
           "book": "FanDuel",
-          "status": "pending",
+          "status": "miss",
           "legs": [
             {
               "player": "William Nylander",
               "team": "TOR",
               "market": "Anytime goal",
               "price": "+170",
-              "result": "pending"
+              "result": "miss"
             },
             {
               "player": "Mika Zibanejad",
