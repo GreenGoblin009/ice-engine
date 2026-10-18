@@ -1,6 +1,41 @@
 {
   "days": [
     {
+      "date": "2026-10-18",
+      "slips": [
+        {
+          "id": 1,
+          "type": "Money back",
+          "book": "FanDuel",
+          "status": "pending",
+          "legs": [
+            {
+              "player": "Shayne Gostisbehere",
+              "team": "CAR",
+              "market": "1+ pt",
+              "price": "-128",
+              "result": "pending"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "type": "Plus-money single",
+          "book": "FanDuel",
+          "status": "pending",
+          "legs": [
+            {
+              "player": "Sebastian Aho",
+              "team": "CAR",
+              "market": "Anytime goal",
+              "price": "+175",
+              "result": "pending"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "date": "2026-10-17",
       "slips": [
         {
