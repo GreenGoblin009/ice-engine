@@ -175,7 +175,7 @@
         },
         {
           "id": 10,
-          "type": "Lotto 4-leg assists",
+          "type": "Super Lotto",
           "book": "DraftKings",
           "status": "pending",
           "legs": [
@@ -211,7 +211,7 @@
         },
         {
           "id": 11,
-          "type": "Lotto 3-leg goals",
+          "type": "Super Lotto",
           "book": "FanDuel",
           "status": "pending",
           "legs": [
