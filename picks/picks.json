@@ -172,6 +172,71 @@
               "result": "pending"
             }
           ]
+        },
+        {
+          "id": 10,
+          "type": "Lotto 4-leg assists",
+          "book": "DraftKings",
+          "status": "pending",
+          "legs": [
+            {
+              "player": "Pavel Zacha",
+              "team": "BOS",
+              "market": "1+ ast",
+              "price": "+185",
+              "result": "pending"
+            },
+            {
+              "player": "Evgeni Malkin",
+              "team": "PIT",
+              "market": "1+ ast",
+              "price": "+130",
+              "result": "pending"
+            },
+            {
+              "player": "Nick Schmaltz",
+              "team": "UTA",
+              "market": "1+ ast",
+              "price": "SGP +500",
+              "result": "pending"
+            },
+            {
+              "player": "Mattias Ekholm",
+              "team": "EDM",
+              "market": "1+ ast",
+              "price": "SGP +500",
+              "result": "pending"
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "type": "Lotto 3-leg goals",
+          "book": "FanDuel",
+          "status": "pending",
+          "legs": [
+            {
+              "player": "Morgan Geekie",
+              "team": "BOS",
+              "market": "Anytime goal",
+              "price": "+240",
+              "result": "pending"
+            },
+            {
+              "player": "Zach Hyman",
+              "team": "EDM",
+              "market": "Anytime goal",
+              "price": "+220",
+              "result": "pending"
+            },
+            {
+              "player": "Bryan Rust",
+              "team": "PIT",
+              "market": "Anytime goal",
+              "price": "+300",
+              "result": "pending"
+            }
+          ]
         }
       ]
     },
