@@ -1,7 +1,7 @@
 ICE ENGINE SLATE REPORT  2026-10-18
-Lineups pulled: Oct 18, 1:46 PM ET
+Lineups pulled: Oct 18, 2:11 PM ET
 Prices pulled:  Oct 18, 11:54 AM ET
-Goalies pulled: Oct 18, 1:46 PM ET
+Goalies pulled: Oct 18, 2:11 PM ET
 Times are US Eastern. Read-only: built from the same models as the board.
 
 GAMES (start, projected goals, model game total; book game totals are not pulled)
@@ -16,7 +16,7 @@ GOALIES (shrunk two-season save %, raw save % and games)
 
 INJURED / OUT (scratches in brackets)
 - CBJ: Dante Fabbro (broken hand); Ivan Provorov (lower body); Isac Lundestrom (lower body) [Carson Soucy, Dmitri Voronkov]
-- MIN: Brock Faber (skull fracture); Marcus Foligno (mid body); Nick Foligno (upper body); Filip Gustavsson (lower body); Olli Maatta (upper body); Nico Sturm (upper body); Jared Spurgeon (upper body)
+- MIN: Brock Faber (skull fracture); Marcus Foligno (mid body); Nick Foligno (upper body); Filip Gustavsson (lower body); Olli Maatta (upper body); Nico Sturm (upper body); Jared Spurgeon (upper body) [Hunter Haight, Carson Lambos]
 - CAR: Seth Jarvis (shoulder); Jordan Staal (calf); Taylor Hall (upper body) [Juuso Valimaki, Nicolas Deslauriers]
 - CGY: Jonathan Huberdeau (hip); Samuel Honzek (lower body) [Maksim Tsyplakov, Joel Hanley]
 Questionable: no projected skater carries a questionable or day-to-day note.
