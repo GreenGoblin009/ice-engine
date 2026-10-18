@@ -1,7 +1,7 @@
 ICE ENGINE SLATE REPORT  2026-10-18
-Lineups pulled: Oct 18, 2:52 PM ET
+Lineups pulled: Oct 18, 3:15 PM ET
 Prices pulled:  Oct 18, 11:54 AM ET
-Goalies pulled: Oct 18, 2:52 PM ET
+Goalies pulled: Oct 18, 3:15 PM ET
 Times are US Eastern. Read-only: built from the same models as the board.
 
 GAMES (start, projected goals, model game total; book game totals are not pulled)
