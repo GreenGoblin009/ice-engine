@@ -96,14 +96,14 @@
           "id": 6,
           "type": "Money back",
           "book": "theScore",
-          "status": "pending",
+          "status": "hit",
           "legs": [
             {
               "player": "Evgeni Malkin",
               "team": "PIT",
               "market": "1+ pt",
               "price": "-120",
-              "result": "pending"
+              "result": "hit"
             }
           ]
         },
@@ -125,7 +125,7 @@
               "team": "EDM",
               "market": "1+ pt",
               "price": "-110",
-              "result": "pending"
+              "result": "hit"
             }
           ]
         },
@@ -184,14 +184,14 @@
               "team": "BOS",
               "market": "1+ ast",
               "price": "+185",
-              "result": "pending"
+              "result": "void"
             },
             {
               "player": "Evgeni Malkin",
               "team": "PIT",
               "market": "1+ ast",
               "price": "+130",
-              "result": "pending"
+              "result": "hit"
             },
             {
               "player": "Nick Schmaltz",
@@ -205,7 +205,7 @@
               "team": "EDM",
               "market": "1+ ast",
               "price": "SGP +500",
-              "result": "pending"
+              "result": "hit"
             }
           ]
         },
@@ -227,7 +227,7 @@
               "team": "EDM",
               "market": "Anytime goal",
               "price": "+220",
-              "result": "pending"
+              "result": "hit"
             },
             {
               "player": "Bryan Rust",
