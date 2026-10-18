@@ -1,6 +1,6 @@
 ICE ENGINE SLATE REPORT  2026-10-18
 Lineups pulled: Oct 18, 9:19 AM ET
-Prices pulled:  none yet
+Prices pulled:  Oct 18, 9:27 AM ET
 Goalies pulled: Oct 18, 9:19 AM ET
 Times are US Eastern. Read-only: built from the same models as the board.
 
@@ -28,24 +28,148 @@ TEAM FORM, last 10 regular-season games (per game: GF / GA | shots for / against
 - CGY: 2.2 / 4.0 | 28.0 / 29.6 | PP 16.7% (4/24) | PK 85.3%
 
 TOP 15 GOALS BY ROLE-ADJUSTED CHANCE
+1. Kirill Kaprizov MIN 45%; best -110 DK; edge -7.5; DK -110; FD -110; L10 5/10; 2.9 shots; 21.1 min; PP1
+2. Matt Boldy MIN 41%; best +130 DK; edge -3.0; DK +130; FD +130; L10 3/10; 3.7 shots; 21.1 min; PP1
+3. Blake Coleman MIN 25%; best +290 FD; edge -0.6; DK +285; FD +290; L10 3/10; 2.0 shots; 15.4 min; PP2
+4. Zach Werenski CBJ 24%; best +450 DK; edge +5.6; DK +450; FD +420; L10 0/10; 3.3 shots; 29.5 min; PP1
+5. Joel Eriksson Ek MIN 24%; best +205 DK; edge -9.0; DK +205; FD +195; L10 2/10; 2.9 shots; 19.7 min; PP1
+6. Ryan Hartman MIN 23%; best +340 FD; edge +0.4; DK +330; FD +340; L10 1/10; 1.2 shots; 13.3 min; PP2
+7. Mathieu Olivier CBJ 20%; best +650 DK; edge +6.8; DK +650; FD +625; L10 3/10; 2.1 shots; 14.1 min; no PP
+8. Bobby Brink MIN 18%; best +480 FD; edge +1.2; DK +475; FD +480; L10 0/10; 1.5 shots; 12.1 min; PP2
+9. Charlie Coyle CBJ 18%; best +370 DK; edge -3.2; DK +370; FD +330; L10 1/10; 2.3 shots; 18.8 min; PP1
+10. Denton Mateychuk CBJ 17%; best +900 DK; edge +7.2; DK +900; FD +900; L10 1/10; 2.1 shots; 24.1 min; PP2
+11. Valeri Nichushkin CBJ 17%; best +400 DK; edge -3.3; DK +400; FD +390; L10 1/10; 1.3 shots; 16.4 min; PP2
+12. Danila Yurov MIN 16%; best +470 FD; edge -1.4; DK +450; FD +470; L10 4/10; 1.5 shots; 13.0 min; PP2
+13. Sean Monahan CBJ 16%; best +430 FD; edge -3.2; DK +400; FD +430; L10 2/10; 1.7 shots; 17.1 min; PP2
+14. Kent Johnson CBJ 14%; best +400 FD; edge -6.2; DK +360; FD +400; L10 4/10; 2.4 shots; 17.2 min; PP1
+15. Conor Garland CBJ 13%; best +550 DK; edge -2.1; DK +550; FD +500; L10 0/10; 1.1 shots; 13.0 min; PP2
 
 TOP 15 POINTS BY ROLE-ADJUSTED CHANCE
+1. Zach Werenski CBJ 61%; best -155 DK; edge +0.4; DK -155; FD -166; L10 5/10; 3.3 shots; 29.5 min; PP1
+2. Matt Boldy MIN 59%; best -235 DK; edge -11.3; DK -235; FD -; L10 4/10; 3.7 shots; 21.1 min; PP1
+3. Joel Eriksson Ek MIN 49%; best -155 DK; edge -11.7; DK -155; FD -174; L10 5/10; 2.9 shots; 19.7 min; PP1
+4. Valeri Nichushkin CBJ 49%; best +130 DK; edge +5.0; DK +130; FD +106; L10 4/10; 1.3 shots; 16.4 min; PP2
+5. Charlie Coyle CBJ 44%; best +120 DK; edge -1.9; DK +120; FD +106; L10 5/10; 2.3 shots; 18.8 min; PP1
+6. Ryan Hartman MIN 40%; best +132 FD; edge -3.1; DK +130; FD +132; L10 3/10; 1.2 shots; 13.3 min; PP2
+7. Blake Coleman MIN 40%; best +138 FD; edge -2.3; DK +130; FD +138; L10 5/10; 2.0 shots; 15.4 min; PP2
+8. Sean Monahan CBJ 38%; best +165 DK; edge +0.2; DK +165; FD +136; L10 3/10; 1.7 shots; 17.1 min; PP2
+9. Max Shabanov MIN 36%; best +100 DK; edge -13.7; DK +100; FD +100; L10 6/10; 1.3 shots; 15.3 min; PP1
+10. Bobby Brink MIN 36%; best +165 DK; edge -1.6; DK +165; FD +158; L10 4/10; 1.5 shots; 12.1 min; PP2
+11. Denton Mateychuk CBJ 36%; best +185 DK; edge +0.8; DK +185; FD +158; L10 2/10; 2.1 shots; 24.1 min; PP2
+12. Danila Yurov MIN 32%; best +190 FD; edge -2.1; DK +185; FD +190; L10 5/10; 1.5 shots; 13.0 min; PP2
+13. Conor Garland CBJ 31%; best +160 DK; edge -7.2; DK +160; FD +134; L10 0/10; 1.1 shots; 13.0 min; PP2
+14. Kent Johnson CBJ 29%; best +108 FD; edge -19.1; DK +105; FD +108; L10 6/10; 2.4 shots; 17.2 min; PP1
 
 TOP 15 ASSISTS BY ROLE-ADJUSTED CHANCE
+1. Quinn Hughes MIN 60%; best -225 DK; edge -9.3; DK -225; FD -265; L10 8/10; 2.2 shots; 26.9 min; PP1
+2. Zach Werenski CBJ 52%; best -110 DK; edge -0.1; DK -110; FD -115; L10 5/10; 3.3 shots; 29.5 min; PP1
+3. Kirill Kaprizov MIN 40%; best +100 DK; edge -10.5; DK +100; FD +100; L10 3/10; 2.9 shots; 21.1 min; PP1
+4. Matt Boldy MIN 39%; best +110 DK; edge -8.3; DK +110; FD +108; L10 3/10; 3.7 shots; 21.1 min; PP1
+5. Joel Eriksson Ek MIN 35%; best +130 DK; edge -8.4; DK +130; FD +130; L10 4/10; 2.9 shots; 19.7 min; PP1
+6. Valeri Nichushkin CBJ 34%; best +225 DK; edge +2.8; DK +225; FD +176; L10 3/10; 1.3 shots; 16.4 min; PP2
+7. Charlie Coyle CBJ 33%; best +205 DK; edge +0.4; DK +205; FD +200; L10 4/10; 2.3 shots; 18.8 min; PP1
+8. Max Shabanov MIN 26%; best +190 FD; edge -8.4; DK +185; FD +190; L10 3/10; 1.3 shots; 15.3 min; PP1
+9. Bobby Brink MIN 24%; best +275 DK; edge -2.5; DK +275; FD +260; L10 4/10; 1.5 shots; 12.1 min; PP2
+10. Sean Monahan CBJ 23%; best +320 DK; edge -0.9; DK +320; FD +230; L10 1/10; 1.7 shots; 17.1 min; PP2
+11. Denton Mateychuk CBJ 21%; best +245 DK; edge -7.5; DK +245; FD +200; L10 1/10; 2.1 shots; 24.1 min; PP2
+12. Ryan Hartman MIN 21%; best +265 FD; edge -6.0; DK +250; FD +265; L10 2/10; 1.2 shots; 13.3 min; PP2
+13. Conor Garland CBJ 21%; best +255 DK; edge -7.5; DK +255; FD +210; L10 0/10; 1.1 shots; 13.0 min; PP2
+14. Kent Johnson CBJ 19%; best +185 DK; edge -16.0; DK +185; FD +180; L10 2/10; 2.4 shots; 17.2 min; PP1
+15. Blake Coleman MIN 19%; best +300 DK; edge -6.5; DK +300; FD +300; L10 2/10; 2.0 shots; 15.4 min; PP2
 
 TOP 15 BY EDGE (all three markets)
-0 of 0 priced legs show a positive edge at the best book.
+1. Denton Mateychuk CBJ Goals 17%; best +900 DK; edge +7.2; DK +900; FD +900; L10 1/10; 2.1 shots; 24.1 min; PP2
+2. Mathieu Olivier CBJ Goals 20%; best +650 DK; edge +6.8; DK +650; FD +625; L10 3/10; 2.1 shots; 14.1 min; no PP
+3. Zach Werenski CBJ Goals 24%; best +450 DK; edge +5.6; DK +450; FD +420; L10 0/10; 3.3 shots; 29.5 min; PP1
+4. Valeri Nichushkin CBJ Points 49%; best +130 DK; edge +5.0; DK +130; FD +106; L10 4/10; 1.3 shots; 16.4 min; PP2
+5. Danton Heinen CBJ Goals 12%; best +1100 DK; edge +4.1; DK +1100; FD +1000; L10 0/10; 0.8 shots; 11.3 min; no PP
+6. Valeri Nichushkin CBJ Assists 34%; best +225 DK; edge +2.8; DK +225; FD +176; L10 3/10; 1.3 shots; 16.4 min; PP2
+7. Erik Gudbranson CBJ Goals 5%; best +3000 DK; edge +1.8; DK +3000; FD +3000; L10 0/10; 0.8 shots; 17.9 min; no PP
+8. Bobby Brink MIN Goals 18%; best +480 FD; edge +1.2; DK +475; FD +480; L10 0/10; 1.5 shots; 12.1 min; PP2
+9. Denton Mateychuk CBJ Points 36%; best +185 DK; edge +0.8; DK +185; FD +158; L10 2/10; 2.1 shots; 24.1 min; PP2
+10. Charlie Coyle CBJ Assists 33%; best +205 DK; edge +0.4; DK +205; FD +200; L10 4/10; 2.3 shots; 18.8 min; PP1
+11. Ryan Hartman MIN Goals 23%; best +340 FD; edge +0.4; DK +330; FD +340; L10 1/10; 1.2 shots; 13.3 min; PP2
+12. Zach Werenski CBJ Points 61%; best -155 DK; edge +0.4; DK -155; FD -166; L10 5/10; 3.3 shots; 29.5 min; PP1
+13. Sean Monahan CBJ Points 38%; best +165 DK; edge +0.2; DK +165; FD +136; L10 3/10; 1.7 shots; 17.1 min; PP2
+14. Tyler Pitlick MIN Goals 9%; best +1100 FD; edge +0.2; DK +950; FD +1100; L10 1/10; 0.8 shots; 7.7 min; no PP
+15. Zach Bogosian MIN Goals 6%; best +1500 FD; edge +0.2; DK +1400; FD +1500; L10 0/10; 0.7 shots; 16.6 min; no PP
+15 of 59 priced legs show a positive edge at the best book.
 
 ALL PRICED SKATERS (shots/game last 10, minutes, PP unit | G | P | A: chance, best price, edge, last 10)
 CBJ
+- Zach Werenski (3.3, 29.5, PP1): G 24% +450 DK +5.6, L10 0/10 | P 61% -155 DK +0.4, L10 5/10 | A 52% -110 DK -0.1, L10 5/10
+- Valeri Nichushkin (1.3, 16.4, PP2): G 17% +400 DK -3.3, L10 1/10 | P 49% +130 DK +5.0, L10 4/10 | A 34% +225 DK +2.8, L10 3/10
+- Charlie Coyle (2.3, 18.8, PP1): G 18% +370 DK -3.2, L10 1/10 | P 44% +120 DK -1.9, L10 5/10 | A 33% +205 DK +0.4, L10 4/10
+- Sean Monahan (1.7, 17.1, PP2): G 16% +430 FD -3.2, L10 2/10 | P 38% +165 DK +0.2, L10 3/10 | A 23% +320 DK -0.9, L10 1/10
+- Denton Mateychuk (2.1, 24.1, PP2): G 17% +900 DK +7.2, L10 1/10 | P 36% +185 DK +0.8, L10 2/10 | A 21% +245 DK -7.5, L10 1/10
+- Cole Sillinger (1.7, 15.5, PP2): G 12% +700 DK -0.6, L10 3/10 | P 33% no price, L10 4/10 | A 25% no price, L10 1/10
+- Conor Garland (1.1, 13.0, PP2): G 13% +550 DK -2.1, L10 0/10 | P 31% +160 DK -7.2, L10 0/10 | A 21% +255 DK -7.5, L10 0/10
+- Kent Johnson (2.4, 17.2, PP1): G 14% +400 FD -6.2, L10 4/10 | P 29% +108 FD -19.1, L10 6/10 | A 19% +185 DK -16.0, L10 2/10
+- Mathieu Olivier (2.1, 14.1, no PP): G 20% +650 DK +6.8, L10 3/10 | P 26% no price, L10 3/10 | A 14% no price, L10 0/10
+- Danton Heinen (0.8, 11.3, no PP): G 12% +1100 DK +4.1, L10 0/10 | P 25% no price, L10 3/10 | A 14% no price, L10 3/10
+- Luca Del Bel Belluz (0.6, 8.9, no PP): G 7% +800 DK -4.4, L10 0/10 | P 19% no price, L10 0/10 | A 14% no price, L10 0/10
+- Ryan Lomberg (1.6, 8.7, no PP): G 8% +1100 DK -0.5, L10 0/10 | P 17% no price, L10 0/10 | A 10% no price, L10 0/10
+- Erik Gudbranson (0.8, 17.9, no PP): G 5% +3000 DK +1.8, L10 0/10 | P 15% no price, L10 1/10 | A 10% no price, L10 1/10
+- Jake Christiansen (0.3, 11.9, no PP): G 3% +2500 DK -0.8, L10 0/10 | P 12% no price, L10 1/10 | A 10% no price, L10 1/10
 MIN
+- Kirill Kaprizov (2.9, 21.1, PP1): G 45% -110 DK -7.5, L10 5/10 | P 69% no price, L10 7/10 | A 40% +100 DK -10.5, L10 3/10
+- Quinn Hughes (2.2, 26.9, PP1): G 12% +380 DK -9.1, L10 3/10 | P 63% no price, L10 8/10 | A 60% -225 DK -9.3, L10 8/10
+- Matt Boldy (3.7, 21.1, PP1): G 41% +130 DK -3.0, L10 3/10 | P 59% -235 DK -11.3, L10 4/10 | A 39% +110 DK -8.3, L10 3/10
+- Joel Eriksson Ek (2.9, 19.7, PP1): G 24% +205 DK -9.0, L10 2/10 | P 49% -155 DK -11.7, L10 5/10 | A 35% +130 DK -8.4, L10 4/10
+- Ryan Hartman (1.2, 13.3, PP2): G 23% +340 FD +0.4, L10 1/10 | P 40% +132 FD -3.1, L10 3/10 | A 21% +265 FD -6.0, L10 2/10
+- Blake Coleman (2.0, 15.4, PP2): G 25% +290 FD -0.6, L10 3/10 | P 40% +138 FD -2.3, L10 5/10 | A 19% +300 DK -6.5, L10 2/10
+- Max Shabanov (1.3, 15.3, PP1): G 12% +320 DK -11.5, L10 3/10 | P 36% +100 DK -13.7, L10 6/10 | A 26% +190 FD -8.4, L10 3/10
+- Bobby Brink (1.5, 12.1, PP2): G 18% +480 FD +1.2, L10 0/10 | P 36% +165 DK -1.6, L10 4/10 | A 24% +275 DK -2.5, L10 4/10
+- Danila Yurov (1.5, 13.0, PP2): G 16% +470 FD -1.4, L10 4/10 | P 32% +190 FD -2.1, L10 5/10 | A 18% +370 DK -3.6, L10 1/10
+- Jonas Brodin (0.9, 21.5, PP2): G 7% +1000 DK -1.9, L10 0/10 | P 25% no price, L10 2/10 | A 20% no price, L10 2/10
+- Yakov Trenin (1.1, 13.0, no PP): G 8% +650 DK -5.7, L10 0/10 | P 24% no price, L10 1/10 | A 18% no price, L10 1/10
+- Michael McCarron (2.0, 14.3, no PP): G 10% +600 DK -4.4, L10 2/10 | P 23% no price, L10 5/10 | A 15% no price, L10 3/10
+- Daemon Hunt (0.6, 12.2, no PP): G 3% +2000 DK -1.3, L10 0/10 | P 20% no price, L10 1/10 | A 17% no price, L10 1/10
+- Zach Bogosian (0.7, 16.6, no PP): G 6% +1500 FD +0.2, L10 0/10 | P 17% no price, L10 0/10 | A 12% no price, L10 0/10
+- Tyler Pitlick (0.8, 7.7, no PP): G 9% +1100 FD +0.2, L10 1/10 | P 13% no price, L10 1/10 | A 6% no price, L10 0/10
 CAR
 CGY
 
 DATA CHECKS
-Games with no prices: CBJ @ MIN, CAR @ CGY
+Games with no prices: none
 Teams with no lineup: CAR, CGY
-Priced players missing from the projected lineups: none
+Priced players missing from the projected lineups:
+- Mikael Backlund CGY (not on any lineup)
+- Mike Reilly CAR (not on any lineup)
+- Ryan Strome CGY (not on any lineup)
+- Mark Jankowski CAR (not on any lineup)
+- Shayne Gostisbehere CAR (not on any lineup)
+- Jordan Martinook CAR (not on any lineup)
+- Jaccob Slavin CAR (not on any lineup)
+- William Carrier CAR (not on any lineup)
+- Nikolaj Ehlers CAR (not on any lineup)
+- Jake Middleton CGY (not on any lineup)
+- Sebastian Aho CAR (not on any lineup)
+- Jalen Chatfield CAR (not on any lineup)
+- Morgan Frost CGY (not on any lineup)
+- Sean Walker CAR (not on any lineup)
+- Zach Whitecloud CGY (not on any lineup)
+- Eric Robinson CAR (not on any lineup)
+- Joel Farabee CGY (not on any lineup)
+- Kandre Miller CAR (not on any lineup)
+- Jesperi Kotkaniemi CAR (not on any lineup)
+- Andrei Svechnikov CAR (not on any lineup)
+- Kevin Bahl CGY (not on any lineup)
+- Martin Pospisil CGY (not on any lineup)
+- Yegor Sharangovich CGY (not on any lineup)
+- Dmitri Voronkov CBJ (listed scratched)
+- Yan Kuznetsov CGY (not on any lineup)
+- Matt Coronato CGY (not on any lineup)
+- Logan Stankoven CAR (not on any lineup)
+- Jackson Blake CAR (not on any lineup)
+- Simon Nemec CGY (not on any lineup)
+- Adam Klapka CGY (not on any lineup)
+- Bradly Nadeau CAR (not on any lineup)
+- Aydar Suniev CGY (not on any lineup)
+- Felix Unger Sorum CAR (not on any lineup)
+- Zayne Parekh CGY (not on any lineup)
+- Matvei Gridin CGY (not on any lineup)
+- Maxim Tsyplakov CGY (not on any lineup)
 Unconfirmed goalies:
 - CBJ: Cam Talbot (expected, not confirmed)
 - MIN: Jesper Wallstedt (expected, not confirmed)
