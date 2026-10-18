@@ -133,21 +133,21 @@
           "id": 8,
           "type": "Point + goal 2-leg",
           "book": "theScore",
-          "status": "pending",
+          "status": "hit",
           "legs": [
             {
               "player": "Zach Benson",
               "team": "BUF",
               "market": "1+ pt",
               "price": "+115",
-              "result": "pending"
+              "result": "hit"
             },
             {
               "player": "Macklin Celebrini",
               "team": "SJS",
               "market": "Anytime goal",
               "price": "+135",
-              "result": "pending"
+              "result": "hit"
             }
           ]
         },
