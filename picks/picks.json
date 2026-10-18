@@ -177,7 +177,7 @@
           "id": 10,
           "type": "Super Lotto",
           "book": "DraftKings",
-          "status": "pending",
+          "status": "miss",
           "legs": [
             {
               "player": "Pavel Zacha",
@@ -198,7 +198,7 @@
               "team": "UTA",
               "market": "1+ ast",
               "price": "SGP +500",
-              "result": "pending"
+              "result": "miss"
             },
             {
               "player": "Mattias Ekholm",
