@@ -111,14 +111,14 @@
           "id": 7,
           "type": "Points 2-leg",
           "book": "Other",
-          "status": "pending",
+          "status": "miss",
           "legs": [
             {
               "player": "Charlie McAvoy",
               "team": "BOS",
               "market": "1+ pt",
               "price": "-115",
-              "result": "pending"
+              "result": "miss"
             },
             {
               "player": "Zach Hyman",
@@ -213,14 +213,14 @@
           "id": 11,
           "type": "Super Lotto",
           "book": "FanDuel",
-          "status": "pending",
+          "status": "miss",
           "legs": [
             {
               "player": "Morgan Geekie",
               "team": "BOS",
               "market": "Anytime goal",
               "price": "+240",
-              "result": "pending"
+              "result": "miss"
             },
             {
               "player": "Zach Hyman",
