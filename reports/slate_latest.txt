@@ -1,6 +1,6 @@
 ICE ENGINE SLATE REPORT  2026-10-19
 Lineups pulled: none yet
-Prices pulled:  Oct 19, 9:45 AM ET
+Prices pulled:  Oct 19, 12:01 PM ET
 Goalies pulled: none yet
 Times are US Eastern. Read-only: built from the same models as the board.
 
@@ -133,7 +133,6 @@ Priced players missing from the projected lineups:
 - Zack Macewen TOR (not on any lineup)
 - Kailer Yamamoto UTA (not on any lineup)
 - Eeli Tolvanen NYR (not on any lineup)
-- Jack Studnicka PHI (not on any lineup)
 - Martin Necas COL (not on any lineup)
 - Cale Makar COL (not on any lineup)
 - Noah Cates PHI (not on any lineup)
@@ -176,10 +175,12 @@ Priced players missing from the projected lineups:
 - Pavel Mintyukov ANA (not on any lineup)
 - Noah Warren ANA (not on any lineup)
 - Noah Laba NYR (not on any lineup)
+- Alex Bump PHI (not on any lineup)
 - Andrei Kuzmenko PIT (not on any lineup)
 - Denver Barkey PHI (not on any lineup)
 - Oliver Bonk PHI (not on any lineup)
 - Gavin Brindley COL (not on any lineup)
+- Luca Cagnoni SJS (not on any lineup)
 - Leo Carlsson ANA (not on any lineup)
 - Easton Cowan TOR (not on any lineup)
 - Gabe Perreault NYR (not on any lineup)
