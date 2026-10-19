@@ -1154,7 +1154,7 @@ async function renderLadder(){
   if(done) banner=`<div class="lbig" style="color:var(--green)">Ladder complete: ${money(bal)}</div>`;
   else if(missed) banner=`<div class="lbig" style="color:var(--red)">Ended on Day ${esc(missed.day)}</div><div class="muted small">The next attempt restarts at ${money(start)} with the next pick.</div>`;
   else banner=`<div class="lbig">${money(bal)}</div><div class="muted small">${open?`Day ${esc(open.day)} is live`:`Day ${days.length+1} of 7 next`} · rolling the full payout each day</div>`;
-  const head=`<div class="card"><div class="muted small" style="letter-spacing:.06em;font-weight:700;">ATTEMPT ${esc(cur.attempt)} · START ${money(start)} · GOAL ${money(lo)} TO ${money(hi)} IN 7 DAYS</div>${banner}<div class="rungs">${rungs}</div><div class="muted small">One pick a day, 1 or 2 legs, final odds -110 or better (-115 allowed). About a double each day gets there.</div></div>`;
+  const head=`<div class="card"><div class="muted small" style="letter-spacing:.06em;font-weight:700;">ATTEMPT ${esc(cur.attempt)} · START ${money(start)} · GOAL ${money(lo)} TO ${money(hi)} IN 7 DAYS</div>${banner}<div class="rungs">${rungs}</div><div class="muted small">One pick a day, 1 or 2 legs. Goal is +100 or better, a full double each day. We won't always get it: -106 or better still reaches $1,000, and -110 to -115 is allowed when the pick is strong. The best price is shopped across books before every bet.</div></div>`;
   let pick;
   if(open) pick=`<div class="section-label">TODAY'S PICK</div>${dcard(open)}`;
   else if(!missed&&!done) pick=`<div class="section-label">TODAY'S PICK</div><div class="empty">Day ${days.length+1} pick is not posted yet. Picks go up once approved.</div>`;
