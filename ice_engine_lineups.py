@@ -545,6 +545,12 @@ def run(day, use_supabase, late_in_day=True):
             return []
 
     games, problems, other_day = parse_article(body, schedule, nicknames, day)
+    if not any(g["blocks"] for g in games):
+        # Nothing readable: show the page's real layout in the log so the parser can be fixed.
+        print(f"  [debug] article body starts: {body[:1200]!r}")
+        spaced = re.sub(r"(?<!#)(#{2,}\s)", "\n\\1", body)
+        heads = [ln.strip()[:90] for ln in spaced.splitlines() if ln.strip().startswith("#")]
+        print(f"  [debug] heading-like lines: {heads[:20]}")
     if other_day:
         print(f"Skipping {len(other_day)} game(s) the article lists under another day: {'; '.join(other_day)}")
     if not games:
