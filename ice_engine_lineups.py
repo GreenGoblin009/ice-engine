@@ -74,6 +74,7 @@ MATCHUP = re.compile(r"^(.+?)(?:\s*\([^)]*\))?\s+at\s+(.+?)(?:\s*\([^)]*\))?$", 
 # day's, posted early.
 DAY_HEADING = re.compile(r"^(MONDAY|TUESDAY|WEDNESDAY|THURSDAY|FRIDAY|SATURDAY|SUNDAY)"
                          r"(?:,?\s+[A-Za-z]{3,9}\.?\s+\d{1,2})?$", re.I)
+TIME_HEADING = re.compile(r"^\d{1,2}(?::\d{2})?\s*[ap]\.?m\.?\s*ET\b", re.I)
 # "Ducks projected lineup" (the format so far). Also accept "Ducks lineup",
 # "Ducks projected lines:" and trailing notes, in case NHL.com rewords it; a
 # line that is just a team nickname is handled separately in parse_article.
@@ -197,6 +198,9 @@ def parse_article(body, schedule, nicknames, day):
         line = clean_line(raw)
         if not line:
             continue
+
+        if heading and len(heading.group(1)) == 2 and game is not None and TIME_HEADING.match(line):
+            continue  # "## 7 p.m. ET; FOXLA+, ..." is now its own heading under each game: same game, keep going
 
         if heading and len(heading.group(1)) == 2:  # "## AWAY (1-0-0) at HOME (0-1-0)"
             game = block = None
