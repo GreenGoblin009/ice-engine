@@ -40,7 +40,7 @@ input[type=date]{min-width:0; -webkit-appearance:none; appearance:none; min-heig
 .row{display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:10px;}
 .row3{display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; margin-bottom:10px;}
 .view-toggle{display:flex; gap:6px; margin:12px 0;}
-.view-toggle button{white-space:nowrap; padding-left:2px !important; padding-right:2px !important; font-size:14px !important; flex:1; background:var(--card2); border:1px solid var(--line); color:var(--muted); padding:9px; border-radius:7px; font-family:'Rajdhani',sans-serif; font-weight:600; font-size:15px; cursor:pointer;}
+.view-toggle button{white-space:nowrap; padding-left:2px !important; padding-right:2px !important; font-size:13px !important; flex:1; background:var(--card2); border:1px solid var(--line); color:var(--muted); padding:9px; border-radius:7px; font-family:'Rajdhani',sans-serif; font-weight:600; font-size:15px; cursor:pointer;}
 .view-toggle button.active{background:var(--amber); color:#0A0E14; border-color:var(--amber);}
 .card{background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px; margin-bottom:10px;}
 .muted{color:var(--muted);} .small{font-size:12px;}
@@ -200,6 +200,14 @@ table.gl td{padding:5px 8px 5px 0; border-top:1px solid var(--line);}
 .leg i{flex:none; width:9px; height:9px; border-radius:50%; background:var(--amber);}
 .leg i.is-hit{background:var(--green);} .leg i.is-miss{background:var(--red);} .leg i.is-void{background:var(--muted);}
 .leg .lp{margin-left:auto; font-family:'Rajdhani',sans-serif; font-weight:700; font-size:15px;}
+/* Ladder Challenge */
+#bLadder{white-space:normal !important; line-height:1.05; font-size:13px !important;}
+.rungs{display:flex; gap:5px; margin:10px 0 4px;}
+.rung{flex:1; text-align:center; padding:7px 0; border-radius:7px; border:1px solid var(--line); background:var(--card2); font-family:'Rajdhani',sans-serif; font-weight:700; font-size:13px; color:var(--muted);}
+.rung.is-hit{background:rgba(47,191,113,.15); color:var(--green); border-color:var(--green);}
+.rung.is-miss{background:rgba(229,72,77,.15); color:var(--red); border-color:var(--red);}
+.rung.is-pending{background:rgba(212,160,23,.15); color:var(--amber); border-color:var(--amber);}
+.lbig{font-family:'Rajdhani',sans-serif; font-weight:700; font-size:26px; line-height:1.1;}
 </style>
 </head>
 <body>
@@ -220,6 +228,7 @@ table.gl td{padding:5px 8px 5px 0; border-top:1px solid var(--line);}
     <button id="bHot">Hot</button>
     <button id="bLeaders">Leaders</button>
     <button id="bPicks">Ice Cold Picks</button>
+    <button id="bLadder">Ladder Challenge</button>
   </div>
   <div id="msg"></div>
   <div id="view"></div>
@@ -624,7 +633,7 @@ function setUpdated(){
 /* ============ VIEWS ============ */
 function setView(v){
   S.view=v;
-  ['Teams','Lineups','Hot','Leaders','Picks'].forEach(n=>$('b'+n).classList.toggle('active',(n.toLowerCase()===v)));
+  ['Teams','Lineups','Hot','Leaders','Picks','Ladder'].forEach(n=>$('b'+n).classList.toggle('active',(n.toLowerCase()===v)));
   $('teamPickWrap').style.display = v==='lineups' ? 'block':'none';
   render();
 }
@@ -636,6 +645,7 @@ async function render(){
     else if(S.view==='leaders') await renderLeaders();
     else if(S.view==='hot') await renderHot();
     else if(S.view==='picks') await renderPicks();
+    else if(S.view==='ladder') await renderLadder();
     else await renderTop();
   }catch(e){ $('msg').innerHTML=`<div class="err">${esc(e.message)}</div>`; }
 }
@@ -1108,6 +1118,54 @@ async function renderPicks(){
   $('view').innerHTML=tonight+earlier+record;
 }
 
+
+/* ============ LADDER CHALLENGE: separate 7-day rollover, from picks/ladder.json ============ */
+// Own file, own tracker: not part of the Ice Engine record or bankroll. Start small,
+// roll the whole payout into the next day's pick, 7 days. A miss ends the attempt and
+// the next attempt restarts at the starting stake.
+async function renderLadder(){
+  $('view').innerHTML='<div class="empty">Loading ladder…</div>';
+  let data;
+  try{
+    const r=await fetch('picks/ladder.json',{cache:'no-store'});
+    if(!r.ok) throw new Error(`ladder file ${r.status}`);
+    data=await r.json();
+  }catch(e){ if(S.view==='ladder') $('view').innerHTML=`<div class="err">Couldn't load the ladder (${esc(e.message)}).</div>`; return; }
+  if(S.view!=='ladder') return;
+  const money=n=>'$'+(Math.round(n*100)/100).toLocaleString('en-US',{minimumFractionDigits:(Math.round(n*100)%100===0)?0:2,maximumFractionDigits:2});
+  const st=s=>SLIP_STATUS.includes(s)?s:'pending';
+  const start=+data.start||10, lo=+data.goal_low||1000, hi=+data.goal_high||1280;
+  const attempts=(data.attempts||[]).slice().sort((a,b)=>a.attempt-b.attempt);
+  const cur=attempts[attempts.length-1]||{attempt:1,days:[]};
+  const daysOf=a=>(a.days||[]).slice().sort((x,y)=>x.day-y.day);
+  const dcard=d=>{
+    const k=st(d.status);
+    const legs=(d.legs||[]).map(l=>`<div class="leg"><i class="is-${esc(st(l.result))}"></i><div><b>${esc(l.player)}</b> <span class="muted">${esc(l.team||'')}</span><div class="muted small">${esc(l.market||'')}</div></div><span class="lp">${esc(l.price||'')}</span></div>`).join('');
+    const pay=d.status==='hit'&&d.payout!=null?` · pays ${money(d.payout)}`:'';
+    return `<div class="card slip is-${k}"><div class="slip-head"><div><div class="pname">Day ${esc(d.day)}${d.date?` <span class="muted small">${esc(new Date(d.date+'T12:00:00').toLocaleDateString('en-US',{month:'short',day:'numeric'}))}</span>`:''}</div><div class="pmeta">${esc(d.book||'')} · ${(d.legs||[]).length} leg${(d.legs||[]).length===1?'':'s'} · ${esc(d.odds||'')} · ${money(+d.stake||0)}${pay}</div></div><span class="st is-${k}">${k}</span></div>${legs?`<div class="legs">${legs}</div>`:''}</div>`;
+  };
+  const days=daysOf(cur);
+  const missed=days.find(d=>d.status==='miss');
+  const done=days.length===7&&days[6].status==='hit';
+  let bal=start; days.forEach(d=>{ if(d.status==='hit'&&d.payout!=null) bal=+d.payout; });
+  const open=days.find(d=>st(d.status)==='pending');
+  const rungs=Array.from({length:7},(_,i)=>{ const d=days.find(x=>x.day===i+1); return `<div class="rung ${d?'is-'+st(d.status):''}">${i+1}</div>`; }).join('');
+  let banner;
+  if(done) banner=`<div class="lbig" style="color:var(--green)">Ladder complete: ${money(bal)}</div>`;
+  else if(missed) banner=`<div class="lbig" style="color:var(--red)">Ended on Day ${esc(missed.day)}</div><div class="muted small">The next attempt restarts at ${money(start)} with the next pick.</div>`;
+  else banner=`<div class="lbig">${money(bal)}</div><div class="muted small">${open?`Day ${esc(open.day)} is live`:`Day ${days.length+1} of 7 next`} · rolling the full payout each day</div>`;
+  const head=`<div class="card"><div class="muted small" style="letter-spacing:.06em;font-weight:700;">ATTEMPT ${esc(cur.attempt)} · START ${money(start)} · GOAL ${money(lo)} TO ${money(hi)} IN 7 DAYS</div>${banner}<div class="rungs">${rungs}</div><div class="muted small">One pick a day, 1 or 2 legs, final odds -110 or better (-115 allowed). About a double each day gets there.</div></div>`;
+  let pick;
+  if(open) pick=`<div class="section-label">TODAY'S PICK</div>${dcard(open)}`;
+  else if(!missed&&!done) pick=`<div class="section-label">TODAY'S PICK</div><div class="empty">Day ${days.length+1} pick is not posted yet. Picks go up once approved.</div>`;
+  else pick='';
+  const prev=days.filter(d=>d!==open).reverse();
+  const prevHtml=prev.length?`<div class="section-label">PREVIOUS DAYS</div>${prev.map(dcard).join('')}`:'';
+  const past=attempts.slice(0,-1).reverse();
+  const pastHtml=past.length?`<details class="more"><summary>Past attempts (${past.length})</summary>${past.map(a=>{const ds=daysOf(a); const m=ds.find(d=>d.status==='miss'); return `<div class="section-label">ATTEMPT ${esc(a.attempt)} · ${m?'ENDED DAY '+esc(m.day):(ds.length===7&&ds[6].status==='hit'?'COMPLETE':'OPEN')}</div>${ds.map(dcard).join('')}`;}).join('')}</details>`:'';
+  $('view').innerHTML=head+pick+prevHtml+pastHtml;
+}
+
 /* ============ PLAYER MODAL ============ */
 const M={};
 async function openPlayer(pid, stat, line, odds, split, vsTeam, win){
@@ -1287,7 +1345,9 @@ $('bLineups').onclick=()=>setView('lineups');
 $('bLeaders').onclick=()=>setView('leaders');
 $('bHot').onclick=()=>setView('hot');
 $('bPicks').onclick=()=>setView('picks');
+$('bLadder').onclick=()=>setView('ladder');
 if(location.hash==='#picks') setView('picks');   // direct link to the picks tab
+if(location.hash==='#ladder') setView('ladder'); // direct link to the ladder tab
 $('teamPick').onchange=e=>{ S.team=e.target.value; renderLineups(); };
 setInterval(()=>{ if(S.autoDay && etToday()!==S.autoDay) init(false); },300000);
 $('reload').onclick=()=>init(true);

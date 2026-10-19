@@ -1,0 +1,11 @@
+{
+  "start": 10,
+  "goal_low": 1000,
+  "goal_high": 1280,
+  "attempts": [
+    {
+      "attempt": 1,
+      "days": []
+    }
+  ]
+}
