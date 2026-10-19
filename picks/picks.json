@@ -7,14 +7,14 @@
           "id": 1,
           "type": "Money back",
           "book": "FanDuel",
-          "status": "pending",
+          "status": "miss",
           "legs": [
             {
               "player": "Shayne Gostisbehere",
               "team": "CAR",
               "market": "1+ pt",
               "price": "-128",
-              "result": "pending"
+              "result": "miss"
             }
           ]
         },
@@ -22,14 +22,14 @@
           "id": 2,
           "type": "Plus-money single",
           "book": "FanDuel",
-          "status": "pending",
+          "status": "miss",
           "legs": [
             {
               "player": "Sebastian Aho",
               "team": "CAR",
               "market": "Anytime goal",
               "price": "+175",
-              "result": "pending"
+              "result": "miss"
             }
           ]
         }
