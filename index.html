@@ -133,6 +133,9 @@ input[type=date]{min-width:0; -webkit-appearance:none; appearance:none; min-heig
 .detail table{width:100%; border-collapse:collapse;}
 .detail td{padding:3px 0;} .detail td:last-child{text-align:right;}
 /* Jerseys */
+.dayfold{margin:14px 0 10px;} .dayfold>summary{list-style:none; cursor:pointer; position:relative; background:var(--card2); border:1px solid var(--line); border-radius:7px; padding:8px 28px; text-align:center; font-family:'Rajdhani',sans-serif; font-weight:600; font-size:14px; letter-spacing:.5px;}
+.dayfold>summary::-webkit-details-marker{display:none;} .dayfold>summary::after{content:'▾'; position:absolute; right:12px; top:50%; transform:translateY(-50%); color:var(--muted); transition:transform .15s;}
+.dayfold:not([open])>summary::after{transform:translateY(-50%) rotate(-90deg);} .dayfold[open]>summary{margin-bottom:10px;}
 .section-label{background:var(--card2); border:1px solid var(--line); border-radius:7px; padding:8px 0; text-align:center; font-family:'Rajdhani',sans-serif; font-weight:600; font-size:14px; letter-spacing:.5px; margin:14px 0 10px;}
 .jersey-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:10px;}
 .jersey-card{text-align:center; cursor:pointer; background:none; border:none; padding:0; color:var(--text); font-family:'Inter',sans-serif;}
@@ -1100,9 +1103,10 @@ async function renderPicks(){
   const today=etToday();
   const cur=days.find(d=>d.date===today)||days[days.length-1];
   const label=d=>new Date(d.date+'T12:00:00').toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric'});
-  const tonight=cur?`<div class="section-label">${cur.date===today?'TONIGHT':esc(label(cur).toUpperCase())}</div>${(cur.slips||[]).map(card).join('')||'<div class="empty">No slips for this day.</div>'}`:'<div class="empty">No slips yet.</div>';
+  const fold=(d,title,isOpen)=>`<details class="dayfold"${isOpen?' open':''}><summary>${title}</summary>${(d.slips||[]).map(card).join('')||'<div class="empty">No slips for this day.</div>'}</details>`;
+  const tonight=cur?fold(cur,cur.date===today?'TONIGHT':esc(label(cur).toUpperCase()),true):'<div class="empty">No slips yet.</div>';
   const past=days.filter(d=>d!==cur).reverse();
-  const earlier=past.length?`<details class="more"><summary>Earlier days (${past.length})</summary>${past.map(d=>`<div class="section-label">${esc(label(d).toUpperCase())}</div>${(d.slips||[]).map(card).join('')}`).join('')}</details>`:'';
+  const earlier=past.map(d=>fold(d,esc(label(d).toUpperCase()),false)).join('');
   // track record: hits and misses by slip type; pending counted as open, void left out
   const by=new Map();
   real.forEach(s=>{
