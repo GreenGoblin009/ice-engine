@@ -1,41 +1,6 @@
 {
   "days": [
     {
-      "date": "2026-10-18",
-      "slips": [
-        {
-          "id": 1,
-          "type": "Money back",
-          "book": "FanDuel",
-          "status": "miss",
-          "legs": [
-            {
-              "player": "Shayne Gostisbehere",
-              "team": "CAR",
-              "market": "1+ pt",
-              "price": "-128",
-              "result": "miss"
-            }
-          ]
-        },
-        {
-          "id": 2,
-          "type": "Plus-money single",
-          "book": "FanDuel",
-          "status": "miss",
-          "legs": [
-            {
-              "player": "Sebastian Aho",
-              "team": "CAR",
-              "market": "Anytime goal",
-              "price": "+175",
-              "result": "miss"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "date": "2026-10-17",
       "slips": [
         {
