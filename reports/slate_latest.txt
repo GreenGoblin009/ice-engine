@@ -33,7 +33,7 @@ Questionable: no projected skater carries a questionable or day-to-day note.
 
 TEAM FORM, last 10 regular-season games (per game: GF / GA | shots for / against | PP | PK)
 - ANA: 3.2 / 3.2 | 27.3 / 25.1 | PP 27.0% (10/37) | PK 71.9%
-- NYR: 2.8 / 2.2 | 23.4 / 25.2 | PP 20.0% (6/30) | PK 93.5%
+- NYR: 2.8 / 2.2 | 23.6 / 25.2 | PP 20.0% (6/30) | PK 93.5%
 - COL: 4.1 / 2.5 | 31.9 / 26.1 | PP 16.2% (6/37) | PK 87.5%
 - PHI: 1.4 / 3.4 | 21.2 / 32.9 | PP 10.3% (3/29) | PK 83.8%
 - SJS: 3.0 / 3.5 | 27.1 / 27.1 | PP 25.0% (8/32) | PK 84.4%
