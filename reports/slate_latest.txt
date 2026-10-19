@@ -1,7 +1,7 @@
 ICE ENGINE SLATE REPORT  2026-10-19
-Lineups pulled: Oct 19, 5:59 PM ET
+Lineups pulled: Oct 19, 6:10 PM ET
 Prices pulled:  Oct 19, 4:21 PM ET
-Goalies pulled: Oct 19, 5:59 PM ET
+Goalies pulled: Oct 19, 6:10 PM ET
 Times are US Eastern. Read-only: built from the same models as the board.
 
 GAMES (start, projected goals, model game total; book game totals are not pulled)
@@ -24,7 +24,7 @@ INJURED / OUT (scratches in brackets)
 - ANA: Ian Moore (lower body); Troy Terry (hip); Ryan Poehling (knee) [Drew Helleson, Sam Colangelo, Nikita Nesterenko]
 - NYR: Igor Shesterkin (lower body); Joonas Korpisalo (lower body); Joseph Veleno (lower body) [Scott Morrow, Matt Rempe]
 - COL: Logan O'Connor (lower body); Zachary L'Heureux (upper body); Nicolas Roy (lower body)
-- PHI: Nikita Grebenkin (back); Travis Konecny (lower body); Cam York (upper body); Rasmus Ristolainen (upper body); Owen Tippett (upper body); Tyson Foerster (undisclosed) [Hunter McDonald]
+- PHI: Nikita Grebenkin (back); Travis Konecny (lower body); Cam York (upper body); Rasmus Ristolainen (upper body); Owen Tippett (upper body); Tyson Foerster (undisclosed) [Hunter McDonald, Jacob Gaucher]
 - SJS: none listed [Adam Gaudette, Ty Dellandrea, Nolan Allan]
 - TOR: Dakota Joshua (core); Max Domi (undisclosed); Chris Tanev (upper body); John Tavares (lower body) [Marshall Rifai, Bo Groulx, Anthony Stolarz]
 - PIT: Justin Brazeau (lower body); Ryan Graves (knee); Trevor van Riemsdyk (lower body) [Ilya Solovyov, Egor Chinakhov, Hendrix Lapierre]
