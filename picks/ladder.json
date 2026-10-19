@@ -5,7 +5,26 @@
   "attempts": [
     {
       "attempt": 1,
-      "days": []
+      "days": [
+        {
+          "day": 1,
+          "date": "2026-10-19",
+          "book": "Fanatics",
+          "status": "pending",
+          "stake": 10,
+          "odds": "-110",
+          "payout": 19.09,
+          "legs": [
+            {
+              "player": "Jackson LaCombe",
+              "team": "ANA",
+              "market": "1+ pt",
+              "price": "-110",
+              "result": "pending"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
