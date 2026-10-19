@@ -1,6 +1,99 @@
 {
   "days": [
     {
+      "date": "2026-10-19",
+      "slips": [
+        {
+          "id": 1,
+          "type": "Money back",
+          "book": "Fanatics",
+          "status": "pending",
+          "legs": [
+            {
+              "player": "Brock Nelson",
+              "team": "COL",
+              "market": "1+ pt",
+              "price": "+100",
+              "result": "pending"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "type": "2-leg points",
+          "book": "Fanatics",
+          "status": "pending",
+          "legs": [
+            {
+              "player": "Evgeni Malkin",
+              "team": "PIT",
+              "market": "1+ pt",
+              "price": "-115",
+              "result": "pending"
+            },
+            {
+              "player": "Jackson LaCombe",
+              "team": "ANA",
+              "market": "1+ pt",
+              "price": "-110",
+              "result": "pending"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "type": "Favorites 2-leg",
+          "book": "Fanatics",
+          "status": "pending",
+          "legs": [
+            {
+              "player": "Macklin Celebrini",
+              "team": "SJS",
+              "market": "1+ ast",
+              "price": "-120",
+              "result": "pending"
+            },
+            {
+              "player": "Bryan Rust",
+              "team": "PIT",
+              "market": "1+ pt",
+              "price": "-135",
+              "result": "pending"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "type": "Boosted goals lotto",
+          "book": "DraftKings",
+          "status": "pending",
+          "legs": [
+            {
+              "player": "Cutter Gauthier",
+              "team": "ANA",
+              "market": "Anytime goal",
+              "price": "+175",
+              "result": "pending"
+            },
+            {
+              "player": "Martin Necas",
+              "team": "COL",
+              "market": "Anytime goal",
+              "price": "+180",
+              "result": "pending"
+            },
+            {
+              "player": "Dylan Guenther",
+              "team": "UTA",
+              "market": "Anytime goal",
+              "price": "+130",
+              "result": "pending"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "date": "2026-10-17",
       "slips": [
         {
