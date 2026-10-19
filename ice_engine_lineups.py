@@ -74,7 +74,10 @@ MATCHUP = re.compile(r"^(.+?)(?:\s*\([^)]*\))?\s+at\s+(.+?)(?:\s*\([^)]*\))?$", 
 # day's, posted early.
 DAY_HEADING = re.compile(r"^(MONDAY|TUESDAY|WEDNESDAY|THURSDAY|FRIDAY|SATURDAY|SUNDAY)"
                          r"(?:,?\s+[A-Za-z]{3,9}\.?\s+\d{1,2})?$", re.I)
-TEAM_BLOCK = re.compile(r"^(.+?) projected (?:lineup|lines)$", re.I)
+# "Ducks projected lineup" (the format so far). Also accept "Ducks lineup",
+# "Ducks projected lines:" and trailing notes, in case NHL.com rewords it; a
+# line that is just a team nickname is handled separately in parse_article.
+TEAM_BLOCK = re.compile(r"^(.+?)(?: projected)? (?:lineup|lines)\b.*$", re.I)
 LABEL = re.compile(r"^([A-Za-z][A-Za-z ]{2,24}):\s*(.*)$")
 NAME_SEPARATOR = re.compile(r"\s*(?:-{2,}|[–—]+)\s*")
 # Two to five words, each starting with a letter: "T.J. Hughes", "K’Andre
@@ -216,20 +219,23 @@ def parse_article(body, schedule, nicknames, day):
                 continue
             game = {"gameId": schedule[(away, home)], "away": away, "home": home,
                     "nick": {away_nick: away, home_nick: home},
-                    "status": "", "blocks": {}, "problems": [], "warnings": []}
+                    "status": "", "blocks": {}, "problems": [], "warnings": [], "raw": []}
             games.append(game)
             continue
 
         if game is None:
             continue
+        if len(game["raw"]) < 40:
+            game["raw"].append(line)  # kept only so a failed run can show what the page looked like
 
         if re.fullmatch(r"status report", line, re.I):
             in_status, block = True, None
             continue
 
         m = TEAM_BLOCK.match(line)
-        if m and not in_status:
-            team = game["nick"].get(m.group(1).strip().upper())
+        bare = game["nick"].get(line.rstrip(":").strip().upper())
+        if (m or bare) and not in_status:
+            team = bare or game["nick"].get(m.group(1).strip().upper())
             if team is None:
                 game["problems"].append(f"'{line}': team is not one of the two playing")
                 block = None
@@ -557,6 +563,7 @@ def run(day, use_supabase, late_in_day=True):
         for team, opponent in ((g["away"], g["home"]), (g["home"], g["away"])):
             if team not in g["blocks"]:
                 game_problems.append(f"no '{team} projected lineup' section")
+                print(f"  [debug] {label}: first lines the parser saw under this game: {g['raw'][:25]}")
                 continue
             try:
                 team_rows = build_team_rows(g["blocks"][team], players[team])
