@@ -1145,7 +1145,7 @@ async function renderLadder(){
   const dcard=d=>{
     const k=st(d.status);
     const legs=(d.legs||[]).map(l=>`<div class="leg"><i class="is-${esc(st(l.result))}"></i><div><b>${esc(l.player)}</b> <span class="muted">${esc(l.team||'')}</span><div class="muted small">${esc(l.market||'')}</div></div><span class="lp">${esc(l.price||'')}</span></div>`).join('');
-    const pay=d.status==='hit'&&d.payout!=null?` · pays ${money(d.payout)}`:'';
+    const pay=d.status!=='miss'&&d.payout!=null?` → ${money(d.payout)}`:'';
     return `<div class="card slip is-${k}"><div class="slip-head"><div><div class="pname">Day ${esc(d.day)}${d.date?` <span class="muted small">${esc(new Date(d.date+'T12:00:00').toLocaleDateString('en-US',{month:'short',day:'numeric'}))}</span>`:''}</div><div class="pmeta">${esc(d.book||'')} · ${(d.legs||[]).length} leg${(d.legs||[]).length===1?'':'s'} · ${esc(d.odds||'')} · ${money(+d.stake||0)}${pay}</div></div><span class="st is-${k}">${k}</span></div>${legs?`<div class="legs">${legs}</div>`:''}</div>`;
   };
   const days=daysOf(cur);
