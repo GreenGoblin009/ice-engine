@@ -1,6 +1,6 @@
 ICE ENGINE SLATE REPORT  2026-10-19
 Lineups pulled: none yet
-Prices pulled:  Oct 19, 12:01 PM ET
+Prices pulled:  Oct 19, 4:21 PM ET
 Goalies pulled: none yet
 Times are US Eastern. Read-only: built from the same models as the board.
 
@@ -74,6 +74,7 @@ Priced players missing from the projected lineups:
 - Nazem Kadri COL (not on any lineup)
 - Dmitry Orlov SJS (not on any lineup)
 - Anders Lee UTA (not on any lineup)
+- Nick Jensen ANA (not on any lineup)
 - Tyler Toffoli SJS (not on any lineup)
 - Brock Nelson COL (not on any lineup)
 - Jaden Schwartz COL (not on any lineup)
@@ -162,7 +163,6 @@ Priced players missing from the projected lineups:
 - Tyson Foerster PHI (not on any lineup)
 - Jeff Malott ANA (not on any lineup)
 - Dylan Guenther UTA (not on any lineup)
-- Nolan Allan SJS (not on any lineup)
 - Tyson Hinds ANA (not on any lineup)
 - Ville Koivunen PIT (not on any lineup)
 - Fedor Svechkov COL (not on any lineup)
