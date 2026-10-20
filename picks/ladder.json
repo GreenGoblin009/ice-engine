@@ -25,6 +25,29 @@
           ]
         }
       ]
+    },
+    {
+      "attempt": 2,
+      "days": [
+        {
+          "day": 1,
+          "date": "2026-10-20",
+          "book": "Fanatics",
+          "status": "pending",
+          "stake": 10,
+          "odds": "+100",
+          "payout": 20,
+          "legs": [
+            {
+              "player": "Dylan Strome",
+              "team": "WSH",
+              "market": "1+ ast",
+              "price": "+100",
+              "result": "pending"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
