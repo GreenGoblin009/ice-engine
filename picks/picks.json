@@ -53,6 +53,42 @@
               "result": "pending"
             }
           ]
+        },
+        {
+          "id": 3,
+          "type": "Favorites 4-leg SGP",
+          "book": "Fanatics",
+          "status": "pending",
+          "legs": [
+            {
+              "player": "Jared McCann",
+              "team": "SEA",
+              "market": "1+ pt",
+              "price": "",
+              "result": "pending"
+            },
+            {
+              "player": "Jordan Eberle",
+              "team": "SEA",
+              "market": "1+ pt",
+              "price": "",
+              "result": "pending"
+            },
+            {
+              "player": "Jack Eichel",
+              "team": "VGK",
+              "market": "1+ ast",
+              "price": "",
+              "result": "pending"
+            },
+            {
+              "player": "Leo Carlsson",
+              "team": "ANA",
+              "market": "1+ pt",
+              "price": "",
+              "result": "pending"
+            }
+          ]
         }
       ]
     },
