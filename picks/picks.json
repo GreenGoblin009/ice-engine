@@ -24,6 +24,35 @@
               "result": "pending"
             }
           ]
+        },
+        {
+          "id": 2,
+          "type": "boosted 3-leg",
+          "book": "FanDuel",
+          "status": "pending",
+          "legs": [
+            {
+              "player": "Viktor Arvidsson",
+              "team": "DET",
+              "market": "1+ pt",
+              "price": "-104",
+              "result": "pending"
+            },
+            {
+              "player": "Sebastian Aho",
+              "team": "CAR",
+              "market": "1+ ast",
+              "price": "+105",
+              "result": "pending"
+            },
+            {
+              "player": "Jake Guentzel",
+              "team": "TBL",
+              "market": "1+ ast",
+              "price": "+163",
+              "result": "pending"
+            }
+          ]
         }
       ]
     },
