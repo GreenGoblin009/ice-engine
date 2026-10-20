@@ -29,7 +29,7 @@
               "team": "PIT",
               "market": "1+ pt",
               "price": "-115",
-              "result": "pending"
+              "result": "miss"
             },
             {
               "player": "Jackson LaCombe",
@@ -87,7 +87,7 @@
               "team": "UTA",
               "market": "Anytime goal",
               "price": "+135",
-              "result": "pending"
+              "result": "miss"
             }
           ]
         }
