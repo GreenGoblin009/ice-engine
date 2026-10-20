@@ -1,7 +1,7 @@
 ICE ENGINE SLATE REPORT  2026-10-20
-Lineups pulled: Oct 20, 4:00 PM ET
+Lineups pulled: Oct 20, 4:21 PM ET
 Prices pulled:  Oct 20, 4:19 PM ET
-Goalies pulled: Oct 20, 4:00 PM ET
+Goalies pulled: Oct 20, 4:21 PM ET
 Times are US Eastern. Read-only: built from the same models as the board.
 
 GAMES (start, projected goals, model game total; book game totals are not pulled)
@@ -45,7 +45,7 @@ INJURED / OUT (scratches in brackets)
 - SJS: none listed [Adam Gaudette, Ty Dellandrea, Nolan Allan]
 - MTL: Samuel Montembeault (lower body); Ivan Demidov (lower body); Florian Xhekaj (lower body); Mike Matheson (lower body) [Owen Beck, David Reinbacher]
 - COL: Logan O'Connor (lower body); Zachary L'Heureux (upper body); Nicolas Roy (lower body)
-- NJD: Nick Bjugstad (upper body) [Remi Poirier, Brenden Dillon, Stefan Noesen, Amadeus Lombardi]
+- NJD: Nick Bjugstad (upper body) [Remi Poirier, Brenden Dillon, Amadeus Lombardi]
 - ANA: Ian Moore (lower body); Troy Terry (hip); Ryan Poehling (knee) [Drew Helleson, Sam Colangelo, Nikita Nesterenko]
 - NYI: Mathew Barzal (knee); Alexander Romanov (torn right ACL); Matias Maccelli (lower body); Calum Ritchie (lower body)
 - LAK: Alex Turcotte (undisclosed); Kevin Fiala (leg surgery) [Taylor Ward, Cody Ceci]
