@@ -7,14 +7,14 @@
           "id": 1,
           "type": "Money back",
           "book": "Fanatics",
-          "status": "pending",
+          "status": "miss",
           "legs": [
             {
               "player": "Brock Nelson",
               "team": "COL",
               "market": "1+ pt",
               "price": "+100",
-              "result": "pending"
+              "result": "miss"
             }
           ]
         },
@@ -22,7 +22,7 @@
           "id": 2,
           "type": "2-leg points",
           "book": "Fanatics",
-          "status": "pending",
+          "status": "miss",
           "legs": [
             {
               "player": "Evgeni Malkin",
@@ -36,7 +36,7 @@
               "team": "ANA",
               "market": "1+ pt",
               "price": "-110",
-              "result": "pending"
+              "result": "miss"
             }
           ]
         },
@@ -66,14 +66,14 @@
           "id": 4,
           "type": "Boosted goals lotto",
           "book": "DraftKings",
-          "status": "pending",
+          "status": "miss",
           "legs": [
             {
               "player": "Cutter Gauthier",
               "team": "ANA",
               "market": "Anytime goal",
               "price": "+175",
-              "result": "pending"
+              "result": "miss"
             },
             {
               "player": "Martin Necas",

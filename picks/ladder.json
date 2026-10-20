@@ -10,7 +10,7 @@
           "day": 1,
           "date": "2026-10-19",
           "book": "Fanatics",
-          "status": "pending",
+          "status": "miss",
           "stake": 10,
           "odds": "-105",
           "payout": 19.52,
@@ -20,7 +20,7 @@
               "team": "ANA",
               "market": "1+ pt",
               "price": "-105",
-              "result": "pending"
+              "result": "miss"
             }
           ]
         }
