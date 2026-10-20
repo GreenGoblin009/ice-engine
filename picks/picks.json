@@ -44,14 +44,14 @@
           "id": 3,
           "type": "Favorites 2-leg",
           "book": "Fanatics",
-          "status": "pending",
+          "status": "miss",
           "legs": [
             {
               "player": "Macklin Celebrini",
               "team": "SJS",
               "market": "1+ ast",
               "price": "-120",
-              "result": "pending"
+              "result": "miss"
             },
             {
               "player": "Bryan Rust",
