@@ -375,11 +375,12 @@ def build(day):
             pid = r["l"]["player_id"]
             pc = best.get(pid)
             l10n, l10o = hits(r["lg"][:10], col)
+            l3n, l3o = hits(r["lg"][:3], col)
             sh = [x["sog"] for x in r["lg"][:10] if x["sog"] is not None]
             e = res.setdefault(pid, dict(name=r["l"]["player_name"], team=r["l"]["team"], pp=r["l"]["pp_unit"],
                                          toi=r["toi"], shpg=sum(sh) / len(sh) if sh else None,
                                          note=r["l"]["detail"]))
-            e[stat] = dict(adj=adj, l10=f"{l10o}/{l10n}", price=pc["price"] if pc else None,
+            e[stat] = dict(adj=adj, l10=f"{l10o}/{l10n}", l3=f"{l3o}/{l3n}", price=pc["price"] if pc else None,
                            book=pc["book"] if pc else None, edge=(adj - implied(pc["price"])) * 100 if pc else None,
                            dk=books.get(pid, {}).get("DraftKings"), fd=books.get(pid, {}).get("FanDuel"))
 
@@ -392,14 +393,14 @@ def build(day):
         if x is None:
             return "n/a"
         if x["price"] is None:
-            return f"{x['adj'] * 100:.0f}% no price, L10 {x['l10']}"
-        return f"{x['adj'] * 100:.0f}% {fmt_odds(x['price'])} {BOOK_SHORT.get(x['book'], x['book'])} {x['edge']:+.1f}, L10 {x['l10']}"
+            return f"{x['adj'] * 100:.0f}% no price, L10 {x['l10']}, L3 {x['l3']}"
+        return f"{x['adj'] * 100:.0f}% {fmt_odds(x['price'])} {BOOK_SHORT.get(x['book'], x['book'])} {x['edge']:+.1f}, L10 {x['l10']}, L3 {x['l3']}"
 
     def row(i, p, s, with_stat=False):
         x = p[s]
         return (f"{i}. {p['name']}{q(p)} {p['team']}{' ' + s if with_stat else ''} {x['adj'] * 100:.0f}%; "
                 f"best {fmt_odds(x['price'])} {BOOK_SHORT.get(x['book'], x['book'])}; edge {x['edge']:+.1f}; "
-                f"DK {fmt_odds(x['dk'])}; FD {fmt_odds(x['fd'])}; L10 {x['l10']}; "
+                f"DK {fmt_odds(x['dk'])}; FD {fmt_odds(x['fd'])}; L10 {x['l10']}; L3 {x['l3']}; "
                 f"{num(p['shpg'])} shots; {num(p['toi'])} min; {ppu(p)}")
 
     for s in STATS:
