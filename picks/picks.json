@@ -1,6 +1,33 @@
 {
   "days": [
     {
+      "date": "2026-10-20",
+      "slips": [
+        {
+          "id": 1,
+          "type": "2-leg points",
+          "book": "FanDuel",
+          "status": "pending",
+          "legs": [
+            {
+              "player": "Alex Tuch",
+              "team": "WSH",
+              "market": "1+ pt",
+              "price": "-118",
+              "result": "pending"
+            },
+            {
+              "player": "Gabriel Landeskog",
+              "team": "COL",
+              "market": "1+ pt",
+              "price": "+142",
+              "result": "pending"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "date": "2026-10-19",
       "slips": [
         {
