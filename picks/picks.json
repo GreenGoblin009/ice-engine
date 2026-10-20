@@ -90,6 +90,35 @@
               "result": "pending"
             }
           ]
+        },
+        {
+          "id": 5,
+          "type": "Trifecta",
+          "book": "theScore",
+          "status": "pending",
+          "legs": [
+            {
+              "player": "Trevor Zegras",
+              "team": "PHI",
+              "market": "1+ ast",
+              "price": "+180",
+              "result": "hit"
+            },
+            {
+              "player": "Auston Matthews",
+              "team": "TOR",
+              "market": "Anytime goal",
+              "price": "+115",
+              "result": "hit"
+            },
+            {
+              "player": "Vincent Trocheck",
+              "team": "UTA",
+              "market": "1+ pt",
+              "price": "-110",
+              "result": "pending"
+            }
+          ]
         }
       ]
     },
