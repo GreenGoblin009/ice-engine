@@ -89,6 +89,42 @@
               "result": "pending"
             }
           ]
+        },
+        {
+          "id": 4,
+          "type": "Lotto 4-leg",
+          "book": "FanDuel",
+          "status": "pending",
+          "legs": [
+            {
+              "player": "Kyle Connor",
+              "team": "WPG",
+              "market": "1+ goal",
+              "price": "+125",
+              "result": "pending"
+            },
+            {
+              "player": "Matt Boldy",
+              "team": "MIN",
+              "market": "1+ goal",
+              "price": "+160",
+              "result": "pending"
+            },
+            {
+              "player": "Brandon Hagel",
+              "team": "TBL",
+              "market": "1+ goal",
+              "price": "+150",
+              "result": "pending"
+            },
+            {
+              "player": "Cutter Gauthier",
+              "team": "ANA",
+              "market": "1+ goal",
+              "price": "+210",
+              "result": "pending"
+            }
+          ]
         }
       ]
     },
