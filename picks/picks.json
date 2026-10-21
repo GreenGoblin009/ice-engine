@@ -29,7 +29,7 @@
           "id": 2,
           "type": "boosted 3-leg",
           "book": "FanDuel",
-          "status": "pending",
+          "status": "miss",
           "legs": [
             {
               "player": "Viktor Arvidsson",
@@ -43,7 +43,7 @@
               "team": "CAR",
               "market": "1+ ast",
               "price": "+105",
-              "result": "pending"
+              "result": "miss"
             },
             {
               "player": "Jake Guentzel",
@@ -58,21 +58,21 @@
           "id": 3,
           "type": "Favorites 4-leg SGP",
           "book": "Fanatics",
-          "status": "pending",
+          "status": "miss",
           "legs": [
             {
               "player": "Jared McCann",
               "team": "SEA",
               "market": "1+ pt",
               "price": "",
-              "result": "pending"
+              "result": "miss"
             },
             {
               "player": "Jordan Eberle",
               "team": "SEA",
               "market": "1+ pt",
               "price": "",
-              "result": "pending"
+              "result": "miss"
             },
             {
               "player": "Jack Eichel",
