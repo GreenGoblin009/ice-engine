@@ -33,7 +33,7 @@
           "day": 1,
           "date": "2026-10-20",
           "book": "DraftKings",
-          "status": "pending",
+          "status": "miss",
           "stake": 10,
           "odds": "+100",
           "payout": 20,
@@ -43,7 +43,7 @@
               "team": "WSH",
               "market": "1+ ast",
               "price": "+100",
-              "result": "pending"
+              "result": "miss"
             }
           ]
         }
