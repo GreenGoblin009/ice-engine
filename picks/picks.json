@@ -50,7 +50,7 @@
               "team": "TBL",
               "market": "1+ ast",
               "price": "+163",
-              "result": "pending"
+              "result": "miss"
             }
           ]
         },
@@ -79,7 +79,7 @@
               "team": "VGK",
               "market": "1+ ast",
               "price": "",
-              "result": "pending"
+              "result": "miss"
             },
             {
               "player": "Leo Carlsson",
