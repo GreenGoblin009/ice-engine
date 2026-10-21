@@ -1081,7 +1081,11 @@ async function renderHot(){
 // type, book, status and legs. Placeholder slips (details not entered yet) are
 // shown but left out of the track record.
 const SLIP_STATUS=['pending','hit','miss','void'];
+// Flip to false to bring the Ice Cold Picks and Ladder tabs back (the data files are untouched).
+const WIP_TABS=true;
+function wipCard(){ return '<div class="card" style="text-align:center;padding:36px 16px"><div class="pname" style="font-size:20px">Be back soon</div><div class="muted" style="margin-top:8px;letter-spacing:.12em;font-weight:700">WORK IN PROGRESS</div></div>'; }
 async function renderPicks(){
+  if(WIP_TABS){ $('view').innerHTML=wipCard(); return; }
   $('view').innerHTML='<div class="empty">Loading picks…</div>';
   let data;
   try{
@@ -1128,6 +1132,7 @@ async function renderPicks(){
 // roll the whole payout into the next day's pick, 7 days. A miss ends the attempt and
 // the next attempt restarts at the starting stake.
 async function renderLadder(){
+  if(WIP_TABS){ $('view').innerHTML=wipCard(); return; }
   $('view').innerHTML='<div class="empty">Loading ladder…</div>';
   let data;
   try{
