@@ -1,6 +1,6 @@
 # Projection scoreboard
 
-Updated 2026-10-21 06:49 ET. Uses the last slate report committed before first puck each day.
+Updated 2026-10-21 07:58 ET. Uses the last slate report committed before first puck each day.
 Brier and log-loss: lower is better. 'Naive' guesses the same average for everyone; the model should beat it.
 
 ## Skater chances, 1+ goal / point / assist
