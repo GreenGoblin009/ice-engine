@@ -1,7 +1,7 @@
 ICE ENGINE SLATE REPORT  2026-10-21
-Lineups pulled: none yet
+Lineups pulled: Oct 21, 12:57 PM ET
 Prices pulled:  Oct 21, 12:06 PM ET
-Goalies pulled: none yet
+Goalies pulled: Oct 21, 12:57 PM ET
 Times are US Eastern. Read-only: built from the same models as the board.
 
 GAMES (start, projected goals, model game total; book game totals are not pulled)
@@ -9,14 +9,14 @@ GAMES (start, projected goals, model game total; book game totals are not pulled
 - 7:30 PM ET  FLA 2.89 @ OTT 3.12  (total 6.00)
 
 GOALIES (shrunk two-season save %, raw save % and games)
-- PHI: no goalie listed
-- BUF: no goalie listed
+- PHI: Dan Vladar expected 0.904 (0.904 raw, 57 GP)  | also listed: Joseph Woll 0.902 (0.901 raw, 45 GP)
+- BUF: Ukko-Pekka Luukkonen expected 0.902 (0.901 raw, 42 GP)  | also listed: Colten Ellis 0.902 (0.899 raw, 19 GP)
 - FLA: no goalie listed
 - OTT: no goalie listed
 
 INJURED / OUT (scratches in brackets)
-- PHI: none listed
-- BUF: none listed
+- PHI: Nikita Grebenkin (back); Travis Konecny (lower body); Cam York (upper body); Rasmus Ristolainen (upper body); Owen Tippett (upper body); Tyson Foerster (undisclosed) [David Jiricek, Garrett Wilson]
+- BUF: Justin Danforth (upper body); Sam Carrick (middle body); Matt Grzelcyk (lower body); Alex Lyon (upper body); Conor Timmins (lower body) [Tyson Kozak, Dennis Gilbert]
 - FLA: none listed
 - OTT: none listed
 Questionable: no projected skater carries a questionable or day-to-day note.
@@ -28,97 +28,154 @@ TEAM FORM, last 10 regular-season games (per game: GF / GA | shots for / against
 - OTT: 2.7 / 2.4 | 24.6 / 25.6 | PP 16.7% (7/42) | PK 80.6%
 
 TOP 15 GOALS BY ROLE-ADJUSTED CHANCE
+1. Tage Thompson BUF 42%; best +135 FD; edge -1.0; DK +125; FD +135; L10 6/10; L3 1/3; 4.8 shots; 20.0 min; PP1
+2. Porter Martone PHI 26%; best +275 FD; edge -0.7; DK +265; FD +275; L10 2/10; L3 1/3; 1.2 shots; 13.3 min; PP1
+3. Trevor Zegras PHI 24%; best +280 FD; edge -2.2; DK +260; FD +280; L10 2/10; L3 1/3; 1.9 shots; 18.4 min; PP1
+4. Josh Norris BUF 23%; best +330 DK; edge +0.2; DK +330; FD +330; L10 3/10; L3 2/3; 1.4 shots; 14.8 min; PP2
+5. Matvei Michkov PHI 23%; best +240 DK; edge -6.1; DK +240; FD +240; L10 5/10; L3 3/3; 1.3 shots; 14.8 min; PP1
+6. Josh Doan BUF 22%; best +270 FD; edge -4.7; DK +260; FD +270; L10 1/10; L3 0/3; 1.4 shots; 16.2 min; PP2
+7. Jack Quinn BUF 21%; best +220 FD; edge -9.9; DK +200; FD +220; L10 4/10; L3 2/3; 2.9 shots; 19.6 min; PP1
+8. Rasmus Dahlin BUF 21%; best +340 DK; edge -1.7; DK +340; FD +340; L10 3/10; L3 1/3; 2.5 shots; 23.6 min; PP2
+9. Jiri Kulich BUF 20%; best +370 FD; edge -1.3; DK +360; FD +370; L10 1/10; L3 0/3; 1.1 shots; 13.1 min; PP2
+10. Christian Dvorak PHI 19%; best +310 FD; edge -5.0; DK +285; FD +310; L10 2/10; L3 0/3; 0.8 shots; 17.4 min; PP2
+11. Noah Cates PHI 19%; best +575 FD; edge +4.4; DK +550; FD +575; L10 0/10; L3 0/3; 0.9 shots; 12.9 min; no PP
+12. Noel Acciari PHI 17%; best +750 FD; edge +5.1; DK +700; FD +750; L10 1/10; L3 1/3; 0.9 shots; 14.3 min; no PP
+13. Zach Benson BUF 16%; best +280 FD; edge -10.1; DK +230; FD +280; L10 1/10; L3 0/3; 2.1 shots; 19.9 min; PP1
+14. Noah Ostlund BUF 16%; best +330 FD; edge -7.3; DK +310; FD +330; L10 2/10; L3 0/3; 2.1 shots; 18.9 min; PP1
+15. Ryan McLeod BUF 16%; best +370 FD; edge -5.5; DK +360; FD +370; L10 2/10; L3 0/3; 0.8 shots; 15.4 min; no PP
 
 TOP 15 POINTS BY ROLE-ADJUSTED CHANCE
+1. Tage Thompson BUF 64%; best -225 DK; edge -5.5; DK -225; FD -245; L10 7/10; L3 2/3; 4.8 shots; 20.0 min; PP1
+2. Rasmus Dahlin BUF 60%; best -188 FD; edge -5.3; DK -200; FD -188; L10 8/10; L3 2/3; 2.5 shots; 23.6 min; PP2
+3. Trevor Zegras PHI 59%; best -115 DK; edge +5.1; DK -115; FD -118; L10 5/10; L3 2/3; 1.9 shots; 18.4 min; PP1
+4. Josh Norris BUF 54%; best +105 DK; edge +5.4; DK +105; FD -; L10 4/10; L3 2/3; 1.4 shots; 14.8 min; PP2
+5. Zach Benson BUF 50%; best -128 FD; edge -6.4; DK -135; FD -128; L10 6/10; L3 3/3; 2.1 shots; 19.9 min; PP1
+6. Ryan McLeod BUF 47%; best +125 DK; edge +2.7; DK +125; FD -; L10 3/10; L3 0/3; 0.8 shots; 15.4 min; no PP
+7. Jack Quinn BUF 45%; best -140 FD; edge -13.0; DK -150; FD -140; L10 5/10; L3 2/3; 2.9 shots; 19.6 min; PP1
+8. Christian Dvorak PHI 45%; best +106 FD; edge -3.2; DK -105; FD +106; L10 4/10; L3 1/3; 0.8 shots; 17.4 min; PP2
+9. Matvei Michkov PHI 45%; best -125 DK; edge -10.4; DK -125; FD -162; L10 5/10; L3 3/3; 1.3 shots; 14.8 min; PP1
+10. Josh Doan BUF 44%; best -102 FD; edge -6.2; DK -110; FD -102; L10 2/10; L3 1/3; 1.4 shots; 16.2 min; PP2
+11. Porter Martone PHI 44%; best +110 FD; edge -3.9; DK +105; FD +110; L10 2/10; L3 1/3; 1.2 shots; 13.3 min; PP1
+12. Mattias Samuelsson BUF 41%; best +165 DK; edge +3.3; DK +165; FD -; L10 5/10; L3 3/3; 1.3 shots; 23.3 min; no PP
+13. Peyton Krebs BUF 40%; best +185 DK; edge +4.6; DK +185; FD -; L10 3/10; L3 0/3; 0.8 shots; 14.1 min; no PP
+14. Noah Ostlund BUF 39%; best -105 DK; edge -12.3; DK -105; FD -; L10 4/10; L3 1/3; 2.1 shots; 18.9 min; PP1
+15. Jiri Kulich BUF 38%; best +120 DK; edge -7.2; DK +120; FD -; L10 3/10; L3 1/3; 1.1 shots; 13.1 min; PP2
 
 TOP 15 ASSISTS BY ROLE-ADJUSTED CHANCE
+1. Rasmus Dahlin BUF 48%; best -122 FD; edge -6.9; DK -140; FD -122; L10 5/10; L3 1/3; 2.5 shots; 23.6 min; PP2
+2. Trevor Zegras PHI 43%; best +170 DK; edge +5.8; DK +170; FD +162; L10 3/10; L3 1/3; 1.9 shots; 18.4 min; PP1
+3. Tage Thompson BUF 39%; best +110 DK; edge -8.9; DK +110; FD +108; L10 4/10; L3 1/3; 4.8 shots; 20.0 min; PP1
+4. Zach Benson BUF 38%; best +142 FD; edge -3.6; DK +140; FD +142; L10 6/10; L3 3/3; 2.1 shots; 19.9 min; PP1
+5. Ryan McLeod BUF 37%; best +210 DK; edge +4.6; DK +210; FD -; L10 1/10; L3 0/3; 0.8 shots; 15.4 min; no PP
+6. Josh Norris BUF 35%; best +185 DK; edge -0.5; DK +185; FD -; L10 1/10; L3 0/3; 1.4 shots; 14.8 min; PP2
+7. Christian Dvorak PHI 34%; best +200 FD; edge +1.0; DK +185; FD +200; L10 2/10; L3 1/3; 0.8 shots; 17.4 min; PP2
+8. Porter Martone PHI 33%; best +230 FD; edge +2.4; DK +225; FD +230; L10 1/10; L3 1/3; 1.2 shots; 13.3 min; PP1
+9. Jack Quinn BUF 31%; best +158 FD; edge -7.4; DK +140; FD +158; L10 2/10; L3 1/3; 2.9 shots; 19.6 min; PP1
+10. Mattias Samuelsson BUF 31%; best +230 FD; edge +0.3; DK +225; FD +230; L10 4/10; L3 3/3; 1.3 shots; 23.3 min; no PP
+11. Peyton Krebs BUF 31%; best +330 DK; edge +7.3; DK +330; FD -; L10 3/10; L3 0/3; 0.8 shots; 14.1 min; no PP
+12. Travis Sanheim PHI 28%; best +275 DK; edge +1.4; DK +275; FD -; L10 2/10; L3 0/3; 1.8 shots; 25.7 min; PP2
+13. Noah Cates PHI 28%; best +290 DK; edge +2.3; DK +290; FD -; L10 1/10; L3 1/3; 0.9 shots; 12.9 min; no PP
+14. Matvei Michkov PHI 27%; best +155 DK; edge -11.9; DK +155; FD +118; L10 1/10; L3 1/3; 1.3 shots; 14.8 min; PP1
+15. Owen Power BUF 27%; best +165 DK; edge -11.1; DK +165; FD +154; L10 5/10; L3 0/3; 1.2 shots; 26.7 min; PP1
 
 TOP 15 BY EDGE (all three markets)
-0 of 0 priced legs show a positive edge at the best book.
+1. Peyton Krebs BUF Assists 31%; best +330 DK; edge +7.3; DK +330; FD -; L10 3/10; L3 0/3; 0.8 shots; 14.1 min; no PP
+2. Trevor Zegras PHI Assists 43%; best +170 DK; edge +5.8; DK +170; FD +162; L10 3/10; L3 1/3; 1.9 shots; 18.4 min; PP1
+3. Travis Sanheim PHI Goals 13%; best +1200 FD; edge +5.6; DK +1000; FD +1200; L10 1/10; L3 0/3; 1.8 shots; 25.7 min; PP2
+4. Josh Norris BUF Points 54%; best +105 DK; edge +5.4; DK +105; FD -; L10 4/10; L3 2/3; 1.4 shots; 14.8 min; PP2
+5. Trevor Zegras PHI Points 59%; best -115 DK; edge +5.1; DK -115; FD -118; L10 5/10; L3 2/3; 1.9 shots; 18.4 min; PP1
+6. Noel Acciari PHI Goals 17%; best +750 FD; edge +5.1; DK +700; FD +750; L10 1/10; L3 1/3; 0.9 shots; 14.3 min; no PP
+7. Peyton Krebs BUF Points 40%; best +185 DK; edge +4.6; DK +185; FD -; L10 3/10; L3 0/3; 0.8 shots; 14.1 min; no PP
+8. Ryan McLeod BUF Assists 37%; best +210 DK; edge +4.6; DK +210; FD -; L10 1/10; L3 0/3; 0.8 shots; 15.4 min; no PP
+9. Mattias Samuelsson BUF Goals 15%; best +850 FD; edge +4.5; DK +800; FD +850; L10 2/10; L3 1/3; 1.3 shots; 23.3 min; no PP
+10. Noah Cates PHI Goals 19%; best +575 FD; edge +4.4; DK +550; FD +575; L10 0/10; L3 0/3; 0.9 shots; 12.9 min; no PP
+11. Louis Crevier BUF Assists 19%; best +550 DK; edge +3.9; DK +550; FD -; L10 1/10; L3 0/3; 1.1 shots; 15.0 min; no PP
+12. Travis Sanheim PHI Points 36%; best +210 DK; edge +3.8; DK +210; FD -; L10 2/10; L3 0/3; 1.8 shots; 25.7 min; PP2
+13. Mattias Samuelsson BUF Points 41%; best +165 DK; edge +3.3; DK +165; FD -; L10 5/10; L3 3/3; 1.3 shots; 23.3 min; no PP
+14. Ryan McLeod BUF Points 47%; best +125 DK; edge +2.7; DK +125; FD -; L10 3/10; L3 0/3; 0.8 shots; 15.4 min; no PP
+15. Porter Martone PHI Assists 33%; best +230 FD; edge +2.4; DK +225; FD +230; L10 1/10; L3 1/3; 1.2 shots; 13.3 min; PP1
+24 of 79 priced legs show a positive edge at the best book.
 
 ALL PRICED SKATERS (shots/game last 10, minutes, PP unit | G | P | A: chance, best price, edge, last 10)
 PHI
+- Trevor Zegras (1.9, 18.4, PP1): G 24% +280 FD -2.2, L10 2/10, L3 1/3 | P 59% -115 DK +5.1, L10 5/10, L3 2/3 | A 43% +170 DK +5.8, L10 3/10, L3 1/3
+- Christian Dvorak (0.8, 17.4, PP2): G 19% +310 FD -5.0, L10 2/10, L3 0/3 | P 45% +106 FD -3.2, L10 4/10, L3 1/3 | A 34% +200 FD +1.0, L10 2/10, L3 1/3
+- Matvei Michkov (1.3, 14.8, PP1): G 23% +240 DK -6.1, L10 5/10, L3 3/3 | P 45% -125 DK -10.4, L10 5/10, L3 3/3 | A 27% +155 DK -11.9, L10 1/10, L3 1/3
+- Porter Martone (1.2, 13.3, PP1): G 26% +275 FD -0.7, L10 2/10, L3 1/3 | P 44% +110 FD -3.9, L10 2/10, L3 1/3 | A 33% +230 FD +2.4, L10 1/10, L3 1/3
+- Noah Cates (0.9, 12.9, no PP): G 19% +575 FD +4.4, L10 0/10, L3 0/3 | P 40% no price, L10 1/10, L3 1/3 | A 28% +290 DK +2.3, L10 1/10, L3 1/3
+- Travis Sanheim (1.8, 25.7, PP2): G 13% +1200 FD +5.6, L10 1/10, L3 0/3 | P 36% +210 DK +3.8, L10 2/10, L3 0/3 | A 28% +275 DK +1.4, L10 2/10, L3 0/3
+- Denver Barkey (0.7, 14.7, PP1): G 11% +430 FD -7.7, L10 0/10, L3 0/3 | P 35% +140 DK -7.1, L10 4/10, L3 1/3 | A 26% +245 DK -3.1, L10 4/10, L3 1/3
+- Sean Couturier (1.3, 17.0, PP2): G 12% +625 FD -2.1, L10 0/10, L3 0/3 | P 33% no price, L10 3/10, L3 1/3 | A 24% no price, L10 3/10, L3 1/3
+- Jamie Drysdale (1.5, 22.1, PP1): G 10% +850 FD -0.8, L10 0/10, L3 0/3 | P 32% +145 DK -8.7, L10 0/10, L3 0/3 | A 24% +195 DK -10.0, L10 0/10, L3 0/3
+- Noel Acciari (0.9, 14.3, no PP): G 17% +750 FD +5.1, L10 1/10, L3 1/3 | P 31% no price, L10 1/10, L3 1/3 | A 16% +275 DK -11.0, L10 0/10, L3 0/3
+- Nick Seeler (0.8, 19.9, no PP): G 6% +2000 FD +0.8, L10 0/10, L3 0/3 | P 15% no price, L10 2/10, L3 0/3 | A 11% no price, L10 2/10, L3 0/3
+- Simon Benoit (0.8, 14.4, no PP): G 2% +2700 FD -1.8, L10 0/10, L3 0/3 | P 11% no price, L10 0/10, L3 0/3 | A 9% no price, L10 0/10, L3 0/3
 BUF
+- Tage Thompson (4.8, 20.0, PP1): G 42% +135 FD -1.0, L10 6/10, L3 1/3 | P 64% -225 DK -5.5, L10 7/10, L3 2/3 | A 39% +110 DK -8.9, L10 4/10, L3 1/3
+- Rasmus Dahlin (2.5, 23.6, PP2): G 21% +340 DK -1.7, L10 3/10, L3 1/3 | P 60% -188 FD -5.3, L10 8/10, L3 2/3 | A 48% -122 FD -6.9, L10 5/10, L3 1/3
+- Josh Norris (1.4, 14.8, PP2): G 23% +330 DK +0.2, L10 3/10, L3 2/3 | P 54% +105 DK +5.4, L10 4/10, L3 2/3 | A 35% +185 DK -0.5, L10 1/10, L3 0/3
+- Zach Benson (2.1, 19.9, PP1): G 16% +280 FD -10.1, L10 1/10, L3 0/3 | P 50% -128 FD -6.4, L10 6/10, L3 3/3 | A 38% +142 FD -3.6, L10 6/10, L3 3/3
+- Ryan McLeod (0.8, 15.4, no PP): G 16% +370 FD -5.5, L10 2/10, L3 0/3 | P 47% +125 DK +2.7, L10 3/10, L3 0/3 | A 37% +210 DK +4.6, L10 1/10, L3 0/3
+- Jack Quinn (2.9, 19.6, PP1): G 21% +220 FD -9.9, L10 4/10, L3 2/3 | P 45% -140 FD -13.0, L10 5/10, L3 2/3 | A 31% +158 FD -7.4, L10 2/10, L3 1/3
+- Josh Doan (1.4, 16.2, PP2): G 22% +270 FD -4.7, L10 1/10, L3 0/3 | P 44% -102 FD -6.2, L10 2/10, L3 1/3 | A 26% +200 FD -6.9, L10 1/10, L3 1/3
+- Mattias Samuelsson (1.3, 23.3, no PP): G 15% +850 FD +4.5, L10 2/10, L3 1/3 | P 41% +165 DK +3.3, L10 5/10, L3 3/3 | A 31% +230 FD +0.3, L10 4/10, L3 3/3
+- Peyton Krebs (0.8, 14.1, no PP): G 14% +500 FD -3.0, L10 0/10, L3 0/3 | P 40% +185 DK +4.6, L10 3/10, L3 0/3 | A 31% +330 DK +7.3, L10 3/10, L3 0/3
+- Noah Ostlund (2.1, 18.9, PP1): G 16% +330 FD -7.3, L10 2/10, L3 0/3 | P 39% -105 DK -12.3, L10 4/10, L3 1/3 | A 24% +190 FD -10.8, L10 2/10, L3 1/3
+- Jiri Kulich (1.1, 13.1, PP2): G 20% +370 FD -1.3, L10 1/10, L3 0/3 | P 38% +120 DK -7.2, L10 3/10, L3 1/3 | A 23% +205 DK -9.3, L10 2/10, L3 1/3
+- Owen Power (1.2, 26.7, PP1): G 12% +650 DK -1.7, L10 2/10, L3 1/3 | P 35% +125 DK -9.7, L10 6/10, L3 1/3 | A 27% +165 DK -11.1, L10 5/10, L3 0/3
+- Konsta Helenius (1.2, 13.7, PP2): G 14% +475 DK -3.3, L10 1/10, L3 0/3 | P 30% +175 DK -6.3, L10 2/10, L3 1/3 | A 22% +310 DK -2.9, L10 1/10, L3 1/3
+- Olen Zellweger (2.3, 19.7, no PP): G 10% +700 DK -2.3, L10 1/10, L3 1/3 | P 28% +195 DK -5.4, L10 2/10, L3 1/3 | A 19% +295 DK -6.5, L10 1/10, L3 0/3
+- Louis Crevier (1.1, 15.0, no PP): G 8% +1000 DK -1.3, L10 1/10, L3 0/3 | P 23% +370 DK +2.2, L10 2/10, L3 0/3 | A 19% +550 DK +3.9, L10 1/10, L3 0/3
+- Beck Malenstyn (0.1, 9.9, no PP): G 9% +1100 FD +0.3, L10 0/10, L3 0/3 | P 19% +390 DK -1.6, L10 1/10, L3 1/3 | A 11% +700 DK -1.8, L10 1/10, L3 1/3
+- Zach Metsa (0.3, 12.9, no PP): G 6% +2000 DK +1.0, L10 0/10, L3 0/3 | P 17% +400 DK -2.6, L10 2/10, L3 1/3 | A 14% +500 DK -2.7, L10 2/10, L3 1/3
 FLA
 OTT
 
 DATA CHECKS
 Games with no prices: none
-Teams with no lineup: PHI, BUF, FLA, OTT
+Teams with no lineup: FLA, OTT
 Priced players missing from the projected lineups:
 - Claude Giroux OTT (not on any lineup)
 - Lars Eller FLA (not on any lineup)
 - Dmitry Kulikov FLA (not on any lineup)
 - Radko Gudas FLA (not on any lineup)
-- Nick Seeler PHI (not on any lineup)
 - Nick Cousins OTT (not on any lineup)
-- Sean Couturier PHI (not on any lineup)
 - Carter Verhaeghe FLA (not on any lineup)
 - Seth Jones FLA (not on any lineup)
 - Garnet Hathaway FLA (not on any lineup)
 - Aaron Ekblad FLA (not on any lineup)
 - Sam Reinhart FLA (not on any lineup)
 - Sam Bennett FLA (not on any lineup)
-- Travis Sanheim PHI (not on any lineup)
-- Christian Dvorak PHI (not on any lineup)
 - Warren Foegele OTT (not on any lineup)
 - Michael Amadio OTT (not on any lineup)
 - Gustav Forsling FLA (not on any lineup)
 - Bokondji Imama FLA (not on any lineup)
 - Hayden Hodgson OTT (not on any lineup)
-- Noel Acciari PHI (not on any lineup)
 - Niko Mikkola FLA (not on any lineup)
 - Matthew Tkachuk FLA (not on any lineup)
-- Beck Malenstyn BUF (not on any lineup)
-- Tage Thompson BUF (not on any lineup)
-- Josh Norris BUF (not on any lineup)
 - Eetu Luostarinen FLA (not on any lineup)
 - Fabian Zetterlund OTT (not on any lineup)
 - Drake Batherson OTT (not on any lineup)
-- Noah Cates PHI (not on any lineup)
 - Brady Tkachuk FLA (not on any lineup)
-- Ryan Mcleod BUF (not on any lineup)
-- Mattias Samuelsson BUF (not on any lineup)
-- Rasmus Dahlin BUF (not on any lineup)
-- Simon Benoit PHI (not on any lineup)
-- Peyton Krebs BUF (not on any lineup)
 - Dylan Cozens OTT (not on any lineup)
-- Trevor Zegras PHI (not on any lineup)
 - Shane Pinto OTT (not on any lineup)
 - Jordan Spence OTT (not on any lineup)
-- Louis Crevier BUF (not on any lineup)
-- Jacob Gaucher PHI (not on any lineup)
 - Ridly Greig OTT (not on any lineup)
 - Tyler Kleven OTT (not on any lineup)
-- Jack Quinn BUF (not on any lineup)
 - Jake Sanderson OTT (not on any lineup)
 - Anton Lundell FLA (not on any lineup)
 - Tim Stutzle OTT (not on any lineup)
-- Jamie Drysdale PHI (not on any lineup)
 - Artem Zub OTT (not on any lineup)
-- Josh Doan BUF (not on any lineup)
-- Owen Power BUF (not on any lineup)
-- Olen Zellweger BUF (not on any lineup)
-- David Jiricek PHI (not on any lineup)
-- Jiri Kulich BUF (not on any lineup)
-- Noah Ostlund BUF (not on any lineup)
+- David Jiricek PHI (listed scratched)
 - Stephen Halliday OTT (not on any lineup)
-- Alex Bump PHI (not on any lineup)
 - Sandis Vilmanis FLA (not on any lineup)
-- Denver Barkey PHI (not on any lineup)
-- Zach Benson BUF (not on any lineup)
-- Oliver Bonk PHI (not on any lineup)
-- Zach Metsa BUF (not on any lineup)
 - Nikolas Matinpalo OTT (not on any lineup)
-- Matvei Michkov PHI (not on any lineup)
 - Carter Yakemchuk OTT (not on any lineup)
-- Konsta Helenius BUF (not on any lineup)
-- Porter Martone PHI (not on any lineup)
 - Cole Schwindt (FLA @ OTT): price not matched to a player
 - Jason Zucker (PHI @ BUF): price not matched to a player
 - Kai Schwindt (FLA @ OTT): price not matched to a player
 Unconfirmed goalies:
-- PHI: no goalie listed
-- BUF: no goalie listed
+- PHI: Dan Vladar (expected, not confirmed)
+- BUF: Ukko-Pekka Luukkonen (expected, not confirmed)
 - FLA: no goalie listed
 - OTT: no goalie listed
