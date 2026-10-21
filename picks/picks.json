@@ -7,14 +7,14 @@
           "id": 1,
           "type": "2-leg points",
           "book": "FanDuel",
-          "status": "pending",
+          "status": "miss",
           "legs": [
             {
               "player": "Alex Tuch",
               "team": "WSH",
               "market": "1+ pt",
               "price": "-118",
-              "result": "pending"
+              "result": "miss"
             },
             {
               "player": "Gabriel Landeskog",
@@ -94,7 +94,7 @@
           "id": 4,
           "type": "Lotto 4-leg",
           "book": "FanDuel",
-          "status": "pending",
+          "status": "miss",
           "legs": [
             {
               "player": "Kyle Connor",
@@ -122,7 +122,7 @@
               "team": "ANA",
               "market": "1+ goal",
               "price": "+210",
-              "result": "pending"
+              "result": "miss"
             }
           ]
         }
