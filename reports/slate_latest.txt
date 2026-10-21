@@ -1,6 +1,6 @@
 ICE ENGINE SLATE REPORT  2026-10-21
 Lineups pulled: none yet
-Prices pulled:  none yet
+Prices pulled:  Oct 21, 9:38 AM ET
 Goalies pulled: none yet
 Times are US Eastern. Read-only: built from the same models as the board.
 
@@ -43,9 +43,81 @@ FLA
 OTT
 
 DATA CHECKS
-Games with no prices: PHI @ BUF, FLA @ OTT
+Games with no prices: none
 Teams with no lineup: PHI, BUF, FLA, OTT
-Priced players missing from the projected lineups: none
+Priced players missing from the projected lineups:
+- Claude Giroux OTT (not on any lineup)
+- Lars Eller FLA (not on any lineup)
+- Dmitry Kulikov FLA (not on any lineup)
+- Radko Gudas FLA (not on any lineup)
+- Nick Seeler PHI (not on any lineup)
+- Nick Cousins OTT (not on any lineup)
+- Sean Couturier PHI (not on any lineup)
+- Carter Verhaeghe FLA (not on any lineup)
+- Andre Burakovsky OTT (not on any lineup)
+- Seth Jones FLA (not on any lineup)
+- Garnet Hathaway FLA (not on any lineup)
+- Aaron Ekblad FLA (not on any lineup)
+- Sam Reinhart FLA (not on any lineup)
+- Sam Bennett FLA (not on any lineup)
+- Travis Sanheim PHI (not on any lineup)
+- Christian Dvorak PHI (not on any lineup)
+- Warren Foegele OTT (not on any lineup)
+- Michael Amadio OTT (not on any lineup)
+- Gustav Forsling FLA (not on any lineup)
+- Bokondji Imama FLA (not on any lineup)
+- Noel Acciari PHI (not on any lineup)
+- Niko Mikkola FLA (not on any lineup)
+- Matthew Tkachuk FLA (not on any lineup)
+- Beck Malenstyn BUF (not on any lineup)
+- Tage Thompson BUF (not on any lineup)
+- Josh Norris BUF (not on any lineup)
+- Cameron Crotty OTT (not on any lineup)
+- Eetu Luostarinen FLA (not on any lineup)
+- Fabian Zetterlund OTT (not on any lineup)
+- Drake Batherson OTT (not on any lineup)
+- Noah Cates PHI (not on any lineup)
+- Brady Tkachuk FLA (not on any lineup)
+- Ryan Mcleod BUF (not on any lineup)
+- Mattias Samuelsson BUF (not on any lineup)
+- Rasmus Dahlin BUF (not on any lineup)
+- Simon Benoit PHI (not on any lineup)
+- Peyton Krebs BUF (not on any lineup)
+- Dylan Cozens OTT (not on any lineup)
+- Trevor Zegras PHI (not on any lineup)
+- Shane Pinto OTT (not on any lineup)
+- Jordan Spence OTT (not on any lineup)
+- Louis Crevier BUF (not on any lineup)
+- Jacob Gaucher PHI (not on any lineup)
+- Ridly Greig OTT (not on any lineup)
+- Tyler Kleven OTT (not on any lineup)
+- Jack Quinn BUF (not on any lineup)
+- Jake Sanderson OTT (not on any lineup)
+- Anton Lundell FLA (not on any lineup)
+- Tim Stutzle OTT (not on any lineup)
+- Jamie Drysdale PHI (not on any lineup)
+- Artem Zub OTT (not on any lineup)
+- Josh Doan BUF (not on any lineup)
+- Owen Power BUF (not on any lineup)
+- Olen Zellweger BUF (not on any lineup)
+- David Jiricek PHI (not on any lineup)
+- Jiri Kulich BUF (not on any lineup)
+- Noah Ostlund BUF (not on any lineup)
+- Stephen Halliday OTT (not on any lineup)
+- Alex Bump PHI (not on any lineup)
+- Sandis Vilmanis FLA (not on any lineup)
+- Denver Barkey PHI (not on any lineup)
+- Zach Benson BUF (not on any lineup)
+- Oliver Bonk PHI (not on any lineup)
+- Zach Metsa BUF (not on any lineup)
+- Nikolas Matinpalo OTT (not on any lineup)
+- Matvei Michkov PHI (not on any lineup)
+- Carter Yakemchuk OTT (not on any lineup)
+- Konsta Helenius BUF (not on any lineup)
+- Porter Martone PHI (not on any lineup)
+- Cole Schwindt (FLA @ OTT): price not matched to a player
+- Jason Zucker (PHI @ BUF): price not matched to a player
+- Kai Schwindt (FLA @ OTT): price not matched to a player
 Unconfirmed goalies:
 - PHI: no goalie listed
 - BUF: no goalie listed
