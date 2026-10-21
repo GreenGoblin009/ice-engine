@@ -1,6 +1,6 @@
 ICE ENGINE SLATE REPORT  2026-10-21
 Lineups pulled: none yet
-Prices pulled:  Oct 21, 9:38 AM ET
+Prices pulled:  Oct 21, 12:06 PM ET
 Goalies pulled: none yet
 Times are US Eastern. Read-only: built from the same models as the board.
 
@@ -54,7 +54,6 @@ Priced players missing from the projected lineups:
 - Nick Cousins OTT (not on any lineup)
 - Sean Couturier PHI (not on any lineup)
 - Carter Verhaeghe FLA (not on any lineup)
-- Andre Burakovsky OTT (not on any lineup)
 - Seth Jones FLA (not on any lineup)
 - Garnet Hathaway FLA (not on any lineup)
 - Aaron Ekblad FLA (not on any lineup)
@@ -66,13 +65,13 @@ Priced players missing from the projected lineups:
 - Michael Amadio OTT (not on any lineup)
 - Gustav Forsling FLA (not on any lineup)
 - Bokondji Imama FLA (not on any lineup)
+- Hayden Hodgson OTT (not on any lineup)
 - Noel Acciari PHI (not on any lineup)
 - Niko Mikkola FLA (not on any lineup)
 - Matthew Tkachuk FLA (not on any lineup)
 - Beck Malenstyn BUF (not on any lineup)
 - Tage Thompson BUF (not on any lineup)
 - Josh Norris BUF (not on any lineup)
-- Cameron Crotty OTT (not on any lineup)
 - Eetu Luostarinen FLA (not on any lineup)
 - Fabian Zetterlund OTT (not on any lineup)
 - Drake Batherson OTT (not on any lineup)
