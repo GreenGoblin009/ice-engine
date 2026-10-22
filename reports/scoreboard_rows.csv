@@ -2661,8 +2661,8 @@ date,name,team,mk,p,pp,mins,hit
 2026-10-20,Simon Holmstrom,NYI,P,0.39,PP1,16.4,1
 2026-10-20,Simon Holmstrom,NYI,A,0.23,PP1,16.4,0
 2026-10-20,Brayden Schenn,NYI,G,0.21,PP1,16.4,0
-2026-10-20,Brayden Schenn,NYI,P,0.37,PP1,16.4,0
-2026-10-20,Brayden Schenn,NYI,A,0.22,PP1,16.4,0
+2026-10-20,Brayden Schenn,NYI,P,0.37,PP1,16.4,1
+2026-10-20,Brayden Schenn,NYI,A,0.22,PP1,16.4,1
 2026-10-20,Emil Heineman,NYI,G,0.24,no PP,15.6,0
 2026-10-20,Emil Heineman,NYI,P,0.33,no PP,15.6,1
 2026-10-20,Emil Heineman,NYI,A,0.12,no PP,15.6,1
@@ -2685,8 +2685,8 @@ date,name,team,mk,p,pp,mins,hit
 2026-10-20,Ondrej Palat,NYI,P,0.17,no PP,12.9,1
 2026-10-20,Ondrej Palat,NYI,A,0.11,no PP,12.9,0
 2026-10-20,Matt Kessel,NYI,G,0.06,no PP,13.2,0
-2026-10-20,Matt Kessel,NYI,P,0.15,no PP,13.2,1
-2026-10-20,Matt Kessel,NYI,A,0.09,no PP,13.2,1
+2026-10-20,Matt Kessel,NYI,P,0.15,no PP,13.2,0
+2026-10-20,Matt Kessel,NYI,A,0.09,no PP,13.2,0
 2026-10-20,Kyle MacLean,NYI,G,0.04,no PP,10.3,0
 2026-10-20,Kyle MacLean,NYI,P,0.13,no PP,10.3,0
 2026-10-20,Kyle MacLean,NYI,A,0.09,no PP,10.3,0
@@ -3317,17 +3317,17 @@ date,name,team,mk,p,pp,mins,hit
 2026-10-20,Tom Willander,VAN,G,0.06,PP2,21.1,0
 2026-10-20,Tom Willander,VAN,P,0.26,PP2,21.1,0
 2026-10-20,Tom Willander,VAN,A,0.21,PP2,21.1,0
-2026-10-20,Max Sasson,VAN,G,0.19,no PP,13.1,1
+2026-10-20,Max Sasson,VAN,G,0.19,no PP,13.1,0
 2026-10-20,Max Sasson,VAN,P,0.25,no PP,13.1,1
-2026-10-20,Max Sasson,VAN,A,0.11,no PP,13.1,0
+2026-10-20,Max Sasson,VAN,A,0.11,no PP,13.1,1
 2026-10-20,Brendan Gallagher,VAN,G,0.08,no PP,10.6,0
-2026-10-20,Brendan Gallagher,VAN,P,0.23,no PP,10.6,1
-2026-10-20,Brendan Gallagher,VAN,A,0.17,no PP,10.6,1
+2026-10-20,Brendan Gallagher,VAN,P,0.23,no PP,10.6,0
+2026-10-20,Brendan Gallagher,VAN,A,0.17,no PP,10.6,0
 2026-10-20,Paul Cotter,VAN,G,0.13,PP2,15.4,0
 2026-10-20,Paul Cotter,VAN,P,0.21,PP2,15.4,0
 2026-10-20,Paul Cotter,VAN,A,0.11,PP2,15.4,0
-2026-10-20,Arshdeep Bains,VAN,G,0.07,no PP,11.3,0
-2026-10-20,Arshdeep Bains,VAN,P,0.2,no PP,11.3,0
+2026-10-20,Arshdeep Bains,VAN,G,0.07,no PP,11.3,1
+2026-10-20,Arshdeep Bains,VAN,P,0.2,no PP,11.3,1
 2026-10-20,Arshdeep Bains,VAN,A,0.16,no PP,11.3,0
 2026-10-20,Jamie Oleksiak,VAN,G,0.07,no PP,17.8,0
 2026-10-20,Jamie Oleksiak,VAN,P,0.19,no PP,17.8,0
@@ -3425,3 +3425,87 @@ date,name,team,mk,p,pp,mins,hit
 2026-10-20,Marc Gatcomb,VGK,G,0.07,no PP,10.8,0
 2026-10-20,Marc Gatcomb,VGK,P,0.15,no PP,10.8,0
 2026-10-20,Marc Gatcomb,VGK,A,0.09,no PP,10.8,0
+2026-10-21,Trevor Zegras,PHI,G,0.25,PP1,18.4,1
+2026-10-21,Trevor Zegras,PHI,P,0.6,PP1,18.4,1
+2026-10-21,Trevor Zegras,PHI,A,0.44,PP1,18.4,0
+2026-10-21,Christian Dvorak,PHI,G,0.2,PP2,17.4,0
+2026-10-21,Christian Dvorak,PHI,P,0.46,PP2,17.4,0
+2026-10-21,Christian Dvorak,PHI,A,0.35,PP2,17.4,0
+2026-10-21,Matvei Michkov,PHI,G,0.23,PP1,14.8,0
+2026-10-21,Matvei Michkov,PHI,P,0.45,PP1,14.8,1
+2026-10-21,Matvei Michkov,PHI,A,0.27,PP1,14.8,1
+2026-10-21,Porter Martone,PHI,G,0.26,PP1,13.3,0
+2026-10-21,Porter Martone,PHI,P,0.43,PP1,13.3,0
+2026-10-21,Porter Martone,PHI,A,0.32,PP1,13.3,0
+2026-10-21,Noah Cates,PHI,G,0.19,no PP,12.9,0
+2026-10-21,Noah Cates,PHI,P,0.4,no PP,12.9,0
+2026-10-21,Noah Cates,PHI,A,0.28,no PP,12.9,0
+2026-10-21,Travis Sanheim,PHI,G,0.13,PP2,25.7,0
+2026-10-21,Travis Sanheim,PHI,P,0.36,PP2,25.7,0
+2026-10-21,Travis Sanheim,PHI,A,0.29,PP2,25.7,0
+2026-10-21,Denver Barkey,PHI,G,0.11,PP1,14.7,0
+2026-10-21,Denver Barkey,PHI,P,0.34,PP1,14.7,1
+2026-10-21,Denver Barkey,PHI,A,0.26,PP1,14.7,1
+2026-10-21,Sean Couturier,PHI,G,0.12,PP2,17.0,0
+2026-10-21,Sean Couturier,PHI,P,0.34,PP2,17.0,0
+2026-10-21,Sean Couturier,PHI,A,0.24,PP2,17.0,0
+2026-10-21,Jamie Drysdale,PHI,G,0.09,PP1,22.1,0
+2026-10-21,Jamie Drysdale,PHI,P,0.33,PP1,22.1,1
+2026-10-21,Jamie Drysdale,PHI,A,0.25,PP1,22.1,1
+2026-10-21,Noel Acciari,PHI,G,0.17,no PP,14.3,0
+2026-10-21,Noel Acciari,PHI,P,0.3,no PP,14.3,0
+2026-10-21,Noel Acciari,PHI,A,0.15,no PP,14.3,0
+2026-10-21,Nick Seeler,PHI,G,0.06,no PP,19.9,0
+2026-10-21,Nick Seeler,PHI,P,0.15,no PP,19.9,0
+2026-10-21,Nick Seeler,PHI,A,0.11,no PP,19.9,0
+2026-10-21,Simon Benoit,PHI,G,0.02,no PP,14.4,0
+2026-10-21,Simon Benoit,PHI,P,0.11,no PP,14.4,0
+2026-10-21,Simon Benoit,PHI,A,0.09,no PP,14.4,0
+2026-10-21,Tage Thompson,BUF,G,0.43,PP1,20.0,0
+2026-10-21,Tage Thompson,BUF,P,0.66,PP1,20.0,0
+2026-10-21,Tage Thompson,BUF,A,0.4,PP1,20.0,0
+2026-10-21,Rasmus Dahlin,BUF,G,0.21,PP2,23.6,0
+2026-10-21,Rasmus Dahlin,BUF,P,0.6,PP2,23.6,0
+2026-10-21,Rasmus Dahlin,BUF,A,0.49,PP2,23.6,0
+2026-10-21,Josh Norris,BUF,G,0.23,PP2,14.8,0
+2026-10-21,Josh Norris,BUF,P,0.54,PP2,14.8,0
+2026-10-21,Josh Norris,BUF,A,0.34,PP2,14.8,0
+2026-10-21,Zach Benson,BUF,G,0.18,PP1,19.9,0
+2026-10-21,Zach Benson,BUF,P,0.52,PP1,19.9,0
+2026-10-21,Zach Benson,BUF,A,0.39,PP1,19.9,0
+2026-10-21,Jack Quinn,BUF,G,0.23,PP1,19.6,0
+2026-10-21,Jack Quinn,BUF,P,0.47,PP1,19.6,1
+2026-10-21,Jack Quinn,BUF,A,0.32,PP1,19.6,1
+2026-10-21,Ryan McLeod,BUF,G,0.16,no PP,15.4,0
+2026-10-21,Ryan McLeod,BUF,P,0.47,no PP,15.4,0
+2026-10-21,Ryan McLeod,BUF,A,0.37,no PP,15.4,0
+2026-10-21,Josh Doan,BUF,G,0.23,PP2,16.2,0
+2026-10-21,Josh Doan,BUF,P,0.45,PP2,16.2,0
+2026-10-21,Josh Doan,BUF,A,0.27,PP2,16.2,0
+2026-10-21,Mattias Samuelsson,BUF,G,0.15,no PP,23.3,0
+2026-10-21,Mattias Samuelsson,BUF,P,0.41,no PP,23.3,0
+2026-10-21,Mattias Samuelsson,BUF,A,0.31,no PP,23.3,0
+2026-10-21,Noah Ostlund,BUF,G,0.18,PP1,18.9,0
+2026-10-21,Noah Ostlund,BUF,P,0.41,PP1,18.9,1
+2026-10-21,Noah Ostlund,BUF,A,0.25,PP1,18.9,1
+2026-10-21,Peyton Krebs,BUF,G,0.14,no PP,14.1,0
+2026-10-21,Peyton Krebs,BUF,P,0.39,no PP,14.1,0
+2026-10-21,Peyton Krebs,BUF,A,0.3,no PP,14.1,0
+2026-10-21,Owen Power,BUF,G,0.11,PP1,26.7,0
+2026-10-21,Owen Power,BUF,P,0.35,PP1,26.7,0
+2026-10-21,Owen Power,BUF,A,0.27,PP1,26.7,0
+2026-10-21,Konsta Helenius,BUF,G,0.14,PP2,13.7,0
+2026-10-21,Konsta Helenius,BUF,P,0.29,PP2,13.7,0
+2026-10-21,Konsta Helenius,BUF,A,0.21,PP2,13.7,0
+2026-10-21,Olen Zellweger,BUF,G,0.1,no PP,19.7,0
+2026-10-21,Olen Zellweger,BUF,P,0.29,no PP,19.7,0
+2026-10-21,Olen Zellweger,BUF,A,0.19,no PP,19.7,0
+2026-10-21,Louis Crevier,BUF,G,0.08,no PP,15.0,0
+2026-10-21,Louis Crevier,BUF,P,0.24,no PP,15.0,0
+2026-10-21,Louis Crevier,BUF,A,0.19,no PP,15.0,0
+2026-10-21,Beck Malenstyn,BUF,G,0.09,no PP,9.9,0
+2026-10-21,Beck Malenstyn,BUF,P,0.19,no PP,9.9,0
+2026-10-21,Beck Malenstyn,BUF,A,0.11,no PP,9.9,0
+2026-10-21,Zach Metsa,BUF,G,0.06,no PP,12.9,0
+2026-10-21,Zach Metsa,BUF,P,0.17,no PP,12.9,0
+2026-10-21,Zach Metsa,BUF,A,0.14,no PP,12.9,0
