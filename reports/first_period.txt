@@ -1,0 +1,73 @@
+FIRST-PERIOD REPORT  built 2026-10-22 20:51 from 145 final games since 2026-10-01
+Slate: 7:00 PM ET: NSH@BOS, NYR@TOR, SJS@OTT, ANA@NJD, FLA@PIT
+
+TEAMS (per game): 1st-period GF / GA, share of games with a goal by minute 5 / 10 / 20, average game minute of the first goal, share of games the team scored the first goal
+- ANA: GP 9  1P GF 1.33 / GA 0.78  by 5:22% by 10:33% by 20:100%  first goal avg 12.0 min  scored first 6/9
+- BOS: GP 9  1P GF 1.11 / GA 0.78  by 5:44% by 10:56% by 20:100%  first goal avg 8.0 min  scored first 5/9
+- FLA: GP 9  1P GF 0.67 / GA 1.33  by 5:22% by 10:56% by 20:100%  first goal avg 9.9 min  scored first 2/9
+- NJD: GP 9  1P GF 0.78 / GA 0.67  by 5:11% by 10:44% by 20:78%  first goal avg 11.6 min  scored first 4/9
+- NSH: GP 8  1P GF 1.12 / GA 0.88  by 5:25% by 10:88% by 20:88%  first goal avg 8.2 min  scored first 3/8
+- NYR: GP 10  1P GF 1.00 / GA 0.30  by 5:30% by 10:60% by 20:90%  first goal avg 13.1 min  scored first 8/10
+- OTT: GP 10  1P GF 0.60 / GA 0.70  by 5:10% by 10:40% by 20:80%  first goal avg 13.9 min  scored first 6/10
+- PIT: GP 9  1P GF 0.67 / GA 1.33  by 5:56% by 10:67% by 20:78%  first goal avg 10.9 min  scored first 4/9
+- SJS: GP 10  1P GF 0.60 / GA 0.80  by 5:10% by 10:20% by 20:100%  first goal avg 12.4 min  scored first 4/10
+- TOR: GP 9  1P GF 0.78 / GA 1.22  by 5:44% by 10:67% by 20:100%  first goal avg 8.0 min  scored first 3/9
+
+SKATERS on those teams, min 6 GP: 1P goals, 1P shots on goal per game, times he scored the game's first goal (avg minute); sorted by 1P goals then 1P shots/game
+- Beckett Sennecke ANA: GP 9  1P G 5  1P SOG/g 0.89  first goal of game 2 (avg min 12.0)
+- Tim Stützle OTT: GP 10  1P G 4  1P SOG/g 0.20  first goal of game 2 (avg min 5.2)
+- Alexis Lafrenière NYR: GP 10  1P G 3  1P SOG/g 0.50  first goal of game 2 (avg min 5.7)
+- Mason Marchment SJS: GP 10  1P G 3  1P SOG/g 0.40  first goal of game 3 (avg min 11.2)
+- Carter Verhaeghe FLA: GP 9  1P G 3  1P SOG/g 0.33  first goal of game 0 (avg min -)
+- Jonathan Marchessault NSH: GP 8  1P G 2  1P SOG/g 1.00  first goal of game 0 (avg min -)
+- Luke Evangelista NJD: GP 6  1P G 2  1P SOG/g 0.83  first goal of game 1 (avg min 6.7)
+- Evgeni Malkin PIT: GP 9  1P G 2  1P SOG/g 0.56  first goal of game 1 (avg min 8.5)
+- Nils Hoglander NSH: GP 8  1P G 2  1P SOG/g 0.38  first goal of game 0 (avg min -)
+- Steven Stamkos NSH: GP 8  1P G 2  1P SOG/g 0.25  first goal of game 1 (avg min 7.2)
+- Evan Rodrigues NJD: GP 9  1P G 2  1P SOG/g 0.22  first goal of game 2 (avg min 12.8)
+- Kirill Marchenko TOR: GP 9  1P G 2  1P SOG/g 0.22  first goal of game 0 (avg min -)
+- Frank Vatrano ANA: GP 6  1P G 2  1P SOG/g 0.17  first goal of game 0 (avg min -)
+- Bryan Rust PIT: GP 7  1P G 2  1P SOG/g 0.14  first goal of game 0 (avg min -)
+- Sean Durzi NYR: GP 10  1P G 2  1P SOG/g 0.10  first goal of game 2 (avg min 3.2)
+- Macklin Celebrini SJS: GP 8  1P G 1  1P SOG/g 1.50  first goal of game 1 (avg min 13.8)
+- Cutter Gauthier ANA: GP 8  1P G 1  1P SOG/g 1.25  first goal of game 1 (avg min 16.3)
+- Pavel Dorofeyev NYR: GP 10  1P G 1  1P SOG/g 1.00  first goal of game 0 (avg min -)
+- Filip Forsberg NSH: GP 8  1P G 1  1P SOG/g 1.00  first goal of game 0 (avg min -)
+- Sam Bennett FLA: GP 9  1P G 1  1P SOG/g 1.00  first goal of game 1 (avg min 1.1)
+- David Pastrnak BOS: GP 9  1P G 1  1P SOG/g 0.89  first goal of game 0 (avg min -)
+- Auston Matthews TOR: GP 9  1P G 1  1P SOG/g 0.89  first goal of game 1 (avg min 2.4)
+- Jack Roslovic TOR: GP 9  1P G 1  1P SOG/g 0.89  first goal of game 1 (avg min 0.6)
+- Arseny Gritsyuk NJD: GP 9  1P G 1  1P SOG/g 0.78  first goal of game 1 (avg min 10.1)
+- Fraser Minten BOS: GP 9  1P G 1  1P SOG/g 0.78  first goal of game 1 (avg min 12.9)
+- Nico Hischier NJD: GP 9  1P G 1  1P SOG/g 0.67  first goal of game 0 (avg min -)
+- Brady Tkachuk FLA: GP 9  1P G 1  1P SOG/g 0.67  first goal of game 1 (avg min 10.0)
+- Leo Carlsson ANA: GP 9  1P G 1  1P SOG/g 0.67  first goal of game 0 (avg min -)
+- Easton Cowan TOR: GP 9  1P G 1  1P SOG/g 0.67  first goal of game 0 (avg min -)
+- Hampus Lindholm BOS: GP 9  1P G 1  1P SOG/g 0.56  first goal of game 0 (avg min -)
+- Nick Paul TOR: GP 9  1P G 1  1P SOG/g 0.56  first goal of game 0 (avg min -)
+- Mika Zibanejad NYR: GP 10  1P G 1  1P SOG/g 0.50  first goal of game 1 (avg min 5.6)
+- Ross Colton NSH: GP 8  1P G 1  1P SOG/g 0.50  first goal of game 1 (avg min 8.8)
+- Ryan O'Reilly NSH: GP 8  1P G 1  1P SOG/g 0.50  first goal of game 1 (avg min 3.9)
+- Pavel Zacha BOS: GP 8  1P G 1  1P SOG/g 0.50  first goal of game 1 (avg min 12.3)
+- Thomas Chabot OTT: GP 9  1P G 1  1P SOG/g 0.44  first goal of game 1 (avg min 18.9)
+- Jesper Boqvist NJD: GP 7  1P G 1  1P SOG/g 0.43  first goal of game 0 (avg min -)
+- Vladislav Gavrikov NYR: GP 10  1P G 1  1P SOG/g 0.40  first goal of game 1 (avg min 17.3)
+- Judd Caulfield ANA: GP 8  1P G 1  1P SOG/g 0.38  first goal of game 1 (avg min 14.7)
+- Anton Lundell FLA: GP 9  1P G 1  1P SOG/g 0.33  first goal of game 0 (avg min -)
+
+GOALIES on those teams, first-period save % over the shots they faced in period 1 this season (min 25 shots)
+- Lukas Dostal ANA: 1P shots 64  goals 5  save % 0.922
+- Jeremy Swayman BOS: 1P shots 67  goals 5  save % 0.925
+- Akira Schmid FLA: 1P shots 37  goals 5  save % 0.865
+- Jacob Markstrom FLA: 1P shots 41  goals 7  save % 0.829
+- Jake Allen NJD: 1P shots 37  goals 6  save % 0.838
+- Juuse Saros NSH: 1P shots 63  goals 7  save % 0.889
+- Igor Shesterkin NYR: 1P shots 33  goals 0  save % 1.000
+- Dylan Garand NYR: 1P shots 54  goals 3  save % 0.944
+- Linus Ullmark OTT: 1P shots 63  goals 4  save % 0.937
+- Arturs Silovs PIT: 1P shots 48  goals 6  save % 0.875
+- Sergei Murashov PIT: 1P shots 41  goals 6  save % 0.854
+- Yaroslav Askarov SJS: 1P shots 49  goals 5  save % 0.898
+- Alex Nedeljkovic SJS: 1P shots 39  goals 3  save % 0.923
+- Sergei Bobrovsky TOR: 1P shots 55  goals 7  save % 0.873
+- Anthony Stolarz TOR: 1P shots 27  goals 4  save % 0.852
