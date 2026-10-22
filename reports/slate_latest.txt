@@ -1,6 +1,6 @@
 ICE ENGINE SLATE REPORT  2026-10-22
 Lineups pulled: none yet
-Prices pulled:  Oct 22, 9:42 AM ET
+Prices pulled:  Oct 22, 12:04 PM ET
 Goalies pulled: none yet
 Times are US Eastern. Read-only: built from the same models as the board.
 
@@ -178,7 +178,6 @@ Priced players missing from the projected lineups:
 - Tyler Seguin DAL (not on any lineup)
 - Mikael Granlund ANA (not on any lineup)
 - Nino Niederreiter WPG (not on any lineup)
-- Bryan Rust PIT (not on any lineup)
 - Brendan Gallagher VAN (not on any lineup)
 - Mark Stone VGK (not on any lineup)
 - Colin Blackwell DAL (not on any lineup)
@@ -419,6 +418,7 @@ Priced players missing from the projected lineups:
 - Joel Kiviranta DAL (not on any lineup)
 - Cole Schwindt FLA (not on any lineup)
 - Arseny Gritsyuk NJD (not on any lineup)
+- Elmer Soderblom PIT (not on any lineup)
 - Adam Edstrom NSH (not on any lineup)
 - Nikita Nesterenko ANA (not on any lineup)
 - Tye Kartye NYR (not on any lineup)
