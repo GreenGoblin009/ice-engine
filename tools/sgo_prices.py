@@ -69,10 +69,25 @@ def main():
                 else:
                     continue
                 players[pid][label][ab] = d["odds"]
+        # Book game totals (full-game over/under on total goals), one line per book.
+        tot = {}
+        for oid, o in (ev.get("odds") or {}).items():
+            if not oid.startswith("points-all-game-ou-"):
+                continue
+            side = "over" if oid.endswith("-over") else "under" if oid.endswith("-under") else None
+            for b, ab in BOOKS:
+                d = (o.get("byBookmaker") or {}).get(b)
+                if side and d and d.get("available", True) and d.get("odds") is not None:
+                    e = tot.setdefault(ab, {})
+                    e["line"] = d.get("overUnder")
+                    e[side] = d["odds"]
         if not players:
             continue
         games += 1
         lines.append(f"== {nm[0]} @ {nm[1]}  {start.astimezone(ET):%a %I:%M %p} ET ==")
+        if tot:
+            lines.append("GAME TOTAL: " + " | ".join(
+                f"{ab} {v.get('line','?')} (o {v.get('over','-')} / u {v.get('under','-')})" for ab, v in sorted(tot.items())))
         for pid in sorted(players):
             bits = [f"{lb} " + " ".join(f"{ab} {pr.get(ab, '-')}" for _, ab in BOOKS)
                     for lb, pr in sorted(players[pid].items())]
