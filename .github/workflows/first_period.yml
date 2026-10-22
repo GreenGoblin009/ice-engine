@@ -1,0 +1,32 @@
+name: First-period report
+
+on:
+  workflow_dispatch:
+    inputs:
+      slate_time:
+        description: "Slate start time as printed in the slate report"
+        default: "7:00 PM ET"
+
+permissions:
+  contents: write
+
+jobs:
+  first-period:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build the first-period report
+        run: python tools/first_period.py --slate-time "${{ inputs.slate_time }}"
+      - name: Commit
+        run: |
+          git config user.name "ice-engine-bot"
+          git config user.email "ice-engine-bot@users.noreply.github.com"
+          git add reports/first_period.txt
+          if git diff --cached --quiet; then echo "No change."; exit 0; fi
+          git commit -m "First-period report $(date -u +%F)"
+          git pull --rebase -q
+          git push
