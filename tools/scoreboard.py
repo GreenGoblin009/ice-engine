@@ -96,11 +96,13 @@ def parse_report(txt):
         if not m or not team:
             continue
         rest = m.group(5)
-        d = dict(name=m.group(1), team=team, pp=m.group(4), mins=float(m.group(3)))
-        for key, rx in (("G", r"G (\d+)%"), ("P", r"\| P (\d+)%"), ("A", r"\| A (\d+)%")):
-            x = re.search(rx, rest)
+        d = dict(name=m.group(1), team=team, pp=m.group(4), mins=float(m.group(3)), shots=float(m.group(2)))
+        for seg in rest.split(" | "):
+            x = re.match(r"([GPA]) (\d+)%.*?L10 (\d+)/10(?:, L3 (\d)/3)?", seg.strip())
             if x:
-                d[key] = int(x.group(1)) / 100
+                d[x.group(1)] = int(x.group(2)) / 100
+                d[x.group(1) + "_l10"] = int(x.group(3))
+                d[x.group(1) + "_l3"] = int(x.group(4)) if x.group(4) is not None else ""
         skaters.append(d)
     return games, skaters
 
@@ -146,6 +148,11 @@ def main():
             notes.append(f"{date}: report has no skater section; skipped")
             continue
         sk, tot = results_for(date)
+        gt = {}
+        tp = {}
+        for g in games:
+            gt[g["away"]] = gt[g["home"]] = g["total"]
+            tp[g["away"]], tp[g["home"]] = g["away_p"], g["home_p"]
         for g in games:
             r = tot.get(frozenset((g["away"], g["home"])))
             if r:
@@ -161,7 +168,9 @@ def main():
             for key, stat in (("G", "goals"), ("P", "points"), ("A", "assists")):
                 if key in s:
                     rows.append(dict(date=date, name=s["name"], team=s["team"], mk=key,
-                                     p=s[key], pp=s["pp"], mins=s["mins"],
+                                     p=s[key], pp=s["pp"], mins=s["mins"], shots=s.get("shots", ""),
+                                     l10=s.get(key + "_l10", ""), l3=s.get(key + "_l3", ""),
+                                     game_total=gt.get(s["team"], ""), team_proj=tp.get(s["team"], ""),
                                      hit=1 if p.get(stat, 0) >= 1 else 0))
         notes.append(f"{date}: {len(skaters)} skaters in the report, {miss} not matched to a final box score")
     write(rows, grows, notes)
@@ -185,7 +194,7 @@ def score(rs):
 
 def write(rows, grows, notes):
     with open("reports/scoreboard_rows.csv", "w", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=["date", "name", "team", "mk", "p", "pp", "mins", "hit"])
+        w = csv.DictWriter(f, fieldnames=["date", "name", "team", "mk", "p", "pp", "mins", "shots", "l10", "l3", "game_total", "team_proj", "hit"])
         w.writeheader()
         w.writerows(rows)
     L = ["# Projection scoreboard", "",
@@ -208,6 +217,24 @@ def write(rows, grows, notes):
         b = [r for r in rows if r["mk"] == "P" and r["pp"] == role]
         if b:
             L.append(f"| {role} | {len(b)} | {sum(r['p'] for r in b)/len(b)*100:.1f}% | {sum(r['hit'] for r in b)/len(b)*100:.1f}% |")
+    L += ["", "## Does recent form add anything? (predicted vs actual by last-3 and last-10 hits)", ""]
+    for key, name in (("P", "Point"), ("G", "Goal"), ("A", "Assist")):
+        L += ["", f"### {name}, by hits in the last 3 games", "", "| Last 3 | N | Avg predicted | Actual |", "|---|---|---|---|"]
+        for v in ("0", "1", "2", "3"):
+            b = [r for r in rows if r["mk"] == key and str(r["l3"]) == v]
+            if len(b) >= 10:
+                L.append(f"| {v}/3 | {len(b)} | {sum(r['p'] for r in b)/len(b)*100:.1f}% | {sum(r['hit'] for r in b)/len(b)*100:.1f}% |")
+    L += ["", "### Point, by hits in the last 10 games", "", "| Last 10 | N | Avg predicted | Actual |", "|---|---|---|---|"]
+    for lo, hi in ((0, 2), (3, 4), (5, 6), (7, 8), (9, 10)):
+        b = [r for r in rows if r["mk"] == "P" and str(r["l10"]) != "" and lo <= int(r["l10"]) <= hi]
+        if len(b) >= 10:
+            L.append(f"| {lo}-{hi}/10 | {len(b)} | {sum(r['p'] for r in b)/len(b)*100:.1f}% | {sum(r['hit'] for r in b)/len(b)*100:.1f}% |")
+    L += ["", "### Point and goal, by the game's projected total", "", "| Projected total | Market | N | Avg predicted | Actual |", "|---|---|---|---|---|"]
+    for lo, hi in ((0, 5.9), (5.9, 6.2), (6.2, 6.4), (6.4, 9)):
+        for key in ("P", "G"):
+            b = [r for r in rows if r["mk"] == key and str(r["game_total"]) != "" and lo <= float(r["game_total"]) < hi]
+            if len(b) >= 20:
+                L.append(f"| {lo}-{hi} | {'Point' if key=='P' else 'Goal'} | {len(b)} | {sum(r['p'] for r in b)/len(b)*100:.1f}% | {sum(r['hit'] for r in b)/len(b)*100:.1f}% |")
     if grows:
         n = len(grows)
         mae = sum(abs(g["proj"] - g["actual"]) for g in grows) / n
