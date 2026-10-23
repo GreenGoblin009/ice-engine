@@ -1,80 +1,80 @@
-SPORTSGAMEODDS PRICES (FanDuel, DraftKings)  pulled Oct 23 08:39 AM ET
+SPORTSGAMEODDS PRICES (FanDuel, DraftKings)  pulled Oct 23 12:28 PM ET
 Over/Yes sides only. FD/DK = American odds; '-' = book not offering.
 
 == Montréal Canadiens @ Chicago Blackhawks  Fri 08:00 PM ET ==
-GAME TOTAL: DK 6.5 (o +102 / u -122) | FD 6.5 (o +100 / u -122)
-Adam Engstrom: goal FD +800 DK +900
-Alexandre Carrier: goal FD +1700 DK +1500
-Alexandre Texier: goal FD +470 DK +450
-Alex Newhook: goal FD +380 DK +330
+GAME TOTAL: DK 6.5 (o +102 / u -122) | FD 6.5 (o +102 / u -124)
+Adam Engstrom: goal FD +1100 DK +900
+Alexandre Carrier: goal FD +1400 DK +1600
+Alexandre Texier: goal FD +450 DK +425
+Alex Newhook: ast O0.5 FD - DK +240 | goal FD +340 DK +320 | pts O0.5 FD - DK +120
 Alex Vlasic: goal FD +1400 DK +1700
-Anton Frondell: ast O0.5 FD +148 DK +205 | goal FD +340 DK +350 | pts O0.5 FD -115 DK +115
-Arber Xhekaj: goal FD +2200 DK +2000
-Artyom Levshunov: goal FD +1300 DK +1200
-Chris Kreider: ast O0.5 FD +200 DK +200 | goal FD +250 DK +235 | pts O0.5 FD -108 DK -110
-Cole Caufield: ast O0.5 FD +118 DK +100 | goal FD +110 DK +115 | pts O1.5 FD +196 DK +170
-Cole Smith: goal FD +1100 DK +950
-Connor Bedard: ast O0.5 FD -108 DK -110 | goal FD +165 DK +150 | pts O0.5 FD -240 DK -230
+Anton Frondell: ast O0.5 FD +154 DK +215 | goal FD +350 DK +360 | pts O0.5 FD -113 DK +115
+Arber Xhekaj: goal FD +2100 DK +2000
+Artyom Levshunov: goal FD +1300 DK +1300
+Chris Kreider: ast O0.5 FD +196 DK +185 | goal FD +230 DK +235 | pts O0.5 FD -115 DK -115
+Cole Caufield: ast O0.5 FD +110 DK -105 | goal FD +110 DK +110 | pts O1.5 FD +182 DK +155
+Cole Smith: goal FD +1100 DK +900
+Connor Bedard: ast O0.5 FD +100 DK -105 | goal FD +170 DK +150 | pts O0.5 FD -220 DK -225
 Florian Xhekaj: goal FD +900 DK +1000
-Frank Nazar: ast O0.5 FD - DK +200 | goal FD +380 DK +330 | pts O0.5 FD - DK +105
-Ian Cole: goal FD +1900 DK +2200
-Jake Evans: goal FD +700 DK +500
-Jordan Greenway: goal FD +1000 DK +1000
-Josh Anderson: goal FD +410 DK +380
-Juraj Slafkovsky: ast O0.5 FD +128 DK +115 | goal FD +195 DK +200 | pts O0.5 FD -174 DK -175
+Frank Nazar: ast O0.5 FD - DK +200 | goal FD +380 DK +340 | pts O0.5 FD - DK +110
+Ian Cole: goal FD +2100 DK +2200
+Jake Evans: goal FD +650 DK +475
+Jordan Greenway: goal FD +1300 DK +1000
+Josh Anderson: ast O0.5 FD - DK +350 | goal FD +370 DK +360 | pts O0.5 FD - DK +165
+Juraj Slafkovsky: ast O0.5 FD +122 DK +105 | goal FD +190 DK +190 | pts O0.5 FD -186 DK -190
 Kaiden Guhle: goal FD +1200 DK +1100
-Kirby Dach: goal FD +550 DK +550
-Lane Hutson: ast O0.5 FD -154 DK -145 | goal FD +500 DK +500 | pts O0.5 FD -210 DK -185
-Noah Dobson: ast O0.5 FD - DK +130 | goal FD +550 DK +600 | pts O0.5 FD - DK +100
-Oliver Kapanen: ast O0.5 FD +144 DK +175 | goal FD +300 DK +310 | pts O0.5 FD -125 DK -105
-Oliver Moore: goal FD +525 DK +450
-Patrick Kane: ast O0.5 FD +128 DK +125 | goal FD +270 DK +265 | pts O0.5 FD -146 DK -145
-Phillip Danault: goal FD +625 DK +500
-Ryan Donato: goal FD +500 DK +500
-Ryan Greene: goal FD +700 DK +600
-Sam Rinzel: goal FD +800 DK +750
-Teuvo Teravainen: ast O0.5 FD - DK +145 | goal FD +400 DK +370 | pts O0.5 FD - DK -115
-Tyler Bertuzzi: ast O0.5 FD +210 DK +195 | goal FD +250 DK +235 | pts O0.5 FD -106 DK -110
-Wyatt Kaiser: goal FD +1400 DK +1200
-Zack Bolduc: goal FD +340 DK +370
+Kirby Dach: goal FD +525 DK +550
+Lane Hutson: ast O0.5 FD -162 DK -155 | goal FD +525 DK +475 | pts O0.5 FD -215 DK -195
+Noah Dobson: ast O0.5 FD - DK +125 | goal FD +525 DK +600 | pts O0.5 FD - DK -105
+Oliver Kapanen: ast O0.5 FD +152 DK +165 | goal FD +290 DK +290 | pts O0.5 FD -125 DK -110
+Oliver Moore: goal FD +575 DK +475
+Patrick Kane: ast O0.5 FD +130 DK +125 | goal FD +270 DK +270 | pts O0.5 FD -142 DK -140
+Phillip Danault: goal FD +575 DK +500
+Ryan Donato: goal FD +500 DK +550
+Ryan Greene: goal FD +750 DK +600
+Sam Rinzel: goal FD +850 DK +800
+Teuvo Teravainen: ast O0.5 FD - DK +145 | goal FD +420 DK +370 | pts O0.5 FD - DK -110
+Tyler Bertuzzi: ast O0.5 FD +210 DK +195 | goal FD +270 DK +245 | pts O0.5 FD +100 DK -110
+Wyatt Kaiser: goal FD +1600 DK +1300
+Zack Bolduc: ast O0.5 FD - DK +300 | goal FD +340 DK +350 | pts O0.5 FD - DK +145
 
 == Tampa Bay Lightning @ Colorado Avalanche  Fri 09:00 PM ET ==
-GAME TOTAL: DK 6.5 (o +102 / u -122) | FD 6.5 (o +100 / u -120)
-Anthony Cirelli: ast O0.5 FD - DK +245 | goal FD - DK +340 | pts O0.5 FD - DK +130
-Artturi Lehkonen: ast O0.5 FD +172 DK +225 | goal FD +240 DK +220 | pts O0.5 FD -122 DK -105
-Brandon Hagel: ast O0.5 FD +118 DK +125 | goal FD +180 DK +165 | pts O0.5 FD -192 DK -180
-Brayden Point: ast O0.5 FD +142 DK +150 | goal FD +230 DK +220 | pts O0.5 FD -148 DK -140
+GAME TOTAL: DK 6.5 (o +102 / u -122) | FD 6.5 (o +100 / u -122)
+Anthony Cirelli: ast O0.5 FD - DK +245 | goal FD - DK +350 | pts O0.5 FD - DK +130
+Artturi Lehkonen: ast O0.5 FD +176 DK +235 | goal FD +240 DK +230 | pts O0.5 FD -120 DK +100
+Brandon Hagel: ast O0.5 FD +114 DK +135 | goal FD +180 DK +170 | pts O0.5 FD -205 DK -175
+Brayden Point: ast O0.5 FD +142 DK +150 | goal FD +230 DK +215 | pts O0.5 FD -148 DK -135
 Brent Burns: goal FD +1200 DK +1500
-Brett Kulak: goal FD +1800 DK +1800
-Brock Nelson: ast O0.5 FD +152 DK +175 | goal FD +300 DK +320 | pts O0.5 FD -122 DK -105
-Cale Makar: ast O0.5 FD -172 DK -135 | goal FD +330 DK +340 | pts O0.5 FD -265 DK -195
-Charlesedouard Dastous: goal FD +850 DK +850
+Brett Kulak: goal FD +2000 DK +1800
+Brock Nelson: ast O0.5 FD +158 DK +180 | goal FD +320 DK +310 | pts O0.5 FD -113 DK +100
+Cale Makar: ast O0.5 FD -170 DK -130 | goal FD +320 DK +310 | pts O0.5 FD -260 DK -195
+Charlesedouard Dastous: ast O0.5 FD - DK +190 | goal FD +650 DK +850 | pts O0.5 FD - DK +145
 Conor Geekie: goal FD +700 DK +700
-Devon Toews: ast O0.5 FD - DK +175 | goal FD +850 DK +800 | pts O0.5 FD - DK +135
-Dominic James: goal FD +490 DK -
-Emil Lilleberg: goal FD - DK +1600
+Devon Toews: ast O0.5 FD - DK +170 | goal FD +850 DK +850 | pts O0.5 FD - DK +135
+Dominic James: goal FD +450 DK -
+Emil Lilleberg: goal FD - DK +1500
 Erik Cernak: goal FD - DK +2000
-Fedor Svechkov: goal FD +800 DK +1000
-Gabriel Landeskog: ast O0.5 FD - DK +220 | goal FD +360 DK +350 | pts O0.5 FD - DK +120
-Gage Goncalves: ast O0.5 FD - DK +220 | goal FD +450 DK +450 | pts O0.5 FD - DK +135
-Ilya Mikheyev: goal FD +550 DK +600
-Jaden Schwartz: goal FD +370 DK +370
-Jake Guentzel: ast O0.5 FD +140 DK +120 | goal FD +200 DK +170 | pts O0.5 FD -162 DK -180
-Janis Moser: goal FD +1200 DK +1100
-Jeffrey Viel: goal FD +750 DK +750
-John Carlson: ast O0.5 FD +140 DK +185 | goal FD +480 DK +500 | pts O0.5 FD -106 DK +120
-Josh Manson: goal FD +2000 DK +2000
-Logan Oconnor: goal FD +700 DK +850
-Martin Necas: ast O0.5 FD -128 DK +110 | goal FD +210 DK +200 | pts O0.5 FD -250 DK -175
-Nathan Mackinnon: ast O0.5 FD -192 DK -175 | goal FD +120 DK -105 | pts O1.5 FD +108 DK -105
-Nazem Kadri: ast O0.5 FD - DK +150 | goal FD +270 DK +295 | pts O0.5 FD - DK -120
-Nikita Kucherov: ast O0.5 FD -160 DK -165 | goal FD +180 DK +165 | pts O1.5 FD +158 DK +140
-Noah Juulsen: goal FD - DK +2200
-Parker Kelly: goal FD +600 DK +750
-Pontus Holmberg: goal FD +500 DK +550
+Fedor Svechkov: goal FD +750 DK +850
+Gabriel Landeskog: ast O0.5 FD - DK +225 | goal FD +350 DK +340 | pts O0.5 FD - DK +120
+Gage Goncalves: ast O0.5 FD - DK +235 | goal FD +440 DK +450 | pts O0.5 FD - DK +140
+Ilya Mikheyev: goal FD +550 DK +550
+Jaden Schwartz: ast O0.5 FD - DK +275 | goal FD +370 DK +360 | pts O0.5 FD - DK +140
+Jake Guentzel: ast O0.5 FD +122 DK +125 | goal FD +195 DK +170 | pts O0.5 FD -184 DK -180
+Janis Moser: goal FD +1100 DK +1000
+Jeffrey Viel: goal FD +725 DK +800
+John Carlson: ast O0.5 FD +138 DK +145 | goal FD +500 DK +475 | pts O0.5 FD -106 DK +100
+Josh Manson: goal FD +2100 DK +2200
+Logan Oconnor: goal FD +725 DK +850
+Martin Necas: ast O0.5 FD -120 DK +115 | goal FD +210 DK +200 | pts O0.5 FD -225 DK -175
+Nathan Mackinnon: ast O0.5 FD -178 DK -185 | goal FD +120 DK +105 | pts O1.5 FD +116 DK +100
+Nazem Kadri: ast O0.5 FD - DK +155 | goal FD +280 DK +290 | pts O0.5 FD - DK -115
+Nikita Kucherov: ast O0.5 FD -164 DK -165 | goal FD +175 DK +170 | pts O1.5 FD +150 DK +140
+Parker Kelly: goal FD +600 DK +800
+Pontus Holmberg: goal FD +575 DK +550
 Ryan Mcdonagh: goal FD - DK +1900
-Sam Malinski: goal FD +1000 DK +1300
-Scott Sabourin: goal FD +1300 DK -
-Victor Hedman: goal FD +1100 DK +1000
-Zemgus Girgensons: goal FD +700 DK +700
+Sam Malinski: goal FD +1100 DK +1400
+Scott Sabourin: goal FD +1400 DK -
+Taylor Makar: goal FD - DK +1000
+Victor Hedman: goal FD +1000 DK +1100
+Zemgus Girgensons: goal FD +800 DK +750
 
