@@ -1,6 +1,6 @@
 ICE ENGINE SLATE REPORT  2026-10-23
 Lineups pulled: none yet
-Prices pulled:  none yet
+Prices pulled:  Oct 23, 9:38 AM ET
 Goalies pulled: none yet
 Times are US Eastern. Read-only: built from the same models as the board.
 
@@ -43,9 +43,80 @@ TBL
 COL
 
 DATA CHECKS
-Games with no prices: MTL @ CHI, TBL @ COL
+Games with no prices: none
 Teams with no lineup: MTL, CHI, TBL, COL
-Priced players missing from the projected lineups: none
+Priced players missing from the projected lineups:
+- Brent Burns COL (not on any lineup)
+- Ian Cole CHI (not on any lineup)
+- Patrick Kane CHI (not on any lineup)
+- Ryan Mcdonagh TBL (not on any lineup)
+- John Carlson TBL (not on any lineup)
+- Victor Hedman TBL (not on any lineup)
+- Nazem Kadri COL (not on any lineup)
+- Chris Kreider MTL (not on any lineup)
+- Brock Nelson COL (not on any lineup)
+- Jaden Schwartz COL (not on any lineup)
+- Josh Manson COL (not on any lineup)
+- Nikita Kucherov TBL (not on any lineup)
+- Gabriel Landeskog COL (not on any lineup)
+- Phillip Danault MTL (not on any lineup)
+- Zemgus Girgensons TBL (not on any lineup)
+- Teuvo Teravainen CHI (not on any lineup)
+- Brett Kulak COL (not on any lineup)
+- Josh Anderson MTL (not on any lineup)
+- Scott Sabourin TBL (not on any lineup)
+- Jake Guentzel TBL (not on any lineup)
+- Artturi Lehkonen COL (not on any lineup)
+- Tyler Bertuzzi CHI (not on any lineup)
+- Nathan Mackinnon COL (not on any lineup)
+- Ryan Donato CHI (not on any lineup)
+- Brayden Point TBL (not on any lineup)
+- Devon Toews COL (not on any lineup)
+- Jake Evans MTL (not on any lineup)
+- Jordan Greenway CHI (not on any lineup)
+- Erik Cernak TBL (not on any lineup)
+- Noah Juulsen COL (not on any lineup)
+- Anthony Cirelli TBL (not on any lineup)
+- Alexandre Carrier MTL (not on any lineup)
+- Brandon Hagel TBL (not on any lineup)
+- Jeffrey Viel TBL (not on any lineup)
+- Martin Necas COL (not on any lineup)
+- Cale Makar COL (not on any lineup)
+- Alexandre Texier MTL (not on any lineup)
+- Parker Kelly COL (not on any lineup)
+- Noah Dobson MTL (not on any lineup)
+- Pontus Holmberg TBL (not on any lineup)
+- Logan Oconnor COL (not on any lineup)
+- Kirby Dach MTL (not on any lineup)
+- Cole Caufield MTL (not on any lineup)
+- Alex Vlasic CHI (not on any lineup)
+- Alex Newhook MTL (not on any lineup)
+- Ilya Mikheyev TBL (not on any lineup)
+- Cole Smith CHI (not on any lineup)
+- Kaiden Guhle MTL (not on any lineup)
+- Wyatt Kaiser CHI (not on any lineup)
+- Gage Goncalves TBL (not on any lineup)
+- Janis Moser TBL (not on any lineup)
+- Zack Bolduc MTL (not on any lineup)
+- Fedor Svechkov COL (not on any lineup)
+- Oliver Kapanen MTL (not on any lineup)
+- Emil Lilleberg TBL (not on any lineup)
+- Arber Xhekaj MTL (not on any lineup)
+- Conor Geekie TBL (not on any lineup)
+- Ryan Greene CHI (not on any lineup)
+- Lane Hutson MTL (not on any lineup)
+- Frank Nazar CHI (not on any lineup)
+- Sam Rinzel CHI (not on any lineup)
+- Juraj Slafkovsky MTL (not on any lineup)
+- Adam Engstrom MTL (not on any lineup)
+- Dominic James TBL (not on any lineup)
+- Connor Bedard CHI (not on any lineup)
+- Oliver Moore CHI (not on any lineup)
+- Sam Malinski COL (not on any lineup)
+- Florian Xhekaj MTL (not on any lineup)
+- Artyom Levshunov CHI (not on any lineup)
+- Anton Frondell CHI (not on any lineup)
+- Charlesedouard Dastous (TBL @ COL): price not matched to a player
 Unconfirmed goalies:
 - MTL: no goalie listed
 - CHI: no goalie listed
