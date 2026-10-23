@@ -901,7 +901,23 @@ async function renderLeaders(){
   const L=S.lead;
   if(!LEAD_LINES[L.stat].includes(L.line)) L.line=STATS[L.stat].line;
   const gs=dayGames();
-  const sk=S.lineups.filter(l=>l.status==='projected'&&(l.slot==='line'||l.slot==='pair')&&l.player_id);
+  let sk=S.lineups.filter(l=>l.status==='projected'&&(l.slot==='line'||l.slot==='pair')&&l.player_id);
+  let prevNote=false;
+  if(gs.length&&!sk.length){
+    // today's lineups are not posted yet: use each playing team's most recent posted lineup so player history can be viewed early
+    if(S.prevLineupsDay!==S.day){
+      S.prevLineups=[]; S.prevLineupsDay=S.day;
+      try{
+        const tms=[...new Set(gs.flatMap(g=>[g.away,g.home]))];
+        const d=new Date(S.day+'T12:00:00Z'); d.setUTCDate(d.getUTCDate()-10);
+        const from=d.toISOString().slice(0,10);
+        const rows=await sbAll(`daily_lineups?lineup_date=gte.${from}&lineup_date=lt.${S.day}&team=in.(${tms.join(',')})&select=*&order=lineup_date.desc`);
+        const latest={}; rows.forEach(r=>{ if(r.player_id&&(r.slot==='line'||r.slot==='pair')&&!latest[r.team]) latest[r.team]=r.lineup_date; });
+        S.prevLineups=rows.filter(r=>r.player_id&&(r.slot==='line'||r.slot==='pair')&&r.lineup_date===latest[r.team]);
+      }catch(e){ S.prevLineups=[]; }
+    }
+    sk=S.prevLineups||[]; prevNote=sk.length>0;
+  }
   if(!gs.length||!sk.length){ $('view').innerHTML='<div class="empty">Leaders fills in once the day\'s lineups are posted (first update is 12 PM ET).</div>'; return; }
   const teams=[...new Set(sk.map(x=>x.team))].sort();
   if(L.team!=='ALL'&&!teams.includes(L.team)) L.team='ALL';
@@ -949,7 +965,8 @@ async function renderLeaders(){
         ${profStrip(r.prof)}</div>
       <div><div class="pbig" style="color:${r.h.pct>=0.5?'var(--green)':'var(--text)'}">${Math.round(r.h.pct*100)}%</div><div class="psub">${r.h.over}/${r.h.n} · o${L.line} ${esc(L.stat)}</div></div><div class="dots${dn>10?' tight':''}" title="This season, oldest to newest">${r.l5r.map((o,i)=>{ const dt=o.d.slice(5).replace('-','/').replace(/^0/,'').replace(/\/0/,'/'); return (i>0&&o.old&&!r.l5r[i-1].old?'<div class="sep"></div>':'')+`<div class="g ${o.v>L.line?'h':'m'}${o.old?' old':''}" title="${dt}"><b>${o.v}</b><span>${dt}</span></div>`; }).join('')}${r.l5r.some(o=>o.old)?'<div class="yr">dim = earlier season</div>':''}</div></div>`).join(''):'<div class="empty">No players match.</div>';
   const note=`<details class="more" style="margin:0 0 10px;"><summary>Today's lineups, regular season. Tap for details.</summary><div class="muted small" style="margin-top:6px;">Everyone in today's projected lineups. Regular season only. Boxes match the timeframe you pick: the last 5, 10 or 20 regular-season games (Season and All-time show up to 20; no preseason; with Head to head they are the last games against tonight's opponent). With 20 boxes the dates are hidden, tap a box to see its date, oldest on the left, newest on the right, with the stat and date. Green = went over. The five boxes under each name: SCORES = how often he scores (this and last season), SHOOT % = share of his shots that go in, SHOTS/G and ATT/G = shots on goal and attempts per game, GOALS L10 = goals in his last 10. SNIPER = scores a lot on few shots; VOLUME = 3+ shots a game. Tap a player for the full game log.${L.team==='ALL'&&total>50?` Showing the top 50 of ${total}.`:''}</div></details>`;
-  $('view').innerHTML=controls+note+list; wire();
+  const prevBanner=prevNote?'<div class="muted small" style="margin:0 0 10px;">Tonight\'s lineups are not posted yet. Showing each team\'s most recent lineup, so a scratch or line change is possible. Check again after lineups post.</div>':'';
+  $('view').innerHTML=controls+prevBanner+note+list; wire();
 }
 
 
