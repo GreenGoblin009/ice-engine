@@ -1,6 +1,6 @@
 ICE ENGINE SLATE REPORT  2026-10-23
 Lineups pulled: none yet
-Prices pulled:  Oct 23, 9:38 AM ET
+Prices pulled:  Oct 23, 12:08 PM ET
 Goalies pulled: none yet
 Times are US Eastern. Read-only: built from the same models as the board.
 
@@ -75,7 +75,6 @@ Priced players missing from the projected lineups:
 - Jake Evans MTL (not on any lineup)
 - Jordan Greenway CHI (not on any lineup)
 - Erik Cernak TBL (not on any lineup)
-- Noah Juulsen COL (not on any lineup)
 - Anthony Cirelli TBL (not on any lineup)
 - Alexandre Carrier MTL (not on any lineup)
 - Brandon Hagel TBL (not on any lineup)
