@@ -908,7 +908,7 @@ async function renderLeaders(){
     if(S.prevLineupsDay!==S.day){
       S.prevLineups=[]; S.prevLineupsDay=S.day;
       try{
-        const tms=[...new Set(gs.flatMap(g=>[g.away,g.home]))];
+        const tms=[...new Set(dayGamesAll().flatMap(g=>[g.away,g.home]))];
         const d=new Date(S.day+'T12:00:00Z'); d.setUTCDate(d.getUTCDate()-10);
         const from=d.toISOString().slice(0,10);
         const rows=await sbAll(`daily_lineups?lineup_date=gte.${from}&lineup_date=lt.${S.day}&team=in.(${tms.join(',')})&select=*&order=lineup_date.desc`);
@@ -916,7 +916,7 @@ async function renderLeaders(){
         S.prevLineups=rows.filter(r=>r.player_id&&(r.slot==='line'||r.slot==='pair')&&r.lineup_date===latest[r.team]);
       }catch(e){ S.prevLineups=[]; }
     }
-    sk=S.prevLineups||[]; prevNote=sk.length>0;
+    { const vis=new Set(gs.flatMap(g=>[g.away,g.home])); sk=(S.prevLineups||[]).filter(l=>vis.has(l.team)); } prevNote=sk.length>0;
   }
   if(!gs.length||!sk.length){ $('view').innerHTML='<div class="empty">Leaders fills in once the day\'s lineups are posted (first update is 12 PM ET).</div>'; return; }
   const teams=[...new Set(sk.map(x=>x.team))].sort();
