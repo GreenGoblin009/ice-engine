@@ -1,4 +1,4 @@
-SPORTSGAMEODDS PRICES (FanDuel, DraftKings)  pulled Oct 24 05:01 PM ET
+SPORTSGAMEODDS PRICES (FanDuel, DraftKings)  pulled Oct 24 05:15 PM ET
 Over/Yes sides only. FD/DK = American odds; '-' = book not offering.
 
 == San Jose Sharks @ Boston Bruins  Sat 07:00 PM ET ==
@@ -332,7 +332,7 @@ Simon Nemec: ast O0.5 FD +230 DK +225 | goal FD +800 DK +700 | pts O0.5 FD +164 
 Viktor Arvidsson: ast O0.5 FD +146 DK +140 | goal FD +240 DK +230 | pts O0.5 FD -138 DK -140
 William Wallinder: goal FD +1600 DK +1400
 Yan Kuznetsov: goal FD +2200 DK +1800
-Yegor Sharangovich: ast O0.5 FD +240 DK +245 | goal FD +290 DK +295 | pts O0.5 FD +114 DK +115
+Yegor Sharangovich: ast O0.5 FD +240 DK +235 | goal FD +290 DK +295 | pts O0.5 FD +114 DK +115
 Zach Whitecloud: ast O0.5 FD - DK +425 | goal FD +1700 DK +1200 | pts O0.5 FD - DK +310
 Zayne Parekh: ast O0.5 FD +190 DK +195 | goal FD +625 DK +550 | pts O0.5 FD +132 DK +130
 
