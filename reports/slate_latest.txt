@@ -1,7 +1,7 @@
 ICE ENGINE SLATE REPORT  2026-10-24
-Lineups pulled: Oct 24, 10:12 AM ET
+Lineups pulled: Oct 24, 10:53 AM ET
 Prices pulled:  Oct 24, 9:29 AM ET
-Goalies pulled: Oct 24, 10:12 AM ET
+Goalies pulled: Oct 24, 10:53 AM ET
 Times are US Eastern. Read-only: built from the same models as the board.
 
 GAMES (start, projected goals, model game total; book game totals are not pulled)
@@ -22,7 +22,7 @@ GOALIES (shrunk two-season save %, raw save % and games)
 - ANA: Lukas Dostal expected 0.891 (0.888 raw, 63 GP)  | also listed: Ville Husso 0.892 (0.884 raw, 24 GP)
 - PHI: Joseph Woll expected 0.902 (0.901 raw, 45 GP)  | also listed: Dan Vladar 0.905 (0.905 raw, 58 GP)
 - LAK: Darcy Kuemper expected 0.894 (0.891 raw, 56 GP)  | also listed: Anton Forsberg 0.907 (0.907 raw, 39 GP)
-- NJD: Jake Allen expected 0.902 (0.900 raw, 43 GP)  | also listed: Connor Hellebuyck 0.897 (0.895 raw, 57 GP)
+- NJD: Jake Allen expected 0.902 (0.900 raw, 43 GP)  | also listed: Remi Poirier 0.905 (0 GP)
 - SJS: no goalie listed
 - BOS: no goalie listed
 - NYR: no goalie listed
@@ -48,7 +48,7 @@ INJURED / OUT (scratches in brackets)
 - ANA: Ian Moore (lower body); Troy Terry (hip); Ryan Poehling (knee); Pavel Mintyukov (lower body) [Judd Caulfield, Jeff Malott, Travis Mitchell]
 - PHI: Nikita Grebenkin (back); Travis Konecny (lower body); Cam York (upper body); Owen Tippett (upper body) [Hunter McDonald, Garrett Wilson, David Jiricek, Michael Bunting]
 - LAK: Alex Turcotte (undisclosed); Kevin Fiala (leg surgery) [Taylor Ward, Cody Ceci, Jared Wright]
-- NJD: none listed [Remi Poirier, Brenden Dillon]
+- NJD: none listed [Brenden Dillon, Connor Hellebuyck]
 - SJS: none listed
 - BOS: none listed
 - NYR: none listed
