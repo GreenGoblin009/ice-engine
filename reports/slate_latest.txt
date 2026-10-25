@@ -1,6 +1,6 @@
 ICE ENGINE SLATE REPORT  2026-10-25
 Lineups pulled: Oct 25, 11:54 AM ET
-Prices pulled:  Oct 25, 9:29 AM ET
+Prices pulled:  Oct 25, 11:56 AM ET
 Goalies pulled: Oct 25, 11:54 AM ET
 Times are US Eastern. Read-only: built from the same models as the board.
 
@@ -49,139 +49,142 @@ TEAM FORM, last 10 regular-season games (per game: GF / GA | shots for / against
 - VAN: 2.2 / 4.2 | 19.6 / 33.4 | PP 19.4% (6/31) | PK 64.5%
 
 TOP 15 GOALS BY ROLE-ADJUSTED CHANCE
-1. Jason Robertson DAL 42%; best +145 FD; edge +1.6; DK -; FD +145; L10 3/10; L3 1/3; 3.3 shots; 20.2 min; PP1
-2. Wyatt Johnston DAL 41%; best +155 FD; edge +2.1; DK -; FD +155; L10 2/10; L3 1/3; 2.7 shots; 20.1 min; PP1
-3. Sam Reinhart FLA 38%; best +170 FD; edge +1.0; DK -; FD +170; L10 3/10; L3 1/3; 3.3 shots; 20.4 min; PP1
-4. Bo Horvat NYI 37%; best +230 FD; edge +6.4; DK -; FD +230; L10 4/10; L3 1/3; 3.4 shots; 20.8 min; PP1
-5. Connor Bedard CHI 36%; best +190 FD; edge +2.0; DK -; FD +190; L10 2/10; L3 2/3; 2.7 shots; 20.7 min; PP1
-6. Mikko Rantanen DAL 32%; best +175 FD; edge -3.9; DK -; FD +175; L10 3/10; L3 1/3; 2.2 shots; 20.8 min; PP1
-7. Brady Tkachuk FLA 30%; best +150 DK; edge -10.0; DK +150; FD +135; L10 3/10; L3 1/3; 3.7 shots; 16.7 min; PP1
-8. Matthew Tkachuk FLA 29%; best +190 FD; edge -5.1; DK -; FD +190; L10 3/10; L3 0/3; 2.1 shots; 19.2 min; PP1
-9. Roope Hintz DAL 29%; best +210 FD; edge -3.0; DK -; FD +210; L10 4/10; L3 2/3; 2.1 shots; 16.9 min; PP1
-10. Carter Verhaeghe FLA 29%; best +190 FD; edge -5.6; DK -; FD +190; L10 3/10; L3 1/3; 1.7 shots; 18.3 min; PP1
-11. Tyler Bertuzzi CHI 29%; best +280 FD; edge +2.3; DK -; FD +280; L10 2/10; L3 0/3; 1.0 shots; 17.4 min; PP1
-12. Sam Bennett FLA 28%; best +175 FD; edge -8.2; DK -; FD +175; L10 1/10; L3 1/3; 2.6 shots; 18.3 min; PP2
-13. Anton Lundell FLA 25%; best +280 FD; edge -1.2; DK -; FD +280; L10 1/10; L3 0/3; 2.5 shots; 18.0 min; PP2
-14. Frank Nazar CHI 24%; best +380 FD; edge +3.3; DK -; FD +380; L10 3/10; L3 1/3; 1.4 shots; 18.2 min; PP2
-15. Emil Heineman NYI 24%; best +410 FD; edge +4.2; DK -; FD +410; L10 2/10; L3 0/3; 1.5 shots; 15.6 min; no PP
+1. Jason Robertson DAL 42%; best +145 DK; edge +1.6; DK +145; FD +145; L10 3/10; L3 1/3; 3.3 shots; 20.2 min; PP1
+2. Wyatt Johnston DAL 41%; best +160 DK; edge +2.8; DK +160; FD +150; L10 2/10; L3 1/3; 2.7 shots; 20.1 min; PP1
+3. Sam Reinhart FLA 38%; best +170 FD; edge +1.0; DK +165; FD +170; L10 3/10; L3 1/3; 3.3 shots; 20.4 min; PP1
+4. Bo Horvat NYI 37%; best +240 FD; edge +7.3; DK +215; FD +240; L10 4/10; L3 1/3; 3.4 shots; 20.8 min; PP1
+5. Connor Bedard CHI 36%; best +190 FD; edge +2.0; DK +185; FD +190; L10 2/10; L3 2/3; 2.7 shots; 20.7 min; PP1
+6. Mikko Rantanen DAL 32%; best +180 DK; edge -3.2; DK +180; FD +170; L10 3/10; L3 1/3; 2.2 shots; 20.8 min; PP1
+7. Brady Tkachuk FLA 30%; best +150 DK; edge -10.0; DK +150; FD +140; L10 3/10; L3 1/3; 3.7 shots; 16.7 min; PP1
+8. Matthew Tkachuk FLA 29%; best +190 DK; edge -5.1; DK +190; FD +180; L10 3/10; L3 0/3; 2.1 shots; 19.2 min; PP1
+9. Roope Hintz DAL 29%; best +220 DK; edge -2.0; DK +220; FD +210; L10 4/10; L3 2/3; 2.1 shots; 16.9 min; PP1
+10. Carter Verhaeghe FLA 29%; best +195 FD; edge -5.0; DK +190; FD +195; L10 3/10; L3 1/3; 1.7 shots; 18.3 min; PP1
+11. Tyler Bertuzzi CHI 29%; best +260 FD; edge +0.8; DK +255; FD +260; L10 2/10; L3 0/3; 1.0 shots; 17.4 min; PP1
+12. Sam Bennett FLA 28%; best +185 DK; edge -6.9; DK +185; FD +170; L10 1/10; L3 1/3; 2.6 shots; 18.3 min; PP2
+13. Anton Lundell FLA 25%; best +285 DK; edge -0.9; DK +285; FD +280; L10 1/10; L3 0/3; 2.5 shots; 18.0 min; PP2
+14. Frank Nazar CHI 24%; best +390 FD; edge +3.8; DK +370; FD +390; L10 3/10; L3 1/3; 1.4 shots; 18.2 min; PP2
+15. Emil Heineman NYI 24%; best +420 FD; edge +4.6; DK +380; FD +420; L10 2/10; L3 0/3; 1.5 shots; 15.6 min; no PP
 
 TOP 15 POINTS BY ROLE-ADJUSTED CHANCE
-1. Jason Robertson DAL 68%; best -235 FD; edge -2.6; DK -; FD -235; L10 7/10; L3 3/3; 3.3 shots; 20.2 min; PP1
-2. Connor Bedard CHI 65%; best -200 FD; edge -1.7; DK -; FD -200; L10 7/10; L3 2/3; 2.7 shots; 20.7 min; PP1
-3. Matthew Tkachuk FLA 63%; best -265 FD; edge -9.3; DK -; FD -265; L10 9/10; L3 2/3; 2.1 shots; 19.2 min; PP1
-4. Wyatt Johnston DAL 62%; best -200 FD; edge -4.7; DK -; FD -200; L10 4/10; L3 1/3; 2.7 shots; 20.1 min; PP1
-5. Bo Horvat NYI 61%; best -125 FD; edge +5.7; DK -; FD -125; L10 8/10; L3 2/3; 3.4 shots; 20.8 min; PP1
-6. Brady Tkachuk FLA 61%; best -250 FD; edge -10.4; DK -; FD -250; L10 5/10; L3 2/3; 3.7 shots; 16.7 min; PP1
-7. Roope Hintz DAL 60%; best -162 FD; edge -2.3; DK -; FD -162; L10 6/10; L3 3/3; 2.1 shots; 16.9 min; PP1
-8. Sam Reinhart FLA 59%; best -194 FD; edge -7.2; DK -; FD -194; L10 4/10; L3 1/3; 3.3 shots; 20.4 min; PP1
-9. Patrick Kane CHI 57%; best -154 FD; edge -3.2; DK -; FD -154; L10 5/10; L3 2/3; 1.9 shots; 19.6 min; PP1
-10. Miro Heiskanen DAL 56%; best -166 FD; edge -6.2; DK -; FD -166; L10 7/10; L3 2/3; 1.8 shots; 26.0 min; PP1
-11. Matthew Schaefer NYI 55%; best -164 FD; edge -6.7; DK -; FD -164; L10 7/10; L3 3/3; 4.1 shots; 26.2 min; PP1
-12. Sam Bennett FLA 54%; best -140 DK; edge -4.8; DK -140; FD -146; L10 4/10; L3 1/3; 2.6 shots; 18.3 min; PP2
-13. Tyler Bertuzzi CHI 50%; best -104 FD; edge -1.0; DK -; FD -104; L10 4/10; L3 1/3; 1.0 shots; 17.4 min; PP1
-14. Carter Verhaeghe FLA 49%; best -164 FD; edge -13.2; DK -; FD -164; L10 4/10; L3 1/3; 1.7 shots; 18.3 min; PP1
-15. Anton Lundell FLA 49%; best +116 FD; edge +2.5; DK -; FD +116; L10 3/10; L3 0/3; 2.5 shots; 18.0 min; PP2
+1. Jason Robertson DAL 68%; best -225 DK; edge -1.7; DK -225; FD -235; L10 7/10; L3 3/3; 3.3 shots; 20.2 min; PP1
+2. Connor Bedard CHI 65%; best -205 DK; edge -2.2; DK -205; FD -210; L10 7/10; L3 2/3; 2.7 shots; 20.7 min; PP1
+3. Matthew Tkachuk FLA 63%; best -235 DK; edge -6.8; DK -235; FD -280; L10 9/10; L3 2/3; 2.1 shots; 19.2 min; PP1
+4. Wyatt Johnston DAL 62%; best -190 DK; edge -3.6; DK -190; FD -205; L10 4/10; L3 1/3; 2.7 shots; 20.1 min; PP1
+5. Bo Horvat NYI 61%; best -122 FD; edge +6.3; DK -125; FD -122; L10 8/10; L3 2/3; 3.4 shots; 20.8 min; PP1
+6. Brady Tkachuk FLA 61%; best -205 DK; edge -6.1; DK -205; FD -250; L10 5/10; L3 2/3; 3.7 shots; 16.7 min; PP1
+7. Roope Hintz DAL 60%; best -155 DK; edge -1.2; DK -155; FD -160; L10 6/10; L3 3/3; 2.1 shots; 16.9 min; PP1
+8. Sam Reinhart FLA 59%; best -195 DK; edge -7.4; DK -195; FD -196; L10 4/10; L3 1/3; 3.3 shots; 20.4 min; PP1
+9. Patrick Kane CHI 57%; best -150 DK; edge -2.6; DK -150; FD -160; L10 5/10; L3 2/3; 1.9 shots; 19.6 min; PP1
+10. Miro Heiskanen DAL 56%; best -165 DK; edge -6.1; DK -165; FD -170; L10 7/10; L3 2/3; 1.8 shots; 26.0 min; PP1
+11. Matthew Schaefer NYI 55%; best -140 DK; edge -2.9; DK -140; FD -158; L10 7/10; L3 3/3; 4.1 shots; 26.2 min; PP1
+12. Sam Bennett FLA 54%; best -140 DK; edge -4.8; DK -140; FD -150; L10 4/10; L3 1/3; 2.6 shots; 18.3 min; PP2
+13. Tyler Bertuzzi CHI 50%; best -108 FD; edge -2.0; DK -110; FD -108; L10 4/10; L3 1/3; 1.0 shots; 17.4 min; PP1
+14. Carter Verhaeghe FLA 49%; best -155 DK; edge -11.9; DK -155; FD -170; L10 4/10; L3 1/3; 1.7 shots; 18.3 min; PP1
+15. Anton Lundell FLA 49%; best +120 DK; edge +3.3; DK +120; FD +116; L10 3/10; L3 0/3; 2.5 shots; 18.0 min; PP2
 
 TOP 15 ASSISTS BY ROLE-ADJUSTED CHANCE
-1. Mikko Rantanen DAL 60%; best -142 FD; edge +0.8; DK -; FD -142; L10 5/10; L3 2/3; 2.2 shots; 20.8 min; PP1
-2. Jason Robertson DAL 47%; best +102 FD; edge -2.4; DK -; FD +102; L10 6/10; L3 3/3; 3.3 shots; 20.2 min; PP1
-3. Miro Heiskanen DAL 47%; best -120 FD; edge -7.7; DK -; FD -120; L10 4/10; L3 2/3; 1.8 shots; 26.0 min; PP1
-4. Matthew Tkachuk FLA 46%; best -132 FD; edge -10.7; DK -; FD -132; L10 6/10; L3 2/3; 2.1 shots; 19.2 min; PP1
-5. Patrick Kane CHI 46%; best +118 FD; edge +0.1; DK -; FD +118; L10 4/10; L3 2/3; 1.9 shots; 19.6 min; PP1
-6. Connor Bedard CHI 43%; best +102 FD; edge -6.1; DK -; FD +102; L10 6/10; L3 1/3; 2.7 shots; 20.7 min; PP1
-7. Matthew Schaefer NYI 40%; best +106 FD; edge -8.9; DK -; FD +106; L10 6/10; L3 2/3; 4.1 shots; 26.2 min; PP1
-8. Brady Tkachuk FLA 39%; best +106 FD; edge -9.4; DK -; FD +106; L10 3/10; L3 1/3; 3.7 shots; 16.7 min; PP1
-9. Wyatt Johnston DAL 38%; best +130 FD; edge -5.5; DK -; FD +130; L10 3/10; L3 1/3; 2.7 shots; 20.1 min; PP1
-10. Seth Jones FLA 38%; best -102 FD; edge -12.9; DK -; FD -102; L10 5/10; L3 2/3; 2.8 shots; 24.9 min; PP1
-11. Thomas Harley DAL 36%; best +148 FD; edge -4.3; DK -; FD +148; L10 4/10; L3 2/3; 1.8 shots; 24.8 min; PP2
-12. Sam Reinhart FLA 35%; best +122 FD; edge -9.8; DK -; FD +122; L10 3/10; L3 1/3; 3.3 shots; 20.4 min; PP1
-13. Roope Hintz DAL 35%; best +138 FD; edge -6.8; DK -; FD +138; L10 2/10; L3 1/3; 2.1 shots; 16.9 min; PP1
-14. Anton Frondell CHI 33%; best +230 FD; edge +3.1; DK -; FD +230; L10 3/10; L3 0/3; 1.7 shots; 17.1 min; PP2
-15. Sam Bennett FLA 33%; best +186 FD; edge -2.0; DK -; FD +186; L10 3/10; L3 0/3; 2.6 shots; 18.3 min; PP2
+1. Mikko Rantanen DAL 60%; best -135 DK; edge +2.1; DK -135; FD -146; L10 5/10; L3 2/3; 2.2 shots; 20.8 min; PP1
+2. Jason Robertson DAL 47%; best +108 FD; edge -1.0; DK +100; FD +108; L10 6/10; L3 3/3; 3.3 shots; 20.2 min; PP1
+3. Miro Heiskanen DAL 47%; best -120 FD; edge -7.7; DK -130; FD -120; L10 4/10; L3 2/3; 1.8 shots; 26.0 min; PP1
+4. Matthew Tkachuk FLA 46%; best -125 DK; edge -9.4; DK -125; FD -136; L10 6/10; L3 2/3; 2.1 shots; 19.2 min; PP1
+5. Patrick Kane CHI 46%; best +115 DK; edge -0.5; DK +115; FD +112; L10 4/10; L3 2/3; 1.9 shots; 19.6 min; PP1
+6. Connor Bedard CHI 43%; best +102 FD; edge -6.1; DK -105; FD +102; L10 6/10; L3 1/3; 2.7 shots; 20.7 min; PP1
+7. Matthew Schaefer NYI 40%; best +120 DK; edge -5.8; DK +120; FD +112; L10 6/10; L3 2/3; 4.1 shots; 26.2 min; PP1
+8. Brady Tkachuk FLA 39%; best +110 DK; edge -8.5; DK +110; FD +106; L10 3/10; L3 1/3; 3.7 shots; 16.7 min; PP1
+9. Wyatt Johnston DAL 38%; best +126 FD; edge -6.2; DK +125; FD +126; L10 3/10; L3 1/3; 2.7 shots; 20.1 min; PP1
+10. Seth Jones FLA 38%; best +100 DK; edge -12.4; DK +100; FD -104; L10 5/10; L3 2/3; 2.8 shots; 24.9 min; PP1
+11. Thomas Harley DAL 36%; best +150 DK; edge -4.0; DK +150; FD +142; L10 4/10; L3 2/3; 1.8 shots; 24.8 min; PP2
+12. Sam Reinhart FLA 35%; best +124 FD; edge -9.3; DK +115; FD +124; L10 3/10; L3 1/3; 3.3 shots; 20.4 min; PP1
+13. Roope Hintz DAL 35%; best +134 FD; edge -7.5; DK +130; FD +134; L10 2/10; L3 1/3; 2.1 shots; 16.9 min; PP1
+14. Anton Frondell CHI 33%; best +240 DK; edge +4.0; DK +240; FD +230; L10 3/10; L3 0/3; 1.7 shots; 17.1 min; PP2
+15. Sam Bennett FLA 33%; best +180 FD; edge -2.7; DK +170; FD +180; L10 3/10; L3 0/3; 2.6 shots; 18.3 min; PP2
 
 TOP 15 BY EDGE (all three markets)
-1. Bo Horvat NYI Goals 37%; best +230 FD; edge +6.4; DK -; FD +230; L10 4/10; L3 1/3; 3.4 shots; 20.8 min; PP1
-2. Jean-Gabriel Pageau NYI Goals 21%; best +575 FD; edge +5.7; DK -; FD +575; L10 1/10; L3 0/3; 1.2 shots; 15.7 min; PP2
-3. Bo Horvat NYI Points 61%; best -125 FD; edge +5.7; DK -; FD -125; L10 8/10; L3 2/3; 3.4 shots; 20.8 min; PP1
-4. Emil Heineman NYI Goals 24%; best +410 FD; edge +4.2; DK -; FD +410; L10 2/10; L3 0/3; 1.5 shots; 15.6 min; no PP
-5. Cole Smith CHI Goals 12%; best +1000 FD; edge +3.3; DK -; FD +1000; L10 1/10; L3 0/3; 1.1 shots; 13.7 min; no PP
-6. Frank Nazar CHI Goals 24%; best +380 FD; edge +3.3; DK -; FD +380; L10 3/10; L3 1/3; 1.4 shots; 18.2 min; PP2
-7. Anton Frondell CHI Assists 33%; best +230 FD; edge +3.1; DK -; FD +230; L10 3/10; L3 0/3; 1.7 shots; 17.1 min; PP2
-8. Kyle Palmieri NYI Points 48%; best +124 FD; edge +3.1; DK -; FD +124; L10 2/10; L3 1/3; 1.8 shots; 16.3 min; PP1
-9. Anton Lundell FLA Assists 31%; best +250 FD; edge +2.8; DK -; FD +250; L10 2/10; L3 0/3; 2.5 shots; 18.0 min; PP2
-10. Frank Nazar CHI Assists 32%; best +240 FD; edge +2.7; DK -; FD +240; L10 1/10; L3 0/3; 1.4 shots; 18.2 min; PP2
-11. Anton Lundell FLA Points 49%; best +116 FD; edge +2.5; DK -; FD +116; L10 3/10; L3 0/3; 2.5 shots; 18.0 min; PP2
-12. Kyle Palmieri NYI Assists 33%; best +230 FD; edge +2.4; DK -; FD +230; L10 1/10; L3 1/3; 1.8 shots; 16.3 min; PP1
-13. Tyler Bertuzzi CHI Goals 29%; best +280 FD; edge +2.3; DK -; FD +280; L10 2/10; L3 0/3; 1.0 shots; 17.4 min; PP1
-14. Simon Holmstrom NYI Goals 23%; best +390 FD; edge +2.1; DK -; FD +390; L10 3/10; L3 2/3; 1.5 shots; 17.2 min; PP1
-15. Wyatt Johnston DAL Goals 41%; best +155 FD; edge +2.1; DK -; FD +155; L10 2/10; L3 1/3; 2.7 shots; 20.1 min; PP1
-31 of 113 priced legs show a positive edge at the best book.
+1. Bo Horvat NYI Goals 37%; best +240 FD; edge +7.3; DK +215; FD +240; L10 4/10; L3 1/3; 3.4 shots; 20.8 min; PP1
+2. Bo Horvat NYI Points 61%; best -122 FD; edge +6.3; DK -125; FD -122; L10 8/10; L3 2/3; 3.4 shots; 20.8 min; PP1
+3. Jean-Gabriel Pageau NYI Goals 21%; best +575 FD; edge +5.7; DK +500; FD +575; L10 1/10; L3 0/3; 1.2 shots; 15.7 min; PP2
+4. Emil Heineman NYI Goals 24%; best +420 FD; edge +4.6; DK +380; FD +420; L10 2/10; L3 0/3; 1.5 shots; 15.6 min; no PP
+5. Kyle Palmieri NYI Points 48%; best +130 FD; edge +4.2; DK +120; FD +130; L10 2/10; L3 1/3; 1.8 shots; 16.3 min; PP1
+6. Artyom Levshunov CHI Points 32%; best +255 DK; edge +4.2; DK +255; FD -; L10 3/10; L3 1/3; 1.3 shots; 20.3 min; no PP
+7. Cole Smith CHI Goals 12%; best +1100 FD; edge +4.1; DK +1000; FD +1100; L10 1/10; L3 0/3; 1.1 shots; 13.7 min; no PP
+8. Kyle Palmieri NYI Assists 33%; best +250 DK; edge +4.1; DK +250; FD +240; L10 1/10; L3 1/3; 1.8 shots; 16.3 min; PP1
+9. Artyom Levshunov CHI Assists 28%; best +310 DK; edge +4.1; DK +310; FD -; L10 2/10; L3 0/3; 1.3 shots; 20.3 min; no PP
+10. Anton Frondell CHI Assists 33%; best +240 DK; edge +4.0; DK +240; FD +230; L10 3/10; L3 0/3; 1.7 shots; 17.1 min; PP2
+11. Frank Nazar CHI Goals 24%; best +390 FD; edge +3.8; DK +370; FD +390; L10 3/10; L3 1/3; 1.4 shots; 18.2 min; PP2
+12. Anton Lundell FLA Assists 31%; best +260 DK; edge +3.6; DK +260; FD +255; L10 2/10; L3 0/3; 2.5 shots; 18.0 min; PP2
+13. Anton Lundell FLA Points 49%; best +120 DK; edge +3.3; DK +120; FD +116; L10 3/10; L3 0/3; 2.5 shots; 18.0 min; PP2
+14. Wyatt Johnston DAL Goals 41%; best +160 DK; edge +2.8; DK +160; FD +150; L10 2/10; L3 1/3; 2.7 shots; 20.1 min; PP1
+15. Anton Frondell CHI Points 45%; best +135 DK; edge +2.7; DK +135; FD +126; L10 3/10; L3 0/3; 1.7 shots; 17.1 min; PP2
+35 of 128 priced legs show a positive edge at the best book.
 
 ALL PRICED SKATERS (shots/game last 10, minutes, PP unit | G | P | A: chance, best price, edge, last 10)
 FLA
-- Matthew Tkachuk (2.1, 19.2, PP1): G 29% +190 FD -5.1, L10 3/10, L3 0/3 | P 63% -265 FD -9.3, L10 9/10, L3 2/3 | A 46% -132 FD -10.7, L10 6/10, L3 2/3
-- Brady Tkachuk (3.7, 16.7, PP1): G 30% +150 DK -10.0, L10 3/10, L3 1/3 | P 61% -250 FD -10.4, L10 5/10, L3 2/3 | A 39% +106 FD -9.4, L10 3/10, L3 1/3
-- Sam Reinhart (3.3, 20.4, PP1): G 38% +170 FD +1.0, L10 3/10, L3 1/3 | P 59% -194 FD -7.2, L10 4/10, L3 1/3 | A 35% +122 FD -9.8, L10 3/10, L3 1/3
-- Sam Bennett (2.6, 18.3, PP2): G 28% +175 FD -8.2, L10 1/10, L3 1/3 | P 54% -140 DK -4.8, L10 4/10, L3 1/3 | A 33% +186 FD -2.0, L10 3/10, L3 0/3
-- Carter Verhaeghe (1.7, 18.3, PP1): G 29% +190 FD -5.6, L10 3/10, L3 1/3 | P 49% -164 FD -13.2, L10 4/10, L3 1/3 | A 31% +142 FD -10.7, L10 1/10, L3 0/3
-- Anton Lundell (2.5, 18.0, PP2): G 25% +280 FD -1.2, L10 1/10, L3 0/3 | P 49% +116 FD +2.5, L10 3/10, L3 0/3 | A 31% +250 FD +2.8, L10 2/10, L3 0/3
-- Seth Jones (2.8, 24.9, PP1): G 12% +500 FD -5.0, L10 1/10, L3 0/3 | P 46% -146 FD -13.5, L10 6/10, L3 2/3 | A 38% -102 FD -12.9, L10 5/10, L3 2/3
-- Eetu Luostarinen (1.4, 16.2, PP2): G 15% +420 FD -4.0, L10 1/10, L3 0/3 | P 36% no price, L10 1/10, L3 0/3 | A 23% no price, L10 0/10, L3 0/3
-- Gustav Forsling (1.3, 21.2, no PP): G 3% +950 FD -6.0, L10 1/10, L3 0/3 | P 28% no price, L10 2/10, L3 1/3 | A 27% no price, L10 1/10, L3 1/3
-- Aaron Ekblad (1.4, 20.9, PP2): G 5% +850 FD -5.6, L10 0/10, L3 0/3 | P 27% +176 FD -9.4, L10 3/10, L3 0/3 | A 24% +235 FD -5.6, L10 3/10, L3 0/3
-- Lars Eller (0.8, 15.3, PP2): G 7% +550 FD -8.3, L10 0/10, L3 0/3 | P 24% no price, L10 5/10, L3 1/3 | A 19% no price, L10 5/10, L3 1/3
-- Sandis Vilmanis (1.1, 13.0, no PP): G 11% +525 FD -5.0, L10 0/10, L3 0/3 | P 22% no price, L10 1/10, L3 0/3 | A 12% no price, L10 1/10, L3 0/3
+- Matthew Tkachuk (2.1, 19.2, PP1): G 29% +190 DK -5.1, L10 3/10, L3 0/3 | P 63% -235 DK -6.8, L10 9/10, L3 2/3 | A 46% -125 DK -9.4, L10 6/10, L3 2/3
+- Brady Tkachuk (3.7, 16.7, PP1): G 30% +150 DK -10.0, L10 3/10, L3 1/3 | P 61% -205 DK -6.1, L10 5/10, L3 2/3 | A 39% +110 DK -8.5, L10 3/10, L3 1/3
+- Sam Reinhart (3.3, 20.4, PP1): G 38% +170 FD +1.0, L10 3/10, L3 1/3 | P 59% -195 DK -7.4, L10 4/10, L3 1/3 | A 35% +124 FD -9.3, L10 3/10, L3 1/3
+- Sam Bennett (2.6, 18.3, PP2): G 28% +185 DK -6.9, L10 1/10, L3 1/3 | P 54% -140 DK -4.8, L10 4/10, L3 1/3 | A 33% +180 FD -2.7, L10 3/10, L3 0/3
+- Carter Verhaeghe (1.7, 18.3, PP1): G 29% +195 FD -5.0, L10 3/10, L3 1/3 | P 49% -155 DK -11.9, L10 4/10, L3 1/3 | A 31% +145 DK -10.2, L10 1/10, L3 0/3
+- Anton Lundell (2.5, 18.0, PP2): G 25% +285 DK -0.9, L10 1/10, L3 0/3 | P 49% +120 DK +3.3, L10 3/10, L3 0/3 | A 31% +260 DK +3.6, L10 2/10, L3 0/3
+- Seth Jones (2.8, 24.9, PP1): G 12% +500 DK -5.0, L10 1/10, L3 0/3 | P 46% -130 DK -10.6, L10 6/10, L3 2/3 | A 38% +100 DK -12.4, L10 5/10, L3 2/3
+- Eetu Luostarinen (1.4, 16.2, PP2): G 15% +425 DK -3.8, L10 1/10, L3 0/3 | P 36% +160 DK -2.9, L10 1/10, L3 0/3 | A 23% +290 DK -2.6, L10 0/10, L3 0/3
+- Gustav Forsling (1.3, 21.2, no PP): G 3% +1100 DK -4.8, L10 1/10, L3 0/3 | P 28% +210 DK -3.8, L10 2/10, L3 1/3 | A 27% +270 DK +0.0, L10 1/10, L3 1/3
+- Aaron Ekblad (1.4, 20.9, PP2): G 5% +900 DK -5.1, L10 0/10, L3 0/3 | P 27% +175 DK -9.5, L10 3/10, L3 0/3 | A 24% +235 DK -5.6, L10 3/10, L3 0/3
+- Lars Eller (0.8, 15.3, PP2): G 7% +550 DK -8.3, L10 0/10, L3 0/3 | P 24% no price, L10 5/10, L3 1/3 | A 19% no price, L10 5/10, L3 1/3
+- Sandis Vilmanis (1.1, 13.0, no PP): G 11% +600 DK -3.2, L10 0/10, L3 0/3 | P 22% +190 DK -12.1, L10 1/10, L3 0/3 | A 12% +300 DK -13.1, L10 1/10, L3 0/3
 - Niko Mikkola (1.1, 19.8, no PP): G 5% +1400 FD -1.6, L10 1/10, L3 1/3 | P 15% no price, L10 1/10, L3 1/3 | A 11% no price, L10 1/10, L3 1/3
-- Dmitry Kulikov (0.5, 15.3, no PP): G 1% +1300 FD -6.0, L10 0/10, L3 0/3 | P 10% no price, L10 2/10, L3 1/3 | A 9% no price, L10 2/10, L3 1/3
+- Dmitry Kulikov (0.5, 15.3, no PP): G 1% +1800 DK -4.2, L10 0/10, L3 0/3 | P 10% no price, L10 2/10, L3 1/3 | A 9% no price, L10 2/10, L3 1/3
+- Garnet Hathaway (0.4, 9.7, no PP): G 2% +750 DK -9.7, L10 0/10, L3 0/3 | P 5% no price, L10 0/10, L3 0/3 | A 4% no price, L10 0/10, L3 0/3
 CHI
-- Connor Bedard (2.7, 20.7, PP1): G 36% +190 FD +2.0, L10 2/10, L3 2/3 | P 65% -200 FD -1.7, L10 7/10, L3 2/3 | A 43% +102 FD -6.1, L10 6/10, L3 1/3
-- Patrick Kane (1.9, 19.6, PP1): G 21% +275 FD -5.6, L10 1/10, L3 0/3 | P 57% -154 FD -3.2, L10 5/10, L3 2/3 | A 46% +118 FD +0.1, L10 4/10, L3 2/3
-- Tyler Bertuzzi (1.0, 17.4, PP1): G 29% +280 FD +2.3, L10 2/10, L3 0/3 | P 50% -104 FD -1.0, L10 4/10, L3 1/3 | A 30% +186 FD -5.0, L10 3/10, L3 1/3
-- Anton Frondell (1.7, 17.1, PP2): G 17% +380 FD -4.2, L10 1/10, L3 0/3 | P 45% +126 FD +1.0, L10 3/10, L3 0/3 | A 33% +230 FD +3.1, L10 3/10, L3 0/3
-- Frank Nazar (1.4, 18.2, PP2): G 24% +380 FD +3.3, L10 3/10, L3 1/3 | P 44% +132 FD +0.9, L10 3/10, L3 1/3 | A 32% +240 FD +2.7, L10 1/10, L3 0/3
-- Teuvo Teravainen (1.1, 14.8, PP1): G 16% +460 FD -1.4, L10 1/10, L3 0/3 | P 36% +108 FD -11.8, L10 3/10, L3 0/3 | A 24% +168 FD -12.9, L10 3/10, L3 0/3
-- Ryan Greene (0.8, 14.2, PP2): G 13% +725 FD +1.1, L10 0/10, L3 0/3 | P 32% no price, L10 2/10, L3 0/3 | A 19% no price, L10 2/10, L3 0/3
-- Artyom Levshunov (1.3, 20.3, no PP): G 4% +1200 FD -3.7, L10 1/10, L3 1/3 | P 32% no price, L10 3/10, L3 1/3 | A 28% no price, L10 2/10, L3 0/3
-- Ryan Donato (1.2, 11.5, PP2): G 15% +550 FD +0.1, L10 2/10, L3 1/3 | P 27% no price, L10 3/10, L3 1/3 | A 14% no price, L10 1/10, L3 0/3
-- Sam Rinzel (1.2, 17.5, PP2): G 7% +850 FD -3.1, L10 2/10, L3 0/3 | P 23% no price, L10 3/10, L3 0/3 | A 16% no price, L10 1/10, L3 0/3
+- Connor Bedard (2.7, 20.7, PP1): G 36% +190 FD +2.0, L10 2/10, L3 2/3 | P 65% -205 DK -2.2, L10 7/10, L3 2/3 | A 43% +102 FD -6.1, L10 6/10, L3 1/3
+- Patrick Kane (1.9, 19.6, PP1): G 21% +275 DK -5.6, L10 1/10, L3 0/3 | P 57% -150 DK -2.6, L10 5/10, L3 2/3 | A 46% +115 DK -0.5, L10 4/10, L3 2/3
+- Tyler Bertuzzi (1.0, 17.4, PP1): G 29% +260 FD +0.8, L10 2/10, L3 0/3 | P 50% -108 FD -2.0, L10 4/10, L3 1/3 | A 30% +190 FD -4.5, L10 3/10, L3 1/3
+- Anton Frondell (1.7, 17.1, PP2): G 17% +370 DK -4.6, L10 1/10, L3 0/3 | P 45% +135 DK +2.7, L10 3/10, L3 0/3 | A 33% +240 DK +4.0, L10 3/10, L3 0/3
+- Frank Nazar (1.4, 18.2, PP2): G 24% +390 FD +3.8, L10 3/10, L3 1/3 | P 44% +130 FD +0.5, L10 3/10, L3 1/3 | A 32% +230 FD +1.8, L10 1/10, L3 0/3
+- Teuvo Teravainen (1.1, 14.8, PP1): G 16% +480 FD -0.8, L10 1/10, L3 0/3 | P 36% +114 FD -10.4, L10 3/10, L3 0/3 | A 24% +176 FD -11.9, L10 3/10, L3 0/3
+- Ryan Greene (0.8, 14.2, PP2): G 13% +700 FD +0.7, L10 0/10, L3 0/3 | P 32% no price, L10 2/10, L3 0/3 | A 19% no price, L10 2/10, L3 0/3
+- Artyom Levshunov (1.3, 20.3, no PP): G 4% +1400 DK -2.7, L10 1/10, L3 1/3 | P 32% +255 DK +4.2, L10 3/10, L3 1/3 | A 28% +310 DK +4.1, L10 2/10, L3 0/3
+- Ryan Donato (1.2, 11.5, PP2): G 15% +525 FD -0.5, L10 2/10, L3 1/3 | P 27% no price, L10 3/10, L3 1/3 | A 14% no price, L10 1/10, L3 0/3
+- Sam Rinzel (1.2, 17.5, PP2): G 7% +900 DK -2.5, L10 2/10, L3 0/3 | P 23% no price, L10 3/10, L3 0/3 | A 16% no price, L10 1/10, L3 0/3
 - Andrew Mangiapane (0.8, 10.5, no PP): G 12% +700 FD -0.5, L10 1/10, L3 0/3 | P 23% no price, L10 2/10, L3 0/3 | A 12% no price, L10 1/10, L3 0/3
-- Wyatt Kaiser (0.6, 19.4, no PP): G 7% +1400 FD +0.0, L10 0/10, L3 0/3 | P 22% no price, L10 3/10, L3 1/3 | A 16% no price, L10 3/10, L3 1/3
-- Alex Vlasic (0.5, 20.2, no PP): G 2% +1600 FD -3.4, L10 0/10, L3 0/3 | P 21% no price, L10 1/10, L3 0/3 | A 19% no price, L10 1/10, L3 0/3
-- Cole Smith (1.1, 13.7, no PP): G 12% +1000 FD +3.3, L10 1/10, L3 0/3 | P 20% no price, L10 2/10, L3 0/3 | A 8% no price, L10 1/10, L3 0/3
+- Wyatt Kaiser (0.6, 19.4, no PP): G 7% +1600 FD +0.8, L10 0/10, L3 0/3 | P 22% no price, L10 3/10, L3 1/3 | A 16% no price, L10 3/10, L3 1/3
+- Ian Cole (0.6, 17.0, no PP): G 3% +2500 DK -0.5, L10 0/10, L3 0/3 | P 21% no price, L10 0/10, L3 0/3 | A 19% no price, L10 0/10, L3 0/3
+- Alex Vlasic (0.5, 20.2, no PP): G 2% +1800 DK -2.8, L10 0/10, L3 0/3 | P 21% +265 DK -6.2, L10 1/10, L3 0/3 | A 19% +310 DK -5.5, L10 1/10, L3 0/3
+- Cole Smith (1.1, 13.7, no PP): G 12% +1100 FD +4.1, L10 1/10, L3 0/3 | P 20% no price, L10 2/10, L3 0/3 | A 8% no price, L10 1/10, L3 0/3
 - Jordan Greenway (1.6, 13.6, no PP): G 6% +850 DK -5.0, L10 1/10, L3 0/3 | P 16% no price, L10 1/10, L3 0/3 | A 11% no price, L10 0/10, L3 0/3
 NYI
-- Bo Horvat (3.4, 20.8, PP1): G 37% +230 FD +6.4, L10 4/10, L3 1/3 | P 61% -125 FD +5.7, L10 8/10, L3 2/3 | A 33% +180 FD -2.8, L10 5/10, L3 2/3
-- Matthew Schaefer (4.1, 26.2, PP1): G 21% +275 FD -5.6, L10 1/10, L3 1/3 | P 55% -164 FD -6.7, L10 7/10, L3 3/3 | A 40% +106 FD -8.9, L10 6/10, L3 2/3
-- Kyle Palmieri (1.8, 16.3, PP1): G 21% +360 FD -1.0, L10 1/10, L3 0/3 | P 48% +124 FD +3.1, L10 2/10, L3 1/3 | A 33% +230 FD +2.4, L10 1/10, L3 1/3
+- Bo Horvat (3.4, 20.8, PP1): G 37% +240 FD +7.3, L10 4/10, L3 1/3 | P 61% -122 FD +6.3, L10 8/10, L3 2/3 | A 33% +176 FD -3.3, L10 5/10, L3 2/3
+- Matthew Schaefer (4.1, 26.2, PP1): G 21% +285 DK -4.9, L10 1/10, L3 1/3 | P 55% -140 DK -2.9, L10 7/10, L3 3/3 | A 40% +120 DK -5.8, L10 6/10, L3 2/3
+- Kyle Palmieri (1.8, 16.3, PP1): G 21% +350 FD -1.5, L10 1/10, L3 0/3 | P 48% +130 FD +4.2, L10 2/10, L3 1/3 | A 33% +250 DK +4.1, L10 1/10, L3 1/3
 - Jean-Gabriel Pageau (1.2, 15.7, PP2): G 21% +575 FD +5.7, L10 1/10, L3 0/3 | P 41% no price, L10 5/10, L3 2/3 | A 24% no price, L10 4/10, L3 2/3
-- Simon Holmstrom (1.5, 17.2, PP1): G 23% +390 FD +2.1, L10 3/10, L3 2/3 | P 39% +114 FD -7.9, L10 3/10, L3 2/3 | A 23% +200 FD -10.4, L10 1/10, L3 0/3
-- Brayden Schenn (2.1, 16.4, PP1): G 20% +440 FD +1.8, L10 2/10, L3 0/3 | P 38% +140 FD -3.2, L10 5/10, L3 2/3 | A 24% +240 FD -5.7, L10 4/10, L3 2/3
-- Emil Heineman (1.5, 15.6, no PP): G 24% +410 FD +4.2, L10 2/10, L3 0/3 | P 35% +164 FD -3.1, L10 4/10, L3 2/3 | A 13% +320 FD -10.4, L10 2/10, L3 2/3
-- Tony DeAngelo (1.2, 16.3, PP2): G 7% +750 FD -5.1, L10 1/10, L3 0/3 | P 32% no price, L10 2/10, L3 1/3 | A 30% no price, L10 2/10, L3 1/3
-- Anthony Duclair (1.1, 12.9, PP2): G 15% +575 FD +0.2, L10 2/10, L3 1/3 | P 30% no price, L10 3/10, L3 2/3 | A 17% no price, L10 1/10, L3 1/3
-- Ryan Pulock (0.6, 19.0, no PP): G 4% +2200 FD -0.7, L10 0/10, L3 0/3 | P 28% no price, L10 0/10, L3 0/3 | A 24% no price, L10 0/10, L3 0/3
-- Adam Pelech (1.0, 20.5, no PP): G 4% +2100 FD -0.1, L10 0/10, L3 0/3 | P 20% no price, L10 2/10, L3 0/3 | A 16% no price, L10 2/10, L3 0/3
-- Casey Cizikas (0.8, 12.2, no PP): G 11% +1000 FD +1.6, L10 1/10, L3 0/3 | P 18% no price, L10 1/10, L3 0/3 | A 9% no price, L10 1/10, L3 0/3
-- Ondrej Palat (1.0, 13.1, no PP): G 7% +950 FD -2.2, L10 2/10, L3 1/3 | P 17% no price, L10 3/10, L3 1/3 | A 11% no price, L10 1/10, L3 0/3
-- Matthew Kessel (1.2, 13.6, no PP): G 6% +2000 FD +0.8, L10 0/10, L3 0/3 | P 13% no price, L10 1/10, L3 0/3 | A 8% no price, L10 1/10, L3 0/3
+- Simon Holmstrom (1.5, 17.2, PP1): G 23% +400 FD +2.6, L10 3/10, L3 2/3 | P 39% +115 DK -7.7, L10 3/10, L3 2/3 | A 23% +205 DK -9.9, L10 1/10, L3 0/3
+- Brayden Schenn (2.1, 16.4, PP1): G 20% +450 FD +2.1, L10 2/10, L3 0/3 | P 38% +142 FD -2.9, L10 5/10, L3 2/3 | A 24% +240 DK -5.7, L10 4/10, L3 2/3
+- Emil Heineman (1.5, 15.6, no PP): G 24% +420 FD +4.6, L10 2/10, L3 0/3 | P 35% +172 FD -2.0, L10 4/10, L3 2/3 | A 13% +350 DK -8.8, L10 2/10, L3 2/3
+- Tony DeAngelo (1.2, 16.3, PP2): G 7% +750 FD -5.1, L10 1/10, L3 0/3 | P 32% +170 DK -4.8, L10 2/10, L3 1/3 | A 30% +245 DK +0.8, L10 2/10, L3 1/3
+- Anthony Duclair (1.1, 12.9, PP2): G 15% +600 FD +0.7, L10 2/10, L3 1/3 | P 30% no price, L10 3/10, L3 2/3 | A 17% no price, L10 1/10, L3 1/3
+- Ryan Pulock (0.6, 19.0, no PP): G 4% +2100 FD -0.9, L10 0/10, L3 0/3 | P 28% no price, L10 0/10, L3 0/3 | A 24% no price, L10 0/10, L3 0/3
+- Adam Pelech (1.0, 20.5, no PP): G 4% +2400 FD +0.4, L10 0/10, L3 0/3 | P 20% no price, L10 2/10, L3 0/3 | A 16% no price, L10 2/10, L3 0/3
+- Casey Cizikas (0.8, 12.2, no PP): G 11% +1100 FD +2.3, L10 1/10, L3 0/3 | P 18% no price, L10 1/10, L3 0/3 | A 9% no price, L10 1/10, L3 0/3
+- Ondrej Palat (1.0, 13.1, no PP): G 7% +1100 FD -1.0, L10 2/10, L3 1/3 | P 17% no price, L10 3/10, L3 1/3 | A 11% no price, L10 1/10, L3 0/3
+- Matthew Kessel (1.2, 13.6, no PP): G 6% +1900 DK +0.6, L10 0/10, L3 0/3 | P 13% no price, L10 1/10, L3 0/3 | A 8% no price, L10 1/10, L3 0/3
 - Kyle MacLean (0.7, 10.1, no PP): G 4% +1200 FD -3.8, L10 0/10, L3 0/3 | P 12% no price, L10 0/10, L3 0/3 | A 9% no price, L10 0/10, L3 0/3
 DAL
-- Mikko Rantanen (2.2, 20.8, PP1): G 32% +175 FD -3.9, L10 3/10, L3 1/3 | P 73% no price, L10 7/10, L3 3/3 | A 60% -142 FD +0.8, L10 5/10, L3 2/3
-- Jason Robertson (3.3, 20.2, PP1): G 42% +145 FD +1.6, L10 3/10, L3 1/3 | P 68% -235 FD -2.6, L10 7/10, L3 3/3 | A 47% +102 FD -2.4, L10 6/10, L3 3/3
-- Wyatt Johnston (2.7, 20.1, PP1): G 41% +155 FD +2.1, L10 2/10, L3 1/3 | P 62% -200 FD -4.7, L10 4/10, L3 1/3 | A 38% +130 FD -5.5, L10 3/10, L3 1/3
-- Roope Hintz (2.1, 16.9, PP1): G 29% +210 FD -3.0, L10 4/10, L3 2/3 | P 60% -162 FD -2.3, L10 6/10, L3 3/3 | A 35% +138 FD -6.8, L10 2/10, L3 1/3
-- Miro Heiskanen (1.8, 26.0, PP1): G 13% +480 FD -4.3, L10 3/10, L3 0/3 | P 56% -166 FD -6.2, L10 7/10, L3 2/3 | A 47% -120 FD -7.7, L10 4/10, L3 2/3
-- Thomas Harley (1.8, 24.8, PP2): G 8% +575 FD -6.4, L10 0/10, L3 0/3 | P 41% +106 FD -8.0, L10 4/10, L3 2/3 | A 36% +148 FD -4.3, L10 4/10, L3 2/3
-- Tyler Seguin (2.7, 15.0, PP2): G 22% +300 FD -3.1, L10 2/10, L3 0/3 | P 40% +112 FD -7.3, L10 3/10, L3 1/3 | A 23% +230 FD -7.6, L10 2/10, L3 1/3
-- Jamie Benn (1.4, 12.6, PP2): G 19% +480 FD +1.9, L10 1/10, L3 0/3 | P 37% no price, L10 1/10, L3 0/3 | A 25% no price, L10 1/10, L3 0/3
-- Justin Hryckowian (1.1, 15.0, PP2): G 15% +460 FD -2.7, L10 0/10, L3 0/3 | P 28% no price, L10 0/10, L3 0/3 | A 16% no price, L10 0/10, L3 0/3
-- Arttu Hyry (1.5, 14.3, no PP): G 16% +460 FD -2.1, L10 2/10, L3 1/3 | P 22% no price, L10 2/10, L3 1/3 | A 9% no price, L10 0/10, L3 0/3
-- Nils Lundkvist (0.8, 17.2, PP2): G 5% +1800 FD -0.5, L10 0/10, L3 0/3 | P 19% no price, L10 2/10, L3 1/3 | A 16% no price, L10 2/10, L3 1/3
-- Joel Kiviranta (1.3, 11.3, no PP): G 7% +420 FD -12.1, L10 1/10, L3 0/3 | P 18% no price, L10 1/10, L3 0/3 | A 11% no price, L10 0/10, L3 0/3
-- Colin Blackwell (0.9, 10.0, no PP): G 5% +625 FD -8.4, L10 0/10, L3 0/3 | P 16% no price, L10 0/10, L3 0/3 | A 14% no price, L10 0/10, L3 0/3
+- Mikko Rantanen (2.2, 20.8, PP1): G 32% +180 DK -3.2, L10 3/10, L3 1/3 | P 73% no price, L10 7/10, L3 3/3 | A 60% -135 DK +2.1, L10 5/10, L3 2/3
+- Jason Robertson (3.3, 20.2, PP1): G 42% +145 DK +1.6, L10 3/10, L3 1/3 | P 68% -225 DK -1.7, L10 7/10, L3 3/3 | A 47% +108 FD -1.0, L10 6/10, L3 3/3
+- Wyatt Johnston (2.7, 20.1, PP1): G 41% +160 DK +2.8, L10 2/10, L3 1/3 | P 62% -190 DK -3.6, L10 4/10, L3 1/3 | A 38% +126 FD -6.2, L10 3/10, L3 1/3
+- Roope Hintz (2.1, 16.9, PP1): G 29% +220 DK -2.0, L10 4/10, L3 2/3 | P 60% -155 DK -1.2, L10 6/10, L3 3/3 | A 35% +134 FD -7.5, L10 2/10, L3 1/3
+- Miro Heiskanen (1.8, 26.0, PP1): G 13% +500 DK -3.7, L10 3/10, L3 0/3 | P 56% -165 DK -6.1, L10 7/10, L3 2/3 | A 47% -120 FD -7.7, L10 4/10, L3 2/3
+- Thomas Harley (1.8, 24.8, PP2): G 8% +600 DK -5.9, L10 0/10, L3 0/3 | P 41% +110 DK -7.1, L10 4/10, L3 2/3 | A 36% +150 DK -4.0, L10 4/10, L3 2/3
+- Tyler Seguin (2.7, 15.0, PP2): G 22% +290 DK -3.7, L10 2/10, L3 0/3 | P 40% +112 FD -7.3, L10 3/10, L3 1/3 | A 23% +230 FD -7.6, L10 2/10, L3 1/3
+- Jamie Benn (1.4, 12.6, PP2): G 19% +500 DK +2.5, L10 1/10, L3 0/3 | P 37% no price, L10 1/10, L3 0/3 | A 25% no price, L10 1/10, L3 0/3
+- Justin Hryckowian (1.1, 15.0, PP2): G 15% +500 DK -1.5, L10 0/10, L3 0/3 | P 28% no price, L10 0/10, L3 0/3 | A 16% no price, L10 0/10, L3 0/3
+- Arttu Hyry (1.5, 14.3, no PP): G 16% +500 DK -0.9, L10 2/10, L3 1/3 | P 22% no price, L10 2/10, L3 1/3 | A 9% no price, L10 0/10, L3 0/3
+- Radek Faksa (0.9, 10.7, no PP): G 4% +1200 DK -4.1, L10 0/10, L3 0/3 | P 20% no price, L10 1/10, L3 0/3 | A 17% no price, L10 1/10, L3 0/3
+- Nils Lundkvist (0.8, 17.2, PP2): G 5% +2000 DK +0.0, L10 0/10, L3 0/3 | P 19% no price, L10 2/10, L3 1/3 | A 16% no price, L10 2/10, L3 1/3
+- Joel Kiviranta (1.3, 11.3, no PP): G 7% +550 DK -8.2, L10 1/10, L3 0/3 | P 18% no price, L10 1/10, L3 0/3 | A 11% no price, L10 0/10, L3 0/3
+- Colin Blackwell (0.9, 10.0, no PP): G 5% +850 DK -5.1, L10 0/10, L3 0/3 | P 16% no price, L10 0/10, L3 0/3 | A 14% no price, L10 0/10, L3 0/3
 - Kyle Capobianco (0.5, 12.0, no PP): G 5% +1800 FD +0.0, L10 0/10, L3 0/3 | P 15% no price, L10 0/10, L3 0/3 | A 10% no price, L10 0/10, L3 0/3
-- Tyler Myers (0.4, 14.9, no PP): G 2% +1700 FD -4.0, L10 0/10, L3 0/3 | P 13% no price, L10 0/10, L3 0/3 | A 12% no price, L10 0/10, L3 0/3
-- Lian Bichsel (0.6, 15.8, no PP): G 5% +1700 FD -0.6, L10 0/10, L3 0/3 | P 13% no price, L10 0/10, L3 0/3 | A 8% no price, L10 0/10, L3 0/3
+- Tyler Myers (0.4, 14.9, no PP): G 2% +2000 DK -3.2, L10 0/10, L3 0/3 | P 13% no price, L10 0/10, L3 0/3 | A 12% no price, L10 0/10, L3 0/3
+- Lian Bichsel (0.6, 15.8, no PP): G 5% +1800 DK -0.3, L10 0/10, L3 0/3 | P 13% no price, L10 0/10, L3 0/3 | A 8% no price, L10 0/10, L3 0/3
 MTL
 WPG
 COL
@@ -195,6 +198,8 @@ Teams with no lineup: MTL, WPG, COL, NSH, MIN, VAN
 Priced players missing from the projected lineups:
 - Brent Burns COL (not on any lineup)
 - Steven Stamkos NSH (not on any lineup)
+- Zach Bogosian MIN (not on any lineup)
+- Luke Schenn VAN (not on any lineup)
 - Roman Josi NSH (not on any lineup)
 - Jared Spurgeon MIN (not on any lineup)
 - Ryan Oreilly NSH (not on any lineup)
@@ -231,6 +236,7 @@ Priced players missing from the projected lineups:
 - Jake Evans MTL (not on any lineup)
 - Kyle Connor WPG (not on any lineup)
 - Brock Boeser VAN (not on any lineup)
+- Guillaume Brisebois VAN (not on any lineup)
 - Joel Eriksson Ek MIN (not on any lineup)
 - Jake Debrusk VAN (not on any lineup)
 - Yakov Trenin MIN (not on any lineup)
@@ -283,6 +289,8 @@ Priced players missing from the projected lineups:
 - Owen Beck MTL (not on any lineup)
 - Lane Hutson MTL (not on any lineup)
 - Jonathan Lekkerimaki VAN (not on any lineup)
+- Liam Ohgren VAN (not on any lineup)
+- Reid Schaefer NSH (not on any lineup)
 - Juraj Slafkovsky MTL (not on any lineup)
 - Danila Yurov MIN (not on any lineup)
 - Max Sasson VAN (not on any lineup)
