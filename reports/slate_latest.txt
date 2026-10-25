@@ -1,7 +1,7 @@
 ICE ENGINE SLATE REPORT  2026-10-25
-Lineups pulled: Oct 25, 4:15 PM ET
+Lineups pulled: Oct 25, 4:54 PM ET
 Prices pulled:  Oct 25, 4:12 PM ET
-Goalies pulled: Oct 25, 4:15 PM ET
+Goalies pulled: Oct 25, 4:54 PM ET
 Times are US Eastern. Read-only: built from the same models as the board.
 
 GAMES (start, projected goals, model game total; book game totals are not pulled)
@@ -28,7 +28,7 @@ INJURED / OUT (scratches in brackets)
 - CHI: Bowen Byram (upper body) [Ethan Del Mastro, Oliver Moore]
 - NYI: Mathew Barzal (knee); Alexander Romanov (torn right ACL); Matias Maccelli (lower body); Calum Ritchie (lower body) [Scott Mayfield]
 - DAL: Sam Steel (undisclosed); Oskar Bäck (finger); Matt Duchene (lower body); Esa Lindell (lower body)
-- MTL: Nick Suzuki (upper body); Samuel Montembeault (lower body); Ivan Demidov (lower body); Florian Xhekaj (lower body) [Adam Engstrom]
+- MTL: Nick Suzuki (upper body); Samuel Montembeault (lower body); Ivan Demidov (lower body) [Adam Engstrom, Owen Beck]
 - WPG: Garrett Brown (lower body); Josh Morrissey (upper body); Vladislav Namestnikov (undisclosed); Nick Bjugstad (upper body) [Tyrel Bauer, Brad Lambert, Alexander Command, Nico Daws]
 - COL: Zachary L’Heureux (upper body); Nicolas Roy (lower body) [Noah Juulsen]
 - NSH: William Trudeau (upper body) [Daemon Hunt, Ilya Lyubushkin, Vitali Pinchuk]
@@ -290,6 +290,7 @@ DATA CHECKS
 Games with no prices: none
 Priced players missing from the projected lineups:
 - Paul Cotter VAN (listed scratched)
+- Owen Beck MTL (listed scratched)
 - Uvis Balinskis FLA (listed scratched)
 Unconfirmed goalies:
 - CHI: Arvid Soderblom (expected, not confirmed)
