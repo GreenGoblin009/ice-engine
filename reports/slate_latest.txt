@@ -1,7 +1,7 @@
 ICE ENGINE SLATE REPORT  2026-10-26
-Lineups pulled: Oct 26, 5:44 PM ET
+Lineups pulled: Oct 26, 6:03 PM ET
 Prices pulled:  Oct 26, 4:21 PM ET
-Goalies pulled: Oct 26, 5:44 PM ET
+Goalies pulled: Oct 26, 6:03 PM ET
 Times are US Eastern. Read-only: built from the same models as the board.
 
 GAMES (start, projected goals, model game total; book game totals are not pulled)
@@ -46,8 +46,8 @@ TOP 15 GOALS BY ROLE-ADJUSTED CHANCE
 9. Artemi Panarin LAK 33%; best +190 DK; edge -1.4; DK +190; FD +180; L10 5/10; L3 2/3; 3.1 shots; 21.5 min; PP1
 10. Viktor Arvidsson DET 32%; best +260 FD; edge +4.6; DK +245; FD +260; L10 4/10; L3 1/3; 2.6 shots; 18.9 min; PP1
 11. Pavel Dorofeyev NYR 32%; best +180 FD; edge -3.4; DK +175; FD +180; L10 2/10; L3 1/3; 2.9 shots; 17.5 min; PP1
-12. Mika Zibanejad NYR 32%; best +195 DK; edge -2.1; DK +195; FD +195; L10 2/10; L3 1/3; 1.7 shots; 20.8 min; PP1
-13. Lucas Raymond DET 28%; best +240 FD; edge -1.6; DK +235; FD +240; L10 2/10; L3 2/3; 3.2 shots; 20.6 min; PP1
+12. Mika Zibanejad NYR 32%; best +195 DK; edge -2.1; DK +195; FD +195; L10 2/10; L3 1/3; 1.8 shots; 20.9 min; PP1
+13. Lucas Raymond DET 28%; best +240 FD; edge -1.6; DK +235; FD +240; L10 2/10; L3 2/3; 3.3 shots; 20.6 min; PP1
 14. Alexis Lafreniere NYR 28%; best +190 DK; edge -6.8; DK +190; FD +180; L10 6/10; L3 2/3; 2.6 shots; 19.1 min; PP1
 15. Jack Roslovic TOR 27%; best +260 FD; edge -0.7; DK +255; FD +260; L10 5/10; L3 2/3; 3.0 shots; 16.4 min; PP2
 
@@ -55,8 +55,8 @@ TOP 15 POINTS BY ROLE-ADJUSTED CHANCE
 1. Adrian Kempe LAK 66%; best -165 DK; edge +3.6; DK -165; FD -188; L10 6/10; L3 3/3; 3.0 shots; 20.7 min; PP1
 2. Alex DeBrincat DET 64%; best -205 DK; edge -3.3; DK -205; FD -205; L10 7/10; L3 2/3; 4.1 shots; 20.2 min; PP1
 3. Artemi Panarin LAK 63%; best -190 DK; edge -2.8; DK -190; FD -240; L10 5/10; L3 2/3; 3.1 shots; 21.5 min; PP1
-4. Mika Zibanejad NYR 62%; best -175 DK; edge -1.3; DK -175; FD -188; L10 6/10; L3 2/3; 1.7 shots; 20.8 min; PP1
-5. Lucas Raymond DET 61%; best -155 DK; edge +0.5; DK -155; FD -158; L10 4/10; L3 2/3; 3.2 shots; 20.6 min; PP1
+4. Mika Zibanejad NYR 62%; best -175 DK; edge -1.3; DK -175; FD -188; L10 6/10; L3 2/3; 1.8 shots; 20.9 min; PP1
+5. Lucas Raymond DET 61%; best -155 DK; edge +0.5; DK -155; FD -158; L10 4/10; L3 2/3; 3.3 shots; 20.6 min; PP1
 6. Dylan Larkin DET 61%; best -135 DK; edge +3.7; DK -135; FD -150; L10 3/10; L3 1/3; 2.9 shots; 21.5 min; PP1
 7. Adam Fox NYR 60%; best -180 DK; edge -4.4; DK -180; FD -192; L10 8/10; L3 3/3; 1.1 shots; 21.9 min; PP1
 8. Viktor Arvidsson DET 59%; best -115 FD; edge +5.3; DK -120; FD -115; L10 6/10; L3 2/3; 2.6 shots; 18.9 min; PP1
@@ -74,12 +74,12 @@ TOP 15 ASSISTS BY ROLE-ADJUSTED CHANCE
 3. Adam Fox NYR 55%; best -140 DK; edge -3.7; DK -140; FD -148; L10 8/10; L3 3/3; 1.1 shots; 21.9 min; PP1
 4. William Nylander TOR 52%; best -120 DK; edge -2.3; DK -120; FD -128; L10 6/10; L3 2/3; 2.9 shots; 20.0 min; PP1
 5. Artemi Panarin LAK 47%; best +110 DK; edge -0.2; DK +110; FD -113; L10 2/10; L3 1/3; 3.1 shots; 21.5 min; PP1
-6. Lucas Raymond DET 46%; best +124 FD; edge +0.9; DK +120; FD +124; L10 4/10; L3 2/3; 3.2 shots; 20.6 min; PP1
+6. Lucas Raymond DET 46%; best +124 FD; edge +0.9; DK +120; FD +124; L10 4/10; L3 2/3; 3.3 shots; 20.6 min; PP1
 7. Adrian Kempe LAK 44%; best +145 DK; edge +3.2; DK +145; FD +122; L10 5/10; L3 2/3; 3.0 shots; 20.7 min; PP1
 8. Moritz Seider DET 43%; best +124 FD; edge -1.3; DK +110; FD +124; L10 4/10; L3 0/3; 1.8 shots; 25.7 min; PP1
 9. Ryan Nugent-Hopkins EDM 43%; best +140 FD; edge +1.2; DK +115; FD +140; L10 3/10; L3 1/3; 2.0 shots; 18.8 min; PP2
 10. Alex DeBrincat DET 43%; best +122 FD; edge -2.3; DK +105; FD +122; L10 6/10; L3 2/3; 4.1 shots; 20.2 min; PP1
-11. Mika Zibanejad NYR 42%; best +115 DK; edge -4.2; DK +115; FD +112; L10 5/10; L3 2/3; 1.7 shots; 20.8 min; PP1
+11. Mika Zibanejad NYR 42%; best +115 DK; edge -4.2; DK +115; FD +112; L10 5/10; L3 2/3; 1.8 shots; 20.9 min; PP1
 12. Darren Raddysh TOR 42%; best +110 DK; edge -5.3; DK +110; FD +100; L10 5/10; L3 1/3; 2.0 shots; 23.7 min; PP1
 13. Auston Matthews TOR 41%; best -110 DK; edge -11.4; DK -110; FD -113; L10 6/10; L3 1/3; 2.9 shots; 20.8 min; PP1
 14. J.T. Miller NYR 40%; best +120 FD; edge -5.9; DK +115; FD +120; L10 5/10; L3 1/3; 1.1 shots; 18.4 min; PP1
@@ -120,21 +120,21 @@ LAK
 - Samuel Helenius (0.8, 8.9, no PP): G 8% +1000 DK -0.6, L10 0/10, L3 0/3 | P 16% no price, L10 0/10, L3 0/3 | A 8% no price, L10 0/10, L3 0/3
 - Brian Dumoulin (0.7, 16.4, no PP): G 3% +2300 FD -0.7, L10 1/10, L3 0/3 | P 15% no price, L10 1/10, L3 0/3 | A 13% no price, L10 0/10, L3 0/3
 NYR
-- Mika Zibanejad (1.7, 20.8, PP1): G 32% +195 DK -2.1, L10 2/10, L3 1/3 | P 62% -175 DK -1.3, L10 6/10, L3 2/3 | A 42% +115 DK -4.2, L10 5/10, L3 2/3
+- Mika Zibanejad (1.8, 20.9, PP1): G 32% +195 DK -2.1, L10 2/10, L3 1/3 | P 62% -175 DK -1.3, L10 6/10, L3 2/3 | A 42% +115 DK -4.2, L10 5/10, L3 2/3
 - Adam Fox (1.1, 21.9, PP1): G 12% +550 DK -3.0, L10 0/10, L3 0/3 | P 60% -180 DK -4.4, L10 8/10, L3 3/3 | A 55% -140 DK -3.7, L10 8/10, L3 3/3
 - J.T. Miller (1.1, 18.4, PP1): G 22% +290 FD -3.5, L10 3/10, L3 2/3 | P 56% -150 DK -4.1, L10 7/10, L3 2/3 | A 40% +120 FD -5.9, L10 5/10, L3 1/3
 - Pavel Dorofeyev (2.9, 17.5, PP1): G 32% +180 FD -3.4, L10 2/10, L3 1/3 | P 53% -125 FD -2.5, L10 5/10, L3 3/3 | A 28% +230 FD -2.4, L10 3/10, L3 2/3
 - Alexis Lafreniere (2.6, 19.1, PP1): G 28% +190 DK -6.8, L10 6/10, L3 2/3 | P 47% -140 DK -10.8, L10 9/10, L3 3/3 | A 34% +165 DK -3.4, L10 5/10, L3 1/3
 - Gabe Perreault (2.4, 16.5, PP2): G 19% +320 DK -4.5, L10 3/10, L3 1/3 | P 40% +125 DK -4.6, L10 4/10, L3 1/3 | A 27% +250 DK -1.8, L10 2/10, L3 0/3
-- Will Cuylle (2.1, 16.1, PP2): G 20% +380 DK -0.9, L10 3/10, L3 1/3 | P 38% +140 DK -3.8, L10 5/10, L3 1/3 | A 22% +255 DK -6.0, L10 3/10, L3 1/3
-- Sean Durzi (0.8, 20.1, PP2): G 9% +900 FD -0.5, L10 1/10, L3 1/3 | P 37% +155 DK -2.2, L10 3/10, L3 1/3 | A 29% +200 DK -4.3, L10 2/10, L3 0/3
+- Will Cuylle (2.1, 16.0, PP2): G 20% +380 DK -0.9, L10 3/10, L3 1/3 | P 38% +140 DK -3.8, L10 5/10, L3 1/3 | A 22% +255 DK -6.0, L10 3/10, L3 1/3
+- Sean Durzi (0.8, 20.2, PP2): G 9% +900 FD -0.5, L10 1/10, L3 1/3 | P 37% +155 DK -2.2, L10 3/10, L3 1/3 | A 29% +200 DK -4.3, L10 2/10, L3 0/3
 - Eeli Tolvanen (1.1, 12.9, PP2): G 15% +550 DK -0.0, L10 1/10, L3 0/3 | P 35% no price, L10 2/10, L3 0/3 | A 23% no price, L10 1/10, L3 0/3
 - Vladislav Gavrikov (1.8, 21.3, no PP): G 15% +900 DK +5.1, L10 1/10, L3 0/3 | P 33% +220 DK +1.9, L10 4/10, L3 1/3 | A 23% +310 DK -1.5, L10 4/10, L3 1/3
 - Oliver Bjorkstrand (1.4, 10.6, PP2): G 15% +400 DK -5.5, L10 3/10, L3 2/3 | P 32% no price, L10 4/10, L3 3/3 | A 20% no price, L10 1/10, L3 1/3
 - Tye Kartye (1.8, 15.3, no PP): G 12% +450 FD -6.1, L10 2/10, L3 1/3 | P 31% no price, L10 5/10, L3 2/3 | A 23% no price, L10 3/10, L3 1/3
-- Noah Laba (0.9, 15.1, no PP): G 11% +750 DK -0.9, L10 0/10, L3 0/3 | P 28% no price, L10 2/10, L3 1/3 | A 20% no price, L10 2/10, L3 1/3
-- Braden Schneider (1.4, 17.4, no PP): G 2% +1200 DK -5.3, L10 0/10, L3 0/3 | P 19% no price, L10 2/10, L3 1/3 | A 18% no price, L10 2/10, L3 1/3
-- Marcus Pettersson (0.6, 20.6, no PP): G 4% +1700 FD -1.9, L10 0/10, L3 0/3 | P 18% +270 DK -9.2, L10 1/10, L3 0/3 | A 15% +340 DK -7.4, L10 1/10, L3 0/3
+- Noah Laba (0.9, 15.0, no PP): G 11% +750 DK -0.9, L10 0/10, L3 0/3 | P 28% no price, L10 2/10, L3 1/3 | A 20% no price, L10 2/10, L3 1/3
+- Braden Schneider (1.4, 17.2, no PP): G 2% +1200 DK -5.3, L10 0/10, L3 0/3 | P 19% no price, L10 2/10, L3 1/3 | A 18% no price, L10 2/10, L3 1/3
+- Marcus Pettersson (0.6, 20.7, no PP): G 4% +1700 FD -1.9, L10 0/10, L3 0/3 | P 18% +270 DK -9.2, L10 1/10, L3 0/3 | A 15% +340 DK -7.4, L10 1/10, L3 0/3
 TOR
 - William Nylander (2.9, 20.0, PP1): G 39% +170 FD +1.7, L10 4/10, L3 2/3 | P 69% no price, L10 7/10, L3 3/3 | A 52% -120 DK -2.3, L10 6/10, L3 2/3
 - Auston Matthews (2.9, 20.8, PP1): G 41% +125 DK -3.4, L10 7/10, L3 2/3 | P 62% no price, L10 8/10, L3 2/3 | A 41% -110 DK -11.4, L10 6/10, L3 1/3
@@ -167,7 +167,7 @@ CGY
 - Zach Whitecloud (1.0, 20.6, no PP): G 3% +1900 FD -2.1, L10 0/10, L3 0/3 | P 18% no price, L10 0/10, L3 0/3 | A 15% no price, L10 0/10, L3 0/3
 DET
 - Alex DeBrincat (4.1, 20.2, PP1): G 40% +165 DK +2.2, L10 4/10, L3 1/3 | P 64% -205 DK -3.3, L10 7/10, L3 2/3 | A 43% +122 FD -2.3, L10 6/10, L3 2/3
-- Lucas Raymond (3.2, 20.6, PP1): G 28% +240 FD -1.6, L10 2/10, L3 2/3 | P 61% -155 DK +0.5, L10 4/10, L3 2/3 | A 46% +124 FD +0.9, L10 4/10, L3 2/3
+- Lucas Raymond (3.3, 20.6, PP1): G 28% +240 FD -1.6, L10 2/10, L3 2/3 | P 61% -155 DK +0.5, L10 4/10, L3 2/3 | A 46% +124 FD +0.9, L10 4/10, L3 2/3
 - Dylan Larkin (2.9, 21.5, PP1): G 35% +230 FD +4.2, L10 1/10, L3 0/3 | P 61% -135 DK +3.7, L10 3/10, L3 1/3 | A 38% +160 DK -0.8, L10 3/10, L3 1/3
 - Viktor Arvidsson (2.6, 18.9, PP1): G 32% +260 FD +4.6, L10 4/10, L3 1/3 | P 59% -115 FD +5.3, L10 6/10, L3 2/3 | A 34% +172 FD -2.3, L10 3/10, L3 1/3
 - Moritz Seider (1.8, 25.7, PP1): G 11% +500 FD -5.3, L10 0/10, L3 0/3 | P 48% -120 FD -6.3, L10 4/10, L3 0/3 | A 43% +124 FD -1.3, L10 4/10, L3 0/3
