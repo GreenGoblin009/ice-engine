@@ -1,7 +1,7 @@
 ICE ENGINE SLATE REPORT  2026-10-26
-Lineups pulled: Oct 26, 1:30 PM ET
+Lineups pulled: Oct 26, 1:58 PM ET
 Prices pulled:  Oct 26, 12:23 PM ET
-Goalies pulled: Oct 26, 1:30 PM ET
+Goalies pulled: Oct 26, 1:58 PM ET
 Times are US Eastern. Read-only: built from the same models as the board.
 
 GAMES (start, projected goals, model game total; book game totals are not pulled)
@@ -30,8 +30,8 @@ TEAM FORM, last 10 regular-season games (per game: GF / GA | shots for / against
 - LAK: 2.2 / 3.5 | 27.3 / 28.2 | PP 13.8% (4/29) | PK 65.6%
 - NYR: 3.4 / 3.2 | 25.0 / 27.3 | PP 16.7% (5/30) | PK 89.7%
 - TOR: 4.4 / 3.4 | 28.9 / 31.0 | PP 34.4% (11/32) | PK 93.8%
-- CGY: 2.3 / 3.9 | 28.7 / 30.5 | PP 32.0% (8/25) | PK 84.8%
-- DET: 2.9 / 3.2 | 30.6 / 26.0 | PP 22.2% (8/36) | PK 64.7%
+- CGY: 2.3 / 3.9 | 28.7 / 30.6 | PP 32.0% (8/25) | PK 84.8%
+- DET: 2.9 / 3.2 | 30.7 / 26.0 | PP 22.2% (8/36) | PK 64.7%
 - EDM: 4.4 / 3.3 | 24.3 / 27.4 | PP 36.4% (12/33) | PK 71.4%
 
 TOP 15 GOALS BY ROLE-ADJUSTED CHANCE
