@@ -1,7 +1,7 @@
 ICE ENGINE SLATE REPORT  2026-10-26
-Lineups pulled: Oct 26, 1:58 PM ET
+Lineups pulled: Oct 26, 2:27 PM ET
 Prices pulled:  Oct 26, 12:23 PM ET
-Goalies pulled: Oct 26, 1:58 PM ET
+Goalies pulled: Oct 26, 2:27 PM ET
 Times are US Eastern. Read-only: built from the same models as the board.
 
 GAMES (start, projected goals, model game total; book game totals are not pulled)
@@ -12,16 +12,16 @@ GAMES (start, projected goals, model game total; book game totals are not pulled
 GOALIES (shrunk two-season save %, raw save % and games)
 - LAK: Darcy Kuemper expected 0.894 (0.891 raw, 56 GP)  | also listed: Anton Forsberg 0.907 (0.907 raw, 40 GP)
 - NYR: James Reimer CONFIRMED 0.905 (0 GP)
-- TOR: no goalie listed
-- CGY: no goalie listed
+- TOR: Sergei Bobrovsky CONFIRMED 0.885 (0.880 raw, 60 GP)
+- CGY: Devin Cooley CONFIRMED 0.908 (0.910 raw, 36 GP)
 - DET: no goalie listed
 - EDM: no goalie listed
 
 INJURED / OUT (scratches in brackets)
 - LAK: Alex Turcotte (undisclosed); Kevin Fiala (leg surgery); Mats Zuccarello (upper body) [Jared Wright, Cody Ceci]
 - NYR: Igor Shesterkin (lower body); Joonas Korpisalo (lower body); Joseph Veleno (lower body) [Scott Morrow, Matt Rempe]
-- TOR: none listed
-- CGY: none listed
+- TOR: Dakota Joshua (core); Max Domi (undisclosed); Chris Tanev (upper body); John Tavares (lower body); Marshall Rifai (lower body); Nick Blankenburg (upper body) [Cole McWard, Bo Groulx]
+- CGY: Jonathan Huberdeau (hip); Samuel Honzek (lower body) [Ben Jones, Maksim Tsyplakov, Joel Hanley]
 - DET: none listed
 - EDM: none listed
 Questionable: no projected skater carries a questionable or day-to-day note.
@@ -35,185 +35,179 @@ TEAM FORM, last 10 regular-season games (per game: GF / GA | shots for / against
 - EDM: 4.4 / 3.3 | 24.3 / 27.4 | PP 36.4% (12/33) | PK 71.4%
 
 TOP 15 GOALS BY ROLE-ADJUSTED CHANCE
-1. Adrian Kempe LAK 34%; best +170 FD; edge -3.4; DK +165; FD +170; L10 2/10; L3 1/3; 3.0 shots; 20.7 min; PP1
-2. Pavel Dorofeyev NYR 32%; best +180 FD; edge -3.7; DK +175; FD +180; L10 2/10; L3 1/3; 2.9 shots; 17.5 min; PP1
-3. Artemi Panarin LAK 32%; best +190 DK; edge -2.9; DK +190; FD +180; L10 5/10; L3 2/3; 3.1 shots; 21.5 min; PP1
-4. Mika Zibanejad NYR 30%; best +200 DK; edge -2.9; DK +200; FD +200; L10 2/10; L3 1/3; 1.7 shots; 20.8 min; PP1
-5. Alexis Lafreniere NYR 26%; best +185 DK; edge -8.8; DK +185; FD +180; L10 6/10; L3 2/3; 2.6 shots; 19.1 min; PP1
-6. Alex Laferriere LAK 22%; best +240 DK; edge -7.0; DK +240; FD +240; L10 2/10; L3 0/3; 1.8 shots; 19.1 min; PP1
-7. J.T. Miller NYR 20%; best +275 FD; edge -6.2; DK +270; FD +275; L10 3/10; L3 2/3; 1.1 shots; 18.4 min; PP1
-8. Scott Laughton LAK 20%; best +575 FD; edge +5.2; DK +550; FD +575; L10 2/10; L3 2/3; 1.7 shots; 14.6 min; no PP
-9. Will Cuylle NYR 20%; best +380 DK; edge -1.2; DK +380; FD +370; L10 3/10; L3 1/3; 2.1 shots; 16.1 min; PP2
-10. Corey Perry LAK 20%; best +550 DK; edge +4.2; DK +550; FD +430; L10 1/10; L3 0/3; 1.2 shots; 11.6 min; PP2
-11. Gabe Perreault NYR 19%; best +320 DK; edge -4.9; DK +320; FD +320; L10 3/10; L3 1/3; 2.4 shots; 16.5 min; PP2
-12. Trevor Moore LAK 18%; best +425 DK; edge -1.3; DK +425; FD +380; L10 1/10; L3 0/3; 2.5 shots; 16.3 min; PP2
-13. Joel Armia LAK 17%; best +650 DK; edge +3.7; DK +650; FD +525; L10 1/10; L3 0/3; 1.2 shots; 13.6 min; no PP
-14. Vladislav Gavrikov NYR 16%; best +900 DK; edge +5.9; DK +900; FD +900; L10 1/10; L3 0/3; 1.8 shots; 21.3 min; no PP
-15. Erik Haula LAK 16%; best +500 DK; edge -1.0; DK +500; FD +430; L10 1/10; L3 0/3; 1.9 shots; 16.1 min; PP2
+1. Auston Matthews TOR 41%; best +125 DK; edge -3.5; DK +125; FD +115; L10 7/10; L3 2/3; 2.9 shots; 20.8 min; PP1
+2. William Nylander TOR 39%; best +160 FD; edge +0.1; DK +140; FD +160; L10 4/10; L3 2/3; 2.9 shots; 20.0 min; PP1
+3. Adrian Kempe LAK 35%; best +170 FD; edge -2.1; DK +165; FD +170; L10 2/10; L3 1/3; 3.0 shots; 20.7 min; PP1
+4. Artemi Panarin LAK 33%; best +190 DK; edge -1.5; DK +190; FD +180; L10 5/10; L3 2/3; 3.1 shots; 21.5 min; PP1
+5. Pavel Dorofeyev NYR 32%; best +180 FD; edge -3.3; DK +175; FD +180; L10 2/10; L3 1/3; 2.9 shots; 17.5 min; PP1
+6. Mika Zibanejad NYR 32%; best +200 DK; edge -1.6; DK +200; FD +200; L10 2/10; L3 1/3; 1.7 shots; 20.8 min; PP1
+7. Alexis Lafreniere NYR 28%; best +185 DK; edge -7.5; DK +185; FD +180; L10 6/10; L3 2/3; 2.6 shots; 19.1 min; PP1
+8. Jack Roslovic TOR 27%; best +250 DK; edge -1.3; DK +250; FD +250; L10 5/10; L3 2/3; 3.0 shots; 16.4 min; PP2
+9. Morgan Frost CGY 25%; best +240 FD; edge -4.3; DK +215; FD +240; L10 3/10; L3 1/3; 2.1 shots; 15.2 min; PP1
+10. Alex Laferriere LAK 24%; best +240 DK; edge -5.7; DK +240; FD +240; L10 2/10; L3 0/3; 1.8 shots; 19.1 min; PP1
+11. Joel Farabee CGY 23%; best +265 DK; edge -4.9; DK +265; FD +240; L10 2/10; L3 2/3; 2.4 shots; 18.5 min; PP1
+12. J.T. Miller NYR 22%; best +275 FD; edge -4.7; DK +270; FD +275; L10 3/10; L3 2/3; 1.1 shots; 18.4 min; PP1
+13. Darren Raddysh TOR 21%; best +475 DK; edge +4.1; DK +475; FD +460; L10 0/10; L3 0/3; 2.0 shots; 23.7 min; PP1
+14. Matt Coronato CGY 21%; best +225 DK; edge -9.7; DK +225; FD +210; L10 2/10; L3 0/3; 2.4 shots; 17.5 min; PP1
+15. Will Cuylle NYR 20%; best +380 DK; edge -0.8; DK +380; FD +370; L10 3/10; L3 1/3; 2.1 shots; 16.1 min; PP2
 
 TOP 15 POINTS BY ROLE-ADJUSTED CHANCE
-1. Adrian Kempe LAK 64%; best -175 DK; edge +0.1; DK -175; FD -200; L10 6/10; L3 3/3; 3.0 shots; 20.7 min; PP1
-2. Artemi Panarin LAK 61%; best -195 DK; edge -5.5; DK -195; FD -245; L10 5/10; L3 2/3; 3.1 shots; 21.5 min; PP1
-3. Mika Zibanejad NYR 60%; best -180 DK; edge -3.9; DK -180; FD -188; L10 6/10; L3 2/3; 1.7 shots; 20.8 min; PP1
-4. Adam Fox NYR 60%; best -185 DK; edge -5.0; DK -185; FD -186; L10 8/10; L3 3/3; 1.1 shots; 21.9 min; PP1
-5. J.T. Miller NYR 54%; best -150 DK; edge -6.4; DK -150; FD -154; L10 7/10; L3 2/3; 1.1 shots; 18.4 min; PP1
-6. Pavel Dorofeyev NYR 53%; best -128 FD; edge -3.0; DK -130; FD -128; L10 5/10; L3 3/3; 2.9 shots; 17.5 min; PP1
-7. Alexis Lafreniere NYR 45%; best -145 DK; edge -13.7; DK -145; FD -164; L10 9/10; L3 3/3; 2.6 shots; 19.1 min; PP1
-8. Alex Laferriere LAK 45%; best -125 DK; edge -10.3; DK -125; FD -138; L10 6/10; L3 2/3; 1.8 shots; 19.1 min; PP1
-9. Erik Haula LAK 41%; best +175 DK; edge +4.4; DK +175; FD -; L10 4/10; L3 1/3; 1.9 shots; 16.1 min; PP2
-10. Gabe Perreault NYR 40%; best +125 DK; edge -4.5; DK +125; FD +114; L10 4/10; L3 1/3; 2.4 shots; 16.5 min; PP2
-11. Trevor Moore LAK 38%; best +190 DK; edge +3.9; DK +190; FD +134; L10 3/10; L3 0/3; 2.5 shots; 16.3 min; PP2
-12. Sean Durzi NYR 38%; best +155 DK; edge -1.0; DK +155; FD -; L10 3/10; L3 1/3; 0.8 shots; 20.1 min; PP2
-13. Will Cuylle NYR 38%; best +140 DK; edge -3.8; DK +140; FD -; L10 5/10; L3 1/3; 2.1 shots; 16.1 min; PP2
-14. Brandt Clarke LAK 37%; best +100 DK; edge -12.6; DK +100; FD -128; L10 5/10; L3 1/3; 1.9 shots; 19.6 min; PP1
-15. Drew Doughty LAK 28%; best +220 DK; edge -3.0; DK +220; FD -; L10 1/10; L3 0/3; 1.1 shots; 21.0 min; PP2
+1. Adrian Kempe LAK 66%; best -175 DK; edge +2.0; DK -175; FD -200; L10 6/10; L3 3/3; 3.0 shots; 20.7 min; PP1
+2. Artemi Panarin LAK 63%; best -195 DK; edge -3.6; DK -195; FD -245; L10 5/10; L3 2/3; 3.1 shots; 21.5 min; PP1
+3. Mika Zibanejad NYR 62%; best -180 DK; edge -2.1; DK -180; FD -188; L10 6/10; L3 2/3; 1.7 shots; 20.8 min; PP1
+4. Adam Fox NYR 60%; best -185 DK; edge -5.1; DK -185; FD -186; L10 8/10; L3 3/3; 1.1 shots; 21.9 min; PP1
+5. J.T. Miller NYR 56%; best -150 DK; edge -4.3; DK -150; FD -154; L10 7/10; L3 2/3; 1.1 shots; 18.4 min; PP1
+6. Pavel Dorofeyev NYR 53%; best -128 FD; edge -2.8; DK -130; FD -128; L10 5/10; L3 3/3; 2.9 shots; 17.5 min; PP1
+7. Darren Raddysh TOR 53%; best -125 DK; edge -2.8; DK -125; FD -156; L10 5/10; L3 1/3; 2.0 shots; 23.7 min; PP1
+8. Alexis Lafreniere NYR 47%; best -145 DK; edge -11.9; DK -145; FD -164; L10 9/10; L3 3/3; 2.6 shots; 19.1 min; PP1
+9. Alex Laferriere LAK 47%; best -125 DK; edge -8.4; DK -125; FD -138; L10 6/10; L3 2/3; 1.8 shots; 19.1 min; PP1
+10. Matvei Gridin CGY 44%; best +100 DK; edge -5.6; DK +100; FD -108; L10 4/10; L3 2/3; 2.0 shots; 15.0 min; PP1
+11. Easton Cowan TOR 44%; best +100 DK; edge -5.8; DK +100; FD -113; L10 7/10; L3 3/3; 2.4 shots; 15.1 min; PP2
+12. Matt Coronato CGY 44%; best -140 FD; edge -14.3; DK -155; FD -140; L10 6/10; L3 3/3; 2.4 shots; 17.5 min; PP1
+13. Joel Farabee CGY 44%; best -125 DK; edge -11.8; DK -125; FD -138; L10 7/10; L3 3/3; 2.4 shots; 18.5 min; PP1
+14. Jack Roslovic TOR 44%; best -105 DK; edge -7.7; DK -105; FD -140; L10 7/10; L3 3/3; 3.0 shots; 16.4 min; PP2
+15. Morgan Frost CGY 42%; best -130 FD; edge -14.1; DK -140; FD -130; L10 6/10; L3 3/3; 2.1 shots; 15.2 min; PP1
 
 TOP 15 ASSISTS BY ROLE-ADJUSTED CHANCE
-1. Adam Fox NYR 55%; best -142 FD; edge -4.1; DK -145; FD -142; L10 8/10; L3 3/3; 1.1 shots; 21.9 min; PP1
-2. Artemi Panarin LAK 46%; best +100 DK; edge -4.0; DK +100; FD -115; L10 2/10; L3 1/3; 3.1 shots; 21.5 min; PP1
-3. Adrian Kempe LAK 43%; best +135 DK; edge +0.1; DK +135; FD +122; L10 5/10; L3 2/3; 3.0 shots; 20.7 min; PP1
-4. Mika Zibanejad NYR 41%; best +115 DK; edge -5.5; DK +115; FD +112; L10 5/10; L3 2/3; 1.7 shots; 20.8 min; PP1
-5. J.T. Miller NYR 38%; best +122 FD; edge -7.0; DK +115; FD +122; L10 5/10; L3 1/3; 1.1 shots; 18.4 min; PP1
-6. Alexis Lafreniere NYR 33%; best +160 DK; edge -5.5; DK +160; FD +150; L10 5/10; L3 1/3; 2.6 shots; 19.1 min; PP1
-7. Brandt Clarke LAK 30%; best +140 DK; edge -11.4; DK +140; FD +112; L10 4/10; L3 1/3; 1.9 shots; 19.6 min; PP1
-8. Sean Durzi NYR 30%; best +200 DK; edge -3.7; DK +200; FD -; L10 2/10; L3 0/3; 0.8 shots; 20.1 min; PP2
-9. Pavel Dorofeyev NYR 28%; best +220 FD; edge -3.1; DK +205; FD +220; L10 3/10; L3 2/3; 2.9 shots; 17.5 min; PP1
-10. Erik Haula LAK 28%; best +300 DK; edge +2.6; DK +300; FD -; L10 3/10; L3 1/3; 1.9 shots; 16.1 min; PP2
-11. Alex Laferriere LAK 27%; best +165 DK; edge -10.4; DK +165; FD +146; L10 4/10; L3 2/3; 1.8 shots; 19.1 min; PP1
-12. Gabe Perreault NYR 27%; best +250 DK; edge -1.3; DK +250; FD +230; L10 2/10; L3 0/3; 2.4 shots; 16.5 min; PP2
-13. Trevor Moore LAK 23%; best +380 DK; edge +2.6; DK +380; FD +250; L10 2/10; L3 0/3; 2.5 shots; 16.3 min; PP2
-14. Will Cuylle NYR 22%; best +265 DK; edge -4.9; DK +265; FD -; L10 3/10; L3 1/3; 2.1 shots; 16.1 min; PP2
-15. Drew Doughty LAK 22%; best +275 DK; edge -5.1; DK +275; FD -; L10 1/10; L3 0/3; 1.1 shots; 21.0 min; PP2
+1. Adam Fox NYR 54%; best -142 FD; edge -4.2; DK -145; FD -142; L10 8/10; L3 3/3; 1.1 shots; 21.9 min; PP1
+2. William Nylander TOR 52%; best -120 DK; edge -2.4; DK -120; FD -128; L10 6/10; L3 2/3; 2.9 shots; 20.0 min; PP1
+3. Artemi Panarin LAK 47%; best +100 DK; edge -2.7; DK +100; FD -115; L10 2/10; L3 1/3; 3.1 shots; 21.5 min; PP1
+4. Adrian Kempe LAK 44%; best +135 DK; edge +1.3; DK +135; FD +122; L10 5/10; L3 2/3; 3.0 shots; 20.7 min; PP1
+5. Mika Zibanejad NYR 42%; best +115 DK; edge -4.3; DK +115; FD +112; L10 5/10; L3 2/3; 1.7 shots; 20.8 min; PP1
+6. Darren Raddysh TOR 42%; best +110 DK; edge -5.4; DK +110; FD -108; L10 5/10; L3 1/3; 2.0 shots; 23.7 min; PP1
+7. Auston Matthews TOR 41%; best -110 DK; edge -11.5; DK -110; FD -128; L10 6/10; L3 1/3; 2.9 shots; 20.8 min; PP1
+8. J.T. Miller NYR 39%; best +122 FD; edge -5.6; DK +115; FD +122; L10 5/10; L3 1/3; 1.1 shots; 18.4 min; PP1
+9. Alexis Lafreniere NYR 34%; best +160 DK; edge -4.3; DK +160; FD +150; L10 5/10; L3 1/3; 2.6 shots; 19.1 min; PP1
+10. Matvei Gridin CGY 33%; best +195 DK; edge -0.5; DK +195; FD +182; L10 3/10; L3 1/3; 2.0 shots; 15.0 min; PP1
+11. Brandt Clarke LAK 30%; best +140 DK; edge -11.8; DK +140; FD +112; L10 4/10; L3 1/3; 1.9 shots; 19.6 min; PP1
+12. Matt Coronato CGY 29%; best +162 FD; edge -8.7; DK +130; FD +162; L10 4/10; L3 3/3; 2.4 shots; 17.5 min; PP1
+13. Sean Durzi NYR 29%; best +200 DK; edge -4.2; DK +200; FD -; L10 2/10; L3 0/3; 0.8 shots; 20.1 min; PP2
+14. Morgan Rielly TOR 29%; best +175 DK; edge -7.4; DK +175; FD -; L10 4/10; L3 3/3; 1.4 shots; 19.7 min; PP2
+15. Alex Laferriere LAK 29%; best +165 DK; edge -9.1; DK +165; FD +146; L10 4/10; L3 2/3; 1.8 shots; 19.1 min; PP1
 
 TOP 15 BY EDGE (all three markets)
-1. Vladislav Gavrikov NYR Goals 16%; best +900 DK; edge +5.9; DK +900; FD +900; L10 1/10; L3 0/3; 1.8 shots; 21.3 min; no PP
+1. Teddy Blueger TOR Goals 18%; best +700 DK; edge +5.8; DK +700; FD +700; L10 1/10; L3 1/3; 1.2 shots; 12.8 min; no PP
 2. Scott Laughton LAK Goals 20%; best +575 FD; edge +5.2; DK +550; FD +575; L10 2/10; L3 2/3; 1.7 shots; 14.6 min; no PP
-3. Erik Haula LAK Points 41%; best +175 DK; edge +4.4; DK +175; FD -; L10 4/10; L3 1/3; 1.9 shots; 16.1 min; PP2
-4. Corey Perry LAK Goals 20%; best +550 DK; edge +4.2; DK +550; FD +430; L10 1/10; L3 0/3; 1.2 shots; 11.6 min; PP2
-5. Trevor Moore LAK Points 38%; best +190 DK; edge +3.9; DK +190; FD +134; L10 3/10; L3 0/3; 2.5 shots; 16.3 min; PP2
-6. Joel Armia LAK Goals 17%; best +650 DK; edge +3.7; DK +650; FD +525; L10 1/10; L3 0/3; 1.2 shots; 13.6 min; no PP
-7. Erik Haula LAK Assists 28%; best +300 DK; edge +2.6; DK +300; FD -; L10 3/10; L3 1/3; 1.9 shots; 16.1 min; PP2
-8. Trevor Moore LAK Assists 23%; best +380 DK; edge +2.6; DK +380; FD +250; L10 2/10; L3 0/3; 2.5 shots; 16.3 min; PP2
-9. Samuel Helenius LAK Goals 9%; best +1200 DK; edge +1.8; DK +1200; FD +1100; L10 0/10; L3 0/3; 0.8 shots; 8.9 min; no PP
-10. Mikey Anderson LAK Goals 6%; best +2000 DK; edge +0.9; DK +2000; FD +2000; L10 0/10; L3 0/3; 0.5 shots; 17.6 min; no PP
-11. Drew Doughty LAK Goals 7%; best +1400 DK; edge +0.6; DK +1400; FD +1100; L10 0/10; L3 0/3; 1.1 shots; 21.0 min; PP2
-12. Brian Dumoulin LAK Goals 5%; best +2300 FD; edge +0.4; DK +2000; FD +2300; L10 1/10; L3 0/3; 0.7 shots; 16.4 min; no PP
-13. Sean Durzi NYR Goals 10%; best +900 DK; edge +0.4; DK +900; FD +900; L10 1/10; L3 1/3; 0.8 shots; 20.1 min; PP2
-14. Adrian Kempe LAK Points 64%; best -175 DK; edge +0.1; DK -175; FD -200; L10 6/10; L3 3/3; 3.0 shots; 20.7 min; PP1
-15. Adrian Kempe LAK Assists 43%; best +135 DK; edge +0.1; DK +135; FD +122; L10 5/10; L3 2/3; 3.0 shots; 20.7 min; PP1
-15 of 59 priced legs show a positive edge at the best book.
+3. Vladislav Gavrikov NYR Goals 15%; best +900 DK; edge +5.1; DK +900; FD +900; L10 1/10; L3 0/3; 1.8 shots; 21.3 min; no PP
+4. Erik Haula LAK Points 41%; best +175 DK; edge +4.7; DK +175; FD -; L10 4/10; L3 1/3; 1.9 shots; 16.1 min; PP2
+5. Trevor Moore LAK Points 39%; best +190 DK; edge +4.2; DK +190; FD +134; L10 3/10; L3 0/3; 2.5 shots; 16.3 min; PP2
+6. Corey Perry LAK Goals 20%; best +550 DK; edge +4.2; DK +550; FD +430; L10 1/10; L3 0/3; 1.2 shots; 11.6 min; PP2
+7. Darren Raddysh TOR Goals 21%; best +475 DK; edge +4.1; DK +475; FD +460; L10 0/10; L3 0/3; 2.0 shots; 23.7 min; PP1
+8. Joel Armia LAK Goals 17%; best +650 DK; edge +3.7; DK +650; FD +525; L10 1/10; L3 0/3; 1.2 shots; 13.6 min; no PP
+9. Kevin Bahl CGY Goals 7%; best +2500 DK; edge +3.0; DK +2500; FD +1700; L10 1/10; L3 0/3; 1.0 shots; 22.2 min; no PP
+10. Erik Haula LAK Assists 27%; best +300 DK; edge +2.4; DK +300; FD -; L10 3/10; L3 1/3; 1.9 shots; 16.1 min; PP2
+11. Trevor Moore LAK Assists 23%; best +380 DK; edge +2.4; DK +380; FD +250; L10 2/10; L3 0/3; 2.5 shots; 16.3 min; PP2
+12. Adrian Kempe LAK Points 66%; best -175 DK; edge +2.0; DK -175; FD -200; L10 6/10; L3 3/3; 3.0 shots; 20.7 min; PP1
+13. Samuel Helenius LAK Goals 9%; best +1200 DK; edge +1.8; DK +1200; FD +1100; L10 0/10; L3 0/3; 0.8 shots; 8.9 min; no PP
+14. Yan Kuznetsov CGY Goals 6%; best +2100 FD; edge +1.3; DK +1700; FD +2100; L10 0/10; L3 0/3; 1.4 shots; 17.6 min; no PP
+15. Adrian Kempe LAK Assists 44%; best +135 DK; edge +1.3; DK +135; FD +122; L10 5/10; L3 2/3; 3.0 shots; 20.7 min; PP1
+21 of 123 priced legs show a positive edge at the best book.
 
 ALL PRICED SKATERS (shots/game last 10, minutes, PP unit | G | P | A: chance, best price, edge, last 10)
 LAK
-- Adrian Kempe (3.0, 20.7, PP1): G 34% +170 FD -3.4, L10 2/10, L3 1/3 | P 64% -175 DK +0.1, L10 6/10, L3 3/3 | A 43% +135 DK +0.1, L10 5/10, L3 2/3
-- Artemi Panarin (3.1, 21.5, PP1): G 32% +190 DK -2.9, L10 5/10, L3 2/3 | P 61% -195 DK -5.5, L10 5/10, L3 2/3 | A 46% +100 DK -4.0, L10 2/10, L3 1/3
-- Alex Laferriere (1.8, 19.1, PP1): G 22% +240 DK -7.0, L10 2/10, L3 0/3 | P 45% -125 DK -10.3, L10 6/10, L3 2/3 | A 27% +165 DK -10.4, L10 4/10, L3 2/3
-- Erik Haula (1.9, 16.1, PP2): G 16% +500 DK -1.0, L10 1/10, L3 0/3 | P 41% +175 DK +4.4, L10 4/10, L3 1/3 | A 28% +300 DK +2.6, L10 3/10, L3 1/3
-- Trevor Moore (2.5, 16.3, PP2): G 18% +425 DK -1.3, L10 1/10, L3 0/3 | P 38% +190 DK +3.9, L10 3/10, L3 0/3 | A 23% +380 DK +2.6, L10 2/10, L3 0/3
-- Corey Perry (1.2, 11.6, PP2): G 20% +550 DK +4.2, L10 1/10, L3 0/3 | P 38% no price, L10 1/10, L3 0/3 | A 22% no price, L10 0/10, L3 0/3
-- Brandt Clarke (1.9, 19.6, PP1): G 11% +525 FD -5.5, L10 2/10, L3 1/3 | P 37% +100 DK -12.6, L10 5/10, L3 1/3 | A 30% +140 DK -11.4, L10 4/10, L3 1/3
-- Joel Armia (1.2, 13.6, no PP): G 17% +650 DK +3.7, L10 1/10, L3 0/3 | P 31% no price, L10 2/10, L3 1/3 | A 18% no price, L10 1/10, L3 1/3
-- Scott Laughton (1.7, 14.6, no PP): G 20% +575 FD +5.2, L10 2/10, L3 2/3 | P 31% no price, L10 3/10, L3 2/3 | A 13% no price, L10 1/10, L3 0/3
-- Drew Doughty (1.1, 21.0, PP2): G 7% +1400 DK +0.6, L10 0/10, L3 0/3 | P 28% +220 DK -3.0, L10 1/10, L3 0/3 | A 22% +275 DK -5.1, L10 1/10, L3 0/3
-- Joel Edmundson (1.5, 16.4, no PP): G 4% +2100 FD -0.9, L10 0/10, L3 0/3 | P 23% no price, L10 0/10, L3 0/3 | A 20% no price, L10 0/10, L3 0/3
-- Mikey Anderson (0.5, 17.6, no PP): G 6% +2000 DK +0.9, L10 0/10, L3 0/3 | P 22% no price, L10 1/10, L3 0/3 | A 19% no price, L10 1/10, L3 0/3
+- Adrian Kempe (3.0, 20.7, PP1): G 35% +170 FD -2.1, L10 2/10, L3 1/3 | P 66% -175 DK +2.0, L10 6/10, L3 3/3 | A 44% +135 DK +1.3, L10 5/10, L3 2/3
+- Artemi Panarin (3.1, 21.5, PP1): G 33% +190 DK -1.5, L10 5/10, L3 2/3 | P 63% -195 DK -3.6, L10 5/10, L3 2/3 | A 47% +100 DK -2.7, L10 2/10, L3 1/3
+- Alex Laferriere (1.8, 19.1, PP1): G 24% +240 DK -5.7, L10 2/10, L3 0/3 | P 47% -125 DK -8.4, L10 6/10, L3 2/3 | A 29% +165 DK -9.1, L10 4/10, L3 2/3
+- Erik Haula (1.9, 16.1, PP2): G 16% +500 DK -0.6, L10 1/10, L3 0/3 | P 41% +175 DK +4.7, L10 4/10, L3 1/3 | A 27% +300 DK +2.4, L10 3/10, L3 1/3
+- Trevor Moore (2.5, 16.3, PP2): G 18% +425 DK -0.8, L10 1/10, L3 0/3 | P 39% +190 DK +4.2, L10 3/10, L3 0/3 | A 23% +380 DK +2.4, L10 2/10, L3 0/3
+- Corey Perry (1.2, 11.6, PP2): G 20% +550 DK +4.2, L10 1/10, L3 0/3 | P 37% no price, L10 1/10, L3 0/3 | A 22% no price, L10 0/10, L3 0/3
+- Brandt Clarke (1.9, 19.6, PP1): G 10% +525 FD -6.3, L10 2/10, L3 1/3 | P 37% +100 DK -13.5, L10 5/10, L3 1/3 | A 30% +140 DK -11.8, L10 4/10, L3 1/3
+- Joel Armia (1.2, 13.6, no PP): G 17% +650 DK +3.7, L10 1/10, L3 0/3 | P 31% no price, L10 2/10, L3 1/3 | A 17% no price, L10 1/10, L3 1/3
+- Scott Laughton (1.7, 14.6, no PP): G 20% +575 FD +5.2, L10 2/10, L3 2/3 | P 30% no price, L10 3/10, L3 2/3 | A 12% no price, L10 1/10, L3 0/3
+- Drew Doughty (1.1, 21.0, PP2): G 6% +1400 DK -0.3, L10 0/10, L3 0/3 | P 27% +220 DK -3.9, L10 1/10, L3 0/3 | A 21% +275 DK -5.6, L10 1/10, L3 0/3
+- Joel Edmundson (1.5, 16.4, no PP): G 2% +2100 FD -2.1, L10 0/10, L3 0/3 | P 21% no price, L10 0/10, L3 0/3 | A 20% no price, L10 0/10, L3 0/3
+- Mikey Anderson (0.5, 17.6, no PP): G 5% +2000 DK -0.2, L10 0/10, L3 0/3 | P 20% no price, L10 1/10, L3 0/3 | A 18% no price, L10 1/10, L3 0/3
 - Samuel Helenius (0.8, 8.9, no PP): G 9% +1200 DK +1.8, L10 0/10, L3 0/3 | P 18% no price, L10 0/10, L3 0/3 | A 9% no price, L10 0/10, L3 0/3
-- Brian Dumoulin (0.7, 16.4, no PP): G 5% +2300 FD +0.4, L10 1/10, L3 0/3 | P 17% no price, L10 1/10, L3 0/3 | A 13% no price, L10 0/10, L3 0/3
+- Brian Dumoulin (0.7, 16.4, no PP): G 3% +2300 FD -0.7, L10 1/10, L3 0/3 | P 15% no price, L10 1/10, L3 0/3 | A 13% no price, L10 0/10, L3 0/3
 NYR
-- Mika Zibanejad (1.7, 20.8, PP1): G 30% +200 DK -2.9, L10 2/10, L3 1/3 | P 60% -180 DK -3.9, L10 6/10, L3 2/3 | A 41% +115 DK -5.5, L10 5/10, L3 2/3
-- Adam Fox (1.1, 21.9, PP1): G 12% +550 DK -3.0, L10 0/10, L3 0/3 | P 60% -185 DK -5.0, L10 8/10, L3 3/3 | A 55% -142 FD -4.1, L10 8/10, L3 3/3
-- J.T. Miller (1.1, 18.4, PP1): G 20% +275 FD -6.2, L10 3/10, L3 2/3 | P 54% -150 DK -6.4, L10 7/10, L3 2/3 | A 38% +122 FD -7.0, L10 5/10, L3 1/3
-- Pavel Dorofeyev (2.9, 17.5, PP1): G 32% +180 FD -3.7, L10 2/10, L3 1/3 | P 53% -128 FD -3.0, L10 5/10, L3 3/3 | A 28% +220 FD -3.1, L10 3/10, L3 2/3
-- Alexis Lafreniere (2.6, 19.1, PP1): G 26% +185 DK -8.8, L10 6/10, L3 2/3 | P 45% -145 DK -13.7, L10 9/10, L3 3/3 | A 33% +160 DK -5.5, L10 5/10, L3 1/3
-- Gabe Perreault (2.4, 16.5, PP2): G 19% +320 DK -4.9, L10 3/10, L3 1/3 | P 40% +125 DK -4.5, L10 4/10, L3 1/3 | A 27% +250 DK -1.3, L10 2/10, L3 0/3
-- Sean Durzi (0.8, 20.1, PP2): G 10% +900 DK +0.4, L10 1/10, L3 1/3 | P 38% +155 DK -1.0, L10 3/10, L3 1/3 | A 30% +200 DK -3.7, L10 2/10, L3 0/3
-- Will Cuylle (2.1, 16.1, PP2): G 20% +380 DK -1.2, L10 3/10, L3 1/3 | P 38% +140 DK -3.8, L10 5/10, L3 1/3 | A 22% +265 DK -4.9, L10 3/10, L3 1/3
+- Mika Zibanejad (1.7, 20.8, PP1): G 32% +200 DK -1.6, L10 2/10, L3 1/3 | P 62% -180 DK -2.1, L10 6/10, L3 2/3 | A 42% +115 DK -4.3, L10 5/10, L3 2/3
+- Adam Fox (1.1, 21.9, PP1): G 12% +550 DK -3.1, L10 0/10, L3 0/3 | P 60% -185 DK -5.1, L10 8/10, L3 3/3 | A 54% -142 FD -4.2, L10 8/10, L3 3/3
+- J.T. Miller (1.1, 18.4, PP1): G 22% +275 FD -4.7, L10 3/10, L3 2/3 | P 56% -150 DK -4.3, L10 7/10, L3 2/3 | A 39% +122 FD -5.6, L10 5/10, L3 1/3
+- Pavel Dorofeyev (2.9, 17.5, PP1): G 32% +180 FD -3.3, L10 2/10, L3 1/3 | P 53% -128 FD -2.8, L10 5/10, L3 3/3 | A 28% +220 FD -3.2, L10 3/10, L3 2/3
+- Alexis Lafreniere (2.6, 19.1, PP1): G 28% +185 DK -7.5, L10 6/10, L3 2/3 | P 47% -145 DK -11.9, L10 9/10, L3 3/3 | A 34% +160 DK -4.3, L10 5/10, L3 1/3
+- Gabe Perreault (2.4, 16.5, PP2): G 20% +320 DK -4.2, L10 3/10, L3 1/3 | P 40% +125 DK -4.1, L10 4/10, L3 1/3 | A 27% +250 DK -1.6, L10 2/10, L3 0/3
+- Will Cuylle (2.1, 16.1, PP2): G 20% +380 DK -0.8, L10 3/10, L3 1/3 | P 38% +140 DK -3.5, L10 5/10, L3 1/3 | A 22% +265 DK -5.1, L10 3/10, L3 1/3
+- Sean Durzi (0.8, 20.1, PP2): G 9% +900 DK -0.6, L10 1/10, L3 1/3 | P 37% +155 DK -2.0, L10 3/10, L3 1/3 | A 29% +200 DK -4.2, L10 2/10, L3 0/3
 - Eeli Tolvanen (1.1, 12.9, PP2): G 15% +500 DK -1.2, L10 1/10, L3 0/3 | P 35% no price, L10 2/10, L3 0/3 | A 23% no price, L10 1/10, L3 0/3
-- Vladislav Gavrikov (1.8, 21.3, no PP): G 16% +900 DK +5.9, L10 1/10, L3 0/3 | P 34% no price, L10 4/10, L3 1/3 | A 23% no price, L10 4/10, L3 1/3
 - Oliver Bjorkstrand (1.4, 10.6, PP2): G 15% +400 DK -4.8, L10 3/10, L3 2/3 | P 34% no price, L10 4/10, L3 3/3 | A 21% no price, L10 1/10, L3 1/3
-- Tye Kartye (1.8, 15.3, no PP): G 12% +490 FD -4.7, L10 2/10, L3 1/3 | P 32% no price, L10 5/10, L3 2/3 | A 24% no price, L10 3/10, L3 1/3
-- Noah Laba (0.9, 15.1, no PP): G 11% +750 DK -0.8, L10 0/10, L3 0/3 | P 29% no price, L10 2/10, L3 1/3 | A 20% no price, L10 2/10, L3 1/3
-- Braden Schneider (1.4, 17.4, no PP): G 3% +1300 DK -3.7, L10 0/10, L3 0/3 | P 21% no price, L10 2/10, L3 1/3 | A 19% no price, L10 2/10, L3 1/3
-- Marcus Pettersson (0.6, 20.6, no PP): G 4% +1700 FD -1.1, L10 0/10, L3 0/3 | P 19% no price, L10 1/10, L3 0/3 | A 16% no price, L10 1/10, L3 0/3
+- Vladislav Gavrikov (1.8, 21.3, no PP): G 15% +900 DK +5.1, L10 1/10, L3 0/3 | P 33% no price, L10 4/10, L3 1/3 | A 23% no price, L10 4/10, L3 1/3
+- Tye Kartye (1.8, 15.3, no PP): G 12% +490 FD -4.7, L10 2/10, L3 1/3 | P 31% no price, L10 5/10, L3 2/3 | A 23% no price, L10 3/10, L3 1/3
+- Noah Laba (0.9, 15.1, no PP): G 11% +750 DK -0.8, L10 0/10, L3 0/3 | P 28% no price, L10 2/10, L3 1/3 | A 20% no price, L10 2/10, L3 1/3
+- Braden Schneider (1.4, 17.4, no PP): G 2% +1300 DK -4.8, L10 0/10, L3 0/3 | P 19% no price, L10 2/10, L3 1/3 | A 18% no price, L10 2/10, L3 1/3
+- Marcus Pettersson (0.6, 20.6, no PP): G 4% +1700 FD -1.9, L10 0/10, L3 0/3 | P 18% no price, L10 1/10, L3 0/3 | A 15% no price, L10 1/10, L3 0/3
 TOR
+- William Nylander (2.9, 20.0, PP1): G 39% +160 FD +0.1, L10 4/10, L3 2/3 | P 69% no price, L10 7/10, L3 3/3 | A 52% -120 DK -2.4, L10 6/10, L3 2/3
+- Auston Matthews (2.9, 20.8, PP1): G 41% +125 DK -3.5, L10 7/10, L3 2/3 | P 62% no price, L10 8/10, L3 2/3 | A 41% -110 DK -11.5, L10 6/10, L3 1/3
+- Darren Raddysh (2.0, 23.7, PP1): G 21% +475 DK +4.1, L10 0/10, L3 0/3 | P 53% -125 DK -2.8, L10 5/10, L3 1/3 | A 42% +110 DK -5.4, L10 5/10, L3 1/3
+- Easton Cowan (2.4, 15.1, PP2): G 20% +300 DK -5.2, L10 4/10, L3 2/3 | P 44% +100 DK -5.8, L10 7/10, L3 3/3 | A 28% +195 DK -5.8, L10 4/10, L3 2/3
+- Jack Roslovic (3.0, 16.4, PP2): G 27% +250 DK -1.3, L10 5/10, L3 2/3 | P 44% -105 DK -7.7, L10 7/10, L3 3/3 | A 24% +205 DK -8.4, L10 5/10, L3 3/3
+- Morgan Rielly (1.4, 19.7, PP2): G 12% +800 FD +0.6, L10 0/10, L3 0/3 | P 38% +135 DK -4.1, L10 4/10, L3 3/3 | A 29% +175 DK -7.4, L10 4/10, L3 3/3
+- Oliver Ekman-Larsson (0.5, 17.7, PP2): G 8% +1100 FD +0.1, L10 0/10, L3 0/3 | P 33% no price, L10 1/10, L3 1/3 | A 29% no price, L10 1/10, L3 1/3
+- Teddy Blueger (1.2, 12.8, no PP): G 18% +700 DK +5.8, L10 1/10, L3 1/3 | P 30% no price, L10 1/10, L3 1/3 | A 16% no price, L10 1/10, L3 1/3
+- Nick Paul (1.0, 16.2, no PP): G 15% +425 DK -4.1, L10 2/10, L3 0/3 | P 30% +145 DK -11.0, L10 3/10, L3 0/3 | A 17% +260 DK -11.0, L10 1/10, L3 0/3
+- Jake McCabe (1.3, 19.1, no PP): G 6% +1700 DK +0.1, L10 0/10, L3 0/3 | P 27% +270 DK +0.0, L10 2/10, L3 2/3 | A 23% +310 DK -1.9, L10 2/10, L3 2/3
+- Troy Stecher (1.1, 19.3, no PP): G 7% +1200 DK -1.0, L10 2/10, L3 2/3 | P 22% no price, L10 3/10, L3 2/3 | A 16% no price, L10 1/10, L3 0/3
+- Colton Sissons (0.9, 15.1, no PP): G 11% +650 DK -2.5, L10 1/10, L3 0/3 | P 21% +210 DK -11.7, L10 4/10, L3 1/3 | A 11% +350 DK -11.0, L10 3/10, L3 1/3
+- Brandon Duhaime (0.9, 11.8, no PP): G 6% +800 DK -4.8, L10 1/10, L3 1/3 | P 13% no price, L10 2/10, L3 2/3 | A 9% no price, L10 2/10, L3 2/3
 CGY
+- Matvei Gridin (2.0, 15.0, PP1): G 17% +290 FD -8.8, L10 2/10, L3 2/3 | P 44% +100 DK -5.6, L10 4/10, L3 2/3 | A 33% +195 DK -0.5, L10 3/10, L3 1/3
+- Matt Coronato (2.4, 17.5, PP1): G 21% +225 DK -9.7, L10 2/10, L3 0/3 | P 44% -140 FD -14.3, L10 6/10, L3 3/3 | A 29% +162 FD -8.7, L10 4/10, L3 3/3
+- Joel Farabee (2.4, 18.5, PP1): G 23% +265 DK -4.9, L10 2/10, L3 2/3 | P 44% -125 DK -11.8, L10 7/10, L3 3/3 | A 27% +155 DK -11.9, L10 6/10, L3 2/3
+- Morgan Frost (2.1, 15.2, PP1): G 25% +240 FD -4.3, L10 3/10, L3 1/3 | P 42% -130 FD -14.1, L10 6/10, L3 3/3 | A 24% +158 FD -15.2, L10 4/10, L3 3/3
+- Mikael Backlund (2.6, 17.7, no PP): G 18% +360 FD -3.7, L10 1/10, L3 0/3 | P 40% -108 FD -11.9, L10 3/10, L3 1/3 | A 27% +158 FD -11.3, L10 2/10, L3 1/3
+- Ryan Strome (2.1, 14.0, PP2): G 16% +460 FD -1.7, L10 2/10, L3 1/3 | P 35% +135 DK -7.4, L10 4/10, L3 1/3 | A 22% +270 DK -4.8, L10 2/10, L3 0/3
+- Yegor Sharangovich (1.7, 16.3, PP2): G 18% +300 FD -6.5, L10 2/10, L3 1/3 | P 33% +105 DK -16.1, L10 4/10, L3 1/3 | A 17% +220 DK -14.5, L10 2/10, L3 0/3
+- Simon Nemec (1.6, 21.3, PP2): G 11% +800 FD +0.1, L10 0/10, L3 0/3 | P 29% +164 FD -8.5, L10 2/10, L3 0/3 | A 18% +230 FD -11.9, L10 2/10, L3 0/3
+- Adam Klapka (1.5, 11.1, PP2): G 10% +550 FD -5.7, L10 2/10, L3 0/3 | P 24% no price, L10 4/10, L3 2/3 | A 16% no price, L10 2/10, L3 2/3
+- Kevin Bahl (1.0, 22.2, no PP): G 7% +2500 DK +3.0, L10 1/10, L3 0/3 | P 24% +200 DK -9.8, L10 2/10, L3 1/3 | A 17% +215 DK -14.6, L10 1/10, L3 1/3
+- Zayne Parekh (1.8, 17.4, PP1): G 10% +650 FD -3.7, L10 1/10, L3 1/3 | P 23% +125 DK -21.4, L10 3/10, L3 2/3 | A 15% +185 DK -19.6, L10 2/10, L3 1/3
+- Jake Middleton (1.2, 18.0, no PP): G 4% +2000 FD -1.1, L10 1/10, L3 0/3 | P 21% no price, L10 2/10, L3 1/3 | A 18% no price, L10 1/10, L3 1/3
+- Martin Pospisil (1.6, 13.6, no PP): G 9% +625 FD -5.2, L10 1/10, L3 0/3 | P 20% no price, L10 2/10, L3 0/3 | A 12% no price, L10 1/10, L3 0/3
+- Yan Kuznetsov (1.4, 17.6, no PP): G 6% +2100 FD +1.3, L10 0/10, L3 0/3 | P 19% no price, L10 1/10, L3 0/3 | A 14% no price, L10 1/10, L3 0/3
+- Zach Whitecloud (1.0, 20.6, no PP): G 3% +2000 FD -1.9, L10 0/10, L3 0/3 | P 18% no price, L10 0/10, L3 0/3 | A 16% no price, L10 0/10, L3 0/3
 DET
 EDM
 
 DATA CHECKS
 Games with no prices: none
-Teams with no lineup: TOR, CGY, DET, EDM
+Teams with no lineup: DET, EDM
 Priced players missing from the projected lineups:
-- Mikael Backlund CGY (not on any lineup)
-- Oliver Ekmanlarsson TOR (not on any lineup)
 - Ben Chiarot DET (not on any lineup)
 - Mats Zuccarello LAK (listed injured, upper body)
 - Justin Faulk DET (not on any lineup)
 - Zach Hyman EDM (not on any lineup)
 - Ryan Nugenthopkins EDM (not on any lineup)
-- Ryan Strome CGY (not on any lineup)
 - Connor Murphy EDM (not on any lineup)
-- Morgan Rielly TOR (not on any lineup)
-- Colton Sissons TOR (not on any lineup)
-- Teddy Blueger TOR (not on any lineup)
-- Jake Mccabe TOR (not on any lineup)
-- Nick Paul TOR (not on any lineup)
 - Andrew Copp DET (not on any lineup)
 - Jt Compher DET (not on any lineup)
-- Dakota Mermis TOR (not on any lineup)
 - Leon Draisaitl EDM (not on any lineup)
-- William Nylander TOR (not on any lineup)
 - Dylan Larkin DET (not on any lineup)
 - Kasperi Kapanen EDM (not on any lineup)
 - Jake Walman EDM (not on any lineup)
 - Viktor Arvidsson DET (not on any lineup)
-- Jake Middleton CGY (not on any lineup)
-- Darren Raddysh TOR (not on any lineup)
 - Connor Mcdavid EDM (not on any lineup)
 - Keegan Kolesar DET (not on any lineup)
-- Jack Roslovic TOR (not on any lineup)
 - Mathieu Joseph EDM (not on any lineup)
 - Ryan Shea EDM (not on any lineup)
-- Auston Matthews TOR (not on any lineup)
 - Alex Debrincat DET (not on any lineup)
 - Max Jones EDM (not on any lineup)
-- Troy Stecher TOR (not on any lineup)
-- Brandon Duhaime TOR (not on any lineup)
-- Zack Macewen TOR (not on any lineup)
-- Vinni Lettieri TOR (not on any lineup)
 - Michael Rasmussen DET (not on any lineup)
-- Morgan Frost CGY (not on any lineup)
-- Ben Jones CGY (not on any lineup)
-- Zach Whitecloud CGY (not on any lineup)
-- Joel Farabee CGY (not on any lineup)
+- Ben Jones CGY (listed scratched)
 - Evan Bouchard EDM (not on any lineup)
 - Ty Emberson EDM (not on any lineup)
-- Kevin Bahl CGY (not on any lineup)
-- Martin Pospisil CGY (not on any lineup)
-- Yegor Sharangovich CGY (not on any lineup)
 - Moritz Seider DET (not on any lineup)
 - Albert Johansson DET (not on any lineup)
 - Vasily Podkolzin EDM (not on any lineup)
 - Lucas Raymond DET (not on any lineup)
-- Yan Kuznetsov CGY (not on any lineup)
 - Shakir Mukhamadullin EDM (not on any lineup)
 - William Wallinder DET (not on any lineup)
-- Matt Coronato CGY (not on any lineup)
 - Colton Dach EDM (not on any lineup)
-- Simon Nemec CGY (not on any lineup)
-- Adam Klapka CGY (not on any lineup)
 - Jared Wright LAK (listed scratched)
-- Easton Cowan TOR (not on any lineup)
 - Nate Danielson DET (not on any lineup)
-- Aydar Suniev CGY (not on any lineup)
 - Emmitt Finnie DET (not on any lineup)
-- Zayne Parekh CGY (not on any lineup)
 - Michael Brandseggnygard DET (not on any lineup)
-- Matvei Gridin CGY (not on any lineup)
-- Maxim Tsyplakov CGY (not on any lineup)
+- Maxim Tsyplakov CGY (listed scratched)
 Unconfirmed goalies:
 - LAK: Darcy Kuemper (expected, not confirmed)
-- TOR: no goalie listed
-- CGY: no goalie listed
 - DET: no goalie listed
 - EDM: no goalie listed
