@@ -161,6 +161,13 @@ z: |2| or more is unlikely to be luck. Many buckets are tested, so a lone 2-3 ca
 |---|---|---|---|---|---|---|---|
 | yes | 157 | 49.0 | 46.1 | +3.0 | +0.8 | +1.9 (+0.4), n=135 | +9.9 (+0.9), n=22 |
 
+### RHYTHM: regular hit/miss run lengths in last 20, what the pattern says next
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| pattern says HIT | 1586 | 33.8 | 33.6 | +0.2 | +0.2 | -0.4 (-0.3), n=1303 | +3.0 (+1.1), n=283 |
+| (all regular-rhythm players) | 2762 | 36.3 | 35.6 | +0.8 | +0.9 | +0.0 (+0.0), n=2253 | +3.9 (+1.9), n=509 |
+| pattern says MISS | 1176 | 39.7 | 38.3 | +1.5 | +1.1 | +0.6 (+0.4), n=950 | +5.1 (+1.7), n=226 |
+
 ### high volume (5+ attempts or 3+ shots a game) by goals in last 10
 | bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
 |---|---|---|---|---|---|---|---|
@@ -306,6 +313,13 @@ z: |2| or more is unlikely to be luck. Many buckets are tested, so a lone 2-3 ca
 |---|---|---|---|---|---|---|---|
 | last game hit | 1565 | 35.1 | 34.9 | +0.2 | +0.2 | +0.5 (+0.4), n=1324 | -1.4 (-0.5), n=241 |
 | last game MISS | 1895 | 32.7 | 33.7 | -1.0 | -0.9 | -0.9 (-0.8), n=1582 | -1.3 (-0.5), n=313 |
+
+### RHYTHM: regular hit/miss run lengths in last 20, what the pattern says next
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| pattern says HIT | 1729 | 26.5 | 25.3 | +1.2 | +1.1 | +0.7 (+0.6), n=1452 | +3.5 (+1.4), n=277 |
+| (all regular-rhythm players) | 2791 | 26.5 | 26.0 | +0.5 | +0.6 | +0.0 (+0.0), n=2303 | +2.7 (+1.4), n=488 |
+| pattern says MISS | 1062 | 26.6 | 27.2 | -0.7 | -0.5 | -1.2 (-0.8), n=851 | +1.6 (+0.5), n=211 |
 
 ### forwards: games with 4+ attempts, last 10
 | bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
@@ -453,6 +467,13 @@ z: |2| or more is unlikely to be luck. Many buckets are tested, so a lone 2-3 ca
 | bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
 |---|---|---|---|---|---|---|---|
 | venue form weak | 2987 | 21.8 | 21.6 | +0.1 | +0.2 | +0.7 (+0.9), n=2509 | -2.9 (-1.6), n=478 |
+
+### RHYTHM: regular hit/miss run lengths in last 20, what the pattern says next
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| pattern says HIT | 1479 | 20.3 | 20.0 | +0.2 | +0.2 | -0.2 (-0.1), n=1239 | +2.3 (+0.9), n=240 |
+| (all regular-rhythm players) | 2418 | 19.8 | 20.1 | -0.3 | -0.4 | -0.6 (-0.7), n=2048 | +1.0 (+0.5), n=370 |
+| pattern says MISS | 939 | 19.1 | 20.3 | -1.2 | -1.0 | -1.2 (-0.9), n=809 | -1.5 (-0.4), n=130 |
 
 ### USER METHOD: L10 below the bar but same-venue L10 at the bar
 | bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
