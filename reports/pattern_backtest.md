@@ -55,6 +55,24 @@ z: |2| or more is unlikely to be luck. Many buckets are tested, so a lone 2-3 ca
 | no | 31720 | 35.6 | 35.6 | -0.0 | -0.1 | +0.1 (+0.3), n=26138 | -0.5 (-0.8), n=5582 |
 | yes | 2792 | 52.4 | 53.3 | -0.9 | -1.0 | -1.0 (-1.0), n=2365 | -0.2 (-0.1), n=427 |
 
+### recency: last-20 rate minus 60-game baseline
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| L20 above (+3 to +8) | 6208 | 42.1 | 41.6 | +0.5 | +0.9 | +0.7 (+1.0), n=5251 | -0.1 (-0.1), n=957 |
+| L20 well above baseline (+8 or more) | 5773 | 47.2 | 46.5 | +0.7 | +1.2 | +1.1 (+1.6), n=4767 | -1.0 (-0.6), n=1006 |
+| L20 near baseline | 9928 | 35.2 | 35.9 | -0.6 | -1.3 | -0.5 (-1.1), n=8261 | -1.0 (-0.9), n=1667 |
+| L20 below (-3 to -8) | 7203 | 30.8 | 31.2 | -0.4 | -0.7 | -0.6 (-1.0), n=5898 | +0.6 (+0.5), n=1305 |
+| L20 well below (-8 or less) | 5400 | 31.5 | 31.8 | -0.4 | -0.6 | -0.2 (-0.4), n=4326 | -1.0 (-0.7), n=1074 |
+
+### recency: last-10 rate minus 60-game baseline
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| L10 well above baseline (+15 or more) | 4577 | 44.7 | 43.9 | +0.7 | +1.0 | +0.7 (+0.9), n=3812 | +0.8 (+0.5), n=765 |
+| L10 above (+5 to +15) | 7040 | 40.1 | 40.0 | +0.1 | +0.2 | -0.2 (-0.4), n=5897 | +1.7 (+1.3), n=1143 |
+| L10 near baseline | 10009 | 35.9 | 36.2 | -0.3 | -0.7 | +0.2 (+0.3), n=8263 | -2.6 (-2.4), n=1746 |
+| L10 below (-5 to -15) | 8597 | 33.1 | 33.1 | -0.0 | -0.1 | +0.0 (+0.1), n=7025 | -0.4 (-0.3), n=1572 |
+| L10 well below (-15 or less) | 4289 | 33.8 | 34.7 | -0.8 | -1.2 | -0.9 (-1.2), n=3506 | -0.6 (-0.3), n=783 |
+
 ### current hit run (games in a row with a hit)
 | bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
 |---|---|---|---|---|---|---|---|
@@ -75,6 +93,15 @@ z: |2| or more is unlikely to be luck. Many buckets are tested, so a lone 2-3 ca
 | last game hit | 2283 | 45.6 | 43.2 | +2.5 | +2.5 | +2.5 (+2.2), n=1880 | +2.4 (+1.0), n=403 |
 | last game MISS | 2482 | 38.9 | 41.3 | -2.4 | -2.5 | -2.4 (-2.3), n=2040 | -2.2 (-1.0), n=442 |
 
+### long-history venue edge (all prior same-venue games, 30+ there, vs all prior games)
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| venue same (within 4) | 5977 | 38.9 | 38.5 | +0.4 | +0.6 | +0.9 (+1.1), n=3326 | -0.2 (-0.3), n=2651 |
+| venue a bit better (+4 to +10) | 2198 | 38.4 | 38.8 | -0.4 | -0.4 | +0.2 (+0.2), n=1249 | -1.1 (-0.8), n=949 |
+| venue a bit worse (-4 to -10) | 2192 | 38.0 | 39.2 | -1.1 | -1.1 | -2.1 (-1.6), n=1251 | +0.1 (+0.1), n=941 |
+| venue much worse (-10 or more) | 359 | 47.6 | 43.2 | +4.5 | +1.8 | +6.7 (+2.1), n=233 | +0.4 (+0.1), n=126 |
+| venue much better (+10 or more) | 339 | 43.4 | 42.9 | +0.5 | +0.2 | -2.3 (-0.7), n=201 | +4.5 (+1.1), n=138 |
+
 ### forwards: games with 4+ attempts, last 10
 | bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
 |---|---|---|---|---|---|---|---|
@@ -89,6 +116,19 @@ z: |2| or more is unlikely to be luck. Many buckets are tested, so a lone 2-3 ca
 | 0-4 of 10 | 16688 | 35.4 | 36.4 | -1.0 | -2.9 | -1.1 (-2.6), n=13647 | -0.9 (-1.1), n=3041 |
 | 5-7 of 10 | 4474 | 54.7 | 52.1 | +2.7 | +3.6 | +2.8 (+3.5), n=3791 | +1.8 (+1.0), n=683 |
 | 8-10 of 10 games with 5+ attempts | 1551 | 62.5 | 58.8 | +3.8 | +3.1 | +3.5 (+2.6), n=1284 | +5.1 (+1.7), n=267 |
+
+### mid volume by goals in last 10
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| mid volume, 0-1 goals in last 10 | 1391 | 45.5 | 42.2 | +3.3 | +2.5 | +2.6 (+1.8), n=1191 | +7.7 (+2.2), n=200 |
+| mid volume, 2+ goals in last 10 | 4392 | 49.7 | 48.6 | +1.1 | +1.5 | +1.6 (+2.1), n=3716 | -1.9 (-1.0), n=676 |
+
+### high volume (5+ attempts or 3+ shots a game) by goals in last 10
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| high volume, 3+ goals in last 10 (hot) | 3043 | 61.5 | 57.9 | +3.6 | +4.1 | +3.4 (+3.5), n=2567 | +4.6 (+2.1), n=476 |
+| high volume, 2 goals in last 10 | 771 | 55.0 | 52.1 | +2.9 | +1.6 | +3.5 (+1.8), n=659 | -0.6 (-0.1), n=112 |
+| high volume, 0-1 goals in last 10 (sleeper) | 401 | 54.6 | 49.6 | +5.1 | +2.1 | +6.0 (+2.2), n=312 | +1.6 (+0.3), n=89 |
 
 ### steady players: straight misses right now
 | bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
@@ -149,6 +189,24 @@ z: |2| or more is unlikely to be luck. Many buckets are tested, so a lone 2-3 ca
 | no | 33493 | 25.4 | 25.3 | +0.1 | +0.3 | +0.1 (+0.6), n=27649 | -0.3 (-0.5), n=5844 |
 | yes | 1019 | 38.0 | 40.8 | -2.8 | -1.9 | -4.1 (-2.5), n=854 | +3.5 (+0.9), n=165 |
 
+### recency: last-20 rate minus 60-game baseline
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| L20 above (+3 to +8) | 6043 | 29.4 | 28.7 | +0.7 | +1.2 | +0.7 (+1.1), n=4985 | +0.6 (+0.4), n=1058 |
+| L20 well above baseline (+8 or more) | 5089 | 35.0 | 34.7 | +0.3 | +0.5 | +0.5 (+0.6), n=4192 | -0.4 (-0.3), n=897 |
+| L20 near baseline | 10893 | 23.3 | 23.9 | -0.6 | -1.5 | -0.6 (-1.3), n=9168 | -0.8 (-0.8), n=1725 |
+| L20 below (-3 to -8) | 7973 | 22.0 | 21.6 | +0.4 | +0.9 | +0.4 (+0.9), n=6625 | +0.4 (+0.3), n=1348 |
+| L20 well below (-8 or less) | 4514 | 23.0 | 23.6 | -0.7 | -1.1 | -0.7 (-1.0), n=3533 | -0.4 (-0.3), n=981 |
+
+### recency: last-10 rate minus 60-game baseline
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| L10 above (+5 to +15) | 6894 | 28.1 | 27.9 | +0.2 | +0.4 | +0.5 (+0.8), n=5747 | -1.1 (-0.9), n=1147 |
+| L10 near baseline | 10843 | 24.0 | 24.3 | -0.3 | -0.8 | -0.3 (-0.7), n=8988 | -0.6 (-0.6), n=1855 |
+| L10 below (-5 to -15) | 9446 | 22.9 | 22.6 | +0.3 | +0.6 | +0.4 (+0.9), n=7681 | -0.5 (-0.5), n=1765 |
+| L10 well below (-15 or less) | 3275 | 26.0 | 26.7 | -0.6 | -0.9 | -1.5 (-1.8), n=2729 | +3.5 (+1.9), n=546 |
+| L10 well above baseline (+15 or more) | 4054 | 32.9 | 32.6 | +0.3 | +0.4 | +0.4 (+0.4), n=3358 | +0.2 (+0.1), n=696 |
+
 ### current hit run (games in a row with a hit)
 | bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
 |---|---|---|---|---|---|---|---|
@@ -162,6 +220,15 @@ z: |2| or more is unlikely to be luck. Many buckets are tested, so a lone 2-3 ca
 | bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
 |---|---|---|---|---|---|---|---|
 | all | 34512 | 25.7 | 25.8 | -0.0 | -0.1 | +0.0 (+0.1), n=28503 | -0.2 (-0.3), n=6009 |
+
+### long-history venue edge (all prior same-venue games, 30+ there, vs all prior games)
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| venue same (within 4) | 6685 | 25.8 | 25.6 | +0.2 | +0.4 | +0.0 (+0.0), n=3651 | +0.5 (+0.6), n=3034 |
+| venue a bit better (+4 to +10) | 1994 | 27.7 | 29.0 | -1.3 | -1.3 | -1.0 (-0.8), n=1168 | -1.6 (-1.1), n=826 |
+| venue a bit worse (-4 to -10) | 1981 | 30.4 | 29.4 | +0.9 | +0.9 | +1.3 (+1.0), n=1167 | +0.4 (+0.3), n=814 |
+| venue much better (+10 or more) | 190 | 32.6 | 33.6 | -0.9 | -0.3 | -2.3 (-0.6), n=127 | +1.9 (+0.3), n=63 |
+| venue much worse (-10 or more) | 215 | 38.1 | 33.9 | +4.3 | +1.3 | +5.0 (+1.3), n=147 | +2.6 (+0.5), n=68 |
 
 ### alternating (5+ flips in last 8)
 | bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
@@ -183,6 +250,19 @@ z: |2| or more is unlikely to be luck. Many buckets are tested, so a lone 2-3 ca
 | 0-4 of 10 | 16688 | 22.8 | 23.5 | -0.7 | -2.1 | -0.7 (-1.9), n=13647 | -0.6 (-0.8), n=3041 |
 | 5-7 of 10 | 4474 | 36.5 | 34.2 | +2.3 | +3.3 | +2.4 (+3.1), n=3791 | +1.8 (+1.0), n=683 |
 | 8-10 of 10 games with 5+ attempts | 1551 | 42.6 | 39.7 | +2.9 | +2.4 | +2.4 (+1.8), n=1284 | +5.2 (+1.8), n=267 |
+
+### mid volume by goals in last 10
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| mid volume, 0-1 goals in last 10 | 1391 | 30.8 | 28.6 | +2.2 | +1.9 | +1.7 (+1.3), n=1191 | +5.4 (+1.7), n=200 |
+| mid volume, 2+ goals in last 10 | 4392 | 33.4 | 31.5 | +1.9 | +2.8 | +2.5 (+3.4), n=3716 | -1.2 (-0.7), n=676 |
+
+### high volume (5+ attempts or 3+ shots a game) by goals in last 10
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| high volume, 3+ goals in last 10 (hot) | 3043 | 42.0 | 38.1 | +3.9 | +4.6 | +3.6 (+3.8), n=2567 | +5.6 (+2.6), n=476 |
+| high volume, 2 goals in last 10 | 771 | 36.6 | 35.3 | +1.3 | +0.8 | +1.4 (+0.8), n=659 | +0.6 (+0.1), n=112 |
+| high volume, 0-1 goals in last 10 (sleeper) | 401 | 34.4 | 33.7 | +0.7 | +0.3 | +1.5 (+0.6), n=312 | -2.1 (-0.4), n=89 |
 
 ### steady players: straight misses right now
 | bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
@@ -249,6 +329,24 @@ z: |2| or more is unlikely to be luck. Many buckets are tested, so a lone 2-3 ca
 | no | 34182 | 16.3 | 16.1 | +0.1 | +0.8 | +0.3 (+1.4), n=28218 | -0.5 (-1.1), n=5964 |
 | yes | 330 | 27.0 | 31.9 | -4.9 | -2.0 | -6.0 (-2.2), n=285 | +1.6 (+0.2), n=45 |
 
+### recency: last-20 rate minus 60-game baseline
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| L20 near baseline | 14880 | 13.8 | 13.7 | +0.2 | +0.6 | +0.2 (+0.6), n=12497 | +0.0 (+0.0), n=2383 |
+| L20 above (+3 to +8) | 6028 | 18.7 | 19.4 | -0.6 | -1.3 | -0.5 (-0.9), n=5041 | -1.4 (-1.2), n=987 |
+| L20 well above baseline (+8 or more) | 3475 | 24.6 | 25.0 | -0.4 | -0.6 | -0.4 (-0.5), n=2864 | -0.6 (-0.4), n=611 |
+| L20 below (-3 to -8) | 7774 | 14.9 | 14.2 | +0.8 | +2.0 | +0.9 (+2.2), n=6368 | +0.1 (+0.1), n=1406 |
+| L20 well below (-8 or less) | 2355 | 19.5 | 19.2 | +0.2 | +0.3 | +1.1 (+1.2), n=1733 | -2.1 (-1.3), n=622 |
+
+### recency: last-10 rate minus 60-game baseline
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| L10 near baseline | 14220 | 14.1 | 13.7 | +0.4 | +1.5 | +0.5 (+1.7), n=11745 | -0.1 (-0.1), n=2475 |
+| L10 above (+5 to +15) | 6603 | 18.4 | 18.4 | -0.0 | -0.1 | -0.0 (-0.0), n=5605 | -0.2 (-0.1), n=998 |
+| L10 well above baseline (+15 or more) | 2761 | 22.8 | 24.0 | -1.2 | -1.5 | -1.1 (-1.3), n=2302 | -1.7 (-0.9), n=459 |
+| L10 below (-5 to -15) | 9381 | 15.3 | 15.3 | +0.0 | +0.1 | +0.3 (+0.9), n=7605 | -1.3 (-1.6), n=1776 |
+| L10 well below (-15 or less) | 1547 | 24.1 | 23.5 | +0.6 | +0.5 | +0.4 (+0.3), n=1246 | +1.4 (+0.6), n=301 |
+
 ### current hit run (games in a row with a hit)
 | bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
 |---|---|---|---|---|---|---|---|
@@ -262,6 +360,15 @@ z: |2| or more is unlikely to be luck. Many buckets are tested, so a lone 2-3 ca
 | bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
 |---|---|---|---|---|---|---|---|
 | all | 34512 | 16.4 | 16.3 | +0.1 | +0.5 | +0.2 (+1.1), n=28503 | -0.5 (-1.1), n=6009 |
+
+### long-history venue edge (all prior same-venue games, 30+ there, vs all prior games)
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| venue same (within 4) | 7292 | 15.9 | 15.6 | +0.3 | +0.8 | +0.7 (+1.4), n=4021 | -0.2 (-0.3), n=3271 |
+| venue a bit better (+4 to +10) | 1753 | 20.8 | 20.6 | +0.2 | +0.2 | +0.2 (+0.2), n=1014 | +0.2 (+0.2), n=739 |
+| venue a bit worse (-4 to -10) | 1748 | 19.0 | 20.9 | -1.9 | -2.0 | -1.2 (-0.9), n=1047 | -2.9 (-1.9), n=701 |
+| venue much better (+10 or more) | 137 | 24.8 | 23.6 | +1.2 | +0.3 | +0.7 (+0.2), n=87 | +2.2 (+0.4), n=50 |
+| venue much worse (-10 or more) | 135 | 31.9 | 24.0 | +7.8 | +2.2 | +7.4 (+1.7), n=91 | +8.6 (+1.4), n=44 |
 
 ### forwards: games with 4+ attempts, last 10
 | bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
@@ -278,11 +385,24 @@ z: |2| or more is unlikely to be luck. Many buckets are tested, so a lone 2-3 ca
 | 5-7 of 10 | 4474 | 29.2 | 27.7 | +1.5 | +2.3 | +1.8 (+2.5), n=3791 | +0.1 (+0.0), n=683 |
 | 8-10 of 10 games with 5+ attempts | 1551 | 35.6 | 33.4 | +2.1 | +1.8 | +2.1 (+1.6), n=1284 | +2.4 (+0.8), n=267 |
 
+### mid volume by goals in last 10
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| mid volume, 0-1 goals in last 10 | 1391 | 21.4 | 19.1 | +2.3 | +2.2 | +2.1 (+1.9), n=1191 | +3.4 (+1.2), n=200 |
+| mid volume, 2+ goals in last 10 | 4392 | 25.0 | 25.3 | -0.3 | -0.4 | +0.1 (+0.1), n=3716 | -2.2 (-1.3), n=676 |
+
 ### alternating (5+ flips in last 8)
 | bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
 |---|---|---|---|---|---|---|---|
 | last game hit | 772 | 26.4 | 28.1 | -1.7 | -1.0 | -2.3 (-1.3), n=652 | +1.7 (+0.4), n=120 |
 | last game MISS | 1030 | 24.3 | 26.8 | -2.6 | -1.9 | -2.7 (-1.9), n=869 | -1.7 (-0.5), n=161 |
+
+### high volume (5+ attempts or 3+ shots a game) by goals in last 10
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| high volume, 3+ goals in last 10 (hot) | 3043 | 34.3 | 33.2 | +1.0 | +1.2 | +1.0 (+1.1), n=2567 | +1.2 (+0.6), n=476 |
+| high volume, 2 goals in last 10 | 771 | 29.3 | 26.5 | +2.8 | +1.8 | +4.2 (+2.5), n=659 | -5.8 (-1.4), n=112 |
+| high volume, 0-1 goals in last 10 (sleeper) | 401 | 30.4 | 24.1 | +6.3 | +3.0 | +5.4 (+2.3), n=312 | +9.5 (+2.0), n=89 |
 
 ### steady players: straight misses right now
 | bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
