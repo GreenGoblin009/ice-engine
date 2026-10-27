@@ -190,6 +190,25 @@ def run(prev, cur):
                         if 3.5 <= a10 < 5 and 1.5 <= s10 < 3:
                             b = "mid volume, 0-1 goals in last 10" if gl10 <= 1 else "mid volume, 2+ goals in last 10"
                             add(col, "mid volume by goals in last 10", b, season, hit, base)
+                # the user's combined read: L10 form + same-venue L10 form + catching him after an off night
+                thr = {"points": 6, "assists": 4, "goals": 3}[col]
+                l10h = sum(v[i - 10:i])
+                sv10 = [v[j] for j in range(i - 1, -1, -1) if rs[j]["home_road"] == row["home_road"]][:10]
+                if len(sv10) >= 8:
+                    vh = sum(sv10) * 10 / len(sv10)
+                    last1, last2 = v[i - 1], v[i - 2]
+                    off = (not last1)  # missed last game (1 or 2 straight misses)
+                    if l10h >= thr:
+                        if vh >= thr:
+                            add(col, "USER METHOD: L10 form and same-venue L10 form both at the bar (points 6+, assists 4+, goals 3+)",
+                                "both at the bar, hit last game" if not off else "both at the bar, missed last game (off night)", season, hit, base)
+                            if off and not (not last1 and not last2 and v[i - 3] == 0):
+                                add(col, "USER METHOD: both at the bar and 1-2 straight misses (off night or two)", "yes", season, hit, base)
+                        else:
+                            add(col, "USER METHOD: L10 form at the bar but same-venue L10 below the bar", "venue form weak", season, hit, base)
+                    else:
+                        if vh >= thr:
+                            add(col, "USER METHOD: L10 below the bar but same-venue L10 at the bar", "venue form strong only", season, hit, base)
                 # how long hot runs last: current hit run length (0 if last game missed)
                 run_now = 0
                 for vv in reversed(v[:i]):
