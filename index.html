@@ -1008,6 +1008,7 @@ async function renderForm(){
     if(r.offNight) t.push(`<b class="a">MISSED ${r.now}, STEADY</b>`);
     if(r.sleeper) t.push('<b class="bl">SLEEPER</b>');
     if(r.v20.length>=3) t.push(`${vn} ${r.v20h}/${r.v20.length}`);
+    if(r.l.slot_number) t.push(`<b>${r.l.slot==='pair'?'D PAIR':'LINE'} ${r.l.slot_number}</b>`);
     if(r.l.pp_unit===1) t.push('<b class="bl">PP1</b>'); else if(r.l.pp_unit===2) t.push('PP2');
     const sv=[]; if(r.shpg!=null) sv.push(`${r.shpg.toFixed(1)}sog`); if(r.atpg!=null) sv.push(`${r.atpg.toFixed(1)}att (4+ att in ${r.at4}/${r.at})`);
     if(sv.length) t.push(`<span class="${(r.shpg>=3||r.at4>=9)?'bl':''}">${sv.join(', ')}</span>`);
