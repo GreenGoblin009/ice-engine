@@ -276,6 +276,7 @@ function fmtOdds(o){ return (o>0?'+':'')+Math.round(o); }
 function fairOdds(p){ if(p<=0) return null; if(p>=1) return -10000; return p>=0.5 ? -Math.round(p/(1-p)*100) : Math.round((1-p)/p*100); }
 function impliedProb(o){ return o<0 ? (-o)/((-o)+100) : 100/(o+100); }
 function fmtDate(d){ const [y,m,dd]=d.split('-'); return `${+m}/${+dd}`; }
+function matchup(g){ return g?`${g.away} @ ${g.home} · ${fmtTime(g.start_time_utc)}`:''; }
 function fmtTime(iso){ try{ return new Date(iso).toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit',timeZone:'America/New_York'})+' ET'; }catch(e){ return ''; } }
 
 async function sb(path){
@@ -1018,7 +1019,7 @@ async function renderForm(){
     const bars=r.seq.slice().reverse().map(v=>`<i class="${v?'y':''}"></i>`).join('');
     return `<div class="prow" data-pid="${r.l.player_id}" data-stat="${F.stat}" data-line="0.5"${pc?` data-odds="${pc.price}"`:''}>
       <div><div class="pname">${esc(r.l.player_name)}</div>
-        <div class="pmeta">${esc(r.l.team)} ${esc(opp)} · ${pc?`<b style="color:var(--text)">${fmtOdds(pc.price)}</b> ${esc(bookShort(pc.book))} · break-even ${Math.round(be*100)}%`:'no line yet'}</div>
+        <div class="pmeta"><b style="color:var(--text)">${esc(matchup(r.gm))}</b> · ${pc?`<b style="color:var(--text)">${fmtOdds(pc.price)}</b> ${esc(bookShort(pc.book))} · break-even ${Math.round(be*100)}%`:'no line yet'}</div>
         <div class="fbar">${bars}</div>
         ${why.join('')}</div>
       <div style="text-align:right;min-width:74px;"><div class="pbig" style="color:${col}">${r10}%</div><div class="psub">LAST 10</div><div class="muted small" style="margin-top:4px;">L20 ${r20}%</div><div class="muted small">model ${Math.round(r.adj*100)}%</div></div></div>`;
@@ -1093,7 +1094,7 @@ async function renderLeaders(){
   const total=rows.length; if(L.team==='ALL') rows=rows.slice(0,50);
   const list=rows.length?rows.map(r=>`<div class="prow lrow" data-pid="${r.x.player_id}" data-stat="${L.stat}" data-line="${L.line}" data-split="${L.split}" data-vs="${L.vs==='opp'?oppOf(r.x.team).replace(/^(vs|@) /,''):''}" data-win="${L.window==='Season'?'Season':L.window}"${r.pr?` data-odds="${r.pr.price}"`:''}>
       <div><div class="pname">${esc(r.x.player_name)}${profTag(r.prof)}</div>
-        <div class="pmeta">${esc(r.x.team)} ${esc(oppOf(r.x.team))} · avg ${r.h.avg.toFixed(2)}${r.pr?` · <b style="color:var(--text)">${fmtOdds(r.pr.price)}</b> ${esc(bookShort(r.pr.book))}`:''}</div>
+        <div class="pmeta"><b style="color:var(--text)">${esc(matchup(gs.find(g=>g.away===r.x.team||g.home===r.x.team)))}</b> · avg ${r.h.avg.toFixed(2)}${r.pr?` · <b style="color:var(--text)">${fmtOdds(r.pr.price)}</b> ${esc(bookShort(r.pr.book))}`:''}</div>
         ${profStrip(r.prof)}</div>
       <div><div class="pbig" style="color:${r.h.pct>=0.5?'var(--green)':'var(--text)'}">${Math.round(r.h.pct*100)}%</div><div class="psub">${r.h.over}/${r.h.n} · o${L.line} ${esc(L.stat)}</div></div><div class="dots${dn>10?' tight':''}" title="This season, oldest to newest">${r.l5r.map((o,i)=>{ const dt=o.d.slice(5).replace('-','/').replace(/^0/,'').replace(/\/0/,'/'); return (i>0&&o.old&&!r.l5r[i-1].old?'<div class="sep"></div>':'')+`<div class="g ${o.v>L.line?'h':'m'}${o.old?' old':''}" title="${dt}"><b>${o.v}</b><span>${dt}</span></div>`; }).join('')}${r.l5r.some(o=>o.old)?'<div class="yr">dim = earlier season</div>':''}</div></div>`).join(''):'<div class="empty">No players match.</div>';
   const note=`<details class="more" style="margin:0 0 10px;"><summary>Today's lineups, regular season. Tap for details.</summary><div class="muted small" style="margin-top:6px;">Everyone in today's projected lineups. Regular season only. Boxes match the timeframe you pick: the last 5, 10 or 20 regular-season games (Season and All-time show up to 20; no preseason; with Head to head they are the last games against tonight's opponent). With 20 boxes the dates are hidden, tap a box to see its date, oldest on the left, newest on the right, with the stat and date. Green = went over. The five boxes under each name: SCORES = how often he scores (this and last season), SHOOT % = share of his shots that go in, SHOTS/G and ATT/G = shots on goal and attempts per game, GOALS L10 = goals in his last 10. SNIPER = scores a lot on few shots; VOLUME = 3+ shots a game. Tap a player for the full game log.${L.team==='ALL'&&total>50?` Showing the top 50 of ${total}.`:''}</div></details>`;
@@ -1216,7 +1217,7 @@ async function renderHot(){
     const opp=r.tp?(r.tp.g.away===r.l.team?'@ '+r.tp.g.home:'vs '+r.tp.g.away):'';
     return `<div class="prow" data-pid="${r.l.player_id}" data-stat="${H.stat}" data-line="0.5"${r.pc?` data-odds="${r.pc.price}"`:''}>
       <div><div class="pname">${esc(r.l.player_name)}</div>
-        <div class="pmeta">${esc(r.l.team)} ${esc(opp)} · ${r.pc?`<b style="color:var(--text)">${fmtOdds(r.pc.price)}</b> ${esc(bookShort(r.pc.book))}`:'no price yet'}${r.tp?` · team ${r.tp.proj.toFixed(2)} goals`:''}</div>
+        <div class="pmeta"><b style="color:var(--text)">${esc(matchup(r.tp&&r.tp.g))}</b> · ${r.pc?`<b style="color:var(--text)">${fmtOdds(r.pc.price)}</b> ${esc(bookShort(r.pc.book))}`:'no price yet'}${r.tp?` · team ${r.tp.proj.toFixed(2)} goals`:''}</div>
         <div class="pmeta">Role-adjusted chance ${Math.round(r.adj*100)}% (vs ${Math.round(r.pr*100)}% for ${ROLE_NAME[r.bucket]||'similar players'})${r.be!=null?` · break-even ${Math.round(r.be*100)}%`:''}</div>
         <div class="hotwhy">${why.join('')}</div></div>
       <div><div class="pbig" style="color:var(--text)">${Math.round(r.adj*100)}%</div><div class="psub">CHANCE</div>${r.edge!=null?`<div class="psub" style="margin-top:4px;color:${r.edge>=0?'var(--green)':'var(--red)'}">${r.edge>=0?'+':''}${r.edge.toFixed(1)} edge</div>`:''}</div></div>`;
