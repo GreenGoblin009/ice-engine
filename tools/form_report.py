@@ -159,6 +159,10 @@ def build(day):
             venue = [x for x in season if x["home_road"] == ("H" if home else "R")]
             v_n = len(venue)
             v_h = sum(1 for x in venue if x[col] > 0.5)
+            hr = "H" if home else "R"
+            l20v = [x for x in lg[:20] if x["home_road"] == hr and x[col] is not None]
+            lv_n, lv_h = len(l20v), sum(1 for x in l20v if x[col] > 0.5)
+            s_n, s_h = len(season), sum(1 for x in season if x[col] > 0.5)
             imp = sr.implied(best)
             pool, allr = pools[col]
             n_all, o_all = sr.hits(lg, col)
@@ -186,17 +190,18 @@ def build(day):
                 name=p["name"], team=tm, opp=opp, home=home, when=sr.fmt_et(g["start_time_utc"]),
                 pos=p.get("pos") or "F", price=best, dk=books.get("DraftKings"), fd=books.get("FanDuel"),
                 chance=chance, h10=h10, n10=len(l10), h20=h20, n20=len(l20), h3=h3, longest=longest, now=now,
-                shpg=shpg, bars=bar_text(l20), v=(v_h, v_n), ck=ck, imp=imp))
+                shpg=shpg, bars=bar_text(l20), v=(v_h, v_n), lv=(lv_h, lv_n), sea=(s_h, s_n), ck=ck, imp=imp))
 
     def head(r):
         at = "vs" if r["home"] else "@"
         ch = f"{r['chance'] * 100:.0f}%" if r["chance"] is not None else "n/a"
         sh = f"{r['shpg']:.1f}" if r["shpg"] is not None else "-"
-        v = f" {'H' if r['home'] else 'A'} {r['v'][0]}/{r['v'][1]}" if r["v"][1] else ""
+        ven = 'home' if r['home'] else 'away'
+        v = (f" | {ven} season {r['v'][0]}/{r['v'][1]}, {ven} in L20 {r['lv'][0]}/{r['lv'][1]}")
         return (f"{r['name']} {r['team']} {at} {r['opp']} {r['when']} | {sr.fmt_odds(r['price'])} "
                 f"(DK {sr.fmt_odds(r['dk']) if r['dk'] is not None else '-'}, FD {sr.fmt_odds(r['fd']) if r['fd'] is not None else '-'}) | "
-                f"model {ch} | L10 {r['h10']}/{r['n10']} L20 {r['h20']}/{r['n20']} | max miss run {r['longest']}, "
-                f"missed last {r['now']} | shots L10 {sh}{v if v else ''} | {r['bars']}")
+                f"model {ch} | L10 {r['h10']}/{r['n10']} L20 {r['h20']}/{r['n20']} season {r['sea'][0]}/{r['sea'][1]} | max miss run {r['longest']}, "
+                f"missed last {r['now']} | shots L10 {sh}{v} | {r['bars']}")
 
     for stat, col, _m in STATS:
         rows = results[col]
