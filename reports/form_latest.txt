@@ -285,5 +285,11 @@ Every player shows tonight's opponent and start time so the game can be checked.
 - [shots] Jonathan Lekkerimäki VAN @ ANA 10:00 PM ET | +350 (DK +300, FD +350) | model 21% | L10 3/10 L20 5/20 season 4/13 | max miss run 6, missed last 1 | shots L5 1.6 L10 1.6, attempts L10 2.6 | away season 1/7, away in L20 1/9 | ....X..X..X......XX.
 - [venue] Taylor Hall CAR vs BOS 8:00 PM ET | +330 (DK +330, FD +310) | model 21% | L10 3/10 L20 5/20 season 2/8 | max miss run 8, missed last 2 | shots L5 2.6 L10 2.0, attempts L10 3.6 | home season 0/4, home in L20 1/9 | ........XXX....X.X..
 
+=== GOAL SLEEPERS: forwards with 5+ attempts or 3+ shots a game but 0-1 goals in last 10 (3) ===
+Backtest (two seasons, n=401): these forwards scored 30.4% vs 24.1% baseline (+6.3, z +3.0). Volume without results.
+- Cutter Gauthier ANA vs VAN 10:00 PM ET | +125 (DK +125, FD +125) | model 38% | L10 1/10 L20 7/20 season 1/10 | max miss run 8, missed last 8 | shots L5 3.4 L10 3.4, attempts L10 7.3 | home season 1/3, home in L20 4/7 | XX...XXX.X.X........
+- Timo Meier NJD @ DAL 8:00 PM ET | +310 (DK +300, FD +310) | model 28% | L10 1/10 L20 3/20 season 1/11 | max miss run 12, missed last 3 | shots L5 4.2 L10 4.2, attempts L10 7.1 | away season 1/3, away in L20 2/7 | ..XX............X...
+- Dylan Cozens OTT @ VGK 10:00 PM ET | +290 (DK +260, FD +290) | model 27% | L10 1/10 L20 4/20 season 1/12 | max miss run 11, missed last 0 | shots L5 2.6 L10 2.1, attempts L10 5.0 | away season 0/5, away in L20 0/7 | X.X....X...........X
+
 Checks: price (points -130 or better; assists/goals last-20 rate at or above the price), hit rate (L10 and L20 at or above the price), steady (points/assists never missed more than 2 in a row in last 20), shots (F 2.0+, D 1.5+ per game, last 10), venue (tonight's home/away rate not 20+ points under his season rate, 4+ games), streak (points not 3 of 3, assists not 2+ of last 3).
 Lineups and power-play units are NOT in this report: check the slate report once they post.
