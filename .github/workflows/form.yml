@@ -1,4 +1,4 @@
-name: Bars report
+name: Form Sheet
 
 on:
   workflow_dispatch:
@@ -10,7 +10,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: bars-report
+  group: form-sheet
   cancel-in-progress: false
 
 jobs:
@@ -27,17 +27,17 @@ jobs:
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
-        run: python tools/bars_report.py --out reports/bars_latest.txt
+        run: python tools/form_report.py --out reports/form_latest.txt
       - name: Commit the report if it changed
         run: |
-          git add reports/bars_latest.txt 2>/dev/null || true
+          git add reports/form_latest.txt 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "Report unchanged; nothing to commit."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898341+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Bars report $(TZ=America/New_York date '+%Y-%m-%d %H:%M') ET"
+          git commit -m "Form Sheet $(TZ=America/New_York date '+%Y-%m-%d %H:%M') ET"
           for attempt in 1 2 3; do
             git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
             sleep $((attempt * 10))

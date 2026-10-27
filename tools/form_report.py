@@ -1,7 +1,7 @@
 """
-Ice Engine - Bars Report
+Ice Engine - Form Sheet
 ========================
-Reads every priced skater's game-by-game "bars" (did he get a point / goal /
+Reads every priced skater's game-by-game "form" (did he get a point / goal /
 assist in each of his last 20 regular-season games) and lists who lines up
 for tonight, using the checks the user uses by hand:
 
@@ -20,7 +20,7 @@ report) so the bars and the stats sit side by side. It only reads (Supabase)
 and never writes to the database.
 
 Usage:
-  python tools/bars_report.py --out reports/bars_latest.txt [--date YYYY-MM-DD]
+  python tools/form_report.py --out reports/form_latest.txt [--date YYYY-MM-DD]
 
 Needs SUPABASE_URL and SUPABASE_KEY in the environment.
 """
@@ -84,7 +84,7 @@ def build(day):
     slate = sorted([g for g in games if g["game_date"] == day_s], key=lambda g: (g["start_time_utc"] or "", g["id"]))
     lines = []
     out = lines.append
-    out(f"ICE ENGINE BARS REPORT  {day_s}")
+    out(f"ICE ENGINE FORM SHEET  {day_s}")
     if not slate:
         out("No regular-season games on this date.")
         return "\n".join(lines) + "\n"
