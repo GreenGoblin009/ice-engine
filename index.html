@@ -902,7 +902,7 @@ const LEAD_LINES={Points:[0.5,1.5],Goals:[0.5],Assists:[0.5,1.5],Shots:[1.5,2.5,
 S.lead=S.lead||{stat:'Assists',window:'Last 10',team:'ALL',sort:'rate',line:0.5};
   S.lead.split=S.lead.split||'Home+Away'; S.lead.vs=S.lead.vs||'any';
 /* ---- Form: consistent players with good odds (hidden until unlocked at #form) ---- */
-S.form=S.form||{stat:'Points',price:'safe',min:3,sort:'pattern',mode:'atleast',cyc:'on'};
+S.form=S.form||{stat:'Points',price:'safe',min:3,sort:'pattern',mode:'hits',cyc:'on'};
 async function formSkaters(gs){
   let sk=S.lineups.filter(l=>l.status==='projected'&&(l.slot==='line'||l.slot==='pair')&&l.player_id);
   const haveTm=new Set(sk.map(x=>x.team)); const missTm=[...new Set(gs.flatMap(g=>[g.away,g.home]))].filter(t=>!haveTm.has(t));
@@ -941,8 +941,8 @@ async function renderForm(){
   const controls=`<div class="lgrid">
     <div><label>Stat</label><select id="fStat">${['Points','Goals','Assists'].map(x=>`<option ${x===F.stat?'selected':''}>${x}</option>`).join('')}</select></div>
     <div><label>Price</label><select id="fPrice">${[['safe','−130 or better'],['any','Any price'],['plus','+100 or longer'],['plus150','+150 or longer']].map(([v,t])=>`<option value="${v}" ${v===F.price?'selected':''}>${t}</option>`).join('')}</select></div>
-    <div><label>Last 10 games</label><select id="fMode">${[['atleast','At least N hits'],['hits','Exactly N hits'],['misses','Exactly N misses']].map(([v,t])=>`<option value="${v}" ${v===F.mode?'selected':''}>${t}</option>`).join('')}</select></div>
-    <div><label>N</label><select id="fMin">${[0,1,2,3,4,5,6,7,8,9,10].map(x=>`<option value="${x}" ${x===F.min?'selected':''}>${x}</option>`).join('')}</select></div>
+    <div><label>Last 10 games: show</label><select id="fMode">${[['hits','Hits'],['misses','Misses']].map(([v,t])=>`<option value="${v}" ${v===F.mode?'selected':''}>${t}</option>`).join('')}</select></div>
+    <div><label>How many</label><select id="fMin">${[0,1,2,3,4,5,6,7,8,9,10].map(x=>`<option value="${x}" ${x===F.min?'selected':''}>${x}</option>`).join('')}</select></div>
     <div><label>Show</label><select id="fCyc">${[['on','Pattern players only'],['off','All players']].map(([v,t])=>`<option value="${v}" ${v===F.cyc?'selected':''}>${t}</option>`).join('')}</select></div>
     <div><label>Rank by</label><select id="fSort">${[['pattern','Best pattern'],['consistent','Most consistent'],['chance','Highest chance'],['price','Best price']].map(([v,t])=>`<option value="${v}" ${v===F.sort?'selected':''}>${t}</option>`).join('')}</select></div></div>`;
   const wire=()=>{ $('fStat').onchange=e=>{F.stat=e.target.value;renderForm();}; $('fPrice').onchange=e=>{F.price=e.target.value;renderForm();}; $('fMin').onchange=e=>{F.min=+e.target.value;renderForm();}; $('fMode').onchange=e=>{F.mode=e.target.value;renderForm();}; $('fCyc').onchange=e=>{F.cyc=e.target.value;renderForm();}; $('fSort').onchange=e=>{F.sort=e.target.value;renderForm();}; };
@@ -992,7 +992,7 @@ async function renderForm(){
     const offNight=now>=1&&now<=2&&restLongest<=2&&l10>=3;
     return {...r,pa,pv,seq,hitRun,l10,l10n,l20,now,longest,steady,offNight,home,gm,vSeason,vS,v20,v20h,shpg,atpg,at4,at:at.length,sleeper,pc,adj};
   });
-  rows=rows.filter(r=>r.pc&&(F.mode==='atleast'?r.l10>=F.min:F.mode==='hits'?r.l10===F.min:(r.l10n-r.l10)===F.min));
+  rows=rows.filter(r=>r.pc&&(F.mode==='hits'?r.l10===F.min:(r.l10n-r.l10)===F.min));
   rows=rows.filter(r=>r.hitRun<3&&(F.cyc==='off'||(r.pa&&r.pa.next===1)));   // no big green streaks; only a clear red/green rhythm whose next step is a hit
   if(F.price==='safe') rows=rows.filter(r=>r.pc.price>=-130);
   else if(F.price==='plus') rows=rows.filter(r=>r.pc.price>=100);
@@ -1023,7 +1023,7 @@ async function renderForm(){
       <div><div class="pbig" style="color:var(--text)">${Math.round(r.adj*100)}%</div><div class="psub">CHANCE</div></div></div>`;
   }).join(''):'<div class="empty">No players match this filter. Lower the minimum hits or widen the price.</div>';
   const banner=prevTeams.length?`<div class="muted small" style="margin:0 0 10px;">Lineups not posted yet for ${esc(prevTeams.join(', '))}. Showing each of those teams' most recent lineup, so a scratch or line change is possible.</div>`:'';
-  const note=`<details class="more" style="margin:0 0 10px;"><summary>Consistent players with good odds. Tap for details.</summary><div class="muted small" style="margin-top:6px;">Only players whose last 20 squares (oldest on the left, green = got it) show a clear repeating red/green cycle, where repeating it exactly gives a hit tonight. Players on a green streak of 3+ are hidden. CYCLE % = how closely his last 20 match the cycle. HOME/AWAY CYCLE AGREES = his games at tonight's venue alone repeat a cycle that also says hit. Last 10 games lets you pick at least N hits, exactly N hits or exactly N misses, so you can set 3 hits next to 3 misses and compare; Show: All players turns the cycle requirement off. Also needs a price inside your filter. HOME/AWAY x/y = his hits at tonight's venue in last 20. In a two-season test the cycle read did not beat a player's normal hit rate, so treat it as a way to find players to review, not a lock. SLEEPER = a forward with lots of shots or attempts but 0-1 goals in his last 10. Consistency is what good players already show, so it is priced in: use it with the price, shots and power play, not alone. Showing ${rows.length} of ${total}.</div></details>`;
+  const note=`<details class="more" style="margin:0 0 10px;"><summary>Consistent players with good odds. Tap for details.</summary><div class="muted small" style="margin-top:6px;">Only players whose last 20 squares (oldest on the left, green = got it) show a clear repeating red/green cycle, where repeating it exactly gives a hit tonight. Players on a green streak of 3+ are hidden. CYCLE % = how closely his last 20 match the cycle. HOME/AWAY CYCLE AGREES = his games at tonight's venue alone repeat a cycle that also says hit. Last 10 games: pick Hits or Misses, then how many (0-10), to see players with exactly that many in their last 10, so you can set 3 hits next to 3 misses and compare; Show: All players turns the cycle requirement off. Also needs a price inside your filter. HOME/AWAY x/y = his hits at tonight's venue in last 20. In a two-season test the cycle read did not beat a player's normal hit rate, so treat it as a way to find players to review, not a lock. SLEEPER = a forward with lots of shots or attempts but 0-1 goals in his last 10. Consistency is what good players already show, so it is priced in: use it with the price, shots and power play, not alone. Showing ${rows.length} of ${total}.</div></details>`;
   $('view').innerHTML=controls+banner+note+list; wire();
 }
 
