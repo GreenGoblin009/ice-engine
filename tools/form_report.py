@@ -34,7 +34,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."
 import ice_engine_daily_pull as engine  # noqa: E402
 import slate_report as sr  # noqa: E402
 
-COLS = ("player_id,game_id,season,game_date,team,opponent,home_road,goals,assists,points,sog,toi")
+COLS = ("player_id,game_id,season,game_date,team,opponent,home_road,goals,assists,points,sog,shot_attempts,toi")
 STATS = [("Points", "points", "player_points"),
          ("Assists", "assists", "player_assists"),
          ("Goals", "goals", "player_goal_scorer_anytime")]
@@ -136,6 +136,12 @@ def build(day):
         opp = g["home"] if not home else g["away"]
         sh = [x["sog"] for x in lg[:10] if x["sog"] is not None]
         shpg = sum(sh) / len(sh) if sh else None
+        sh5 = [x["sog"] for x in lg[:5] if x["sog"] is not None]
+        sog5 = sum(sh5) / len(sh5) if sh5 else None
+        at = [x["shot_attempts"] for x in lg[:10] if x.get("shot_attempts") is not None]
+        att10 = sum(at) / len(at) if at else None
+        sz = [x["sog"] for x in lg if x["season"] == cur and x["sog"] is not None]
+        sog_season = sum(sz) / len(sz) if sz else None
         is_d = p.get("pos") == "D"
         for stat, col, market in STATS:
             best = None
@@ -157,6 +163,12 @@ def build(day):
             season = [x for x in lg if x["season"] == cur and x[col] is not None]
             s_rate = sum(1 for x in season if x[col] > 0.5) / len(season) if season else None
             venue = [x for x in season if x["home_road"] == ("H" if home else "R")]
+            v20 = [x for x in lg[:20] if x[col] is not None and x["home_road"] == ("H" if home else "R")]
+            v20_h = sum(1 for x in v20 if x[col] > 0.5)
+            s_h = sum(1 for x in season if x[col] > 0.5)
+            g10 = sum(1 for x in lg[:10] if x["goals"] and x["goals"] > 0.5)
+            heat = (col == "goals" and shpg is not None and g10 >= 3 and shpg >= 3.0
+                    and sog5 is not None and sog5 >= (sog_season or 0))
             v_n = len(venue)
             v_h = sum(1 for x in venue if x[col] > 0.5)
             hr = "H" if home else "R"
