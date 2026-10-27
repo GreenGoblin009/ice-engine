@@ -98,11 +98,12 @@ def parse_report(txt):
         rest = m.group(5)
         d = dict(name=m.group(1), team=team, pp=m.group(4), mins=float(m.group(3)), shots=float(m.group(2)))
         for seg in rest.split(" | "):
-            x = re.match(r"([GPA]) (\d+)%.*?L10 (\d+)/10(?:, L3 (\d)/3)?", seg.strip())
+            x = re.match(r"([GPA]) (\d+)%(?: ([+-]\d+) \w+)?.*?L10 (\d+)/10(?:, L3 (\d)/3)?", seg.strip())
             if x:
                 d[x.group(1)] = int(x.group(2)) / 100
-                d[x.group(1) + "_l10"] = int(x.group(3))
-                d[x.group(1) + "_l3"] = int(x.group(4)) if x.group(4) is not None else ""
+                d[x.group(1) + "_price"] = int(x.group(3)) if x.group(3) is not None else ""
+                d[x.group(1) + "_l10"] = int(x.group(4))
+                d[x.group(1) + "_l3"] = int(x.group(5)) if x.group(5) is not None else ""
         skaters.append(d)
     return games, skaters
 
@@ -169,7 +170,7 @@ def main():
                 if key in s:
                     rows.append(dict(date=date, name=s["name"], team=s["team"], mk=key,
                                      p=s[key], pp=s["pp"], mins=s["mins"], shots=s.get("shots", ""),
-                                     l10=s.get(key + "_l10", ""), l3=s.get(key + "_l3", ""),
+                                     l10=s.get(key + "_l10", ""), l3=s.get(key + "_l3", ""), price=s.get(key + "_price", ""),
                                      game_total=gt.get(s["team"], ""), team_proj=tp.get(s["team"], ""),
                                      hit=1 if p.get(stat, 0) >= 1 else 0))
         notes.append(f"{date}: {len(skaters)} skaters in the report, {miss} not matched to a final box score")
@@ -194,7 +195,7 @@ def score(rs):
 
 def write(rows, grows, notes):
     with open("reports/scoreboard_rows.csv", "w", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=["date", "name", "team", "mk", "p", "pp", "mins", "shots", "l10", "l3", "game_total", "team_proj", "hit"])
+        w = csv.DictWriter(f, fieldnames=["date", "name", "team", "mk", "p", "pp", "mins", "shots", "l10", "l3", "game_total", "team_proj", "hit", "price"])
         w.writeheader()
         w.writerows(rows)
     L = ["# Projection scoreboard", "",
