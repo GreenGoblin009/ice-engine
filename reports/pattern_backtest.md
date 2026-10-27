@@ -135,6 +135,14 @@ z: |2| or more is unlikely to be luck. Many buckets are tested, so a lone 2-3 ca
 | venue much worse (-10 or more) | 359 | 47.6 | 43.2 | +4.5 | +1.8 | +6.7 (+2.1), n=233 | +0.4 (+0.1), n=126 |
 | venue much better (+10 or more) | 339 | 43.4 | 42.9 | +0.5 | +0.2 | -2.3 (-0.7), n=201 | +4.5 (+1.1), n=138 |
 
+### RHYTHM: all-games hit/miss rhythm repeats (period 2-6, 80%+ match in last 20)
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| predicts HIT | 841 | 37.6 | 39.1 | -1.5 | -1.0 | -3.1 (-1.8), n=692 | +5.9 (+1.6), n=149 |
+| predicts MISS | 1211 | 30.3 | 32.9 | -2.6 | -2.0 | -2.8 (-1.9), n=986 | -1.7 (-0.6), n=225 |
+| 90%+ match, predicts HIT | 59 | 49.2 | 44.4 | +4.7 | +0.8 | +2.5 (+0.4), n=46 | +12.5 (+1.0), n=13 |
+| 90%+ match, predicts MISS | 93 | 24.7 | 32.1 | -7.4 | -1.6 | -12.5 (-2.4), n=74 | +12.8 (+1.2), n=19 |
+
 ### forwards: games with 4+ attempts, last 10
 | bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
 |---|---|---|---|---|---|---|---|
@@ -175,12 +183,25 @@ z: |2| or more is unlikely to be luck. Many buckets are tested, so a lone 2-3 ca
 | high volume, 2 goals in last 10 | 771 | 55.0 | 52.1 | +2.9 | +1.6 | +3.5 (+1.8), n=659 | -0.6 (-0.1), n=112 |
 | high volume, 0-1 goals in last 10 (sleeper) | 401 | 54.6 | 49.6 | +5.1 | +2.1 | +6.0 (+2.2), n=312 | +1.6 (+0.3), n=89 |
 
+### RHYTHM: same-venue rhythm (last 12-20 games at tonight's venue)
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| predicts HIT | 853 | 41.3 | 40.0 | +1.2 | +0.8 | +1.2 (+0.7), n=697 | +1.6 (+0.4), n=156 |
+| predicts MISS | 1161 | 33.0 | 34.5 | -1.5 | -1.1 | -1.4 (-0.9), n=952 | -2.1 (-0.7), n=209 |
+
 ### steady players: straight misses right now
 | bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
 |---|---|---|---|---|---|---|---|
 | 2 | 569 | 54.0 | 52.7 | +1.3 | +0.6 | +2.4 (+1.1), n=486 | -5.4 (-1.0), n=83 |
 | 0 | 2833 | 60.1 | 59.6 | +0.6 | +0.6 | +1.0 (+1.0), n=2373 | -1.6 (-0.7), n=460 |
 | 1 | 1211 | 56.7 | 56.3 | +0.5 | +0.3 | -0.9 (-0.6), n=992 | +6.5 (+2.0), n=219 |
+
+### RHYTHM: all-games and same-venue rhythms agree
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| both predict MISS | 78 | 30.8 | 30.8 | -0.0 | -0.0 | +6.6 (+1.1), n=56 | -16.8 (-1.7), n=22 |
+| they disagree | 71 | 31.0 | 35.4 | -4.5 | -0.8 | -1.1 (-0.2), n=59 | -20.9 (-1.6), n=12 |
+| both predict HIT | 35 | 45.7 | 47.2 | -1.4 | -0.2 | -0.9 (-0.1), n=27 | -3.4 (-0.2), n=8 |
 
 ## Assists
 
@@ -299,6 +320,12 @@ z: |2| or more is unlikely to be luck. Many buckets are tested, so a lone 2-3 ca
 |---|---|---|---|---|---|---|---|
 | venue form strong only | 3189 | 30.3 | 30.4 | -0.1 | -0.1 | -0.1 (-0.1), n=2599 | +0.1 (+0.0), n=590 |
 
+### RHYTHM: same-venue rhythm (last 12-20 games at tonight's venue)
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| predicts MISS | 1246 | 24.6 | 25.5 | -0.8 | -0.7 | -1.2 (-0.9), n=1030 | +0.8 (+0.3), n=216 |
+| predicts HIT | 743 | 27.1 | 27.2 | -0.1 | -0.1 | -0.1 (-0.0), n=618 | -0.4 (-0.1), n=125 |
+
 ### long-history venue edge (all prior same-venue games, 30+ there, vs all prior games)
 | bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
 |---|---|---|---|---|---|---|---|
@@ -313,6 +340,14 @@ z: |2| or more is unlikely to be luck. Many buckets are tested, so a lone 2-3 ca
 |---|---|---|---|---|---|---|---|
 | last game hit | 1565 | 35.1 | 34.9 | +0.2 | +0.2 | +0.5 (+0.4), n=1324 | -1.4 (-0.5), n=241 |
 | last game MISS | 1895 | 32.7 | 33.7 | -1.0 | -0.9 | -0.9 (-0.8), n=1582 | -1.3 (-0.5), n=313 |
+
+### RHYTHM: all-games hit/miss rhythm repeats (period 2-6, 80%+ match in last 20)
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| predicts MISS | 1318 | 25.6 | 25.6 | +0.0 | +0.0 | +0.1 (+0.1), n=1086 | -0.3 (-0.1), n=232 |
+| predicts HIT | 762 | 27.8 | 27.2 | +0.6 | +0.4 | -0.2 (-0.1), n=630 | +4.6 (+1.2), n=132 |
+| 90%+ match, predicts HIT | 24 | 45.8 | 36.7 | +9.2 | +1.0 | +12.4 (+1.3), n=22 | -26.4 (-0.8), n=2 |
+| 90%+ match, predicts MISS | 48 | 33.3 | 29.3 | +4.0 | +0.6 | +1.6 (+0.2), n=45 | +40.5 (+1.6), n=3 |
 
 ### RHYTHM: regular hit/miss run lengths in last 20, what the pattern says next
 | bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
@@ -360,6 +395,13 @@ z: |2| or more is unlikely to be luck. Many buckets are tested, so a lone 2-3 ca
 | 0 | 697 | 48.8 | 49.2 | -0.4 | -0.2 | -0.3 (-0.1), n=577 | -0.7 (-0.2), n=120 |
 | 1 | 405 | 47.4 | 46.4 | +1.0 | +0.4 | +3.4 (+1.2), n=331 | -9.4 (-1.6), n=74 |
 | 2 | 240 | 45.8 | 43.4 | +2.4 | +0.8 | +2.2 (+0.6), n=188 | +3.3 (+0.5), n=52 |
+
+### RHYTHM: all-games and same-venue rhythms agree
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| both predict MISS | 67 | 26.9 | 24.0 | +2.8 | +0.5 | +3.1 (+0.5), n=55 | +1.4 (+0.1), n=12 |
+| they disagree | 61 | 29.5 | 24.7 | +4.8 | +0.9 | +4.5 (+0.7), n=46 | +5.7 (+0.5), n=15 |
+| both predict HIT | 18 | 27.8 | 24.0 | +3.8 | +0.4 | +3.8 (+0.4), n=18 | - |
 
 ## Goals
 
@@ -463,6 +505,14 @@ z: |2| or more is unlikely to be luck. Many buckets are tested, so a lone 2-3 ca
 | both at the bar, hit last game | 2347 | 28.6 | 30.4 | -1.8 | -1.9 | -1.9 (-1.8), n=1983 | -1.4 (-0.6), n=364 |
 | both at the bar, missed last game (off night) | 3394 | 27.8 | 29.0 | -1.2 | -1.6 | -1.9 (-2.3), n=2846 | +2.5 (+1.3), n=548 |
 
+### RHYTHM: all-games hit/miss rhythm repeats (period 2-6, 80%+ match in last 20)
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| predicts MISS | 1002 | 20.3 | 21.3 | -1.1 | -0.8 | -1.3 (-0.9), n=826 | -0.3 (-0.1), n=176 |
+| predicts HIT | 562 | 23.0 | 22.3 | +0.6 | +0.4 | +1.4 (+0.7), n=467 | -3.0 (-0.7), n=95 |
+| 90%+ match, predicts HIT | 32 | 34.4 | 20.5 | +13.9 | +2.0 | +15.2 (+2.0), n=28 | +5.0 (+0.2), n=4 |
+| 90%+ match, predicts MISS | 70 | 17.1 | 21.0 | -3.8 | -0.8 | -6.3 (-1.2), n=56 | +6.0 (+0.5), n=14 |
+
 ### USER METHOD: L10 form at the bar but same-venue L10 below the bar
 | bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
 |---|---|---|---|---|---|---|---|
@@ -479,6 +529,19 @@ z: |2| or more is unlikely to be luck. Many buckets are tested, so a lone 2-3 ca
 | bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
 |---|---|---|---|---|---|---|---|
 | venue form strong only | 3075 | 21.8 | 22.0 | -0.3 | -0.3 | +0.7 (+0.9), n=2488 | -4.4 (-2.6), n=587 |
+
+### RHYTHM: same-venue rhythm (last 12-20 games at tonight's venue)
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| predicts MISS | 967 | 22.8 | 22.4 | +0.4 | +0.3 | +0.7 (+0.5), n=779 | -1.1 (-0.4), n=188 |
+| predicts HIT | 517 | 22.6 | 22.3 | +0.4 | +0.2 | +1.3 (+0.7), n=406 | -3.2 (-0.8), n=111 |
+
+### RHYTHM: all-games and same-venue rhythms agree
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| both predict MISS | 69 | 24.6 | 22.1 | +2.6 | +0.5 | +5.5 (+1.0), n=50 | -5.0 (-0.5), n=19 |
+| they disagree | 58 | 24.1 | 22.1 | +2.1 | +0.4 | +2.7 (+0.4), n=45 | -0.1 (-0.0), n=13 |
+| both predict HIT | 21 | 33.3 | 22.4 | +10.9 | +1.2 | +13.1 (+1.3), n=17 | +1.6 (+0.1), n=4 |
 
 ### PATTERN: 2 misses right after a 2-hit run (MM after HH)
 | bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
