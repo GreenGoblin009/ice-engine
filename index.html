@@ -190,6 +190,7 @@ table.gl td{padding:5px 8px 5px 0; border-top:1px solid var(--line);}
 .hotwhy{display:flex; flex-wrap:wrap; gap:5px; margin-top:6px;}
 .hw{font-size:10.5px; font-weight:700; letter-spacing:.03em; padding:3px 7px; border-radius:6px; background:var(--card2); border:1px solid var(--line); color:var(--muted);}
 .hw.g{color:var(--green);} .hw.a{color:var(--amber);} .hw.b{color:var(--blue);} .hw.r{color:var(--red);}
+.fline{margin-top:7px; font-size:11.5px; line-height:1.5; color:var(--muted);} .fline b{font-weight:600;} .fline .g{color:var(--green);} .fline .a{color:var(--amber);} .fline .bl,.fline .bl b{color:#6ea8ff;}
 .fbar{display:flex; gap:2px; margin-top:7px;} .fbar i{display:block; width:9px; height:15px; border-radius:2px; background:var(--red); opacity:.8;} .fbar i.y{background:var(--green); opacity:1;}
 /* Ice Cold Picks */
 #bPicks{white-space:normal !important; line-height:1.05; font-size:13px !important;}
@@ -957,6 +958,7 @@ async function renderForm(){
     const seq=g.slice(0,20).map(x=>statVal(x,F.stat)>0.5?1:0);          // newest first
     const l10=seq.slice(0,10).reduce((a,b)=>a+b,0), l10n=Math.min(10,seq.length), l20=seq.reduce((a,b)=>a+b,0);
     let now=0; for(const v of seq){ if(v) break; now++; }
+    let hitRun=0; for(const v of seq){ if(!v) break; hitRun++; }
     let longest=0, run=0; seq.forEach(v=>{ run=v?0:run+1; longest=Math.max(longest,run); });
     const rest=seq.slice(now); let restLongest=0; run=0; rest.forEach(v=>{ run=v?0:run+1; restLongest=Math.max(restLongest,run); });
     const gm=gameOf(r.l.team); const home=gm?gm.home===r.l.team:null;
@@ -972,9 +974,10 @@ async function renderForm(){
     const adj=(r.h.over+SHRINK_K*poolRate(r.bucket))/(r.h.n+SHRINK_K);
     const steady=longest<=2;
     const offNight=now>=1&&now<=2&&restLongest<=2&&l10>=F.min;
-    return {...r,seq,l10,l10n,l20,now,longest,steady,offNight,home,gm,vSeason,vS,v20,v20h,shpg,atpg,at4,at:at.length,sleeper,pc,adj};
+    return {...r,seq,hitRun,l10,l10n,l20,now,longest,steady,offNight,home,gm,vSeason,vS,v20,v20h,shpg,atpg,at4,at:at.length,sleeper,pc,adj};
   });
   rows=rows.filter(r=>r.pc&&r.l10>=F.min);
+  const hotCut=F.stat==='Goals'?3:4; rows=rows.filter(r=>r.hitRun<hotCut);   // no players on a big hit streak (runs of 4+ underperformed in the backtest)
   if(F.price==='safe') rows=rows.filter(r=>r.pc.price>=-130);
   else if(F.price==='plus') rows=rows.filter(r=>r.pc.price>=100);
   else if(F.price==='plus150') rows=rows.filter(r=>r.pc.price>=150);
@@ -982,15 +985,17 @@ async function renderForm(){
   rows.sort((a,b)=>key[F.sort](b)-key[F.sort](a));
   const total=rows.length; rows=rows.slice(0,40);
   const list=rows.length?rows.map(r=>{
-    const why=[`<span class="hw g">${r.l10}/${r.l10n} LAST 10</span>`,`<span class="hw g">${r.l20}/${r.seq.length} LAST 20</span>`];
-    if(F.stat!=='Goals'&&r.steady) why.push('<span class="hw g">NEVER MISSED MORE THAN 2 IN A ROW</span>');
-    if(r.offNight) why.push(`<span class="hw a">MISSED ${r.now} · STEADY PLAYER AFTER AN OFF NIGHT</span>`);
-    if(r.sleeper) why.push('<span class="hw b">SLEEPER · VOLUME, FEW GOALS LATELY</span>');
-    if(r.vSeason.length>=3) why.push(`<span class="hw">${r.home?'HOME':'AWAY'} THIS SEASON ${r.vS}/${r.vSeason.length}</span>`);
-    if(r.v20.length>=3) why.push(`<span class="hw">${r.home?'HOME':'AWAY'} IN LAST 20 ${r.v20h}/${r.v20.length}</span>`);
-    if(r.l.pp_unit===1) why.push('<span class="hw b">PP1</span>'); else if(r.l.pp_unit===2) why.push('<span class="hw">PP2</span>');
-    if(r.shpg!=null) why.push(`<span class="hw ${r.shpg>=3?'b':''}">${r.shpg.toFixed(1)} SHOTS/G</span>`);
-    if(r.atpg!=null) why.push(`<span class="hw ${r.at4>=9?'b':''}">${r.atpg.toFixed(1)} ATTEMPTS/G · 4+ IN ${r.at4}/${r.at}</span>`);
+    const vn=r.home?'HOME':'AWAY';
+    const t=[`<b class="g">L10 ${r.l10}/${r.l10n}</b>`,`<b class="g">L20 ${r.l20}/${r.seq.length}</b>`];
+    if(F.stat!=='Goals'&&r.steady) t.push('<b class="g">STEADY</b>');
+    if(r.offNight) t.push(`<b class="a">MISSED ${r.now}, STEADY</b>`);
+    if(r.sleeper) t.push('<b class="bl">SLEEPER</b>');
+    const vp=[]; if(r.vSeason.length>=3) vp.push(`${r.vS}/${r.vSeason.length} szn`); if(r.v20.length>=3) vp.push(`${r.v20h}/${r.v20.length} L20`);
+    if(vp.length) t.push(`${vn} ${vp.join(', ')}`);
+    if(r.l.pp_unit===1) t.push('<b class="bl">PP1</b>'); else if(r.l.pp_unit===2) t.push('PP2');
+    const sv=[]; if(r.shpg!=null) sv.push(`${r.shpg.toFixed(1)} sog`); if(r.atpg!=null) sv.push(`${r.atpg.toFixed(1)} att (4+ in ${r.at4}/${r.at})`);
+    if(sv.length) t.push(`<span class="${(r.shpg>=3||r.at4>=9)?'bl':''}">${sv.join(', ')}</span>`);
+    const why=[`<div class="fline">${t.join(' · ')}</div>`];
     const opp=r.gm?(r.gm.away===r.l.team?'@ '+r.gm.home:'vs '+r.gm.away):'';
     const be=impliedProb(r.pc.price);
     const bars=r.seq.slice().reverse().map(v=>`<i class="${v?'y':''}"></i>`).join('');
@@ -998,11 +1003,11 @@ async function renderForm(){
       <div><div class="pname">${esc(r.l.player_name)}</div>
         <div class="pmeta">${esc(r.l.team)} ${esc(opp)} · <b style="color:var(--text)">${fmtOdds(r.pc.price)}</b> ${esc(bookShort(r.pc.book))} · break-even ${Math.round(be*100)}%</div>
         <div class="fbar">${bars}</div>
-        <div class="hotwhy">${why.join('')}</div></div>
+        ${why.join('')}</div>
       <div><div class="pbig" style="color:var(--text)">${Math.round(r.adj*100)}%</div><div class="psub">CHANCE</div></div></div>`;
   }).join(''):'<div class="empty">No players match this filter. Lower the minimum hits or widen the price.</div>';
   const banner=prevTeams.length?`<div class="muted small" style="margin:0 0 10px;">Lineups not posted yet for ${esc(prevTeams.join(', '))}. Showing each of those teams' most recent lineup, so a scratch or line change is possible.</div>`:'';
-  const note=`<details class="more" style="margin:0 0 10px;"><summary>Consistent players with good odds. Tap for details.</summary><div class="muted small" style="margin-top:6px;">Players in tonight's games who got the stat in at least the minimum number of their last 10 and are priced inside your price filter (best price across books). The squares are his last 20 regular-season games, oldest on the left, green = got it. Steady = never went more than 2 games in a row without it. A steady player after one or two misses is a catch-after-an-off-night, not a red flag. HOME/AWAY shows tonight's venue only. SLEEPER = a forward with lots of shots or attempts but 0-1 goals in his last 10. Consistency is what good players already show, so it is priced in: use it with the price, shots and power play, not alone. Showing ${rows.length} of ${total}.</div></details>`;
+  const note=`<details class="more" style="margin:0 0 10px;"><summary>Consistent players with good odds. Tap for details.</summary><div class="muted small" style="margin-top:6px;">Players in tonight's games who got the stat in at least the minimum number of their last 10 and are priced inside your price filter (best price across books). The squares are his last 20 regular-season games, oldest on the left, green = got it. Steady = never went more than 2 games in a row without it. A steady player after one or two misses is a catch-after-an-off-night, not a red flag. HOME/AWAY shows tonight's venue only. SLEEPER = a forward with lots of shots or attempts but 0-1 goals in his last 10. Consistency is what good players already show, so it is priced in: use it with the price, shots and power play, not alone. Players on a big hit streak (4 in a row, 3 for goals) are hidden. Showing ${rows.length} of ${total}.</div></details>`;
   $('view').innerHTML=controls+banner+note+list; wire();
 }
 
