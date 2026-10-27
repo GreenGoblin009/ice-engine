@@ -202,18 +202,22 @@ def build(day):
                 name=p["name"], team=tm, opp=opp, home=home, when=sr.fmt_et(g["start_time_utc"]),
                 pos=p.get("pos") or "F", price=best, dk=books.get("DraftKings"), fd=books.get("FanDuel"),
                 chance=chance, h10=h10, n10=len(l10), h20=h20, n20=len(l20), h3=h3, longest=longest, now=now,
-                shpg=shpg, bars=bar_text(l20), v=(v_h, v_n), lv=(lv_h, lv_n), sea=(s_h, s_n), ck=ck, imp=imp))
+                shpg=shpg, bars=bar_text(l20), v=(v_h, v_n), lv=(lv_h, lv_n), sea=(s_h, s_n), ck=ck, imp=imp,
+                sog5=sog5, att10=att10, heat=heat))
 
     def head(r):
         at = "vs" if r["home"] else "@"
         ch = f"{r['chance'] * 100:.0f}%" if r["chance"] is not None else "n/a"
         sh = f"{r['shpg']:.1f}" if r["shpg"] is not None else "-"
         ven = 'home' if r['home'] else 'away'
+        s5 = f"{r['sog5']:.1f}" if r["sog5"] is not None else "-"
+        a10 = f"{r['att10']:.1f}" if r["att10"] is not None else "-"
+        hot = "  ** HOT: goals + shots line up **" if r["heat"] else ""
         v = (f" | {ven} season {r['v'][0]}/{r['v'][1]}, {ven} in L20 {r['lv'][0]}/{r['lv'][1]}")
         return (f"{r['name']} {r['team']} {at} {r['opp']} {r['when']} | {sr.fmt_odds(r['price'])} "
                 f"(DK {sr.fmt_odds(r['dk']) if r['dk'] is not None else '-'}, FD {sr.fmt_odds(r['fd']) if r['fd'] is not None else '-'}) | "
                 f"model {ch} | L10 {r['h10']}/{r['n10']} L20 {r['h20']}/{r['n20']} season {r['sea'][0]}/{r['sea'][1]} | max miss run {r['longest']}, "
-                f"missed last {r['now']} | shots L10 {sh}{v} | {r['bars']}")
+                f"missed last {r['now']} | shots L5 {s5} L10 {sh}, attempts L10 {a10}{v}{hot} | {r['bars']}")
 
     for stat, col, _m in STATS:
         rows = results[col]
