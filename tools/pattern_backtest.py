@@ -41,7 +41,7 @@ MARKETS = [("points", "Points"), ("assists", "Assists"), ("goals", "Goals")]
 def load_rows(prev, cur):
     pos = {p["id"]: (p.get("pos") or "F") for p in sr.select("players?select=id,pos&order=id.asc")}
     rows = sr.select(f"player_game_logs?season=in.({prev},{cur})&game_type=eq.2"
-                     "&select=player_id,game_id,season,game_date,home_road,goals,assists,points,sog,toi"
+                     "&select=player_id,game_id,season,game_date,home_road,goals,assists,points,sog,shot_attempts,toi"
                      "&order=player_id.asc,game_date.asc,game_id.asc")
     by, seen = defaultdict(list), set()
     for r in rows:
@@ -143,8 +143,32 @@ def run(prev, cur):
                         s_avg = sum(sea) / len(sea) if sea else 0
                         heat = g10 >= 3 and s10 >= 3.0 and sg5 and (sum(sg5) / len(sg5)) >= s_avg
                         add(col, "goal heat (3+ goals in last 10, 3+ shots, last 5 above season rate)", "yes" if heat else "no", season, hit, base)
+                # shot attempts (forwards and defensemen shown separately)
+                at = [r["shot_attempts"] for r in rs[i - 10:i] if r.get("shot_attempts") is not None]
+                if len(at) >= 8:
+                    a10 = sum(at) / len(at)
+                    lab = "D" if g == "D" else "F"
+                    cut = (2, 3, 4, 5) if g == "D" else (3, 4, 5, 6)
+                    b = (f"{lab}: under {cut[0]}" if a10 < cut[0] else f"{lab}: {cut[0]}-{cut[1]}" if a10 < cut[1]
+                         else f"{lab}: {cut[1]}-{cut[2]}" if a10 < cut[2] else f"{lab}: {cut[2]}-{cut[3]}" if a10 < cut[3] else f"{lab}: {cut[3]}+")
+                    add(col, "shot attempts per game, last 10", b, season, hit, base)
+                    if g == "F":
+                        c4 = sum(1 for a in at if a >= 4)
+                        b = "9-10 of 10 games with 4+ attempts" if c4 >= 9 else "7-8 of 10" if c4 >= 7 else "5-6 of 10" if c4 >= 5 else "0-4 of 10"
+                        add(col, "forwards: games with 4+ attempts, last 10", b, season, hit, base)
+                        c5 = sum(1 for a in at if a >= 5)
+                        b = "8-10 of 10 games with 5+ attempts" if c5 >= 8 else "5-7 of 10" if c5 >= 5 else "0-4 of 10"
+                        add(col, "forwards: games with 5+ attempts, last 10", b, season, hit, base)
                 # hot streak
                 add(col, "hit each of last 3", "yes" if sum(v[i - 3:i]) == 3 else "no", season, hit, base)
+                # how long hot runs last: current hit run length (0 if last game missed)
+                run_now = 0
+                for vv in reversed(v[:i]):
+                    if vv:
+                        run_now += 1
+                    else:
+                        break
+                add(col, "current hit run (games in a row with a hit)", "0" if run_now == 0 else "1" if run_now == 1 else "2" if run_now == 2 else "3" if run_now == 3 else "4+", season, hit, base)
                 add(col, "all games (baseline check)", "all", season, hit, base)
     return stats
 
