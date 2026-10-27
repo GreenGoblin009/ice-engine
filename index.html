@@ -190,6 +190,7 @@ table.gl td{padding:5px 8px 5px 0; border-top:1px solid var(--line);}
 .hotwhy{display:flex; flex-wrap:wrap; gap:5px; margin-top:6px;}
 .hw{font-size:10.5px; font-weight:700; letter-spacing:.03em; padding:3px 7px; border-radius:6px; background:var(--card2); border:1px solid var(--line); color:var(--muted);}
 .hw.g{color:var(--green);} .hw.a{color:var(--amber);} .hw.b{color:var(--blue);} .hw.r{color:var(--red);}
+.fbar{display:flex; gap:2px; margin-top:7px;} .fbar i{display:block; width:9px; height:15px; border-radius:2px; background:var(--red); opacity:.8;} .fbar i.y{background:var(--green); opacity:1;}
 /* Ice Cold Picks */
 #bPicks{white-space:normal !important; line-height:1.05; font-size:13px !important;}
 .slip{border-left:4px solid var(--line);}
@@ -229,6 +230,7 @@ table.gl td{padding:5px 8px 5px 0; border-top:1px solid var(--line);}
     <button id="bLineups">Lineups</button>
     <!-- Top Plays tab parked: code kept (renderTop), button removed for now -->
     <button id="bHot">Value</button>
+    <button id="bForm" style="display:none;">Form</button>
     <button id="bLeaders">Leaders</button>
     <button id="bPicks">Ice Cold Picks</button>
     <button id="bLadder">Ladder Challenge</button>
@@ -636,7 +638,7 @@ function setUpdated(){
 /* ============ VIEWS ============ */
 function setView(v){
   S.view=v;
-  ['Teams','Lineups','Hot','Leaders','Picks','Ladder'].forEach(n=>$('b'+n).classList.toggle('active',(n.toLowerCase()===v)));
+  ['Teams','Lineups','Hot','Form','Leaders','Picks','Ladder'].forEach(n=>$('b'+n).classList.toggle('active',(n.toLowerCase()===v)));
   $('teamPickWrap').style.display = v==='lineups' ? 'block':'none';
   render();
 }
@@ -647,6 +649,7 @@ async function render(){
     else if(S.view==='lineups') renderLineups();
     else if(S.view==='leaders') await renderLeaders();
     else if(S.view==='hot') await renderHot();
+    else if(S.view==='form') await renderForm();
     else if(S.view==='picks') await renderPicks();
     else if(S.view==='ladder') await renderLadder();
     else await renderTop();
@@ -897,6 +900,112 @@ async function renderPlus(){
 const LEAD_LINES={Points:[0.5,1.5],Goals:[0.5],Assists:[0.5,1.5],Shots:[1.5,2.5,3.5],'Shot Attempts':[3.5,4.5,5.5,6.5]};
 S.lead=S.lead||{stat:'Assists',window:'Last 10',team:'ALL',sort:'rate',line:0.5};
   S.lead.split=S.lead.split||'Home+Away'; S.lead.vs=S.lead.vs||'any';
+/* ---- Form: consistent players with good odds (hidden until unlocked at #form) ---- */
+S.form=S.form||{stat:'Points',price:'safe',min:3,sort:'consistent'};
+async function formSkaters(gs){
+  let sk=S.lineups.filter(l=>l.status==='projected'&&(l.slot==='line'||l.slot==='pair')&&l.player_id);
+  const haveTm=new Set(sk.map(x=>x.team)); const missTm=[...new Set(gs.flatMap(g=>[g.away,g.home]))].filter(t=>!haveTm.has(t));
+  let prevTeams=[];
+  if(gs.length&&missTm.length){
+    if(S.prevLineupsDay!==S.day){
+      S.prevLineups=[]; S.prevLineupsDay=S.day;
+      try{
+        const tms=[...new Set(dayGamesAll().flatMap(g=>[g.away,g.home]))];
+        const d=new Date(S.day+'T12:00:00Z'); d.setUTCDate(d.getUTCDate()-10);
+        const from=d.toISOString().slice(0,10);
+        const rows=await sbAll(`daily_lineups?lineup_date=gte.${from}&lineup_date=lt.${S.day}&team=in.(${tms.join(',')})&select=*&order=lineup_date.desc`);
+        const latest={}; rows.forEach(r=>{ if(r.player_id&&(r.slot==='line'||r.slot==='pair')&&!latest[r.team]) latest[r.team]=r.lineup_date; });
+        S.prevLineups=rows.filter(r=>r.player_id&&(r.slot==='line'||r.slot==='pair')&&r.lineup_date===latest[r.team]);
+      }catch(e){ S.prevLineups=[]; }
+    }
+    const miss=new Set(missTm); const add=(S.prevLineups||[]).filter(l=>miss.has(l.team));
+    prevTeams=[...new Set(add.map(l=>l.team))]; sk=sk.concat(add);
+  }
+  const seen=new Set(); sk=sk.filter(l=>{ if(seen.has(l.player_id)) return false; seen.add(l.player_id); return true; });
+  return {sk,prevTeams};
+}
+async function renderForm(){
+  const F=S.form, gs=dayGames();
+  const controls=`<div class="lgrid">
+    <div><label>Stat</label><select id="fStat">${['Points','Goals','Assists'].map(x=>`<option ${x===F.stat?'selected':''}>${x}</option>`).join('')}</select></div>
+    <div><label>Price</label><select id="fPrice">${[['safe','−130 or better'],['any','Any price'],['plus','+100 or longer'],['plus150','+150 or longer']].map(([v,t])=>`<option value="${v}" ${v===F.price?'selected':''}>${t}</option>`).join('')}</select></div>
+    <div><label>Hits in last 10 (minimum)</label><select id="fMin">${[2,3,4,5,6,7].map(x=>`<option value="${x}" ${x===F.min?'selected':''}>${x}+</option>`).join('')}</select></div>
+    <div><label>Rank by</label><select id="fSort">${[['consistent','Most consistent'],['chance','Highest chance'],['price','Best price']].map(([v,t])=>`<option value="${v}" ${v===F.sort?'selected':''}>${t}</option>`).join('')}</select></div></div>`;
+  const wire=()=>{ $('fStat').onchange=e=>{F.stat=e.target.value;renderForm();}; $('fPrice').onchange=e=>{F.price=e.target.value;renderForm();}; $('fMin').onchange=e=>{F.min=+e.target.value;renderForm();}; $('fSort').onchange=e=>{F.sort=e.target.value;renderForm();}; };
+  if(!gs.length){ $('view').innerHTML=controls+`<div class="empty">${dayGamesAll().length?'Every game is hidden. Tap a game above, or Show all.':'No games on this day.'}</div>`; wire(); return; }
+  const {sk,prevTeams}=await formSkaters(gs);
+  if(S.view!=='form') return;
+  if(!sk.length){ $('view').innerHTML=controls+'<div class="empty">Form fills in once lineups are posted.</div>'; wire(); return; }
+  const need=sk.map(x=>x.player_id).filter(id=>!S.logCache.has(id));
+  if(need.length){ $('view').innerHTML=controls+`<div class="empty">Loading real game logs for ${need.length} players (first time only)…</div>`; wire(); await loadLogs(need); if(S.view!=='form') return; }
+  const mk={Goals:'player_goal_scorer_anytime',Points:'player_points',Assists:'player_assists'}[F.stat];
+  const best=new Map(); (S.odds||[]).forEach(o=>{ if(o.market===mk&&+o.line===0.5&&o.player_id){ const b=best.get(o.player_id); if(!b||o.price>b.price) best.set(o.player_id,{price:o.price,book:o.book}); } });
+  const gameOf=tm=>gs.find(g=>g.away===tm||g.home===tm);
+  const bookShort=b=>({DraftKings:'DK',FanDuel:'FD',BetMGM:'MGM','BetOnline.ag':'BetOnline',Bovada:'Bovada'}[b]||b);
+  const base=sk.map(l=>{
+    const logs=S.logCache.get(l.player_id)||[];
+    const h=hitStats(logs,F.stat,0.5); if(h.n<15) return null;
+    const pos=(S.players.get(l.player_id)||{}).pos||'F'; const toi=avgToiMin(logs);
+    return {l,logs,h,pos,toi,bucket:roleBucket(pos,toi)};
+  }).filter(Boolean);
+  const pool={}, tot={o:0,n:0};
+  base.forEach(r=>{ tot.o+=r.h.over; tot.n+=r.h.n; if(r.bucket){ const b=pool[r.bucket]||(pool[r.bucket]={o:0,n:0,c:0}); b.o+=r.h.over; b.n+=r.h.n; b.c++; } });
+  const allRate=tot.n?tot.o/tot.n:0.3;
+  const poolRate=b=>(b&&pool[b]&&pool[b].c>=8)?pool[b].o/pool[b].n:allRate;
+  let rows=base.map(r=>{
+    const g=r.logs.filter(x=>statVal(x,F.stat)!=null);
+    const seq=g.slice(0,20).map(x=>statVal(x,F.stat)>0.5?1:0);          // newest first
+    const l10=seq.slice(0,10).reduce((a,b)=>a+b,0), l10n=Math.min(10,seq.length), l20=seq.reduce((a,b)=>a+b,0);
+    let now=0; for(const v of seq){ if(v) break; now++; }
+    let longest=0, run=0; seq.forEach(v=>{ run=v?0:run+1; longest=Math.max(longest,run); });
+    const rest=seq.slice(now); let restLongest=0; run=0; rest.forEach(v=>{ run=v?0:run+1; restLongest=Math.max(restLongest,run); });
+    const gm=gameOf(r.l.team); const home=gm?gm.home===r.l.team:null;
+    const venueRows=g.filter(x=>x.home_road===(home?'H':'R'));
+    const vSeason=venueRows.filter(x=>x.season===CUR), vS=vSeason.filter(x=>statVal(x,F.stat)>0.5).length;
+    const v20=g.slice(0,20).filter(x=>x.home_road===(home?'H':'R')), v20h=v20.filter(x=>statVal(x,F.stat)>0.5).length;
+    const sh=r.logs.slice(0,10).filter(x=>x.sog!=null), shpg=sh.length?sh.reduce((a,x)=>a+x.sog,0)/sh.length:null;
+    const at=r.logs.slice(0,10).filter(x=>x.shot_attempts!=null), atpg=at.length?at.reduce((a,x)=>a+x.shot_attempts,0)/at.length:null;
+    const at4=at.filter(x=>x.shot_attempts>=4).length;
+    const g10=r.logs.slice(0,10).filter(x=>x.goals>0).length;
+    const sleeper=F.stat==='Goals'&&r.pos!=='D'&&at.length>=8&&((atpg!=null&&atpg>=5)||(shpg!=null&&shpg>=3))&&g10<=1;
+    const pc=best.get(r.l.player_id);
+    const adj=(r.h.over+SHRINK_K*poolRate(r.bucket))/(r.h.n+SHRINK_K);
+    const steady=longest<=2;
+    const offNight=now>=1&&now<=2&&restLongest<=2&&l10>=F.min;
+    return {...r,seq,l10,l10n,l20,now,longest,steady,offNight,home,gm,vSeason,vS,v20,v20h,shpg,atpg,at4,at:at.length,sleeper,pc,adj};
+  });
+  rows=rows.filter(r=>r.pc&&r.l10>=F.min);
+  if(F.price==='safe') rows=rows.filter(r=>r.pc.price>=-130);
+  else if(F.price==='plus') rows=rows.filter(r=>r.pc.price>=100);
+  else if(F.price==='plus150') rows=rows.filter(r=>r.pc.price>=150);
+  const key={consistent:r=>(r.l20/Math.max(1,r.seq.length))*0.6+(r.l10/Math.max(1,r.l10n))*0.4,chance:r=>r.adj,price:r=>r.pc.price};
+  rows.sort((a,b)=>key[F.sort](b)-key[F.sort](a));
+  const total=rows.length; rows=rows.slice(0,40);
+  const list=rows.length?rows.map(r=>{
+    const why=[`<span class="hw g">${r.l10}/${r.l10n} LAST 10</span>`,`<span class="hw g">${r.l20}/${r.seq.length} LAST 20</span>`];
+    if(F.stat!=='Goals'&&r.steady) why.push('<span class="hw g">NEVER MISSED MORE THAN 2 IN A ROW</span>');
+    if(r.offNight) why.push(`<span class="hw a">MISSED ${r.now} · STEADY PLAYER AFTER AN OFF NIGHT</span>`);
+    if(r.sleeper) why.push('<span class="hw b">SLEEPER · VOLUME, FEW GOALS LATELY</span>');
+    if(r.vSeason.length>=3) why.push(`<span class="hw">${r.home?'HOME':'AWAY'} THIS SEASON ${r.vS}/${r.vSeason.length}</span>`);
+    if(r.v20.length>=3) why.push(`<span class="hw">${r.home?'HOME':'AWAY'} IN LAST 20 ${r.v20h}/${r.v20.length}</span>`);
+    if(r.l.pp_unit===1) why.push('<span class="hw b">PP1</span>'); else if(r.l.pp_unit===2) why.push('<span class="hw">PP2</span>');
+    if(r.shpg!=null) why.push(`<span class="hw ${r.shpg>=3?'b':''}">${r.shpg.toFixed(1)} SHOTS/G</span>`);
+    if(r.atpg!=null) why.push(`<span class="hw ${r.at4>=9?'b':''}">${r.atpg.toFixed(1)} ATTEMPTS/G · 4+ IN ${r.at4}/${r.at}</span>`);
+    const opp=r.gm?(r.gm.away===r.l.team?'@ '+r.gm.home:'vs '+r.gm.away):'';
+    const be=impliedProb(r.pc.price);
+    const bars=r.seq.slice().reverse().map(v=>`<i class="${v?'y':''}"></i>`).join('');
+    return `<div class="prow" data-pid="${r.l.player_id}" data-stat="${F.stat}" data-line="0.5" data-odds="${r.pc.price}">
+      <div><div class="pname">${esc(r.l.player_name)}</div>
+        <div class="pmeta">${esc(r.l.team)} ${esc(opp)} · <b style="color:var(--text)">${fmtOdds(r.pc.price)}</b> ${esc(bookShort(r.pc.book))} · break-even ${Math.round(be*100)}%</div>
+        <div class="fbar">${bars}</div>
+        <div class="hotwhy">${why.join('')}</div></div>
+      <div><div class="pbig" style="color:var(--text)">${Math.round(r.adj*100)}%</div><div class="psub">CHANCE</div></div></div>`;
+  }).join(''):'<div class="empty">No players match this filter. Lower the minimum hits or widen the price.</div>';
+  const banner=prevTeams.length?`<div class="muted small" style="margin:0 0 10px;">Lineups not posted yet for ${esc(prevTeams.join(', '))}. Showing each of those teams' most recent lineup, so a scratch or line change is possible.</div>`:'';
+  const note=`<details class="more" style="margin:0 0 10px;"><summary>Consistent players with good odds. Tap for details.</summary><div class="muted small" style="margin-top:6px;">Players in tonight's games who got the stat in at least the minimum number of their last 10 and are priced inside your price filter (best price across books). The squares are his last 20 regular-season games, oldest on the left, green = got it. Steady = never went more than 2 games in a row without it. A steady player after one or two misses is a catch-after-an-off-night, not a red flag. HOME/AWAY shows tonight's venue only. SLEEPER = a forward with lots of shots or attempts but 0-1 goals in his last 10. Consistency is what good players already show, so it is priced in: use it with the price, shots and power play, not alone. Showing ${rows.length} of ${total}.</div></details>`;
+  $('view').innerHTML=controls+banner+note+list; wire();
+}
+
 async function renderLeaders(){
   const L=S.lead;
   if(!LEAD_LINES[L.stat].includes(L.line)) L.line=STATS[L.stat].line;
@@ -1371,6 +1480,10 @@ $('bTeams').onclick=()=>setView('teams');
 $('bLineups').onclick=()=>setView('lineups');
 $('bLeaders').onclick=()=>setView('leaders');
 $('bHot').onclick=()=>setView('hot');
+const FORM_PUBLIC=true;    // Form tab is public (user approved Oct 27); set false to hide it again except at #form
+if(FORM_PUBLIC||location.hash==='#form') $('bForm').style.display='';
+$('bForm').onclick=()=>setView('form');
+if(location.hash==='#form') setView('form');   // direct link to the Form tab
 $('bPicks').onclick=()=>setView('picks');
 $('bLadder').onclick=()=>setView('ladder');
 if(location.hash==='#picks') setView('picks');   // direct link to the picks tab
