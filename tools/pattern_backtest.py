@@ -53,6 +53,29 @@ def load_rows(prev, cur):
     return by, pos
 
 
+def pat_period(seq):
+    """Repeating hit/miss rhythm. seq newest first, 1 = hit. Returns (period, fit, predicted_next) or None.
+    A period p fits when each game matches the game p before it in 80%+ of comparisons (needs 3+ cycles).
+    The next game is predicted to repeat the game p games before it (seq[p-1])."""
+    L = len(seq)
+    if L < 12:
+        return None
+    h = sum(seq) / L
+    if h < 0.2 or h > 0.8:
+        return None
+    best = None
+    for p in range(2, 7):
+        if L < 3 * p or len(set(seq[:p])) < 2:
+            continue
+        n = L - p
+        fit = sum(1 for i in range(n) if seq[i] == seq[i + p]) / n
+        if fit >= 0.8 and (best is None or fit > best[1]):
+            best = (p, fit)
+    if not best:
+        return None
+    return best[0], best[1], seq[best[0] - 1]
+
+
 def runs(prior):
     """prior newest first, 1 = hit. (longest miss run, current miss run)"""
     longest = cur = 0
@@ -255,6 +278,25 @@ def run(prev, cur):
                 if rd:
                     add(col, "RHYTHM: regular hit/miss run lengths in last 20, what the pattern says next", "pattern says " + rd, season, hit, base)
                     add(col, "RHYTHM: regular hit/miss run lengths in last 20, what the pattern says next", "(all regular-rhythm players)", season, hit, base)
+                # rhythm continuation (user's idea): predict tonight if the hit/miss pattern repeats exactly
+                pa = pat_period(p20)
+                pv = pat_period(same[:20]) if len(same) >= 12 else None
+                if pa:
+                    add(col, "RHYTHM: all-games hit/miss rhythm repeats (period 2-6, 80%+ match in last 20)",
+                        "predicts HIT" if pa[2] else "predicts MISS", season, hit, base)
+                    if pa[1] >= 0.9:
+                        add(col, "RHYTHM: all-games hit/miss rhythm repeats (period 2-6, 80%+ match in last 20)",
+                            "90%+ match, predicts HIT" if pa[2] else "90%+ match, predicts MISS", season, hit, base)
+                if pv:
+                    add(col, "RHYTHM: same-venue rhythm (last 12-20 games at tonight's venue)",
+                        "predicts HIT" if pv[2] else "predicts MISS", season, hit, base)
+                if pa and pv:
+                    if pa[2] and pv[2]:
+                        add(col, "RHYTHM: all-games and same-venue rhythms agree", "both predict HIT", season, hit, base)
+                    elif (not pa[2]) and (not pv[2]):
+                        add(col, "RHYTHM: all-games and same-venue rhythms agree", "both predict MISS", season, hit, base)
+                    else:
+                        add(col, "RHYTHM: all-games and same-venue rhythms agree", "they disagree", season, hit, base)
                 # how long hot runs last: current hit run length (0 if last game missed)
                 run_now = 0
                 for vv in reversed(v[:i]):
