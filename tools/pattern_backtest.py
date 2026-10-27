@@ -209,6 +209,18 @@ def run(prev, cur):
                     else:
                         if vh >= thr:
                             add(col, "USER METHOD: L10 below the bar but same-venue L10 at the bar", "venue form strong only", season, hit, base)
+                # pattern-breaker: trailing miss run vs the pattern before it (user's made-up example, Oct 27)
+                rest = p20[now:]
+                if len(rest) >= 10:
+                    lr = runs(rest)[0]
+                    if now == 3 and lr <= 2:
+                        add(col, "PATTERN: 3 straight misses after a pattern that never missed more than 2", "yes", season, hit, base)
+                    elif now == 3:
+                        add(col, "PATTERN: 3 straight misses after a pattern that never missed more than 2", "no, had longer miss runs before", season, hit, base)
+                    if now == 2 and rest[0] == 1 and rest[1] == 1:
+                        add(col, "PATTERN: 2 misses right after a 2-hit run (MM after HH)", "any history" if lr > 2 else "history never missed more than 2", season, hit, base)
+                    if now == 4 and lr <= 2:
+                        add(col, "PATTERN: 4 straight misses after a pattern that never missed more than 2", "yes", season, hit, base)
                 # how long hot runs last: current hit run length (0 if last game missed)
                 run_now = 0
                 for vv in reversed(v[:i]):
