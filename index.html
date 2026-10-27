@@ -1000,6 +1000,7 @@ async function renderForm(){
   const total=rows.length; rows=rows.slice(0,600);
   const list=rows.length?rows.map(r=>{
     const vn=r.home?'HOME':'AWAY';
+    const streakTag=r.hitRun>=3?`<b class="a">${r.hitRun} HITS IN A ROW</b>`:(r.now>=3?`<b class="a">${r.now} MISSES IN A ROW</b>`:'');
     const t=[]; if(streakTag) t.push(streakTag); if(r.pa) t.push(`<b class="bl">PATTERN ${r.pa.p}-GAME CYCLE ${Math.round(r.pa.fit*100)}%</b>`);
     if(r.pa&&r.pv) t.push(`<b class="${r.pv.next?'g':'a'}">${vn} CYCLE ${r.pv.next?'AGREES':'DISAGREES'}</b>`);
     t.push(`<b class="g">${r.l10} hits, ${r.l10n-r.l10} misses</b>`);
@@ -1014,7 +1015,6 @@ async function renderForm(){
     const pc=r.pc, be=pc?impliedProb(pc.price):null;
     const r10=Math.round(100*r.l10/Math.max(1,r.l10n)), r20=Math.round(100*r.l20/Math.max(1,r.seq.length));
     const col=r10>=60?'var(--green)':r10>=40?'var(--amber)':'var(--red)';
-    const streakTag=r.hitRun>=3?`<b class="a">${r.hitRun} HITS IN A ROW</b>`:(r.now>=3?`<b class="a">${r.now} MISSES IN A ROW</b>`:'');
     const bars=r.seq.slice().reverse().map(v=>`<i class="${v?'y':''}"></i>`).join('');
     return `<div class="prow" data-pid="${r.l.player_id}" data-stat="${F.stat}" data-line="0.5"${pc?` data-odds="${pc.price}"`:''}>
       <div><div class="pname">${esc(r.l.player_name)}</div>
