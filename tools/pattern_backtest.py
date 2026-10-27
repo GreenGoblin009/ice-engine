@@ -67,6 +67,35 @@ def runs(prior):
     return longest, now
 
 
+def rhythm(p20):
+    """Pattern read on the last 20 results (newest first, 1 = hit).
+    Returns None unless the squares show a regular rhythm: at least 4 completed runs (the oldest, possibly cut
+    off, is ignored) with 2+ hit runs and 2+ miss runs, and every hit run within 1 game of the same length and
+    every miss run within 1 game of the same length. Then: if he is in a miss run that has reached his usual
+    miss-run length, the pattern says HIT; if he is in a hit run shorter than his usual hit-run length, HIT
+    (it continues); otherwise MISS."""
+    o = p20[::-1]
+    runs_l, v, n = [], o[0], 1
+    for x in o[1:]:
+        if x == v:
+            n += 1
+        else:
+            runs_l.append((v, n))
+            v, n = x, 1
+    cur = (v, n)
+    done = runs_l[1:]
+    hl = [n for v2, n in done if v2 == 1]
+    ml = [n for v2, n in done if v2 == 0]
+    if len(done) < 4 or len(hl) < 2 or len(ml) < 2:
+        return None
+    if max(hl) - min(hl) > 1 or max(ml) - min(ml) > 1:
+        return None
+    med = lambda a: sorted(a)[len(a) // 2]
+    if cur[0] == 0:
+        return "HIT" if cur[1] >= med(ml) else "MISS"
+    return "HIT" if cur[1] < med(hl) else "MISS"
+
+
 def run(prev, cur):
     by, pos = load_rows(prev, cur)
     lg = {}
@@ -221,6 +250,11 @@ def run(prev, cur):
                         add(col, "PATTERN: 2 misses right after a 2-hit run (MM after HH)", "any history" if lr > 2 else "history never missed more than 2", season, hit, base)
                     if now == 4 and lr <= 2:
                         add(col, "PATTERN: 4 straight misses after a pattern that never missed more than 2", "yes", season, hit, base)
+                # rhythm read: regular run lengths in the squares, then what the pattern says for the next game
+                rd = rhythm(p20)
+                if rd:
+                    add(col, "RHYTHM: regular hit/miss run lengths in last 20, what the pattern says next", "pattern says " + rd, season, hit, base)
+                    add(col, "RHYTHM: regular hit/miss run lengths in last 20, what the pattern says next", "(all regular-rhythm players)", season, hit, base)
                 # how long hot runs last: current hit run length (0 if last game missed)
                 run_now = 0
                 for vv in reversed(v[:i]):
