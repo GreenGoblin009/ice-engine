@@ -104,6 +104,12 @@ z: |2| or more is unlikely to be luck. Many buckets are tested, so a lone 2-3 ca
 | both at the bar, hit last game | 3537 | 59.3 | 58.2 | +1.1 | +1.4 | +1.1 (+1.2), n=2975 | +1.3 (+0.6), n=562 |
 | both at the bar, missed last game (off night) | 1422 | 58.4 | 56.6 | +1.8 | +1.4 | +2.1 (+1.4), n=1184 | +0.6 (+0.2), n=238 |
 
+### PATTERN: 3 straight misses after a pattern that never missed more than 2
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| no, had longer miss runs before | 2508 | 28.5 | 30.9 | -2.4 | -2.7 | -2.4 (-2.5), n=2051 | -2.3 (-1.1), n=457 |
+| yes | 280 | 47.9 | 48.9 | -1.0 | -0.4 | -2.5 (-0.8), n=229 | +5.8 (+0.8), n=51 |
+
 ### USER METHOD: L10 below the bar but same-venue L10 at the bar
 | bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
 |---|---|---|---|---|---|---|---|
@@ -113,6 +119,12 @@ z: |2| or more is unlikely to be luck. Many buckets are tested, so a lone 2-3 ca
 | bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
 |---|---|---|---|---|---|---|---|
 | yes | 1363 | 58.5 | 56.6 | +1.8 | +1.4 | +2.0 (+1.4), n=1134 | +0.9 (+0.3), n=229 |
+
+### PATTERN: 2 misses right after a 2-hit run (MM after HH)
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| any history | 1269 | 36.2 | 37.8 | -1.6 | -1.2 | -1.2 (-0.8), n=1043 | -3.8 (-1.2), n=226 |
+| history never missed more than 2 | 315 | 54.6 | 54.8 | -0.2 | -0.1 | +1.7 (+0.6), n=270 | -11.9 (-1.6), n=45 |
 
 ### long-history venue edge (all prior same-venue games, 30+ there, vs all prior games)
 | bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
@@ -143,6 +155,11 @@ z: |2| or more is unlikely to be luck. Many buckets are tested, so a lone 2-3 ca
 |---|---|---|---|---|---|---|---|
 | mid volume, 0-1 goals in last 10 | 1391 | 45.5 | 42.2 | +3.3 | +2.5 | +2.6 (+1.8), n=1191 | +7.7 (+2.2), n=200 |
 | mid volume, 2+ goals in last 10 | 4392 | 49.7 | 48.6 | +1.1 | +1.5 | +1.6 (+2.1), n=3716 | -1.9 (-1.0), n=676 |
+
+### PATTERN: 4 straight misses after a pattern that never missed more than 2
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| yes | 157 | 49.0 | 46.1 | +3.0 | +0.8 | +1.9 (+0.4), n=135 | +9.9 (+0.9), n=22 |
 
 ### high volume (5+ attempts or 3+ shots a game) by goals in last 10
 | bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
@@ -253,6 +270,18 @@ z: |2| or more is unlikely to be luck. Many buckets are tested, so a lone 2-3 ca
 |---|---|---|---|---|---|---|---|
 | all | 34512 | 25.7 | 25.8 | -0.0 | -0.1 | +0.0 (+0.1), n=28503 | -0.2 (-0.3), n=6009 |
 
+### PATTERN: 2 misses right after a 2-hit run (MM after HH)
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| any history | 1063 | 29.6 | 30.3 | -0.6 | -0.5 | -0.3 (-0.2), n=874 | -2.3 (-0.7), n=189 |
+| history never missed more than 2 | 110 | 49.1 | 46.0 | +3.0 | +0.6 | +4.0 (+0.8), n=90 | -1.2 (-0.1), n=20 |
+
+### PATTERN: 3 straight misses after a pattern that never missed more than 2
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| no, had longer miss runs before | 2992 | 22.8 | 24.3 | -1.5 | -2.0 | -1.5 (-1.8), n=2448 | -1.4 (-0.8), n=544 |
+| yes | 147 | 37.4 | 41.8 | -4.3 | -1.1 | -8.5 (-1.9), n=115 | +10.7 (+1.3), n=32 |
+
 ### USER METHOD: L10 form at the bar but same-venue L10 below the bar
 | bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
 |---|---|---|---|---|---|---|---|
@@ -305,6 +334,11 @@ z: |2| or more is unlikely to be luck. Many buckets are tested, so a lone 2-3 ca
 | high volume, 3+ goals in last 10 (hot) | 3043 | 42.0 | 38.1 | +3.9 | +4.6 | +3.6 (+3.8), n=2567 | +5.6 (+2.6), n=476 |
 | high volume, 2 goals in last 10 | 771 | 36.6 | 35.3 | +1.3 | +0.8 | +1.4 (+0.8), n=659 | +0.6 (+0.1), n=112 |
 | high volume, 0-1 goals in last 10 (sleeper) | 401 | 34.4 | 33.7 | +0.7 | +0.3 | +1.5 (+0.6), n=312 | -2.1 (-0.4), n=89 |
+
+### PATTERN: 4 straight misses after a pattern that never missed more than 2
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| yes | 99 | 40.4 | 39.4 | +1.0 | +0.2 | +1.5 (+0.3), n=83 | -1.3 (-0.1), n=16 |
 
 ### steady players: straight misses right now
 | bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
@@ -403,6 +437,12 @@ z: |2| or more is unlikely to be luck. Many buckets are tested, so a lone 2-3 ca
 |---|---|---|---|---|---|---|---|
 | all | 34512 | 16.4 | 16.3 | +0.1 | +0.5 | +0.2 (+1.1), n=28503 | -0.5 (-1.1), n=6009 |
 
+### PATTERN: 3 straight misses after a pattern that never missed more than 2
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| no, had longer miss runs before | 2735 | 17.7 | 18.7 | -1.0 | -1.4 | -1.2 (-1.5), n=2258 | -0.3 (-0.2), n=477 |
+| yes | 46 | 47.8 | 35.0 | +12.8 | +1.8 | +11.7 (+1.5), n=38 | +17.9 (+1.1), n=8 |
+
 ### USER METHOD: L10 form and same-venue L10 form both at the bar (points 6+, assists 4+, goals 3+)
 | bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
 |---|---|---|---|---|---|---|---|
@@ -418,6 +458,12 @@ z: |2| or more is unlikely to be luck. Many buckets are tested, so a lone 2-3 ca
 | bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
 |---|---|---|---|---|---|---|---|
 | venue form strong only | 3075 | 21.8 | 22.0 | -0.3 | -0.3 | +0.7 (+0.9), n=2488 | -4.4 (-2.6), n=587 |
+
+### PATTERN: 2 misses right after a 2-hit run (MM after HH)
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| any history | 679 | 22.2 | 25.0 | -2.8 | -1.7 | -3.1 (-1.8), n=566 | -1.1 (-0.3), n=113 |
+| history never missed more than 2 | 27 | 37.0 | 39.6 | -2.5 | -0.3 | -8.1 (-0.8), n=22 | +22.0 (+1.0), n=5 |
 
 ### long-history venue edge (all prior same-venue games, 30+ there, vs all prior games)
 | bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
@@ -473,4 +519,9 @@ z: |2| or more is unlikely to be luck. Many buckets are tested, so a lone 2-3 ca
 | 2 | 60 | 36.7 | 36.9 | -0.3 | -0.0 | -1.3 (-0.2), n=50 | +5.0 (+0.3), n=10 |
 | 1 | 73 | 32.9 | 38.9 | -6.0 | -1.1 | -5.3 (-0.9), n=60 | -9.3 (-0.7), n=13 |
 | 0 | 100 | 36.0 | 40.2 | -4.2 | -0.9 | -1.5 (-0.3), n=88 | -24.2 (-1.7), n=12 |
+
+### PATTERN: 4 straight misses after a pattern that never missed more than 2
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| yes | 32 | 37.5 | 33.7 | +3.8 | +0.5 | -1.8 (-0.2), n=28 | +42.8 (+1.8), n=4 |
 
