@@ -1,6 +1,6 @@
 ICE ENGINE SLATE REPORT  2026-10-27
 Lineups pulled: none yet
-Prices pulled:  Oct 27, 7:35 AM ET
+Prices pulled:  Oct 27, 9:48 AM ET
 Goalies pulled: none yet
 Times are US Eastern. Read-only: built from the same models as the board.
 
@@ -457,6 +457,7 @@ Priced players missing from the projected lineups:
 - Matthew Poitras BOS (not on any lineup)
 - Sam Rinzel CHI (not on any lineup)
 - Elias Salomonsson WPG (not on any lineup)
+- Matthew Seminoff DAL (not on any lineup)
 - Juraj Slafkovsky MTL (not on any lineup)
 - Jimmy Snuggerud STL (not on any lineup)
 - Noah Warren ANA (not on any lineup)
