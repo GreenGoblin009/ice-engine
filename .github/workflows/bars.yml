@@ -1,0 +1,45 @@
+name: Bars report
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Slate report"]
+    types: [completed]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: bars-report
+  cancel-in-progress: false
+
+jobs:
+  report:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build the bars report (read-only)
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+        run: python tools/bars_report.py --out reports/bars_latest.txt
+      - name: Commit the report if it changed
+        run: |
+          git add reports/bars_latest.txt 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "Report unchanged; nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898341+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Bars report $(TZ=America/New_York date '+%Y-%m-%d %H:%M') ET"
+          for attempt in 1 2 3; do
+            git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            sleep $((attempt * 10))
+          done
+          exit 1
