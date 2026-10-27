@@ -1280,8 +1280,9 @@ async function renderPicks(){
 // Own file, own tracker: not part of the Ice Engine record or bankroll. Start small,
 // roll the whole payout into the next day's pick, 7 days. A miss ends the attempt and
 // the next attempt restarts at the starting stake.
+const WIP_LADDER=false; // Ladder is back; Picks stays behind WIP_TABS
 async function renderLadder(){
-  if(WIP_TABS){ $('view').innerHTML=wipCard(); return; }
+  if(WIP_LADDER){ $('view').innerHTML=wipCard(); return; }
   $('view').innerHTML='<div class="empty">Loading ladder…</div>';
   let data;
   try{

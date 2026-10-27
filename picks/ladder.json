@@ -48,6 +48,29 @@
           ]
         }
       ]
+    },
+    {
+      "attempt": 3,
+      "days": [
+        {
+          "day": 1,
+          "date": "2026-10-27",
+          "book": "FanDuel",
+          "status": "pending",
+          "stake": 10,
+          "odds": "-113",
+          "payout": 18.85,
+          "legs": [
+            {
+              "player": "Miro Heiskanen",
+              "team": "DAL",
+              "market": "1+ pt",
+              "price": "-113",
+              "result": "pending"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
