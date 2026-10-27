@@ -229,6 +229,11 @@ def build(day):
             out("- " + head(r))
         if not full:
             out("- none")
+        wide = [r for r in rows if (r["price"] >= -130 if col == "points" else (r["chance"] is not None and r["chance"] >= r["imp"]))]
+        out(f"\n--- {stat.upper()}: EVERY priced player passing the price rule, best chance first ({len(wide)}) ---")
+        for r in sorted(wide, key=by_chance)[:60]:
+            failed = ",".join(k for k, v in r["ck"].items() if not v)
+            out(f"- [{failed or 'clean'}] " + head(r))
         out(f"\n--- {stat.upper()}: misses exactly one check ({len(near)}) ---")
         for r in sorted(near, key=by_chance)[:20]:
             failed = [k for k, v in r["ck"].items() if not v][0]
