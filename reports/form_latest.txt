@@ -4,99 +4,99 @@ X = got it, . = missed. Oldest game on the left, newest on the right. Last 20 re
 Every player shows tonight's opponent and start time so the game can be checked.
 
 === POINTS: LINES UP on every check (3 of 173 priced) ===
-- Miro Heiskanen DAL vs NJD 8:00 PM ET | -115 (DK -130, FD -115) | model 57% | L10 7/10 L20 11/20 | max miss run 2, missed last 1 | shots L10 2.1 H 4/6 | ..X.XX.X..XX.XXX.XX.
-- Joel Eriksson Ek MIN @ UTA 9:00 PM ET | -125 (DK -135, FD -125) | model 54% | L10 7/10 L20 13/20 | max miss run 2, missed last 0 | shots L10 3.9 A 4/9 | X.XXXX..X..XX.XXX.XX
-- Mason McTavish STL vs MTL 8:00 PM ET | +100 (DK +100, FD -113) | model 51% | L10 7/10 L20 14/20 | max miss run 2, missed last 1 | shots L10 2.8 H 3/5 | ..XX.XXXXX.XXXXXX.X.
+- Miro Heiskanen DAL vs NJD 8:00 PM ET | -115 (DK -130, FD -115) | model 57% | L10 7/10 L20 11/20 season 7/11 | max miss run 2, missed last 1 | shots L10 2.1 | home season 4/6, home in L20 6/11 | ..X.XX.X..XX.XXX.XX.
+- Joel Eriksson Ek MIN @ UTA 9:00 PM ET | -125 (DK -135, FD -125) | model 54% | L10 7/10 L20 13/20 season 8/13 | max miss run 2, missed last 0 | shots L10 3.9 | away season 4/9, away in L20 7/14 | X.XXXX..X..XX.XXX.XX
+- Mason McTavish STL vs MTL 8:00 PM ET | +100 (DK +100, FD -113) | model 51% | L10 7/10 L20 14/20 season 8/11 | max miss run 2, missed last 1 | shots L10 2.8 | home season 3/5, home in L20 7/11 | ..XX.XXXXX.XXXXXX.X.
 
 --- POINTS: misses exactly one check (18) ---
-- [price] Mark Stone VGK vs OTT 10:00 PM ET | -205 (DK -205, FD -) | model 70% | L10 7/10 L20 14/20 | max miss run 2, missed last 2 | shots L10 2.2 H 6/7 | XX.XXX.X.XXXX.XXXX..
-- [price] Jack Hughes NJD @ DAL 8:00 PM ET | -190 (DK -190, FD -192) | model 68% | L10 7/10 L20 14/20 | max miss run 2, missed last 0 | shots L10 3.4 A 1/3 | .XXX.XXX.X.XXXXX..XX
-- [price] Sebastian Aho CAR vs BOS 8:00 PM ET | -185 (DK -185, FD -220) | model 67% | L10 8/10 L20 16/20 | max miss run 1, missed last 0 | shots L10 2.6 H 3/4 | XXXX.XX.XXXXXXX.X.XX
-- [price] Quinn Hughes MIN @ UTA 9:00 PM ET | -235 (DK -235, FD -250) | model 64% | L10 8/10 L20 15/20 | max miss run 2, missed last 0 | shots L10 2.8 A 8/9 | XXX..X.XXXXXXXX.X.XX
-- [price] Matthew Tkachuk FLA @ WPG 8:00 PM ET | -230 (DK -230, FD -250) | model 64% | L10 9/10 L20 15/20 | max miss run 1, missed last 0 | shots L10 2.2 A 7/9 | XX.X.X.X.XXXXXXXXX.X
-- [price] Bo Horvat NYI @ NSH 8:00 PM ET | -145 (DK -145, FD -160) | model 62% | L10 8/10 L20 12/20 | max miss run 2, missed last 0 | shots L10 3.2 A 4/5 | ..X..X..XXXXXXX.XX.X
-- [price] Ryan O'Reilly NSH vs NYI 8:00 PM ET | -150 (DK -165, FD -150) | model 62% | L10 8/10 L20 14/20 | max miss run 1, missed last 0 | shots L10 2.2 H 5/6 | .XXXX.X.X.XXX.XXX.XX
-- [streak] Trevor Zegras PHI vs CBJ 7:00 PM ET | -130 (DK -130, FD -140) | model 61% | L10 6/10 L20 12/20 | max miss run 2, missed last 0 | shots L10 2.5 H 5/7 | X.XXX.X..X.X..X.XXXX
-- [streak] Drake Batherson OTT @ VGK 10:00 PM ET | -130 (DK -130, FD -) | model 61% | L10 7/10 L20 14/20 | max miss run 1, missed last 0 | shots L10 2.4 A 3/5 | .XXXX.XX.XX.X.X.XXXX
-- [price] Rasmus Dahlin BUF @ SJS 10:30 PM ET | -180 (DK -180, FD -200) | model 60% | L10 7/10 L20 14/20 | max miss run 2, missed last 0 | shots L10 2.9 A 1/2 | XX.XX..XXXXX.XX.XX.X
-- [price] Steven Stamkos NSH vs NYI 8:00 PM ET | -160 (DK -160, FD -166) | model 56% | L10 8/10 L20 14/20 | max miss run 2, missed last 0 | shots L10 2.2 H 5/6 | .XXX..X.XXXXXX.XX.XX
-- [steady] Seth Jones FLA @ WPG 8:00 PM ET | -115 (DK -115, FD -136) | model 48% | L10 7/10 L20 13/20 | max miss run 3, missed last 0 | shots L10 3.0 A 5/9 | XX.X.XXX...X.XXXXX.X
-- [shots] Claude Giroux OTT @ VGK 10:00 PM ET | +110 (DK +110, FD -) | model 48% | L10 6/10 L20 11/20 | max miss run 2, missed last 0 | shots L10 1.2 A 3/5 | ..X.X.XXX..X.XX.XX.X
-- [steady] Jake DeBrusk VAN @ ANA 10:00 PM ET | +100 (DK +100, FD -120) | model 46% | L10 5/10 L20 12/20 | max miss run 3, missed last 0 | shots L10 2.3 A 4/7 | XXX..XXX.X.XXX...X.X
-- [hit rate] Noah Ostlund BUF @ SJS 10:30 PM ET | -104 (DK -105, FD -104) | model 43% | L10 5/10 L20 10/20 | max miss run 2, missed last 0 | shots L10 2.1 A 3/5 | X..X.X.X.X.X..X.X.XX
-- [streak] Logan Stankoven CAR vs BOS 8:00 PM ET | -105 (DK -105, FD -113) | model 43% | L10 6/10 L20 14/20 | max miss run 2, missed last 0 | shots L10 3.4 H 2/4 | XXXXXXX.X..XX..X.XXX
-- [hit rate] Philip Broberg STL vs MTL 8:00 PM ET | +140 (DK +130, FD +140) | model 39% | L10 4/10 L20 10/20 | max miss run 2, missed last 2 | shots L10 2.2 H 2/5 | XX..X..XXX.X.X..XX..
-- [steady] Sean Walker CAR vs BOS 8:00 PM ET | +190 (DK +190, FD -) | model 33% | L10 4/10 L20 10/20 | max miss run 4, missed last 0 | shots L10 1.7 H 2/4 | .XXXXXX....X.XX....X
+- [price] Mark Stone VGK vs OTT 10:00 PM ET | -205 (DK -205, FD -) | model 70% | L10 7/10 L20 14/20 season 9/13 | max miss run 2, missed last 2 | shots L10 2.2 | home season 6/7, home in L20 8/10 | XX.XXX.X.XXXX.XXXX..
+- [price] Jack Hughes NJD @ DAL 8:00 PM ET | -190 (DK -190, FD -192) | model 68% | L10 7/10 L20 14/20 season 8/11 | max miss run 2, missed last 0 | shots L10 3.4 | away season 1/3, away in L20 3/7 | .XXX.XXX.X.XXXXX..XX
+- [price] Sebastian Aho CAR vs BOS 8:00 PM ET | -185 (DK -185, FD -220) | model 67% | L10 8/10 L20 16/20 season 10/13 | max miss run 1, missed last 0 | shots L10 2.6 | home season 3/4, home in L20 7/8 | XXXX.XX.XXXXXXX.X.XX
+- [price] Quinn Hughes MIN @ UTA 9:00 PM ET | -235 (DK -235, FD -250) | model 64% | L10 8/10 L20 15/20 season 11/13 | max miss run 2, missed last 0 | shots L10 2.8 | away season 8/9, away in L20 11/14 | XXX..X.XXXXXXXX.X.XX
+- [price] Matthew Tkachuk FLA @ WPG 8:00 PM ET | -230 (DK -230, FD -250) | model 64% | L10 9/10 L20 15/20 season 10/12 | max miss run 1, missed last 0 | shots L10 2.2 | away season 7/9, away in L20 9/13 | XX.X.X.X.XXXXXXXXX.X
+- [price] Bo Horvat NYI @ NSH 8:00 PM ET | -145 (DK -145, FD -160) | model 62% | L10 8/10 L20 12/20 season 9/11 | max miss run 2, missed last 0 | shots L10 3.2 | away season 4/5, away in L20 5/7 | ..X..X..XXXXXXX.XX.X
+- [price] Ryan O'Reilly NSH vs NYI 8:00 PM ET | -150 (DK -165, FD -150) | model 62% | L10 8/10 L20 14/20 season 8/11 | max miss run 1, missed last 0 | shots L10 2.2 | home season 5/6, home in L20 7/9 | .XXXX.X.X.XXX.XXX.XX
+- [streak] Trevor Zegras PHI vs CBJ 7:00 PM ET | -130 (DK -130, FD -140) | model 61% | L10 6/10 L20 12/20 season 7/13 | max miss run 2, missed last 0 | shots L10 2.5 | home season 5/7, home in L20 8/10 | X.XXX.X..X.X..X.XXXX
+- [streak] Drake Batherson OTT @ VGK 10:00 PM ET | -130 (DK -130, FD -) | model 61% | L10 7/10 L20 14/20 season 8/12 | max miss run 1, missed last 0 | shots L10 2.4 | away season 3/5, away in L20 4/7 | .XXXX.XX.XX.X.X.XXXX
+- [price] Rasmus Dahlin BUF @ SJS 10:30 PM ET | -180 (DK -180, FD -200) | model 60% | L10 7/10 L20 14/20 season 5/8 | max miss run 2, missed last 0 | shots L10 2.9 | away season 1/2, away in L20 6/8 | XX.XX..XXXXX.XX.XX.X
+- [price] Steven Stamkos NSH vs NYI 8:00 PM ET | -160 (DK -160, FD -166) | model 56% | L10 8/10 L20 14/20 season 9/11 | max miss run 2, missed last 0 | shots L10 2.2 | home season 5/6, home in L20 7/9 | .XXX..X.XXXXXX.XX.XX
+- [steady] Seth Jones FLA @ WPG 8:00 PM ET | -115 (DK -115, FD -136) | model 48% | L10 7/10 L20 13/20 season 7/12 | max miss run 3, missed last 0 | shots L10 3.0 | away season 5/9, away in L20 9/14 | XX.X.XXX...X.XXXXX.X
+- [shots] Claude Giroux OTT @ VGK 10:00 PM ET | +110 (DK +110, FD -) | model 48% | L10 6/10 L20 11/20 season 7/12 | max miss run 2, missed last 0 | shots L10 1.2 | away season 3/5, away in L20 4/7 | ..X.X.XXX..X.XX.XX.X
+- [steady] Jake DeBrusk VAN @ ANA 10:00 PM ET | +100 (DK +100, FD -120) | model 46% | L10 5/10 L20 12/20 season 6/11 | max miss run 3, missed last 0 | shots L10 2.3 | away season 4/7, away in L20 8/13 | XXX..XXX.X.XXX...X.X
+- [hit rate] Noah Ostlund BUF @ SJS 10:30 PM ET | -104 (DK -105, FD -104) | model 43% | L10 5/10 L20 10/20 season 6/11 | max miss run 2, missed last 0 | shots L10 2.1 | away season 3/5, away in L20 5/9 | X..X.X.X.X.X..X.X.XX
+- [streak] Logan Stankoven CAR vs BOS 8:00 PM ET | -105 (DK -105, FD -113) | model 43% | L10 6/10 L20 14/20 season 7/13 | max miss run 2, missed last 0 | shots L10 3.4 | home season 2/4, home in L20 5/7 | XXXXXXX.X..XX..X.XXX
+- [hit rate] Philip Broberg STL vs MTL 8:00 PM ET | +140 (DK +130, FD +140) | model 39% | L10 4/10 L20 10/20 season 5/11 | max miss run 2, missed last 2 | shots L10 2.2 | home season 2/5, home in L20 4/9 | XX..X..XXX.X.X..XX..
+- [steady] Sean Walker CAR vs BOS 8:00 PM ET | +190 (DK +190, FD -) | model 33% | L10 4/10 L20 10/20 season 4/13 | max miss run 4, missed last 0 | shots L10 1.7 | home season 2/4, home in L20 4/7 | .XXXXXX....X.XX....X
 
 === ASSISTS: LINES UP on every check (1 of 179 priced) ===
-- David Pastrnak BOS @ CAR 8:00 PM ET | -115 (DK -115, FD -115) | model 60% | L10 6/10 L20 12/20 | max miss run 2, missed last 1 | shots L10 3.4 A 4/6 | XX.XX..X.X..XXXXX.X.
+- David Pastrnak BOS @ CAR 8:00 PM ET | -115 (DK -115, FD -115) | model 60% | L10 6/10 L20 12/20 season 7/12 | max miss run 2, missed last 1 | shots L10 3.4 | away season 4/6, away in L20 7/11 | XX.XX..X.X..XXXXX.X.
 
 --- ASSISTS: misses exactly one check (16) ---
-- [streak] Quinn Hughes MIN @ UTA 9:00 PM ET | -188 (DK -190, FD -188) | model 62% | L10 8/10 L20 15/20 | max miss run 2, missed last 0 | shots L10 2.8 A 8/9 | XXX..X.XXXXXXXX.X.XX
-- [streak] Clayton Keller UTA vs MIN 9:00 PM ET | -115 (DK -115, FD -125) | model 52% | L10 7/10 L20 17/20 | max miss run 2, missed last 0 | shots L10 2.0 H 4/5 | XXXXXXXXXXXX.XX..XXX
-- [shots] Tim Stützle OTT @ VGK 10:00 PM ET | +105 (DK +105, FD -) | model 50% | L10 6/10 L20 13/20 | max miss run 2, missed last 2 | shots L10 1.9 A 5/5 | .X.XXX.XXXX.XXX.XX..
-- [steady] Roman Josi NSH vs NYI 8:00 PM ET | -111 (DK -120, FD -111) | model 48% | L10 7/10 L20 12/20 | max miss run 3, missed last 0 | shots L10 2.4 H 4/6 | ...XXXX.X.XXXX.XX..X
-- [streak] Mikhail Sergachev UTA vs MIN 9:00 PM ET | -125 (DK -125, FD -128) | model 48% | L10 6/10 L20 14/20 | max miss run 2, missed last 0 | shots L10 2.5 H 4/5 | XXXXX.X.XX.X.XX..XXX
-- [steady] Brady Tkachuk FLA @ WPG 8:00 PM ET | +150 (DK +150, FD +146) | model 40% | L10 4/10 L20 8/20 | max miss run 6, missed last 0 | shots L10 3.4 A 3/9 | X.X..XX......XX.X..X
-- [steady] Filip Forsberg NSH vs NYI 8:00 PM ET | +122 (DK +120, FD +122) | model 40% | L10 6/10 L20 10/20 | max miss run 5, missed last 0 | shots L10 2.6 H 5/6 | X.XX.....X.XX.XXX..X
-- [streak] Joel Eriksson Ek MIN @ UTA 9:00 PM ET | +164 (DK +150, FD +164) | model 39% | L10 5/10 L20 10/20 | max miss run 2, missed last 0 | shots L10 3.9 A 3/9 | ..XXXX..X..X..XX..XX
-- [streak] Jackson Blake CAR vs BOS 8:00 PM ET | +124 (DK +120, FD +124) | model 38% | L10 6/10 L20 13/20 | max miss run 2, missed last 0 | shots L10 3.1 H 3/4 | X.XXXX..XXXXX.X..X.X
-- [shots] Logan Cooley UTA vs MIN 9:00 PM ET | +135 (DK +135, FD +126) | model 37% | L10 5/10 L20 11/20 | max miss run 2, missed last 2 | shots L10 1.2 H 3/5 | XX.X..X.XX.X.XXX.X..
-- [steady] Tyler Toffoli SJS vs BUF 10:30 PM ET | +200 (DK +200, FD +200) | model 33% | L10 4/10 L20 7/20 | max miss run 4, missed last 0 | shots L10 2.3 H 1/4 | X...X....X.X..X.X..X
-- [steady] Mason McTavish STL vs MTL 8:00 PM ET | +230 (DK +230, FD +200) | model 28% | L10 4/10 L20 8/20 | max miss run 3, missed last 3 | shots L10 2.8 H 2/5 | ..X..XX.X...XXX.X...
-- [steady] Sean Walker CAR vs BOS 8:00 PM ET | +260 (DK +260, FD -) | model 27% | L10 3/10 L20 7/20 | max miss run 5, missed last 5 | shots L10 1.7 H 2/4 | .XXX..X....X.XX.....
-- [steady] Mavrik Bourque NSH vs NYI 8:00 PM ET | +320 (DK +275, FD +320) | model 25% | L10 4/10 L20 5/20 | max miss run 6, missed last 0 | shots L10 2.1 H 1/3 | ...X......XX...X...X
-- [steady] Arseny Gritsyuk NJD @ DAL 8:00 PM ET | +290 (DK +290, FD +280) | model 24% | L10 3/10 L20 7/20 | max miss run 3, missed last 0 | shots L10 2.3 A 1/3 | XX..X...X...X...X..X
-- [steady] Fraser Minten BOS @ CAR 8:00 PM ET | +350 (DK +350, FD -) | model 21% | L10 3/10 L20 5/20 | max miss run 7, missed last 0 | shots L10 2.7 A 1/6 | .......XX....X..X..X
+- [streak] Quinn Hughes MIN @ UTA 9:00 PM ET | -188 (DK -190, FD -188) | model 62% | L10 8/10 L20 15/20 season 11/13 | max miss run 2, missed last 0 | shots L10 2.8 | away season 8/9, away in L20 11/14 | XXX..X.XXXXXXXX.X.XX
+- [streak] Clayton Keller UTA vs MIN 9:00 PM ET | -115 (DK -115, FD -125) | model 52% | L10 7/10 L20 17/20 season 9/12 | max miss run 2, missed last 0 | shots L10 2.0 | home season 4/5, home in L20 9/10 | XXXXXXXXXXXX.XX..XXX
+- [shots] Tim Stützle OTT @ VGK 10:00 PM ET | +105 (DK +105, FD -) | model 50% | L10 6/10 L20 13/20 season 8/12 | max miss run 2, missed last 2 | shots L10 1.9 | away season 5/5, away in L20 7/8 | .X.XXX.XXXX.XXX.XX..
+- [steady] Roman Josi NSH vs NYI 8:00 PM ET | -111 (DK -120, FD -111) | model 48% | L10 7/10 L20 12/20 season 7/11 | max miss run 3, missed last 0 | shots L10 2.4 | home season 4/6, home in L20 5/10 | ...XXXX.X.XXXX.XX..X
+- [streak] Mikhail Sergachev UTA vs MIN 9:00 PM ET | -125 (DK -125, FD -128) | model 48% | L10 6/10 L20 14/20 season 8/12 | max miss run 2, missed last 0 | shots L10 2.5 | home season 4/5, home in L20 8/10 | XXXXX.X.XX.X.XX..XXX
+- [steady] Brady Tkachuk FLA @ WPG 8:00 PM ET | +150 (DK +150, FD +146) | model 40% | L10 4/10 L20 8/20 season 4/12 | max miss run 6, missed last 0 | shots L10 3.4 | away season 3/9, away in L20 4/12 | X.X..XX......XX.X..X
+- [steady] Filip Forsberg NSH vs NYI 8:00 PM ET | +122 (DK +120, FD +122) | model 40% | L10 6/10 L20 10/20 season 7/11 | max miss run 5, missed last 0 | shots L10 2.6 | home season 5/6, home in L20 5/9 | X.XX.....X.XX.XXX..X
+- [streak] Joel Eriksson Ek MIN @ UTA 9:00 PM ET | +164 (DK +150, FD +164) | model 39% | L10 5/10 L20 10/20 season 6/13 | max miss run 2, missed last 0 | shots L10 3.9 | away season 3/9, away in L20 5/14 | ..XXXX..X..X..XX..XX
+- [streak] Jackson Blake CAR vs BOS 8:00 PM ET | +124 (DK +120, FD +124) | model 38% | L10 6/10 L20 13/20 season 8/13 | max miss run 2, missed last 0 | shots L10 3.1 | home season 3/4, home in L20 5/7 | X.XXXX..XXXXX.X..X.X
+- [shots] Logan Cooley UTA vs MIN 9:00 PM ET | +135 (DK +135, FD +126) | model 37% | L10 5/10 L20 11/20 season 7/12 | max miss run 2, missed last 2 | shots L10 1.2 | home season 3/5, home in L20 5/10 | XX.X..X.XX.X.XXX.X..
+- [steady] Tyler Toffoli SJS vs BUF 10:30 PM ET | +200 (DK +200, FD +200) | model 33% | L10 4/10 L20 7/20 season 5/12 | max miss run 4, missed last 0 | shots L10 2.3 | home season 1/4, home in L20 2/9 | X...X....X.X..X.X..X
+- [steady] Mason McTavish STL vs MTL 8:00 PM ET | +230 (DK +230, FD +200) | model 28% | L10 4/10 L20 8/20 season 4/11 | max miss run 3, missed last 3 | shots L10 2.8 | home season 2/5, home in L20 5/11 | ..X..XX.X...XXX.X...
+- [steady] Sean Walker CAR vs BOS 8:00 PM ET | +260 (DK +260, FD -) | model 27% | L10 3/10 L20 7/20 season 3/13 | max miss run 5, missed last 5 | shots L10 1.7 | home season 2/4, home in L20 4/7 | .XXX..X....X.XX.....
+- [steady] Mavrik Bourque NSH vs NYI 8:00 PM ET | +320 (DK +275, FD +320) | model 25% | L10 4/10 L20 5/20 season 2/7 | max miss run 6, missed last 0 | shots L10 2.1 | home season 1/3, home in L20 2/10 | ...X......XX...X...X
+- [steady] Arseny Gritsyuk NJD @ DAL 8:00 PM ET | +290 (DK +290, FD +280) | model 24% | L10 3/10 L20 7/20 season 3/11 | max miss run 3, missed last 0 | shots L10 2.3 | away season 1/3, away in L20 2/6 | XX..X...X...X...X..X
+- [steady] Fraser Minten BOS @ CAR 8:00 PM ET | +350 (DK +350, FD -) | model 21% | L10 3/10 L20 5/20 season 4/12 | max miss run 7, missed last 0 | shots L10 2.7 | away season 1/6, away in L20 1/11 | .......XX....X..X..X
 
 === GOALS: LINES UP on every check (36 of 358 priced) ===
-- Kirill Kaprizov MIN @ UTA 9:00 PM ET | +115 (DK -115, FD +115) | model 49% | L10 7/10 L20 13/20 | max miss run 2, missed last 0 | shots L10 3.5 A 6/9 | XX.X.X.XX..X.XXXX.XX
-- Jason Robertson DAL vs NJD 8:00 PM ET | +155 (DK +155, FD +155) | model 43% | L10 4/10 L20 8/20 | max miss run 4, missed last 0 | shots L10 3.4 H 2/6 | ....XXXX...XX...X..X
-- Kyle Connor WPG vs FLA 8:00 PM ET | +140 (DK +135, FD +140) | model 42% | L10 6/10 L20 11/20 | max miss run 3, missed last 1 | shots L10 4.0 H 4/6 | X.XX...X.XX.XXXX..X.
-- Steven Stamkos NSH vs NYI 8:00 PM ET | +160 (DK +160, FD +160) | model 40% | L10 5/10 L20 10/20 | max miss run 3, missed last 0 | shots L10 2.2 H 3/6 | .XXX..X.X.XX...X..XX
-- Mark Stone VGK vs OTT 10:00 PM ET | +175 (DK +175, FD +175) | model 39% | L10 5/10 L20 10/20 | max miss run 3, missed last 2 | shots L10 2.2 H 5/7 | .X.XXX.X..XX...XXX..
-- Artemi Panarin LAK @ CHI 8:00 PM ET | +180 (DK +180, FD +180) | model 34% | L10 6/10 L20 8/20 | max miss run 3, missed last 0 | shots L10 3.2 A 6/7 | ...X..X...XX.X..XX.X
-- Jack Eichel VGK vs OTT 10:00 PM ET | +170 (DK +170, FD +170) | model 33% | L10 5/10 L20 8/20 | max miss run 4, missed last 1 | shots L10 3.1 H 3/7 | ....XX.X..XX..XX..X.
-- Andrei Svechnikov CAR vs BOS 8:00 PM ET | +190 (DK +190, FD +170) | model 33% | L10 4/10 L20 10/20 | max miss run 5, missed last 5 | shots L10 2.6 H 2/4 | XXX.XXX...XX.XX.....
-- Drake Batherson OTT @ VGK 10:00 PM ET | +200 (DK +200, FD +200) | model 32% | L10 4/10 L20 8/20 | max miss run 3, missed last 0 | shots L10 2.4 A 3/5 | .X..X..X.XX.X...X..X
-- Nick Schmaltz UTA vs MIN 9:00 PM ET | +200 (DK +190, FD +200) | model 30% | L10 4/10 L20 10/20 | max miss run 3, missed last 2 | shots L10 2.2 H 2/5 | X.XX..X.XXXX.X...X..
-- Jimmy Snuggerud STL vs MTL 8:00 PM ET | +190 (DK +170, FD +190) | model 28% | L10 4/10 L20 8/20 | max miss run 5, missed last 1 | shots L10 2.0 H 3/5 | .....XXX.X...X..XXX.
-- Logan Stankoven CAR vs BOS 8:00 PM ET | +240 (DK +215, FD +240) | model 25% | L10 4/10 L20 9/20 | max miss run 5, missed last 0 | shots L10 3.4 H 2/4 | X.XXX...X..X.....XXX
-- Quinton Byfield LAK @ CHI 8:00 PM ET | +280 (DK +260, FD +280) | model 25% | L10 3/10 L20 7/20 | max miss run 6, missed last 6 | shots L10 2.1 A 1/5 | XX...X...XXX.X......
-- Jack Quinn BUF @ SJS 10:30 PM ET | +230 (DK +195, FD +230) | model 23% | L10 4/10 L20 8/20 | max miss run 5, missed last 0 | shots L10 2.7 A 4/5 | .X..X.X..XX.....XX.X
-- Arseny Gritsyuk NJD @ DAL 8:00 PM ET | +370 (DK +370, FD +360) | model 23% | L10 6/10 L20 9/20 | max miss run 6, missed last 0 | shots L10 2.3 A 1/3 | X...X.X......X.XXXXX
-- Cole Perfetti WPG vs FLA 8:00 PM ET | +245 (DK +245, FD +240) | model 23% | L10 5/10 L20 6/20 | max miss run 9, missed last 2 | shots L10 2.8 H 2/6 | X.........XXX.X..X..
-- Tyler Toffoli SJS vs BUF 10:30 PM ET | +350 (DK +350, FD +350) | model 21% | L10 3/10 L20 5/20 | max miss run 5, missed last 1 | shots L10 2.3 H 1/4 | .....X...X.X.....XX.
-- Brayden Schenn NYI @ NSH 8:00 PM ET | +350 (DK +350, FD +330) | model 21% | L10 3/10 L20 7/20 | max miss run 5, missed last 0 | shots L10 2.2 A 1/5 | XXX..X....X..X.....X
-- Kailer Yamamoto UTA vs MIN 9:00 PM ET | +400 (DK +400, FD +370) | model 21% | L10 4/10 L20 6/20 | max miss run 6, missed last 0 | shots L10 2.6 H 2/4 | ......X.X...XX...X.X
-- Rasmus Dahlin BUF @ SJS 10:30 PM ET | +330 (DK +310, FD +330) | model 20% | L10 3/10 L20 7/20 | max miss run 3, missed last 2 | shots L10 2.9 A 0/2 | X..XX..X..X..X...X..
-- Fraser Minten BOS @ CAR 8:00 PM ET | +440 (DK +390, FD +440) | model 20% | L10 3/10 L20 5/20 | max miss run 6, missed last 0 | shots L10 2.7 A 1/6 | .X......X....XX....X
-- Rasmus Andersson VGK vs OTT 10:00 PM ET | +625 (DK +600, FD +625) | model 19% | L10 2/10 L20 4/20 | max miss run 7, missed last 3 | shots L10 1.9 H 1/7 | .X...X.......X..X...
-- Jake Sanderson OTT @ VGK 10:00 PM ET | +600 (DK +450, FD +600) | model 19% | L10 3/10 L20 4/20 | max miss run 8, missed last 0 | shots L10 2.5 A 0/1 | ....X........X.X...X
-- Mavrik Bourque NSH vs NYI 8:00 PM ET | +450 (DK +425, FD +450) | model 18% | L10 2/10 L20 4/20 | max miss run 7, missed last 7 | shots L10 2.1 H 0/3 | .X.X.......XX.......
-- Josh Anderson MTL @ STL 8:00 PM ET | +480 (DK +450, FD +480) | model 18% | L10 2/10 L20 4/20 | max miss run 7, missed last 4 | shots L10 2.2 A 2/5 | .......X.X....XX....
+- Kirill Kaprizov MIN @ UTA 9:00 PM ET | +115 (DK -115, FD +115) | model 49% | L10 7/10 L20 13/20 season 9/13 | max miss run 2, missed last 0 | shots L10 3.5 | away season 6/9, away in L20 9/14 | XX.X.X.XX..X.XXXX.XX
+- Jason Robertson DAL vs NJD 8:00 PM ET | +155 (DK +155, FD +155) | model 43% | L10 4/10 L20 8/20 season 4/11 | max miss run 4, missed last 0 | shots L10 3.4 | home season 2/6, home in L20 5/11 | ....XXXX...XX...X..X
+- Kyle Connor WPG vs FLA 8:00 PM ET | +140 (DK +135, FD +140) | model 42% | L10 6/10 L20 11/20 season 7/11 | max miss run 3, missed last 1 | shots L10 4.0 | home season 4/6, home in L20 5/9 | X.XX...X.XX.XXXX..X.
+- Steven Stamkos NSH vs NYI 8:00 PM ET | +160 (DK +160, FD +160) | model 40% | L10 5/10 L20 10/20 season 5/11 | max miss run 3, missed last 0 | shots L10 2.2 | home season 3/6, home in L20 5/9 | .XXX..X.X.XX...X..XX
+- Mark Stone VGK vs OTT 10:00 PM ET | +175 (DK +175, FD +175) | model 39% | L10 5/10 L20 10/20 season 6/13 | max miss run 3, missed last 2 | shots L10 2.2 | home season 5/7, home in L20 6/10 | .X.XXX.X..XX...XXX..
+- Artemi Panarin LAK @ CHI 8:00 PM ET | +180 (DK +180, FD +180) | model 34% | L10 6/10 L20 8/20 season 6/10 | max miss run 3, missed last 0 | shots L10 3.2 | away season 6/7, away in L20 6/10 | ...X..X...XX.X..XX.X
+- Jack Eichel VGK vs OTT 10:00 PM ET | +170 (DK +170, FD +170) | model 33% | L10 5/10 L20 8/20 season 6/13 | max miss run 4, missed last 1 | shots L10 3.1 | home season 3/7, home in L20 4/10 | ....XX.X..XX..XX..X.
+- Andrei Svechnikov CAR vs BOS 8:00 PM ET | +190 (DK +190, FD +170) | model 33% | L10 4/10 L20 10/20 season 4/13 | max miss run 5, missed last 5 | shots L10 2.6 | home season 2/4, home in L20 5/8 | XXX.XXX...XX.XX.....
+- Drake Batherson OTT @ VGK 10:00 PM ET | +200 (DK +200, FD +200) | model 32% | L10 4/10 L20 8/20 season 5/12 | max miss run 3, missed last 0 | shots L10 2.4 | away season 3/5, away in L20 3/7 | .X..X..X.XX.X...X..X
+- Nick Schmaltz UTA vs MIN 9:00 PM ET | +200 (DK +190, FD +200) | model 30% | L10 4/10 L20 10/20 season 6/12 | max miss run 3, missed last 2 | shots L10 2.2 | home season 2/5, home in L20 5/10 | X.XX..X.XXXX.X...X..
+- Jimmy Snuggerud STL vs MTL 8:00 PM ET | +190 (DK +170, FD +190) | model 28% | L10 4/10 L20 8/20 season 5/11 | max miss run 5, missed last 1 | shots L10 2.0 | home season 3/5, home in L20 5/9 | .....XXX.X...X..XXX.
+- Logan Stankoven CAR vs BOS 8:00 PM ET | +240 (DK +215, FD +240) | model 25% | L10 4/10 L20 9/20 season 5/13 | max miss run 5, missed last 0 | shots L10 3.4 | home season 2/4, home in L20 4/7 | X.XXX...X..X.....XXX
+- Quinton Byfield LAK @ CHI 8:00 PM ET | +280 (DK +260, FD +280) | model 25% | L10 3/10 L20 7/20 season 1/8 | max miss run 6, missed last 6 | shots L10 2.1 | away season 1/5, away in L20 6/10 | XX...X...XXX.X......
+- Jack Quinn BUF @ SJS 10:30 PM ET | +230 (DK +195, FD +230) | model 23% | L10 4/10 L20 8/20 season 5/11 | max miss run 5, missed last 0 | shots L10 2.7 | away season 4/5, away in L20 4/9 | .X..X.X..XX.....XX.X
+- Arseny Gritsyuk NJD @ DAL 8:00 PM ET | +370 (DK +370, FD +360) | model 23% | L10 6/10 L20 9/20 season 6/11 | max miss run 6, missed last 0 | shots L10 2.3 | away season 1/3, away in L20 2/6 | X...X.X......X.XXXXX
+- Cole Perfetti WPG vs FLA 8:00 PM ET | +245 (DK +245, FD +240) | model 23% | L10 5/10 L20 6/20 season 5/11 | max miss run 9, missed last 2 | shots L10 2.8 | home season 2/6, home in L20 2/9 | X.........XXX.X..X..
+- Tyler Toffoli SJS vs BUF 10:30 PM ET | +350 (DK +350, FD +350) | model 21% | L10 3/10 L20 5/20 season 4/12 | max miss run 5, missed last 1 | shots L10 2.3 | home season 1/4, home in L20 2/9 | .....X...X.X.....XX.
+- Brayden Schenn NYI @ NSH 8:00 PM ET | +350 (DK +350, FD +330) | model 21% | L10 3/10 L20 7/20 season 3/11 | max miss run 5, missed last 0 | shots L10 2.2 | away season 1/5, away in L20 2/7 | XXX..X....X..X.....X
+- Kailer Yamamoto UTA vs MIN 9:00 PM ET | +400 (DK +400, FD +370) | model 21% | L10 4/10 L20 6/20 season 3/7 | max miss run 6, missed last 0 | shots L10 2.6 | home season 2/4, home in L20 4/12 | ......X.X...XX...X.X
+- Rasmus Dahlin BUF @ SJS 10:30 PM ET | +330 (DK +310, FD +330) | model 20% | L10 3/10 L20 7/20 season 2/8 | max miss run 3, missed last 2 | shots L10 2.9 | away season 0/2, away in L20 2/8 | X..XX..X..X..X...X..
+- Fraser Minten BOS @ CAR 8:00 PM ET | +440 (DK +390, FD +440) | model 20% | L10 3/10 L20 5/20 season 4/12 | max miss run 6, missed last 0 | shots L10 2.7 | away season 1/6, away in L20 2/11 | .X......X....XX....X
+- Rasmus Andersson VGK vs OTT 10:00 PM ET | +625 (DK +600, FD +625) | model 19% | L10 2/10 L20 4/20 season 2/13 | max miss run 7, missed last 3 | shots L10 1.9 | home season 1/7, home in L20 2/10 | .X...X.......X..X...
+- Jake Sanderson OTT @ VGK 10:00 PM ET | +600 (DK +450, FD +600) | model 19% | L10 3/10 L20 4/20 season 1/4 | max miss run 8, missed last 0 | shots L10 2.5 | away season 0/1, away in L20 2/9 | ....X........X.X...X
+- Mavrik Bourque NSH vs NYI 8:00 PM ET | +450 (DK +425, FD +450) | model 18% | L10 2/10 L20 4/20 season 0/7 | max miss run 7, missed last 7 | shots L10 2.1 | home season 0/3, home in L20 1/10 | .X.X.......XX.......
+- Josh Anderson MTL @ STL 8:00 PM ET | +480 (DK +450, FD +480) | model 18% | L10 2/10 L20 4/20 season 3/11 | max miss run 7, missed last 4 | shots L10 2.2 | away season 2/5, away in L20 2/10 | .......X.X....XX....
 
 --- GOALS: misses exactly one check (64) ---
-- [venue] Tage Thompson BUF @ SJS 10:30 PM ET | +150 (DK +150, FD +150) | model 42% | L10 5/10 L20 8/20 | max miss run 5, missed last 2 | shots L10 4.1 A 1/5 | X.X.....X.XX.XX..X..
-- [hit rate] Macklin Celebrini SJS vs BUF 10:30 PM ET | +135 (DK -105, FD +135) | model 41% | L10 4/10 L20 9/20 | max miss run 2, missed last 2 | shots L10 4.0 H 2/4 | X.X.X..X.X..XX.X.X..
-- [shots] Tim Stützle OTT @ VGK 10:00 PM ET | +190 (DK +180, FD +190) | model 39% | L10 6/10 L20 9/20 | max miss run 4, missed last 0 | shots L10 1.9 A 3/5 | ....XX...XX.XX...XXX
-- [hit rate] Dylan Guenther UTA vs MIN 9:00 PM ET | +160 (DK +155, FD +160) | model 39% | L10 2/10 L20 8/20 | max miss run 4, missed last 0 | shots L10 2.5 H 3/5 | .XX.XX..XX....X....X
-- [hit rate] Filip Forsberg NSH vs NYI 8:00 PM ET | +200 (DK +190, FD +200) | model 38% | L10 2/10 L20 7/20 | max miss run 7, missed last 0 | shots L10 2.6 H 2/6 | XXX.X...X.......X..X
-- [hit rate] Adrian Kempe LAK @ CHI 8:00 PM ET | +185 (DK +185, FD +170) | model 35% | L10 2/10 L20 9/20 | max miss run 4, missed last 3 | shots L10 3.5 A 2/7 | XXXX.X.XX..X....X...
-- [venue] Sebastian Aho CAR vs BOS 8:00 PM ET | +190 (DK +190, FD +170) | model 32% | L10 4/10 L20 8/20 | max miss run 4, missed last 1 | shots L10 2.6 H 1/4 | ...X..X.XXX.XX....X.
-- [shots] Anthony Mantha NJD @ DAL 8:00 PM ET | +400 (DK +400, FD +390) | model 32% | L10 3/10 L20 9/20 | max miss run 5, missed last 0 | shots L10 1.2 A 1/3 | XXX.X..XX.....X...XX
-- [hit rate] Matthew Tkachuk FLA @ WPG 8:00 PM ET | +200 (DK +195, FD +200) | model 30% | L10 3/10 L20 7/20 | max miss run 6, missed last 0 | shots L10 2.2 A 3/9 | XX.X.....X.XX......X
-- [hit rate] Jack Hughes NJD @ DAL 8:00 PM ET | +205 (DK +205, FD +190) | model 29% | L10 2/10 L20 7/20 | max miss run 4, missed last 1 | shots L10 3.4 A 1/3 | .XX..XX..X....X...X.
-- [shots] Porter Martone PHI vs CBJ 7:00 PM ET | +260 (DK +245, FD +260) | model 27% | L10 3/10 L20 7/20 | max miss run 5, missed last 0 | shots L10 1.3 H 2/7 | .X.XX.X.....X...X..X
-- [hit rate] Jake DeBrusk VAN @ ANA 10:00 PM ET | +225 (DK +225, FD +210) | model 26% | L10 2/10 L20 8/20 | max miss run 6, missed last 6 | shots L10 2.3 A 2/7 | XXX..XXX...X.X......
-- [hit rate] Blake Coleman MIN @ UTA 9:00 PM ET | +360 (DK +330, FD +360) | model 25% | L10 2/10 L20 5/20 | max miss run 7, missed last 1 | shots L10 2.3 A 3/9 | X....X.X..X.......X.
-- [venue] Mason McTavish STL vs MTL 8:00 PM ET | +250 (DK +250, FD +240) | model 24% | L10 4/10 L20 7/20 | max miss run 3, missed last 1 | shots L10 2.8 H 1/5 | ...X...X.X.X..XX..X.
-- [shots] Brett Howden VGK vs OTT 10:00 PM ET | +320 (DK +310, FD +320) | model 24% | L10 5/10 L20 8/20 | max miss run 7, missed last 1 | shots L10 1.4 H 3/7 | XX.X.......X..XXX.X.
-- [shots] Matvei Michkov PHI vs CBJ 7:00 PM ET | +200 (DK +195, FD +200) | model 24% | L10 5/10 L20 10/20 | max miss run 3, missed last 0 | shots L10 1.5 H 4/7 | X...XXX..X.X...XXX.X
-- [shots] Adam Gaudette SJS vs BUF 10:30 PM ET | +575 (DK +550, FD +575) | model 23% | L10 2/10 L20 3/20 | max miss run 8, missed last 6 | shots L10 1.4 | ........X..X.X......
-- [shots] Elias Lindholm BOS @ CAR 8:00 PM ET | +330 (DK +300, FD +330) | model 23% | L10 3/10 L20 5/20 | max miss run 8, missed last 1 | shots L10 1.7 A 3/6 | X........X.....XX.X.
-- [shots] Connor Brown NJD @ DAL 8:00 PM ET | +750 (DK +750, FD +750) | model 23% | L10 2/10 L20 7/20 | max miss run 4, missed last 4 | shots L10 1.7 | .XX.X..XX..X...X....
-- [shots] Frank Nazar CHI vs LAK 8:00 PM ET | +330 (DK +320, FD +330) | model 23% | L10 3/10 L20 5/20 | max miss run 7, missed last 3 | shots L10 1.4 H 2/5 | ..X...X.......XXX...
+- [venue] Tage Thompson BUF @ SJS 10:30 PM ET | +150 (DK +150, FD +150) | model 42% | L10 5/10 L20 8/20 season 5/11 | max miss run 5, missed last 2 | shots L10 4.1 | away season 1/5, away in L20 2/9 | X.X.....X.XX.XX..X..
+- [hit rate] Macklin Celebrini SJS vs BUF 10:30 PM ET | +135 (DK -105, FD +135) | model 41% | L10 4/10 L20 9/20 season 4/10 | max miss run 2, missed last 2 | shots L10 4.0 | home season 2/4, home in L20 5/10 | X.X.X..X.X..XX.X.X..
+- [shots] Tim Stützle OTT @ VGK 10:00 PM ET | +190 (DK +180, FD +190) | model 39% | L10 6/10 L20 9/20 season 7/12 | max miss run 4, missed last 0 | shots L10 1.9 | away season 3/5, away in L20 3/8 | ....XX...XX.XX...XXX
+- [hit rate] Dylan Guenther UTA vs MIN 9:00 PM ET | +160 (DK +155, FD +160) | model 39% | L10 2/10 L20 8/20 season 4/12 | max miss run 4, missed last 0 | shots L10 2.5 | home season 3/5, home in L20 5/9 | .XX.XX..XX....X....X
+- [hit rate] Filip Forsberg NSH vs NYI 8:00 PM ET | +200 (DK +190, FD +200) | model 38% | L10 2/10 L20 7/20 season 2/11 | max miss run 7, missed last 0 | shots L10 2.6 | home season 2/6, home in L20 3/9 | XXX.X...X.......X..X
+- [hit rate] Adrian Kempe LAK @ CHI 8:00 PM ET | +185 (DK +185, FD +170) | model 35% | L10 2/10 L20 9/20 season 2/10 | max miss run 4, missed last 3 | shots L10 3.5 | away season 2/7, away in L20 4/10 | XXXX.X.XX..X....X...
+- [venue] Sebastian Aho CAR vs BOS 8:00 PM ET | +190 (DK +190, FD +170) | model 32% | L10 4/10 L20 8/20 season 6/13 | max miss run 4, missed last 1 | shots L10 2.6 | home season 1/4, home in L20 2/8 | ...X..X.XXX.XX....X.
+- [shots] Anthony Mantha NJD @ DAL 8:00 PM ET | +400 (DK +400, FD +390) | model 32% | L10 3/10 L20 9/20 season 3/11 | max miss run 5, missed last 0 | shots L10 1.2 | away season 1/3, away in L20 3/7 | XXX.X..XX.....X...XX
+- [hit rate] Matthew Tkachuk FLA @ WPG 8:00 PM ET | +200 (DK +195, FD +200) | model 30% | L10 3/10 L20 7/20 season 4/12 | max miss run 6, missed last 0 | shots L10 2.2 | away season 3/9, away in L20 4/13 | XX.X.....X.XX......X
+- [hit rate] Jack Hughes NJD @ DAL 8:00 PM ET | +205 (DK +205, FD +190) | model 29% | L10 2/10 L20 7/20 season 3/11 | max miss run 4, missed last 1 | shots L10 3.4 | away season 1/3, away in L20 2/7 | .XX..XX..X....X...X.
+- [shots] Porter Martone PHI vs CBJ 7:00 PM ET | +260 (DK +245, FD +260) | model 27% | L10 3/10 L20 7/20 season 3/13 | max miss run 5, missed last 0 | shots L10 1.3 | home season 2/7, home in L20 4/10 | .X.XX.X.....X...X..X
+- [hit rate] Jake DeBrusk VAN @ ANA 10:00 PM ET | +225 (DK +225, FD +210) | model 26% | L10 2/10 L20 8/20 season 2/11 | max miss run 6, missed last 6 | shots L10 2.3 | away season 2/7, away in L20 6/13 | XXX..XXX...X.X......
+- [hit rate] Blake Coleman MIN @ UTA 9:00 PM ET | +360 (DK +330, FD +360) | model 25% | L10 2/10 L20 5/20 season 3/13 | max miss run 7, missed last 1 | shots L10 2.3 | away season 3/9, away in L20 4/13 | X....X.X..X.......X.
+- [venue] Mason McTavish STL vs MTL 8:00 PM ET | +250 (DK +250, FD +240) | model 24% | L10 4/10 L20 7/20 season 5/11 | max miss run 3, missed last 1 | shots L10 2.8 | home season 1/5, home in L20 2/11 | ...X...X.X.X..XX..X.
+- [shots] Brett Howden VGK vs OTT 10:00 PM ET | +320 (DK +310, FD +320) | model 24% | L10 5/10 L20 8/20 season 5/13 | max miss run 7, missed last 1 | shots L10 1.4 | home season 3/7, home in L20 4/10 | XX.X.......X..XXX.X.
+- [shots] Matvei Michkov PHI vs CBJ 7:00 PM ET | +200 (DK +195, FD +200) | model 24% | L10 5/10 L20 10/20 season 6/13 | max miss run 3, missed last 0 | shots L10 1.5 | home season 4/7, home in L20 6/10 | X...XXX..X.X...XXX.X
+- [shots] Adam Gaudette SJS vs BUF 10:30 PM ET | +575 (DK +550, FD +575) | model 23% | L10 2/10 L20 3/20 season 0/1 | max miss run 8, missed last 6 | shots L10 1.4 | home season 0/0, home in L20 2/9 | ........X..X.X......
+- [shots] Elias Lindholm BOS @ CAR 8:00 PM ET | +330 (DK +300, FD +330) | model 23% | L10 3/10 L20 5/20 season 4/12 | max miss run 8, missed last 1 | shots L10 1.7 | away season 3/6, away in L20 3/11 | X........X.....XX.X.
+- [shots] Connor Brown NJD @ DAL 8:00 PM ET | +750 (DK +750, FD +750) | model 23% | L10 2/10 L20 7/20 season 0/3 | max miss run 4, missed last 4 | shots L10 1.7 | away season 0/0, away in L20 4/9 | .XX.X..XX..X...X....
+- [shots] Frank Nazar CHI vs LAK 8:00 PM ET | +330 (DK +320, FD +330) | model 23% | L10 3/10 L20 5/20 season 3/9 | max miss run 7, missed last 3 | shots L10 1.4 | home season 2/5, home in L20 2/10 | ..X...X.......XXX...
 
 Checks: price (points -130 or better; assists/goals last-20 rate at or above the price), hit rate (L10 and L20 at or above the price), steady (points/assists never missed more than 2 in a row in last 20), shots (F 2.0+, D 1.5+ per game, last 10), venue (tonight's home/away rate not 20+ points under his season rate, 4+ games), streak (points not 3 of 3, assists not 2+ of last 3).
 Lineups and power-play units are NOT in this report: check the slate report once they post.
