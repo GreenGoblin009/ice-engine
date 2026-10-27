@@ -161,6 +161,35 @@ def run(prev, cur):
                         add(col, "forwards: games with 5+ attempts, last 10", b, season, hit, base)
                 # hot streak
                 add(col, "hit each of last 3", "yes" if sum(v[i - 3:i]) == 3 else "no", season, hit, base)
+                # long-history venue edge: same-venue rate over ALL prior games (min 30 there) vs overall rate (min 60 games)
+                if i >= 60:
+                    same_all = [v[j] for j in range(i) if rs[j]["home_road"] == row["home_road"]]
+                    if len(same_all) >= 30:
+                        e2 = sum(same_all) / len(same_all) - sum(v[:i]) / i
+                        b = ("venue much worse (-10 or more)" if e2 <= -.10 else "venue a bit worse (-4 to -10)" if e2 <= -.04 else
+                             "venue same (within 4)" if e2 < .04 else "venue a bit better (+4 to +10)" if e2 < .10 else "venue much better (+10 or more)")
+                        add(col, "long-history venue edge (all prior same-venue games, 30+ there, vs all prior games)", b, season, hit, base)
+                # recency: L20 and L10 rate minus the 60-game baseline
+                d20 = sum(p20) / 20 - base
+                b = "L20 well above baseline (+8 or more)" if d20 >= .08 else "L20 above (+3 to +8)" if d20 >= .03 else "L20 near baseline" if d20 > -.03 else "L20 below (-3 to -8)" if d20 > -.08 else "L20 well below (-8 or less)"
+                add(col, "recency: last-20 rate minus 60-game baseline", b, season, hit, base)
+                d10 = sum(v[i - 10:i]) / 10 - base
+                b = "L10 well above baseline (+15 or more)" if d10 >= .15 else "L10 above (+5 to +15)" if d10 >= .05 else "L10 near baseline" if d10 > -.05 else "L10 below (-5 to -15)" if d10 > -.15 else "L10 well below (-15 or less)"
+                add(col, "recency: last-10 rate minus 60-game baseline", b, season, hit, base)
+                # volume without results (and volume with results), forwards, using shot attempts
+                if g == "F":
+                    at10 = [r["shot_attempts"] for r in rs[i - 10:i] if r.get("shot_attempts") is not None]
+                    sg10 = [r["sog"] for r in rs[i - 10:i] if r["sog"] is not None]
+                    if len(at10) >= 8 and len(sg10) >= 8:
+                        a10 = sum(at10) / len(at10)
+                        s10 = sum(sg10) / len(sg10)
+                        gl10 = sum(1 for r in rs[i - 10:i] if (r["goals"] or 0) > 0)
+                        if a10 >= 5 or s10 >= 3:
+                            b = "high volume, 0-1 goals in last 10 (sleeper)" if gl10 <= 1 else "high volume, 2 goals in last 10" if gl10 == 2 else "high volume, 3+ goals in last 10 (hot)"
+                            add(col, "high volume (5+ attempts or 3+ shots a game) by goals in last 10", b, season, hit, base)
+                        if 3.5 <= a10 < 5 and 1.5 <= s10 < 3:
+                            b = "mid volume, 0-1 goals in last 10" if gl10 <= 1 else "mid volume, 2+ goals in last 10"
+                            add(col, "mid volume by goals in last 10", b, season, hit, base)
                 # how long hot runs last: current hit run length (0 if last game missed)
                 run_now = 0
                 for vv in reversed(v[:i]):
