@@ -73,6 +73,11 @@ z: |2| or more is unlikely to be luck. Many buckets are tested, so a lone 2-3 ca
 | L10 below (-5 to -15) | 8597 | 33.1 | 33.1 | -0.0 | -0.1 | +0.0 (+0.1), n=7025 | -0.4 (-0.3), n=1572 |
 | L10 well below (-15 or less) | 4289 | 33.8 | 34.7 | -0.8 | -1.2 | -0.9 (-1.2), n=3506 | -0.6 (-0.3), n=783 |
 
+### USER METHOD: L10 form at the bar but same-venue L10 below the bar
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| venue form weak | 2494 | 47.2 | 47.7 | -0.5 | -0.5 | -0.0 (-0.0), n=2099 | -3.1 (-1.3), n=395 |
+
 ### current hit run (games in a row with a hit)
 | bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
 |---|---|---|---|---|---|---|---|
@@ -92,6 +97,22 @@ z: |2| or more is unlikely to be luck. Many buckets are tested, so a lone 2-3 ca
 |---|---|---|---|---|---|---|---|
 | last game hit | 2283 | 45.6 | 43.2 | +2.5 | +2.5 | +2.5 (+2.2), n=1880 | +2.4 (+1.0), n=403 |
 | last game MISS | 2482 | 38.9 | 41.3 | -2.4 | -2.5 | -2.4 (-2.3), n=2040 | -2.2 (-1.0), n=442 |
+
+### USER METHOD: L10 form and same-venue L10 form both at the bar (points 6+, assists 4+, goals 3+)
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| both at the bar, hit last game | 3537 | 59.3 | 58.2 | +1.1 | +1.4 | +1.1 (+1.2), n=2975 | +1.3 (+0.6), n=562 |
+| both at the bar, missed last game (off night) | 1422 | 58.4 | 56.6 | +1.8 | +1.4 | +2.1 (+1.4), n=1184 | +0.6 (+0.2), n=238 |
+
+### USER METHOD: L10 below the bar but same-venue L10 at the bar
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| venue form strong only | 2424 | 47.8 | 47.8 | -0.1 | -0.1 | +0.7 (+0.6), n=1930 | -3.0 (-1.4), n=494 |
+
+### USER METHOD: both at the bar and 1-2 straight misses (off night or two)
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| yes | 1363 | 58.5 | 56.6 | +1.8 | +1.4 | +2.0 (+1.4), n=1134 | +0.9 (+0.3), n=229 |
 
 ### long-history venue edge (all prior same-venue games, 30+ there, vs all prior games)
 | bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
@@ -207,6 +228,17 @@ z: |2| or more is unlikely to be luck. Many buckets are tested, so a lone 2-3 ca
 | L10 well below (-15 or less) | 3275 | 26.0 | 26.7 | -0.6 | -0.9 | -1.5 (-1.8), n=2729 | +3.5 (+1.9), n=546 |
 | L10 well above baseline (+15 or more) | 4054 | 32.9 | 32.6 | +0.3 | +0.4 | +0.4 (+0.4), n=3358 | +0.2 (+0.1), n=696 |
 
+### USER METHOD: L10 form and same-venue L10 form both at the bar (points 6+, assists 4+, goals 3+)
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| both at the bar, missed last game (off night) | 3007 | 39.4 | 38.8 | +0.5 | +0.6 | +0.6 (+0.6), n=2487 | +0.3 (+0.1), n=520 |
+| both at the bar, hit last game | 3364 | 40.8 | 41.0 | -0.2 | -0.2 | -0.2 (-0.2), n=2795 | -0.1 (-0.0), n=569 |
+
+### USER METHOD: both at the bar and 1-2 straight misses (off night or two)
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| yes | 2427 | 40.4 | 39.4 | +1.0 | +1.0 | +1.4 (+1.3), n=2010 | -0.8 (-0.4), n=417 |
+
 ### current hit run (games in a row with a hit)
 | bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
 |---|---|---|---|---|---|---|---|
@@ -220,6 +252,16 @@ z: |2| or more is unlikely to be luck. Many buckets are tested, so a lone 2-3 ca
 | bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
 |---|---|---|---|---|---|---|---|
 | all | 34512 | 25.7 | 25.8 | -0.0 | -0.1 | +0.0 (+0.1), n=28503 | -0.2 (-0.3), n=6009 |
+
+### USER METHOD: L10 form at the bar but same-venue L10 below the bar
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| venue form weak | 3212 | 29.9 | 30.5 | -0.6 | -0.8 | -0.2 (-0.2), n=2648 | -2.7 (-1.4), n=564 |
+
+### USER METHOD: L10 below the bar but same-venue L10 at the bar
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| venue form strong only | 3189 | 30.3 | 30.4 | -0.1 | -0.1 | -0.1 (-0.1), n=2599 | +0.1 (+0.0), n=590 |
 
 ### long-history venue edge (all prior same-venue games, 30+ there, vs all prior games)
 | bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
@@ -361,6 +403,22 @@ z: |2| or more is unlikely to be luck. Many buckets are tested, so a lone 2-3 ca
 |---|---|---|---|---|---|---|---|
 | all | 34512 | 16.4 | 16.3 | +0.1 | +0.5 | +0.2 (+1.1), n=28503 | -0.5 (-1.1), n=6009 |
 
+### USER METHOD: L10 form and same-venue L10 form both at the bar (points 6+, assists 4+, goals 3+)
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| both at the bar, hit last game | 2347 | 28.6 | 30.4 | -1.8 | -1.9 | -1.9 (-1.8), n=1983 | -1.4 (-0.6), n=364 |
+| both at the bar, missed last game (off night) | 3394 | 27.8 | 29.0 | -1.2 | -1.6 | -1.9 (-2.3), n=2846 | +2.5 (+1.3), n=548 |
+
+### USER METHOD: L10 form at the bar but same-venue L10 below the bar
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| venue form weak | 2987 | 21.8 | 21.6 | +0.1 | +0.2 | +0.7 (+0.9), n=2509 | -2.9 (-1.6), n=478 |
+
+### USER METHOD: L10 below the bar but same-venue L10 at the bar
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| venue form strong only | 3075 | 21.8 | 22.0 | -0.3 | -0.3 | +0.7 (+0.9), n=2488 | -4.4 (-2.6), n=587 |
+
 ### long-history venue edge (all prior same-venue games, 30+ there, vs all prior games)
 | bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
 |---|---|---|---|---|---|---|---|
@@ -396,6 +454,11 @@ z: |2| or more is unlikely to be luck. Many buckets are tested, so a lone 2-3 ca
 |---|---|---|---|---|---|---|---|
 | last game hit | 772 | 26.4 | 28.1 | -1.7 | -1.0 | -2.3 (-1.3), n=652 | +1.7 (+0.4), n=120 |
 | last game MISS | 1030 | 24.3 | 26.8 | -2.6 | -1.9 | -2.7 (-1.9), n=869 | -1.7 (-0.5), n=161 |
+
+### USER METHOD: both at the bar and 1-2 straight misses (off night or two)
+| bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
+|---|---|---|---|---|---|---|---|
+| yes | 2339 | 28.2 | 29.5 | -1.3 | -1.4 | -1.9 (-1.9), n=1954 | +1.7 (+0.7), n=385 |
 
 ### high volume (5+ attempts or 3+ shots a game) by goals in last 10
 | bucket | n | actual % | baseline % | diff | z | last season diff (z) | this season diff (z) |
