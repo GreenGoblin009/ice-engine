@@ -905,7 +905,14 @@ S.lead=S.lead||{stat:'Assists',window:'Last 10',team:'ALL',sort:'rate',line:0.5}
 /* ---- Form: consistent players with good odds (hidden until unlocked at #form) ---- */
 S.form=S.form||{stat:'Points',price:'any',min:'any',sort:'rate',mode:'hits',cyc:'off'};
 async function formSkaters(gs){
-  let sk=S.lineups.filter(l=>l.status==='projected'&&(l.slot==='line'||l.slot==='pair')&&l.player_id);
+  // a lineup name with no player id (for example "Elias Nils Pettersson") is matched to the roster by team, last name and F/D
+  let sk=S.lineups.filter(l=>l.status==='projected'&&(l.slot==='line'||l.slot==='pair')).map(l=>{
+    if(l.player_id) return l;
+    const parts=(l.player_name||'').split(' '), last=(parts[parts.length-1]||'').toLowerCase(), first=(parts[0]||'').toLowerCase(), wantD=l.slot==='pair';
+    let c=[...S.players.values()].filter(p=>p.team===l.team&&(p.name||'').toLowerCase().endsWith(last)&&(wantD?p.pos==='D':(p.pos!=='D'&&p.pos!=='G')));
+    if(c.length>1) c=c.filter(p=>p.name.toLowerCase().startsWith(first));
+    return c.length===1?{...l,player_id:c[0].id,player_name:c[0].name}:l;
+  }).filter(l=>l.player_id);
   const haveTm=new Set(sk.map(x=>x.team)); const missTm=[...new Set(gs.flatMap(g=>[g.away,g.home]))].filter(t=>!haveTm.has(t));
   let prevTeams=[];
   if(gs.length&&missTm.length){
@@ -958,7 +965,7 @@ async function renderForm(){
   const bookShort=b=>({DraftKings:'DK',FanDuel:'FD',BetMGM:'MGM','BetOnline.ag':'BetOnline',Bovada:'Bovada'}[b]||b);
   const base=sk.map(l=>{
     const logs=S.logCache.get(l.player_id)||[];
-    const h=hitStats(logs,F.stat,0.5); if(h.n<8) return null;
+    const h=hitStats(logs,F.stat,0.5);
     const pos=(S.players.get(l.player_id)||{}).pos||'F'; const toi=avgToiMin(logs);
     return {l,logs,h,pos,toi,bucket:roleBucket(pos,toi)};
   }).filter(Boolean);
@@ -1005,6 +1012,7 @@ async function renderForm(){
     const t=[]; if(streakTag) t.push(streakTag); if(r.pa) t.push(`<b class="bl">PATTERN ${r.pa.p}-GAME CYCLE ${Math.round(r.pa.fit*100)}%</b>`);
     if(r.pa&&r.pv) t.push(`<b class="${r.pv.next?'g':'a'}">${vn} CYCLE ${r.pv.next?'AGREES':'DISAGREES'}</b>`);
     t.push(`<b class="g">${r.l10} hits, ${r.l10n-r.l10} misses</b>`);
+    if(r.h.n<10) t.push(`<b class="a">${r.h.n?'ONLY '+r.h.n+' GAMES LOGGED':'NO GAMES LOGGED'}</b>`);
     if(r.offNight) t.push(`<b class="a">MISSED ${r.now}, STEADY</b>`);
     if(r.sleeper) t.push('<b class="bl">SLEEPER</b>');
     if(r.v20.length>=3) t.push(`${vn} ${r.v20h}/${r.v20.length}`);
