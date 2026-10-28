@@ -903,7 +903,7 @@ const LEAD_LINES={Points:[0.5,1.5],Goals:[0.5],Assists:[0.5,1.5],Shots:[1.5,2.5,
 S.lead=S.lead||{stat:'Assists',window:'Last 10',team:'ALL',sort:'rate',line:0.5};
   S.lead.split=S.lead.split||'Home+Away'; S.lead.vs=S.lead.vs||'any';
 /* ---- Form: consistent players with good odds (hidden until unlocked at #form) ---- */
-S.form=S.form||{stat:'Points',price:'any',min:'any',sort:'rate',mode:'hits',cyc:'off'};
+S.form=S.form||{stat:'Points',price:'any',min:'any',sort:'rate',mode:'hits',cyc:'off',split:'Home+Away'};
 async function formSkaters(gs){
   // a lineup name with no player id (for example "Elias Nils Pettersson") is matched to the roster by team, last name and F/D
   let sk=S.lineups.filter(l=>l.status==='projected'&&(l.slot==='line'||l.slot==='pair')).map(l=>{
@@ -950,9 +950,10 @@ async function renderForm(){
     <div><label>Stat</label><select id="fStat">${['Points','Goals','Assists'].map(x=>`<option ${x===F.stat?'selected':''}>${x}</option>`).join('')}</select></div>
     <div><label>Price</label><select id="fPrice">${[['safe','−130 or better'],['any','Any price'],['plus','+100 or longer'],['plus150','+150 or longer']].map(([v,t])=>`<option value="${v}" ${v===F.price?'selected':''}>${t}</option>`).join('')}</select></div>
     <div><label>Last 10 games: show</label><select id="fMode">${[['hits','Hits'],['misses','Misses']].map(([v,t])=>`<option value="${v}" ${v===F.mode?'selected':''}>${t}</option>`).join('')}</select></div>
+    <div><label>Venue</label><select id="fSplit">${[['Home+Away','All games'],['Home','Home games only'],['Away','Away games only']].map(([v,t])=>`<option value="${v}" ${v===F.split?'selected':''}>${t}</option>`).join('')}</select></div>
     <div><label>How many</label><select id="fMin">${['any',0,1,2,3,4,5,6,7,8,9,10].map(x=>`<option value="${x}" ${String(x)===String(F.min)?'selected':''}>${x==='any'?'Any':x}</option>`).join('')}</select></div>
     </div>`;
-  const wire=()=>{ $('fStat').onchange=e=>{F.stat=e.target.value;renderForm();}; $('fPrice').onchange=e=>{F.price=e.target.value;renderForm();}; $('fMin').onchange=e=>{F.min=e.target.value==='any'?'any':+e.target.value;renderForm();}; $('fMode').onchange=e=>{F.mode=e.target.value;renderForm();}; };
+  const wire=()=>{ $('fStat').onchange=e=>{F.stat=e.target.value;renderForm();}; $('fPrice').onchange=e=>{F.price=e.target.value;renderForm();}; $('fMin').onchange=e=>{F.min=e.target.value==='any'?'any':+e.target.value;renderForm();}; $('fMode').onchange=e=>{F.mode=e.target.value;renderForm();}; $('fSplit').onchange=e=>{F.split=e.target.value;renderForm();}; };
   if(!gs.length){ $('view').innerHTML=controls+`<div class="empty">${dayGamesAll().length?'Every game is hidden. Tap a game above, or Show all.':'No games on this day.'}</div>`; wire(); return; }
   const {sk,prevTeams}=await formSkaters(gs);
   if(S.view!=='form') return;
@@ -974,7 +975,8 @@ async function renderForm(){
   const allRate=tot.n?tot.o/tot.n:0.3;
   const poolRate=b=>(b&&pool[b]&&pool[b].c>=8)?pool[b].o/pool[b].n:allRate;
   let rows=base.map(r=>{
-    const g=r.logs.filter(x=>statVal(x,F.stat)!=null);
+    const gFull=r.logs.filter(x=>statVal(x,F.stat)!=null);
+    const g=F.split==='Home'?gFull.filter(x=>x.home_road==='H'):F.split==='Away'?gFull.filter(x=>x.home_road==='R'):gFull;   // Venue toggle: last 10/20 come from home-only or away-only games
     const seq=g.slice(0,20).map(x=>statVal(x,F.stat)>0.5?1:0);          // newest first
     const l10=seq.slice(0,10).reduce((a,b)=>a+b,0), l10n=Math.min(10,seq.length), l20=seq.reduce((a,b)=>a+b,0);
     let now=0; for(const v of seq){ if(v) break; now++; }
@@ -982,9 +984,9 @@ async function renderForm(){
     let longest=0, run=0; seq.forEach(v=>{ run=v?0:run+1; longest=Math.max(longest,run); });
     const rest=seq.slice(now); let restLongest=0; run=0; rest.forEach(v=>{ run=v?0:run+1; restLongest=Math.max(restLongest,run); });
     const gm=gameOf(r.l.team); const home=gm?gm.home===r.l.team:null;
-    const venueRows=g.filter(x=>x.home_road===(home?'H':'R'));
+    const venueRows=gFull.filter(x=>x.home_road===(home?'H':'R'));
     const vSeason=venueRows.filter(x=>x.season===CUR), vS=vSeason.filter(x=>statVal(x,F.stat)>0.5).length;
-    const v20=g.slice(0,20).filter(x=>x.home_road===(home?'H':'R')), v20h=v20.filter(x=>statVal(x,F.stat)>0.5).length;
+    const v20=gFull.slice(0,20).filter(x=>x.home_road===(home?'H':'R')), v20h=v20.filter(x=>statVal(x,F.stat)>0.5).length;
     const sh=r.logs.slice(0,10).filter(x=>x.sog!=null), shpg=sh.length?sh.reduce((a,x)=>a+x.sog,0)/sh.length:null;
     const at=r.logs.slice(0,10).filter(x=>x.shot_attempts!=null), atpg=at.length?at.reduce((a,x)=>a+x.shot_attempts,0)/at.length:null;
     const at4=at.filter(x=>x.shot_attempts>=4).length;
@@ -994,7 +996,7 @@ async function renderForm(){
     const adj=(r.h.over+SHRINK_K*poolRate(r.bucket))/(r.h.n+SHRINK_K);
     const steady=longest<=2;
     const pa=patPeriod(seq);
-    const vseq=g.filter(x=>x.home_road===(home?'H':'R')).slice(0,20).map(x=>statVal(x,F.stat)>0.5?1:0);
+    const vseq=gFull.filter(x=>x.home_road===(home?'H':'R')).slice(0,20).map(x=>statVal(x,F.stat)>0.5?1:0);
     const pv=vseq.length>=12?patPeriod(vseq):null;
     const offNight=now>=1&&now<=2&&restLongest<=2&&l10>=3;
     return {...r,pa,pv,seq,hitRun,l10,l10n,l20,now,longest,steady,offNight,home,gm,vSeason,vS,v20,v20h,shpg,atpg,at4,at:at.length,sleeper,pc,adj};
@@ -1026,7 +1028,7 @@ async function renderForm(){
     const r10=Math.round(100*r.l10/Math.max(1,r.l10n)), r20=Math.round(100*r.l20/Math.max(1,r.seq.length));
     const col=r10>=60?'var(--green)':r10>=40?'var(--amber)':'var(--red)';
     const bars=r.seq.slice().reverse().map(v=>`<i class="${v?'y':''}"></i>`).join('');
-    return `<div class="prow" data-pid="${r.l.player_id}" data-stat="${F.stat}" data-line="0.5"${pc?` data-odds="${pc.price}"`:''}>
+    return `<div class="prow" data-pid="${r.l.player_id}" data-stat="${F.stat}" data-line="0.5" data-split="${F.split}"${pc?` data-odds="${pc.price}"`:''}>
       <div><div class="pname">${esc(r.l.player_name)}</div>
         <div class="pmeta"><b style="color:var(--text)">${esc(matchup(r.gm))}</b> · ${pc?`<b style="color:var(--text)">${fmtOdds(pc.price)}</b> ${esc(bookShort(pc.book))} · break-even ${Math.round(be*100)}%`:'no line yet'}</div>
         <div class="fbar">${bars}</div>
@@ -1034,7 +1036,7 @@ async function renderForm(){
       <div style="text-align:right;min-width:74px;"><div class="pbig" style="color:${col}">${r10}%</div><div class="psub">LAST 10</div><div class="muted small" style="margin-top:4px;">L20 ${r20}%</div><div class="muted small">model ${Math.round(r.adj*100)}%</div></div></div>`;
   }).join(''):'<div class="empty">No players match this filter. Lower the minimum hits or widen the price.</div>';
   const banner=prevTeams.length?`<div class="muted small" style="margin:0 0 10px;">Lineups not posted yet for ${esc(prevTeams.join(', '))}. Showing each of those teams' most recent lineup, so a scratch or line change is possible.</div>`:'';
-  const note=`<details class="more" style="margin:0 0 10px;"><summary>Every player in tonight's games. Tap for details.</summary><div class="muted small" style="margin-top:6px;">Every skater in tonight's lineups, best last-10 hit rate first. The big number is his hit rate in his last 10 games (green 60%+, amber 40-59, red under 40), with his last 20 and the model chance underneath. The squares are his last 20 games, oldest on the left, green = got it. Use Hits or Misses plus a number to see only players with exactly that many in their last 10, and Price to see only players inside a price. PATTERN = his last 20 repeat a hit/miss cycle (not proven to beat his normal rate). HOME/AWAY x/y = his hits at tonight's venue in last 20. SLEEPER = a forward with lots of shots or attempts but 0-1 goals in his last 10. Showing ${rows.length} of ${total}.</div></details>`;
+  const note=`<details class="more" style="margin:0 0 10px;"><summary>Every player in tonight's games. Tap for details.</summary><div class="muted small" style="margin-top:6px;">Every skater in tonight's lineups, best last-10 hit rate first. The big number is his hit rate in his last 10 games (green 60%+, amber 40-59, red under 40), with his last 20 and the model chance underneath. The squares are his last 20 games, oldest on the left, green = got it. Use Hits or Misses plus a number to see only players with exactly that many in their last 10, and Price to see only players inside a price. PATTERN = his last 20 repeat a hit/miss cycle (not proven to beat his normal rate). HOME/AWAY x/y = his hits at tonight's venue in last 20. SLEEPER = a forward with lots of shots or attempts but 0-1 goals in his last 10. Venue: Home games only or Away games only recounts the last 10 and last 20 from just those games (newest first), for every player, wherever tonight's game is. Showing ${rows.length} of ${total}.</div></details>`;
   $('view').innerHTML=controls+banner+note+list; wire();
 }
 
