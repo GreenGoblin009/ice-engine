@@ -32,7 +32,7 @@ INJURED / OUT (scratches in brackets)
 Questionable: no projected skater carries a questionable or day-to-day note.
 
 TEAM FORM, last 10 regular-season games (per game: GF / GA | shots for / against | PP | PK)
-- PHI: 2.2 / 2.9 | 24.9 / 26.6 | PP 20.6% (7/34) | PK 87.5%
+- PHI: 2.2 / 2.9 | 25.0 / 26.6 | PP 20.6% (7/34) | PK 87.5%
 - WSH: 3.4 / 3.2 | 27.5 / 28.4 | PP 17.9% (5/28) | PK 81.2%
 - CGY: 2.7 / 3.5 | 29.6 / 30.2 | PP 31.0% (9/29) | PK 86.7%
 - EDM: 3.8 / 3.0 | 23.9 / 28.0 | PP 35.5% (11/31) | PK 72.4%
