@@ -1,7 +1,7 @@
 ICE ENGINE SLATE REPORT  2026-10-28
-Lineups pulled: Oct 28, 3:19 PM ET
+Lineups pulled: Oct 28, 3:38 PM ET
 Prices pulled:  Oct 28, 3:19 PM ET
-Goalies pulled: Oct 28, 3:19 PM ET
+Goalies pulled: Oct 28, 3:38 PM ET
 Times are US Eastern. Read-only: built from the same models as the board.
 
 GAMES (start, projected goals, model game total; book game totals are not pulled)
@@ -22,7 +22,7 @@ GOALIES (shrunk two-season save %, raw save % and games)
 
 INJURED / OUT (scratches in brackets)
 - PHI: Nikita Grebenkin (back); Travis Konecny (lower body); Owen Tippett (upper body); Rasmus Ristolainen (upper body) [Simon Benoit, David Jiricek, Jacob Gaucher]
-- WSH: Rasmus Sandin (knee); Vincent Desharnais (appendectomy) [Ethen Frank, Ivan Miroshnichenko, Dylan McIlrath, Mitchell Gibson]
+- WSH: Rasmus Sandin (knee); Vincent Desharnais (appendectomy) [Ethen Frank, Ivan Miroshnichenko, Dylan McIlrath]
 - CGY: Samuel Honzek (lower body); Jonathan Huberdeau (hip) [Joel Hanley, Ben Jones, Maksim Tsyplakov]
 - EDM: Frederik Andersen (undisclosed); Zach Hyman (neck); Mattias Janmark (undisclosed); Devon Levi (undisclosed); Alec Regula (undisclosed); Matthew Savoie (undisclosed) [Filip Hallander, Max Jones, Jake Walman]
 - NJD: none listed [Brenden Dillon, Remi Poirier]
