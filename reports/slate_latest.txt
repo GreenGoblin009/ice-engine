@@ -1,7 +1,7 @@
 ICE ENGINE SLATE REPORT  2026-10-28
-Lineups pulled: Oct 28, 5:51 PM ET
+Lineups pulled: Oct 28, 6:10 PM ET
 Prices pulled:  Oct 28, 4:29 PM ET
-Goalies pulled: Oct 28, 5:51 PM ET
+Goalies pulled: Oct 28, 6:10 PM ET
 Times are US Eastern. Read-only: built from the same models as the board.
 
 GAMES (start, projected goals, model game total; book game totals are not pulled)
@@ -21,7 +21,7 @@ GOALIES (shrunk two-season save %, raw save % and games)
 - SEA: Philipp Grubauer expected 0.907 (0.908 raw, 39 GP)  | also listed: Joey Daccord 0.897 (0.894 raw, 53 GP)
 
 INJURED / OUT (scratches in brackets)
-- PHI: Nikita Grebenkin (back); Travis Konecny (lower body); Owen Tippett (upper body); Rasmus Ristolainen (upper body) [Simon Benoit, David Jiricek, Jacob Gaucher]
+- PHI: Nikita Grebenkin (back); Travis Konecny (lower body); Owen Tippett (upper body); Rasmus Ristolainen (upper body) [Simon Benoit, David Jiricek, Michael Bunting]
 - WSH: Rasmus Sandin (knee); Vincent Desharnais (appendectomy) [Ethen Frank, Ivan Miroshnichenko, Dylan McIlrath]
 - CGY: Samuel Honzek (lower body); Jonathan Huberdeau (hip) [Joel Hanley, Ben Jones, Maksim Tsyplakov]
 - EDM: Frederik Andersen (undisclosed); Zach Hyman (neck); Mattias Janmark (undisclosed); Devon Levi (undisclosed); Alec Regula (undisclosed); Matthew Savoie (undisclosed) [Filip Hallander, Max Jones, Jake Walman]
@@ -96,14 +96,14 @@ TOP 15 BY EDGE (all three markets)
 1. Anthony Mantha NJD Goals 32%; best +475 DK; edge +14.4; DK +475; FD +440; L10 3/10; L3 2/3; 1.3 shots; 13.4 min; PP2
 2. Trevor Zegras PHI Points 62%; best +106 FD; edge +13.4; DK -120; FD +106; L10 7/10; L3 3/3; 2.8 shots; 18.7 min; PP1
 3. Trevor Zegras PHI Assists 45%; best +196 FD; edge +11.1; DK +155; FD +196; L10 4/10; L3 2/3; 2.8 shots; 18.7 min; PP1
-4. Christian Dvorak PHI Points 46%; best +190 FD; edge +11.1; DK +145; FD +190; L10 4/10; L3 1/3; 1.2 shots; 17.7 min; PP2
-5. Christian Dvorak PHI Assists 35%; best +320 FD; edge +10.7; DK +245; FD +320; L10 2/10; L3 1/3; 1.2 shots; 17.7 min; PP2
+4. Christian Dvorak PHI Points 46%; best +190 FD; edge +11.1; DK +145; FD +190; L10 4/10; L3 1/3; 1.3 shots; 17.7 min; PP2
+5. Christian Dvorak PHI Assists 35%; best +320 FD; edge +10.7; DK +245; FD +320; L10 2/10; L3 1/3; 1.3 shots; 17.7 min; PP2
 6. Noah Cates PHI Points 40%; best +230 DK; edge +9.9; DK +230; FD -; L10 3/10; L3 2/3; 0.9 shots; 13.1 min; no PP
 7. Connor Brown NJD Goals 23%; best +650 DK; edge +9.4; DK +650; FD +625; L10 2/10; L3 0/3; 1.4 shots; 18.4 min; no PP
 8. Parker Kelly COL Goals 21%; best +700 DK; edge +8.4; DK +700; FD +650; L10 0/10; L3 0/3; 1.0 shots; 12.9 min; no PP
 9. Alaiksei Protas WSH Goals 27%; best +430 FD; edge +8.4; DK +400; FD +430; L10 0/10; L3 0/3; 1.3 shots; 15.9 min; no PP
 10. Brock Nelson COL Points 58%; best +100 DK; edge +8.3; DK +100; FD +100; L10 5/10; L3 1/3; 1.9 shots; 18.3 min; PP2
-11. Cody Glass NJD Goals 21%; best +700 DK; edge +8.3; DK +700; FD +700; L10 1/10; L3 0/3; 1.5 shots; 12.3 min; no PP
+11. Cody Glass NJD Goals 21%; best +700 DK; edge +8.2; DK +700; FD +700; L10 1/10; L3 0/3; 1.5 shots; 12.3 min; no PP
 12. Jack Hughes NJD Assists 56%; best +110 FD; edge +8.0; DK +105; FD +110; L10 8/10; L3 3/3; 3.7 shots; 20.3 min; PP1
 13. Tyson Foerster PHI Goals 29%; best +370 FD; edge +7.9; DK +310; FD +370; L10 2/10; L3 1/3; 2.5 shots; 17.6 min; PP2
 14. Alex Tuch WSH Points 63%; best -122 FD; edge +7.8; DK -125; FD -122; L10 5/10; L3 2/3; 2.7 shots; 19.2 min; PP1
@@ -114,7 +114,7 @@ ALL PRICED SKATERS (shots/game last 10, minutes, PP unit | G | P | A: chance, be
 PHI
 - Trevor Zegras (2.8, 18.7, PP1): G 27% +330 FD +3.7, L10 4/10, L3 2/3 | P 62% +106 FD +13.4, L10 7/10, L3 3/3 | A 45% +196 FD +11.1, L10 4/10, L3 2/3
 - Matvei Michkov (1.5, 15.8, PP1): G 24% +240 FD -5.5, L10 5/10, L3 1/3 | P 46% -113 FD -6.9, L10 6/10, L3 2/3 | A 28% +195 DK -6.4, L10 2/10, L3 1/3
-- Christian Dvorak (1.2, 17.7, PP2): G 19% +500 FD +2.7, L10 2/10, L3 0/3 | P 46% +190 FD +11.1, L10 4/10, L3 1/3 | A 35% +320 FD +10.7, L10 2/10, L3 1/3
+- Christian Dvorak (1.3, 17.7, PP2): G 19% +500 FD +2.7, L10 2/10, L3 0/3 | P 46% +190 FD +11.1, L10 4/10, L3 1/3 | A 35% +320 FD +10.7, L10 2/10, L3 1/3
 - Porter Martone (1.5, 14.0, PP1): G 27% +340 FD +3.8, L10 3/10, L3 1/3 | P 44% +134 FD +1.6, L10 4/10, L3 2/3 | A 34% +255 FD +6.1, L10 3/10, L3 2/3
 - Tyson Foerster (2.5, 17.6, PP2): G 29% +370 FD +7.9, L10 2/10, L3 1/3 | P 43% +142 FD +1.8, L10 3/10, L3 2/3 | A 15% +280 FD -11.1, L10 1/10, L3 1/3
 - Noah Cates (0.9, 13.1, no PP): G 20% +725 FD +7.5, L10 1/10, L3 1/3 | P 40% +230 DK +9.9, L10 3/10, L3 2/3 | A 28% +360 DK +5.9, L10 2/10, L3 1/3
@@ -138,7 +138,7 @@ WSH
 - Boone Jenner (2.5, 15.9, no PP): G 22% +400 DK +2.0, L10 4/10, L3 1/3 | P 44% +145 DK +3.3, L10 5/10, L3 1/3 | A 32% +260 DK +4.3, L10 1/10, L3 0/3
 - Pierre-Luc Dubois (1.3, 17.3, PP2): G 16% +360 DK -5.5, L10 1/10, L3 1/3 | P 40% -105 DK -11.7, L10 5/10, L3 1/3 | A 34% +158 FD -4.9, L10 5/10, L3 1/3
 - Justin Sourdif (0.9, 13.7, no PP): G 15% +600 DK +1.1, L10 1/10, L3 0/3 | P 29% +200 DK -4.5, L10 2/10, L3 1/3 | A 19% +340 DK -3.6, L10 1/10, L3 1/3
-- Anthony Beauvillier (0.9, 11.4, no PP): G 16% +500 FD -0.8, L10 1/10, L3 0/3 | P 28% +170 DK -9.4, L10 2/10, L3 1/3 | A 14% +295 DK -11.4, L10 1/10, L3 1/3
+- Anthony Beauvillier (0.9, 11.4, no PP): G 16% +500 FD -0.9, L10 1/10, L3 0/3 | P 28% +170 DK -9.5, L10 2/10, L3 1/3 | A 14% +295 DK -11.4, L10 1/10, L3 1/3
 - Martin Fehervary (0.4, 22.1, no PP): G 6% +1400 FD -0.4, L10 0/10, L3 0/3 | P 27% +270 DK -0.3, L10 2/10, L3 2/3 | A 22% +350 DK -0.2, L10 2/10, L3 2/3
 - Matt Roy (0.5, 20.3, no PP): G 3% +1500 DK -3.4, L10 0/10, L3 0/3 | P 20% +330 DK -3.3, L10 0/10, L3 0/3 | A 17% +425 DK -1.8, L10 0/10, L3 0/3
 - Timothy Liljegren (0.5, 17.6, no PP): G 4% +1800 DK -1.4, L10 1/10, L3 0/3 | P 19% +475 DK +1.3, L10 1/10, L3 0/3 | A 15% +600 DK +0.8, L10 0/10, L3 0/3
@@ -154,7 +154,7 @@ CGY
 - Zayne Parekh (2.0, 17.6, PP1): G 10% +700 FD -2.8, L10 1/10, L3 1/3 | P 25% +125 DK -19.3, L10 4/10, L3 2/3 | A 17% +185 DK -17.7, L10 3/10, L3 1/3
 - Kevin Bahl (0.9, 22.2, no PP): G 7% +1700 DK +1.0, L10 1/10, L3 0/3 | P 24% +285 DK -2.3, L10 2/10, L3 1/3 | A 18% +350 DK -4.5, L10 1/10, L3 1/3
 - Martin Pospisil (1.6, 13.5, no PP): G 11% +800 DK -0.0, L10 2/10, L3 1/3 | P 22% +245 DK -6.6, L10 3/10, L3 1/3 | A 15% +370 DK -6.6, L10 2/10, L3 1/3
-- Adam Klapka (1.5, 11.1, PP2): G 9% +600 DK -5.1, L10 2/10, L3 0/3 | P 22% +230 DK -8.1, L10 4/10, L3 2/3 | A 14% +400 DK -5.8, L10 2/10, L3 2/3
+- Adam Klapka (1.5, 11.1, PP2): G 9% +600 DK -5.2, L10 2/10, L3 0/3 | P 22% +230 DK -8.2, L10 4/10, L3 2/3 | A 14% +400 DK -5.9, L10 2/10, L3 2/3
 - Jacob Middleton (1.0, 17.8, no PP): G 4% +2100 FD -0.8, L10 1/10, L3 0/3 | P 21% no price, L10 2/10, L3 0/3 | A 18% no price, L10 1/10, L3 0/3
 - Yan Kuznetsov (1.2, 17.2, no PP): G 6% +2200 DK +1.6, L10 0/10, L3 0/3 | P 20% +310 DK -4.2, L10 2/10, L3 1/3 | A 16% +360 DK -6.0, L10 2/10, L3 1/3
 - Zach Whitecloud (1.2, 20.4, no PP): G 3% +2200 DK -1.7, L10 0/10, L3 0/3 | P 18% +475 DK +0.3, L10 0/10, L3 0/3 | A 15% +550 DK -0.2, L10 0/10, L3 0/3
@@ -170,11 +170,11 @@ EDM
 - Jason Dickinson (1.1, 14.8, no PP): G 11% +750 DK -0.4, L10 0/10, L3 0/3 | P 27% no price, L10 3/10, L3 1/3 | A 16% no price, L10 3/10, L3 1/3
 - Mathieu Joseph (0.9, 13.8, no PP): G 8% +800 DK -3.2, L10 2/10, L3 0/3 | P 23% no price, L10 4/10, L3 0/3 | A 17% no price, L10 2/10, L3 0/3
 - Colton Dach (1.5, 13.6, PP2): G 10% +475 DK -7.6, L10 2/10, L3 1/3 | P 21% +185 DK -14.0, L10 2/10, L3 1/3 | A 14% +350 DK -7.9, L10 2/10, L3 1/3
-- Isaac Howard (0.9, 9.5, PP2): G 8% +600 DK -6.0, L10 1/10, L3 1/3 | P 20% no price, L10 3/10, L3 1/3 | A 12% no price, L10 2/10, L3 0/3
 - Shakir Mukhamadullin (0.6, 13.5, no PP): G 10% +1500 DK +3.6, L10 1/10, L3 1/3 | P 20% +350 DK -2.0, L10 1/10, L3 1/3 | A 11% +450 DK -7.6, L10 0/10, L3 0/3
+- Isaac Howard (0.9, 9.5, PP2): G 8% +600 DK -6.1, L10 1/10, L3 1/3 | P 20% no price, L10 3/10, L3 1/3 | A 12% no price, L10 2/10, L3 0/3
 - Connor Murphy (0.8, 21.3, no PP): G 5% +1200 DK -2.2, L10 0/10, L3 0/3 | P 17% no price, L10 1/10, L3 0/3 | A 14% no price, L10 1/10, L3 0/3
-- Ty Emberson (0.8, 11.8, no PP): G 3% +2200 DK -1.5, L10 0/10, L3 0/3 | P 17% +475 DK -0.5, L10 1/10, L3 0/3 | A 14% +600 DK -0.1, L10 1/10, L3 0/3
-- Trent Frederic (0.9, 9.4, PP2): G 6% +700 FD -6.0, L10 1/10, L3 0/3 | P 11% +255 DK -17.5, L10 1/10, L3 0/3 | A 4% +450 DK -13.7, L10 0/10, L3 0/3
+- Ty Emberson (0.7, 11.8, no PP): G 3% +2200 DK -1.5, L10 0/10, L3 0/3 | P 17% +475 DK -0.5, L10 1/10, L3 0/3 | A 14% +600 DK -0.1, L10 1/10, L3 0/3
+- Trent Frederic (0.9, 9.4, PP2): G 6% +700 FD -6.1, L10 1/10, L3 0/3 | P 11% +255 DK -17.6, L10 1/10, L3 0/3 | A 4% +450 DK -13.8, L10 0/10, L3 0/3
 NJD
 - Jack Hughes (3.7, 20.3, PP1): G 30% +190 DK -4.0, L10 3/10, L3 2/3 | P 69% -190 DK +3.3, L10 8/10, L3 3/3 | A 56% +110 FD +8.0, L10 8/10, L3 3/3
 - Jesper Bratt (1.8, 17.3, PP1): G 22% +340 DK -0.5, L10 2/10, L3 0/3 | P 54% -130 DK -2.3, L10 6/10, L3 3/3 | A 44% +134 FD +1.4, L10 6/10, L3 3/3
@@ -187,8 +187,8 @@ NJD
 - Luke Hughes (2.6, 24.0, PP1): G 11% +550 FD -3.9, L10 2/10, L3 1/3 | P 39% +105 DK -9.9, L10 3/10, L3 1/3 | A 34% +150 DK -6.5, L10 2/10, L3 1/3
 - Dougie Hamilton (2.2, 20.9, PP2): G 13% +700 DK +0.2, L10 0/10, L3 0/3 | P 38% +162 FD -0.2, L10 4/10, L3 1/3 | A 29% +230 FD -1.0, L10 4/10, L3 1/3
 - Evan Rodrigues (1.4, 15.5, PP2): G 17% +500 FD -0.0, L10 2/10, L3 0/3 | P 36% +180 DK -0.1, L10 3/10, L3 1/3 | A 25% +320 DK +1.4, L10 3/10, L3 1/3
-- Cody Glass (1.5, 12.3, no PP): G 21% +700 DK +8.3, L10 1/10, L3 0/3 | P 26% no price, L10 1/10, L3 0/3 | A 9% no price, L10 0/10, L3 0/3
-- Jesper Boqvist (1.6, 12.0, no PP): G 10% +650 DK -3.5, L10 4/10, L3 1/3 | P 23% no price, L10 6/10, L3 2/3 | A 13% no price, L10 2/10, L3 1/3
+- Cody Glass (1.5, 12.3, no PP): G 21% +700 DK +8.2, L10 1/10, L3 0/3 | P 26% no price, L10 1/10, L3 0/3 | A 9% no price, L10 0/10, L3 0/3
+- Jesper Boqvist (1.6, 12.0, no PP): G 10% +650 DK -3.6, L10 4/10, L3 1/3 | P 23% no price, L10 6/10, L3 2/3 | A 13% no price, L10 2/10, L3 1/3
 - Brett Pesce (1.0, 21.0, no PP): G 4% +2200 DK +0.1, L10 1/10, L3 1/3 | P 21% no price, L10 4/10, L3 3/3 | A 17% no price, L10 3/10, L3 2/3
 - Johnathan Kovacevic (0.7, 15.9, no PP): G 1% +2500 DK -2.6, L10 0/10, L3 0/3 | P 21% no price, L10 2/10, L3 1/3 | A 20% no price, L10 2/10, L3 1/3
 - Jonas Siegenthaler (0.1, 19.5, no PP): G 1% +2300 FD -3.6, L10 0/10, L3 0/3 | P 18% no price, L10 2/10, L3 0/3 | A 17% no price, L10 2/10, L3 0/3
@@ -206,9 +206,9 @@ COL
 - Devon Toews (1.7, 20.4, PP2): G 7% +950 FD -2.2, L10 3/10, L3 2/3 | P 33% +150 FD -7.2, L10 6/10, L3 2/3 | A 27% +196 FD -7.1, L10 4/10, L3 1/3
 - Parker Kelly (1.0, 12.9, no PP): G 21% +700 DK +8.4, L10 0/10, L3 0/3 | P 32% no price, L10 1/10, L3 0/3 | A 17% no price, L10 1/10, L3 0/3
 - Josh Manson (0.9, 15.9, no PP): G 6% +1700 DK +0.0, L10 0/10, L3 0/3 | P 30% no price, L10 1/10, L3 0/3 | A 27% no price, L10 1/10, L3 0/3
-- Nicolas Roy (1.2, 11.7, no PP): G 12% +500 DK -4.3, L10 2/10, L3 0/3 | P 28% +180 DK -7.8, L10 5/10, L3 1/3 | A 20% +295 DK -5.0, L10 4/10, L3 1/3
+- Nicolas Roy (1.2, 11.7, no PP): G 12% +500 DK -4.4, L10 2/10, L3 0/3 | P 28% +180 DK -7.9, L10 5/10, L3 1/3 | A 20% +295 DK -5.2, L10 4/10, L3 1/3
 - Fedor Svechkov (0.9, 13.5, no PP): G 8% +750 DK -3.3, L10 2/10, L3 1/3 | P 27% no price, L10 5/10, L3 2/3 | A 20% no price, L10 4/10, L3 1/3
-- Logan O’Connor (1.5, 11.7, no PP): G 5% +800 DK -6.5, L10 0/10, L3 0/3 | P 17% no price, L10 1/10, L3 0/3 | A 13% no price, L10 1/10, L3 0/3
+- Logan O’Connor (1.5, 11.7, no PP): G 4% +800 DK -6.8, L10 0/10, L3 0/3 | P 16% no price, L10 1/10, L3 0/3 | A 13% no price, L10 1/10, L3 0/3
 - Brett Kulak (0.9, 18.9, no PP): G 2% +1700 DK -4.0, L10 0/10, L3 0/3 | P 16% no price, L10 3/10, L3 0/3 | A 14% no price, L10 3/10, L3 0/3
 TOR
 - William Nylander (3.2, 20.0, PP1): G 40% +155 DK +0.4, L10 4/10, L3 2/3 | P 70% no price, L10 7/10, L3 3/3 | A 52% -113 FD -1.2, L10 5/10, L3 1/3
@@ -222,7 +222,7 @@ TOR
 - Nick Paul (0.9, 16.3, no PP): G 15% +360 DK -6.9, L10 2/10, L3 0/3 | P 30% +140 DK -11.8, L10 3/10, L3 0/3 | A 17% +275 DK -9.5, L10 1/10, L3 0/3
 - Jake McCabe (1.2, 19.1, no PP): G 5% +1300 FD -1.8, L10 0/10, L3 0/3 | P 26% no price, L10 2/10, L3 2/3 | A 22% no price, L10 2/10, L3 2/3
 - Troy Stecher (1.1, 19.5, no PP): G 6% +1200 DK -1.3, L10 2/10, L3 2/3 | P 22% no price, L10 4/10, L3 3/3 | A 17% no price, L10 2/10, L3 1/3
-- Bo Groulx (0.6, 8.3, PP2): G 11% +600 FD -3.5, L10 0/10, L3 0/3 | P 21% no price, L10 0/10, L3 0/3 | A 11% no price, L10 0/10, L3 0/3
+- Bo Groulx (0.6, 8.3, PP2): G 11% +600 FD -3.7, L10 0/10, L3 0/3 | P 21% no price, L10 0/10, L3 0/3 | A 11% no price, L10 0/10, L3 0/3
 - Colton Sissons (0.8, 15.1, no PP): G 11% +650 DK -2.5, L10 1/10, L3 0/3 | P 21% no price, L10 4/10, L3 0/3 | A 11% no price, L10 3/10, L3 0/3
 - Brandon Duhaime (1.0, 11.7, no PP): G 6% +750 FD -6.0, L10 1/10, L3 1/3 | P 11% no price, L10 2/10, L3 2/3 | A 8% no price, L10 2/10, L3 2/3
 SEA
