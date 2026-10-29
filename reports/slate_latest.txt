@@ -1,6 +1,6 @@
 ICE ENGINE SLATE REPORT  2026-10-29
 Lineups pulled: none yet
-Prices pulled:  Oct 29, 9:57 AM ET
+Prices pulled:  Oct 29, 12:23 PM ET
 Goalies pulled: none yet
 Times are US Eastern. Read-only: built from the same models as the board.
 
@@ -191,6 +191,7 @@ Priced players missing from the projected lineups:
 - Mark Jankowski CAR (not on any lineup)
 - Olli Maatta MIN (not on any lineup)
 - Mike Matheson MTL (not on any lineup)
+- Cody Ceci LAK (not on any lineup)
 - Tom Wilson WSH (not on any lineup)
 - Teuvo Teravainen CHI (not on any lineup)
 - Jacob Trouba SJS (not on any lineup)
@@ -205,7 +206,6 @@ Priced players missing from the projected lineups:
 - Josh Anderson MTL (not on any lineup)
 - Alexander Kerfoot NSH (not on any lineup)
 - Liam Obrien UTA (not on any lineup)
-- Scott Sabourin TBL (not on any lineup)
 - Nate Schmidt UTA (not on any lineup)
 - Mackenzie Weegar UTA (not on any lineup)
 - Pavel Buchnevich STL (not on any lineup)
@@ -225,8 +225,8 @@ Priced players missing from the projected lineups:
 - Valeri Nichushkin CBJ (not on any lineup)
 - Ryan Pulock NYI (not on any lineup)
 - Nikita Zadorov BOS (not on any lineup)
+- Haydn Fleury WPG (not on any lineup)
 - Nikolaj Ehlers CAR (not on any lineup)
-- Dylan Larkin DET (not on any lineup)
 - Alex Tuch WSH (not on any lineup)
 - Tony Deangelo NYI (not on any lineup)
 - Nick Schmaltz UTA (not on any lineup)
@@ -237,6 +237,7 @@ Priced players missing from the projected lineups:
 - Brayden Point TBL (not on any lineup)
 - Michael Amadio OTT (not on any lineup)
 - Viktor Arvidsson DET (not on any lineup)
+- Danton Heinen CBJ (not on any lineup)
 - Jake Evans MTL (not on any lineup)
 - Frank Vatrano ANA (not on any lineup)
 - Kyle Connor WPG (not on any lineup)
@@ -401,7 +402,6 @@ Priced players missing from the projected lineups:
 - Gage Goncalves TBL (not on any lineup)
 - Artem Zub OTT (not on any lineup)
 - Jeff Malott ANA (not on any lineup)
-- Tyrel Bauer WPG (not on any lineup)
 - Yegor Chinakhov PIT (not on any lineup)
 - Emil Heineman NYI (not on any lineup)
 - Adam Wilsby NSH (not on any lineup)
@@ -478,7 +478,6 @@ Priced players missing from the projected lineups:
 - Tom Willander VAN (not on any lineup)
 - Matthew Wood NSH (not on any lineup)
 - Zach Metsa BUF (not on any lineup)
-- Nikolas Matinpalo OTT (not on any lineup)
 - Dmitri Simashev UTA (not on any lineup)
 - Florian Xhekaj MTL (not on any lineup)
 - Emmitt Finnie DET (not on any lineup)
