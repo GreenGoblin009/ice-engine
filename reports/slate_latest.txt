@@ -69,7 +69,7 @@ Questionable: no projected skater carries a questionable or day-to-day note.
 TEAM FORM, last 10 regular-season games (per game: GF / GA | shots for / against | PP | PK)
 - WPG: 2.2 / 3.0 | 26.4 / 27.9 | PP 7.7% (2/26) | PK 70.8%
 - TBL: 3.7 / 2.9 | 31.0 / 24.5 | PP 18.2% (6/33) | PK 78.6%
-- UTA: 3.5 / 3.8 | 29.9 / 25.7 | PP 27.0% (10/37) | PK 59.5%
+- UTA: 3.5 / 3.8 | 29.9 / 25.7 | PP 27.0% (10/37) | PK 58.3%
 - PIT: 2.7 / 3.5 | 26.5 / 28.6 | PP 11.5% (3/26) | PK 80.8%
 - CBJ: 2.6 / 3.3 | 25.6 / 28.1 | PP 11.1% (3/27) | PK 72.7%
 - CAR: 4.2 / 2.2 | 35.0 / 22.2 | PP 26.7% (8/30) | PK 79.3%
@@ -82,7 +82,7 @@ TEAM FORM, last 10 regular-season games (per game: GF / GA | shots for / against
 - MTL: 3.0 / 2.8 | 28.8 / 28.0 | PP 12.9% (4/31) | PK 85.7%
 - DAL: 3.2 / 1.9 | 26.8 / 21.6 | PP 22.7% (5/22) | PK 97.1%
 - NYI: 2.9 / 3.0 | 25.4 / 25.3 | PP 16.1% (5/31) | PK 84.4%
-- MIN: 3.3 / 2.3 | 32.2 / 24.1 | PP 22.2% (8/36) | PK 78.8%
+- MIN: 3.3 / 2.3 | 32.2 / 24.1 | PP 22.9% (8/35) | PK 78.8%
 - BUF: 2.6 / 3.2 | 27.7 / 27.7 | PP 12.1% (4/33) | PK 73.0%
 - ANA: 3.0 / 3.8 | 24.2 / 27.1 | PP 18.8% (6/32) | PK 76.2%
 - OTT: 2.9 / 3.0 | 25.3 / 25.7 | PP 14.3% (6/42) | PK 78.1%
