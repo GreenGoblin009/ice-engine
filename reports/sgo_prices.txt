@@ -1,4 +1,4 @@
-SPORTSGAMEODDS PRICES (FanDuel, DraftKings)  pulled Oct 29 05:04 PM ET
+SPORTSGAMEODDS PRICES (FanDuel, DraftKings)  pulled Oct 29 05:18 PM ET
 Over/Yes sides only. FD/DK = American odds; '-' = book not offering.
 
 == Winnipeg Jets @ Tampa Bay Lightning  Thu 07:00 PM ET ==
@@ -78,7 +78,7 @@ Yegor Chinakhov: ast O0.5 FD - DK +295 | goal FD +290 DK +310 | pts O0.5 FD - DK
 == Columbus Blue Jackets @ Carolina Hurricanes  Thu 07:00 PM ET ==
 GAME TOTAL: DK 5.5 (o -135 / u +114) | FD 6.5 (o +112 / u -138)
 Andrei Svechnikov: ast O0.5 FD +124 DK +125 | goal FD +170 DK +175 | pts O0.5 FD -194 DK -175
-Charlie Coyle: ast O0.5 FD +210 DK +215 | goal FD +380 DK +450 | pts O0.5 FD +118 DK +135
+Charlie Coyle: ast O0.5 FD +210 DK +215 | goal FD +380 DK +450 | pts O0.5 FD +118 DK +130
 Cole Sillinger: goal FD +700 DK +650
 Conor Garland: goal FD +650 DK +600
 Damon Severson: ast O0.5 FD - DK +185 | goal FD +850 DK +900 | pts O0.5 FD - DK +150
@@ -271,9 +271,9 @@ Danila Yurov: ast O0.5 FD - DK +310 | goal FD +340 DK +320 | pts O0.5 FD - DK +1
 David Spacek: goal FD +1100 DK +1300
 Emil Heineman: ast O0.5 FD +400 DK +400 | goal FD +390 DK +500 | pts O0.5 FD +190 DK +210
 Jeangabriel Pageau: ast O0.5 FD - DK +275 | goal FD +700 DK +750 | pts O0.5 FD - DK +190
-Joel Eriksson Ek: ast O0.5 FD +106 DK +110 | goal FD +200 DK +200 | pts O0.5 FD -196 DK -180
+Joel Eriksson Ek: ast O0.5 FD +108 DK +110 | goal FD +200 DK +200 | pts O0.5 FD -196 DK -180
 Jonas Brodin: ast O0.5 FD - DK +320 | goal FD +1000 DK +1000 | pts O0.5 FD - DK +245
-Kirill Kaprizov: ast O0.5 FD -115 DK -105 | goal FD -110 DK -115 | pts O1.5 FD +132 DK +135
+Kirill Kaprizov: ast O0.5 FD -118 DK -105 | goal FD -110 DK -115 | pts O1.5 FD +132 DK +135
 Kyle Maclean: goal FD +1500 DK +1300
 Kyle Palmieri: ast O0.5 FD +215 DK +200 | goal FD +350 DK +340 | pts O0.5 FD +116 DK +110
 Matthew Schaefer: ast O0.5 FD +132 DK +140 | goal FD +340 DK +310 | pts O0.5 FD -128 DK -120
