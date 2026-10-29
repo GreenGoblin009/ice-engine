@@ -1,258 +1,532 @@
-ICE ENGINE SLATE REPORT  2026-10-28
-Lineups pulled: Oct 28, 7:48 PM ET
-Prices pulled:  Oct 28, 7:24 PM ET
-Goalies pulled: Oct 28, 7:48 PM ET
+ICE ENGINE SLATE REPORT  2026-10-29
+Lineups pulled: none yet
+Prices pulled:  Oct 29, 9:57 AM ET
+Goalies pulled: none yet
 Times are US Eastern. Read-only: built from the same models as the board.
 
 GAMES (start, projected goals, model game total; book game totals are not pulled)
-- 7:30 PM ET  PHI 2.67 @ WSH 3.17  (total 5.83)
-- 8:30 PM ET  CGY 2.69 @ EDM 3.62  (total 6.31)  green light: EDM
-- 9:00 PM ET  NJD 2.90 @ COL 3.42  (total 6.32)  green light: COL
-- 10:00 PM ET  TOR 3.21 @ SEA 3.18  (total 6.39)
+- 7:00 PM ET  WPG 2.71 @ TBL 3.29  (total 6.00)
+- 7:00 PM ET  UTA 3.22 @ PIT 3.49  (total 6.71)  green light: PIT
+- 7:00 PM ET  CBJ 2.65 @ CAR 3.42  (total 6.07)  green light: CAR
+- 7:30 PM ET  CHI 2.58 @ DET 3.01  (total 5.58)
+- 8:00 PM ET  BOS 3.15 @ STL 2.75  (total 5.90)
+- 8:00 PM ET  WSH 3.14 @ NSH 2.99  (total 6.13)
+- 8:00 PM ET  MTL 2.77 @ DAL 3.04  (total 5.81)
+- 8:00 PM ET  NYI 2.67 @ MIN 3.09  (total 5.76)
+- 10:00 PM ET  BUF 3.24 @ ANA 3.19  (total 6.42)
+- 10:00 PM ET  OTT 3.03 @ LAK 2.85  (total 5.88)
+- 10:00 PM ET  VAN 2.95 @ SJS 3.39  (total 6.35)  green light: SJS
 
 GOALIES (shrunk two-season save %, raw save % and games)
-- PHI: Joseph Woll expected 0.900 (0.899 raw, 46 GP)  | also listed: Dan Vladar 0.904 (0.903 raw, 59 GP)
-- WSH: Logan Thompson expected 0.910 (0.911 raw, 65 GP)  | also listed: Charlie Lindgren 0.889 (0.880 raw, 24 GP)
-- CGY: Devin Cooley expected 0.909 (0.910 raw, 37 GP)  | also listed: Dustin Wolf 0.895 (0.893 raw, 62 GP)
-- EDM: Tristan Jarry expected 0.887 (0.879 raw, 38 GP)  | also listed: Matt Tomkins 0.905 (0 GP)
-- NJD: Jake Allen CONFIRMED 0.902 (0.901 raw, 44 GP)
-- COL: Mackenzie Blackwood expected 0.902 (0.901 raw, 47 GP)  | also listed: Scott Wedgewood 0.915 (0.918 raw, 49 GP)
-- TOR: Sergei Bobrovsky expected 0.885 (0.880 raw, 61 GP)  | also listed: Anthony Stolarz 0.898 (0.895 raw, 31 GP)
-- SEA: Philipp Grubauer expected 0.907 (0.908 raw, 39 GP)  | also listed: Joey Daccord 0.897 (0.894 raw, 53 GP)
+- WPG: no goalie listed
+- TBL: no goalie listed
+- UTA: no goalie listed
+- PIT: no goalie listed
+- CBJ: no goalie listed
+- CAR: no goalie listed
+- CHI: no goalie listed
+- DET: no goalie listed
+- BOS: no goalie listed
+- STL: no goalie listed
+- WSH: no goalie listed
+- NSH: no goalie listed
+- MTL: no goalie listed
+- DAL: no goalie listed
+- NYI: no goalie listed
+- MIN: no goalie listed
+- BUF: no goalie listed
+- ANA: no goalie listed
+- OTT: no goalie listed
+- LAK: no goalie listed
+- VAN: no goalie listed
+- SJS: no goalie listed
 
 INJURED / OUT (scratches in brackets)
-- PHI: Nikita Grebenkin (back); Travis Konecny (lower body); Owen Tippett (upper body); Rasmus Ristolainen (upper body) [Simon Benoit, David Jiricek, Michael Bunting]
-- WSH: Rasmus Sandin (knee); Vincent Desharnais (appendectomy) [Ethen Frank, Ivan Miroshnichenko, Dylan McIlrath]
-- CGY: Samuel Honzek (lower body); Jonathan Huberdeau (hip) [Joel Hanley, Ben Jones, Maksim Tsyplakov]
-- EDM: Frederik Andersen (undisclosed); Zach Hyman (neck); Mattias Janmark (undisclosed); Devon Levi (undisclosed); Alec Regula (undisclosed); Matthew Savoie (undisclosed) [Filip Hallander, Max Jones, Jake Walman]
-- NJD: none listed [Johnathan Kovacevic, Remi Poirier]
-- COL: Zachary L’Heureux (upper body) [Noah Juulsen]
-- TOR: Dakota Joshua (core); Max Domi (undisclosed); Chris Tanev (upper body); John Tavares (lower body); Marshall Rifai (lower body); Kirill Marchenko (lower body); Nick Blankenburg (upper body) [Cole McWard]
-- SEA: Jacob Melanson (upper body); Ryan Lindgren (upper body); Jared McCann (lower body) [Curtis Douglas, Ville Ottavainen]
+- WPG: none listed
+- TBL: none listed
+- UTA: none listed
+- PIT: none listed
+- CBJ: none listed
+- CAR: none listed
+- CHI: none listed
+- DET: none listed
+- BOS: none listed
+- STL: none listed
+- WSH: none listed
+- NSH: none listed
+- MTL: none listed
+- DAL: none listed
+- NYI: none listed
+- MIN: none listed
+- BUF: none listed
+- ANA: none listed
+- OTT: none listed
+- LAK: none listed
+- VAN: none listed
+- SJS: none listed
 Questionable: no projected skater carries a questionable or day-to-day note.
 
 TEAM FORM, last 10 regular-season games (per game: GF / GA | shots for / against | PP | PK)
-- PHI: 2.2 / 2.9 | 25.0 / 26.6 | PP 20.6% (7/34) | PK 87.5%
-- WSH: 3.4 / 3.2 | 27.5 / 28.4 | PP 17.9% (5/28) | PK 81.2%
-- CGY: 2.7 / 3.5 | 29.6 / 30.2 | PP 31.0% (9/29) | PK 86.7%
-- EDM: 3.8 / 3.0 | 23.9 / 28.0 | PP 35.5% (11/31) | PK 72.4%
-- NJD: 3.8 / 2.5 | 32.1 / 22.4 | PP 25.0% (7/28) | PK 73.9%
-- COL: 3.5 / 3.5 | 28.6 / 28.5 | PP 10.0% (3/30) | PK 70.0%
-- TOR: 4.1 / 3.5 | 28.0 / 31.9 | PP 32.3% (10/31) | PK 94.4%
-- SEA: 3.8 / 3.8 | 26.2 / 33.1 | PP 21.9% (7/32) | PK 66.7%
+- WPG: 2.2 / 3.0 | 26.4 / 27.9 | PP 7.7% (2/26) | PK 70.8%
+- TBL: 3.7 / 2.9 | 31.0 / 24.5 | PP 18.2% (6/33) | PK 78.6%
+- UTA: 3.5 / 3.8 | 29.9 / 25.7 | PP 27.0% (10/37) | PK 59.5%
+- PIT: 2.7 / 3.5 | 26.5 / 28.6 | PP 11.5% (3/26) | PK 80.8%
+- CBJ: 2.6 / 3.3 | 25.6 / 28.1 | PP 11.1% (3/27) | PK 72.7%
+- CAR: 4.2 / 2.2 | 35.0 / 22.2 | PP 26.7% (8/30) | PK 79.3%
+- CHI: 2.4 / 3.3 | 22.1 / 29.4 | PP 11.8% (4/34) | PK 83.9%
+- DET: 3.1 / 3.2 | 29.9 / 26.0 | PP 22.9% (8/35) | PK 69.7%
+- BOS: 4.1 / 2.1 | 25.1 / 27.8 | PP 25.7% (9/35) | PK 84.6%
+- STL: 3.0 / 3.1 | 28.7 / 27.3 | PP 26.9% (7/26) | PK 79.2%
+- WSH: 3.4 / 3.2 | 27.8 / 27.6 | PP 17.2% (5/29) | PK 80.0%
+- NSH: 3.1 / 3.5 | 26.1 / 28.9 | PP 32.4% (11/34) | PK 88.6%
+- MTL: 3.0 / 2.8 | 28.8 / 28.0 | PP 12.9% (4/31) | PK 85.7%
+- DAL: 3.2 / 1.9 | 26.8 / 21.6 | PP 22.7% (5/22) | PK 97.1%
+- NYI: 2.9 / 3.0 | 25.4 / 25.3 | PP 16.1% (5/31) | PK 84.4%
+- MIN: 3.3 / 2.3 | 32.2 / 24.1 | PP 22.2% (8/36) | PK 78.8%
+- BUF: 2.6 / 3.2 | 27.7 / 27.7 | PP 12.1% (4/33) | PK 73.0%
+- ANA: 3.0 / 3.8 | 24.2 / 27.1 | PP 18.8% (6/32) | PK 76.2%
+- OTT: 2.9 / 3.0 | 25.3 / 25.7 | PP 14.3% (6/42) | PK 78.1%
+- LAK: 2.4 / 2.9 | 26.6 / 28.6 | PP 17.2% (5/29) | PK 71.4%
+- VAN: 2.4 / 4.7 | 20.0 / 33.9 | PP 19.4% (6/31) | PK 61.3%
+- SJS: 2.8 / 3.3 | 29.0 / 31.8 | PP 25.0% (9/36) | PK 84.4%
 
 TOP 15 GOALS BY ROLE-ADJUSTED CHANCE
-1. Nathan MacKinnon COL 46%; best +130 DK; edge +2.9; DK +130; FD +125; L10 4/10; L3 1/3; 3.8 shots; 20.9 min; PP1
-2. Leon Draisaitl EDM 45%; best -115 FD; edge -8.3; DK -120; FD -115; L10 7/10; L3 2/3; 3.6 shots; 21.9 min; PP1
-3. Connor McDavid EDM 42%; best +105 DK; edge -7.2; DK +105; FD +105; L10 5/10; L3 1/3; 2.7 shots; 23.9 min; PP1
-4. Auston Matthews TOR 41%; best +120 FD; edge -4.7; DK +110; FD +120; L10 6/10; L3 1/3; 2.6 shots; 20.7 min; PP1
-5. Martin Necas COL 40%; best +200 FD; edge +6.9; DK +195; FD +200; L10 3/10; L3 1/3; 1.6 shots; 20.0 min; PP2
-6. William Nylander TOR 40%; best +145 FD; edge -1.2; DK +140; FD +145; L10 4/10; L3 2/3; 3.2 shots; 20.0 min; PP1
-7. Alex Tuch WSH 38%; best +200 FD; edge +4.3; DK +190; FD +200; L10 4/10; L3 1/3; 2.7 shots; 19.2 min; PP1
-8. Brock Nelson COL 32%; best +280 FD; edge +6.0; DK +275; FD +280; L10 2/10; L3 0/3; 1.9 shots; 18.3 min; PP2
-9. Bobby McMann SEA 32%; best +165 DK; edge -5.6; DK +165; FD +165; L10 2/10; L3 0/3; 2.4 shots; 16.6 min; PP2
-10. Tom Wilson WSH 32%; best +240 FD; edge +2.4; DK +230; FD +240; L10 2/10; L3 0/3; 2.2 shots; 18.7 min; PP2
-11. Anthony Mantha NJD 32%; best +475 DK; edge +14.4; DK +475; FD +450; L10 3/10; L3 2/3; 1.3 shots; 13.4 min; PP2
-12. Artturi Lehkonen COL 31%; best +240 FD; edge +1.3; DK +230; FD +240; L10 5/10; L3 3/3; 1.7 shots; 19.0 min; PP2
-13. Jack Hughes NJD 30%; best +190 DK; edge -4.0; DK +190; FD +190; L10 3/10; L3 2/3; 3.7 shots; 20.3 min; PP1
-14. Nico Hischier NJD 30%; best +230 DK; edge -0.2; DK +230; FD +220; L10 5/10; L3 2/3; 2.4 shots; 18.1 min; PP1
-15. Tyson Foerster PHI 29%; best +370 FD; edge +7.9; DK +310; FD +370; L10 2/10; L3 1/3; 2.5 shots; 17.6 min; PP2
 
 TOP 15 POINTS BY ROLE-ADJUSTED CHANCE
-1. Martin Necas COL 70%; best -215 DK; edge +1.8; DK -215; FD -215; L10 6/10; L3 2/3; 1.6 shots; 20.0 min; PP2
-2. Jack Hughes NJD 69%; best -190 DK; edge +3.3; DK -190; FD -196; L10 8/10; L3 3/3; 3.7 shots; 20.3 min; PP1
-3. Cale Makar COL 66%; best -180 FD; edge +1.3; DK -185; FD -180; L10 5/10; L3 1/3; 2.7 shots; 22.1 min; PP1
-4. Alex Tuch WSH 63%; best -128 FD; edge +6.6; DK -130; FD -128; L10 5/10; L3 2/3; 2.7 shots; 19.2 min; PP1
-5. Trevor Zegras PHI 62%; best -111 FD; edge +9.4; DK -115; FD -111; L10 7/10; L3 3/3; 2.8 shots; 18.7 min; PP1
-6. Ryan Nugent-Hopkins EDM 59%; best -155 DK; edge -1.9; DK -155; FD -174; L10 5/10; L3 2/3; 2.4 shots; 18.9 min; PP1
-7. Brock Nelson COL 58%; best +102 FD; edge +8.8; DK +100; FD +102; L10 5/10; L3 1/3; 1.9 shots; 18.3 min; PP2
-8. Artturi Lehkonen COL 57%; best -120 FD; edge +2.1; DK -135; FD -120; L10 7/10; L3 3/3; 1.7 shots; 19.0 min; PP2
-9. Tom Wilson WSH 57%; best -120 FD; edge +2.1; DK -125; FD -120; L10 3/10; L3 0/3; 2.2 shots; 18.7 min; PP2
-10. Jordan Eberle SEA 54%; best -135 DK; edge -3.1; DK -135; FD -142; L10 6/10; L3 1/3; 2.5 shots; 16.6 min; PP1
-11. Jesper Bratt NJD 54%; best -128 FD; edge -1.9; DK -135; FD -128; L10 6/10; L3 3/3; 1.8 shots; 17.3 min; PP1
-12. Darren Raddysh TOR 53%; best -135 DK; edge -4.9; DK -135; FD -140; L10 5/10; L3 1/3; 2.1 shots; 23.7 min; PP1
-13. Nico Hischier NJD 52%; best -142 FD; edge -6.7; DK -145; FD -142; L10 6/10; L3 2/3; 2.4 shots; 18.1 min; PP1
-14. Jakob Chychrun WSH 52%; best -122 FD; edge -2.9; DK -140; FD -122; L10 5/10; L3 3/3; 3.1 shots; 24.7 min; PP1
-15. Jordan Kyrou WSH 52%; best -128 FD; edge -4.4; DK -135; FD -128; L10 6/10; L3 3/3; 1.5 shots; 14.0 min; PP2
 
 TOP 15 ASSISTS BY ROLE-ADJUSTED CHANCE
-1. Evan Bouchard EDM 62%; best -170 DK; edge -1.2; DK -170; FD -178; L10 8/10; L3 2/3; 2.5 shots; 26.5 min; PP1
-2. Jack Hughes NJD 56%; best +110 FD; edge +8.0; DK +105; FD +110; L10 8/10; L3 3/3; 3.7 shots; 20.3 min; PP1
-3. Cale Makar COL 55%; best -118 FD; edge +1.3; DK -125; FD -118; L10 4/10; L3 1/3; 2.7 shots; 22.1 min; PP1
-4. Leon Draisaitl EDM 55%; best -174 FD; edge -8.1; DK -175; FD -174; L10 5/10; L3 2/3; 3.6 shots; 21.9 min; PP1
-5. Nathan MacKinnon COL 54%; best -145 DK; edge -5.1; DK -145; FD -162; L10 5/10; L3 2/3; 3.8 shots; 20.9 min; PP1
-6. William Nylander TOR 52%; best -106 FD; edge +0.4; DK -125; FD -106; L10 5/10; L3 1/3; 3.2 shots; 20.0 min; PP1
-7. Martin Necas COL 47%; best -106 FD; edge -4.3; DK -115; FD -106; L10 4/10; L3 2/3; 1.6 shots; 20.0 min; PP2
-8. Trevor Zegras PHI 45%; best +162 FD; edge +6.7; DK +150; FD +162; L10 4/10; L3 2/3; 2.8 shots; 18.7 min; PP1
-9. Jesper Bratt NJD 44%; best +138 FD; edge +2.1; DK +120; FD +138; L10 6/10; L3 3/3; 1.8 shots; 17.3 min; PP1
-10. Ryan Nugent-Hopkins EDM 44%; best +116 FD; edge -2.6; DK +115; FD +116; L10 3/10; L3 2/3; 2.4 shots; 18.9 min; PP1
-11. Darren Raddysh TOR 42%; best +106 FD; edge -6.1; DK +105; FD +106; L10 5/10; L3 1/3; 2.1 shots; 23.7 min; PP1
-12. Auston Matthews TOR 42%; best -115 DK; edge -11.6; DK -115; FD -115; L10 6/10; L3 1/3; 2.6 shots; 20.7 min; PP1
-13. Luke Evangelista NJD 41%; best +176 FD; edge +4.7; DK +160; FD +176; L10 6/10; L3 3/3; 2.8 shots; 17.3 min; PP1
-14. Tom Wilson WSH 38%; best +176 FD; edge +2.0; DK +165; FD +176; L10 2/10; L3 0/3; 2.2 shots; 18.7 min; PP2
-15. Dylan Strome WSH 37%; best +126 FD; edge -7.3; DK +110; FD +126; L10 5/10; L3 1/3; 2.4 shots; 17.4 min; PP1
 
 TOP 15 BY EDGE (all three markets)
-1. Anthony Mantha NJD Goals 32%; best +475 DK; edge +14.4; DK +475; FD +450; L10 3/10; L3 2/3; 1.3 shots; 13.4 min; PP2
-2. Noah Cates PHI Points 40%; best +245 DK; edge +11.2; DK +245; FD -; L10 3/10; L3 2/3; 0.9 shots; 13.1 min; no PP
-3. Christian Dvorak PHI Points 46%; best +180 FD; edge +9.9; DK +150; FD +180; L10 4/10; L3 1/3; 1.3 shots; 17.7 min; PP2
-4. Christian Dvorak PHI Assists 35%; best +300 FD; edge +9.5; DK +260; FD +300; L10 2/10; L3 1/3; 1.3 shots; 17.7 min; PP2
-5. Connor Brown NJD Goals 23%; best +650 DK; edge +9.4; DK +650; FD +625; L10 2/10; L3 0/3; 1.4 shots; 18.4 min; no PP
-6. Trevor Zegras PHI Points 62%; best -111 FD; edge +9.4; DK -115; FD -111; L10 7/10; L3 3/3; 2.8 shots; 18.7 min; PP1
-7. Brock Nelson COL Points 58%; best +102 FD; edge +8.8; DK +100; FD +102; L10 5/10; L3 1/3; 1.9 shots; 18.3 min; PP2
-8. Alaiksei Protas WSH Goals 27%; best +430 FD; edge +8.4; DK +425; FD +430; L10 0/10; L3 0/3; 1.3 shots; 15.9 min; no PP
-9. Cody Glass NJD Goals 21%; best +700 DK; edge +8.2; DK +700; FD +700; L10 1/10; L3 0/3; 1.5 shots; 12.3 min; no PP
-10. Jack Hughes NJD Assists 56%; best +110 FD; edge +8.0; DK +105; FD +110; L10 8/10; L3 3/3; 3.7 shots; 20.3 min; PP1
-11. Tyson Foerster PHI Goals 29%; best +370 FD; edge +7.9; DK +310; FD +370; L10 2/10; L3 1/3; 2.5 shots; 17.6 min; PP2
-12. Noah Cates PHI Goals 20%; best +750 DK; edge +7.8; DK +750; FD +750; L10 1/10; L3 1/3; 0.9 shots; 13.1 min; no PP
-13. Parker Kelly COL Goals 21%; best +650 DK; edge +7.6; DK +650; FD +625; L10 0/10; L3 0/3; 1.0 shots; 12.9 min; no PP
-14. Noel Acciari PHI Goals 16%; best +1000 DK; edge +7.1; DK +1000; FD +900; L10 1/10; L3 0/3; 1.0 shots; 13.9 min; no PP
-15. Martin Necas COL Goals 40%; best +200 FD; edge +6.9; DK +195; FD +200; L10 3/10; L3 1/3; 1.6 shots; 20.0 min; PP2
-95 of 295 priced legs show a positive edge at the best book.
+0 of 0 priced legs show a positive edge at the best book.
 
 ALL PRICED SKATERS (shots/game last 10, minutes, PP unit | G | P | A: chance, best price, edge, last 10)
-PHI
-- Trevor Zegras (2.8, 18.7, PP1): G 27% +320 FD +3.1, L10 4/10, L3 2/3 | P 62% -111 FD +9.4, L10 7/10, L3 3/3 | A 45% +162 FD +6.7, L10 4/10, L3 2/3
-- Matvei Michkov (1.5, 15.8, PP1): G 24% +230 FD -6.3, L10 5/10, L3 1/3 | P 46% -108 FD -5.8, L10 6/10, L3 2/3 | A 28% +210 FD -4.7, L10 2/10, L3 1/3
-- Christian Dvorak (1.3, 17.7, PP2): G 19% +500 FD +2.7, L10 2/10, L3 0/3 | P 46% +180 FD +9.9, L10 4/10, L3 1/3 | A 35% +300 FD +9.5, L10 2/10, L3 1/3
-- Porter Martone (1.5, 14.0, PP1): G 27% +320 FD +2.7, L10 3/10, L3 1/3 | P 44% +130 FD +0.9, L10 4/10, L3 2/3 | A 34% +260 FD +6.5, L10 3/10, L3 2/3
-- Tyson Foerster (2.5, 17.6, PP2): G 29% +370 FD +7.9, L10 2/10, L3 1/3 | P 43% +152 FD +3.4, L10 3/10, L3 2/3 | A 15% +300 DK -9.8, L10 1/10, L3 1/3
-- Noah Cates (0.9, 13.1, no PP): G 20% +750 DK +7.8, L10 1/10, L3 1/3 | P 40% +245 DK +11.2, L10 3/10, L3 2/3 | A 28% +380 DK +6.8, L10 2/10, L3 1/3
-- Travis Sanheim (1.8, 25.8, PP2): G 13% +950 FD +3.2, L10 0/10, L3 0/3 | P 37% +185 DK +2.1, L10 3/10, L3 2/3 | A 30% +240 DK +0.3, L10 3/10, L3 2/3
-- Jamie Drysdale (1.9, 22.8, PP1): G 10% +950 DK +0.6, L10 1/10, L3 1/3 | P 34% +155 DK -4.9, L10 3/10, L3 3/3 | A 26% +200 FD -7.7, L10 2/10, L3 2/3
-- Denver Barkey (0.7, 14.6, PP1): G 11% +700 FD -1.9, L10 0/10, L3 0/3 | P 34% +172 FD -3.0, L10 4/10, L3 1/3 | A 25% +255 DK -2.7, L10 4/10, L3 1/3
-- Sean Couturier (1.3, 16.8, no PP): G 12% +1000 DK +2.8, L10 0/10, L3 0/3 | P 33% +240 DK +3.3, L10 1/10, L3 0/3 | A 23% +320 DK -0.4, L10 1/10, L3 0/3
-- Noel Acciari (1.0, 13.9, no PP): G 16% +1000 DK +7.1, L10 1/10, L3 0/3 | P 29% no price, L10 1/10, L3 0/3 | A 15% no price, L10 0/10, L3 0/3
-- Cam York (0.8, 21.8, no PP): G 6% +1800 FD +0.7, L10 0/10, L3 0/3 | P 28% +205 DK -5.0, L10 0/10, L3 0/3 | A 25% +260 DK -3.1, L10 0/10, L3 0/3
-- Nick Seeler (0.7, 19.4, no PP): G 4% +2700 FD +0.9, L10 0/10, L3 0/3 | P 14% +320 DK -9.8, L10 2/10, L3 1/3 | A 11% +380 DK -10.2, L10 2/10, L3 1/3
+WPG
+TBL
+UTA
+PIT
+CBJ
+CAR
+CHI
+DET
+BOS
+STL
 WSH
-- Alex Tuch (2.7, 19.2, PP1): G 38% +200 FD +4.3, L10 4/10, L3 1/3 | P 63% -128 FD +6.6, L10 5/10, L3 2/3 | A 35% +200 FD +1.2, L10 2/10, L3 1/3
-- Tom Wilson (2.2, 18.7, PP2): G 32% +240 FD +2.4, L10 2/10, L3 0/3 | P 57% -120 FD +2.1, L10 3/10, L3 0/3 | A 38% +176 FD +2.0, L10 2/10, L3 0/3
-- Jakob Chychrun (3.1, 24.7, PP1): G 24% +330 DK +1.1, L10 1/10, L3 0/3 | P 52% -122 FD -2.9, L10 5/10, L3 3/3 | A 34% +140 FD -7.5, L10 5/10, L3 3/3
-- Jordan Kyrou (1.5, 14.0, PP2): G 23% +255 DK -5.6, L10 2/10, L3 0/3 | P 52% -128 FD -4.4, L10 6/10, L3 3/3 | A 34% +162 FD -4.1, L10 5/10, L3 3/3
-- Alex Ovechkin (1.4, 14.0, PP1): G 26% +240 DK -3.2, L10 1/10, L3 0/3 | P 52% +100 DK +1.6, L10 4/10, L3 1/3 | A 34% +240 DK +4.2, L10 3/10, L3 1/3
-- Dylan Strome (2.4, 17.4, PP1): G 21% +220 FD -10.1, L10 2/10, L3 2/3 | P 50% -166 FD -12.0, L10 6/10, L3 2/3 | A 37% +126 FD -7.3, L10 5/10, L3 1/3
-- Ryan Leonard (2.5, 14.3, PP1): G 24% +290 FD -1.7, L10 4/10, L3 2/3 | P 49% +112 FD +1.9, L10 7/10, L3 2/3 | A 29% +230 FD -1.5, L10 3/10, L3 0/3
-- Alaiksei Protas (1.3, 15.9, no PP): G 27% +430 FD +8.4, L10 0/10, L3 0/3 | P 48% +130 DK +4.9, L10 2/10, L3 0/3 | A 29% +215 DK -2.7, L10 2/10, L3 0/3
-- Cole Hutson (2.2, 19.2, PP2): G 16% +550 DK +1.1, L10 2/10, L3 1/3 | P 46% +106 FD -2.8, L10 5/10, L3 1/3 | A 30% +154 FD -9.8, L10 3/10, L3 0/3
-- Boone Jenner (2.5, 15.9, no PP): G 22% +425 DK +3.0, L10 4/10, L3 1/3 | P 44% +155 DK +4.9, L10 5/10, L3 1/3 | A 32% +275 DK +5.4, L10 1/10, L3 0/3
-- Pierre-Luc Dubois (1.3, 17.3, PP2): G 16% +330 DK -7.0, L10 1/10, L3 1/3 | P 40% -110 DK -12.8, L10 5/10, L3 1/3 | A 34% +162 FD -4.3, L10 5/10, L3 1/3
-- Justin Sourdif (0.9, 13.7, no PP): G 15% +500 DK -1.3, L10 1/10, L3 0/3 | P 29% +185 DK -6.3, L10 2/10, L3 1/3 | A 19% +330 DK -4.2, L10 1/10, L3 1/3
-- Anthony Beauvillier (0.9, 11.4, no PP): G 16% +500 DK -0.9, L10 1/10, L3 0/3 | P 28% +190 DK -7.0, L10 2/10, L3 1/3 | A 14% +330 DK -9.4, L10 1/10, L3 1/3
-- Martin Fehervary (0.4, 22.1, no PP): G 6% +1400 DK -0.4, L10 0/10, L3 0/3 | P 27% +290 DK +1.1, L10 2/10, L3 2/3 | A 22% +360 DK +0.2, L10 2/10, L3 2/3
-- Matt Roy (0.5, 20.3, no PP): G 3% +1600 DK -3.1, L10 0/10, L3 0/3 | P 20% +350 DK -2.3, L10 0/10, L3 0/3 | A 17% +450 DK -0.9, L10 0/10, L3 0/3
-- Timothy Liljegren (0.5, 17.6, no PP): G 4% +1700 DK -1.7, L10 1/10, L3 0/3 | P 19% +450 DK +0.5, L10 1/10, L3 0/3 | A 15% +600 DK +0.7, L10 0/10, L3 0/3
-CGY
-- Matvei Gridin (2.5, 15.1, PP1): G 19% +270 FD -8.5, L10 3/10, L3 2/3 | P 46% -110 DK -6.5, L10 5/10, L3 2/3 | A 35% +195 DK +1.1, L10 4/10, L3 2/3
-- Matt Coronato (2.5, 17.6, PP1): G 21% +265 DK -6.5, L10 2/10, L3 0/3 | P 45% -125 DK -10.6, L10 7/10, L3 3/3 | A 31% +150 DK -9.4, L10 5/10, L3 3/3
-- Joel Farabee (2.5, 19.0, PP1): G 24% +235 DK -6.3, L10 3/10, L3 3/3 | P 45% -115 DK -8.7, L10 8/10, L3 3/3 | A 28% +186 FD -6.7, L10 7/10, L3 2/3
-- Morgan Frost (2.1, 15.3, PP1): G 25% +295 DK -0.3, L10 3/10, L3 0/3 | P 42% -110 DK -10.0, L10 6/10, L3 2/3 | A 24% +170 DK -13.4, L10 4/10, L3 2/3
-- Mikael Backlund (2.5, 17.8, no PP): G 19% +475 DK +1.6, L10 2/10, L3 1/3 | P 41% +142 FD -0.3, L10 3/10, L3 1/3 | A 28% +235 FD -2.2, L10 1/10, L3 0/3
-- Ryan Strome (2.2, 14.0, PP2): G 16% +550 DK +0.7, L10 1/10, L3 1/3 | P 35% +160 DK -3.3, L10 3/10, L3 1/3 | A 22% +245 DK -6.6, L10 2/10, L3 0/3
-- Yegor Sharangovich (1.7, 16.4, PP2): G 18% +340 DK -4.4, L10 2/10, L3 0/3 | P 33% +125 DK -11.7, L10 3/10, L3 0/3 | A 17% +240 DK -12.3, L10 1/10, L3 0/3
-- Simon Nemec (1.3, 21.3, PP2): G 11% +900 FD +0.8, L10 0/10, L3 0/3 | P 30% +172 FD -6.9, L10 3/10, L3 1/3 | A 19% +230 FD -11.1, L10 3/10, L3 1/3
-- Zayne Parekh (2.0, 17.6, PP1): G 10% +650 FD -3.7, L10 1/10, L3 1/3 | P 25% +120 DK -20.5, L10 4/10, L3 2/3 | A 17% +170 DK -19.7, L10 3/10, L3 1/3
-- Kevin Bahl (0.9, 22.2, no PP): G 7% +1700 DK +1.0, L10 1/10, L3 0/3 | P 24% +285 DK -2.3, L10 2/10, L3 1/3 | A 18% +350 DK -4.5, L10 1/10, L3 1/3
-- Martin Pospisil (1.6, 13.5, no PP): G 11% +800 DK -0.0, L10 2/10, L3 1/3 | P 22% +245 DK -6.6, L10 3/10, L3 1/3 | A 15% +360 DK -7.0, L10 2/10, L3 1/3
-- Adam Klapka (1.5, 11.1, PP2): G 9% +600 DK -5.2, L10 2/10, L3 0/3 | P 22% +230 DK -8.2, L10 4/10, L3 2/3 | A 14% +400 DK -5.9, L10 2/10, L3 2/3
-- Jacob Middleton (1.0, 17.8, no PP): G 4% +2000 DK -1.0, L10 1/10, L3 0/3 | P 21% no price, L10 2/10, L3 0/3 | A 18% no price, L10 1/10, L3 0/3
-- Yan Kuznetsov (1.2, 17.2, no PP): G 6% +2200 DK +1.6, L10 0/10, L3 0/3 | P 20% +310 DK -4.3, L10 2/10, L3 1/3 | A 16% +360 DK -6.1, L10 2/10, L3 1/3
-- Zach Whitecloud (1.2, 20.4, no PP): G 3% +2000 DK -2.1, L10 0/10, L3 0/3 | P 18% +475 DK +0.3, L10 0/10, L3 0/3 | A 15% +550 DK -0.2, L10 0/10, L3 0/3
-EDM
-- Connor McDavid (2.7, 23.9, PP1): G 42% +105 DK -7.2, L10 5/10, L3 1/3 | P 83% no price, L10 10/10, L3 3/3 | A 66% no price, L10 10/10, L3 3/3
-- Leon Draisaitl (3.6, 21.9, PP1): G 45% -115 FD -8.3, L10 7/10, L3 2/3 | P 79% no price, L10 9/10, L3 3/3 | A 55% -174 FD -8.1, L10 5/10, L3 2/3
-- Evan Bouchard (2.5, 26.5, PP1): G 22% +275 FD -4.2, L10 2/10, L3 0/3 | P 68% no price, L10 8/10, L3 2/3 | A 62% -170 DK -1.2, L10 8/10, L3 2/3
-- Ryan Nugent-Hopkins (2.4, 18.9, PP1): G 25% +235 DK -4.8, L10 3/10, L3 1/3 | P 59% -155 DK -1.9, L10 5/10, L3 2/3 | A 44% +116 FD -2.6, L10 3/10, L3 2/3
-- Vasily Podkolzin (1.6, 19.1, PP1): G 26% +190 FD -8.3, L10 4/10, L3 1/3 | P 45% -150 FD -14.7, L10 7/10, L3 1/3 | A 24% +158 FD -14.6, L10 3/10, L3 0/3
-- Mattias Ekholm (0.9, 21.0, no PP): G 5% +1000 FD -3.6, L10 1/10, L3 0/3 | P 38% +162 FD -0.4, L10 3/10, L3 1/3 | A 34% +210 FD +2.1, L10 2/10, L3 1/3
-- Kasperi Kapanen (1.3, 17.9, PP2): G 19% +440 FD +0.8, L10 2/10, L3 0/3 | P 37% +158 FD -1.6, L10 3/10, L3 1/3 | A 22% +290 DK -3.6, L10 1/10, L3 1/3
-- Ryan Shea (0.9, 23.8, PP2): G 8% +1200 DK +0.5, L10 0/10, L3 0/3 | P 34% +196 FD +0.5, L10 2/10, L3 1/3 | A 29% +255 FD +0.5, L10 2/10, L3 1/3
-- Jason Dickinson (1.1, 14.8, no PP): G 11% +750 DK -0.4, L10 0/10, L3 0/3 | P 27% no price, L10 3/10, L3 1/3 | A 16% no price, L10 3/10, L3 1/3
-- Mathieu Joseph (0.9, 13.8, no PP): G 8% +800 DK -3.2, L10 2/10, L3 0/3 | P 23% no price, L10 4/10, L3 0/3 | A 17% no price, L10 2/10, L3 0/3
-- Colton Dach (1.5, 13.6, PP2): G 10% +500 FD -6.8, L10 2/10, L3 1/3 | P 21% +185 DK -14.0, L10 2/10, L3 1/3 | A 14% +350 DK -7.9, L10 2/10, L3 1/3
-- Shakir Mukhamadullin (0.6, 13.5, no PP): G 10% +1500 DK +3.6, L10 1/10, L3 1/3 | P 20% +350 DK -2.1, L10 1/10, L3 1/3 | A 10% +450 DK -7.7, L10 0/10, L3 0/3
-- Isaac Howard (0.9, 9.5, PP2): G 8% +600 DK -6.1, L10 1/10, L3 1/3 | P 20% no price, L10 3/10, L3 1/3 | A 12% no price, L10 2/10, L3 0/3
-- Connor Murphy (0.8, 21.3, no PP): G 5% +1200 DK -2.2, L10 0/10, L3 0/3 | P 17% no price, L10 1/10, L3 0/3 | A 14% no price, L10 1/10, L3 0/3
-- Ty Emberson (0.7, 11.8, no PP): G 3% +2200 DK -1.5, L10 0/10, L3 0/3 | P 17% +500 DK +0.2, L10 1/10, L3 0/3 | A 14% +650 DK +0.8, L10 1/10, L3 0/3
-- Trent Frederic (0.9, 9.4, PP2): G 6% +725 FD -5.7, L10 1/10, L3 0/3 | P 11% +255 DK -17.6, L10 1/10, L3 0/3 | A 4% +450 DK -13.8, L10 0/10, L3 0/3
-NJD
-- Jack Hughes (3.7, 20.3, PP1): G 30% +190 DK -4.0, L10 3/10, L3 2/3 | P 69% -190 DK +3.3, L10 8/10, L3 3/3 | A 56% +110 FD +8.0, L10 8/10, L3 3/3
-- Jesper Bratt (1.8, 17.3, PP1): G 22% +340 DK -0.5, L10 2/10, L3 0/3 | P 54% -128 FD -1.9, L10 6/10, L3 3/3 | A 44% +138 FD +2.1, L10 6/10, L3 3/3
-- Anthony Mantha (1.3, 13.4, PP2): G 32% +475 DK +14.4, L10 3/10, L3 2/3 | P 52% no price, L10 4/10, L3 3/3 | A 30% no price, L10 2/10, L3 1/3
-- Nico Hischier (2.4, 18.1, PP1): G 30% +230 DK -0.2, L10 5/10, L3 2/3 | P 52% -142 FD -6.7, L10 6/10, L3 2/3 | A 33% +150 FD -7.2, L10 2/10, L3 0/3
-- Luke Evangelista (2.8, 17.3, PP1): G 15% +340 FD -7.6, L10 2/10, L3 0/3 | P 50% +100 FD +0.4, L10 7/10, L3 3/3 | A 41% +176 FD +4.7, L10 6/10, L3 3/3
-- Timo Meier (3.6, 16.3, PP2): G 27% +310 DK +3.0, L10 1/10, L3 0/3 | P 46% +115 DK -0.6, L10 4/10, L3 1/3 | A 26% +230 FD -4.1, L10 3/10, L3 1/3
-- Connor Brown (1.4, 18.4, no PP): G 23% +650 DK +9.4, L10 2/10, L3 0/3 | P 45% no price, L10 5/10, L3 0/3 | A 27% no price, L10 3/10, L3 0/3
-- Arseny Gritsyuk (2.2, 15.2, PP2): G 22% +360 DK +0.7, L10 6/10, L3 2/3 | P 40% +136 FD -1.9, L10 8/10, L3 3/3 | A 25% +265 DK -2.0, L10 4/10, L3 2/3
-- Luke Hughes (2.6, 24.0, PP1): G 11% +550 FD -3.9, L10 2/10, L3 1/3 | P 39% +105 DK -9.9, L10 3/10, L3 1/3 | A 34% +150 DK -6.5, L10 2/10, L3 1/3
-- Dougie Hamilton (2.2, 20.9, PP2): G 13% +725 FD +0.6, L10 0/10, L3 0/3 | P 38% +164 FD +0.0, L10 4/10, L3 1/3 | A 29% +235 FD -0.5, L10 4/10, L3 1/3
-- Evan Rodrigues (1.4, 15.5, PP2): G 17% +475 DK -0.7, L10 2/10, L3 0/3 | P 36% +180 DK -0.1, L10 3/10, L3 1/3 | A 25% +330 DK +1.9, L10 3/10, L3 1/3
-- Cody Glass (1.5, 12.3, no PP): G 21% +700 DK +8.2, L10 1/10, L3 0/3 | P 26% no price, L10 1/10, L3 0/3 | A 9% no price, L10 0/10, L3 0/3
-- Declan Chisholm (0.4, 14.8, no PP): G 6% +1600 DK -0.2, L10 1/10, L3 1/3 | P 25% no price, L10 2/10, L3 1/3 | A 20% no price, L10 1/10, L3 0/3
-- Jesper Boqvist (1.6, 12.0, no PP): G 10% +650 DK -3.6, L10 4/10, L3 1/3 | P 23% no price, L10 6/10, L3 2/3 | A 13% no price, L10 2/10, L3 1/3
-- Brett Pesce (1.0, 21.0, no PP): G 4% +2200 DK +0.1, L10 1/10, L3 1/3 | P 21% no price, L10 4/10, L3 3/3 | A 17% no price, L10 3/10, L3 2/3
-- Jonas Siegenthaler (0.1, 19.5, no PP): G 1% +2200 DK -3.8, L10 0/10, L3 0/3 | P 18% no price, L10 2/10, L3 0/3 | A 17% no price, L10 2/10, L3 0/3
-- Brenden Dillon (0.5, 14.6, no PP): G 4% +2400 FD -0.3, L10 0/10, L3 0/3 | P 17% no price, L10 0/10, L3 0/3 | A 14% no price, L10 0/10, L3 0/3
-COL
-- Nathan MacKinnon (3.8, 20.9, PP1): G 46% +130 DK +2.9, L10 4/10, L3 1/3 | P 74% no price, L10 6/10, L3 2/3 | A 54% -145 DK -5.1, L10 5/10, L3 2/3
-- Martin Necas (1.6, 20.0, PP2): G 40% +200 FD +6.9, L10 3/10, L3 1/3 | P 70% -215 DK +1.8, L10 6/10, L3 2/3 | A 47% -106 FD -4.3, L10 4/10, L3 2/3
-- Cale Makar (2.7, 22.1, PP1): G 21% +360 FD -0.6, L10 2/10, L3 0/3 | P 66% -180 FD +1.3, L10 5/10, L3 1/3 | A 55% -118 FD +1.3, L10 4/10, L3 1/3
-- Brock Nelson (1.9, 18.3, PP2): G 32% +280 FD +6.0, L10 2/10, L3 0/3 | P 58% +102 FD +8.8, L10 5/10, L3 1/3 | A 35% +215 FD +3.4, L10 3/10, L3 1/3
-- Artturi Lehkonen (1.7, 19.0, PP2): G 31% +240 FD +1.3, L10 5/10, L3 3/3 | P 57% -120 FD +2.1, L10 7/10, L3 3/3 | A 34% +176 FD -2.4, L10 3/10, L3 1/3
-- Nazem Kadri (2.5, 19.6, PP1): G 18% +290 FD -7.2, L10 1/10, L3 1/3 | P 49% +100 FD -1.4, L10 5/10, L3 2/3 | A 37% +200 FD +3.2, L10 4/10, L3 1/3
-- Gabriel Landeskog (1.4, 15.5, PP2): G 23% +320 DK -0.9, L10 3/10, L3 1/3 | P 48% +124 FD +3.7, L10 5/10, L3 2/3 | A 28% +240 FD -1.0, L10 2/10, L3 1/3
-- Jaden Schwartz (1.4, 14.1, PP1): G 18% +400 DK -2.3, L10 2/10, L3 0/3 | P 41% +135 DK -1.4, L10 3/10, L3 1/3 | A 28% +235 DK -1.6, L10 2/10, L3 1/3
-- Sam Malinski (0.9, 17.0, no PP): G 7% +1100 FD -0.9, L10 0/10, L3 0/3 | P 37% no price, L10 3/10, L3 1/3 | A 34% no price, L10 3/10, L3 1/3
-- Brent Burns (1.3, 16.0, no PP): G 11% +1400 FD +4.5, L10 0/10, L3 0/3 | P 36% no price, L10 2/10, L3 0/3 | A 27% no price, L10 2/10, L3 0/3
-- Devon Toews (1.7, 20.4, PP2): G 7% +900 DK -2.7, L10 3/10, L3 2/3 | P 33% +148 FD -7.5, L10 6/10, L3 2/3 | A 27% +190 FD -7.8, L10 4/10, L3 1/3
-- Parker Kelly (1.0, 12.9, no PP): G 21% +650 DK +7.6, L10 0/10, L3 0/3 | P 32% no price, L10 1/10, L3 0/3 | A 17% no price, L10 1/10, L3 0/3
-- Josh Manson (0.9, 15.9, no PP): G 6% +1700 DK +0.0, L10 0/10, L3 0/3 | P 30% no price, L10 1/10, L3 0/3 | A 27% no price, L10 1/10, L3 0/3
-- Nicolas Roy (1.2, 11.7, no PP): G 12% +500 DK -4.4, L10 2/10, L3 0/3 | P 28% +170 DK -9.2, L10 5/10, L3 1/3 | A 20% +295 DK -5.2, L10 4/10, L3 1/3
-- Fedor Svechkov (0.9, 13.5, no PP): G 8% +800 FD -2.7, L10 2/10, L3 1/3 | P 27% no price, L10 5/10, L3 2/3 | A 20% no price, L10 4/10, L3 1/3
-- Logan O’Connor (1.5, 11.7, no PP): G 4% +800 DK -6.8, L10 0/10, L3 0/3 | P 16% no price, L10 1/10, L3 0/3 | A 13% no price, L10 1/10, L3 0/3
-- Brett Kulak (0.9, 18.9, no PP): G 2% +1700 DK -4.0, L10 0/10, L3 0/3 | P 16% no price, L10 3/10, L3 0/3 | A 14% no price, L10 3/10, L3 0/3
-TOR
-- William Nylander (3.2, 20.0, PP1): G 40% +145 FD -1.2, L10 4/10, L3 2/3 | P 70% no price, L10 7/10, L3 3/3 | A 52% -106 FD +0.4, L10 5/10, L3 1/3
-- Auston Matthews (2.6, 20.7, PP1): G 41% +120 FD -4.7, L10 6/10, L3 1/3 | P 63% no price, L10 8/10, L3 2/3 | A 42% -115 DK -11.6, L10 6/10, L3 1/3
-- Darren Raddysh (2.1, 23.7, PP1): G 21% +425 DK +1.9, L10 0/10, L3 0/3 | P 53% -135 DK -4.9, L10 5/10, L3 1/3 | A 42% +106 FD -6.1, L10 5/10, L3 1/3
-- Easton Cowan (2.2, 15.2, PP2): G 21% +220 FD -10.4, L10 5/10, L3 2/3 | P 45% -130 DK -11.4, L10 8/10, L3 3/3 | A 28% +165 DK -9.6, L10 4/10, L3 1/3
-- Jack Roslovic (2.7, 16.6, PP2): G 27% +215 DK -4.7, L10 4/10, L3 1/3 | P 45% -120 DK -10.0, L10 7/10, L3 3/3 | A 26% +185 DK -9.4, L10 5/10, L3 3/3
-- Morgan Rielly (1.3, 19.7, PP2): G 11% +750 DK -0.4, L10 0/10, L3 0/3 | P 39% +155 DK -0.4, L10 5/10, L3 3/3 | A 29% +205 DK -3.3, L10 5/10, L3 3/3
-- Oliver Ekman-Larsson (0.8, 17.8, PP2): G 8% +800 DK -2.7, L10 0/10, L3 0/3 | P 33% no price, L10 1/10, L3 0/3 | A 28% no price, L10 1/10, L3 0/3
-- Teddy Blueger (1.4, 12.9, no PP): G 18% +700 DK +5.7, L10 1/10, L3 1/3 | P 30% no price, L10 1/10, L3 1/3 | A 16% no price, L10 1/10, L3 1/3
-- Nick Paul (0.9, 16.3, no PP): G 15% +370 DK -6.4, L10 2/10, L3 0/3 | P 30% +140 DK -11.8, L10 3/10, L3 0/3 | A 17% +265 DK -10.2, L10 1/10, L3 0/3
-- Jake McCabe (1.2, 19.1, no PP): G 5% +1400 FD -1.3, L10 0/10, L3 0/3 | P 26% no price, L10 2/10, L3 2/3 | A 22% no price, L10 2/10, L3 2/3
-- Troy Stecher (1.1, 19.5, no PP): G 6% +1300 FD -0.8, L10 2/10, L3 2/3 | P 22% no price, L10 4/10, L3 3/3 | A 17% no price, L10 2/10, L3 1/3
-- Bo Groulx (0.6, 8.3, PP2): G 11% +650 FD -2.7, L10 0/10, L3 0/3 | P 21% no price, L10 0/10, L3 0/3 | A 11% no price, L10 0/10, L3 0/3
-- Colton Sissons (0.8, 15.1, no PP): G 11% +650 DK -2.5, L10 1/10, L3 0/3 | P 21% no price, L10 4/10, L3 0/3 | A 11% no price, L10 3/10, L3 0/3
-- Brandon Duhaime (1.0, 11.7, no PP): G 6% +725 FD -6.4, L10 1/10, L3 1/3 | P 11% no price, L10 2/10, L3 2/3 | A 8% no price, L10 2/10, L3 2/3
-SEA
-- Jordan Eberle (2.5, 16.6, PP1): G 28% +210 DK -4.7, L10 3/10, L3 1/3 | P 54% -135 DK -3.1, L10 6/10, L3 1/3 | A 33% +165 DK -4.5, L10 4/10, L3 1/3
-- Chandler Stephenson (0.5, 17.3, PP1): G 18% +370 FD -3.5, L10 0/10, L3 0/3 | P 48% -113 FD -4.6, L10 6/10, L3 1/3 | A 36% +150 FD -3.8, L10 6/10, L3 1/3
-- Kaapo Kakko (1.0, 14.1, PP1): G 18% +350 FD -4.1, L10 1/10, L3 0/3 | P 48% +118 FD +2.0, L10 6/10, L3 2/3 | A 36% +220 FD +4.7, L10 5/10, L3 2/3
-- Matty Beniers (1.1, 17.6, PP2): G 23% +280 FD -3.1, L10 2/10, L3 1/3 | P 46% -111 FD -7.0, L10 3/10, L3 1/3 | A 29% +180 FD -7.0, L10 1/10, L3 0/3
-- Bobby McMann (2.4, 16.6, PP2): G 32% +165 DK -5.6, L10 2/10, L3 0/3 | P 44% -130 DK -12.1, L10 4/10, L3 1/3 | A 21% +240 FD -8.5, L10 2/10, L3 1/3
-- Vince Dunn (1.9, 23.4, PP1): G 14% +600 DK -0.4, L10 1/10, L3 0/3 | P 42% -110 DK -10.6, L10 5/10, L3 1/3 | A 33% +120 DK -12.3, L10 4/10, L3 1/3
-- Brandon Montour (1.6, 23.7, PP2): G 15% +525 FD -1.5, L10 2/10, L3 2/3 | P 41% +125 DK -3.3, L10 6/10, L3 3/3 | A 31% +180 DK -4.9, L10 5/10, L3 2/3
-- Mackie Samoskevich (1.9, 15.3, PP2): G 18% +360 DK -3.6, L10 4/10, L3 2/3 | P 36% +125 DK -8.1, L10 5/10, L3 2/3 | A 21% +225 DK -10.0, L10 1/10, L3 0/3
-- Frederick Gaudreau (0.9, 15.4, no PP): G 15% +525 FD -0.7, L10 4/10, L3 1/3 | P 35% no price, L10 5/10, L3 1/3 | A 21% no price, L10 2/10, L3 0/3
-- Shane Wright (1.7, 13.8, PP2): G 15% +420 FD -3.9, L10 3/10, L3 0/3 | P 33% no price, L10 3/10, L3 0/3 | A 19% no price, L10 0/10, L3 0/3
-- Berkly Catton (2.1, 14.9, PP1): G 12% +480 FD -5.0, L10 3/10, L3 1/3 | P 28% +115 DK -18.5, L10 6/10, L3 3/3 | A 20% +195 DK -14.2, L10 5/10, L3 2/3
-- Adam Larsson (1.1, 21.8, no PP): G 8% +1400 FD +1.3, L10 0/10, L3 0/3 | P 28% no price, L10 2/10, L3 0/3 | A 21% no price, L10 2/10, L3 0/3
-- Ryker Evans (0.7, 22.4, no PP): G 13% +1500 DK +6.5, L10 2/10, L3 1/3 | P 27% no price, L10 5/10, L3 2/3 | A 16% no price, L10 3/10, L3 1/3
-- Ryan Winterton (1.4, 13.4, no PP): G 9% +650 FD -4.7, L10 2/10, L3 0/3 | P 26% no price, L10 3/10, L3 0/3 | A 20% no price, L10 2/10, L3 0/3
-- Ben Meyers (0.9, 12.8, no PP): G 14% +750 FD +1.8, L10 1/10, L3 0/3 | P 26% no price, L10 2/10, L3 0/3 | A 17% no price, L10 2/10, L3 0/3
-- Josh Mahura (0.7, 13.9, no PP): G 4% +1600 DK -2.0, L10 0/10, L3 0/3 | P 18% no price, L10 2/10, L3 0/3 | A 14% no price, L10 2/10, L3 0/3
+NSH
+MTL
+DAL
+NYI
+MIN
+BUF
+ANA
+OTT
+LAK
+VAN
+SJS
 
 DATA CHECKS
 Games with no prices: none
+Teams with no lineup: WPG, TBL, UTA, PIT, CBJ, CAR, CHI, DET, BOS, STL, WSH, NSH, MTL, DAL, NYI, MIN, BUF, ANA, OTT, LAK, VAN, SJS
 Priced players missing from the projected lineups:
-- Johnathan Kovacevic NJD (listed scratched)
+- Alex Ovechkin WSH (not on any lineup)
+- Evgeni Malkin PIT (not on any lineup)
+- Sidney Crosby PIT (not on any lineup)
+- Kris Letang PIT (not on any lineup)
+- Claude Giroux OTT (not on any lineup)
+- Alex Killorn ANA (not on any lineup)
+- Jamie Benn DAL (not on any lineup)
+- Ian Cole CHI (not on any lineup)
+- Patrick Kane CHI (not on any lineup)
+- Ryan Mcdonagh TBL (not on any lineup)
+- Steven Stamkos NSH (not on any lineup)
+- Zach Bogosian MIN (not on any lineup)
+- Tyler Myers DAL (not on any lineup)
+- Erik Karlsson PIT (not on any lineup)
+- John Carlson TBL (not on any lineup)
+- Roman Josi NSH (not on any lineup)
+- Jared Spurgeon MIN (not on any lineup)
+- Kyle Palmieri NYI (not on any lineup)
+- Ryan Oreilly NSH (not on any lineup)
+- Victor Hedman TBL (not on any lineup)
+- Brayden Schenn NYI (not on any lineup)
+- Chris Kreider MTL (not on any lineup)
+- Dmitry Orlov SJS (not on any lineup)
+- Brian Dumoulin LAK (not on any lineup)
+- Casey Cizikas NYI (not on any lineup)
+- Nicolas Deslauriers CAR (not on any lineup)
+- Ben Chiarot DET (not on any lineup)
+- Erik Haula LAK (not on any lineup)
+- Anders Lee UTA (not on any lineup)
+- Jason Zucker BUF (not on any lineup)
+- Tyler Toffoli SJS (not on any lineup)
+- Charlie Coyle CBJ (not on any lineup)
+- Tyler Pitlick MIN (not on any lineup)
+- Justin Faulk DET (not on any lineup)
+- Cam Fowler STL (not on any lineup)
+- Erik Gudbranson CBJ (not on any lineup)
+- Tyler Seguin DAL (not on any lineup)
+- Mikael Granlund ANA (not on any lineup)
+- Colin Blackwell DAL (not on any lineup)
+- Ondrej Palat NYI (not on any lineup)
+- Dylan Demelo WPG (not on any lineup)
+- Vincent Trocheck UTA (not on any lineup)
+- Adam Lowry WPG (not on any lineup)
+- Nick Cousins OTT (not on any lineup)
+- Blake Coleman MIN (not on any lineup)
+- Jeangabriel Pageau NYI (not on any lineup)
+- Scott Mayfield NYI (not on any lineup)
+- Boone Jenner WSH (not on any lineup)
+- Joel Edmundson LAK (not on any lineup)
+- Nikita Kucherov TBL (not on any lineup)
+- Mark Scheifele WPG (not on any lineup)
+- Jonas Brodin MIN (not on any lineup)
+- Jamie Oleksiak VAN (not on any lineup)
+- Joel Armia LAK (not on any lineup)
+- Phillip Danault MTL (not on any lineup)
+- Rickard Rakell PIT (not on any lineup)
+- Jonathan Marchessault NSH (not on any lineup)
+- Barclay Goodrow SJS (not on any lineup)
+- Hampus Lindholm BOS (not on any lineup)
+- Brady Skjei NSH (not on any lineup)
+- Scott Laughton LAK (not on any lineup)
+- Mark Jankowski CAR (not on any lineup)
+- Olli Maatta MIN (not on any lineup)
+- Mike Matheson MTL (not on any lineup)
+- Tom Wilson WSH (not on any lineup)
+- Teuvo Teravainen CHI (not on any lineup)
+- Jacob Trouba SJS (not on any lineup)
+- Filip Forsberg NSH (not on any lineup)
+- Colton Parayko STL (not on any lineup)
+- Shayne Gostisbehere CAR (not on any lineup)
+- Adam Pelech NYI (not on any lineup)
+- Jordan Martinook CAR (not on any lineup)
+- Damon Severson CBJ (not on any lineup)
+- Jaccob Slavin CAR (not on any lineup)
+- Erik Gustafsson LAK (not on any lineup)
+- Josh Anderson MTL (not on any lineup)
+- Alexander Kerfoot NSH (not on any lineup)
+- Liam Obrien UTA (not on any lineup)
+- Scott Sabourin TBL (not on any lineup)
+- Nate Schmidt UTA (not on any lineup)
+- Mackenzie Weegar UTA (not on any lineup)
+- Pavel Buchnevich STL (not on any lineup)
+- Jake Guentzel TBL (not on any lineup)
+- Anthony Duclair NYI (not on any lineup)
+- Andrew Copp DET (not on any lineup)
+- Andre Burakovsky OTT (not on any lineup)
+- Michael Mccarron MIN (not on any lineup)
+- Ryan Hartman MIN (not on any lineup)
+- Jt Compher DET (not on any lineup)
+- William Carrier CAR (not on any lineup)
+- Tyler Bertuzzi CHI (not on any lineup)
+- Elias Lindholm BOS (not on any lineup)
+- Sean Monahan CBJ (not on any lineup)
+- Darnell Nurse SJS (not on any lineup)
+- Bo Horvat NYI (not on any lineup)
+- Valeri Nichushkin CBJ (not on any lineup)
+- Ryan Pulock NYI (not on any lineup)
+- Nikita Zadorov BOS (not on any lineup)
+- Nikolaj Ehlers CAR (not on any lineup)
+- Dylan Larkin DET (not on any lineup)
+- Alex Tuch WSH (not on any lineup)
+- Tony Deangelo NYI (not on any lineup)
+- Nick Schmaltz UTA (not on any lineup)
+- David Pastrnak BOS (not on any lineup)
+- Adrian Kempe LAK (not on any lineup)
+- Ryan Donato CHI (not on any lineup)
+- Warren Foegele OTT (not on any lineup)
+- Brayden Point TBL (not on any lineup)
+- Michael Amadio OTT (not on any lineup)
+- Viktor Arvidsson DET (not on any lineup)
+- Jake Evans MTL (not on any lineup)
+- Frank Vatrano ANA (not on any lineup)
+- Kyle Connor WPG (not on any lineup)
+- Pavel Zacha BOS (not on any lineup)
+- Jordan Greenway CHI (not on any lineup)
+- Erik Cernak TBL (not on any lineup)
+- Mikko Rantanen DAL (not on any lineup)
+- Aj Greer ANA (not on any lineup)
+- Sebastian Aho CAR (not on any lineup)
+- Keegan Kolesar DET (not on any lineup)
+- Tommy Novak PIT (not on any lineup)
+- Dylan Strome WSH (not on any lineup)
+- Brandon Carlo STL (not on any lineup)
+- Brock Boeser VAN (not on any lineup)
+- Roope Hintz DAL (not on any lineup)
+- Zach Werenski CBJ (not on any lineup)
+- Anthony Beauvillier WSH (not on any lineup)
+- Thomas Chabot OTT (not on any lineup)
+- Lawson Crouse UTA (not on any lineup)
+- Joel Eriksson Ek MIN (not on any lineup)
+- Jake Debrusk VAN (not on any lineup)
+- Ivan Provorov CBJ (not on any lineup)
+- Yakov Trenin MIN (not on any lineup)
+- Anthony Cirelli TBL (not on any lineup)
+- Artemi Panarin LAK (not on any lineup)
+- Kevin Stenlund UTA (not on any lineup)
+- Will Borgen BOS (not on any lineup)
+- Alexandre Carrier MTL (not on any lineup)
+- Conor Garland CBJ (not on any lineup)
+- Kirill Kaprizov MIN (not on any lineup)
+- Adam Gaudette SJS (not on any lineup)
+- Matt Roy WSH (not on any lineup)
+- Jalen Chatfield CAR (not on any lineup)
+- Mason Marchment SJS (not on any lineup)
+- Ryan Lomberg CBJ (not on any lineup)
+- Charlie Mcavoy BOS (not on any lineup)
+- Alex Debrincat DET (not on any lineup)
+- Clayton Keller UTA (not on any lineup)
+- Jakob Chychrun WSH (not on any lineup)
+- Sam Steel DAL (not on any lineup)
+- Beck Malenstyn BUF (not on any lineup)
+- Andrew Peeke UTA (not on any lineup)
+- Dante Fabbro CBJ (not on any lineup)
+- Jordan Kyrou WSH (not on any lineup)
+- Samuel Girard PIT (not on any lineup)
+- Pierreluc Dubois WSH (not on any lineup)
+- Mikhail Sergachev UTA (not on any lineup)
+- Tage Thompson BUF (not on any lineup)
+- Filip Hronek VAN (not on any lineup)
+- Ross Colton NSH (not on any lineup)
+- Brandon Hagel TBL (not on any lineup)
+- Tanner Jeannot BOS (not on any lineup)
+- Mathieu Olivier CBJ (not on any lineup)
+- Trevor Moore LAK (not on any lineup)
+- Jeffrey Viel TBL (not on any lineup)
+- Juuso Valimaki CAR (not on any lineup)
+- Kailer Yamamoto UTA (not on any lineup)
+- Nicolas Hague NSH (not on any lineup)
+- Mario Ferraro WPG (not on any lineup)
+- Morgan Geekie BOS (not on any lineup)
+- Michael Rasmussen DET (not on any lineup)
+- Mikey Anderson LAK (not on any lineup)
+- Casey Mittelstadt BOS (not on any lineup)
+- Gabriel Vilardi WPG (not on any lineup)
+- Robert Thomas STL (not on any lineup)
+- Jason Robertson DAL (not on any lineup)
+- Miro Heiskanen DAL (not on any lineup)
+- Timothy Liljegren WSH (not on any lineup)
+- Dylan Samberg WPG (not on any lineup)
+- Josh Norris BUF (not on any lineup)
+- Alexandre Texier MTL (not on any lineup)
+- Filip Chytil VAN (not on any lineup)
+- Nick Desimone UTA (not on any lineup)
+- Alex Iafallo WPG (not on any lineup)
+- Neal Pionk WPG (not on any lineup)
+- Fabian Zetterlund OTT (not on any lineup)
+- Drake Batherson OTT (not on any lineup)
+- Nick Perbix NSH (not on any lineup)
+- Alexey Toropchenko STL (not on any lineup)
+- Morgan Barron WPG (not on any lineup)
+- Sean Walker CAR (not on any lineup)
+- Mark Kastelic BOS (not on any lineup)
+- Pius Suter STL (not on any lineup)
+- Kiefer Sherwood SJS (not on any lineup)
+- Eric Robinson CAR (not on any lineup)
+- Martin Fehervary WSH (not on any lineup)
+- Quinn Hughes MIN (not on any lineup)
+- Ryan Mcleod BUF (not on any lineup)
+- Mattias Samuelsson BUF (not on any lineup)
+- Kandre Miller CAR (not on any lineup)
+- Jesperi Kotkaniemi CAR (not on any lineup)
+- Andrei Svechnikov CAR (not on any lineup)
+- Jack Drury NSH (not on any lineup)
+- Rasmus Dahlin BUF (not on any lineup)
+- Ty Dellandrea SJS (not on any lineup)
+- Barrett Hayton UTA (not on any lineup)
+- Jack Mcbain UTA (not on any lineup)
+- Noah Dobson MTL (not on any lineup)
+- Nils Lundkvist DAL (not on any lineup)
+- Michael Kesselring SJS (not on any lineup)
+- Connor Dewar PIT (not on any lineup)
+- Pontus Holmberg TBL (not on any lineup)
+- Jonatan Berggren STL (not on any lineup)
+- Linus Karlsson VAN (not on any lineup)
+- Paul Cotter VAN (not on any lineup)
+- Cole Koepke WPG (not on any lineup)
+- Jake Christiansen CBJ (not on any lineup)
+- Nico Sturm MIN (not on any lineup)
+- Blake Lizotte PIT (not on any lineup)
+- Peyton Krebs BUF (not on any lineup)
+- Kirby Dach MTL (not on any lineup)
+- Kaedan Korczak PIT (not on any lineup)
+- Dylan Cozens OTT (not on any lineup)
+- Nils Hoglander NSH (not on any lineup)
+- Judd Caulfield ANA (not on any lineup)
+- Cole Caufield MTL (not on any lineup)
+- Moritz Seider DET (not on any lineup)
+- Bobby Brink MIN (not on any lineup)
+- Matt Boldy MIN (not on any lineup)
+- Drew Helleson ANA (not on any lineup)
+- Alex Vlasic CHI (not on any lineup)
+- Connor Mcmichael STL (not on any lineup)
+- Thomas Harley DAL (not on any lineup)
+- Nicholas Robertson PIT (not on any lineup)
+- Shane Pinto OTT (not on any lineup)
+- Philip Broberg STL (not on any lineup)
+- Simon Holmstrom NYI (not on any lineup)
+- Jackson Lacombe ANA (not on any lineup)
+- Jordan Spence OTT (not on any lineup)
+- Alex Newhook MTL (not on any lineup)
+- Ilya Mikheyev TBL (not on any lineup)
+- Joel Kiviranta DAL (not on any lineup)
+- Aliaksei Protas WSH (not on any lineup)
+- Dmitri Voronkov CBJ (not on any lineup)
+- Adam Edstrom NSH (not on any lineup)
+- Louis Crevier BUF (not on any lineup)
+- Drew Oconnor VAN (not on any lineup)
+- Cole Smith CHI (not on any lineup)
+- Mitchell Chaffee NYI (not on any lineup)
+- Dylan Holloway STL (not on any lineup)
+- Lucas Raymond DET (not on any lineup)
+- Marco Rossi VAN (not on any lineup)
+- Kaiden Guhle MTL (not on any lineup)
+- Justin Sourdif WSH (not on any lineup)
+- Jake Neighbours STL (not on any lineup)
+- Ridly Greig OTT (not on any lineup)
+- Seth Jarvis CAR (not on any lineup)
+- Tyler Kleven OTT (not on any lineup)
+- Jack Quinn BUF (not on any lineup)
+- Jake Sanderson OTT (not on any lineup)
+- Tim Stutzle OTT (not on any lineup)
+- Sam Colangelo ANA (not on any lineup)
+- Quinton Byfield LAK (not on any lineup)
+- Mavrik Bourque NSH (not on any lineup)
+- Hendrix Lapierre PIT (not on any lineup)
+- Cole Perfetti WPG (not on any lineup)
+- Alex Laferriere LAK (not on any lineup)
+- William Wallinder DET (not on any lineup)
+- Jj Peterka BOS (not on any lineup)
+- Wyatt Kaiser CHI (not on any lineup)
+- Marat Khusnutdinov BOS (not on any lineup)
+- Gage Goncalves TBL (not on any lineup)
+- Artem Zub OTT (not on any lineup)
+- Jeff Malott ANA (not on any lineup)
+- Tyrel Bauer WPG (not on any lineup)
+- Yegor Chinakhov PIT (not on any lineup)
+- Emil Heineman NYI (not on any lineup)
+- Adam Wilsby NSH (not on any lineup)
+- Mason Lohrei BOS (not on any lineup)
+- Matthew Kessel NYI (not on any lineup)
+- Matt Kiersted MIN (not on any lineup)
+- Janis Moser TBL (not on any lineup)
+- Josh Doan BUF (not on any lineup)
+- Kent Johnson CBJ (not on any lineup)
+- Owen Power BUF (not on any lineup)
+- Dylan Guenther UTA (not on any lineup)
+- Nolan Allan SJS (not on any lineup)
+- Logan Stankoven CAR (not on any lineup)
+- Cole Sillinger CBJ (not on any lineup)
+- Samuel Helenius LAK (not on any lineup)
+- Brandt Clarke LAK (not on any lineup)
+- Tyson Hinds ANA (not on any lineup)
+- Zack Bolduc MTL (not on any lineup)
+- Wyatt Johnston DAL (not on any lineup)
+- Mason Mctavish STL (not on any lineup)
+- Ville Koivunen PIT (not on any lineup)
+- Isak Rosen WPG (not on any lineup)
+- Oliver Kapanen MTL (not on any lineup)
+- Carter Mazur DET (not on any lineup)
+- Olen Zellweger BUF (not on any lineup)
+- Jackson Blake CAR (not on any lineup)
+- Tyson Kozak BUF (not on any lineup)
+- Emil Lilleberg TBL (not on any lineup)
+- Frederic Brunet BOS (not on any lineup)
+- Arshdeep Bains VAN (not on any lineup)
+- Declan Carlile PIT (not on any lineup)
+- Taylor Ward LAK (not on any lineup)
+- Lian Bichsel DAL (not on any lineup)
+- Logan Cooley UTA (not on any lineup)
+- Luca Del Bel Belluz CBJ (not on any lineup)
+- Cutter Gauthier ANA (not on any lineup)
+- Conor Geekie TBL (not on any lineup)
+- Ryan Greene CHI (not on any lineup)
+- Lane Hutson MTL (not on any lineup)
+- Aleksanteri Kaskimaki STL (not on any lineup)
+- Kevin Korchinski CHI (not on any lineup)
+- Brad Lambert WPG (not on any lineup)
+- Jonathan Lekkerimaki VAN (not on any lineup)
+- Tristan Luneau ANA (not on any lineup)
+- Denton Mateychuk CBJ (not on any lineup)
+- Fraser Minten BOS (not on any lineup)
+- Pavel Mintyukov ANA (not on any lineup)
+- Frank Nazar CHI (not on any lineup)
+- Liam Ohgren VAN (not on any lineup)
+- Noah Ostlund BUF (not on any lineup)
+- Matthew Poitras BOS (not on any lineup)
+- Sam Rinzel CHI (not on any lineup)
+- Elias Salomonsson WPG (not on any lineup)
+- Matthew Seminoff DAL (not on any lineup)
+- Juraj Slafkovsky MTL (not on any lineup)
+- Jimmy Snuggerud STL (not on any lineup)
+- Noah Warren ANA (not on any lineup)
+- Danila Yurov MIN (not on any lineup)
+- Stephen Halliday OTT (not on any lineup)
+- Adam Engstrom MTL (not on any lineup)
+- Dominic James TBL (not on any lineup)
+- Jared Wright LAK (not on any lineup)
+- Vittorio Mancini VAN (not on any lineup)
+- Andrei Kuzmenko PIT (not on any lineup)
+- Max Sasson VAN (not on any lineup)
+- Connor Bedard CHI (not on any lineup)
+- Zach Benson BUF (not on any lineup)
+- Leo Carlsson ANA (not on any lineup)
+- Nate Danielson DET (not on any lineup)
+- Dalibor Dvorsky STL (not on any lineup)
+- Ryan Leonard WSH (not on any lineup)
+- Oliver Moore CHI (not on any lineup)
+- Will Smith SJS (not on any lineup)
+- Tom Willander VAN (not on any lineup)
+- Matthew Wood NSH (not on any lineup)
+- Zach Metsa BUF (not on any lineup)
+- Nikolas Matinpalo OTT (not on any lineup)
+- Dmitri Simashev UTA (not on any lineup)
+- Florian Xhekaj MTL (not on any lineup)
+- Emmitt Finnie DET (not on any lineup)
+- Carter Yakemchuk OTT (not on any lineup)
+- Beckett Sennecke ANA (not on any lineup)
+- Artyom Levshunov CHI (not on any lineup)
+- Adam Jiricek STL (not on any lineup)
+- Michael Brandseggnygard DET (not on any lineup)
+- Konsta Helenius BUF (not on any lineup)
+- Zeev Buium VAN (not on any lineup)
+- Macklin Celebrini SJS (not on any lineup)
+- Sam Dickinson SJS (not on any lineup)
+- Justin Hryckowian DAL (not on any lineup)
+- Cole Hutson WSH (not on any lineup)
+- Collin Graf SJS (not on any lineup)
+- Arttu Hyry DAL (not on any lineup)
+- Ilya Protas WSH (not on any lineup)
+- Matthew Schaefer NYI (not on any lineup)
+- Anton Frondell CHI (not on any lineup)
+- James Hagens BOS (not on any lineup)
+- Roger Mcqueen ANA (not on any lineup)
+- Michael Misa SJS (not on any lineup)
+- Ben Kindel PIT (not on any lineup)
+- Tim Washe ANA (not on any lineup)
+- Maxim Shabanov MIN (not on any lineup)
+- Charlesedouard Dastous (WPG @ TBL): price not matched to a player
+- Elias Pettersson (VAN @ SJS): price not matched to a player
+- Filip Bystedt (VAN @ SJS): price not matched to a player
 Unconfirmed goalies:
-- PHI: Joseph Woll (expected, not confirmed)
-- WSH: Logan Thompson (expected, not confirmed)
-- CGY: Devin Cooley (expected, not confirmed)
-- EDM: Tristan Jarry (expected, not confirmed)
-- COL: Mackenzie Blackwood (expected, not confirmed)
-- TOR: Sergei Bobrovsky (expected, not confirmed)
-- SEA: Philipp Grubauer (expected, not confirmed)
+- WPG: no goalie listed
+- TBL: no goalie listed
+- UTA: no goalie listed
+- PIT: no goalie listed
+- CBJ: no goalie listed
+- CAR: no goalie listed
+- CHI: no goalie listed
+- DET: no goalie listed
+- BOS: no goalie listed
+- STL: no goalie listed
+- WSH: no goalie listed
+- NSH: no goalie listed
+- MTL: no goalie listed
+- DAL: no goalie listed
+- NYI: no goalie listed
+- MIN: no goalie listed
+- BUF: no goalie listed
+- ANA: no goalie listed
+- OTT: no goalie listed
+- LAK: no goalie listed
+- VAN: no goalie listed
+- SJS: no goalie listed
