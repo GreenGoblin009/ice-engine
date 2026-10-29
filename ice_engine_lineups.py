@@ -338,6 +338,12 @@ def find_players(name, team_players, group=None):
         found = [p for p in team_players
                  if " " in p["key"] and p["key"].split(" ", 1)[1] == last
                  and same_first_name(first, p["key"].split(" ", 1)[0])]
+    if not found and key.split():
+        # Hyphenated first names ("Charle-Edouard D'Astous" vs "Charlesedouard
+        # Dastous"): same last word and same first letter.
+        first, last = key.split()[0], key.split()[-1]
+        found = [p for p in team_players
+                 if p["key"].split() and p["key"].split()[-1] == last and p["key"][:1] == first[:1]]
     if len(found) > 1 and group:
         found = [p for p in found if position_group(p["pos"]) == group] or found
     return found
