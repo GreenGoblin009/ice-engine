@@ -1,7 +1,7 @@
 ICE ENGINE SLATE REPORT  2026-10-29
-Lineups pulled: Oct 29, 3:40 PM ET
+Lineups pulled: Oct 29, 4:14 PM ET
 Prices pulled:  Oct 29, 12:23 PM ET
-Goalies pulled: Oct 29, 3:40 PM ET
+Goalies pulled: Oct 29, 4:14 PM ET
 Times are US Eastern. Read-only: built from the same models as the board.
 
 GAMES (start, projected goals, model game total; book game totals are not pulled)
@@ -49,7 +49,7 @@ INJURED / OUT (scratches in brackets)
 - CBJ: Ivan Provorov (lower body); Isac Lundestrom (lower body) [Carson Soucy, Emil Andrae, Dmitri Voronkov]
 - CAR: Jordan Staal (calf); Taylor Hall (upper body) [Mike Reilly]
 - CHI: Bowen Byram (upper body) [Andrew Mangiapane, Ethan Del Mastro]
-- DET: Mason Appleton (undisclosed); Marco Kasper (upper body); Albert Johansson (undisclosed) [Axel Sandin-Pellikka, Dylan Larkin]
+- DET: Mason Appleton (undisclosed); Marco Kasper (upper body); Albert Johansson (undisclosed) [Axel Sandin-Pellikka, Dylan Larkin, Sheldon Dries]
 - BOS: none listed [Jonathan Aspirot, Sean Kuraly, Frederic Brunet]
 - STL: Tyler Tucker (knee); Logan Mailloux (hand); Dillon Dube (neck); Ross Johnston (lower body) [Otto Stenberg, Quinton Burns]
 - WSH: Vincent Desharnais (appendectomy); Rasmus Sandin (knee) [Ethen Frank, Dylan McIlrath, Ivan Miroshnichenko]
