@@ -950,7 +950,7 @@ async function renderForm(){
     <div><label>Stat</label><select id="fStat">${['Points','Goals','Assists'].map(x=>`<option ${x===F.stat?'selected':''}>${x}</option>`).join('')}</select></div>
     <div><label>Price</label><select id="fPrice">${[['safe','−130 or better'],['any','Any price'],['plus','+100 or longer'],['plus150','+150 or longer']].map(([v,t])=>`<option value="${v}" ${v===F.price?'selected':''}>${t}</option>`).join('')}</select></div>
     <div><label>Last 10 games: show</label><select id="fMode">${[['hits','Hits'],['misses','Misses']].map(([v,t])=>`<option value="${v}" ${v===F.mode?'selected':''}>${t}</option>`).join('')}</select></div>
-    <div><label>Venue</label><select id="fSplit">${[['Home+Away','All games'],['Home','Home games only'],['Away','Away games only']].map(([v,t])=>`<option value="${v}" ${v===F.split?'selected':''}>${t}</option>`).join('')}</select></div>
+    <div><label>Venue</label><select id="fSplit">${[['Home+Away','All games'],['Home','Home teams only'],['Away','Away teams only']].map(([v,t])=>`<option value="${v}" ${v===F.split?'selected':''}>${t}</option>`).join('')}</select></div>
     <div><label>How many</label><select id="fMin">${['any',0,1,2,3,4,5,6,7,8,9,10].map(x=>`<option value="${x}" ${String(x)===String(F.min)?'selected':''}>${x==='any'?'Any':x}</option>`).join('')}</select></div>
     </div>`;
   const wire=()=>{ $('fStat').onchange=e=>{F.stat=e.target.value;renderForm();}; $('fPrice').onchange=e=>{F.price=e.target.value;renderForm();}; $('fMin').onchange=e=>{F.min=e.target.value==='any'?'any':+e.target.value;renderForm();}; $('fMode').onchange=e=>{F.mode=e.target.value;renderForm();}; $('fSplit').onchange=e=>{F.split=e.target.value;renderForm();}; };
@@ -1001,6 +1001,8 @@ async function renderForm(){
     const offNight=now>=1&&now<=2&&restLongest<=2&&l10>=3;
     return {...r,pa,pv,seq,hitRun,l10,l10n,l20,now,longest,steady,offNight,home,gm,vSeason,vS,v20,v20h,shpg,atpg,at4,at:at.length,sleeper,pc,adj};
   });
+  if(F.split==='Home') rows=rows.filter(r=>r.home===true);       // Venue Home/Away: only teams playing at that venue tonight
+  else if(F.split==='Away') rows=rows.filter(r=>r.home===false);
   rows=rows.filter(r=>F.min==='any'||(F.mode==='hits'?r.l10===F.min:(r.l10n-r.l10)===F.min));
   if(F.price==='safe') rows=rows.filter(r=>r.pc&&r.pc.price>=-130);
   else if(F.price==='plus') rows=rows.filter(r=>r.pc&&r.pc.price>=100);
@@ -1036,7 +1038,7 @@ async function renderForm(){
       <div style="text-align:right;min-width:74px;"><div class="pbig" style="color:${col}">${r10}%</div><div class="psub">LAST 10</div><div class="muted small" style="margin-top:4px;">L20 ${r20}%</div><div class="muted small">model ${Math.round(r.adj*100)}%</div></div></div>`;
   }).join(''):'<div class="empty">No players match this filter. Lower the minimum hits or widen the price.</div>';
   const banner=prevTeams.length?`<div class="muted small" style="margin:0 0 10px;">Lineups not posted yet for ${esc(prevTeams.join(', '))}. Showing each of those teams' most recent lineup, so a scratch or line change is possible.</div>`:'';
-  const note=`<details class="more" style="margin:0 0 10px;"><summary>Every player in tonight's games. Tap for details.</summary><div class="muted small" style="margin-top:6px;">Every skater in tonight's lineups, best last-10 hit rate first. The big number is his hit rate in his last 10 games (green 60%+, amber 40-59, red under 40), with his last 20 and the model chance underneath. The squares are his last 20 games, oldest on the left, green = got it. Use Hits or Misses plus a number to see only players with exactly that many in their last 10, and Price to see only players inside a price. PATTERN = his last 20 repeat a hit/miss cycle (not proven to beat his normal rate). HOME/AWAY x/y = his hits at tonight's venue in last 20. SLEEPER = a forward with lots of shots or attempts but 0-1 goals in his last 10. Venue: Home games only or Away games only recounts the last 10 and last 20 from just those games (newest first), for every player, wherever tonight's game is. Showing ${rows.length} of ${total}.</div></details>`;
+  const note=`<details class="more" style="margin:0 0 10px;"><summary>Every player in tonight's games. Tap for details.</summary><div class="muted small" style="margin-top:6px;">Every skater in tonight's lineups, best last-10 hit rate first. The big number is his hit rate in his last 10 games (green 60%+, amber 40-59, red under 40), with his last 20 and the model chance underneath. The squares are his last 20 games, oldest on the left, green = got it. Use Hits or Misses plus a number to see only players with exactly that many in their last 10, and Price to see only players inside a price. PATTERN = his last 20 repeat a hit/miss cycle (not proven to beat his normal rate). HOME/AWAY x/y = his hits at tonight's venue in last 20. SLEEPER = a forward with lots of shots or attempts but 0-1 goals in his last 10. Venue: Home teams only shows just the teams playing at home tonight (Away teams only, the road teams), and recounts the last 10 and last 20 from just those home (or away) games, newest first. Showing ${rows.length} of ${total}.</div></details>`;
   $('view').innerHTML=controls+banner+note+list; wire();
 }
 
