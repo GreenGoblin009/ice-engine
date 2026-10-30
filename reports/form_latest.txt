@@ -58,7 +58,7 @@ Every player shows tonight's opponent and start time so the game can be checked.
 --- ASSISTS: EVERY priced player passing the price rule, best chance first (10) ---
 - [steady,venue,streak] Jack Hughes NJD @ VGK 6:00 PM ET | +100 (DK +100, FD -102) | model 55% | L10 7/10 L20 12/20 season 8/13 | max miss run 3, missed last 1 | shots L5 3.0 L10 3.4, attempts L10 8.5 | away season 2/5, away in L20 4/8 | XX..XX...XXXXX..XXX.
 - [steady] Mark Scheifele WPG @ FLA 7:00 PM ET | +110 (DK +110, FD +108) | model 48% | L10 5/10 L20 10/20 season 5/13 | max miss run 5, missed last 0 | shots L5 2.8 L10 2.3, attempts L10 4.5 | away season 2/6, away in L20 6/10 | XXX.XX....XXXX.....X
-- [price,hit rate,steady] Kyle Connor WPG @ FLA 7:00 PM ET | +125 (DK +125, FD +124) | model 48% | L10 2/10 L20 6/20 season 4/13 | max miss run 6, missed last 0 | shots L5 3.6 L10 3.5, attempts L10 6.9 | away season 2/6, away in L20 4/10 | ....XX.XX...X......X
+- [price,hit rate,steady] Kyle Connor WPG @ FLA 7:00 PM ET | +125 (DK +125, FD +124) | model 48% | L10 2/10 L20 6/20 season 4/13 | max miss run 6, missed last 0 | shots L5 3.8 L10 3.6, attempts L10 6.9 | away season 2/6, away in L20 4/10 | ....XX.XX...X......X
 - [price,hit rate,steady,streak] Luke Evangelista NJD @ VGK 6:00 PM ET | +146 (DK +140, FD +146) | model 41% | L10 5/10 L20 8/20 season 5/10 | max miss run 4, missed last 1 | shots L5 2.6 L10 2.5, attempts L10 4.2 | away season 1/3, away in L20 2/9 | ...X...X.XX....XXXX.
 - [hit rate,steady,shots] Gabriel Vilardi WPG @ FLA 7:00 PM ET | +164 (DK +155, FD +164) | model 40% | L10 3/10 L20 9/20 season 5/13 | max miss run 3, missed last 2 | shots L5 1.8 L10 1.7, attempts L10 3.8 | away season 2/6, away in L20 5/10 | .XX.XX.XX...X..X.X..
 - [steady,shots,streak] Ivan Barbashev VGK vs NJD 6:00 PM ET | +175 (DK +175, FD +172) | model 38% | L10 4/10 L20 9/20 season 6/14 | max miss run 3, missed last 0 | shots L5 0.6 L10 1.3, attempts L10 3.3 | home season 4/8, home in L20 5/10 | X..XX.X..XX...X..X.X
@@ -71,7 +71,7 @@ Every player shows tonight's opponent and start time so the game can be checked.
 - [steady] Mark Scheifele WPG @ FLA 7:00 PM ET | +110 (DK +110, FD +108) | model 48% | L10 5/10 L20 10/20 season 5/13 | max miss run 5, missed last 0 | shots L5 2.8 L10 2.3, attempts L10 4.5 | away season 2/6, away in L20 6/10 | XXX.XX....XXXX.....X
 
 === GOALS: LINES UP on every check (7 of 101 priced) ===
-- Kyle Connor WPG @ FLA 7:00 PM ET | +190 (DK +165, FD +190) | model 42% | L10 6/10 L20 11/20 season 8/13 | max miss run 3, missed last 0 | shots L5 3.6 L10 3.5, attempts L10 6.9 | away season 4/6, away in L20 6/10 | XX...X.XX.XXXX..X..X
+- Kyle Connor WPG @ FLA 7:00 PM ET | +190 (DK +165, FD +190) | model 42% | L10 6/10 L20 11/20 season 8/13 | max miss run 3, missed last 0 | shots L5 3.8 L10 3.6, attempts L10 6.9 | away season 4/6, away in L20 6/10 | XX...X.XX.XXXX..X..X
 - Mark Stone VGK vs NJD 6:00 PM ET | +195 (DK +195, FD +195) | model 38% | L10 4/10 L20 10/20 season 6/14 | max miss run 3, missed last 3 | shots L5 2.0 L10 2.1, attempts L10 3.7 | home season 5/8, home in L20 6/10 | X.XXX.X..XX...XXX...
 - Jack Eichel VGK vs NJD 6:00 PM ET | +180 (DK +180, FD +180) | model 34% | L10 5/10 L20 9/20 season 7/14 | max miss run 3, missed last 0 | shots L5 2.0 L10 3.0, attempts L10 4.7 | home season 4/8, home in L20 5/10 | ...XX.X..XX..XX..X.X
 - Cole Perfetti WPG @ FLA 7:00 PM ET | +300 (DK +255, FD +300) | model 22% | L10 3/10 L20 5/20 season 5/13 | max miss run 8, missed last 4 | shots L5 3.4 L10 2.8, attempts L10 5.8 | away season 3/6, away in L20 3/10 | ........XXX.X..X....
@@ -80,7 +80,7 @@ Every player shows tonight's opponent and start time so the game can be checked.
 - Neal Pionk WPG @ FLA 7:00 PM ET | +900 (DK +750, FD +900) | model 8% | L10 2/10 L20 2/20 season 2/13 | max miss run 13, missed last 0 | shots L5 2.8 L10 2.1, attempts L10 5.0 | away season 2/6, away in L20 2/11 | .............X.....X
 
 --- GOALS: EVERY priced player passing the price rule, best chance first (23) ---
-- [clean] Kyle Connor WPG @ FLA 7:00 PM ET | +190 (DK +165, FD +190) | model 42% | L10 6/10 L20 11/20 season 8/13 | max miss run 3, missed last 0 | shots L5 3.6 L10 3.5, attempts L10 6.9 | away season 4/6, away in L20 6/10 | XX...X.XX.XXXX..X..X
+- [clean] Kyle Connor WPG @ FLA 7:00 PM ET | +190 (DK +165, FD +190) | model 42% | L10 6/10 L20 11/20 season 8/13 | max miss run 3, missed last 0 | shots L5 3.8 L10 3.6, attempts L10 6.9 | away season 4/6, away in L20 6/10 | XX...X.XX.XXXX..X..X
 - [clean] Mark Stone VGK vs NJD 6:00 PM ET | +195 (DK +195, FD +195) | model 38% | L10 4/10 L20 10/20 season 6/14 | max miss run 3, missed last 3 | shots L5 2.0 L10 2.1, attempts L10 3.7 | home season 5/8, home in L20 6/10 | X.XXX.X..XX...XXX...
 - [price,hit rate] Mark Scheifele WPG @ FLA 7:00 PM ET | +270 (DK +240, FD +270) | model 32% | L10 2/10 L20 4/20 season 2/13 | max miss run 6, missed last 5 | shots L5 2.8 L10 2.3, attempts L10 4.5 | away season 0/6, away in L20 2/10 | ....XX......X.X.....
 - [shots] Anthony Mantha NJD @ VGK 6:00 PM ET | +430 (DK +400, FD +430) | model 31% | L10 3/10 L20 7/20 season 3/13 | max miss run 5, missed last 2 | shots L5 1.2 L10 1.3, attempts L10 2.3 | away season 1/5, away in L20 2/8 | X.X..XX.....X...XX..
