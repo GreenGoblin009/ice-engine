@@ -1,4 +1,4 @@
-SPORTSGAMEODDS PRICES (FanDuel, DraftKings)  pulled Oct 30 05:15 PM ET
+SPORTSGAMEODDS PRICES (FanDuel, DraftKings)  pulled Oct 30 05:25 PM ET
 Over/Yes sides only. FD/DK = American odds; '-' = book not offering.
 
 == New Jersey Devils @ Vegas Golden Knights  Fri 06:00 PM ET ==
@@ -322,6 +322,7 @@ Teddy Blueger: goal FD +600 DK -
 Tom Willander: goal FD +1200 DK -
 Troy Stecher: goal FD +1500 DK -
 Vinni Lettieri: goal FD +550 DK -
+Vittorio Mancini: goal FD +2100 DK -
 William Nylander: ast O0.5 FD -128 DK - | goal FD +130 DK - | pts O1.5 FD +162 DK -
 Zack Macewen: goal FD +900 DK -
 Zeev Buium: goal FD +950 DK -
