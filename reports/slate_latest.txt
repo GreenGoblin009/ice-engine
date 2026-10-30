@@ -1,6 +1,6 @@
 ICE ENGINE SLATE REPORT  2026-10-30
 Lineups pulled: Oct 30, 9:47 AM ET
-Prices pulled:  none yet
+Prices pulled:  Oct 30, 9:56 AM ET
 Goalies pulled: Oct 30, 9:47 AM ET
 Times are US Eastern. Read-only: built from the same models as the board.
 
@@ -35,26 +35,185 @@ TEAM FORM, last 10 regular-season games (per game: GF / GA | shots for / against
 - CGY: 2.6 / 3.5 | 29.6 / 30.8 | PP 28.6% (8/28) | PK 81.5%
 
 TOP 15 GOALS BY ROLE-ADJUSTED CHANCE
+1. Mark Stone VGK 37%; best +195 FD; edge +2.7; DK +190; FD +195; L10 4/10; L3 0/3; 2.1 shots; 18.4 min; PP1
+2. Jack Eichel VGK 32%; best +180 DK; edge -3.3; DK +180; FD +180; L10 5/10; L3 2/3; 3.0 shots; 19.9 min; PP1
+3. Anthony Mantha NJD 32%; best +430 FD; edge +12.6; DK +400; FD +430; L10 3/10; L3 1/3; 1.3 shots; 13.4 min; PP2
+4. Nico Hischier NJD 28%; best +210 FD; edge -3.9; DK +195; FD +210; L10 5/10; L3 1/3; 2.7 shots; 18.0 min; PP1
+5. Jack Hughes NJD 28%; best +170 FD; edge -8.7; DK +165; FD +170; L10 3/10; L3 1/3; 3.4 shots; 20.4 min; PP1
+6. Timo Meier NJD 27%; best +270 FD; edge -0.3; DK +255; FD +270; L10 1/10; L3 0/3; 2.9 shots; 16.1 min; PP2
+7. Tomas Hertl VGK 26%; best +250 DK; edge -2.4; DK +250; FD +240; L10 2/10; L3 1/3; 1.9 shots; 15.6 min; PP1
+8. Ivan Barbashev VGK 23%; best +350 DK; edge +1.2; DK +350; FD +350; L10 1/10; L3 0/3; 1.3 shots; 16.3 min; PP2
+9. Mitch Marner VGK 23%; best +250 DK; edge -5.5; DK +250; FD +250; L10 2/10; L3 0/3; 2.5 shots; 19.9 min; PP1
+10. Brett Howden VGK 23%; best +370 FD; edge +1.6; DK +350; FD +370; L10 5/10; L3 1/3; 1.5 shots; 15.5 min; no PP
+11. Arseny Gritsyuk NJD 22%; best +330 FD; edge -1.0; DK +295; FD +330; L10 6/10; L3 1/3; 2.1 shots; 15.3 min; PP2
+12. Connor Brown NJD 22%; best +650 DK; edge +8.6; DK +650; FD +600; L10 2/10; L3 1/3; 1.4 shots; 13.8 min; no PP
+13. Jesper Bratt NJD 22%; best +300 FD; edge -3.3; DK +265; FD +300; L10 2/10; L3 0/3; 1.8 shots; 17.3 min; PP1
+14. Cody Glass NJD 21%; best +750 FD; edge +9.5; DK +650; FD +750; L10 1/10; L3 0/3; 1.5 shots; 12.3 min; no PP
+15. William Karlsson VGK 20%; best +390 DK; edge +0.1; DK +390; FD +380; L10 3/10; L3 1/3; 1.7 shots; 17.4 min; PP2
 
 TOP 15 POINTS BY ROLE-ADJUSTED CHANCE
+1. Mark Stone VGK 68%; best -205 DK; edge +0.7; DK -205; FD -205; L10 7/10; L3 1/3; 2.1 shots; 18.4 min; PP1
+2. Jack Hughes NJD 66%; best -210 DK; edge -2.2; DK -210; FD -215; L10 7/10; L3 2/3; 3.4 shots; 20.4 min; PP1
+3. Mitch Marner VGK 61%; best -195 DK; edge -4.9; DK -195; FD -205; L10 9/10; L3 3/3; 2.5 shots; 19.9 min; PP1
+4. Jesper Bratt NJD 53%; best -142 FD; edge -5.3; DK -145; FD -142; L10 5/10; L3 2/3; 1.8 shots; 17.3 min; PP1
+5. Ivan Barbashev VGK 53%; best +105 DK; edge +4.1; DK +105; FD -102; L10 5/10; L3 2/3; 1.3 shots; 16.3 min; PP2
+6. Nico Hischier NJD 50%; best -125 DK; edge -6.0; DK -125; FD -132; L10 6/10; L3 1/3; 2.7 shots; 18.0 min; PP1
+7. Luke Evangelista NJD 50%; best -122 FD; edge -5.4; DK -125; FD -122; L10 6/10; L3 2/3; 2.5 shots; 17.3 min; PP1
+8. Tomas Hertl VGK 48%; best -105 DK; edge -3.1; DK -105; FD -120; L10 3/10; L3 1/3; 1.9 shots; 15.6 min; PP1
+9. Timo Meier NJD 45%; best +112 FD; edge -2.1; DK +110; FD +112; L10 3/10; L3 1/3; 2.9 shots; 16.1 min; PP2
+10. Shea Theodore VGK 45%; best +130 FD; edge +1.2; DK +120; FD +130; L10 2/10; L3 1/3; 2.0 shots; 21.7 min; PP2
+11. William Karlsson VGK 42%; best +140 DK; edge +0.5; DK +140; FD +134; L10 6/10; L3 1/3; 1.7 shots; 17.4 min; PP2
+12. Arseny Gritsyuk NJD 40%; best +116 FD; edge -5.8; DK +110; FD +116; L10 8/10; L3 2/3; 2.1 shots; 15.3 min; PP2
+13. Dougie Hamilton NJD 39%; best +165 DK; edge +1.3; DK +165; FD +162; L10 3/10; L3 1/3; 2.3 shots; 20.6 min; PP2
+14. Luke Hughes NJD 38%; best +100 FD; edge -11.5; DK -105; FD +100; L10 3/10; L3 1/3; 2.3 shots; 24.0 min; PP1
+15. Evan Rodrigues NJD 35%; best +185 DK; edge -0.3; DK +185; FD -; L10 3/10; L3 1/3; 1.5 shots; 15.5 min; PP2
 
 TOP 15 ASSISTS BY ROLE-ADJUSTED CHANCE
+1. Jack Hughes NJD 53%; best +105 DK; edge +4.6; DK +105; FD +104; L10 7/10; L3 2/3; 3.4 shots; 20.4 min; PP1
+2. Jack Eichel VGK 53%; best -142 FD; edge -5.7; DK -150; FD -142; L10 3/10; L3 0/3; 3.0 shots; 19.9 min; PP1
+3. Mitch Marner VGK 50%; best -118 FD; edge -3.8; DK -120; FD -118; L10 8/10; L3 3/3; 2.5 shots; 19.9 min; PP1
+4. Mark Stone VGK 45%; best +106 FD; edge -3.5; DK -105; FD +106; L10 4/10; L3 1/3; 2.1 shots; 18.4 min; PP1
+5. Jesper Bratt NJD 44%; best +124 FD; edge -1.0; DK +115; FD +124; L10 5/10; L3 2/3; 1.8 shots; 17.3 min; PP1
+6. Luke Evangelista NJD 40%; best +148 FD; edge +0.1; DK +140; FD +148; L10 5/10; L3 2/3; 2.5 shots; 17.3 min; PP1
+7. Ivan Barbashev VGK 38%; best +180 DK; edge +1.9; DK +180; FD +164; L10 4/10; L3 2/3; 1.3 shots; 16.3 min; PP2
+8. Luke Hughes NJD 33%; best +146 FD; edge -7.8; DK +140; FD +146; L10 2/10; L3 1/3; 2.3 shots; 24.0 min; PP1
+9. Tomas Hertl VGK 32%; best +205 DK; edge -0.8; DK +205; FD +186; L10 1/10; L3 0/3; 1.9 shots; 15.6 min; PP1
+10. Shea Theodore VGK 32%; best +196 FD; edge -2.0; DK +180; FD +196; L10 1/10; L3 1/3; 2.0 shots; 21.7 min; PP2
+11. Nico Hischier NJD 31%; best +185 DK; edge -3.8; DK +185; FD +176; L10 2/10; L3 0/3; 2.7 shots; 18.0 min; PP1
+12. Dougie Hamilton NJD 30%; best +225 DK; edge -0.9; DK +225; FD +220; L10 3/10; L3 1/3; 2.3 shots; 20.6 min; PP2
+13. Timo Meier NJD 26%; best +245 DK; edge -3.1; DK +245; FD +240; L10 2/10; L3 1/3; 2.9 shots; 16.1 min; PP2
+14. Arseny Gritsyuk NJD 26%; best +230 FD; edge -4.6; DK +220; FD +230; L10 4/10; L3 2/3; 2.1 shots; 15.3 min; PP2
+15. Evan Rodrigues NJD 25%; best +320 DK; edge +1.1; DK +320; FD -; L10 3/10; L3 1/3; 1.5 shots; 15.5 min; PP2
 
 TOP 15 BY EDGE (all three markets)
-0 of 0 priced legs show a positive edge at the best book.
+1. Anthony Mantha NJD Goals 32%; best +430 FD; edge +12.6; DK +400; FD +430; L10 3/10; L3 1/3; 1.3 shots; 13.4 min; PP2
+2. Rasmus Andersson VGK Goals 20%; best +900 DK; edge +9.8; DK +900; FD +800; L10 2/10; L3 0/3; 1.9 shots; 18.9 min; PP2
+3. Cody Glass NJD Goals 21%; best +750 FD; edge +9.5; DK +650; FD +750; L10 1/10; L3 0/3; 1.5 shots; 12.3 min; no PP
+4. Connor Brown NJD Goals 22%; best +650 DK; edge +8.6; DK +650; FD +600; L10 2/10; L3 1/3; 1.4 shots; 13.8 min; no PP
+5. Jack Hughes NJD Assists 53%; best +105 DK; edge +4.6; DK +105; FD +104; L10 7/10; L3 2/3; 3.4 shots; 20.4 min; PP1
+6. Ivan Barbashev VGK Points 53%; best +105 DK; edge +4.1; DK +105; FD -102; L10 5/10; L3 2/3; 1.3 shots; 16.3 min; PP2
+7. Mark Stone VGK Goals 37%; best +195 FD; edge +2.7; DK +190; FD +195; L10 4/10; L3 0/3; 2.1 shots; 18.4 min; PP1
+8. Dougie Hamilton NJD Goals 14%; best +800 FD; edge +2.7; DK +700; FD +800; L10 0/10; L3 0/3; 2.3 shots; 20.6 min; PP2
+9. Declan Chisholm NJD Goals 8%; best +1600 DK; edge +2.1; DK +1600; FD +1500; L10 1/10; L3 1/3; 0.2 shots; 15.0 min; no PP
+10. Brayden McNabb VGK Goals 8%; best +1600 DK; edge +1.9; DK +1600; FD +1600; L10 0/10; L3 0/3; 1.3 shots; 19.3 min; no PP
+11. Ivan Barbashev VGK Assists 38%; best +180 DK; edge +1.9; DK +180; FD +164; L10 4/10; L3 2/3; 1.3 shots; 16.3 min; PP2
+12. Brett Howden VGK Goals 23%; best +370 FD; edge +1.6; DK +350; FD +370; L10 5/10; L3 1/3; 1.5 shots; 15.5 min; no PP
+13. Dougie Hamilton NJD Points 39%; best +165 DK; edge +1.3; DK +165; FD +162; L10 3/10; L3 1/3; 2.3 shots; 20.6 min; PP2
+14. Brett Pesce NJD Goals 6%; best +1900 FD; edge +1.3; DK +1600; FD +1900; L10 1/10; L3 1/3; 0.9 shots; 20.9 min; no PP
+15. Shea Theodore VGK Points 45%; best +130 FD; edge +1.2; DK +120; FD +130; L10 2/10; L3 1/3; 2.0 shots; 21.7 min; PP2
+22 of 63 priced legs show a positive edge at the best book.
 
 ALL PRICED SKATERS (shots/game last 10, minutes, PP unit | G | P | A: chance, best price, edge, last 10)
 NJD
+- Jack Hughes (3.4, 20.4, PP1): G 28% +170 FD -8.7, L10 3/10, L3 1/3 | P 66% -210 DK -2.2, L10 7/10, L3 2/3 | A 53% +105 DK +4.6, L10 7/10, L3 2/3
+- Jesper Bratt (1.8, 17.3, PP1): G 22% +300 FD -3.3, L10 2/10, L3 0/3 | P 53% -142 FD -5.3, L10 5/10, L3 2/3 | A 44% +124 FD -1.0, L10 5/10, L3 2/3
+- Anthony Mantha (1.3, 13.4, PP2): G 32% +430 FD +12.6, L10 3/10, L3 1/3 | P 52% no price, L10 4/10, L3 2/3 | A 31% no price, L10 2/10, L3 1/3
+- Nico Hischier (2.7, 18.0, PP1): G 28% +210 FD -3.9, L10 5/10, L3 1/3 | P 50% -125 DK -6.0, L10 6/10, L3 1/3 | A 31% +185 DK -3.8, L10 2/10, L3 0/3
+- Luke Evangelista (2.5, 17.3, PP1): G 15% +290 FD -11.0, L10 2/10, L3 0/3 | P 50% -122 FD -5.4, L10 6/10, L3 2/3 | A 40% +148 FD +0.1, L10 5/10, L3 2/3
+- Timo Meier (2.9, 16.1, PP2): G 27% +270 FD -0.3, L10 1/10, L3 0/3 | P 45% +112 FD -2.1, L10 3/10, L3 1/3 | A 26% +245 DK -3.1, L10 2/10, L3 1/3
+- Connor Brown (1.4, 13.8, no PP): G 22% +650 DK +8.6, L10 2/10, L3 1/3 | P 43% no price, L10 5/10, L3 1/3 | A 25% no price, L10 3/10, L3 0/3
+- Arseny Gritsyuk (2.1, 15.3, PP2): G 22% +330 FD -1.0, L10 6/10, L3 1/3 | P 40% +116 FD -5.8, L10 8/10, L3 2/3 | A 26% +230 FD -4.6, L10 4/10, L3 2/3
+- Dougie Hamilton (2.3, 20.6, PP2): G 14% +800 FD +2.7, L10 0/10, L3 0/3 | P 39% +165 DK +1.3, L10 3/10, L3 1/3 | A 30% +225 DK -0.9, L10 3/10, L3 1/3
+- Luke Hughes (2.3, 24.0, PP1): G 12% +500 FD -4.8, L10 2/10, L3 1/3 | P 38% +100 FD -11.5, L10 3/10, L3 1/3 | A 33% +146 FD -7.8, L10 2/10, L3 1/3
+- Evan Rodrigues (1.5, 15.5, PP2): G 16% +480 FD -1.2, L10 2/10, L3 0/3 | P 35% +185 DK -0.3, L10 3/10, L3 1/3 | A 25% +320 DK +1.1, L10 3/10, L3 1/3
+- Cody Glass (1.5, 12.3, no PP): G 21% +750 FD +9.5, L10 1/10, L3 0/3 | P 29% no price, L10 2/10, L3 1/3 | A 12% no price, L10 1/10, L3 1/3
+- Declan Chisholm (0.2, 15.0, no PP): G 8% +1600 DK +2.1, L10 1/10, L3 1/3 | P 28% no price, L10 2/10, L3 1/3 | A 21% no price, L10 1/10, L3 0/3
+- Jesper Boqvist (1.5, 11.9, no PP): G 10% +475 DK -7.0, L10 3/10, L3 1/3 | P 25% no price, L10 5/10, L3 2/3 | A 15% no price, L10 2/10, L3 1/3
+- Brett Pesce (0.9, 20.9, no PP): G 6% +1900 FD +1.3, L10 1/10, L3 1/3 | P 23% no price, L10 4/10, L3 2/3 | A 18% no price, L10 3/10, L3 1/3
+- Jonas Siegenthaler (0.2, 19.6, no PP): G 2% +1900 FD -3.3, L10 0/10, L3 0/3 | P 19% no price, L10 2/10, L3 0/3 | A 18% no price, L10 2/10, L3 0/3
+- Brenden Dillon (0.3, 14.9, no PP): G 5% +2400 FD +0.8, L10 0/10, L3 0/3 | P 18% no price, L10 0/10, L3 0/3 | A 15% no price, L10 0/10, L3 0/3
 VGK
+- Mark Stone (2.1, 18.4, PP1): G 37% +195 FD +2.7, L10 4/10, L3 0/3 | P 68% -205 DK +0.7, L10 7/10, L3 1/3 | A 45% +106 FD -3.5, L10 4/10, L3 1/3
+- Jack Eichel (3.0, 19.9, PP1): G 32% +180 DK -3.3, L10 5/10, L3 2/3 | P 65% no price, L10 6/10, L3 2/3 | A 53% -142 FD -5.7, L10 3/10, L3 0/3
+- Mitch Marner (2.5, 19.9, PP1): G 23% +250 DK -5.5, L10 2/10, L3 0/3 | P 61% -195 DK -4.9, L10 9/10, L3 3/3 | A 50% -118 FD -3.8, L10 8/10, L3 3/3
+- Ivan Barbashev (1.3, 16.3, PP2): G 23% +350 DK +1.2, L10 1/10, L3 0/3 | P 53% +105 DK +4.1, L10 5/10, L3 2/3 | A 38% +180 DK +1.9, L10 4/10, L3 2/3
+- Tomas Hertl (1.9, 15.6, PP1): G 26% +250 DK -2.4, L10 2/10, L3 1/3 | P 48% -105 DK -3.1, L10 3/10, L3 1/3 | A 32% +205 DK -0.8, L10 1/10, L3 0/3
+- Shea Theodore (2.0, 21.7, PP2): G 15% +550 DK -0.7, L10 1/10, L3 0/3 | P 45% +130 FD +1.2, L10 2/10, L3 1/3 | A 32% +196 FD -2.0, L10 1/10, L3 1/3
+- William Karlsson (1.7, 17.4, PP2): G 20% +390 DK +0.1, L10 3/10, L3 1/3 | P 42% +140 DK +0.5, L10 6/10, L3 1/3 | A 23% +255 DK -4.8, L10 3/10, L3 0/3
+- Rasmus Andersson (1.9, 18.9, PP2): G 20% +900 DK +9.8, L10 2/10, L3 0/3 | P 41% no price, L10 3/10, L3 0/3 | A 27% no price, L10 1/10, L3 0/3
+- Braeden Bowman (1.1, 13.7, PP2): G 16% +475 DK -1.0, L10 2/10, L3 1/3 | P 40% no price, L10 4/10, L3 2/3 | A 27% no price, L10 2/10, L3 1/3
+- Brett Howden (1.5, 15.5, no PP): G 23% +370 FD +1.6, L10 5/10, L3 1/3 | P 38% no price, L10 6/10, L3 1/3 | A 19% no price, L10 2/10, L3 0/3
+- Noah Hanifin (1.1, 20.3, no PP): G 7% +1300 FD -0.0, L10 1/10, L3 0/3 | P 34% no price, L10 4/10, L3 1/3 | A 27% no price, L10 3/10, L3 1/3
+- Nic Dowd (0.3, 12.0, no PP): G 7% +1000 DK -2.2, L10 0/10, L3 0/3 | P 26% no price, L10 1/10, L3 1/3 | A 22% no price, L10 1/10, L3 1/3
+- Brayden McNabb (1.3, 19.3, no PP): G 8% +1600 DK +1.9, L10 0/10, L3 0/3 | P 24% no price, L10 3/10, L3 1/3 | A 17% no price, L10 3/10, L3 1/3
+- Jeremy Lauzon (1.5, 17.3, no PP): G 3% +2100 FD -1.5, L10 0/10, L3 0/3 | P 17% no price, L10 0/10, L3 0/3 | A 16% no price, L10 0/10, L3 0/3
+- Marc Gatcomb (1.7, 11.0, no PP): G 8% +1000 FD -1.2, L10 0/10, L3 0/3 | P 16% no price, L10 0/10, L3 0/3 | A 11% no price, L10 0/10, L3 0/3
 WPG
 FLA
 SEA
 CGY
 
 DATA CHECKS
-Games with no prices: NJD @ VGK, WPG @ FLA, SEA @ CGY
+Games with no prices: none
 Teams with no lineup: WPG, FLA, SEA, CGY
-Priced players missing from the projected lineups: none
+Priced players missing from the projected lineups:
+- Mikael Backlund CGY (not on any lineup)
+- Lars Eller FLA (not on any lineup)
+- Jordan Eberle SEA (not on any lineup)
+- Dmitry Kulikov FLA (not on any lineup)
+- Radko Gudas FLA (not on any lineup)
+- Dylan Demelo WPG (not on any lineup)
+- Adam Lowry WPG (not on any lineup)
+- Adam Larsson SEA (not on any lineup)
+- Ryan Strome CGY (not on any lineup)
+- Mark Scheifele WPG (not on any lineup)
+- Chandler Stephenson SEA (not on any lineup)
+- Carter Verhaeghe FLA (not on any lineup)
+- Seth Jones FLA (not on any lineup)
+- Garnet Hathaway FLA (not on any lineup)
+- Frederick Gaudreau SEA (not on any lineup)
+- Aaron Ekblad FLA (not on any lineup)
+- Sam Reinhart FLA (not on any lineup)
+- Sam Bennett FLA (not on any lineup)
+- Haydn Fleury WPG (not on any lineup)
+- Brandon Montour SEA (not on any lineup)
+- Gustav Forsling FLA (not on any lineup)
+- Jake Middleton CGY (not on any lineup)
+- Bokondji Imama FLA (not on any lineup)
+- Kyle Connor WPG (not on any lineup)
+- Vince Dunn SEA (not on any lineup)
+- Niko Mikkola FLA (not on any lineup)
+- Matthew Tkachuk FLA (not on any lineup)
+- Josh Mahura SEA (not on any lineup)
+- Mario Ferraro WPG (not on any lineup)
+- Cale Fleury SEA (not on any lineup)
+- Gabriel Vilardi WPG (not on any lineup)
+- Morgan Frost CGY (not on any lineup)
+- Dylan Samberg WPG (not on any lineup)
+- Alex Iafallo WPG (not on any lineup)
+- Neal Pionk WPG (not on any lineup)
+- Eetu Luostarinen FLA (not on any lineup)
+- Morgan Barron WPG (not on any lineup)
+- Zach Whitecloud CGY (not on any lineup)
+- Joel Farabee CGY (not on any lineup)
+- Brady Tkachuk FLA (not on any lineup)
+- Kevin Bahl CGY (not on any lineup)
+- Martin Pospisil CGY (not on any lineup)
+- Cole Koepke WPG (not on any lineup)
+- Yegor Sharangovich CGY (not on any lineup)
+- Kaapo Kakko SEA (not on any lineup)
+- Cole Schwindt FLA (not on any lineup)
+- Anton Lundell FLA (not on any lineup)
+- Cole Perfetti WPG (not on any lineup)
+- Yan Kuznetsov CGY (not on any lineup)
+- Bobby Mcmann SEA (not on any lineup)
+- Matty Beniers SEA (not on any lineup)
+- Matt Coronato CGY (not on any lineup)
+- Mackie Samoskevich SEA (not on any lineup)
+- Ryan Winterton SEA (not on any lineup)
+- Isak Rosen WPG (not on any lineup)
+- Ryker Evans SEA (not on any lineup)
+- Brad Lambert WPG (not on any lineup)
+- Simon Nemec CGY (not on any lineup)
+- Elias Salomonsson WPG (not on any lineup)
+- Shane Wright SEA (not on any lineup)
+- Ben Meyers SEA (not on any lineup)
+- Adam Klapka CGY (not on any lineup)
+- Sandis Vilmanis FLA (not on any lineup)
+- Aydar Suniev CGY (not on any lineup)
+- Zayne Parekh CGY (not on any lineup)
+- Berkly Catton SEA (not on any lineup)
+- Matvei Gridin CGY (not on any lineup)
 Unconfirmed goalies:
 - NJD: Connor Hellebuyck (expected, not confirmed)
 - VGK: Adin Hill (expected, not confirmed)
