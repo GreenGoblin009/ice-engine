@@ -1,6 +1,6 @@
 # Projection scoreboard
 
-Updated 2026-10-31 23:12 ET. Uses the last slate report committed before first puck each day.
+Updated 2026-11-01 06:02 ET. Uses the last slate report committed before first puck each day.
 Brier and log-loss: lower is better. 'Naive' guesses the same average for everyone; the model should beat it.
 
 ## Skater chances, 1+ goal / point / assist
@@ -109,8 +109,8 @@ Brier and log-loss: lower is better. 'Naive' guesses the same average for everyo
 
 ## Game totals
 
-Games: 118. Average projected total 6.07, actual 6.44 (actual minus projected: +0.37).
-Mean absolute error 1.84 goals, against 1.85 for a flat guess at the average.
+Games: 119. Average projected total 6.08, actual 6.45 (actual minus projected: +0.37).
+Mean absolute error 1.83 goals, against 1.84 for a flat guess at the average.
 
 | Date | Game | Projected | Actual |
 |---|---|---|---|
@@ -232,6 +232,7 @@ Mean absolute error 1.84 goals, against 1.85 for a flat guess at the average.
 | 2026-10-31 | PIT@MTL | 6.38 | 9 |
 | 2026-10-31 | TOR@VAN | 6.43 | 6 |
 | 2026-10-31 | CBJ@DAL | 5.76 | 4 |
+| 2026-10-31 | CGY@COL | 6.15 | 7 |
 
 ## Data notes
 
