@@ -1,7 +1,7 @@
 ICE ENGINE SLATE REPORT  2026-11-01
-Lineups pulled: none yet
+Lineups pulled: Nov 1, 10:26 AM ET
 Prices pulled:  none yet
-Goalies pulled: none yet
+Goalies pulled: Nov 1, 10:26 AM ET
 Times are US Eastern. Read-only: built from the same models as the board.
 
 GAMES (start, projected goals, model game total; book game totals are not pulled)
@@ -12,26 +12,26 @@ GAMES (start, projected goals, model game total; book game totals are not pulled
 - 8:00 PM ET  OTT 3.22 @ ANA 3.19  (total 6.41)
 
 GOALIES (shrunk two-season save %, raw save % and games)
-- WPG: no goalie listed
-- CAR: no goalie listed
-- MIN: no goalie listed
-- WSH: no goalie listed
-- UTA: no goalie listed
-- PHI: no goalie listed
-- EDM: no goalie listed
-- NYR: no goalie listed
+- WPG: Stuart Skinner expected 0.893 (0.890 raw, 59 GP)  | also listed: Nico Daws 0.901 (0.895 raw, 9 GP)
+- CAR: Pyotr Kochetkov expected 0.907 (0.909 raw, 18 GP)  | also listed: Brandon Bussi 0.894 (0.890 raw, 45 GP)
+- MIN: Jesper Wallstedt expected 0.913 (0.915 raw, 48 GP)  | also listed: Calvin Pickard 0.885 (0.867 raw, 18 GP)
+- WSH: Logan Thompson expected 0.910 (0.911 raw, 66 GP)  | also listed: Charlie Lindgren 0.889 (0.880 raw, 25 GP)
+- UTA: Karel Vejmelka expected 0.895 (0.893 raw, 75 GP)  | also listed: Sebastian Cossa 0.897 (0.857 raw, 5 GP)
+- PHI: Dan Vladar expected 0.904 (0.903 raw, 59 GP)  | also listed: Joseph Woll 0.900 (0.898 raw, 47 GP)
+- EDM: Matt Tomkins CONFIRMED 0.905 (0 GP)
+- NYR: Dylan Garand expected 0.909 (0.914 raw, 13 GP)  | also listed: James Reimer 0.900 (0.625 raw, 1 GP)
 - OTT: no goalie listed
 - ANA: no goalie listed
 
 INJURED / OUT (scratches in brackets)
-- WPG: none listed
-- CAR: none listed
-- MIN: none listed
-- WSH: none listed
-- UTA: none listed
-- PHI: none listed
-- EDM: none listed
-- NYR: none listed
+- WPG: Garrett Brown (lower body); Josh Morrissey (upper body); Nick Bjugstad (upper body); Vladislav Namestnikov (undisclosed) [Clay Stevenson, Nino Niederreiter, Brad Lambert]
+- CAR: Jordan Staal (calf); Taylor Hall (upper body) [Mike Reilly]
+- MIN: Brock Faber (skull fracture); Marcus Foligno (lower body); Nick Foligno (upper body); Filip Gustavsson (lower body); Jared Spurgeon (lower body) [Mason Shaw, Carson Lambos]
+- WSH: Rasmus Sandin (knee); Vincent Desharnais (appendectomy) [Ethen Frank, Ivan Miroshnichenko, Dylan McIlrath]
+- UTA: Maveric Lamoureux (shoulder); Michael Carcone (upper body); John Marino (upper body) [Dmitri Simashev]
+- PHI: Nikita Grebenkin (back); Rasmus Ristolainen (upper body) [David Jiricek, Noel Acciari, Cole Knuble]
+- EDM: Isaac Howard (knee); Frederik Andersen (undisclosed); Zach Hyman (neck); Mattias Janmark (undisclosed); Devon Levi (undisclosed); Alec Regula (undisclosed); Matt Savoie (undisclosed) [Max Jones, Jake Walman]
+- NYR: Igor Shesterkin (lower body); Joonas Korpisalo (lower body); Joseph Veleno (lower body) [Scott Morrow, Matt Rempe, Matthew Robertson]
 - OTT: none listed
 - ANA: none listed
 Questionable: no projected skater carries a questionable or day-to-day note.
@@ -71,16 +71,15 @@ ANA
 
 DATA CHECKS
 Games with no prices: WPG @ CAR, MIN @ WSH, UTA @ PHI, EDM @ NYR, OTT @ ANA
-Teams with no lineup: WPG, CAR, MIN, WSH, UTA, PHI, EDM, NYR, OTT, ANA
+Teams with no lineup: OTT, ANA
 Priced players missing from the projected lineups: none
 Unconfirmed goalies:
-- WPG: no goalie listed
-- CAR: no goalie listed
-- MIN: no goalie listed
-- WSH: no goalie listed
-- UTA: no goalie listed
-- PHI: no goalie listed
-- EDM: no goalie listed
-- NYR: no goalie listed
+- WPG: Stuart Skinner (expected, not confirmed)
+- CAR: Pyotr Kochetkov (expected, not confirmed)
+- MIN: Jesper Wallstedt (expected, not confirmed)
+- WSH: Logan Thompson (expected, not confirmed)
+- UTA: Karel Vejmelka (expected, not confirmed)
+- PHI: Dan Vladar (expected, not confirmed)
+- NYR: Dylan Garand (expected, not confirmed)
 - OTT: no goalie listed
 - ANA: no goalie listed
