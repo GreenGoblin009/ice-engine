@@ -385,6 +385,11 @@ def build(day):
                            dk=books.get(pid, {}).get("DraftKings"), fd=books.get(pid, {}).get("FanDuel"))
 
     priced = [p for pid, p in res.items() if pid in priced_ids and any(s in p and p[s]["price"] is not None for s in STATS)]
+    no_prices_at_all = not odds
+    if no_prices_at_all:
+        # No prices pulled (odds feed down): list every projected skater with the model chance so
+        # the board can still be read; every leg shows "no price".
+        priced = list(res.values())
     q = lambda p: " [Q]" if p["note"] else ""
     ppu = lambda p: f"PP{p['pp']}" if p["pp"] else "no PP"
     num = lambda v, f="{:.1f}": f.format(v) if v is not None else "-"
@@ -414,7 +419,7 @@ def build(day):
         out(row(i, p, s, with_stat=True))
     out(f"{sum(1 for p, s in legs if p[s]['edge'] > 0)} of {len(legs)} priced legs show a positive edge at the best book.")
 
-    out("\nALL PRICED SKATERS (shots/game last 10, minutes, PP unit | G | P | A: chance, best price, edge, last 10)")
+    out("\nALL PRICED SKATERS (shots/game last 10, minutes, PP unit | G | P | A: chance, best price, edge, last 10)" + ("  [NO PRICES PULLED: every projected skater, model chance only]" if no_prices_at_all else ""))
     for tm in teams:
         out(tm)
         for p in sorted([p for p in priced if p["team"] == tm], key=lambda p: -(p.get("Points") or {"adj": 0})["adj"]):
