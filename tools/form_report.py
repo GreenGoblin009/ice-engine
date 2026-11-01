@@ -99,7 +99,12 @@ def build(day):
     out("X = got it, . = missed. Oldest game on the left, newest on the right. Last 20 regular-season games.")
     out("Every player shows tonight's opponent and start time so the game can be checked.")
 
-    ids = sorted({o["player_id"] for o in odds if o["player_id"] and o["player_id"] in players})
+    no_odds = not odds
+    if no_odds:
+        out("[NO PRICES PULLED: every skater on tonight's teams shown, price check skipped, hit rates compared to the league rate]")
+        ids = sorted(i for i, pl in players.items() if pl["team"] in game_of and pl.get("pos") != "G")
+    else:
+        ids = sorted({o["player_id"] for o in odds if o["player_id"] and o["player_id"] in players})
     logs = load(ids)
 
     # role pools for the model chance (same method as slate_report)
@@ -152,7 +157,7 @@ def build(day):
                 books[o["book"]] = o["price"]
                 if best is None or o["price"] > best:
                     best = o["price"]
-            if best is None:
+            if best is None and not no_odds:
                 continue
             vals = [bool(x[col] and x[col] > 0.5) for x in lg if x[col] is not None]
             if len(vals) < 10:
@@ -175,8 +180,8 @@ def build(day):
             l20v = [x for x in lg[:20] if x["home_road"] == hr and x[col] is not None]
             lv_n, lv_h = len(l20v), sum(1 for x in l20v if x[col] > 0.5)
             s_n, s_h = len(season), sum(1 for x in season if x[col] > 0.5)
-            imp = sr.implied(best)
             pool, allr = pools[col]
+            imp = sr.implied(best) if best is not None else allr
             n_all, o_all = sr.hits(lg, col)
             chance = None
             if n_all >= sr.MIN_GAMES:
@@ -186,7 +191,8 @@ def build(day):
                 chance = (o_all + sr.SHRINK_K * pr) / (n_all + sr.SHRINK_K)
 
             ck = {}
-            ck["price"] = (best >= -130) if col == "points" else (h20 / len(l20) >= imp)
+            if best is not None:
+                ck["price"] = (best >= -130) if col == "points" else (h20 / len(l20) >= imp)
             ck["hit rate"] = (h10 / len(l10) >= imp) and (h20 / len(l20) >= imp)
             if col != "goals":
                 ck["steady"] = longest <= 2
@@ -229,7 +235,8 @@ def build(day):
             out("- " + head(r))
         if not full:
             out("- none")
-        wide = [r for r in rows if (r["price"] >= -130 if col == "points" else (r["chance"] is not None and r["chance"] >= r["imp"]))]
+        wide = [r for r in rows if (r["price"] is None and r["chance"] is not None and r["chance"] >= r["imp"])
+                or (r["price"] is not None and (r["price"] >= -130 if col == "points" else (r["chance"] is not None and r["chance"] >= r["imp"])))]
         out(f"\n--- {stat.upper()}: EVERY priced player passing the price rule, best chance first ({len(wide)}) ---")
         for r in sorted(wide, key=by_chance)[:60]:
             failed = ",".join(k for k, v in r["ck"].items() if not v)
