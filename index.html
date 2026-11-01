@@ -1366,6 +1366,7 @@ async function openPlayer(pid, stat, line, odds, split, vsTeam, win){
 }
 function closePlayer(){ $('overlay').classList.remove('open'); }
 function drawPlayer(){
+  if(M.window==='All-time') M.window='Last 50';   // the All-time button was removed; Last 50 replaces it
   const stats=M.isG?['Saves']:Object.keys(STATS);
   const rows=filterRows(M.logs,M);
   const h=hitStats(rows,M.stat,M.line);
@@ -1387,7 +1388,7 @@ function drawPlayer(){
       ${items.map((o,k)=>{const bh=Math.max(4,(o.v/mx)*PH); const sep=(k>0&&o.r.season!==items[k-1].r.season)?'<div class="ysep"></div>':''; const ms=msAt.has(k)?`<div class="ms"><span>L${msAt.get(k)}</span></div>`:''; return ms+sep+`<div class="cb"><em ${vdense?'style="display:none"':''}>${o.v}</em><i style="height:${bh}px;background:${o.v>M.line?'var(--green)':'var(--red)'}"></i></div>`;}).join('')}
     </div>
     ${dense?`<div class="cax"><span>${md(items[0].r.game_date)}</span><span>${md(items[n-1].r.game_date)}</span></div>`:`<div class="clab">${items.map(o=>`<div><b>${md(o.r.game_date)}</b><span>${o.r.home_road==='H'?'':'@'}${esc(o.r.opponent)}</span></div>`).join('')}</div>`}
-    <div class="cleg"><span><i style="background:var(--green)"></i>Over ${M.line}</span><span><i style="background:var(--red)"></i>Under</span><span><u></u>Line</span><span class="muted">Oldest → newest${h.n>50?` · chart shows last 50 of ${h.n}`:''}</span></div>${MS.length?`<div class="cleg"><span class="muted"><b class="msu"></b>Dotted markers = last 10 / 20 / 30 / 40 / 50 games, counted back from the newest</span></div>`:''}${sums.length?`<div class="msum">${sums.map(x=>`<div><b>L${x.m}</b><span>${x.ov}/${x.m}</span><em style="color:${x.pct>=0.5?'var(--green)':'var(--text)'}">${Math.round(x.pct*100)}%</em></div>`).join('')}</div>`:''}</div>`:'';
+    <div class="cleg"><span><i style="background:var(--green)"></i>Over ${M.line}</span><span><i style="background:var(--red)"></i>Under</span><span><u></u>Line</span></div>${sums.length?`<div class="msum">${sums.map(x=>`<div><b>L${x.m}</b><span>${x.ov}/${x.m}</span><em style="color:${x.pct>=0.5?'var(--green)':'var(--text)'}">${Math.round(x.pct*100)}%</em></div>`).join('')}</div>`:''}</div>`:'';
   const gamesById=new Map(S.games.map(g=>[g.id,g]));
   const glRows=rows.slice(0,(M.window==='Last 50'||M.window==='All-time'||M.vs)?50:25).map(r=>{
     const g=gamesById.get(r.game_id); let res='';
@@ -1409,7 +1410,7 @@ function drawPlayer(){
       <div class="ourow"><span class="oul">Over</span><span class="oup" style="color:var(--green)">${h.n?(h.pct*100).toFixed(1)+'%':'--'}</span><span class="oun">${h.over}/${h.n}</span><span class="muted small" style="margin-left:6px;">avg ${h.n?h.avg.toFixed(2):'--'}</span>${!isNaN(parseFloat(M.odds))?`<span class="oupr">${fmtOdds(parseFloat(M.odds))}</span>`:''}</div>
     </div>
     ${h.n?svg:'<div class="chart2">'+lineCtl+'<div class="empty">No games match this filter.</div></div>'}
-    <div class="chips" id="mWins" style="margin-top:12px;">${['Last 5','Last 10','Last 20','Last 50','Season','All-time'].map(x=>`<button class="mc ${x===M.window&&!M.vs?'on':''}" data-v="${x}" ${M.vs?'disabled':''}>${x}</button>`).join('')}</div>
+    <div class="chips" id="mWins" style="margin-top:12px;">${['Last 5','Last 10','Last 20','Last 50','Season'].map(x=>`<button class="mc ${x===M.window&&!M.vs?'on':''}" data-v="${x}" ${M.vs?'disabled':''}>${x}</button>`).join('')}</div>
     ${M.vs?`<div class="muted small" style="margin-top:6px;">Showing every ${esc(M.vs)} meeting on file. Timeframe is ignored.</div>`:''}
     <div class="flab">Venue</div>
     <div class="chips" id="mSplits">${[['Home+Away','All games'],['Home','Home'],['Away','Away']].map(([v,t])=>`<button class="mc ${v===M.split?'on':''}" data-v="${v}">${t}</button>`).join('')}</div>
