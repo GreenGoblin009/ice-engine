@@ -1037,7 +1037,7 @@ async function renderForm(){
     const r10=Math.round(100*r.l10/Math.max(1,r.l10n)), r20=Math.round(100*r.l20/Math.max(1,r.seq.length));
     const col=r10>=60?'var(--green)':r10>=40?'var(--amber)':'var(--red)';
     const bars=r.seq.slice().reverse().map(v=>`<i class="${v?'y':''}"></i>`).join('');
-    return `<div class="prow" data-pid="${r.l.player_id}" data-stat="${F.stat}" data-line="0.5" data-split="${F.split}"${pc?` data-odds="${pc.price}"`:''}>
+    return `<div class="prow" data-pid="${r.l.player_id}" data-stat="${F.stat}" data-line="0.5" data-split="${F.split}" data-win="Season"${pc?` data-odds="${pc.price}"`:''}>
       <div><div class="pname">${esc(r.l.player_name)}</div>
         <div class="pmeta"><b style="color:var(--text)">${esc(matchup(r.gm))}</b> · ${pc?`<b style="color:var(--text)">${fmtOdds(pc.price)}</b> ${esc(bookShort(pc.book))} · break-even ${Math.round(be*100)}%`:'no line yet'}</div>
         <div class="fbar">${bars}</div>
