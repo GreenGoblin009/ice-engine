@@ -1,58 +1,58 @@
 # Projection scoreboard
 
-Updated 2026-11-01 12:12 ET. Uses the last slate report committed before first puck each day.
+Updated 2026-11-02 15:27 ET. Uses the last slate report committed before first puck each day.
 Brier and log-loss: lower is better. 'Naive' guesses the same average for everyone; the model should beat it.
 
 ## Skater chances, 1+ goal / point / assist
 
 | Market | N | Avg predicted | Actual rate | Brier | Naive Brier | Log-loss | Naive log-loss |
 |---|---|---|---|---|---|---|---|
-| Goal | 3116 | 16.4% | 16.4% | 0.1284 | 0.1373 | 0.4152 | 0.4468 |
-| Point | 3116 | 36.8% | 37.5% | 0.2099 | 0.2343 | 0.6084 | 0.6615 |
-| Assist | 3116 | 25.4% | 26.0% | 0.1794 | 0.1925 | 0.5413 | 0.5733 |
+| Goal | 3269 | 16.4% | 16.4% | 0.1283 | 0.1371 | 0.4149 | 0.4462 |
+| Point | 3269 | 36.8% | 37.4% | 0.2093 | 0.2342 | 0.6070 | 0.6611 |
+| Assist | 3269 | 25.5% | 26.0% | 0.1787 | 0.1926 | 0.5395 | 0.5734 |
 
 ### Calibration, Goal
 
 | Predicted | N | Avg predicted | Actual |
 |---|---|---|---|
-| 0-15% | 1486 | 7.6% | 8.3% |
-| 15-25% | 1004 | 19.2% | 18.5% |
-| 25-35% | 429 | 28.8% | 28.2% |
-| 35-45% | 181 | 39.8% | 40.3% |
-| 45-55% | 16 | 46.9% | 56.2% |
+| 0-15% | 1557 | 7.6% | 8.3% |
+| 15-25% | 1047 | 19.2% | 18.6% |
+| 25-35% | 459 | 28.8% | 27.7% |
+| 35-45% | 189 | 39.8% | 39.7% |
+| 45-55% | 17 | 47.0% | 58.8% |
 
 ### Calibration, Point
 
 | Predicted | N | Avg predicted | Actual |
 |---|---|---|---|
-| 0-15% | 162 | 11.4% | 14.8% |
-| 15-25% | 652 | 19.9% | 20.9% |
-| 25-35% | 742 | 29.5% | 29.4% |
-| 35-45% | 610 | 39.2% | 39.3% |
-| 45-55% | 421 | 49.0% | 50.6% |
-| 55-65% | 352 | 59.3% | 62.8% |
-| 65-75% | 157 | 68.5% | 63.1% |
-| 75-100% | 20 | 78.8% | 85.0% |
+| 0-15% | 170 | 11.4% | 14.1% |
+| 15-25% | 682 | 19.9% | 20.5% |
+| 25-35% | 778 | 29.6% | 29.6% |
+| 35-45% | 635 | 39.2% | 39.2% |
+| 45-55% | 441 | 49.0% | 50.1% |
+| 55-65% | 377 | 59.3% | 62.9% |
+| 65-75% | 164 | 68.5% | 62.8% |
+| 75-100% | 22 | 79.0% | 86.4% |
 
 ### Calibration, Assist
 
 | Predicted | N | Avg predicted | Actual |
 |---|---|---|---|
-| 0-15% | 571 | 10.8% | 14.4% |
-| 15-25% | 1116 | 19.3% | 19.9% |
-| 25-35% | 766 | 29.1% | 26.0% |
-| 35-45% | 396 | 39.1% | 44.2% |
-| 45-55% | 192 | 48.8% | 49.0% |
-| 55-65% | 70 | 58.0% | 48.6% |
-| 65-75% | 5 | 65.6% | 100.0% |
+| 0-15% | 594 | 10.8% | 14.3% |
+| 15-25% | 1175 | 19.3% | 19.4% |
+| 25-35% | 798 | 29.2% | 26.2% |
+| 35-45% | 420 | 39.0% | 44.8% |
+| 45-55% | 201 | 48.8% | 48.8% |
+| 55-65% | 75 | 58.0% | 49.3% |
+| 65-75% | 6 | 65.8% | 100.0% |
 
 ### Point chance by role
 
 | Role | N | Avg predicted | Actual |
 |---|---|---|---|
-| PP1 | 944 | 53.9% | 59.1% |
-| PP2 | 901 | 36.8% | 35.8% |
-| no PP | 1271 | 24.0% | 22.6% |
+| PP1 | 994 | 54.0% | 59.1% |
+| PP2 | 942 | 36.8% | 35.7% |
+| no PP | 1333 | 24.0% | 22.5% |
 
 ## Does recent form add anything? (predicted vs actual by last-3 and last-10 hits)
 
@@ -61,38 +61,38 @@ Brier and log-loss: lower is better. 'Naive' guesses the same average for everyo
 
 | Last 3 | N | Avg predicted | Actual |
 |---|---|---|---|
-| 0/3 | 709 | 26.2% | 27.2% |
-| 1/3 | 856 | 35.7% | 34.6% |
-| 2/3 | 566 | 46.3% | 50.4% |
-| 3/3 | 180 | 53.5% | 53.3% |
+| 0/3 | 752 | 26.3% | 27.0% |
+| 1/3 | 901 | 35.6% | 34.5% |
+| 2/3 | 607 | 46.2% | 49.8% |
+| 3/3 | 204 | 54.0% | 53.4% |
 
 ### Goal, by hits in the last 3 games
 
 | Last 3 | N | Avg predicted | Actual |
 |---|---|---|---|
-| 0/3 | 1412 | 12.9% | 13.0% |
-| 1/3 | 694 | 20.4% | 22.0% |
-| 2/3 | 185 | 26.2% | 25.9% |
-| 3/3 | 20 | 34.4% | 30.0% |
+| 0/3 | 1502 | 12.9% | 12.8% |
+| 1/3 | 737 | 20.3% | 21.8% |
+| 2/3 | 202 | 26.2% | 27.2% |
+| 3/3 | 23 | 34.2% | 26.1% |
 
 ### Assist, by hits in the last 3 games
 
 | Last 3 | N | Avg predicted | Actual |
 |---|---|---|---|
-| 0/3 | 1033 | 19.9% | 20.6% |
-| 1/3 | 872 | 26.9% | 30.2% |
-| 2/3 | 343 | 35.0% | 29.7% |
-| 3/3 | 63 | 43.0% | 47.6% |
+| 0/3 | 1096 | 20.0% | 20.7% |
+| 1/3 | 922 | 26.8% | 29.6% |
+| 2/3 | 376 | 35.1% | 30.6% |
+| 3/3 | 70 | 43.8% | 47.1% |
 
 ### Point, by hits in the last 10 games
 
 | Last 10 | N | Avg predicted | Actual |
 |---|---|---|---|
-| 0-2/10 | 1071 | 23.9% | 24.8% |
-| 3-4/10 | 1016 | 35.0% | 33.0% |
-| 5-6/10 | 710 | 48.0% | 51.5% |
-| 7-8/10 | 282 | 59.2% | 62.8% |
-| 9-10/10 | 37 | 68.5% | 64.9% |
+| 0-2/10 | 1119 | 23.9% | 24.6% |
+| 3-4/10 | 1063 | 35.0% | 33.0% |
+| 5-6/10 | 743 | 48.0% | 51.0% |
+| 7-8/10 | 303 | 59.1% | 63.0% |
+| 9-10/10 | 41 | 68.4% | 65.9% |
 
 ### Point and goal, by the game's projected total
 
@@ -100,17 +100,17 @@ Brier and log-loss: lower is better. 'Naive' guesses the same average for everyo
 |---|---|---|---|---|
 | 0-5.9 | Point | 855 | 36.2% | 39.4% |
 | 0-5.9 | Goal | 855 | 16.1% | 17.3% |
-| 5.9-6.2 | Point | 1221 | 36.4% | 36.9% |
-| 5.9-6.2 | Goal | 1221 | 16.2% | 15.7% |
-| 6.2-6.4 | Point | 708 | 37.2% | 34.2% |
-| 6.2-6.4 | Goal | 708 | 16.5% | 15.4% |
-| 6.4-9 | Point | 332 | 38.5% | 41.6% |
-| 6.4-9 | Goal | 332 | 17.2% | 19.0% |
+| 5.9-6.2 | Point | 1315 | 36.5% | 37.2% |
+| 5.9-6.2 | Goal | 1315 | 16.3% | 15.9% |
+| 6.2-6.4 | Point | 738 | 37.2% | 33.7% |
+| 6.2-6.4 | Goal | 738 | 16.5% | 15.3% |
+| 6.4-9 | Point | 361 | 38.5% | 41.0% |
+| 6.4-9 | Goal | 361 | 17.2% | 18.3% |
 
 ## Game totals
 
-Games: 119. Average projected total 6.08, actual 6.45 (actual minus projected: +0.37).
-Mean absolute error 1.83 goals, against 1.84 for a flat guess at the average.
+Games: 124. Average projected total 6.08, actual 6.48 (actual minus projected: +0.40).
+Mean absolute error 1.82 goals, against 1.82 for a flat guess at the average.
 
 | Date | Game | Projected | Actual |
 |---|---|---|---|
@@ -233,6 +233,11 @@ Mean absolute error 1.83 goals, against 1.84 for a flat guess at the average.
 | 2026-10-31 | TOR@VAN | 6.43 | 6 |
 | 2026-10-31 | CBJ@DAL | 5.76 | 4 |
 | 2026-10-31 | CGY@COL | 6.15 | 7 |
+| 2026-11-01 | WPG@CAR | 6.00 | 7 |
+| 2026-11-01 | MIN@WSH | 6.04 | 6 |
+| 2026-11-01 | UTA@PHI | 5.95 | 9 |
+| 2026-11-01 | EDM@NYR | 6.32 | 5 |
+| 2026-11-01 | OTT@ANA | 6.41 | 9 |
 
 ## Data notes
 
@@ -253,4 +258,5 @@ Mean absolute error 1.83 goals, against 1.84 for a flat guess at the average.
 - 2026-10-29: 313 skaters in the report, 3 not matched to a final box score
 - 2026-10-30: 98 skaters in the report, 2 not matched to a final box score
 - 2026-10-31: 186 skaters in the report, 11 not matched to a final box score
-- 2026-11-01: report has no skater section; skipped
+- 2026-11-01: 158 skaters in the report, 5 not matched to a final box score
+- 2026-11-02: 129 skaters in the report, 129 not matched to a final box score
