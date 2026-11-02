@@ -101,14 +101,14 @@ input[type=date]{min-width:0; -webkit-appearance:none; appearance:none; min-heig
 .stp .step{width:30px; height:28px; border-radius:999px; border:0; background:transparent; color:var(--text); font-size:18px; line-height:1; cursor:pointer;}
 .stp b{min-width:34px; text-align:center; font-size:14px; color:var(--text);}
 .chart2{margin:6px 0 4px; background:var(--card2); border:1px solid var(--line); border-radius:10px; padding:12px 10px 8px;}
-.plot{position:relative; display:flex; align-items:flex-end; gap:3px; padding-left:24px; border-bottom:1px solid var(--line);}
+.plot{position:relative; display:flex; align-items:flex-end; gap:3px; padding-left:24px; padding-right:30px; border-bottom:1px solid var(--line);}
 .grid{position:absolute; left:0; right:0; border-top:1px solid rgba(255,255,255,.07); pointer-events:none;}
 .grid span{position:absolute; left:0; top:-7px; font-size:10px; color:var(--muted);}
 .cb{flex:1; min-width:0; display:flex; flex-direction:column; justify-content:flex-end; align-items:center;}
 .cb i{display:block; width:100%; max-width:34px; border-radius:5px 5px 0 0;}
 .cb em{font-style:normal; font-size:11px; font-weight:700; margin-bottom:2px; color:var(--text);}
-.lineMark{position:absolute; left:24px; right:0; border-top:2px dashed #D4A017; pointer-events:none; z-index:2;}
-.lineMark span{position:absolute; right:0; top:-17px; font-size:10px; font-weight:700; color:#D4A017; background:var(--card2); padding:0 4px; border-radius:4px;}
+.lineMark{position:absolute; left:24px; right:30px; border-top:2px dashed #D4A017; pointer-events:none; z-index:2;}
+.lineMark span{position:absolute; right:-29px; top:-6px; font-size:9px; font-weight:700; color:#D4A017; line-height:12px;}   /* label sits in the right margin, off the bars */
 .plot.xd{gap:2px;} .plot.xd .cb i{border-radius:2px 2px 0 0;}
 .ms{width:0; align-self:stretch; position:relative; border-left:1px dotted rgba(255,255,255,.38); margin:0 1px; z-index:1; pointer-events:none;}
 .ms span{position:absolute; top:-1px; left:3px; font-size:9px; font-weight:700; color:var(--muted); background:var(--card2); padding:0 3px; border-radius:3px; line-height:13px;}
@@ -1351,7 +1351,7 @@ const M={};
 async function openPlayer(pid, stat, line, odds, split, vsTeam, win){
   const p=S.players.get(pid)||{id:pid,name:'Player',team:'',pos:''};
   M.p=p; M.isG=p.pos==='G';
-  M.stat=stat||(M.isG?'Saves':'Points'); M.window=win||(stat?'All-time':'Last 10'); M.split=split||'Home+Away'; M.vs=vsTeam||'';
+  M.stat=stat||(M.isG?'Saves':'Points'); M.window='Season';   // a player card always opens on Season, whatever list it was tapped from (Last 50 is one tap away) M.split=split||'Home+Away'; M.vs=vsTeam||'';
   M.line=line!=null?line:(M.isG?24.5:STATS[M.stat].line); M.odds=odds!=null?String(odds):'';
   $('overlay').classList.add('open');
   $('pcard').innerHTML='<div class="empty">Loading game logs…</div>';
@@ -1366,7 +1366,7 @@ async function openPlayer(pid, stat, line, odds, split, vsTeam, win){
 }
 function closePlayer(){ $('overlay').classList.remove('open'); }
 function drawPlayer(){
-  if(M.window==='All-time') M.window='Last 50';   // the All-time button was removed; Last 50 replaces it
+  if(M.window==='All-time') M.window='Season';   // the All-time button was removed
   const stats=M.isG?['Saves']:Object.keys(STATS);
   const rows=filterRows(M.logs,M);
   const h=hitStats(rows,M.stat,M.line);
