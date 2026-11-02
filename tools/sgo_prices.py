@@ -37,10 +37,12 @@ def pretty(pid):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default="reports/sgo_prices.txt")
-    ap.add_argument("--hours", type=int, default=30, help="only games starting within this many hours")
+    ap.add_argument("--hours", type=int, default=14, help="only games starting within this many hours")
     a = ap.parse_args()
     now = dt.datetime.now(dt.timezone.utc)
-    res = get("/events", leagueID="NHL", oddsAvailable="true", limit=30)
+    fmt = lambda d: d.strftime("%Y-%m-%dT%H:%M:%SZ")
+    res = get("/events", leagueID="NHL", oddsAvailable="true", limit=12,
+              startsAfter=fmt(now - dt.timedelta(hours=1)), startsBefore=fmt(now + dt.timedelta(hours=a.hours)))
     lines = [f"SPORTSGAMEODDS PRICES (FanDuel, DraftKings)  pulled {now.astimezone(ET):%b %d %I:%M %p} ET",
              "Over/Yes sides only. FD/DK = American odds; '-' = book not offering.", ""]
     games = 0

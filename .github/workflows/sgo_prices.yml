@@ -1,12 +1,6 @@
 name: SportsGameOdds prices
 
 on:
-  schedule:
-    # Noon and 4:45 PM Eastern (each at both UTC hours; the off-season-hour
-    # twin is harmless, it just refreshes the file once more).
-    - cron: "0 16 * * *"
-    - cron: "45 20 * * *"
-    - cron: "45 21 * * *"
   workflow_dispatch:
 
 permissions:

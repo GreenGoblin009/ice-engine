@@ -2,19 +2,15 @@ name: Daily player odds (SportsGameOdds)
 
 on:
   schedule:
-    # Eastern run times, all year: 9:00 AM, 11:30 AM, 4:00 PM, 7:00 PM. The early
-    # two are for Saturday and Sunday afternoon games. Each run only asks for
-    # games that haven't started, so late runs cost almost nothing.
+    # Eastern run times, all year: 11:30 AM and 4:00 PM. Cut from four a day on
+    # Nov 2 because the free plan (2,500 objects a month) ran out; each run costs
+    # one object per game still to be played.
     # Every time is listed at both UTC hours it can fall on (EDT / EST); the
     # script works out which is right today and the twin exits at once.
-    - cron: "0 13 * * *"   #  9:00 AM EDT
-    - cron: "0 14 * * *"   #  9:00 AM EST
     - cron: "30 15 * * *"  # 11:30 AM EDT
     - cron: "30 16 * * *"  # 11:30 AM EST
     - cron: "0 20 * * *"   #  4:00 PM EDT
     - cron: "0 21 * * *"   #  4:00 PM EST
-    - cron: "0 23 * * *"   #  7:00 PM EDT
-    - cron: "0 0 * * *"    #  7:00 PM EST
   workflow_dispatch:       # manual run: no time gate
 
 permissions:
@@ -39,7 +35,7 @@ jobs:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
           SCHEDULE_CRON: ${{ github.event.schedule }}  # empty on a manual run
-        run: python ice_engine_odds_sgo.py --require-supabase --only-at "09:00,11:30,16:00,19:00"
+        run: python ice_engine_odds_sgo.py --require-supabase --only-at "11:30,16:00"
       - name: Keep the raw JSON for debugging
         if: always()
         uses: actions/upload-artifact@v4
