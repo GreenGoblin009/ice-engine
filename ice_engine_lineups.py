@@ -216,7 +216,10 @@ def parse_article(body, schedule, nicknames, day):
                 other_day.append(f"{line} ({later_day})")
                 continue
             away_nick, home_nick = m.group(1).strip().upper(), m.group(2).strip().upper()
-            away, home = nicknames.get(away_nick), nicknames.get(home_nick)
+            # NHL.com sometimes splits a nickname with a stray space ("J ETS"): match with spaces removed
+            squash = {k.replace(" ", ""): v for k, v in nicknames.items()}
+            away = nicknames.get(away_nick) or squash.get(away_nick.replace(" ", ""))
+            home = nicknames.get(home_nick) or squash.get(home_nick.replace(" ", ""))
             if (away, home) not in schedule:
                 problems.append(f"'{line}': not a game on today's schedule — the page may be "
                                 f"showing another day, or the heading format changed")
