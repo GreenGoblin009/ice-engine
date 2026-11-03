@@ -1286,6 +1286,7 @@ async function renderPicks(){
   // track record: hits and misses by slip type; pending counted as open, void left out
   const by=new Map();
   real.forEach(s=>{
+    if(s.type==='Goals') return; // goal picks are posted but kept out of the track record
     const t=s.type||'Other'; if(!by.has(t)) by.set(t,{n:0,hit:0,miss:0,pend:0});
     const r=by.get(t), k=st(s.status); r.n++;
     if(k==='pending') r.pend++; else if(k==='hit') r.hit++; else if(k==='miss') r.miss++;
@@ -1294,7 +1295,7 @@ async function renderPicks(){
     const settled=r.hit+r.miss;
     return `<tr><td>${esc(t)}</td><td>${r.hit}</td><td>${r.miss}</td><td>${settled?Math.round(r.hit/settled*100)+'%':'—'}${r.pend?` <span class="muted">(${r.pend} open)</span>`:''}</td></tr>`;
   }).join('');
-  const record=`<div class="section-label">TRACK RECORD</div>${rows?`<div class="card" style="overflow-x:auto;"><table class="gl"><thead><tr><th>Market</th><th>Hits</th><th>Misses</th><th>Hit rate</th></tr></thead><tbody>${rows}</tbody></table><div class="muted small" style="margin-top:8px;">Hit rate counts settled picks only. Small sample.</div></div>`:'<div class="empty">No picks entered yet.</div>'}`;
+  const record=`<div class="section-label">TRACK RECORD</div>${rows?`<div class="card" style="overflow-x:auto;"><table class="gl"><thead><tr><th>Market</th><th>Hits</th><th>Misses</th><th>Hit rate</th></tr></thead><tbody>${rows}</tbody></table><div class="muted small" style="margin-top:8px;">Hit rate counts settled points and assists picks only. Small sample. Goal picks are posted for fun and are not tracked here.</div></div>`:'<div class="empty">No picks entered yet.</div>'}`;
   $('view').innerHTML=tonight+earlier+record;
 }
 
