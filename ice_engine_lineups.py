@@ -225,7 +225,7 @@ def parse_article(body, schedule, nicknames, day):
                                 f"showing another day, or the heading format changed")
                 continue
             game = {"gameId": schedule[(away, home)], "away": away, "home": home,
-                    "nick": {away_nick: away, home_nick: home},
+                    "nick": {away_nick: away, home_nick: home, away_nick.replace(" ", ""): away, home_nick.replace(" ", ""): home},
                     "status": "", "blocks": {}, "problems": [], "warnings": [], "raw": []}
             games.append(game)
             continue
