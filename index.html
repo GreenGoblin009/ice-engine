@@ -1293,9 +1293,9 @@ async function renderPicks(){
   });
   const rows=[...by.entries()].sort((a,b)=>b[1].n-a[1].n).map(([t,r])=>{
     const settled=r.hit+r.miss;
-    return `<tr><td>${esc(t)}</td><td>${r.hit}</td><td>${r.miss}</td><td>${settled?Math.round(r.hit/settled*100)+'%':'—'}${r.pend?` <span class="muted">(${r.pend} open)</span>`:''}</td></tr>`;
+    return `<tr><td>${esc(t)}</td><td>${r.hit}</td><td>${r.miss}</td><td>${r.pend||'—'}</td><td>${settled?Math.round(r.hit/settled*100)+'%':'—'}</td></tr>`;
   }).join('');
-  const record=`<div class="section-label">TRACK RECORD</div>${rows?`<div class="card" style="overflow-x:auto;"><table class="gl"><thead><tr><th>Market</th><th>Hits</th><th>Misses</th><th>Hit rate</th></tr></thead><tbody>${rows}</tbody></table><div class="muted small" style="margin-top:8px;">Points, goals and assists are tracked separately. Hit rate counts settled picks only. Small sample.</div></div>`:'<div class="empty">No picks entered yet.</div>'}`;
+  const record=`<div class="section-label">TRACK RECORD</div>${rows?`<div class="card" style="overflow-x:auto;"><table class="gl"><thead><tr><th>Market</th><th>Hits</th><th>Misses</th><th>Open</th><th>Hit rate</th></tr></thead><tbody>${rows}</tbody></table><div class="muted small" style="margin-top:8px;">Points, goals and assists are tracked separately. Open picks are tonight's games still to be played. Hit rate = hits out of hits plus misses, open picks not counted. Small sample.</div></div>`:'<div class="empty">No picks entered yet.</div>'}`;
   $('view').innerHTML=tonight+earlier+record;
 }
 
