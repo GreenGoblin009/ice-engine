@@ -1538,7 +1538,7 @@ if(location.hash==='#form') setView('form');   // direct link to the Form tab
 $('bPicks').onclick=()=>setView('picks');
 $('bLadder').onclick=()=>setView('ladder');
 if(location.hash==='#picks') setView('picks');   // direct link to the picks tab
-if(location.hash==='#ladder') setView('ladder'); // direct link to the ladder tab
+if(location.hash==='#ladder'){ if(!WIP_LADDER) setView('ladder'); else history.replaceState(null,'',location.pathname+location.search); } // old #ladder bookmarks open the home page while the ladder is hidden
 $('teamPick').onchange=e=>{ S.team=e.target.value; renderLineups(); };
 setInterval(()=>{ if(S.autoDay && etToday()!==S.autoDay) init(false); },300000);
 $('reload').onclick=()=>init(true);
