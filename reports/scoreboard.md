@@ -1,6 +1,6 @@
 # Projection scoreboard
 
-Updated 2026-11-03 08:46 ET. Uses the last slate report committed before first puck each day.
+Updated 2026-11-03 12:58 ET. Uses the last slate report committed before first puck each day.
 Brier and log-loss: lower is better. 'Naive' guesses the same average for everyone; the model should beat it.
 
 ## Skater chances, 1+ goal / point / assist
@@ -8,8 +8,8 @@ Brier and log-loss: lower is better. 'Naive' guesses the same average for everyo
 | Market | N | Avg predicted | Actual rate | Brier | Naive Brier | Log-loss | Naive log-loss |
 |---|---|---|---|---|---|---|---|
 | Goal | 3397 | 16.4% | 16.3% | 0.1279 | 0.1363 | 0.4144 | 0.4443 |
-| Point | 3397 | 36.8% | 37.3% | 0.2088 | 0.2338 | 0.6060 | 0.6604 |
-| Assist | 3397 | 25.5% | 25.9% | 0.1781 | 0.1921 | 0.5382 | 0.5724 |
+| Point | 3397 | 36.8% | 37.3% | 0.2088 | 0.2338 | 0.6059 | 0.6604 |
+| Assist | 3397 | 25.5% | 25.9% | 0.1781 | 0.1921 | 0.5381 | 0.5724 |
 
 ### Calibration, Goal
 
@@ -39,8 +39,8 @@ Brier and log-loss: lower is better. 'Naive' guesses the same average for everyo
 | Predicted | N | Avg predicted | Actual |
 |---|---|---|---|
 | 0-15% | 615 | 10.8% | 14.5% |
-| 15-25% | 1221 | 19.3% | 19.0% |
-| 25-35% | 832 | 29.2% | 26.3% |
+| 15-25% | 1221 | 19.3% | 18.9% |
+| 25-35% | 832 | 29.2% | 26.4% |
 | 35-45% | 433 | 39.0% | 44.3% |
 | 45-55% | 213 | 48.8% | 48.8% |
 | 55-65% | 77 | 58.0% | 50.6% |
@@ -62,8 +62,8 @@ Brier and log-loss: lower is better. 'Naive' guesses the same average for everyo
 | Last 3 | N | Avg predicted | Actual |
 |---|---|---|---|
 | 0/3 | 796 | 26.2% | 26.5% |
-| 1/3 | 946 | 35.7% | 33.9% |
-| 2/3 | 635 | 46.2% | 50.1% |
+| 1/3 | 946 | 35.7% | 34.0% |
+| 2/3 | 635 | 46.2% | 49.9% |
 | 3/3 | 215 | 54.1% | 54.9% |
 
 ### Goal, by hits in the last 3 games
@@ -79,9 +79,9 @@ Brier and log-loss: lower is better. 'Naive' guesses the same average for everyo
 
 | Last 3 | N | Avg predicted | Actual |
 |---|---|---|---|
-| 0/3 | 1155 | 20.0% | 20.3% |
+| 0/3 | 1155 | 20.0% | 20.4% |
 | 1/3 | 970 | 26.9% | 29.3% |
-| 2/3 | 394 | 35.1% | 31.5% |
+| 2/3 | 394 | 35.1% | 31.2% |
 | 3/3 | 73 | 43.9% | 47.9% |
 
 ### Point, by hits in the last 10 games
@@ -89,8 +89,8 @@ Brier and log-loss: lower is better. 'Naive' guesses the same average for everyo
 | Last 10 | N | Avg predicted | Actual |
 |---|---|---|---|
 | 0-2/10 | 1164 | 23.9% | 24.3% |
-| 3-4/10 | 1098 | 34.9% | 32.9% |
-| 5-6/10 | 771 | 48.0% | 50.7% |
+| 3-4/10 | 1098 | 34.9% | 33.0% |
+| 5-6/10 | 771 | 48.0% | 50.6% |
 | 7-8/10 | 321 | 59.0% | 63.2% |
 | 9-10/10 | 43 | 68.0% | 65.1% |
 

@@ -10158,8 +10158,8 @@ date,name,team,mk,p,pp,mins,shots,l10,l3,game_total,team_proj,hit,price
 2026-11-02,Mason Marchment,SJS,P,0.45,PP1,15.9,1.8,4,1,5.67,2.98,0,-114
 2026-11-02,Mason Marchment,SJS,A,0.29,PP1,15.9,1.8,2,1,5.67,2.98,0,160
 2026-11-02,Michael Misa,SJS,G,0.2,PP2,13.6,1.3,3,1,5.67,2.98,0,430
-2026-11-02,Michael Misa,SJS,P,0.41,PP2,13.6,1.3,4,1,5.67,2.98,0,150
-2026-11-02,Michael Misa,SJS,A,0.25,PP2,13.6,1.3,1,0,5.67,2.98,0,265
+2026-11-02,Michael Misa,SJS,P,0.41,PP2,13.6,1.3,4,1,5.67,2.98,1,150
+2026-11-02,Michael Misa,SJS,A,0.25,PP2,13.6,1.3,1,0,5.67,2.98,1,265
 2026-11-02,Collin Graf,SJS,G,0.23,no PP,15.3,1.4,1,0,5.67,2.98,0,440
 2026-11-02,Collin Graf,SJS,P,0.4,no PP,15.3,1.4,1,0,5.67,2.98,0,180
 2026-11-02,Collin Graf,SJS,A,0.23,no PP,15.3,1.4,1,0,5.67,2.98,0,390
@@ -10170,8 +10170,8 @@ date,name,team,mk,p,pp,mins,shots,l10,l3,game_total,team_proj,hit,price
 2026-11-02,Dmitry Orlov,SJS,P,0.39,PP1,18.2,1.2,5,1,5.67,2.98,0,120
 2026-11-02,Dmitry Orlov,SJS,A,0.35,PP1,18.2,1.2,3,1,5.67,2.98,0,145
 2026-11-02,Kiefer Sherwood,SJS,G,0.22,PP2,15.4,2.2,1,0,5.67,2.98,0,360
-2026-11-02,Kiefer Sherwood,SJS,P,0.38,PP2,15.4,2.2,6,2,5.67,2.98,1,126
-2026-11-02,Kiefer Sherwood,SJS,A,0.19,PP2,15.4,2.2,5,2,5.67,2.98,1,265
+2026-11-02,Kiefer Sherwood,SJS,P,0.38,PP2,15.4,2.2,6,2,5.67,2.98,0,126
+2026-11-02,Kiefer Sherwood,SJS,A,0.19,PP2,15.4,2.2,5,2,5.67,2.98,0,265
 2026-11-02,Adam Gaudette,SJS,G,0.23,PP2,10.6,1.2,1,0,5.67,2.98,0,550
 2026-11-02,Adam Gaudette,SJS,P,0.32,PP2,10.6,1.2,1,0,5.67,2.98,0,
 2026-11-02,Adam Gaudette,SJS,A,0.12,PP2,10.6,1.2,0,0,5.67,2.98,0,
