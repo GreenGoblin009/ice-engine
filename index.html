@@ -1271,14 +1271,14 @@ async function renderPicks(){
     const k=st(s.status);
     if(s.placeholder) return `<div class="card slip"><div class="slip-head"><div><div class="pname">Slip ${esc(s.id)}</div><div class="pmeta">Details not entered yet</div></div><span class="st is-void">TBD</span></div></div>`;
     const legs=(s.legs||[]).map(l=>`<div class="leg"><i class="is-${esc(st(l.result))}"></i><div><b>${esc(l.player)}</b> <span class="muted">${esc(l.team||'')}</span><div class="muted small">${esc(l.market||'')}</div></div><span class="lp">${esc(l.price||'')}</span></div>`).join('');
-    return `<div class="card slip is-${k}"><div class="slip-head"><div><div class="pname">${esc(s.type||'Slip')}</div><div class="pmeta">${esc(s.book||'')}${s.book?' · ':''}${(s.legs||[]).length} leg${(s.legs||[]).length===1?'':'s'}</div></div><span class="st is-${k}">${k}</span></div>
+    return `<div class="card slip is-${k}"><div class="slip-head"><div><div class="pname">${esc((()=>{const m=((s.legs&&s.legs[0]&&s.legs[0].market)||'').toLowerCase();return m.includes('goal')?'Goal':m.includes('ast')?'Assist':m.includes('pt')?'Point':(s.type||'Pick');})())}</div><div class="pmeta">${esc(s.book||'')}${s.book?' · ':''}${(s.legs||[]).length} leg${(s.legs||[]).length===1?'':'s'}</div></div><span class="st is-${k}">${k}</span></div>
       ${legs?`<div class="legs">${legs}</div>`:''}</div>`;
   };
   const today=etToday();
   const cur=days.find(d=>d.date===today)||days[days.length-1];
   const label=d=>new Date(d.date+'T12:00:00').toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric'});
   const fold=(d,title,isOpen)=>`<details class="dayfold"${isOpen?' open':''}><summary>${title}</summary>${(d.slips||[]).map(card).join('')||'<div class="empty">No picks for this day.</div>'}</details>`;
-  const disc='<div class="card" style="border-left:4px solid var(--amber)"><div class="pname" style="font-size:16px">Tail at your own discretion</div><div class="muted small" style="margin-top:4px">These are projections from a small sample, not advice. Straight bets only; points and assists are tracked separately from goals. Everything here is unofficial.</div></div>';
+  const disc='<details class="more" style="margin:0 0 10px;"><summary><b>Tail at your own discretion.</b> Tap for details.</summary><div class="muted small" style="margin-top:6px;">These are projections from a small sample, not advice. Straight bets only. Points, goals and assists are tracked separately. Everything here is unofficial.</div></details>';
   const wait=(cur&&cur.date!==today)?'<div class="empty">Tonight\'s picks post after lineups are confirmed (usually 2 to 3 PM ET).</div>':'';
   const tonight=disc+wait+(cur?fold(cur,cur.date===today?'TONIGHT':esc(label(cur).toUpperCase()),true):'<div class="empty">No picks yet.</div>');
   const past=days.filter(d=>d!==cur).reverse();
@@ -1286,8 +1286,8 @@ async function renderPicks(){
   // track record: hits and misses by slip type; pending counted as open, void left out
   const by=new Map();
   real.forEach(s=>{
-    if(s.type==='Goals') return; // goal picks are posted but kept out of the track record
-    const t=s.type||'Other'; if(!by.has(t)) by.set(t,{n:0,hit:0,miss:0,pend:0});
+    const m=((s.legs&&s.legs[0]&&s.legs[0].market)||'').toLowerCase();
+    const t=m.includes('goal')?'Goals':m.includes('ast')?'Assists':m.includes('pt')?'Points':(s.type||'Other'); if(!by.has(t)) by.set(t,{n:0,hit:0,miss:0,pend:0});
     const r=by.get(t), k=st(s.status); r.n++;
     if(k==='pending') r.pend++; else if(k==='hit') r.hit++; else if(k==='miss') r.miss++;
   });
@@ -1295,7 +1295,7 @@ async function renderPicks(){
     const settled=r.hit+r.miss;
     return `<tr><td>${esc(t)}</td><td>${r.hit}</td><td>${r.miss}</td><td>${settled?Math.round(r.hit/settled*100)+'%':'—'}${r.pend?` <span class="muted">(${r.pend} open)</span>`:''}</td></tr>`;
   }).join('');
-  const record=`<div class="section-label">TRACK RECORD</div>${rows?`<div class="card" style="overflow-x:auto;"><table class="gl"><thead><tr><th>Market</th><th>Hits</th><th>Misses</th><th>Hit rate</th></tr></thead><tbody>${rows}</tbody></table><div class="muted small" style="margin-top:8px;">Hit rate counts settled points and assists picks only. Small sample. Goal picks are posted for fun and are not tracked here.</div></div>`:'<div class="empty">No picks entered yet.</div>'}`;
+  const record=`<div class="section-label">TRACK RECORD</div>${rows?`<div class="card" style="overflow-x:auto;"><table class="gl"><thead><tr><th>Market</th><th>Hits</th><th>Misses</th><th>Hit rate</th></tr></thead><tbody>${rows}</tbody></table><div class="muted small" style="margin-top:8px;">Points, goals and assists are tracked separately. Hit rate counts settled picks only. Small sample.</div></div>`:'<div class="empty">No picks entered yet.</div>'}`;
   $('view').innerHTML=tonight+earlier+record;
 }
 
