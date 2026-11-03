@@ -224,6 +224,116 @@
      ]
     }
    ]
+  },
+  {
+   "date": "2026-11-03",
+   "slips": [
+    {
+     "id": 15,
+     "type": "Points & Assists",
+     "book": "",
+     "status": "pending",
+     "legs": [
+      {
+       "player": "Trevor Zegras",
+       "team": "PHI",
+       "market": "1+ pt",
+       "price": "-111",
+       "result": "pending"
+      }
+     ]
+    },
+    {
+     "id": 16,
+     "type": "Points & Assists",
+     "book": "",
+     "status": "pending",
+     "legs": [
+      {
+       "player": "Ryan Nugent-Hopkins",
+       "team": "EDM",
+       "market": "1+ pt",
+       "price": "-111",
+       "result": "pending"
+      }
+     ]
+    },
+    {
+     "id": 17,
+     "type": "Points & Assists",
+     "book": "",
+     "status": "pending",
+     "legs": [
+      {
+       "player": "Viktor Arvidsson",
+       "team": "DET",
+       "market": "1+ pt",
+       "price": "-125",
+       "result": "pending"
+      }
+     ]
+    },
+    {
+     "id": 18,
+     "type": "Points & Assists",
+     "book": "",
+     "status": "pending",
+     "legs": [
+      {
+       "player": "Alex Tuch",
+       "team": "WSH",
+       "market": "1+ pt",
+       "price": "-111",
+       "result": "pending"
+      }
+     ]
+    },
+    {
+     "id": 19,
+     "type": "Points & Assists",
+     "book": "",
+     "status": "pending",
+     "legs": [
+      {
+       "player": "Cale Makar",
+       "team": "COL",
+       "market": "1+ ast",
+       "price": "-110",
+       "result": "pending"
+      }
+     ]
+    },
+    {
+     "id": 20,
+     "type": "Points & Assists",
+     "book": "",
+     "status": "pending",
+     "legs": [
+      {
+       "player": "William Nylander",
+       "team": "TOR",
+       "market": "1+ ast",
+       "price": "+110",
+       "result": "pending"
+      }
+     ]
+    },
+    {
+     "id": 21,
+     "type": "Goals",
+     "book": "",
+     "status": "pending",
+     "legs": [
+      {
+       "player": "Wyatt Johnston",
+       "team": "DAL",
+       "market": "Anytime goal",
+       "price": "+190",
+       "result": "pending"
+      }
+     ]
+    }
+   ]
   }
  ]
 }
