@@ -1,7 +1,7 @@
 ICE ENGINE SLATE REPORT  2026-11-03
-Lineups pulled: Nov 3, 8:35 PM ET
+Lineups pulled: Nov 3, 10:41 PM ET
 Prices pulled:  Nov 3, 2:26 PM ET
-Goalies pulled: Nov 3, 8:35 PM ET
+Goalies pulled: Nov 3, 10:41 PM ET
 Times are US Eastern. Read-only: built from the same models as the board.
 
 GAMES (start, projected goals, model game total; book game totals are not pulled)
@@ -38,7 +38,7 @@ GOALIES (shrunk two-season save %, raw save % and games)
 - NJD: Connor Hellebuyck expected 0.898 (0.896 raw, 59 GP)  | also listed: Jake Allen 0.901 (0.900 raw, 45 GP)
 - CAR: Pyotr Kochetkov expected 0.910 (0.915 raw, 19 GP)  | also listed: Brandon Bussi 0.894 (0.890 raw, 45 GP)
 - NSH: Juuse Saros expected 0.897 (0.895 raw, 69 GP)  | also listed: Justus Annunen 0.902 (0.900 raw, 31 GP)
-- ANA: Laurent Brossoit CONFIRMED 0.903 (0.864 raw, 1 GP)
+- ANA: Laurent Brossoit CONFIRMED 0.903 (0.870 raw, 1 GP)
 - VAN: Kevin Lankinen expected 0.875 (0.866 raw, 55 GP)  | also listed: Leevi Merilainen 0.885 (0.875 raw, 31 GP)
 
 INJURED / OUT (scratches in brackets)
@@ -109,7 +109,7 @@ TOP 15 GOALS BY ROLE-ADJUSTED CHANCE
 
 TOP 15 POINTS BY ROLE-ADJUSTED CHANCE
 1. Mikko Rantanen DAL 73%; best -190 DK; edge +7.2; DK -190; FD -; L10 7/10; L3 2/3; 1.9 shots; 20.5 min; PP1
-2. Evan Bouchard EDM 70%; best -189 BOL; edge +4.4; DK -200; FD -; L10 9/10; L3 3/3; 2.8 shots; 25.9 min; PP1
+2. Evan Bouchard EDM 70%; best -189 BOL; edge +4.4; DK -200; FD -; L10 9/10; L3 3/3; 2.7 shots; 25.9 min; PP1
 3. William Nylander TOR 69%; best -200 BOL; edge +2.5; DK -205; FD -; L10 7/10; L3 2/3; 2.8 shots; 20.1 min; PP1
 4. Martin Necas COL 69%; best -185 BOL; edge +4.0; DK -190; FD -; L10 6/10; L3 1/3; 1.6 shots; 19.7 min; PP1
 5. Jake Guentzel TBL 68%; best -235 DK; edge -1.9; DK -235; FD -; L10 8/10; L3 3/3; 2.8 shots; 20.8 min; PP1
@@ -126,7 +126,7 @@ TOP 15 POINTS BY ROLE-ADJUSTED CHANCE
 
 TOP 15 ASSISTS BY ROLE-ADJUSTED CHANCE
 1. Connor McDavid EDM 67%; best -215 DK; edge -0.8; DK -215; FD -; L10 10/10; L3 3/3; 3.0 shots; 23.5 min; PP1
-2. Evan Bouchard EDM 64%; best -120 MGM; edge +9.0; DK -140; FD -; L10 9/10; L3 3/3; 2.8 shots; 25.9 min; PP1
+2. Evan Bouchard EDM 64%; best -120 MGM; edge +9.0; DK -140; FD -; L10 9/10; L3 3/3; 2.7 shots; 25.9 min; PP1
 3. Quinn Hughes MIN 62%; best -185 MGM; edge -3.0; DK -195; FD -; L10 7/10; L3 2/3; 2.8 shots; 27.7 min; PP1
 4. Nikita Kucherov TBL 62%; best -205 DK; edge -5.4; DK -205; FD -; L10 6/10; L3 3/3; 3.0 shots; 21.0 min; PP1
 5. Mikko Rantanen DAL 58%; best -110 MGM; edge +5.8; DK -110; FD -; L10 4/10; L3 1/3; 1.9 shots; 20.5 min; PP1
@@ -153,7 +153,7 @@ TOP 15 BY EDGE (all three markets)
 9. Parker Kelly COL Goals 21%; best +750 DK; edge +9.4; DK +750; FD +750; L10 1/10; L3 1/3; 1.0 shots; 13.0 min; no PP
 10. Anthony Mantha NJD Points 52%; best +136 BOL; edge +9.4; DK +130; FD -; L10 5/10; L3 2/3; 1.2 shots; 13.5 min; PP2
 11. Trevor Zegras PHI Points 62%; best -111 MGM; edge +9.1; DK -135; FD -; L10 7/10; L3 2/3; 3.0 shots; 18.6 min; PP1
-12. Evan Bouchard EDM Assists 64%; best -120 MGM; edge +9.0; DK -140; FD -; L10 9/10; L3 3/3; 2.8 shots; 25.9 min; PP1
+12. Evan Bouchard EDM Assists 64%; best -120 MGM; edge +9.0; DK -140; FD -; L10 9/10; L3 3/3; 2.7 shots; 25.9 min; PP1
 13. Anthony Mantha NJD Goals 31%; best +350 BR; edge +8.9; DK +340; FD +340; L10 3/10; L3 0/3; 1.2 shots; 13.5 min; PP2
 14. Denton Mateychuk CBJ Goals 19%; best +900 FD; edge +8.8; DK +650; FD +900; L10 4/10; L3 2/3; 2.2 shots; 22.8 min; PP2
 15. Travis Konecny PHI Goals 29%; best +390 FD; edge +8.8; DK +340; FD +390; L10 1/10; L3 1/3; 1.3 shots; 16.3 min; no PP
@@ -260,7 +260,7 @@ NYR
 - Oliver Bjorkstrand (1.3, 11.2, PP2): G 14% +425 MGM -4.7, L10 2/10, L3 0/3 | P 32% no price, L10 3/10, L3 1/3 | A 19% no price, L10 1/10, L3 1/3
 - Noah Laba (0.8, 14.7, no PP): G 11% +850 DK +0.3, L10 0/10, L3 0/3 | P 28% no price, L10 2/10, L3 1/3 | A 19% no price, L10 2/10, L3 1/3
 - Scott Morrow (1.1, 16.0, no PP): G 1% +1400 DK -5.2, L10 0/10, L3 0/3 | P 23% no price, L10 3/10, L3 1/3 | A 22% no price, L10 3/10, L3 1/3
-- Braden Schneider (1.5, 17.6, no PP): G 2% +1100 FD -5.9, L10 0/10, L3 0/3 | P 19% no price, L10 2/10, L3 0/3 | A 18% no price, L10 2/10, L3 0/3
+- Braden Schneider (1.4, 17.6, no PP): G 2% +1100 FD -5.9, L10 0/10, L3 0/3 | P 19% no price, L10 2/10, L3 0/3 | A 18% no price, L10 2/10, L3 0/3
 - Jaroslav Chmelar (0.6, 8.2, no PP): G 11% +850 FD +0.6, L10 0/10, L3 0/3 | P 18% no price, L10 0/10, L3 0/3 | A 7% no price, L10 0/10, L3 0/3
 - Marcus Pettersson (0.5, 20.7, no PP): G 3% +1900 DK -1.6, L10 0/10, L3 0/3 | P 17% no price, L10 1/10, L3 0/3 | A 15% no price, L10 1/10, L3 0/3
 - Alberts Smits (0.5, 14.6, no PP): G 2% +1600 DK -3.6, L10 0/10, L3 0/3 | P 9% no price, L10 0/10, L3 0/3 | A 7% no price, L10 0/10, L3 0/3
@@ -270,7 +270,7 @@ MIN
 - Quinn Hughes (2.8, 27.7, PP1): G 13% +430 FD -5.6, L10 3/10, L3 2/3 | P 66% -227 BOL -3.7, L10 8/10, L3 3/3 | A 62% -185 MGM -3.0, L10 7/10, L3 2/3
 - Matt Boldy (4.2, 21.7, PP1): G 40% +148 BR +0.0, L10 2/10, L3 1/3 | P 63% -300 MGM -12.3, L10 7/10, L3 3/3 | A 43% -115 MGM -10.2, L10 6/10, L3 2/3
 - Joel Eriksson Ek (3.7, 20.1, PP1): G 27% +215 DK -4.5, L10 4/10, L3 2/3 | P 55% -140 MGM -3.2, L10 8/10, L3 3/3 | A 39% +125 MGM -5.7, L10 5/10, L3 1/3
-- Maxim Shabanov (1.5, 14.9, PP1): G 15% +310 MGM -8.9, L10 4/10, L3 2/3 | P 40% +106 BOL -8.9, L10 6/10, L3 2/3 | A 28% +175 DK -8.7, L10 3/10, L3 0/3
+- Maxim Shabanov (1.4, 14.9, PP1): G 15% +310 MGM -8.9, L10 4/10, L3 2/3 | P 40% +106 BOL -8.9, L10 6/10, L3 2/3 | A 28% +175 DK -8.7, L10 3/10, L3 0/3
 - Ryan Hartman (1.4, 13.2, PP2): G 22% +500 DK +5.6, L10 1/10, L3 0/3 | P 40% +186 BOL +4.6, L10 3/10, L3 1/3 | A 22% no price, L10 2/10, L3 1/3
 - Blake Coleman (2.3, 15.8, PP2): G 24% +380 FD +3.6, L10 1/10, L3 0/3 | P 39% +136 BOL -3.0, L10 2/10, L3 1/3 | A 19% +270 DK -8.2, L10 1/10, L3 1/3
 - Bobby Brink (1.5, 13.4, PP2): G 18% +425 DK -1.3, L10 1/10, L3 0/3 | P 36% +161 BOL -2.8, L10 3/10, L3 1/3 | A 23% +235 DK -6.4, L10 2/10, L3 1/3
@@ -378,8 +378,8 @@ CBJ
 EDM
 - Connor McDavid (3.0, 23.5, PP1): G 41% +145 FD +0.5, L10 4/10, L3 1/3 | P 83% no price, L10 10/10, L3 3/3 | A 67% -215 DK -0.8, L10 10/10, L3 3/3
 - Leon Draisaitl (3.2, 21.5, PP1): G 44% +130 BR +0.1, L10 6/10, L3 0/3 | P 79% no price, L10 9/10, L3 2/3 | A 56% -125 DK +0.2, L10 6/10, L3 2/3
-- Evan Bouchard (2.8, 25.9, PP1): G 23% +340 FD -0.0, L10 2/10, L3 1/3 | P 70% -189 BOL +4.4, L10 9/10, L3 3/3 | A 64% -120 MGM +9.0, L10 9/10, L3 3/3
-- Ryan Nugent-Hopkins (2.2, 19.9, PP1): G 25% +310 BR +0.8, L10 3/10, L3 1/3 | P 59% -111 BOL +6.5, L10 6/10, L3 2/3 | A 43% +165 DK +5.6, L10 4/10, L3 1/3
+- Evan Bouchard (2.7, 25.9, PP1): G 23% +340 FD -0.0, L10 2/10, L3 1/3 | P 70% -189 BOL +4.4, L10 9/10, L3 3/3 | A 64% -120 MGM +9.0, L10 9/10, L3 3/3
+- Ryan Nugent-Hopkins (2.3, 19.9, PP1): G 25% +310 BR +0.8, L10 3/10, L3 1/3 | P 59% -111 BOL +6.5, L10 6/10, L3 2/3 | A 43% +165 DK +5.6, L10 4/10, L3 1/3
 - Vasily Podkolzin (1.5, 18.5, PP2): G 26% +310 DK +1.9, L10 3/10, L3 1/3 | P 45% +126 BOL +0.6, L10 5/10, L3 1/3 | A 24% +260 MGM -4.3, L10 2/10, L3 0/3
 - Kasperi Kapanen (1.4, 18.2, PP1): G 21% +480 FD +4.2, L10 2/10, L3 1/3 | P 41% +178 BOL +4.9, L10 4/10, L3 2/3 | A 24% +300 DK -0.5, L10 2/10, L3 1/3
 - Mattias Ekholm (1.1, 20.9, PP2): G 6% +1000 DK -2.7, L10 2/10, L3 1/3 | P 39% +186 BOL +3.7, L10 5/10, L3 2/3 | A 34% +230 DK +4.1, L10 3/10, L3 1/3
@@ -464,8 +464,8 @@ ANA
 - Travis Mitchell (0.6, 16.2, no PP): G 6% +1000 DK -3.5, L10 0/10, L3 0/3 | P 15% no price, L10 1/10, L3 0/3 | A 10% no price, L10 1/10, L3 0/3
 VAN
 - Brock Boeser (1.6, 18.5, PP1): G 26% +215 BR -5.8, L10 4/10, L3 2/3 | P 49% -150 DK -10.5, L10 7/10, L3 2/3 | A 33% +135 MGM -9.7, L10 4/10, L3 1/3
-- Filip Hronek (1.2, 25.8, PP1): G 10% +700 DK -3.0, L10 1/10, L3 1/3 | P 48% -145 BOL -11.3, L10 6/10, L3 3/3 | A 43% -120 DK -12.0, L10 6/10, L3 3/3
-- Jake DeBrusk (1.5, 16.5, PP1): G 25% +195 BR -8.9, L10 1/10, L3 0/3 | P 44% -120 DK -10.4, L10 3/10, L3 0/3 | A 22% +220 DK -9.5, L10 2/10, L3 0/3
+- Filip Hronek (1.1, 25.8, PP1): G 10% +700 DK -3.0, L10 1/10, L3 1/3 | P 48% -145 BOL -11.3, L10 6/10, L3 3/3 | A 43% -120 DK -12.0, L10 6/10, L3 3/3
+- Jake DeBrusk (1.6, 16.5, PP1): G 25% +195 BR -8.9, L10 1/10, L3 0/3 | P 44% -120 DK -10.4, L10 3/10, L3 0/3 | A 22% +220 DK -9.5, L10 2/10, L3 0/3
 - Marco Rossi (1.5, 15.8, PP2): G 22% +390 DK +1.5, L10 0/10, L3 0/3 | P 42% +120 DK -3.0, L10 1/10, L3 0/3 | A 31% +200 DK -2.4, L10 1/10, L3 0/3
 - Jonathan Lekkerimaki (2.1, 15.2, PP1): G 22% +300 MGM -2.7, L10 3/10, L3 1/3 | P 42% +105 DK -6.8, L10 6/10, L3 2/3 | A 26% +210 DK -6.4, L10 5/10, L3 2/3
 - Linus Karlsson (1.7, 14.5, PP2): G 17% +400 DK -3.2, L10 2/10, L3 0/3 | P 39% no price, L10 4/10, L3 1/3 | A 26% no price, L10 2/10, L3 1/3
