@@ -367,6 +367,21 @@
        "result": "pending"
       }
      ]
+    },
+    {
+     "id": 24,
+     "type": "Goals",
+     "book": "",
+     "status": "pending",
+     "legs": [
+      {
+       "player": "Roman Kantserov",
+       "team": "CHI",
+       "market": "Anytime goal",
+       "price": "+290",
+       "result": "pending"
+      }
+     ]
     }
    ]
   }

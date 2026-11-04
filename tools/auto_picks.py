@@ -148,7 +148,7 @@ def main():
         for c in spare:
             if len([p for p in picks if p["mk"] in "PA"]) >= MIN_PA: break
             used.add(c["team"]); picks.append(c)
-    gl = [c for c in cands if eligible(c) and c["mk"] == "G" and c["chance"] >= 35 and c["edge"] >= 5 and c["team"] not in used]
+    gl = [c for c in cands if eligible(c) and c["mk"] == "G" and c["chance"] >= 30 and c["edge"] >= 2]   # one goal pick a day (user, Nov 4); may share a team with a point/assist pick
     gl.sort(key=lambda c: -c["edge"])
     picks += gl[:MAX_G]
     if not picks:
