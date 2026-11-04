@@ -247,14 +247,14 @@
           "id": 16,
           "type": "Points & Assists",
           "book": "",
-          "status": "pending",
+          "status": "hit",
           "legs": [
             {
               "player": "Ryan Nugent-Hopkins",
               "team": "EDM",
               "market": "1+ pt",
               "price": "-111",
-              "result": "pending"
+              "result": "hit"
             }
           ]
         },
