@@ -352,6 +352,21 @@
        "result": "pending"
       }
      ]
+    },
+    {
+     "id": 23,
+     "type": "Points & Assists",
+     "book": "",
+     "status": "pending",
+     "legs": [
+      {
+       "player": "Kaapo Kakko",
+       "team": "SEA",
+       "market": "1+ pt",
+       "price": "+130",
+       "result": "pending"
+      }
+     ]
     }
    ]
   }

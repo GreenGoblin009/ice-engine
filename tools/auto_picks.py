@@ -20,6 +20,8 @@ ET = ZoneInfo("America/New_York")
 MAX_AGE = 3.0
 MIN_EDGE = 4.0
 MAX_PA, MAX_G = 6, 1
+MIN_PA = 2          # always post at least this many points/assists picks when anything qualifies
+FLOOR_EDGE = 2.0
 
 
 def parse_slate(text, year):
@@ -135,6 +137,17 @@ def main():
         if len([p for p in picks if p["mk"] in "PA"]) >= MAX_PA: break
         if c["team"] in used: continue
         used.add(c["team"]); picks.append(c)
+    # Floor of MIN_PA picks (user, Nov 4: "2 minimum so we keep learning"): if the strict list is short,
+    # fill from the next best points/assists with a relaxed quality gate (still 3+ L10 hits, no 3-of-3,
+    # points -130 or better, one per team, edge of at least FLOOR_EDGE).
+    if len([p for p in picks if p["mk"] in "PA"]) < MIN_PA:
+        spare = [c for c in cands if eligible(c) and c["mk"] in "PA" and c["l3"] < 3 and c["team"] not in used
+                 and c["edge"] >= FLOOR_EDGE and c["chance"] >= 40 and c["mins"] >= 14
+                 and not (c["mk"] == "P" and c["price"] < -130)]
+        spare.sort(key=lambda c: -c["edge"])
+        for c in spare:
+            if len([p for p in picks if p["mk"] in "PA"]) >= MIN_PA: break
+            used.add(c["team"]); picks.append(c)
     gl = [c for c in cands if eligible(c) and c["mk"] == "G" and c["chance"] >= 35 and c["edge"] >= 5 and c["team"] not in used]
     gl.sort(key=lambda c: -c["edge"])
     picks += gl[:MAX_G]
