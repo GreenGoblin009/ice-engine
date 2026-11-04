@@ -1354,7 +1354,8 @@ const M={};
 async function openPlayer(pid, stat, line, odds, split, vsTeam, win){
   const p=S.players.get(pid)||{id:pid,name:'Player',team:'',pos:''};
   M.p=p; M.isG=p.pos==='G';
-  M.stat=stat||(M.isG?'Saves':'Points'); M.window='Season';   // a player card always opens on Season, whatever list it was tapped from (Last 50 is one tap away) M.split=split||'Home+Away'; M.vs=vsTeam||'';
+  M.stat=stat||(M.isG?'Saves':'Points'); M.window='Season';   // a player card always opens on Season, whatever list it was tapped from (Last 50 is one tap away)
+  M.split=split||'Home+Away'; M.vs=vsTeam||'';
   M.line=line!=null?line:(M.isG?24.5:STATS[M.stat].line); M.odds=odds!=null?String(odds):'';
   $('overlay').classList.add('open');
   $('pcard').innerHTML='<div class="empty">Loading game logs…</div>';
