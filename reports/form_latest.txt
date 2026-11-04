@@ -4,7 +4,7 @@ X = got it, . = missed. Oldest game on the left, newest on the right. Last 20 re
 Every player shows tonight's opponent and start time so the game can be checked.
 [NO PRICES PULLED: every skater on tonight's teams shown, price check skipped, hit rates compared to the league rate]
 
-=== POINTS: LINES UP on every check (5 of 169 priced) ===
+=== POINTS: LINES UP on every check (5 of 170 priced) ===
 - Macklin Celebrini SJS @ LAK 10:00 PM ET | - (DK -, FD -) | model 69% | L10 4/10 L20 12/20 season 8/14 | max miss run 2, missed last 2 | shots L5 3.0 L10 3.8, attempts L10 7.8 | away season 3/6, away in L20 5/10 | X.XX.XXXXX.X.X.X.X..
 - Tim Stützle OTT @ BUF 7:30 PM ET | - (DK -, FD -) | model 67% | L10 7/10 L20 15/20 season 12/16 | max miss run 1, missed last 1 | shots L5 2.4 L10 2.2, attempts L10 4.2 | away season 7/9, away in L20 8/10 | XX.XXXX.XXX.XXXX.XX.
 - Rasmus Dahlin BUF vs OTT 7:30 PM ET | - (DK -, FD -) | model 60% | L10 7/10 L20 14/20 season 7/11 | max miss run 2, missed last 0 | shots L5 3.0 L10 3.0, attempts L10 5.3 | home season 4/6, home in L20 8/11 | XX..XXXXX.XX.XX.X.XX
@@ -95,10 +95,10 @@ Every player shows tonight's opponent and start time so the game can be checked.
 - [steady] Vince Dunn SEA vs CGY 10:00 PM ET | - (DK -, FD -) | model 42% | L10 5/10 L20 9/20 season 7/14 | max miss run 3, missed last 1 | shots L5 1.6 L10 2.0, attempts L10 4.5 | home season 3/6, home in L20 5/9 | .XX...X.X.XX.X..X.X.
 - [shots] Morgan Frost CGY @ SEA 10:00 PM ET | - (DK -, FD -) | model 42% | L10 5/10 L20 9/20 season 7/15 | max miss run 2, missed last 2 | shots L5 1.2 L10 1.7, attempts L10 2.6 | away season 2/7, away in L20 2/9 | ..X.X..X.X.XXXX..X..
 
-=== ASSISTS: LINES UP on every check (1 of 169 priced) ===
+=== ASSISTS: LINES UP on every check (1 of 170 priced) ===
 - Macklin Celebrini SJS @ LAK 10:00 PM ET | - (DK -, FD -) | model 54% | L10 4/10 L20 9/20 season 7/14 | max miss run 2, missed last 2 | shots L5 3.0 L10 3.8, attempts L10 7.8 | away season 3/6, away in L20 4/10 | ..X..XXX.X.X.X.X.X..
 
---- ASSISTS: EVERY priced player passing the price rule, best chance first (68) ---
+--- ASSISTS: EVERY priced player passing the price rule, best chance first (69) ---
 - [clean] Macklin Celebrini SJS @ LAK 10:00 PM ET | - (DK -, FD -) | model 54% | L10 4/10 L20 9/20 season 7/14 | max miss run 2, missed last 2 | shots L5 3.0 L10 3.8, attempts L10 7.8 | away season 3/6, away in L20 4/10 | ..X..XXX.X.X.X.X.X..
 - [steady,streak] Tim Stützle OTT @ BUF 7:30 PM ET | - (DK -, FD -) | model 50% | L10 5/10 L20 13/20 season 10/16 | max miss run 3, missed last 1 | shots L5 2.4 L10 2.2, attempts L10 4.2 | away season 7/9, away in L20 8/10 | XX.XXXX.XXX.XX...XX.
 - [steady,streak] Rasmus Dahlin BUF vs OTT 7:30 PM ET | - (DK -, FD -) | model 49% | L10 5/10 L20 9/20 season 5/11 | max miss run 4, missed last 0 | shots L5 3.0 L10 3.0, attempts L10 5.3 | home season 2/6, home in L20 3/11 | ....XXX.X..X.X..X.XX
@@ -122,8 +122,8 @@ Every player shows tonight's opponent and start time so the game can be checked.
 - [steady,shots] Kevin Fiala LAK vs SJS 10:00 PM ET | - (DK -, FD -) | model 36% | L10 5/10 L20 10/20 season 0/0 | max miss run 3, missed last 1 | shots L5 1.4 L10 1.8, attempts L10 5.0 | home season 0/0, home in L20 6/10 | .XXX.X...X.XX.XX..X.
 - [steady,streak] Thomas Chabot OTT @ BUF 7:30 PM ET | - (DK -, FD -) | model 36% | L10 4/10 L20 7/20 season 5/12 | max miss run 4, missed last 0 | shots L5 1.0 L10 2.0, attempts L10 4.8 | away season 4/8, away in L20 5/11 | ..X.X...X...XX....XX
 - [steady] Sam Reinhart FLA vs CHI 7:30 PM ET | - (DK -, FD -) | model 36% | L10 5/10 L20 8/20 season 5/15 | max miss run 6, missed last 1 | shots L5 3.4 L10 3.4, attempts L10 5.9 | home season 3/5, home in L20 4/6 | ..XXX......XXX..X.X.
-- [hit rate,steady,shots] Ryan McLeod BUF vs OTT 7:30 PM ET | - (DK -, FD -) | model 35% | L10 1/10 L20 4/20 season 2/14 | max miss run 9, missed last 3 | shots L5 1.2 L10 1.0, attempts L10 1.3 | home season 0/6, home in L20 1/8 | ..XX..X.........X...
 - [steady] Matvei Gridin CGY @ SEA 10:00 PM ET | - (DK -, FD -) | model 35% | L10 4/10 L20 8/20 season 5/15 | max miss run 3, missed last 2 | shots L5 2.8 L10 2.4, attempts L10 3.9 | away season 2/7, away in L20 4/10 | XX..X..X...X..XX.X..
+- [hit rate,steady,shots] Ryan McLeod BUF vs OTT 7:30 PM ET | - (DK -, FD -) | model 35% | L10 1/10 L20 4/20 season 2/14 | max miss run 9, missed last 3 | shots L5 1.2 L10 1.0, attempts L10 1.3 | home season 0/6, home in L20 1/8 | ..XX..X.........X...
 - [steady,shots] Ivar Stenberg SJS @ LAK 10:00 PM ET | - (DK -, FD -) | model 35% | L10 3/10 L20 6/16 season 6/16 | max miss run 4, missed last 4 | shots L5 1.2 L10 1.5, attempts L10 2.7 | away season 4/8, away in L20 4/8 | .X.X.X.X.X.X....
 - [hit rate,steady] Will Smith SJS @ LAK 10:00 PM ET | - (DK -, FD -) | model 34% | L10 2/10 L20 6/20 season 4/16 | max miss run 6, missed last 6 | shots L5 3.0 L10 3.2, attempts L10 6.0 | away season 2/8, away in L20 4/11 | .X.XX....X.X.X......
 - [steady,shots] Claude Giroux OTT @ BUF 7:30 PM ET | - (DK -, FD -) | model 34% | L10 3/10 L20 8/20 season 6/16 | max miss run 3, missed last 0 | shots L5 0.8 L10 1.3, attempts L10 3.2 | away season 4/9, away in L20 5/11 | ..XXX..X.X..X..X...X
@@ -176,7 +176,7 @@ Every player shows tonight's opponent and start time so the game can be checked.
 - [steady] Olen Zellweger BUF vs OTT 7:30 PM ET | - (DK -, FD -) | model 19% | L10 3/10 L20 5/20 season 3/13 | max miss run 6, missed last 1 | shots L5 1.4 L10 2.6, attempts L10 5.9 | home season 1/6, home in L20 3/10 | ..X.X......X....X.X.
 - [steady] Zayne Parekh CGY @ SEA 10:00 PM ET | - (DK -, FD -) | model 17% | L10 3/10 L20 5/20 season 4/15 | max miss run 5, missed last 1 | shots L5 1.4 L10 1.6, attempts L10 3.7 | away season 2/7, away in L20 2/9 | ..X...X.....X..X..X.
 
-=== GOALS: LINES UP on every check (23 of 169 priced) ===
+=== GOALS: LINES UP on every check (23 of 170 priced) ===
 - Tage Thompson BUF vs OTT 7:30 PM ET | - (DK -, FD -) | model 43% | L10 5/10 L20 8/20 season 7/14 | max miss run 5, missed last 0 | shots L5 4.2 L10 4.0, attempts L10 6.5 | home season 4/6, home in L20 4/8 | .....X.XX.XX..X...XX
 - Macklin Celebrini SJS @ LAK 10:00 PM ET | - (DK -, FD -) | model 40% | L10 2/10 L20 7/20 season 4/14 | max miss run 6, missed last 6 | shots L5 3.0 L10 3.8, attempts L10 7.8 | away season 2/6, away in L20 4/10 | X..X.X..XX.X.X......
 - Sam Reinhart FLA vs CHI 7:30 PM ET | - (DK -, FD -) | model 39% | L10 6/10 L20 8/20 season 6/15 | max miss run 5, missed last 0 | shots L5 3.4 L10 3.4, attempts L10 5.9 | home season 3/5, home in L20 4/6  ** HOT: goals + shots line up ** | X...X.....XX.X...XXX
