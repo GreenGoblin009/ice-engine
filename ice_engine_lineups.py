@@ -277,7 +277,9 @@ def parse_article(body, schedule, nicknames, day):
         if bad or len(names) > 3:
             # A status list whose label is too garbled to recognise is skipped;
             # anything else unreadable could be a line, pair or goalie.
-            if ":" in line or re.sub(r"[^a-z]", "", line.lower()).startswith(STATUS_LABELS):
+            entries = split_entries(line)
+            unlabeled_injuries = bool(entries) and all(PLAYER_NAME.match(n) and d for n, d in entries)
+            if unlabeled_injuries or ":" in line or re.sub(r"[^a-z]", "", line.lower()).startswith(STATUS_LABELS):
                 game["warnings"].append(f"skipped '{line}': looks like a scratched / injured list "
                                         f"but the label can't be read")
             else:
