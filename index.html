@@ -1468,7 +1468,7 @@ function drawTeam(){
   const avg=n?rows.reduce((a,r)=>a+val(r),0)/n:0;
   const avgOpp=n?rows.reduce((a,r)=>a+r.ga,0)/n:0;
   const opps=[...new Set(T.logs.map(r=>r.opponent))].sort();
-  const items=rows.slice(0,30).reverse();
+  const items=rows.slice(0,50).reverse();
   const m=items.length, dense=m>10, vdense=m>24;
   const mx=Math.max(ml?2:Math.ceil(T.line+0.5),...items.map(val),2), PH=128;
   const gstep=Math.max(1,Math.ceil(mx/4)); const grids=[]; for(let g=0;g<=mx;g+=gstep) grids.push(g);
@@ -1488,7 +1488,7 @@ function drawTeam(){
     const e=(pct-impliedProb(odds))*100;
     edge=`<div style="text-align:right"><div class="pbig" style="color:${e>=0?'var(--green)':'var(--red)'}">${e>=0?'+':''}${e.toFixed(1)}</div><div class="psub">edge vs break-even ${(impliedProb(odds)*100).toFixed(1)}%</div></div>`;
   }
-  const glRows=rows.slice(0,25).map(r=>{
+  const glRows=rows.slice(0,(T.window==='Last 50'||T.window==='Season'||T.vs)?50:25).map(r=>{
     const v=ml?(r.win?'W':'L'):val(r);
     const tag=r.ot==='OT'?' (OT)':(r.ot==='SO'?' (SO)':'');
     return `<tr><td>${fmtDate(r.game_date)}</td><td>${r.home_road==='H'?'vs':'@'} ${esc(r.opponent)}</td><td>${r.win?'W':'L'} ${r.rawFor}-${r.rawAg}${tag}</td><td style="text-align:right;font-weight:700;color:${hit(r)?'var(--green)':'var(--red)'}">${v}</td></tr>`;
@@ -1501,7 +1501,7 @@ function drawTeam(){
       <div class="ourow"><span class="oul">${ml?'Wins':'Over'}</span><span class="oup" style="color:var(--green)">${n?(pct*100).toFixed(1)+'%':'--'}</span><span class="oun">${over}/${n}</span><span class="muted small" style="margin-left:6px;">${ml?`scores ${n?avg.toFixed(2):'--'} · allows ${n?avgOpp.toFixed(2):'--'}`:`avg ${n?avg.toFixed(2):'--'}`}</span>${!isNaN(odds)?`<span class="oupr">${fmtOdds(odds)}</span>`:''}</div>
     </div>
     ${n?svg:'<div class="chart2">'+lineCtl+'<div class="empty">No games match this filter.</div></div>'}
-    <div class="chips" id="tWins" style="margin-top:12px;">${['Last 5','Last 10','Last 20','Season','All-time'].map(x=>`<button class="mc ${x===T.window&&!T.vs?'on':''}" data-v="${x}" ${T.vs?'disabled':''}>${x}</button>`).join('')}</div>
+    <div class="chips" id="tWins" style="margin-top:12px;">${['Last 5','Last 10','Last 20','Last 50','Season'].map(x=>`<button class="mc ${x===T.window&&!T.vs?'on':''}" data-v="${x}" ${T.vs?'disabled':''}>${x}</button>`).join('')}</div>
     ${T.vs?`<div class="muted small" style="margin-top:6px;">Showing every ${esc(T.vs)} meeting on file. Timeframe is ignored.</div>`:''}
     <div class="flab">Venue</div>
     <div class="chips" id="tSplits">${[['Home+Away','All games'],['Home','Home'],['Away','Away']].map(([v,t])=>`<button class="mc ${v===T.split?'on':''}" data-v="${v}">${t}</button>`).join('')}</div>
