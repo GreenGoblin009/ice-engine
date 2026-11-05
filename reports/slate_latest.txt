@@ -1,7 +1,7 @@
 ICE ENGINE SLATE REPORT  2026-11-04
-Lineups pulled: Nov 4, 9:27 PM ET
+Lineups pulled: Nov 4, 9:42 PM ET
 Prices pulled:  Nov 4, 7:28 PM ET
-Goalies pulled: Nov 4, 9:27 PM ET
+Goalies pulled: Nov 4, 9:42 PM ET
 Times are US Eastern. Read-only: built from the same models as the board.
 
 GAMES (start, projected goals, model game total; book game totals are not pulled)
@@ -121,7 +121,7 @@ OTT
 - Thomas Chabot (2.0, 24.1, PP2): G 11% +850 DK +0.0, L10 0/10, L3 0/3 | P 43% +135 DK +0.6, L10 4/10, L3 2/3 | A 36% +165 DK -2.0, L10 4/10, L3 2/3
 - Ridly Greig (1.3, 17.3, no PP): G 17% +430 BR -1.9, L10 2/10, L3 1/3 | P 36% +186 BOL +1.1, L10 3/10, L3 1/3 | A 24% no price, L10 1/10, L3 0/3
 - Michael Amadio (1.1, 15.9, no PP): G 20% +550 DK +4.4, L10 2/10, L3 1/3 | P 36% +190 BOL +1.4, L10 2/10, L3 1/3 | A 22% +300 DK -2.7, L10 1/10, L3 0/3
-- Fabian Zetterlund (2.5, 13.7, PP2): G 16% +350 DK -5.9, L10 1/10, L3 0/3 | P 33% +146 BOL -7.8, L10 4/10, L3 1/3 | A 22% +260 DK -6.3, L10 3/10, L3 1/3
+- Fabian Zetterlund (2.6, 13.7, PP2): G 16% +350 DK -5.9, L10 1/10, L3 0/3 | P 33% +146 BOL -7.8, L10 4/10, L3 1/3 | A 22% +260 DK -6.3, L10 3/10, L3 1/3
 - Jordan Spence (1.0, 20.8, no PP): G 9% +1000 MGM -0.4, L10 1/10, L3 0/3 | P 31% +190 BOL -3.6, L10 2/10, L3 0/3 | A 24% +230 DK -6.0, L10 1/10, L3 0/3
 - Stephen Halliday (1.8, 11.4, PP2): G 12% +425 BR -6.8, L10 1/10, L3 0/3 | P 25% no price, L10 2/10, L3 0/3 | A 16% no price, L10 2/10, L3 0/3
 - Nick Cousins (0.7, 9.1, no PP): G 10% +600 BR -4.2, L10 0/10, L3 0/3 | P 23% no price, L10 0/10, L3 0/3 | A 13% no price, L10 0/10, L3 0/3
@@ -172,10 +172,10 @@ FLA
 - Seth Jones (2.5, 25.0, PP1): G 12% +550 DK -3.3, L10 1/10, L3 1/3 | P 48% -150 MGM -11.8, L10 8/10, L3 2/3 | A 41% -120 DK -14.0, L10 8/10, L3 2/3
 - Anton Lundell (2.7, 17.7, PP2): G 25% +290 FD -0.7, L10 2/10, L3 1/3 | P 48% +105 DK -1.1, L10 3/10, L3 1/3 | A 30% +205 DK -2.6, L10 1/10, L3 0/3
 - Eetu Luostarinen (1.1, 16.3, PP2): G 14% +380 FD -6.4, L10 0/10, L3 0/3 | P 35% +164 BOL -2.8, L10 1/10, L3 1/3 | A 23% +290 DK -2.3, L10 1/10, L3 1/3
-- Lars Eller (1.0, 15.7, PP2): G 9% +525 BR -7.2, L10 1/10, L3 0/3 | P 28% +178 BOL -7.6, L10 5/10, L3 2/3 | A 21% +260 DK -6.4, L10 4/10, L3 2/3
+- Lars Eller (1.0, 15.7, PP2): G 9% +525 BR -7.2, L10 1/10, L3 0/3 | P 28% +178 BOL -7.6, L10 5/10, L3 2/3 | A 21% +260 DK -6.5, L10 4/10, L3 2/3
 - Aaron Ekblad (1.6, 20.9, PP2): G 6% +800 DK -5.2, L10 1/10, L3 1/3 | P 28% +155 DK -11.2, L10 4/10, L3 1/3 | A 24% +205 DK -8.5, L10 3/10, L3 0/3
 - Gustav Forsling (1.4, 21.0, no PP): G 3% +1000 DK -5.6, L10 0/10, L3 0/3 | P 27% no price, L10 1/10, L3 0/3 | A 26% no price, L10 1/10, L3 0/3
-- Sandis Vilmanis (1.3, 13.2, no PP): G 13% +525 FD -2.9, L10 1/10, L3 0/3 | P 27% +171 BOL -10.1, L10 3/10, L3 1/3 | A 14% +255 DK -13.7, L10 2/10, L3 1/3
+- Sandis Vilmanis (1.3, 13.2, no PP): G 13% +525 FD -2.9, L10 1/10, L3 0/3 | P 27% +171 BOL -10.1, L10 3/10, L3 1/3 | A 15% +255 DK -13.7, L10 2/10, L3 1/3
 - Uvis Balinskis (0.7, 14.4, no PP): G 8% +1500 DK +1.4, L10 0/10, L3 0/3 | P 21% no price, L10 1/10, L3 1/3 | A 15% no price, L10 1/10, L3 1/3
 - Niko Mikkola (1.3, 20.0, no PP): G 6% +1800 DK +0.8, L10 2/10, L3 1/3 | P 16% no price, L10 2/10, L3 1/3 | A 12% no price, L10 2/10, L3 1/3
 - Dmitry Kulikov (0.5, 15.0, no PP): G 1% +2200 DK -3.3, L10 0/10, L3 0/3 | P 9% no price, L10 1/10, L3 0/3 | A 8% no price, L10 1/10, L3 0/3
@@ -186,11 +186,11 @@ SJS
 - Will Smith (3.2, 19.1, PP1): G 28% +260 DK +0.6, L10 3/10, L3 1/3 | P 53% -145 BOL -6.0, L10 5/10, L3 1/3 | A 34% +130 MGM -9.1, L10 2/10, L3 0/3
 - Tyler Toffoli (1.8, 13.2, PP2): G 21% +285 DK -5.4, L10 2/10, L3 0/3 | P 44% -110 MGM -8.1, L10 5/10, L3 0/3 | A 32% +200 MGM -1.7, L10 3/10, L3 0/3
 - Mason Marchment (1.7, 16.2, PP1): G 23% +340 DK -0.2, L10 3/10, L3 1/3 | P 44% -105 BOL -7.2, L10 4/10, L3 1/3 | A 29% +145 MGM -12.3, L10 2/10, L3 1/3
-- Ivar Stenberg (1.5, 16.3, PP1): G 20% +310 MGM -4.5, L10 2/10, L3 0/3 | P 44% -101 BOL -6.4, L10 4/10, L3 0/3 | A 34% +200 MGM +0.7, L10 3/10, L3 0/3
-- Michael Misa (1.3, 13.9, PP2): G 19% +500 BR +2.6, L10 3/10, L3 1/3 | P 40% +152 BOL +0.5, L10 4/10, L3 1/3 | A 24% +250 MGM -4.3, L10 1/10, L3 0/3
+- Ivar Stenberg (1.5, 16.3, PP1): G 20% +310 MGM -4.5, L10 2/10, L3 0/3 | P 44% -101 BOL -6.4, L10 4/10, L3 0/3 | A 34% +200 MGM +0.6, L10 3/10, L3 0/3
+- Michael Misa (1.3, 13.9, PP2): G 19% +500 BR +2.6, L10 3/10, L3 1/3 | P 42% +152 BOL +1.9, L10 5/10, L3 2/3 | A 26% +250 MGM -2.9, L10 2/10, L3 1/3
 - Collin Graf (1.2, 15.4, no PP): G 22% +500 BR +5.4, L10 1/10, L3 0/3 | P 40% +171 BOL +2.8, L10 1/10, L3 0/3 | A 23% +280 DK -3.7, L10 1/10, L3 0/3
 - Jacob Trouba (1.6, 22.6, PP2): G 12% +1300 FD +5.3, L10 1/10, L3 0/3 | P 39% +141 BOL -2.1, L10 5/10, L3 2/3 | A 30% +145 DK -10.7, L10 5/10, L3 2/3
-- Kiefer Sherwood (2.3, 15.6, PP2): G 22% +440 FD +3.1, L10 1/10, L3 0/3 | P 39% +130 MGM -4.3, L10 6/10, L3 3/3 | A 20% +240 MGM -9.2, L10 5/10, L3 3/3
+- Kiefer Sherwood (2.3, 15.6, PP2): G 22% +440 FD +3.1, L10 1/10, L3 0/3 | P 38% +130 MGM -5.3, L10 5/10, L3 2/3 | A 19% +240 MGM -10.2, L10 4/10, L3 2/3
 - Dmitry Orlov (1.3, 17.8, PP1): G 5% +1500 DK -1.2, L10 2/10, L3 0/3 | P 38% +152 BOL -1.7, L10 4/10, L3 1/3 | A 34% no price, L10 2/10, L3 1/3
 - Darnell Nurse (1.5, 21.4, no PP): G 6% +1600 DK +0.3, L10 0/10, L3 0/3 | P 24% +235 DK -5.9, L10 1/10, L3 0/3 | A 18% +285 DK -8.2, L10 1/10, L3 0/3
 - Ty Dellandrea (0.8, 13.4, no PP): G 6% +1100 DK -2.6, L10 0/10, L3 0/3 | P 23% no price, L10 1/10, L3 0/3 | A 19% no price, L10 1/10, L3 0/3
@@ -217,7 +217,7 @@ LAK
 CGY
 - Matvei Gridin (2.4, 15.6, PP1): G 20% +265 BR -7.8, L10 4/10, L3 1/3 | P 46% -118 MGM -8.3, L10 5/10, L3 1/3 | A 35% +155 DK -4.0, L10 4/10, L3 1/3
 - Joel Farabee (2.1, 18.6, PP1): G 24% +255 DK -3.9, L10 5/10, L3 2/3 | P 44% -120 DK -10.2, L10 7/10, L3 2/3 | A 28% +160 DK -10.7, L10 5/10, L3 1/3
-- Matt Coronato (2.4, 17.3, PP1): G 21% +255 DK -7.1, L10 2/10, L3 1/3 | P 44% -143 BOL -14.6, L10 6/10, L3 1/3 | A 30% +150 MGM -9.7, L10 5/10, L3 1/3
+- Matt Coronato (2.4, 17.3, PP1): G 21% +255 DK -7.1, L10 2/10, L3 1/3 | P 44% -143 BOL -14.7, L10 6/10, L3 1/3 | A 30% +150 MGM -9.7, L10 5/10, L3 1/3
 - Mikael Backlund (2.8, 18.2, no PP): G 19% +380 BR -1.8, L10 2/10, L3 0/3 | P 42% +125 DK -2.1, L10 5/10, L3 2/3 | A 29% +225 DK -1.6, L10 3/10, L3 2/3
 - Morgan Frost (1.7, 15.1, PP1): G 25% +275 BR -1.8, L10 2/10, L3 1/3 | P 42% +100 DK -8.4, L10 5/10, L3 1/3 | A 24% +210 DK -8.7, L10 5/10, L3 1/3
 - Ryan Strome (2.5, 14.2, PP2): G 16% +425 DK -2.6, L10 2/10, L3 1/3 | P 36% +136 BOL -6.6, L10 4/10, L3 2/3 | A 22% +225 DK -8.4, L10 2/10, L3 1/3
