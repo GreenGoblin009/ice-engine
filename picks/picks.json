@@ -437,14 +437,14 @@
           "id": 28,
           "type": "Points & Assists",
           "book": "",
-          "status": "pending",
+          "status": "hit",
           "legs": [
             {
               "player": "Brock Nelson",
               "team": "COL",
               "market": "1+ pt",
               "price": "+105",
-              "result": "pending"
+              "result": "hit"
             }
           ]
         },
