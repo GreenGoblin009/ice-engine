@@ -5,9 +5,9 @@ Goalies pulled: none yet
 Times are US Eastern. Read-only: built from the same models as the board.
 
 GAMES (start, projected goals, model game total; book game totals are not pulled)
-- 7:00 PM ET  CBJ 2.85 @ BUF 3.13  (total 5.99)
-- 8:00 PM ET  SJS 2.59 @ MIN 3.28  (total 5.86)
-- 8:00 PM ET  ANA 3.05 @ CGY 2.92  (total 5.96)
+- 7:00 PM ET  CBJ 2.84 @ BUF 3.07  (total 5.90)
+- 8:00 PM ET  SJS 2.59 @ MIN 3.28  (total 5.87)
+- 8:00 PM ET  ANA 3.05 @ CGY 2.92  (total 5.97)
 
 GOALIES (shrunk two-season save %, raw save % and games)
 - CBJ: no goalie listed
@@ -27,11 +27,11 @@ INJURED / OUT (scratches in brackets)
 Questionable: no projected skater carries a questionable or day-to-day note.
 
 TEAM FORM, last 10 regular-season games (per game: GF / GA | shots for / against | PP | PK)
-- CBJ: 2.6 / 3.2 | 24.2 / 27.5 | PP 15.4% (4/26) | PK 72.4%
+- CBJ: 2.5 / 2.8 | 24.9 / 28.0 | PP 14.8% (4/27) | PK 72.4%
 - BUF: 3.3 / 3.2 | 28.6 / 30.3 | PP 21.9% (7/32) | PK 73.0%
 - SJS: 2.5 / 3.6 | 27.9 / 32.0 | PP 24.4% (10/41) | PK 80.6%
 - MIN: 3.5 / 2.2 | 32.0 / 24.1 | PP 20.0% (8/40) | PK 70.4%
-- ANA: 3.6 / 4.4 | 25.6 / 28.3 | PP 38.2% (13/34) | PK 68.3%
+- ANA: 3.9 / 4.4 | 25.3 / 27.4 | PP 37.8% (14/37) | PK 65.9%
 - CGY: 2.7 / 2.6 | 27.1 / 31.0 | PP 37.5% (9/24) | PK 83.3%
 
 TOP 15 GOALS BY ROLE-ADJUSTED CHANCE
