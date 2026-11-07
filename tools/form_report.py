@@ -190,6 +190,15 @@ def build(day):
                 pr = pr[0] / pr[1] if pr and pr[2] >= 8 else allr
                 chance = (o_all + sr.SHRINK_K * pr) / (n_all + sr.SHRINK_K)
 
+            v50 = vals[:50]
+            h50, n50 = sum(v50), len(v50)
+            l50v = [x for x in lg[:50] if x["home_road"] == hr and x[col] is not None]
+            lv50 = (sum(1 for x in l50v if x[col] > 0.5), len(l50v))
+            at50l = [x["shot_attempts"] for x in lg[:50] if x.get("shot_attempts") is not None]
+            att50 = sum(at50l) / len(at50l) if at50l else None
+            sh50l = [x["sog"] for x in lg[:50] if x["sog"] is not None]
+            sog50 = sum(sh50l) / len(sh50l) if sh50l else None
+
             ck = {}
             if best is not None:
                 ck["price"] = (best >= -130) if col == "points" else (h20 / len(l20) >= imp)
@@ -209,7 +218,7 @@ def build(day):
                 pos=p.get("pos") or "F", price=best, dk=books.get("DraftKings"), fd=books.get("FanDuel"),
                 chance=chance, h10=h10, n10=len(l10), h20=h20, n20=len(l20), h3=h3, longest=longest, now=now,
                 shpg=shpg, bars=bar_text(l20), v=(v_h, v_n), lv=(lv_h, lv_n), sea=(s_h, s_n), ck=ck, imp=imp,
-                sog5=sog5, att10=att10, heat=heat))
+                sog5=sog5, att10=att10, heat=heat, h50=h50, n50=n50, lv50=lv50, att50=att50, sog50=sog50))
 
     def head(r):
         at = "vs" if r["home"] else "@"
@@ -219,11 +228,14 @@ def build(day):
         s5 = f"{r['sog5']:.1f}" if r["sog5"] is not None else "-"
         a10 = f"{r['att10']:.1f}" if r["att10"] is not None else "-"
         hot = "  ** HOT: goals + shots line up **" if r["heat"] else ""
+        a50 = f"{r['att50']:.1f}" if r["att50"] is not None else "-"
+        s50 = f"{r['sog50']:.1f}" if r["sog50"] is not None else "-"
+        l50 = f" | L50 {r['h50']}/{r['n50']}, {ven} in L50 {r['lv50'][0]}/{r['lv50'][1]}, shots L50 {s50}, attempts L50 {a50}"
         v = (f" | {ven} season {r['v'][0]}/{r['v'][1]}, {ven} in L20 {r['lv'][0]}/{r['lv'][1]}")
         return (f"{r['name']} {r['team']} {at} {r['opp']} {r['when']} | {sr.fmt_odds(r['price'])} "
                 f"(DK {sr.fmt_odds(r['dk']) if r['dk'] is not None else '-'}, FD {sr.fmt_odds(r['fd']) if r['fd'] is not None else '-'}) | "
                 f"model {ch} | L10 {r['h10']}/{r['n10']} L20 {r['h20']}/{r['n20']} season {r['sea'][0]}/{r['sea'][1]} | max miss run {r['longest']}, "
-                f"missed last {r['now']} | shots L5 {s5} L10 {sh}, attempts L10 {a10}{v}{hot} | {r['bars']}")
+                f"missed last {r['now']} | shots L5 {s5} L10 {sh}, attempts L10 {a10}{v}{l50}{hot} | {r['bars']}")
 
     for stat, col, _m in STATS:
         rows = results[col]
@@ -251,6 +263,13 @@ def build(day):
     out(f"\n=== GOAL SLEEPERS: forwards with 5+ attempts or 3+ shots a game but 0-1 goals in last 10 ({len(sl)}) ===")
     out("Backtest (two seasons, n=401): these forwards scored 30.4% vs 24.1% baseline (+6.3, z +3.0). Volume without results.")
     for r in sorted(sl, key=lambda r: -r["att10"]):
+        out("- " + head(r))
+    # L50 pattern: sustained scorers (50-game rate at or above the price), tonight's venue not worse, volume
+    p50 = [r for r in results["goals"] if r["n50"] >= 30 and r["h10"] >= 3 and r["h50"] / r["n50"] >= r["imp"]
+           and (r["lv50"][1] < 8 or r["lv50"][0] / r["lv50"][1] >= r["h50"] / r["n50"] - 0.05)
+           and (r["att50"] is None or r["att50"] >= (3.5 if r["pos"] == "D" else 4.5)) and r["price"] is not None]
+    out(f"\n=== GOALS: L50 PATTERN: 50-game rate at or above the price, L10 3+, venue in L50 not worse, attempts L50 4.5+ F / 3.5+ D ({len(p50)}) ===")
+    for r in sorted(p50, key=lambda r: -(r["h50"] / r["n50"] - r["imp"]))[:30]:
         out("- " + head(r))
     out("\nChecks: price (points -130 or better; assists/goals last-20 rate at or above the price), hit rate "
         "(L10 and L20 at or above the price), steady (points/assists never missed more than 2 in a row in last 20), "
