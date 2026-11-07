@@ -577,6 +577,21 @@
        "result": "pending"
       }
      ]
+    },
+    {
+     "id": 38,
+     "type": "Points & Assists",
+     "book": "",
+     "status": "pending",
+     "legs": [
+      {
+       "player": "Brandon Hagel",
+       "team": "TBL",
+       "market": "1+ ast",
+       "price": "+195",
+       "result": "pending"
+      }
+     ]
     }
    ]
   }
