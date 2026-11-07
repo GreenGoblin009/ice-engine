@@ -564,21 +564,6 @@
      ]
     },
     {
-     "id": 36,
-     "type": "Points & Assists",
-     "book": "",
-     "status": "pending",
-     "legs": [
-      {
-       "player": "Ryan Leonard",
-       "team": "WSH",
-       "market": "1+ pt",
-       "price": "+145",
-       "result": "pending"
-      }
-     ]
-    },
-    {
      "id": 37,
      "type": "Goals",
      "book": "",

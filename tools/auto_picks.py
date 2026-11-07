@@ -154,6 +154,7 @@ def main():
         spare.sort(key=lambda c: -c["edge"])
         for c in spare:
             if have_pa + len([p for p in picks if p["mk"] in "PA"]) >= MIN_PA: break
+            if c["team"] in used: continue   # one pick per team (the list above was built before any spare was added)
             used.add(c["team"]); picks.append(c)
     gl = [c for c in cands if eligible(c) and c["mk"] == "G" and c["chance"] >= 30 and c["edge"] >= 2]   # one goal pick a day (user, Nov 4); may share a team with a point/assist pick
     gl.sort(key=lambda c: -c["edge"])
