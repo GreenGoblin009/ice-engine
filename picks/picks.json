@@ -592,6 +592,21 @@
        "result": "pending"
       }
      ]
+    },
+    {
+     "id": 39,
+     "type": "Points & Assists",
+     "book": "",
+     "status": "pending",
+     "legs": [
+      {
+       "player": "Evgeni Malkin",
+       "team": "PIT",
+       "market": "1+ pt",
+       "price": "-115",
+       "result": "pending"
+      }
+     ]
     }
    ]
   }
