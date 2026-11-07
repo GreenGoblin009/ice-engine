@@ -40,7 +40,7 @@ TOP 15 GOALS BY ROLE-ADJUSTED CHANCE
 3. Matt Boldy MIN 41%; best +125 BR; edge -3.7; DK +120; FD +120; L10 3/10; L3 2/3; 4.5 shots; 21.6 min; PP1
 4. Cutter Gauthier ANA 41%; best +145 FD; edge -0.3; DK +115; FD +145; L10 4/10; L3 3/3; 4.5 shots; 18.0 min; PP1
 5. Macklin Celebrini SJS 40%; best +180 FD; edge +4.4; DK +165; FD +180; L10 3/10; L3 1/3; 4.0 shots; 22.7 min; PP1
-6. Leo Carlsson ANA 33%; best +220 BR; edge +2.0; DK +205; FD +210; L10 3/10; L3 1/3; 2.0 shots; 20.1 min; PP1
+6. Leo Carlsson ANA 33%; best +220 BR; edge +2.0; DK +205; FD +210; L10 3/10; L3 1/3; 2.1 shots; 20.1 min; PP1
 7. Beckett Sennecke ANA 29%; best +200 BR; edge -4.7; DK +175; FD +190; L10 5/10; L3 1/3; 2.3 shots; 20.3 min; PP1
 8. Will Smith SJS 28%; best +275 DK; edge +1.4; DK +275; FD +270; L10 2/10; L3 0/3; 2.7 shots; 19.3 min; PP1
 9. Joel Eriksson Ek MIN 28%; best +175 BR; edge -8.6; DK +165; FD +165; L10 5/10; L3 2/3; 3.8 shots; 20.0 min; PP1
@@ -56,7 +56,7 @@ TOP 15 POINTS BY ROLE-ADJUSTED CHANCE
 2. Tage Thompson BUF 66%; best -235 MGM; edge -4.6; DK -; FD -; L10 7/10; L3 3/3; 3.6 shots; 19.4 min; PP1
 3. Zach Werenski CBJ 63%; best -150 MGM; edge +3.1; DK -180; FD -; L10 7/10; L3 3/3; 3.2 shots; 28.6 min; PP1
 4. Jackson LaCombe ANA 62%; best -135 MGM; edge +5.0; DK -140; FD -; L10 9/10; L3 3/3; 0.6 shots; 27.0 min; PP1
-5. Leo Carlsson ANA 62%; best -179 BOL; edge -2.2; DK -195; FD -; L10 7/10; L3 3/3; 2.0 shots; 20.1 min; PP1
+5. Leo Carlsson ANA 62%; best -179 BOL; edge -2.2; DK -195; FD -; L10 7/10; L3 3/3; 2.1 shots; 20.1 min; PP1
 6. Cutter Gauthier ANA 61%; best -182 BOL; edge -3.7; DK -190; FD -; L10 7/10; L3 3/3; 4.5 shots; 18.0 min; PP1
 7. Rasmus Dahlin BUF 60%; best -185 MGM; edge -4.8; DK -195; FD -; L10 6/10; L3 2/3; 2.8 shots; 24.6 min; PP1
 8. Beckett Sennecke ANA 56%; best -161 BOL; edge -5.7; DK -170; FD -; L10 6/10; L3 2/3; 2.3 shots; 20.3 min; PP1
@@ -74,7 +74,7 @@ TOP 15 ASSISTS BY ROLE-ADJUSTED CHANCE
 3. Zach Werenski CBJ 54%; best -120 MGM; edge -0.3; DK -125; FD -; L10 6/10; L3 2/3; 3.2 shots; 28.6 min; PP1
 4. Macklin Celebrini SJS 53%; best +110 MGM; edge +5.4; DK -110; FD -; L10 4/10; L3 0/3; 4.0 shots; 22.7 min; PP1
 5. Rasmus Dahlin BUF 49%; best -115 MGM; edge -4.3; DK -135; FD -; L10 5/10; L3 2/3; 2.8 shots; 24.6 min; PP1
-6. Leo Carlsson ANA 44%; best +110 MGM; edge -3.2; DK +100; FD -; L10 6/10; L3 2/3; 2.0 shots; 20.1 min; PP1
+6. Leo Carlsson ANA 44%; best +110 MGM; edge -3.2; DK +100; FD -; L10 6/10; L3 2/3; 2.1 shots; 20.1 min; PP1
 7. Kirill Kaprizov MIN 44%; best -140 MGM; edge -14.8; DK -155; FD -; L10 7/10; L3 2/3; 3.4 shots; 21.7 min; PP1
 8. Matt Boldy MIN 43%; best -125 MGM; edge -12.2; DK -145; FD -; L10 7/10; L3 2/3; 4.5 shots; 21.6 min; PP1
 9. Zach Benson BUF 41%; best +120 DK; edge -4.7; DK +120; FD -; L10 8/10; L3 3/3; 2.7 shots; 20.0 min; PP1
@@ -139,7 +139,7 @@ BUF
 - Sam Carrick (1.0, 7.8, no PP): G 10% +800 DK -1.2, L10 0/10, L3 0/3 | P 19% no price, L10 1/10, L3 1/3 | A 9% no price, L10 1/10, L3 1/3
 - Beck Malenstyn (0.6, 11.0, no PP): G 7% +900 FD -2.5, L10 0/10, L3 0/3 | P 16% no price, L10 1/10, L3 0/3 | A 9% no price, L10 1/10, L3 0/3
 - Tyson Kozak (0.5, 11.1, no PP): G 6% +800 DK -4.9, L10 1/10, L3 1/3 | P 14% no price, L10 3/10, L3 1/3 | A 8% no price, L10 2/10, L3 0/3
-- Zach Metsa (0.8, 12.1, no PP): G 4% +2100 FD -0.9, L10 0/10, L3 0/3 | P 14% no price, L10 1/10, L3 0/3 | A 12% no price, L10 1/10, L3 0/3
+- Zach Metsa (0.9, 12.1, no PP): G 4% +2100 FD -0.9, L10 0/10, L3 0/3 | P 14% no price, L10 1/10, L3 0/3 | A 12% no price, L10 1/10, L3 0/3
 SJS
 - Macklin Celebrini (4.0, 22.7, PP1): G 40% +180 FD +4.4, L10 3/10, L3 1/3 | P 70% -217 BOL +1.1, L10 5/10, L3 1/3 | A 53% +110 MGM +5.4, L10 4/10, L3 0/3
 - Will Smith (2.7, 19.3, PP1): G 28% +275 DK +1.4, L10 2/10, L3 0/3 | P 53% -115 DK -0.9, L10 4/10, L3 0/3 | A 34% +165 DK -3.7, L10 2/10, L3 0/3
@@ -178,7 +178,7 @@ MIN
 - Tyler Pitlick (1.0, 7.7, no PP): G 6% +1000 DK -3.6, L10 0/10, L3 0/3 | P 7% no price, L10 0/10, L3 0/3 | A 2% no price, L10 0/10, L3 0/3
 ANA
 - Jackson LaCombe (0.6, 27.0, PP1): G 11% +600 DK -2.9, L10 0/10, L3 0/3 | P 62% -135 MGM +5.0, L10 9/10, L3 3/3 | A 56% -105 MGM +4.9, L10 9/10, L3 3/3
-- Leo Carlsson (2.0, 20.1, PP1): G 33% +220 BR +2.0, L10 3/10, L3 1/3 | P 62% -179 BOL -2.2, L10 7/10, L3 3/3 | A 44% +110 MGM -3.2, L10 6/10, L3 2/3
+- Leo Carlsson (2.1, 20.1, PP1): G 33% +220 BR +2.0, L10 3/10, L3 1/3 | P 62% -179 BOL -2.2, L10 7/10, L3 3/3 | A 44% +110 MGM -3.2, L10 6/10, L3 2/3
 - Cutter Gauthier (4.5, 18.0, PP1): G 41% +145 FD -0.3, L10 4/10, L3 3/3 | P 61% -182 BOL -3.7, L10 7/10, L3 3/3 | A 34% +170 DK -2.7, L10 4/10, L3 1/3
 - Beckett Sennecke (2.3, 20.3, PP1): G 29% +200 BR -4.7, L10 5/10, L3 1/3 | P 56% -161 BOL -5.7, L10 6/10, L3 2/3 | A 37% +125 MGM -7.7, L10 3/10, L3 2/3
 - Mikael Granlund (1.5, 20.3, PP1): G 24% +295 BR -1.3, L10 2/10, L3 1/3 | P 49% -128 BOL -7.4, L10 5/10, L3 3/3 | A 32% +135 MGM -10.4, L10 4/10, L3 3/3
