@@ -88,7 +88,7 @@ Every player shows tonight's opponent and start time so the game can be checked.
 
 --- GOALS: EVERY priced player passing the price rule, best chance first (20) ---
 - [price,hit rate] Macklin Celebrini SJS @ MIN 8:00 PM ET | +180 (DK +165, FD +180) | model 40% | L10 3/10 L20 7/20 season 5/15 | max miss run 6, missed last 0 | shots L5 3.8 L10 4.0, attempts L10 8.0 | away season 3/7, away in L20 5/11 | ..X.X..XX.X.X......X
-- [hit rate] Leo Carlsson ANA @ CGY 8:00 PM ET | +220 (DK +205, FD +210) | model 33% | L10 3/10 L20 7/20 season 5/16 | max miss run 4, missed last 1 | shots L5 2.4 L10 2.0, attempts L10 3.7 | away season 3/9, away in L20 3/11 | XX..X....X....XX..X.
+- [hit rate] Leo Carlsson ANA @ CGY 8:00 PM ET | +220 (DK +205, FD +210) | model 33% | L10 3/10 L20 7/20 season 5/16 | max miss run 4, missed last 1 | shots L5 2.6 L10 2.1, attempts L10 3.7 | away season 3/9, away in L20 3/11 | XX..X....X....XX..X.
 - [price,hit rate] Will Smith SJS @ MIN 8:00 PM ET | +275 (DK +275, FD +270) | model 28% | L10 2/10 L20 5/20 season 4/17 | max miss run 5, missed last 3 | shots L5 2.0 L10 2.7, attempts L10 5.6 | away season 2/9, away in L20 3/12 | ..XX.....X....X.X...
 - [price,hit rate] Zach Werenski CBJ @ BUF 7:00 PM ET | +380 (DK +360, FD +380) | model 23% | L10 1/10 L20 2/20 season 1/14 | max miss run 17, missed last 0 | shots L5 2.6 L10 3.2, attempts L10 7.2 | away season 0/5, away in L20 1/8 | .X.................X
 - [hit rate,shots] Adam Gaudette SJS @ MIN 8:00 PM ET | +650 (DK +650, FD -) | model 22% | L10 1/10 L20 3/20 season 0/4 | max miss run 9, missed last 9 | shots L5 1.4 L10 1.2, attempts L10 2.6 | away season 0/1, away in L20 1/9 | .....X..X.X.........
@@ -110,7 +110,7 @@ Every player shows tonight's opponent and start time so the game can be checked.
 
 --- GOALS: misses exactly one check (17) ---
 - [hit rate] Cutter Gauthier ANA @ CGY 8:00 PM ET | +145 (DK +115, FD +145) | model 41% | L10 4/10 L20 9/20 season 5/15 | max miss run 9, missed last 0 | shots L5 5.6 L10 4.5, attempts L10 8.3 | away season 2/9, away in L20 4/12  ** HOT: goals + shots line up ** | XXX.X.X.........XXXX
-- [hit rate] Leo Carlsson ANA @ CGY 8:00 PM ET | +220 (DK +205, FD +210) | model 33% | L10 3/10 L20 7/20 season 5/16 | max miss run 4, missed last 1 | shots L5 2.4 L10 2.0, attempts L10 3.7 | away season 3/9, away in L20 3/11 | XX..X....X....XX..X.
+- [hit rate] Leo Carlsson ANA @ CGY 8:00 PM ET | +220 (DK +205, FD +210) | model 33% | L10 3/10 L20 7/20 season 5/16 | max miss run 4, missed last 1 | shots L5 2.6 L10 2.1, attempts L10 3.7 | away season 3/9, away in L20 3/11 | XX..X....X....XX..X.
 - [venue] Jack Quinn BUF vs CBJ 7:00 PM ET | +200 (DK +190, FD +200) | model 24% | L10 5/10 L20 9/20 season 7/15 | max miss run 5, missed last 1 | shots L5 2.6 L10 2.7, attempts L10 5.1 | home season 1/7, home in L20 3/10 | X.X..XX.....XX.X.XX.
 - [shots] Ivar Stenberg SJS @ MIN 8:00 PM ET | +350 (DK +320, FD +330) | model 21% | L10 3/10 L20 4/17 season 4/17 | max miss run 5, missed last 0 | shots L5 1.6 L10 1.8, attempts L10 2.8 | away season 3/9, away in L20 3/9 | .....X.X..X.....X
 - [hit rate] Rasmus Dahlin BUF vs CBJ 7:00 PM ET | +370 (DK +370, FD +340) | model 20% | L10 1/10 L20 5/20 season 2/12 | max miss run 6, missed last 6 | shots L5 2.4 L10 2.8, attempts L10 5.2 | home season 2/7, home in L20 4/11 | X..X..X..X...X......
