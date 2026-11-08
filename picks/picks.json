@@ -607,6 +607,51 @@
        "result": "pending"
       }
      ]
+    },
+    {
+     "id": 40,
+     "type": "Goals",
+     "book": "",
+     "status": "pending",
+     "legs": [
+      {
+       "player": "Kirill Kaprizov",
+       "team": "MIN",
+       "market": "Anytime goal",
+       "price": "+112",
+       "result": "pending"
+      }
+     ]
+    },
+    {
+     "id": 41,
+     "type": "Goals",
+     "book": "",
+     "status": "pending",
+     "legs": [
+      {
+       "player": "Alex DeBrincat",
+       "team": "DET",
+       "market": "Anytime goal",
+       "price": "+185",
+       "result": "pending"
+      }
+     ]
+    },
+    {
+     "id": 42,
+     "type": "Points & Assists",
+     "book": "",
+     "status": "pending",
+     "legs": [
+      {
+       "player": "Gabriel Landeskog",
+       "team": "COL",
+       "market": "1+ pt",
+       "price": "+130",
+       "result": "pending"
+      }
+     ]
     }
    ]
   }
