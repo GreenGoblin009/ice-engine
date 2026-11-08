@@ -702,6 +702,36 @@
        "result": "pending"
       }
      ]
+    },
+    {
+     "id": 46,
+     "type": "Points & Assists",
+     "book": "",
+     "status": "pending",
+     "legs": [
+      {
+       "player": "Ivan Barbashev",
+       "team": "VGK",
+       "market": "1+ pt",
+       "price": "+145",
+       "result": "pending"
+      }
+     ]
+    },
+    {
+     "id": 47,
+     "type": "Goals",
+     "book": "",
+     "status": "pending",
+     "legs": [
+      {
+       "player": "Nikita Kucherov",
+       "team": "TBL",
+       "market": "Anytime goal",
+       "price": "+170",
+       "result": "pending"
+      }
+     ]
     }
    ]
   }
