@@ -5,13 +5,13 @@ Goalies pulled: none yet
 Times are US Eastern. Read-only: built from the same models as the board.
 
 GAMES (start, projected goals, model game total; book game totals are not pulled)
-- 7:00 PM ET  COL 3.40 @ TOR 3.08  (total 6.49)  green light: COL
-- 7:00 PM ET  MIN 2.95 @ MTL 2.98  (total 5.93)
-- 7:00 PM ET  WSH 3.08 @ OTT 3.20  (total 6.28)
-- 7:00 PM ET  NJD 3.07 @ WPG 2.78  (total 5.85)
-- 7:30 PM ET  FLA 2.83 @ CBJ 2.99  (total 5.81)
-- 8:00 PM ET  DET 2.74 @ STL 2.99  (total 5.74)
-- 10:00 PM ET  NSH 2.87 @ LAK 2.83  (total 5.70)
+- 7:00 PM ET  COL 3.41 @ TOR 3.09  (total 6.50)  green light: COL
+- 7:00 PM ET  MIN 2.96 @ MTL 2.98  (total 5.95)
+- 7:00 PM ET  WSH 3.09 @ OTT 3.21  (total 6.30)
+- 7:00 PM ET  NJD 3.08 @ WPG 2.79  (total 5.87)
+- 7:30 PM ET  FLA 2.83 @ CBJ 3.00  (total 5.83)
+- 8:00 PM ET  DET 2.75 @ STL 3.00  (total 5.75)
+- 10:00 PM ET  NSH 2.87 @ LAK 2.84  (total 5.71)
 
 GOALIES (shrunk two-season save %, raw save % and games)
 - COL: no goalie listed
