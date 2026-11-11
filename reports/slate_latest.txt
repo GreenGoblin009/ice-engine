@@ -1,7 +1,7 @@
 ICE ENGINE SLATE REPORT  2026-11-10
-Lineups pulled: Nov 10, 8:56 PM ET
+Lineups pulled: Nov 10, 9:08 PM ET
 Prices pulled:  Nov 10, 7:09 PM ET
-Goalies pulled: Nov 10, 8:56 PM ET
+Goalies pulled: Nov 10, 9:08 PM ET
 Times are US Eastern. Read-only: built from the same models as the board.
 
 GAMES (start, projected goals, model game total; book game totals are not pulled)
@@ -18,7 +18,7 @@ GOALIES (shrunk two-season save %, raw save % and games)
 - TOR: Sergei Bobrovsky expected 0.884 (0.879 raw, 64 GP)  | also listed: Anthony Stolarz 0.899 (0.896 raw, 33 GP)
 - MIN: Jesper Wallstedt expected 0.914 (0.917 raw, 51 GP)  | also listed: Calvin Pickard 0.885 (0.868 raw, 19 GP)
 - MTL: Jacob Fowler expected 0.912 (0.915 raw, 27 GP)  | also listed: Jakub Dobes 0.897 (0.894 raw, 50 GP)
-- WSH: Logan Thompson expected 0.908 (0.908 raw, 69 GP)  | also listed: Charlie Lindgren 0.888 (0.879 raw, 26 GP)
+- WSH: Logan Thompson expected 0.907 (0.908 raw, 69 GP)  | also listed: Charlie Lindgren 0.888 (0.879 raw, 26 GP)
 - OTT: Samuel Ersson expected 0.883 (0.874 raw, 42 GP)  | also listed: Jackson Parsons no stats (unmatched name)
 - NJD: Jake Allen expected 0.900 (0.899 raw, 46 GP)  | also listed: Connor Hellebuyck 0.898 (0.897 raw, 62 GP)
 - WPG: Nico Daws expected 0.901 (0.895 raw, 9 GP)  | also listed: Stuart Skinner 0.891 (0.887 raw, 63 GP)
@@ -274,13 +274,13 @@ WPG
 - Mario Ferraro (1.3, 19.4, no PP): G 9% +1800 MGM +3.5, L10 1/10, L3 1/3 | P 23% no price, L10 1/10, L3 1/3 | A 17% no price, L10 0/10, L3 0/3
 - Dylan Samberg (1.1, 22.2, no PP): G 5% +1500 MGM -1.6, L10 2/10, L3 1/3 | P 21% no price, L10 3/10, L3 1/3 | A 19% no price, L10 2/10, L3 0/3
 - Isak Rosen (0.9, 12.5, PP2): G 11% +850 FD +0.6, L10 1/10, L3 0/3 | P 21% no price, L10 1/10, L3 0/3 | A 10% no price, L10 0/10, L3 0/3
-- Viggo Bjorck (0.6, 13.9, PP2): G 6% +600 MGM -8.3, L10 0/10, L3 0/3 | P 19% no price, L10 2/10, L3 2/3 | A 15% no price, L10 2/10, L3 2/3
+- Viggo Bjorck (0.7, 13.9, PP2): G 6% +600 MGM -8.3, L10 0/10, L3 0/3 | P 19% no price, L10 2/10, L3 2/3 | A 15% no price, L10 2/10, L3 2/3
 FLA
 - Matthew Tkachuk (2.6, 18.9, PP1): G 27% +200 MGM -5.9, L10 1/10, L3 0/3 | P 66% -235 MGM -4.3, L10 8/10, L3 3/3 | A 49% -120 MGM -5.3, L10 7/10, L3 3/3
 - Brady Tkachuk (4.1, 16.7, PP1): G 30% +175 DK -6.7, L10 3/10, L3 1/3 | P 63% -155 MGM +2.0, L10 8/10, L3 3/3 | A 42% +150 MGM +1.9, L10 6/10, L3 2/3
 - Sam Reinhart (3.1, 20.2, PP1): G 39% +165 MGM +1.6, L10 5/10, L3 1/3 | P 61% -165 MGM -1.5, L10 7/10, L3 2/3 | A 37% +150 MGM -3.0, L10 5/10, L3 2/3
 - Carter Verhaeghe (2.7, 18.4, PP1): G 30% +220 MGM -1.5, L10 4/10, L3 2/3 | P 51% -125 BOL -4.2, L10 7/10, L3 2/3 | A 32% +185 DK -2.7, L10 4/10, L3 1/3
-- Sam Bennett (2.7, 17.7, PP2): G 27% +290 FD +1.4, L10 3/10, L3 1/3 | P 50% +104 BOL +1.3, L10 3/10, L3 1/3 | A 30% +210 MGM -2.6, L10 0/10, L3 0/3
+- Sam Bennett (2.8, 17.7, PP2): G 27% +290 FD +1.4, L10 3/10, L3 1/3 | P 50% +104 BOL +1.3, L10 3/10, L3 1/3 | A 30% +210 MGM -2.6, L10 0/10, L3 0/3
 - Seth Jones (2.1, 24.9, PP1): G 13% +600 MGM -1.3, L10 2/10, L3 1/3 | P 50% -125 MGM -6.0, L10 7/10, L3 2/3 | A 41% +105 MGM -7.7, L10 6/10, L3 1/3
 - Anton Lundell (2.8, 17.6, PP2): G 24% +370 BR +3.0, L10 1/10, L3 0/3 | P 46% +132 BOL +3.4, L10 1/10, L3 0/3 | A 30% +270 DK +2.5, L10 0/10, L3 0/3
 - Eetu Luostarinen (0.9, 16.0, PP2): G 14% +575 BR -0.9, L10 0/10, L3 0/3 | P 34% no price, L10 1/10, L3 0/3 | A 23% no price, L10 1/10, L3 0/3
@@ -337,7 +337,7 @@ STL
 - Connor McMichael (1.4, 15.5, PP2): G 15% +425 DK -4.1, L10 0/10, L3 0/3 | P 38% +141 BOL -4.0, L10 3/10, L3 1/3 | A 32% +240 DK +2.1, L10 3/10, L3 1/3
 - Pius Suter (0.9, 13.5, no PP): G 19% +650 FD +6.1, L10 1/10, L3 1/3 | P 37% no price, L10 2/10, L3 1/3 | A 23% no price, L10 1/10, L3 0/3
 - Jonatan Berggren (1.6, 14.4, no PP): G 15% +600 DK +1.1, L10 1/10, L3 0/3 | P 31% +209 BOL -1.6, L10 3/10, L3 0/3 | A 20% +310 DK -4.5, L10 2/10, L3 0/3
-- Cam Fowler (1.0, 21.3, PP2): G 4% +1100 MGM -4.1, L10 0/10, L3 0/3 | P 28% +170 MGM -8.9, L10 0/10, L3 0/3 | A 26% +210 MGM -6.4, L10 0/10, L3 0/3
+- Cam Fowler (0.9, 21.3, PP2): G 4% +1100 MGM -4.1, L10 0/10, L3 0/3 | P 28% +170 MGM -8.9, L10 0/10, L3 0/3 | A 26% +210 MGM -6.4, L10 0/10, L3 0/3
 - Dalibor Dvorsky (1.4, 12.1, no PP): G 16% +500 MGM -0.2, L10 2/10, L3 1/3 | P 28% +215 BOL -4.0, L10 2/10, L3 1/3 | A 11% +450 DK -6.7, L10 0/10, L3 0/3
 - Colton Parayko (1.6, 20.7, no PP): G 5% +1100 FD -3.8, L10 0/10, L3 0/3 | P 23% +240 DK -6.2, L10 3/10, L3 1/3 | A 20% +320 DK -4.0, L10 3/10, L3 1/3
 - Justin Barron (1.7, 16.6, no PP): G 3% +1100 FD -5.1, L10 2/10, L3 0/3 | P 21% +320 DK -2.9, L10 4/10, L3 1/3 | A 21% +500 DK +3.9, L10 4/10, L3 1/3
