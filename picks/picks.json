@@ -882,6 +882,21 @@
        "result": "pending"
       }
      ]
+    },
+    {
+     "id": 57,
+     "type": "Points & Assists",
+     "book": "",
+     "status": "pending",
+     "legs": [
+      {
+       "player": "Vincent Trocheck",
+       "team": "UTA",
+       "market": "1+ pt",
+       "price": "+100",
+       "result": "pending"
+      }
+     ]
     }
    ]
   }
