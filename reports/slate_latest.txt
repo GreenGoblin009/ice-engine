@@ -5,12 +5,12 @@ Goalies pulled: none yet
 Times are US Eastern. Read-only: built from the same models as the board.
 
 GAMES (start, projected goals, model game total; book game totals are not pulled)
-- 7:00 PM ET  TBL 3.16 @ BUF 3.14  (total 6.30)
-- 7:30 PM ET  NYR 2.83 @ CGY 2.75  (total 5.58)
-- 9:00 PM ET  PHI 2.54 @ EDM 3.47  (total 6.01)  green light: EDM
-- 9:30 PM ET  UTA 3.03 @ VGK 3.39  (total 6.42)  green light: VGK
-- 10:00 PM ET  NSH 3.03 @ ANA 3.19  (total 6.22)
-- 10:00 PM ET  PIT 3.23 @ SJS 3.03  (total 6.26)
+- 7:00 PM ET  TBL 3.17 @ BUF 3.15  (total 6.32)
+- 7:30 PM ET  NYR 2.84 @ CGY 2.76  (total 5.60)
+- 9:00 PM ET  PHI 2.55 @ EDM 3.49  (total 6.03)  green light: EDM
+- 9:30 PM ET  UTA 3.04 @ VGK 3.41  (total 6.44)  green light: VGK
+- 10:00 PM ET  NSH 3.06 @ ANA 3.15  (total 6.22)
+- 10:00 PM ET  PIT 3.24 @ SJS 3.05  (total 6.28)
 
 GOALIES (shrunk two-season save %, raw save % and games)
 - TBL: no goalie listed
@@ -50,7 +50,7 @@ TEAM FORM, last 10 regular-season games (per game: GF / GA | shots for / against
 - EDM: 3.7 / 2.9 | 25.9 / 26.6 | PP 33.3% (13/39) | PK 79.4%
 - UTA: 3.2 / 4.2 | 29.4 / 26.7 | PP 36.7% (11/30) | PK 63.0%
 - VGK: 2.8 / 2.9 | 26.3 / 26.1 | PP 27.3% (6/22) | PK 75.9%
-- NSH: 3.4 / 2.9 | 27.1 / 28.5 | PP 32.3% (10/31) | PK 90.0%
+- NSH: 3.2 / 2.7 | 27.7 / 28.9 | PP 26.5% (9/34) | PK 92.6%
 - ANA: 4.5 / 4.0 | 24.8 / 27.6 | PP 50.0% (18/36) | PK 68.9%
 - PIT: 3.1 / 3.8 | 26.0 / 26.2 | PP 25.9% (7/27) | PK 66.7%
 - SJS: 2.4 / 3.6 | 27.2 / 31.8 | PP 17.1% (7/41) | PK 74.4%
