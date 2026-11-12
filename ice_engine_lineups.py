@@ -69,7 +69,7 @@ MIN_MATCH_RATE = 0.85  # share of dressed players that must be found in the play
 PP_GAMES = 5      # a team's most recent regular-season games that decide its power-play units
 PP_UNIT_SIZE = 5  # skaters per unit
 
-MATCHUP = re.compile(r"^(.+?)(?:\s*\([^)]*\))?\s+at\s+(.+?)(?:\s*\([^)]*\))?$", re.I)
+MATCHUP = re.compile(r"^(.+?)(?:\s*\([^)]*\))?\s+(?:at|vs\.?)\s+(.+?)(?:\s*\([^)]*\))?$", re.I)  # "vs." is used for neutral-site games (Global Series)
 # "## SATURDAY" (or "## SATURDAY, OCT. 17"): the games after it are another
 # day's, posted early.
 DAY_HEADING = re.compile(r"^(MONDAY|TUESDAY|WEDNESDAY|THURSDAY|FRIDAY|SATURDAY|SUNDAY)"
@@ -220,6 +220,10 @@ def parse_article(body, schedule, nicknames, day):
             squash = {k.replace(" ", ""): v for k, v in nicknames.items()}
             away = nicknames.get(away_nick) or squash.get(away_nick.replace(" ", ""))
             home = nicknames.get(home_nick) or squash.get(home_nick.replace(" ", ""))
+            if (away, home) not in schedule and (home, away) in schedule:
+                # neutral-site headings ("HURRICANES vs. KRAKEN") don't say who is the listed home team
+                away, home = home, away
+                away_nick, home_nick = home_nick, away_nick
             if (away, home) not in schedule:
                 problems.append(f"'{line}': not a game on today's schedule — the page may be "
                                 f"showing another day, or the heading format changed")
