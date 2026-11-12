@@ -1,7 +1,7 @@
 ICE ENGINE SLATE REPORT  2026-11-11
-Lineups pulled: Nov 11, 9:58 PM ET
+Lineups pulled: Nov 11, 10:17 PM ET
 Prices pulled:  Nov 11, 8:36 PM ET
-Goalies pulled: Nov 11, 9:58 PM ET
+Goalies pulled: Nov 11, 10:17 PM ET
 Times are US Eastern. Read-only: built from the same models as the board.
 
 GAMES (start, projected goals, model game total; book game totals are not pulled)
@@ -13,8 +13,8 @@ GAMES (start, projected goals, model game total; book game totals are not pulled
 - 10:00 PM ET  PIT 3.24 @ SJS 3.05  (total 6.28)
 
 GOALIES (shrunk two-season save %, raw save % and games)
-- TBL: Andrei Vasilevskiy expected 0.906 (0.906 raw, 71 GP)  | also listed: Dennis Hildeby 0.906 (0.907 raw, 24 GP)
-- BUF: Ukko-Pekka Luukkonen expected 0.902 (0.901 raw, 46 GP)  | also listed: Colten Ellis 0.901 (0.898 raw, 23 GP)
+- TBL: Andrei Vasilevskiy expected 0.906 (0.906 raw, 72 GP)  | also listed: Dennis Hildeby 0.906 (0.907 raw, 24 GP)
+- BUF: Ukko-Pekka Luukkonen expected 0.900 (0.898 raw, 47 GP)  | also listed: Colten Ellis 0.899 (0.895 raw, 24 GP)
 - NYR: Joonas Korpisalo expected 0.898 (0.894 raw, 32 GP)  | also listed: Dylan Garand 0.910 (0.915 raw, 17 GP)
 - CGY: Devin Cooley expected 0.909 (0.910 raw, 39 GP)  | also listed: Dustin Wolf 0.896 (0.894 raw, 67 GP)
 - PHI: Dan Vladar expected 0.902 (0.901 raw, 62 GP)  | also listed: Joseph Woll 0.900 (0.899 raw, 49 GP)
@@ -87,14 +87,14 @@ TOP 15 POINTS BY ROLE-ADJUSTED CHANCE
 12. Clayton Keller UTA 63%; best -220 MGM; edge -6.1; DK -230; FD -; L10 8/10; L3 3/3; 2.7 shots; 18.4 min; PP1
 13. Leo Carlsson ANA 62%; best -210 DK; edge -5.6; DK -210; FD -; L10 8/10; L3 2/3; 2.2 shots; 20.3 min; PP1
 14. Cutter Gauthier ANA 62%; best -235 MGM; edge -8.1; DK -; FD -; L10 8/10; L3 3/3; 4.6 shots; 18.3 min; PP1
-15. Adam Fox NYR 61%; best -192 BOL; edge -4.3; DK -200; FD -; L10 7/10; L3 2/3; 1.7 shots; 22.8 min; PP1
+15. Adam Fox NYR 61%; best -192 BOL; edge -4.3; DK -200; FD -; L10 7/10; L3 2/3; 1.8 shots; 22.8 min; PP1
 
 TOP 15 ASSISTS BY ROLE-ADJUSTED CHANCE
 1. Connor McDavid EDM 68%; best -375 MGM; edge -11.2; DK -; FD -; L10 9/10; L3 2/3; 3.1 shots; 23.7 min; PP1
 2. Evan Bouchard EDM 64%; best -150 MGM; edge +3.8; DK -180; FD -; L10 8/10; L3 2/3; 2.0 shots; 25.6 min; PP1
 3. Nikita Kucherov TBL 61%; best -190 DK; edge -4.2; DK -190; FD -; L10 6/10; L3 1/3; 3.4 shots; 21.3 min; PP1
 4. Jackson LaCombe ANA 57%; best -135 MGM; edge -0.3; DK -145; FD -; L10 10/10; L3 3/3; 0.7 shots; 27.3 min; PP1
-5. Adam Fox NYR 56%; best -125 MGM; edge +0.2; DK -155; FD -; L10 6/10; L3 2/3; 1.7 shots; 22.8 min; PP1
+5. Adam Fox NYR 56%; best -125 MGM; edge +0.2; DK -155; FD -; L10 6/10; L3 2/3; 1.8 shots; 22.8 min; PP1
 6. Leon Draisaitl EDM 56%; best -165 MGM; edge -6.7; DK -175; FD -; L10 6/10; L3 2/3; 4.2 shots; 21.9 min; PP1
 7. Clayton Keller UTA 55%; best -105 MGM; edge +3.5; DK -130; FD -; L10 8/10; L3 3/3; 2.7 shots; 18.4 min; PP1
 8. Jack Eichel VGK 54%; best -140 MGM; edge -4.8; DK -160; FD -; L10 3/10; L3 2/3; 2.1 shots; 20.0 min; PP1
@@ -162,7 +162,7 @@ BUF
 - Zach Metsa (0.9, 12.3, no PP): G 4% +2200 MGM -0.7, L10 0/10, L3 0/3 | P 14% no price, L10 1/10, L3 0/3 | A 11% no price, L10 1/10, L3 0/3
 NYR
 - Mika Zibanejad (1.8, 20.7, PP1): G 30% +210 BR -2.2, L10 1/10, L3 0/3 | P 63% -175 DK -1.0, L10 6/10, L3 3/3 | A 44% +110 DK -3.8, L10 6/10, L3 3/3
-- Adam Fox (1.7, 22.8, PP1): G 13% +600 MGM -0.8, L10 2/10, L3 0/3 | P 61% -192 BOL -4.3, L10 7/10, L3 2/3 | A 56% -125 MGM +0.2, L10 6/10, L3 2/3
+- Adam Fox (1.8, 22.8, PP1): G 13% +600 MGM -0.8, L10 2/10, L3 0/3 | P 61% -192 BOL -4.3, L10 7/10, L3 2/3 | A 56% -125 MGM +0.2, L10 6/10, L3 2/3
 - J.T. Miller (2.5, 19.0, PP1): G 22% +270 FD -5.3, L10 3/10, L3 0/3 | P 56% -150 MGM -4.4, L10 5/10, L3 1/3 | A 39% +125 DK -5.1, L10 3/10, L3 1/3
 - Pavel Dorofeyev (2.9, 17.0, PP1): G 33% +185 DK -1.6, L10 4/10, L3 2/3 | P 54% -110 MGM +2.0, L10 7/10, L3 2/3 | A 28% +205 DK -5.1, L10 3/10, L3 0/3
 - Alexis Lafreniere (2.2, 18.8, PP1): G 26% +230 MGM -4.1, L10 2/10, L3 0/3 | P 47% -125 DK -8.8, L10 5/10, L3 1/3 | A 34% +165 MGM -3.3, L10 3/10, L3 1/3
@@ -244,7 +244,7 @@ UTA
 - Lawson Crouse (1.2, 14.7, no PP): G 22% +475 BR +4.3, L10 0/10, L3 0/3 | P 39% +170 DK +1.9, L10 2/10, L3 0/3 | A 22% +310 DK -2.3, L10 2/10, L3 0/3
 - Barrett Hayton (2.1, 14.4, PP2): G 14% +425 DK -4.7, L10 1/10, L3 1/3 | P 36% +130 DK -7.2, L10 4/10, L3 1/3 | A 24% +225 DK -6.4, L10 3/10, L3 0/3
 - Mackenzie Weegar (2.0, 22.2, PP2): G 7% +775 MGM -4.6, L10 0/10, L3 0/3 | P 31% +175 DK -5.9, L10 3/10, L3 1/3 | A 24% +245 DK -4.8, L10 3/10, L3 1/3
-- Michael Carcone (2.3, 11.8, PP2): G 17% +540 BR +1.7, L10 2/10, L3 0/3 | P 30% no price, L10 2/10, L3 0/3 | A 17% no price, L10 1/10, L3 0/3
+- Michael Carcone (2.4, 11.8, PP2): G 17% +540 BR +1.7, L10 2/10, L3 0/3 | P 30% no price, L10 2/10, L3 0/3 | A 17% no price, L10 1/10, L3 0/3
 - Jack McBain (1.1, 12.5, no PP): G 11% +750 DK -1.1, L10 0/10, L3 0/3 | P 24% +233 BOL -5.7, L10 1/10, L3 0/3 | A 15% +360 DK -6.9, L10 1/10, L3 0/3
 - Kevin Stenlund (1.1, 13.4, no PP): G 6% +1200 DK -1.5, L10 1/10, L3 0/3 | P 20% no price, L10 2/10, L3 0/3 | A 16% no price, L10 2/10, L3 0/3
 - Andrew Peeke (1.0, 17.7, no PP): G 7% +2000 FD +2.4, L10 1/10, L3 1/3 | P 19% +320 DK -4.6, L10 3/10, L3 1/3 | A 12% +380 DK -8.7, L10 2/10, L3 0/3
@@ -327,10 +327,10 @@ SJS
 - Macklin Celebrini (4.0, 23.3, PP1): G 40% +130 FD -3.4, L10 2/10, L3 1/3 | P 70% no price, L10 5/10, L3 2/3 | A 53% -125 MGM -2.7, L10 3/10, L3 1/3
 - Will Smith (2.6, 19.8, PP1): G 28% +195 MGM -5.5, L10 3/10, L3 1/3 | P 53% -160 MGM -8.1, L10 4/10, L3 2/3 | A 36% +130 DK -7.9, L10 2/10, L3 2/3
 - Alexander Wennberg (1.5, 20.3, no PP): G 20% +400 MGM +0.1, L10 0/10, L3 0/3 | P 51% +102 BOL +1.4, L10 3/10, L3 1/3 | A 39% +170 DK +2.2, L10 3/10, L3 1/3
-- Ivar Stenberg (1.6, 16.1, PP1): G 27% +300 MGM +2.2, L10 4/10, L3 2/3 | P 48% -118 MGM -6.4, L10 5/10, L3 2/3 | A 29% +165 MGM -8.5, L10 1/10, L3 0/3
+- Ivar Stenberg (1.7, 16.1, PP1): G 27% +300 MGM +2.2, L10 4/10, L3 2/3 | P 48% -118 MGM -6.4, L10 5/10, L3 2/3 | A 29% +165 MGM -8.5, L10 1/10, L3 0/3
 - Tyler Toffoli (2.0, 13.3, PP1): G 21% +370 FD -0.5, L10 2/10, L3 1/3 | P 44% +155 DK +4.3, L10 3/10, L3 1/3 | A 31% +330 DK +8.1, L10 2/10, L3 1/3
 - Mason Marchment (1.6, 16.6, PP1): G 22% +310 FD -2.8, L10 1/10, L3 0/3 | P 43% +118 BOL -2.7, L10 3/10, L3 1/3 | A 28% +230 DK -2.0, L10 3/10, L3 1/3
-- Michael Misa (1.8, 14.7, PP2): G 20% +340 BR -3.2, L10 3/10, L3 1/3 | P 42% +105 MGM -6.9, L10 6/10, L3 1/3 | A 26% +195 MGM -8.4, L10 3/10, L3 0/3
+- Michael Misa (1.9, 14.7, PP2): G 20% +340 BR -3.2, L10 3/10, L3 1/3 | P 42% +105 MGM -6.9, L10 6/10, L3 1/3 | A 26% +195 MGM -8.4, L10 3/10, L3 0/3
 - Dmitry Orlov (1.0, 17.2, PP2): G 5% +1200 DK -2.8, L10 1/10, L3 0/3 | P 39% no price, L10 6/10, L3 2/3 | A 36% no price, L10 5/10, L3 2/3
 - Jacob Trouba (1.5, 22.1, no PP): G 12% +900 MGM +2.0, L10 1/10, L3 0/3 | P 38% +125 MGM -6.0, L10 4/10, L3 0/3 | A 30% +195 MGM -4.3, L10 4/10, L3 0/3
 - Collin Graf (0.9, 15.3, PP2): G 21% +510 BR +4.9, L10 1/10, L3 0/3 | P 38% no price, L10 1/10, L3 0/3 | A 22% no price, L10 1/10, L3 0/3
