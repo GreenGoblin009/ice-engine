@@ -80,7 +80,7 @@ TIME_HEADING = re.compile(r"^\d{1,2}(?::\d{2})?\s*[ap]\.?m\.?\s*ET\b", re.I)
 # line that is just a team nickname is handled separately in parse_article.
 TEAM_BLOCK = re.compile(r"^(.+?)(?: projected)? (?:lineup|lines)\b.*$", re.I)
 LABEL = re.compile(r"^([A-Za-z][A-Za-z ]{2,24}):\s*(.*)$")
-NAME_SEPARATOR = re.compile(r"\s*(?:-{2,}|[–—]+)\s*")
+NAME_SEPARATOR = re.compile(r"\s*(?:-{2,}|-\s+-|[–—]+)\s*")  # "-\s+-" = a spaced pair of hyphens ("Imama -- Schwindt - - Hathaway")
 # Two to five words, each starting with a letter: "T.J. Hughes", "K’Andre
 # Miller", "Joel Eriksson Ek", "Oliver Ekman-Larsson".
 PLAYER_NAME = re.compile(r"^[^\W\d_](?:[^\W\d_]|[.'’\-])*(?: [^\W\d_](?:[^\W\d_]|[.'’\-])*){1,4}$")
