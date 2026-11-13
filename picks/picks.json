@@ -937,14 +937,14 @@
           "id": 60,
           "type": "Points & Assists",
           "book": "",
-          "status": "pending",
+          "status": "miss",
           "legs": [
             {
               "player": "Dylan Holloway",
               "team": "STL",
               "market": "1+ pt",
               "price": "+100",
-              "result": "pending"
+              "result": "miss"
             }
           ]
         },
@@ -952,14 +952,14 @@
           "id": 61,
           "type": "Goals",
           "book": "",
-          "status": "pending",
+          "status": "miss",
           "legs": [
             {
               "player": "Roman Kantserov",
               "team": "CHI",
               "market": "Anytime goal",
               "price": "+250",
-              "result": "pending"
+              "result": "miss"
             }
           ]
         }
