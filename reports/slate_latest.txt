@@ -6,7 +6,7 @@ Times are US Eastern. Read-only: built from the same models as the board.
 
 GAMES (start, projected goals, model game total; book game totals are not pulled)
 - 9:00 PM ET  NYR 3.15 @ VAN 2.89  (total 6.04)
-- 10:00 PM ET  NSH 2.80 @ VGK 3.11  (total 5.90)
+- 10:00 PM ET  NSH 2.80 @ VGK 3.10  (total 5.90)
 
 GOALIES (shrunk two-season save %, raw save % and games)
 - NYR: no goalie listed
