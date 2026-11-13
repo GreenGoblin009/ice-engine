@@ -1,969 +1,969 @@
 {
- "days": [
-  {
-   "date": "2026-10-31",
-   "slips": [
+  "days": [
     {
-     "id": 1,
-     "type": "Points & Assists",
-     "book": "",
-     "status": "miss",
-     "legs": [
-      {
-       "player": "Zach Werenski",
-       "team": "CBJ",
-       "market": "1+ ast",
-       "price": "-111",
-       "result": "miss"
-      }
-     ]
+      "date": "2026-10-31",
+      "slips": [
+        {
+          "id": 1,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "miss",
+          "legs": [
+            {
+              "player": "Zach Werenski",
+              "team": "CBJ",
+              "market": "1+ ast",
+              "price": "-111",
+              "result": "miss"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "miss",
+          "legs": [
+            {
+              "player": "Mikko Rantanen",
+              "team": "DAL",
+              "market": "1+ ast",
+              "price": "-120",
+              "result": "miss"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "miss",
+          "legs": [
+            {
+              "player": "Matvei Gridin",
+              "team": "CGY",
+              "market": "1+ pt",
+              "price": "+140",
+              "result": "miss"
+            }
+          ]
+        }
+      ]
     },
     {
-     "id": 2,
-     "type": "Points & Assists",
-     "book": "",
-     "status": "miss",
-     "legs": [
-      {
-       "player": "Mikko Rantanen",
-       "team": "DAL",
-       "market": "1+ ast",
-       "price": "-120",
-       "result": "miss"
-      }
-     ]
+      "date": "2026-11-01",
+      "slips": [
+        {
+          "id": 4,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "hit",
+          "legs": [
+            {
+              "player": "Andrei Svechnikov",
+              "team": "CAR",
+              "market": "1+ pt",
+              "price": "",
+              "result": "hit"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "hit",
+          "legs": [
+            {
+              "player": "Jake Sanderson",
+              "team": "OTT",
+              "market": "1+ pt",
+              "price": "",
+              "result": "hit"
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "hit",
+          "legs": [
+            {
+              "player": "Clayton Keller",
+              "team": "UTA",
+              "market": "1+ ast",
+              "price": "",
+              "result": "hit"
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "hit",
+          "legs": [
+            {
+              "player": "Mika Zibanejad",
+              "team": "NYR",
+              "market": "1+ pt",
+              "price": "",
+              "result": "hit"
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "type": "Goals",
+          "book": "",
+          "status": "miss",
+          "legs": [
+            {
+              "player": "Leon Draisaitl",
+              "team": "EDM",
+              "market": "Anytime goal",
+              "price": "",
+              "result": "miss"
+            }
+          ]
+        }
+      ]
     },
     {
-     "id": 3,
-     "type": "Points & Assists",
-     "book": "",
-     "status": "miss",
-     "legs": [
-      {
-       "player": "Matvei Gridin",
-       "team": "CGY",
-       "market": "1+ pt",
-       "price": "+140",
-       "result": "miss"
-      }
-     ]
+      "date": "2026-11-02",
+      "slips": [
+        {
+          "id": 9,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "hit",
+          "legs": [
+            {
+              "player": "David Pastrnak",
+              "team": "BOS",
+              "market": "1+ ast",
+              "price": "-115",
+              "result": "hit"
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "hit",
+          "legs": [
+            {
+              "player": "Lucas Raymond",
+              "team": "DET",
+              "market": "1+ ast",
+              "price": "+125",
+              "result": "hit"
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "hit",
+          "legs": [
+            {
+              "player": "Brady Tkachuk",
+              "team": "FLA",
+              "market": "1+ ast",
+              "price": "+150",
+              "result": "hit"
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "hit",
+          "legs": [
+            {
+              "player": "Morgan Geekie",
+              "team": "BOS",
+              "market": "1+ pt",
+              "price": "-120",
+              "result": "hit"
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "type": "Goals",
+          "book": "",
+          "status": "miss",
+          "legs": [
+            {
+              "player": "Connor Bedard",
+              "team": "CHI",
+              "market": "Anytime goal",
+              "price": "+205",
+              "result": "miss"
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "type": "Goals",
+          "book": "",
+          "status": "miss",
+          "legs": [
+            {
+              "player": "Nathan MacKinnon",
+              "team": "COL",
+              "market": "Anytime goal",
+              "price": "+115",
+              "result": "miss"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-03",
+      "slips": [
+        {
+          "id": 15,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "hit",
+          "legs": [
+            {
+              "player": "Trevor Zegras",
+              "team": "PHI",
+              "market": "1+ pt",
+              "price": "-111",
+              "result": "hit"
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "hit",
+          "legs": [
+            {
+              "player": "Ryan Nugent-Hopkins",
+              "team": "EDM",
+              "market": "1+ pt",
+              "price": "-111",
+              "result": "hit"
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "miss",
+          "legs": [
+            {
+              "player": "Viktor Arvidsson",
+              "team": "DET",
+              "market": "1+ pt",
+              "price": "-125",
+              "result": "miss"
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "miss",
+          "legs": [
+            {
+              "player": "Alex Tuch",
+              "team": "WSH",
+              "market": "1+ pt",
+              "price": "-111",
+              "result": "miss"
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "hit",
+          "legs": [
+            {
+              "player": "Cale Makar",
+              "team": "COL",
+              "market": "1+ ast",
+              "price": "-110",
+              "result": "hit"
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "miss",
+          "legs": [
+            {
+              "player": "William Nylander",
+              "team": "TOR",
+              "market": "1+ ast",
+              "price": "+110",
+              "result": "miss"
+            }
+          ]
+        },
+        {
+          "id": 21,
+          "type": "Goals",
+          "book": "",
+          "status": "miss",
+          "legs": [
+            {
+              "player": "Wyatt Johnston",
+              "team": "DAL",
+              "market": "Anytime goal",
+              "price": "+190",
+              "result": "miss"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-04",
+      "slips": [
+        {
+          "id": 22,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "hit",
+          "legs": [
+            {
+              "player": "Shane Pinto",
+              "team": "OTT",
+              "market": "1+ pt",
+              "price": "+100",
+              "result": "hit"
+            }
+          ]
+        },
+        {
+          "id": 23,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "hit",
+          "legs": [
+            {
+              "player": "Kaapo Kakko",
+              "team": "SEA",
+              "market": "1+ pt",
+              "price": "+130",
+              "result": "hit"
+            }
+          ]
+        },
+        {
+          "id": 24,
+          "type": "Goals",
+          "book": "",
+          "status": "hit",
+          "legs": [
+            {
+              "player": "Roman Kantserov",
+              "team": "CHI",
+              "market": "Anytime goal",
+              "price": "+290",
+              "result": "hit"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-05",
+      "slips": [
+        {
+          "id": 25,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "miss",
+          "legs": [
+            {
+              "player": "Travis Konecny",
+              "team": "PHI",
+              "market": "1+ pt",
+              "price": "-110",
+              "result": "miss"
+            }
+          ]
+        },
+        {
+          "id": 26,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "hit",
+          "legs": [
+            {
+              "player": "Sebastian Aho",
+              "team": "CAR",
+              "market": "1+ ast",
+              "price": "+120",
+              "result": "hit"
+            }
+          ]
+        },
+        {
+          "id": 27,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "miss",
+          "legs": [
+            {
+              "player": "Dylan Holloway",
+              "team": "STL",
+              "market": "1+ pt",
+              "price": "+120",
+              "result": "miss"
+            }
+          ]
+        },
+        {
+          "id": 28,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "hit",
+          "legs": [
+            {
+              "player": "Brock Nelson",
+              "team": "COL",
+              "market": "1+ pt",
+              "price": "+105",
+              "result": "hit"
+            }
+          ]
+        },
+        {
+          "id": 29,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "hit",
+          "legs": [
+            {
+              "player": "Nick Suzuki",
+              "team": "MTL",
+              "market": "1+ ast",
+              "price": "-120",
+              "result": "hit"
+            }
+          ]
+        },
+        {
+          "id": 30,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "hit",
+          "legs": [
+            {
+              "player": "Vincent Trocheck",
+              "team": "UTA",
+              "market": "1+ pt",
+              "price": "-103",
+              "result": "hit"
+            }
+          ]
+        },
+        {
+          "id": 31,
+          "type": "Goals",
+          "book": "",
+          "status": "hit",
+          "legs": [
+            {
+              "player": "Anthony Mantha",
+              "team": "NJD",
+              "market": "Anytime goal",
+              "price": "+350",
+              "result": "hit"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "slips": [
+        {
+          "id": 32,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "miss",
+          "legs": [
+            {
+              "player": "Valeri Nichushkin",
+              "team": "CBJ",
+              "market": "1+ pt",
+              "price": "+132",
+              "result": "miss"
+            }
+          ]
+        },
+        {
+          "id": 33,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "miss",
+          "legs": [
+            {
+              "player": "Mattias Samuelsson",
+              "team": "BUF",
+              "market": "1+ pt",
+              "price": "+174",
+              "result": "miss"
+            }
+          ]
+        },
+        {
+          "id": 34,
+          "type": "Goals",
+          "book": "",
+          "status": "hit",
+          "legs": [
+            {
+              "player": "Macklin Celebrini",
+              "team": "SJS",
+              "market": "Anytime goal",
+              "price": "+190",
+              "result": "hit"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-07",
+      "slips": [
+        {
+          "id": 35,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "hit",
+          "legs": [
+            {
+              "player": "Aliaksei Protas",
+              "team": "WSH",
+              "market": "1+ pt",
+              "price": "+155",
+              "result": "hit"
+            }
+          ]
+        },
+        {
+          "id": 37,
+          "type": "Goals",
+          "book": "",
+          "status": "miss",
+          "legs": [
+            {
+              "player": "Sam Reinhart",
+              "team": "FLA",
+              "market": "Anytime goal",
+              "price": "+180",
+              "result": "miss"
+            }
+          ]
+        },
+        {
+          "id": 38,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "miss",
+          "legs": [
+            {
+              "player": "Brandon Hagel",
+              "team": "TBL",
+              "market": "1+ ast",
+              "price": "+195",
+              "result": "miss"
+            }
+          ]
+        },
+        {
+          "id": 39,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "hit",
+          "legs": [
+            {
+              "player": "Evgeni Malkin",
+              "team": "PIT",
+              "market": "1+ pt",
+              "price": "-115",
+              "result": "hit"
+            }
+          ]
+        },
+        {
+          "id": 40,
+          "type": "Goals",
+          "book": "",
+          "status": "miss",
+          "legs": [
+            {
+              "player": "Kirill Kaprizov",
+              "team": "MIN",
+              "market": "Anytime goal",
+              "price": "+112",
+              "result": "miss"
+            }
+          ]
+        },
+        {
+          "id": 41,
+          "type": "Goals",
+          "book": "",
+          "status": "miss",
+          "legs": [
+            {
+              "player": "Alex DeBrincat",
+              "team": "DET",
+              "market": "Anytime goal",
+              "price": "+185",
+              "result": "miss"
+            }
+          ]
+        },
+        {
+          "id": 42,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "miss",
+          "legs": [
+            {
+              "player": "Gabriel Landeskog",
+              "team": "COL",
+              "market": "1+ pt",
+              "price": "+130",
+              "result": "miss"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-08",
+      "slips": [
+        {
+          "id": 43,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "hit",
+          "legs": [
+            {
+              "player": "David Pastrnak",
+              "team": "BOS",
+              "market": "1+ ast",
+              "price": "-115",
+              "result": "hit"
+            }
+          ]
+        },
+        {
+          "id": 44,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "miss",
+          "legs": [
+            {
+              "player": "Sam Bennett",
+              "team": "FLA",
+              "market": "1+ pt",
+              "price": "+110",
+              "result": "miss"
+            }
+          ]
+        },
+        {
+          "id": 45,
+          "type": "Goals",
+          "book": "",
+          "status": "hit",
+          "legs": [
+            {
+              "player": "Morgan Geekie",
+              "team": "BOS",
+              "market": "Anytime goal",
+              "price": "+220",
+              "result": "hit"
+            }
+          ]
+        },
+        {
+          "id": 46,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "hit",
+          "legs": [
+            {
+              "player": "Ivan Barbashev",
+              "team": "VGK",
+              "market": "1+ pt",
+              "price": "+145",
+              "result": "hit"
+            }
+          ]
+        },
+        {
+          "id": 47,
+          "type": "Goals",
+          "book": "",
+          "status": "miss",
+          "legs": [
+            {
+              "player": "Nikita Kucherov",
+              "team": "TBL",
+              "market": "Anytime goal",
+              "price": "+170",
+              "result": "miss"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-09",
+      "slips": [
+        {
+          "id": 48,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "miss",
+          "legs": [
+            {
+              "player": "Zach Hyman",
+              "team": "EDM",
+              "market": "1+ pt",
+              "price": "-119",
+              "result": "miss"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-10",
+      "slips": [
+        {
+          "id": 49,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "miss",
+          "legs": [
+            {
+              "player": "Nick Suzuki",
+              "team": "MTL",
+              "market": "1+ ast",
+              "price": "+100",
+              "result": "miss"
+            }
+          ]
+        },
+        {
+          "id": 50,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "hit",
+          "legs": [
+            {
+              "player": "Brock Nelson",
+              "team": "COL",
+              "market": "1+ pt",
+              "price": "+120",
+              "result": "hit"
+            }
+          ]
+        },
+        {
+          "id": 51,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "miss",
+          "legs": [
+            {
+              "player": "Alex Tuch",
+              "team": "WSH",
+              "market": "1+ pt",
+              "price": "-112",
+              "result": "miss"
+            }
+          ]
+        },
+        {
+          "id": 52,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "miss",
+          "legs": [
+            {
+              "player": "Shane Pinto",
+              "team": "OTT",
+              "market": "1+ pt",
+              "price": "-103",
+              "result": "miss"
+            }
+          ]
+        },
+        {
+          "id": 53,
+          "type": "Goals",
+          "book": "",
+          "status": "miss",
+          "legs": [
+            {
+              "player": "Alex Tuch",
+              "team": "WSH",
+              "market": "Anytime goal",
+              "price": "+220",
+              "result": "miss"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-11",
+      "slips": [
+        {
+          "id": 54,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "miss",
+          "legs": [
+            {
+              "player": "Travis Konecny",
+              "team": "PHI",
+              "market": "1+ pt",
+              "price": "-106",
+              "result": "miss"
+            }
+          ]
+        },
+        {
+          "id": 55,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "hit",
+          "legs": [
+            {
+              "player": "Evan Bouchard",
+              "team": "EDM",
+              "market": "1+ ast",
+              "price": "-150",
+              "result": "hit"
+            }
+          ]
+        },
+        {
+          "id": 56,
+          "type": "Goals",
+          "book": "",
+          "status": "hit",
+          "legs": [
+            {
+              "player": "Steven Stamkos",
+              "team": "NSH",
+              "market": "Anytime goal",
+              "price": "+170",
+              "result": "hit"
+            }
+          ]
+        },
+        {
+          "id": 57,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "miss",
+          "legs": [
+            {
+              "player": "Vincent Trocheck",
+              "team": "UTA",
+              "market": "1+ pt",
+              "price": "+100",
+              "result": "miss"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-12",
+      "slips": [
+        {
+          "id": 58,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "miss",
+          "legs": [
+            {
+              "player": "Shayne Gostisbehere",
+              "team": "CAR",
+              "market": "1+ pt",
+              "price": "-109",
+              "result": "miss"
+            }
+          ]
+        },
+        {
+          "id": 59,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "hit",
+          "legs": [
+            {
+              "player": "Artturi Lehkonen",
+              "team": "COL",
+              "market": "1+ pt",
+              "price": "+103",
+              "result": "hit"
+            }
+          ]
+        },
+        {
+          "id": 60,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "pending",
+          "legs": [
+            {
+              "player": "Dylan Holloway",
+              "team": "STL",
+              "market": "1+ pt",
+              "price": "+100",
+              "result": "pending"
+            }
+          ]
+        },
+        {
+          "id": 61,
+          "type": "Goals",
+          "book": "",
+          "status": "pending",
+          "legs": [
+            {
+              "player": "Roman Kantserov",
+              "team": "CHI",
+              "market": "Anytime goal",
+              "price": "+250",
+              "result": "pending"
+            }
+          ]
+        }
+      ]
     }
-   ]
-  },
-  {
-   "date": "2026-11-01",
-   "slips": [
-    {
-     "id": 4,
-     "type": "Points & Assists",
-     "book": "",
-     "status": "hit",
-     "legs": [
-      {
-       "player": "Andrei Svechnikov",
-       "team": "CAR",
-       "market": "1+ pt",
-       "price": "",
-       "result": "hit"
-      }
-     ]
-    },
-    {
-     "id": 5,
-     "type": "Points & Assists",
-     "book": "",
-     "status": "hit",
-     "legs": [
-      {
-       "player": "Jake Sanderson",
-       "team": "OTT",
-       "market": "1+ pt",
-       "price": "",
-       "result": "hit"
-      }
-     ]
-    },
-    {
-     "id": 6,
-     "type": "Points & Assists",
-     "book": "",
-     "status": "hit",
-     "legs": [
-      {
-       "player": "Clayton Keller",
-       "team": "UTA",
-       "market": "1+ ast",
-       "price": "",
-       "result": "hit"
-      }
-     ]
-    },
-    {
-     "id": 7,
-     "type": "Points & Assists",
-     "book": "",
-     "status": "hit",
-     "legs": [
-      {
-       "player": "Mika Zibanejad",
-       "team": "NYR",
-       "market": "1+ pt",
-       "price": "",
-       "result": "hit"
-      }
-     ]
-    },
-    {
-     "id": 8,
-     "type": "Goals",
-     "book": "",
-     "status": "miss",
-     "legs": [
-      {
-       "player": "Leon Draisaitl",
-       "team": "EDM",
-       "market": "Anytime goal",
-       "price": "",
-       "result": "miss"
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "date": "2026-11-02",
-   "slips": [
-    {
-     "id": 9,
-     "type": "Points & Assists",
-     "book": "",
-     "status": "hit",
-     "legs": [
-      {
-       "player": "David Pastrnak",
-       "team": "BOS",
-       "market": "1+ ast",
-       "price": "-115",
-       "result": "hit"
-      }
-     ]
-    },
-    {
-     "id": 10,
-     "type": "Points & Assists",
-     "book": "",
-     "status": "hit",
-     "legs": [
-      {
-       "player": "Lucas Raymond",
-       "team": "DET",
-       "market": "1+ ast",
-       "price": "+125",
-       "result": "hit"
-      }
-     ]
-    },
-    {
-     "id": 11,
-     "type": "Points & Assists",
-     "book": "",
-     "status": "hit",
-     "legs": [
-      {
-       "player": "Brady Tkachuk",
-       "team": "FLA",
-       "market": "1+ ast",
-       "price": "+150",
-       "result": "hit"
-      }
-     ]
-    },
-    {
-     "id": 12,
-     "type": "Points & Assists",
-     "book": "",
-     "status": "hit",
-     "legs": [
-      {
-       "player": "Morgan Geekie",
-       "team": "BOS",
-       "market": "1+ pt",
-       "price": "-120",
-       "result": "hit"
-      }
-     ]
-    },
-    {
-     "id": 13,
-     "type": "Goals",
-     "book": "",
-     "status": "miss",
-     "legs": [
-      {
-       "player": "Connor Bedard",
-       "team": "CHI",
-       "market": "Anytime goal",
-       "price": "+205",
-       "result": "miss"
-      }
-     ]
-    },
-    {
-     "id": 14,
-     "type": "Goals",
-     "book": "",
-     "status": "miss",
-     "legs": [
-      {
-       "player": "Nathan MacKinnon",
-       "team": "COL",
-       "market": "Anytime goal",
-       "price": "+115",
-       "result": "miss"
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "date": "2026-11-03",
-   "slips": [
-    {
-     "id": 15,
-     "type": "Points & Assists",
-     "book": "",
-     "status": "hit",
-     "legs": [
-      {
-       "player": "Trevor Zegras",
-       "team": "PHI",
-       "market": "1+ pt",
-       "price": "-111",
-       "result": "hit"
-      }
-     ]
-    },
-    {
-     "id": 16,
-     "type": "Points & Assists",
-     "book": "",
-     "status": "hit",
-     "legs": [
-      {
-       "player": "Ryan Nugent-Hopkins",
-       "team": "EDM",
-       "market": "1+ pt",
-       "price": "-111",
-       "result": "hit"
-      }
-     ]
-    },
-    {
-     "id": 17,
-     "type": "Points & Assists",
-     "book": "",
-     "status": "miss",
-     "legs": [
-      {
-       "player": "Viktor Arvidsson",
-       "team": "DET",
-       "market": "1+ pt",
-       "price": "-125",
-       "result": "miss"
-      }
-     ]
-    },
-    {
-     "id": 18,
-     "type": "Points & Assists",
-     "book": "",
-     "status": "miss",
-     "legs": [
-      {
-       "player": "Alex Tuch",
-       "team": "WSH",
-       "market": "1+ pt",
-       "price": "-111",
-       "result": "miss"
-      }
-     ]
-    },
-    {
-     "id": 19,
-     "type": "Points & Assists",
-     "book": "",
-     "status": "hit",
-     "legs": [
-      {
-       "player": "Cale Makar",
-       "team": "COL",
-       "market": "1+ ast",
-       "price": "-110",
-       "result": "hit"
-      }
-     ]
-    },
-    {
-     "id": 20,
-     "type": "Points & Assists",
-     "book": "",
-     "status": "miss",
-     "legs": [
-      {
-       "player": "William Nylander",
-       "team": "TOR",
-       "market": "1+ ast",
-       "price": "+110",
-       "result": "miss"
-      }
-     ]
-    },
-    {
-     "id": 21,
-     "type": "Goals",
-     "book": "",
-     "status": "miss",
-     "legs": [
-      {
-       "player": "Wyatt Johnston",
-       "team": "DAL",
-       "market": "Anytime goal",
-       "price": "+190",
-       "result": "miss"
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "date": "2026-11-04",
-   "slips": [
-    {
-     "id": 22,
-     "type": "Points & Assists",
-     "book": "",
-     "status": "hit",
-     "legs": [
-      {
-       "player": "Shane Pinto",
-       "team": "OTT",
-       "market": "1+ pt",
-       "price": "+100",
-       "result": "hit"
-      }
-     ]
-    },
-    {
-     "id": 23,
-     "type": "Points & Assists",
-     "book": "",
-     "status": "hit",
-     "legs": [
-      {
-       "player": "Kaapo Kakko",
-       "team": "SEA",
-       "market": "1+ pt",
-       "price": "+130",
-       "result": "hit"
-      }
-     ]
-    },
-    {
-     "id": 24,
-     "type": "Goals",
-     "book": "",
-     "status": "hit",
-     "legs": [
-      {
-       "player": "Roman Kantserov",
-       "team": "CHI",
-       "market": "Anytime goal",
-       "price": "+290",
-       "result": "hit"
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "date": "2026-11-05",
-   "slips": [
-    {
-     "id": 25,
-     "type": "Points & Assists",
-     "book": "",
-     "status": "miss",
-     "legs": [
-      {
-       "player": "Travis Konecny",
-       "team": "PHI",
-       "market": "1+ pt",
-       "price": "-110",
-       "result": "miss"
-      }
-     ]
-    },
-    {
-     "id": 26,
-     "type": "Points & Assists",
-     "book": "",
-     "status": "hit",
-     "legs": [
-      {
-       "player": "Sebastian Aho",
-       "team": "CAR",
-       "market": "1+ ast",
-       "price": "+120",
-       "result": "hit"
-      }
-     ]
-    },
-    {
-     "id": 27,
-     "type": "Points & Assists",
-     "book": "",
-     "status": "miss",
-     "legs": [
-      {
-       "player": "Dylan Holloway",
-       "team": "STL",
-       "market": "1+ pt",
-       "price": "+120",
-       "result": "miss"
-      }
-     ]
-    },
-    {
-     "id": 28,
-     "type": "Points & Assists",
-     "book": "",
-     "status": "hit",
-     "legs": [
-      {
-       "player": "Brock Nelson",
-       "team": "COL",
-       "market": "1+ pt",
-       "price": "+105",
-       "result": "hit"
-      }
-     ]
-    },
-    {
-     "id": 29,
-     "type": "Points & Assists",
-     "book": "",
-     "status": "hit",
-     "legs": [
-      {
-       "player": "Nick Suzuki",
-       "team": "MTL",
-       "market": "1+ ast",
-       "price": "-120",
-       "result": "hit"
-      }
-     ]
-    },
-    {
-     "id": 30,
-     "type": "Points & Assists",
-     "book": "",
-     "status": "hit",
-     "legs": [
-      {
-       "player": "Vincent Trocheck",
-       "team": "UTA",
-       "market": "1+ pt",
-       "price": "-103",
-       "result": "hit"
-      }
-     ]
-    },
-    {
-     "id": 31,
-     "type": "Goals",
-     "book": "",
-     "status": "hit",
-     "legs": [
-      {
-       "player": "Anthony Mantha",
-       "team": "NJD",
-       "market": "Anytime goal",
-       "price": "+350",
-       "result": "hit"
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "date": "2026-11-06",
-   "slips": [
-    {
-     "id": 32,
-     "type": "Points & Assists",
-     "book": "",
-     "status": "miss",
-     "legs": [
-      {
-       "player": "Valeri Nichushkin",
-       "team": "CBJ",
-       "market": "1+ pt",
-       "price": "+132",
-       "result": "miss"
-      }
-     ]
-    },
-    {
-     "id": 33,
-     "type": "Points & Assists",
-     "book": "",
-     "status": "miss",
-     "legs": [
-      {
-       "player": "Mattias Samuelsson",
-       "team": "BUF",
-       "market": "1+ pt",
-       "price": "+174",
-       "result": "miss"
-      }
-     ]
-    },
-    {
-     "id": 34,
-     "type": "Goals",
-     "book": "",
-     "status": "hit",
-     "legs": [
-      {
-       "player": "Macklin Celebrini",
-       "team": "SJS",
-       "market": "Anytime goal",
-       "price": "+190",
-       "result": "hit"
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "date": "2026-11-07",
-   "slips": [
-    {
-     "id": 35,
-     "type": "Points & Assists",
-     "book": "",
-     "status": "hit",
-     "legs": [
-      {
-       "player": "Aliaksei Protas",
-       "team": "WSH",
-       "market": "1+ pt",
-       "price": "+155",
-       "result": "hit"
-      }
-     ]
-    },
-    {
-     "id": 37,
-     "type": "Goals",
-     "book": "",
-     "status": "miss",
-     "legs": [
-      {
-       "player": "Sam Reinhart",
-       "team": "FLA",
-       "market": "Anytime goal",
-       "price": "+180",
-       "result": "miss"
-      }
-     ]
-    },
-    {
-     "id": 38,
-     "type": "Points & Assists",
-     "book": "",
-     "status": "miss",
-     "legs": [
-      {
-       "player": "Brandon Hagel",
-       "team": "TBL",
-       "market": "1+ ast",
-       "price": "+195",
-       "result": "miss"
-      }
-     ]
-    },
-    {
-     "id": 39,
-     "type": "Points & Assists",
-     "book": "",
-     "status": "hit",
-     "legs": [
-      {
-       "player": "Evgeni Malkin",
-       "team": "PIT",
-       "market": "1+ pt",
-       "price": "-115",
-       "result": "hit"
-      }
-     ]
-    },
-    {
-     "id": 40,
-     "type": "Goals",
-     "book": "",
-     "status": "miss",
-     "legs": [
-      {
-       "player": "Kirill Kaprizov",
-       "team": "MIN",
-       "market": "Anytime goal",
-       "price": "+112",
-       "result": "miss"
-      }
-     ]
-    },
-    {
-     "id": 41,
-     "type": "Goals",
-     "book": "",
-     "status": "miss",
-     "legs": [
-      {
-       "player": "Alex DeBrincat",
-       "team": "DET",
-       "market": "Anytime goal",
-       "price": "+185",
-       "result": "miss"
-      }
-     ]
-    },
-    {
-     "id": 42,
-     "type": "Points & Assists",
-     "book": "",
-     "status": "miss",
-     "legs": [
-      {
-       "player": "Gabriel Landeskog",
-       "team": "COL",
-       "market": "1+ pt",
-       "price": "+130",
-       "result": "miss"
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "date": "2026-11-08",
-   "slips": [
-    {
-     "id": 43,
-     "type": "Points & Assists",
-     "book": "",
-     "status": "hit",
-     "legs": [
-      {
-       "player": "David Pastrnak",
-       "team": "BOS",
-       "market": "1+ ast",
-       "price": "-115",
-       "result": "hit"
-      }
-     ]
-    },
-    {
-     "id": 44,
-     "type": "Points & Assists",
-     "book": "",
-     "status": "miss",
-     "legs": [
-      {
-       "player": "Sam Bennett",
-       "team": "FLA",
-       "market": "1+ pt",
-       "price": "+110",
-       "result": "miss"
-      }
-     ]
-    },
-    {
-     "id": 45,
-     "type": "Goals",
-     "book": "",
-     "status": "hit",
-     "legs": [
-      {
-       "player": "Morgan Geekie",
-       "team": "BOS",
-       "market": "Anytime goal",
-       "price": "+220",
-       "result": "hit"
-      }
-     ]
-    },
-    {
-     "id": 46,
-     "type": "Points & Assists",
-     "book": "",
-     "status": "hit",
-     "legs": [
-      {
-       "player": "Ivan Barbashev",
-       "team": "VGK",
-       "market": "1+ pt",
-       "price": "+145",
-       "result": "hit"
-      }
-     ]
-    },
-    {
-     "id": 47,
-     "type": "Goals",
-     "book": "",
-     "status": "miss",
-     "legs": [
-      {
-       "player": "Nikita Kucherov",
-       "team": "TBL",
-       "market": "Anytime goal",
-       "price": "+170",
-       "result": "miss"
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "date": "2026-11-09",
-   "slips": [
-    {
-     "id": 48,
-     "type": "Points & Assists",
-     "book": "",
-     "status": "miss",
-     "legs": [
-      {
-       "player": "Zach Hyman",
-       "team": "EDM",
-       "market": "1+ pt",
-       "price": "-119",
-       "result": "miss"
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "date": "2026-11-10",
-   "slips": [
-    {
-     "id": 49,
-     "type": "Points & Assists",
-     "book": "",
-     "status": "miss",
-     "legs": [
-      {
-       "player": "Nick Suzuki",
-       "team": "MTL",
-       "market": "1+ ast",
-       "price": "+100",
-       "result": "miss"
-      }
-     ]
-    },
-    {
-     "id": 50,
-     "type": "Points & Assists",
-     "book": "",
-     "status": "hit",
-     "legs": [
-      {
-       "player": "Brock Nelson",
-       "team": "COL",
-       "market": "1+ pt",
-       "price": "+120",
-       "result": "hit"
-      }
-     ]
-    },
-    {
-     "id": 51,
-     "type": "Points & Assists",
-     "book": "",
-     "status": "miss",
-     "legs": [
-      {
-       "player": "Alex Tuch",
-       "team": "WSH",
-       "market": "1+ pt",
-       "price": "-112",
-       "result": "miss"
-      }
-     ]
-    },
-    {
-     "id": 52,
-     "type": "Points & Assists",
-     "book": "",
-     "status": "miss",
-     "legs": [
-      {
-       "player": "Shane Pinto",
-       "team": "OTT",
-       "market": "1+ pt",
-       "price": "-103",
-       "result": "miss"
-      }
-     ]
-    },
-    {
-     "id": 53,
-     "type": "Goals",
-     "book": "",
-     "status": "miss",
-     "legs": [
-      {
-       "player": "Alex Tuch",
-       "team": "WSH",
-       "market": "Anytime goal",
-       "price": "+220",
-       "result": "miss"
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "date": "2026-11-11",
-   "slips": [
-    {
-     "id": 54,
-     "type": "Points & Assists",
-     "book": "",
-     "status": "miss",
-     "legs": [
-      {
-       "player": "Travis Konecny",
-       "team": "PHI",
-       "market": "1+ pt",
-       "price": "-106",
-       "result": "miss"
-      }
-     ]
-    },
-    {
-     "id": 55,
-     "type": "Points & Assists",
-     "book": "",
-     "status": "hit",
-     "legs": [
-      {
-       "player": "Evan Bouchard",
-       "team": "EDM",
-       "market": "1+ ast",
-       "price": "-150",
-       "result": "hit"
-      }
-     ]
-    },
-    {
-     "id": 56,
-     "type": "Goals",
-     "book": "",
-     "status": "hit",
-     "legs": [
-      {
-       "player": "Steven Stamkos",
-       "team": "NSH",
-       "market": "Anytime goal",
-       "price": "+170",
-       "result": "hit"
-      }
-     ]
-    },
-    {
-     "id": 57,
-     "type": "Points & Assists",
-     "book": "",
-     "status": "miss",
-     "legs": [
-      {
-       "player": "Vincent Trocheck",
-       "team": "UTA",
-       "market": "1+ pt",
-       "price": "+100",
-       "result": "miss"
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "date": "2026-11-12",
-   "slips": [
-    {
-     "id": 58,
-     "type": "Points & Assists",
-     "book": "",
-     "status": "pending",
-     "legs": [
-      {
-       "player": "Shayne Gostisbehere",
-       "team": "CAR",
-       "market": "1+ pt",
-       "price": "-109",
-       "result": "pending"
-      }
-     ]
-    },
-    {
-     "id": 59,
-     "type": "Points & Assists",
-     "book": "",
-     "status": "pending",
-     "legs": [
-      {
-       "player": "Artturi Lehkonen",
-       "team": "COL",
-       "market": "1+ pt",
-       "price": "+103",
-       "result": "pending"
-      }
-     ]
-    },
-    {
-     "id": 60,
-     "type": "Points & Assists",
-     "book": "",
-     "status": "pending",
-     "legs": [
-      {
-       "player": "Dylan Holloway",
-       "team": "STL",
-       "market": "1+ pt",
-       "price": "+100",
-       "result": "pending"
-      }
-     ]
-    },
-    {
-     "id": 61,
-     "type": "Goals",
-     "book": "",
-     "status": "pending",
-     "legs": [
-      {
-       "player": "Roman Kantserov",
-       "team": "CHI",
-       "market": "Anytime goal",
-       "price": "+250",
-       "result": "pending"
-      }
-     ]
-    }
-   ]
-  }
- ]
+  ]
 }
