@@ -1,7 +1,7 @@
 ICE ENGINE SLATE REPORT  2026-11-13
-Lineups pulled: none yet
+Lineups pulled: Nov 13, 4:28 PM ET
 Prices pulled:  none yet
-Goalies pulled: none yet
+Goalies pulled: Nov 13, 4:28 PM ET
 Times are US Eastern. Read-only: built from the same models as the board.
 
 GAMES (start, projected goals, model game total; book game totals are not pulled)
@@ -11,14 +11,14 @@ GAMES (start, projected goals, model game total; book game totals are not pulled
 GOALIES (shrunk two-season save %, raw save % and games)
 - NYR: no goalie listed
 - VAN: no goalie listed
-- NSH: no goalie listed
-- VGK: no goalie listed
+- NSH: Juuse Saros expected 0.899 (0.898 raw, 72 GP)  | also listed: Justus Annunen 0.903 (0.902 raw, 33 GP)
+- VGK: Adin Hill expected 0.888 (0.880 raw, 36 GP)  | also listed: Carter Hart 0.897 (0.893 raw, 29 GP)
 
 INJURED / OUT (scratches in brackets)
 - NYR: none listed
 - VAN: none listed
-- NSH: none listed
-- VGK: none listed
+- NSH: Jonathan Marchessault (lower body); William Trudeau (upper body) [Nicolas Hague, Ilya Lyubushkin]
+- VGK: Noah Hanifin (undisclosed) [Raphael Lavoie]
 Questionable: no projected skater carries a questionable or day-to-day note.
 
 TEAM FORM, last 10 regular-season games (per game: GF / GA | shots for / against | PP | PK)
@@ -40,14 +40,49 @@ ALL PRICED SKATERS (shots/game last 10, minutes, PP unit | G | P | A: chance, be
 NYR
 VAN
 NSH
+- Filip Forsberg (2.4, 20.3, PP1): G 37% no price, L10 4/10, L3 1/3 | P 60% no price, L10 7/10, L3 2/3 | A 39% no price, L10 5/10, L3 1/3
+- Ryan O'Reilly (1.2, 20.9, PP1): G 25% no price, L10 2/10, L3 0/3 | P 59% no price, L10 6/10, L3 0/3 | A 44% no price, L10 5/10, L3 0/3
+- Roman Josi (3.0, 25.4, PP1): G 16% no price, L10 1/10, L3 0/3 | P 59% no price, L10 6/10, L3 2/3 | A 48% no price, L10 6/10, L3 2/3
+- Steven Stamkos (3.1, 18.6, PP1): G 39% no price, L10 6/10, L3 2/3 | P 55% no price, L10 7/10, L3 2/3 | A 28% no price, L10 3/10, L3 1/3
+- Mavrik Bourque (2.1, 16.2, PP1): G 17% no price, L10 0/10, L3 0/3 | P 36% no price, L10 3/10, L3 2/3 | A 25% no price, L10 3/10, L3 2/3
+- Shane Wright (1.2, 14.2, PP2): G 15% no price, L10 1/10, L3 1/3 | P 32% no price, L10 1/10, L3 1/3 | A 19% no price, L10 1/10, L3 1/3
+- Ross Colton (2.1, 13.2, no PP): G 15% no price, L10 4/10, L3 1/3 | P 31% no price, L10 5/10, L3 1/3 | A 17% no price, L10 2/10, L3 0/3
+- Brady Skjei (0.8, 20.1, PP2): G 4% no price, L10 0/10, L3 0/3 | P 30% no price, L10 4/10, L3 1/3 | A 28% no price, L10 4/10, L3 1/3
+- Alexander Kerfoot (0.6, 16.2, PP2): G 15% no price, L10 1/10, L3 0/3 | P 30% no price, L10 2/10, L3 0/3 | A 20% no price, L10 1/10, L3 0/3
+- Jack Drury (0.7, 17.2, no PP): G 11% no price, L10 1/10, L3 0/3 | P 29% no price, L10 3/10, L3 1/3 | A 19% no price, L10 2/10, L3 1/3
+- Adam Wilsby (1.6, 19.9, no PP): G 4% no price, L10 1/10, L3 1/3 | P 25% no price, L10 2/10, L3 1/3 | A 21% no price, L10 1/10, L3 0/3
+- Nils Hoglander (1.0, 10.9, PP2): G 10% no price, L10 1/10, L3 1/3 | P 22% no price, L10 4/10, L3 2/3 | A 14% no price, L10 4/10, L3 2/3
+- Jayden Struble (0.5, 15.1, no PP): G 8% no price, L10 3/10, L3 1/3 | P 22% no price, L10 3/10, L3 1/3 | A 16% no price, L10 1/10, L3 1/3
+- Adam Edstrom (1.6, 14.8, no PP): G 15% no price, L10 2/10, L3 0/3 | P 22% no price, L10 3/10, L3 0/3 | A 7% no price, L10 1/10, L3 0/3
+- Reid Schaefer (0.8, 10.7, no PP): G 13% no price, L10 1/10, L3 0/3 | P 20% no price, L10 2/10, L3 0/3 | A 8% no price, L10 1/10, L3 0/3
+- Nick Perbix (1.3, 18.5, no PP): G 6% no price, L10 2/10, L3 1/3 | P 18% no price, L10 3/10, L3 1/3 | A 13% no price, L10 1/10, L3 0/3
+- Daemon Hunt (1.2, 13.7, no PP): G 3% no price, L10 0/10, L3 0/3 | P 17% no price, L10 1/10, L3 0/3 | A 16% no price, L10 1/10, L3 0/3
 VGK
+- Mark Stone (1.7, 18.6, PP1): G 36% no price, L10 3/10, L3 0/3 | P 68% no price, L10 6/10, L3 1/3 | A 44% no price, L10 3/10, L3 1/3
+- Jack Eichel (2.2, 20.1, PP1): G 32% no price, L10 4/10, L3 2/3 | P 65% no price, L10 6/10, L3 3/3 | A 53% no price, L10 3/10, L3 2/3
+- Mitch Marner (2.3, 20.1, PP1): G 23% no price, L10 1/10, L3 1/3 | P 62% no price, L10 9/10, L3 2/3 | A 52% no price, L10 9/10, L3 2/3
+- Ivan Barbashev (1.2, 15.7, no PP): G 24% no price, L10 3/10, L3 1/3 | P 52% no price, L10 6/10, L3 2/3 | A 36% no price, L10 3/10, L3 1/3
+- Tomas Hertl (2.6, 15.5, PP1): G 26% no price, L10 3/10, L3 1/3 | P 50% no price, L10 6/10, L3 3/3 | A 33% no price, L10 3/10, L3 2/3
+- Trevor Connelly (1.6, 14.3, PP2): G 29% no price, L10 3/10, L3 1/3 | P 46% no price, L10 5/10, L3 1/3 | A 25% no price, L10 2/10, L3 0/3
+- Shea Theodore (1.7, 22.1, PP2): G 14% no price, L10 0/10, L3 0/3 | P 44% no price, L10 3/10, L3 2/3 | A 32% no price, L10 3/10, L3 2/3
+- Rasmus Andersson (1.4, 19.4, PP2): G 19% no price, L10 0/10, L3 0/3 | P 39% no price, L10 1/10, L3 1/3 | A 26% no price, L10 1/10, L3 1/3
+- William Karlsson (1.5, 17.4, PP2): G 17% no price, L10 1/10, L3 0/3 | P 38% no price, L10 2/10, L3 1/3 | A 22% no price, L10 1/10, L3 1/3
+- Braeden Bowman (1.2, 13.1, PP2): G 16% no price, L10 2/10, L3 1/3 | P 38% no price, L10 4/10, L3 1/3 | A 25% no price, L10 2/10, L3 0/3
+- Brett Howden (1.4, 15.4, no PP): G 22% no price, L10 2/10, L3 1/3 | P 36% no price, L10 2/10, L3 1/3 | A 18% no price, L10 0/10, L3 0/3
+- Victor Olofsson (2.5, 13.9, PP1): G 16% no price, L10 4/10, L3 1/3 | P 36% no price, L10 6/10, L3 2/3 | A 24% no price, L10 3/10, L3 2/3
+- Parker Wotherspoon (0.8, 17.9, no PP): G 5% no price, L10 0/10, L3 0/3 | P 30% no price, L10 1/10, L3 0/3 | A 25% no price, L10 1/10, L3 0/3
+- Nic Dowd (0.2, 11.6, no PP): G 6% no price, L10 0/10, L3 0/3 | P 25% no price, L10 1/10, L3 0/3 | A 21% no price, L10 1/10, L3 0/3
+- Brayden McNabb (1.4, 20.0, no PP): G 7% no price, L10 0/10, L3 0/3 | P 23% no price, L10 2/10, L3 0/3 | A 17% no price, L10 2/10, L3 0/3
+- Dylan Coghlan (1.6, 14.1, no PP): G 7% no price, L10 0/10, L3 0/3 | P 19% no price, L10 0/10, L3 0/3 | A 15% no price, L10 0/10, L3 0/3
+- Jeremy Lauzon (1.1, 17.4, no PP): G 3% no price, L10 0/10, L3 0/3 | P 17% no price, L10 1/10, L3 0/3 | A 16% no price, L10 1/10, L3 0/3
+- Marc Gatcomb (0.8, 10.6, no PP): G 7% no price, L10 0/10, L3 0/3 | P 15% no price, L10 0/10, L3 0/3 | A 10% no price, L10 0/10, L3 0/3
 
 DATA CHECKS
 Games with no prices: NYR @ VAN, NSH @ VGK
-Teams with no lineup: NYR, VAN, NSH, VGK
+Teams with no lineup: NYR, VAN
 Priced players missing from the projected lineups: none
 Unconfirmed goalies:
 - NYR: no goalie listed
 - VAN: no goalie listed
-- NSH: no goalie listed
-- VGK: no goalie listed
+- NSH: Juuse Saros (expected, not confirmed)
+- VGK: Adin Hill (expected, not confirmed)
