@@ -51,7 +51,7 @@ MARKETS = ["player_points", "player_assists", "player_goal_scorer_anytime"]
 YES_NO_SIDES = {"Yes": "Over", "No": "Under"}  # how Yes/No markets are stored
 
 REGIONS = "us"
-MIN_CREDITS = 50      # stop before spending anything once fewer than this are left
+MIN_CREDITS = 40      # stop before spending anything once fewer than this are left
 ODDS_API = "https://api.the-odds-api.com/v4/sports/icehockey_nhl"
 OUT_FILE = "daily_odds.json"
 YEAR_HINT = re.compile(r"\s*\((\d{4})\)\s*$")  # "Elias Pettersson (2004)": a book's birth-year tag
