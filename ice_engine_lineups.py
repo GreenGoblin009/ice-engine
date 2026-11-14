@@ -382,7 +382,7 @@ def build_team_rows(block, team_players):
         (defense if is_defense else forwards).append(names)
 
     n_f, n_d = sum(map(len, forwards)), sum(map(len, defense))
-    if not (9 <= n_f <= 13 and 5 <= n_d <= 8 and 16 <= n_f + n_d <= 18):
+    if not (9 <= n_f <= 13 and 5 <= n_d <= 8 and 16 <= n_f + n_d <= 19):
         raise PageFormatError(f"{n_f} forwards and {n_d} defensemen is not a plausible lineup")
 
     def add(name, status, slot=None, number=None, group=None, detail=None):
