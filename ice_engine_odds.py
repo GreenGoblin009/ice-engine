@@ -51,7 +51,7 @@ MARKETS = ["player_points", "player_assists", "player_goal_scorer_anytime"]
 YES_NO_SIDES = {"Yes": "Over", "No": "Under"}  # how Yes/No markets are stored
 
 REGIONS = "us"
-MIN_CREDITS = 50      # stop before spending anything once fewer than this are left
+MIN_CREDITS = 2      # stop before spending anything once fewer than this are left
 ODDS_API = "https://api.the-odds-api.com/v4/sports/icehockey_nhl"
 OUT_FILE = "daily_odds.json"
 YEAR_HINT = re.compile(r"\s*\((\d{4})\)\s*$")  # "Elias Pettersson (2004)": a book's birth-year tag
@@ -282,6 +282,8 @@ def run(day, key, use_supabase, max_events=None, markets=MARKETS):
 
     nicknames = team_abbreviations(day)
     teams = {e["id"]: (abbreviation(e["home_team"], nicknames), abbreviation(e["away_team"], nicknames)) for e in upcoming}
+    SKIP_TEAMS = {"CAR"}  # ONE-TIME (Nov 14): user asked for every game except Carolina
+    upcoming = [e for e in upcoming if not ({*teams[e["id"]]} & SKIP_TEAMS)]
     players = load_players(sorted({t for pair in teams.values() for t in pair if t}), use_supabase)
     lineup = load_lineup(day, use_supabase)
 
