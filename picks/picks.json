@@ -1007,14 +1007,14 @@
           "id": 64,
           "type": "Points & Assists",
           "book": "",
-          "status": "pending",
+          "status": "hit",
           "legs": [
             {
               "player": "David Pastrnak",
               "team": "BOS",
               "market": "1+ ast",
               "price": "-110",
-              "result": "pending"
+              "result": "hit"
             }
           ]
         },
@@ -1022,14 +1022,14 @@
           "id": 65,
           "type": "Points & Assists",
           "book": "",
-          "status": "pending",
+          "status": "hit",
           "legs": [
             {
               "player": "Trevor Zegras",
               "team": "PHI",
               "market": "1+ pt",
               "price": "-120",
-              "result": "pending"
+              "result": "hit"
             }
           ]
         },
@@ -1037,14 +1037,14 @@
           "id": 66,
           "type": "Points & Assists",
           "book": "",
-          "status": "pending",
+          "status": "miss",
           "legs": [
             {
               "player": "Jack Hughes",
               "team": "NJD",
               "market": "1+ ast",
               "price": "-105",
-              "result": "pending"
+              "result": "miss"
             }
           ]
         },
@@ -1052,14 +1052,14 @@
           "id": 67,
           "type": "Points & Assists",
           "book": "",
-          "status": "pending",
+          "status": "miss",
           "legs": [
             {
               "player": "Jackson LaCombe",
               "team": "ANA",
               "market": "1+ ast",
               "price": "-110",
-              "result": "pending"
+              "result": "miss"
             }
           ]
         },
@@ -1067,14 +1067,14 @@
           "id": 68,
           "type": "Goals",
           "book": "",
-          "status": "pending",
+          "status": "miss",
           "legs": [
             {
               "player": "Kirill Kaprizov",
               "team": "MIN",
               "market": "Anytime goal",
               "price": "+140",
-              "result": "pending"
+              "result": "miss"
             }
           ]
         }
