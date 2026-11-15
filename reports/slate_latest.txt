@@ -5,11 +5,11 @@ Goalies pulled: none yet
 Times are US Eastern. Read-only: built from the same models as the board.
 
 GAMES (start, projected goals, model game total; book game totals are not pulled)
-- 7:30 PM ET  EDM 3.36 @ PHI 2.61  (total 5.97)  green light: EDM
-- 8:00 PM ET  FLA 2.94 @ DAL 3.05  (total 6.00)
-- 8:00 PM ET  CGY 2.78 @ ANA 3.22  (total 6.00)
-- 9:00 PM ET  VAN 2.62 @ VGK 3.60  (total 6.22)  green light: VGK
-- 9:00 PM ET  NSH 2.97 @ SJS 2.78  (total 5.75)
+- 7:30 PM ET  EDM 3.36 @ PHI 2.50  (total 5.86)  green light: EDM
+- 8:00 PM ET  FLA 2.89 @ DAL 3.00  (total 5.89)
+- 8:00 PM ET  CGY 2.83 @ ANA 3.21  (total 6.04)
+- 9:00 PM ET  VAN 2.63 @ VGK 3.61  (total 6.24)  green light: VGK
+- 9:00 PM ET  NSH 2.97 @ SJS 2.82  (total 5.78)
 
 GOALIES (shrunk two-season save %, raw save % and games)
 - EDM: no goalie listed
@@ -37,16 +37,16 @@ INJURED / OUT (scratches in brackets)
 Questionable: no projected skater carries a questionable or day-to-day note.
 
 TEAM FORM, last 10 regular-season games (per game: GF / GA | shots for / against | PP | PK)
-- EDM: 3.4 / 2.6 | 26.2 / 27.2 | PP 31.4% (11/35) | PK 80.6%
-- PHI: 3.0 / 3.3 | 27.2 / 24.1 | PP 24.2% (8/33) | PK 72.4%
-- FLA: 3.4 / 3.0 | 30.6 / 27.6 | PP 27.8% (10/36) | PK 91.9%
-- DAL: 3.2 / 3.6 | 27.3 / 23.9 | PP 36.4% (8/22) | PK 87.9%
-- CGY: 2.8 / 2.8 | 26.2 / 29.0 | PP 33.3% (7/21) | PK 78.6%
-- ANA: 4.5 / 4.1 | 26.0 / 27.3 | PP 48.6% (18/37) | PK 70.5%
+- EDM: 3.3 / 1.9 | 25.3 / 26.0 | PP 30.3% (10/33) | PK 83.3%
+- PHI: 3.1 / 3.5 | 26.6 / 24.5 | PP 25.8% (8/31) | PK 74.1%
+- FLA: 3.8 / 2.7 | 30.8 / 27.9 | PP 32.4% (11/34) | PK 89.2%
+- DAL: 3.1 / 3.4 | 27.8 / 24.1 | PP 33.3% (8/24) | PK 88.2%
+- CGY: 2.7 / 2.9 | 26.1 / 29.1 | PP 22.7% (5/22) | PK 79.3%
+- ANA: 4.6 / 4.3 | 27.2 / 27.0 | PP 48.6% (18/37) | PK 71.1%
 - VAN: 2.4 / 4.4 | 23.5 / 26.8 | PP 17.1% (6/35) | PK 61.3%
 - VGK: 2.7 / 2.7 | 28.0 / 26.6 | PP 31.8% (7/22) | PK 82.1%
 - NSH: 3.7 / 2.2 | 27.8 / 29.2 | PP 24.3% (9/37) | PK 96.3%
-- SJS: 2.0 / 3.7 | 28.0 / 31.1 | PP 13.6% (6/44) | PK 71.8%
+- SJS: 2.2 / 3.6 | 27.4 / 30.8 | PP 13.6% (6/44) | PK 69.2%
 
 TOP 15 GOALS BY ROLE-ADJUSTED CHANCE
 
