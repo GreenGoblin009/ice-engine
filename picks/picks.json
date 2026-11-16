@@ -1079,6 +1079,86 @@
           ]
         }
       ]
+    },
+    {
+      "date": "2026-11-15",
+      "slips": [
+        {
+          "id": 69,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "pending",
+          "legs": [
+            {
+              "player": "Connor McDavid",
+              "team": "EDM",
+              "market": "1+ ast",
+              "price": "-178",
+              "result": "pending"
+            }
+          ]
+        },
+        {
+          "id": 70,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "pending",
+          "legs": [
+            {
+              "player": "Macklin Celebrini",
+              "team": "SJS",
+              "market": "1+ pt",
+              "price": "-130",
+              "result": "pending"
+            }
+          ]
+        },
+        {
+          "id": 71,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "pending",
+          "legs": [
+            {
+              "player": "Mark Stone",
+              "team": "VGK",
+              "market": "1+ pt",
+              "price": "-130",
+              "result": "pending"
+            }
+          ]
+        },
+        {
+          "id": 72,
+          "type": "Points & Assists",
+          "book": "",
+          "status": "pending",
+          "legs": [
+            {
+              "player": "Mikko Rantanen",
+              "team": "DAL",
+              "market": "1+ pt",
+              "price": "-130",
+              "result": "pending"
+            }
+          ]
+        },
+        {
+          "id": 73,
+          "type": "Goals",
+          "book": "",
+          "status": "pending",
+          "legs": [
+            {
+              "player": "Cutter Gauthier",
+              "team": "ANA",
+              "market": "Anytime goal",
+              "price": "+156",
+              "result": "pending"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
