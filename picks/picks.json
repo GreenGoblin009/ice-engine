@@ -1087,14 +1087,14 @@
           "id": 69,
           "type": "Points & Assists",
           "book": "",
-          "status": "pending",
+          "status": "hit",
           "legs": [
             {
               "player": "Connor McDavid",
               "team": "EDM",
               "market": "1+ ast",
               "price": "-178",
-              "result": "pending"
+              "result": "hit"
             }
           ]
         },
@@ -1102,14 +1102,14 @@
           "id": 70,
           "type": "Points & Assists",
           "book": "",
-          "status": "pending",
+          "status": "hit",
           "legs": [
             {
               "player": "Macklin Celebrini",
               "team": "SJS",
               "market": "1+ pt",
               "price": "-130",
-              "result": "pending"
+              "result": "hit"
             }
           ]
         },
@@ -1117,14 +1117,14 @@
           "id": 71,
           "type": "Points & Assists",
           "book": "",
-          "status": "pending",
+          "status": "hit",
           "legs": [
             {
               "player": "Mark Stone",
               "team": "VGK",
               "market": "1+ pt",
               "price": "-130",
-              "result": "pending"
+              "result": "hit"
             }
           ]
         },
@@ -1132,14 +1132,14 @@
           "id": 72,
           "type": "Points & Assists",
           "book": "",
-          "status": "pending",
+          "status": "miss",
           "legs": [
             {
               "player": "Mikko Rantanen",
               "team": "DAL",
               "market": "1+ pt",
               "price": "-130",
-              "result": "pending"
+              "result": "miss"
             }
           ]
         },
@@ -1147,14 +1147,14 @@
           "id": 73,
           "type": "Goals",
           "book": "",
-          "status": "pending",
+          "status": "hit",
           "legs": [
             {
               "player": "Cutter Gauthier",
               "team": "ANA",
               "market": "Anytime goal",
               "price": "+156",
-              "result": "pending"
+              "result": "hit"
             }
           ]
         }
