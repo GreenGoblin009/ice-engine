@@ -1,27 +1,27 @@
 ICE ENGINE SLATE REPORT  2026-11-18
-Lineups pulled: none yet
+Lineups pulled: Nov 18, 1:57 PM ET
 Prices pulled:  none yet
-Goalies pulled: none yet
+Goalies pulled: Nov 18, 1:57 PM ET
 Times are US Eastern. Read-only: built from the same models as the board.
 
 GAMES (start, projected goals, model game total; book game totals are not pulled)
 - 7:30 PM ET  BOS 3.10 @ DET 2.88  (total 5.98)
 - 7:30 PM ET  MTL 3.01 @ NJD 3.09  (total 6.10)
-- 10:00 PM ET  COL 3.45 @ UTA 3.20  (total 6.65)  green light: COL
+- 10:00 PM ET  COL 3.45 @ UTA 3.19  (total 6.64)  green light: COL
 
 GOALIES (shrunk two-season save %, raw save % and games)
 - BOS: no goalie listed
 - DET: no goalie listed
-- MTL: no goalie listed
-- NJD: no goalie listed
+- MTL: Jacob Fowler expected 0.912 (0.915 raw, 30 GP)  | also listed: Jakub Dobes 0.896 (0.894 raw, 51 GP)
+- NJD: Connor Hellebuyck expected 0.899 (0.898 raw, 64 GP)  | also listed: Jake Allen 0.900 (0.898 raw, 47 GP)
 - COL: no goalie listed
 - UTA: no goalie listed
 
 INJURED / OUT (scratches in brackets)
 - BOS: none listed
 - DET: none listed
-- MTL: none listed
-- NJD: none listed
+- MTL: Chris Kreider (lower body); Josh Anderson (lower body); Mike Matheson (lower body); Samuel Montembeault (lower body); Ivan Demidov (lower body) [David Reinbacher, Florian Xhekaj]
+- NJD: Anthony Mantha (throat); Johnathan Kovacevic (ankle sprain) [Amadeus Lombardi, Anton Silaev, Vladislav Kolyachonok]
 - COL: none listed
 - UTA: none listed
 Questionable: no projected skater carries a questionable or day-to-day note.
@@ -47,18 +47,51 @@ ALL PRICED SKATERS (shots/game last 10, minutes, PP unit | G | P | A: chance, be
 BOS
 DET
 MTL
+- Nick Suzuki (2.6, 20.9, PP1): G 32% no price, L10 5/10, L3 1/3 | P 72% no price, L10 7/10, L3 1/3 | A 57% no price, L10 4/10, L3 0/3
+- Cole Caufield (3.3, 18.6, PP1): G 42% no price, L10 4/10, L3 1/3 | P 64% no price, L10 7/10, L3 2/3 | A 38% no price, L10 3/10, L3 1/3
+- Lane Hutson (2.1, 25.1, PP1): G 15% no price, L10 0/10, L3 0/3 | P 63% no price, L10 7/10, L3 1/3 | A 55% no price, L10 7/10, L3 1/3
+- Juraj Slafkovsky (2.0, 18.4, PP1): G 26% no price, L10 0/10, L3 0/3 | P 54% no price, L10 4/10, L3 1/3 | A 41% no price, L10 4/10, L3 1/3
+- Alex Newhook (1.4, 16.1, PP2): G 22% no price, L10 2/10, L3 0/3 | P 41% no price, L10 4/10, L3 1/3 | A 24% no price, L10 2/10, L3 1/3
+- Noah Dobson (1.8, 21.0, PP2): G 11% no price, L10 0/10, L3 0/3 | P 40% no price, L10 4/10, L3 1/3 | A 32% no price, L10 4/10, L3 1/3
+- Kirby Dach (1.3, 11.4, PP2): G 16% no price, L10 2/10, L3 1/3 | P 35% no price, L10 5/10, L3 1/3 | A 22% no price, L10 4/10, L3 0/3
+- Oliver Kapanen (1.0, 11.9, PP2): G 23% no price, L10 1/10, L3 0/3 | P 34% no price, L10 2/10, L3 0/3 | A 15% no price, L10 1/10, L3 0/3
+- Kaiden Guhle (1.0, 22.7, no PP): G 14% no price, L10 0/10, L3 0/3 | P 33% no price, L10 2/10, L3 0/3 | A 25% no price, L10 2/10, L3 0/3
+- Jake Evans (0.6, 15.3, no PP): G 16% no price, L10 1/10, L3 1/3 | P 32% no price, L10 4/10, L3 1/3 | A 19% no price, L10 4/10, L3 1/3
+- Zachary Bolduc (1.4, 14.5, PP1): G 16% no price, L10 2/10, L3 0/3 | P 31% no price, L10 3/10, L3 1/3 | A 20% no price, L10 1/10, L3 1/3
+- Alexandre Texier (2.0, 13.6, PP2): G 12% no price, L10 1/10, L3 0/3 | P 28% no price, L10 2/10, L3 0/3 | A 18% no price, L10 1/10, L3 0/3
+- Alexandre Carrier (0.4, 20.3, no PP): G 8% no price, L10 0/10, L3 0/3 | P 28% no price, L10 2/10, L3 1/3 | A 21% no price, L10 2/10, L3 1/3
+- Phillip Danault (1.6, 17.2, no PP): G 10% no price, L10 3/10, L3 2/3 | P 25% no price, L10 4/10, L3 2/3 | A 17% no price, L10 2/10, L3 0/3
+- Adam Engstrom (1.0, 11.6, no PP): G 7% no price, L10 1/10, L3 0/3 | P 18% no price, L10 2/10, L3 0/3 | A 12% no price, L10 1/10, L3 0/3
+- Arber Xhekaj (1.2, 12.2, no PP): G 4% no price, L10 1/10, L3 0/3 | P 13% no price, L10 4/10, L3 1/3 | A 9% no price, L10 3/10, L3 1/3
 NJD
+- Jack Hughes (4.2, 20.7, PP1): G 30% no price, L10 5/10, L3 1/3 | P 67% no price, L10 8/10, L3 2/3 | A 54% no price, L10 6/10, L3 1/3
+- Jesper Bratt (2.1, 17.4, PP1): G 22% no price, L10 2/10, L3 1/3 | P 57% no price, L10 9/10, L3 3/3 | A 47% no price, L10 8/10, L3 2/3
+- Nico Hischier (2.1, 18.4, PP1): G 28% no price, L10 3/10, L3 1/3 | P 49% no price, L10 5/10, L3 1/3 | A 32% no price, L10 3/10, L3 0/3
+- Luke Evangelista (2.3, 17.1, PP2): G 14% no price, L10 1/10, L3 0/3 | P 48% no price, L10 3/10, L3 1/3 | A 39% no price, L10 3/10, L3 1/3
+- Timo Meier (3.4, 16.6, PP2): G 27% no price, L10 2/10, L3 1/3 | P 44% no price, L10 4/10, L3 2/3 | A 25% no price, L10 2/10, L3 1/3
+- Connor Brown (1.4, 15.4, PP1): G 23% no price, L10 4/10, L3 1/3 | P 44% no price, L10 5/10, L3 2/3 | A 26% no price, L10 3/10, L3 2/3
+- Arseny Gritsyuk (2.1, 15.7, PP2): G 21% no price, L10 1/10, L3 0/3 | P 42% no price, L10 6/10, L3 3/3 | A 28% no price, L10 5/10, L3 3/3
+- Luke Hughes (1.6, 24.3, PP1): G 13% no price, L10 3/10, L3 0/3 | P 40% no price, L10 6/10, L3 1/3 | A 34% no price, L10 5/10, L3 1/3
+- Dougie Hamilton (2.7, 20.6, PP2): G 14% no price, L10 1/10, L3 0/3 | P 40% no price, L10 5/10, L3 1/3 | A 30% no price, L10 4/10, L3 1/3
+- Evan Rodrigues (1.9, 15.4, PP2): G 18% no price, L10 3/10, L3 2/3 | P 36% no price, L10 4/10, L3 2/3 | A 25% no price, L10 2/10, L3 1/3
+- Cody Glass (1.0, 12.1, no PP): G 21% no price, L10 1/10, L3 1/3 | P 31% no price, L10 5/10, L3 3/3 | A 14% no price, L10 4/10, L3 2/3
+- Declan Chisholm (0.6, 14.3, no PP): G 9% no price, L10 1/10, L3 0/3 | P 29% no price, L10 3/10, L3 1/3 | A 21% no price, L10 2/10, L3 1/3
+- Stefan Noesen (1.1, 9.7, no PP): G 12% no price, L10 2/10, L3 1/3 | P 27% no price, L10 4/10, L3 2/3 | A 16% no price, L10 2/10, L3 1/3
+- Jesper Boqvist (1.1, 11.6, no PP): G 11% no price, L10 3/10, L3 1/3 | P 24% no price, L10 3/10, L3 1/3 | A 14% no price, L10 1/10, L3 1/3
+- Brett Pesce (1.0, 21.0, no PP): G 6% no price, L10 1/10, L3 0/3 | P 24% no price, L10 5/10, L3 1/3 | A 19% no price, L10 4/10, L3 1/3
+- Jonas Siegenthaler (0.6, 19.7, no PP): G 2% no price, L10 0/10, L3 0/3 | P 19% no price, L10 1/10, L3 0/3 | A 18% no price, L10 1/10, L3 0/3
+- Brenden Dillon (0.3, 15.0, no PP): G 5% no price, L10 0/10, L3 0/3 | P 18% no price, L10 1/10, L3 1/3 | A 15% no price, L10 1/10, L3 1/3
 COL
 UTA
 
 DATA CHECKS
 Games with no prices: BOS @ DET, MTL @ NJD, COL @ UTA
-Teams with no lineup: BOS, DET, MTL, NJD, COL, UTA
+Teams with no lineup: BOS, DET, COL, UTA
 Priced players missing from the projected lineups: none
 Unconfirmed goalies:
 - BOS: no goalie listed
 - DET: no goalie listed
-- MTL: no goalie listed
-- NJD: no goalie listed
+- MTL: Jacob Fowler (expected, not confirmed)
+- NJD: Connor Hellebuyck (expected, not confirmed)
 - COL: no goalie listed
 - UTA: no goalie listed
