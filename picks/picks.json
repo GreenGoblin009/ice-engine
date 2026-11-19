@@ -1237,14 +1237,14 @@
           "id": 78,
           "type": "Points & Assists",
           "book": "",
-          "status": "pending",
+          "status": "miss",
           "legs": [
             {
               "player": "Gabriel Landeskog",
               "team": "COL",
               "market": "1+ pt",
               "price": "+130",
-              "result": "pending"
+              "result": "miss"
             }
           ]
         },
