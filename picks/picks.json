@@ -1302,14 +1302,14 @@
           "id": 82,
           "type": "Points & Assists",
           "book": "",
-          "status": "pending",
+          "status": "miss",
           "legs": [
             {
               "player": "Jackson LaCombe",
               "team": "ANA",
               "market": "1+ ast",
               "price": "+100",
-              "result": "pending"
+              "result": "miss"
             }
           ]
         },
