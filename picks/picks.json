@@ -1287,14 +1287,14 @@
           "id": 81,
           "type": "Points & Assists",
           "book": "",
-          "status": "pending",
+          "status": "miss",
           "legs": [
             {
               "player": "Evan Bouchard",
               "team": "EDM",
               "market": "1+ ast",
               "price": "-128",
-              "result": "pending"
+              "result": "miss"
             }
           ]
         },
@@ -1317,14 +1317,14 @@
           "id": 83,
           "type": "Points & Assists",
           "book": "",
-          "status": "pending",
+          "status": "miss",
           "legs": [
             {
               "player": "Roman Kantserov",
               "team": "CHI",
               "market": "1+ pt",
               "price": "+100",
-              "result": "pending"
+              "result": "miss"
             }
           ]
         },
@@ -1332,14 +1332,14 @@
           "id": 84,
           "type": "Goals",
           "book": "",
-          "status": "pending",
+          "status": "miss",
           "legs": [
             {
               "player": "Roman Kantserov",
               "team": "CHI",
               "market": "Anytime goal",
               "price": "+250",
-              "result": "pending"
+              "result": "miss"
             }
           ]
         },
@@ -1347,14 +1347,14 @@
           "id": 85,
           "type": "Points & Assists",
           "book": "",
-          "status": "pending",
+          "status": "hit",
           "legs": [
             {
               "player": "Travis Konecny",
               "team": "PHI",
               "market": "1+ pt",
               "price": "-105",
-              "result": "pending"
+              "result": "hit"
             }
           ]
         },
@@ -1362,14 +1362,14 @@
           "id": 86,
           "type": "Points & Assists",
           "book": "",
-          "status": "pending",
+          "status": "hit",
           "legs": [
             {
               "player": "Alex Tuch",
               "team": "WSH",
               "market": "1+ pt",
               "price": "-130",
-              "result": "pending"
+              "result": "hit"
             }
           ]
         }
