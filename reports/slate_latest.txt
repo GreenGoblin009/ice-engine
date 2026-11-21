@@ -1,2 +1,185 @@
-ICE ENGINE SLATE REPORT  2026-11-20
-No regular-season games on this date.
+ICE ENGINE SLATE REPORT  2026-11-21
+Lineups pulled: none yet
+Prices pulled:  none yet
+Goalies pulled: none yet
+Times are US Eastern. Read-only: built from the same models as the board.
+
+GAMES (start, projected goals, model game total; book game totals are not pulled)
+- 1:00 PM ET  EDM 2.91 @ CAR 3.23  (total 6.13)
+- 3:30 PM ET  CHI 2.66 @ CGY 3.02  (total 5.68)
+- 6:00 PM ET  BUF 2.99 @ FLA 3.15  (total 6.14)
+- 6:00 PM ET  PIT 3.02 @ NSH 3.14  (total 6.15)
+- 7:00 PM ET  WSH 2.99 @ BOS 3.53  (total 6.51)  green light: BOS
+- 7:00 PM ET  CBJ 2.92 @ TOR 3.23  (total 6.15)
+- 7:00 PM ET  PHI 2.63 @ MTL 3.25  (total 5.88)
+- 7:00 PM ET  LAK 2.73 @ OTT 3.15  (total 5.88)
+- 7:00 PM ET  NYI 2.88 @ DET 2.86  (total 5.73)
+- 7:00 PM ET  NJD 3.00 @ STL 2.97  (total 5.97)
+- 7:00 PM ET  VGK 3.17 @ WPG 2.88  (total 6.05)
+- 9:00 PM ET  ANA 3.17 @ UTA 3.46  (total 6.63)  green light: UTA
+- 10:00 PM ET  MIN 3.36 @ VAN 2.66  (total 6.02)  green light: MIN
+- 10:00 PM ET  SEA 3.10 @ SJS 3.07  (total 6.17)
+
+GOALIES (shrunk two-season save %, raw save % and games)
+- EDM: no goalie listed
+- CAR: no goalie listed
+- CHI: no goalie listed
+- CGY: no goalie listed
+- BUF: no goalie listed
+- FLA: no goalie listed
+- PIT: no goalie listed
+- NSH: no goalie listed
+- WSH: no goalie listed
+- BOS: no goalie listed
+- CBJ: no goalie listed
+- TOR: no goalie listed
+- PHI: no goalie listed
+- MTL: no goalie listed
+- LAK: no goalie listed
+- OTT: no goalie listed
+- NYI: no goalie listed
+- DET: no goalie listed
+- NJD: no goalie listed
+- STL: no goalie listed
+- VGK: no goalie listed
+- WPG: no goalie listed
+- ANA: no goalie listed
+- UTA: no goalie listed
+- MIN: no goalie listed
+- VAN: no goalie listed
+- SEA: no goalie listed
+- SJS: no goalie listed
+
+INJURED / OUT (scratches in brackets)
+- EDM: none listed
+- CAR: none listed
+- CHI: none listed
+- CGY: none listed
+- BUF: none listed
+- FLA: none listed
+- PIT: none listed
+- NSH: none listed
+- WSH: none listed
+- BOS: none listed
+- CBJ: none listed
+- TOR: none listed
+- PHI: none listed
+- MTL: none listed
+- LAK: none listed
+- OTT: none listed
+- NYI: none listed
+- DET: none listed
+- NJD: none listed
+- STL: none listed
+- VGK: none listed
+- WPG: none listed
+- ANA: none listed
+- UTA: none listed
+- MIN: none listed
+- VAN: none listed
+- SEA: none listed
+- SJS: none listed
+Questionable: no projected skater carries a questionable or day-to-day note.
+
+TEAM FORM, last 10 regular-season games (per game: GF / GA | shots for / against | PP | PK)
+- EDM: 3.3 / 2.2 | 23.0 / 26.8 | PP 34.4% (11/32) | PK 84.6%
+- CAR: 4.1 / 1.6 | 32.4 / 20.9 | PP 25.0% (7/28) | PK 91.3%
+- CHI: 2.8 / 4.6 | 24.7 / 31.0 | PP 29.2% (7/24) | PK 78.1%
+- CGY: 2.3 / 3.3 | 24.9 / 28.7 | PP 15.0% (3/20) | PK 80.0%
+- BUF: 3.1 / 3.6 | 26.6 / 29.3 | PP 25.0% (8/32) | PK 70.6%
+- FLA: 3.3 / 3.1 | 29.8 / 27.3 | PP 26.7% (8/30) | PK 82.4%
+- PIT: 2.7 / 3.8 | 28.1 / 29.2 | PP 17.9% (5/28) | PK 76.9%
+- NSH: 3.3 / 2.7 | 28.3 / 30.8 | PP 16.7% (5/30) | PK 91.3%
+- WSH: 3.3 / 4.4 | 29.7 / 26.5 | PP 24.0% (6/25) | PK 66.7%
+- BOS: 2.8 / 3.0 | 29.2 / 27.4 | PP 15.6% (5/32) | PK 84.4%
+- CBJ: 2.4 / 3.2 | 29.3 / 28.5 | PP 31.6% (6/19) | PK 72.7%
+- TOR: 2.3 / 4.0 | 26.9 / 26.7 | PP 18.2% (4/22) | PK 64.3%
+- PHI: 3.4 / 3.4 | 26.5 / 23.9 | PP 21.2% (7/33) | PK 71.4%
+- MTL: 3.1 / 2.9 | 27.4 / 28.8 | PP 16.7% (5/30) | PK 76.5%
+- LAK: 2.9 / 3.1 | 28.5 / 26.2 | PP 26.5% (9/34) | PK 73.5%
+- OTT: 3.6 / 3.0 | 27.2 / 25.5 | PP 13.3% (4/30) | PK 71.4%
+- NYI: 3.6 / 3.2 | 26.6 / 31.1 | PP 16.7% (5/30) | PK 83.3%
+- DET: 2.5 / 3.1 | 26.3 / 27.4 | PP 18.2% (4/22) | PK 78.3%
+- NJD: 4.1 / 3.1 | 31.5 / 29.2 | PP 20.6% (7/34) | PK 58.3%
+- STL: 3.3 / 3.0 | 26.4 / 30.7 | PP 16.7% (5/30) | PK 80.0%
+- VGK: 2.9 / 3.2 | 29.0 / 26.0 | PP 28.1% (9/32) | PK 92.3%
+- WPG: 3.9 / 3.5 | 28.1 / 26.7 | PP 32.4% (11/34) | PK 72.7%
+- ANA: 4.2 / 3.9 | 28.0 / 25.0 | PP 41.7% (15/36) | PK 73.5%
+- UTA: 3.0 / 3.6 | 29.0 / 26.5 | PP 30.6% (11/36) | PK 76.5%
+- MIN: 4.3 / 2.1 | 26.0 / 27.6 | PP 24.3% (9/37) | PK 77.8%
+- VAN: 2.4 / 4.0 | 24.6 / 29.8 | PP 25.8% (8/31) | PK 60.6%
+- SEA: 2.9 / 3.6 | 24.2 / 28.7 | PP 25.0% (8/32) | PK 50.0%
+- SJS: 2.5 / 3.9 | 27.6 / 30.6 | PP 14.3% (6/42) | PK 64.1%
+
+TOP 15 GOALS BY ROLE-ADJUSTED CHANCE
+
+TOP 15 POINTS BY ROLE-ADJUSTED CHANCE
+
+TOP 15 ASSISTS BY ROLE-ADJUSTED CHANCE
+
+TOP 15 BY EDGE (all three markets)
+0 of 0 priced legs show a positive edge at the best book.
+
+ALL PRICED SKATERS (shots/game last 10, minutes, PP unit | G | P | A: chance, best price, edge, last 10)  [NO PRICES PULLED: every projected skater, model chance only]
+EDM
+CAR
+CHI
+CGY
+BUF
+FLA
+PIT
+NSH
+WSH
+BOS
+CBJ
+TOR
+PHI
+MTL
+LAK
+OTT
+NYI
+DET
+NJD
+STL
+VGK
+WPG
+ANA
+UTA
+MIN
+VAN
+SEA
+SJS
+
+DATA CHECKS
+Games with no prices: EDM @ CAR, CHI @ CGY, BUF @ FLA, PIT @ NSH, WSH @ BOS, CBJ @ TOR, PHI @ MTL, LAK @ OTT, NYI @ DET, NJD @ STL, VGK @ WPG, ANA @ UTA, MIN @ VAN, SEA @ SJS
+Teams with no lineup: EDM, CAR, CHI, CGY, BUF, FLA, PIT, NSH, WSH, BOS, CBJ, TOR, PHI, MTL, LAK, OTT, NYI, DET, NJD, STL, VGK, WPG, ANA, UTA, MIN, VAN, SEA, SJS
+Priced players missing from the projected lineups: none
+Unconfirmed goalies:
+- EDM: no goalie listed
+- CAR: no goalie listed
+- CHI: no goalie listed
+- CGY: no goalie listed
+- BUF: no goalie listed
+- FLA: no goalie listed
+- PIT: no goalie listed
+- NSH: no goalie listed
+- WSH: no goalie listed
+- BOS: no goalie listed
+- CBJ: no goalie listed
+- TOR: no goalie listed
+- PHI: no goalie listed
+- MTL: no goalie listed
+- LAK: no goalie listed
+- OTT: no goalie listed
+- NYI: no goalie listed
+- DET: no goalie listed
+- NJD: no goalie listed
+- STL: no goalie listed
+- VGK: no goalie listed
+- WPG: no goalie listed
+- ANA: no goalie listed
+- UTA: no goalie listed
+- MIN: no goalie listed
+- VAN: no goalie listed
+- SEA: no goalie listed
+- SJS: no goalie listed
