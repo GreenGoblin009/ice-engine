@@ -1422,6 +1422,21 @@
        "result": "pending"
       }
      ]
+    },
+    {
+     "id": 90,
+     "type": "Points & Assists",
+     "book": "",
+     "status": "pending",
+     "legs": [
+      {
+       "player": "Adrian Kempe",
+       "team": "LAK",
+       "market": "1+ pt",
+       "price": "-130",
+       "result": "pending"
+      }
+     ]
     }
    ]
   }
