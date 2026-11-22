@@ -1382,14 +1382,14 @@
           "id": 87,
           "type": "Points & Assists",
           "book": "",
-          "status": "pending",
+          "status": "hit",
           "legs": [
             {
               "player": "David Pastrnak",
               "team": "BOS",
               "market": "1+ ast",
               "price": "-115",
-              "result": "pending"
+              "result": "hit"
             }
           ]
         },
@@ -1427,14 +1427,14 @@
           "id": 90,
           "type": "Points & Assists",
           "book": "",
-          "status": "pending",
+          "status": "miss",
           "legs": [
             {
               "player": "Adrian Kempe",
               "team": "LAK",
               "market": "1+ pt",
               "price": "-130",
-              "result": "pending"
+              "result": "miss"
             }
           ]
         }
