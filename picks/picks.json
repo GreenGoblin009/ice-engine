@@ -1457,6 +1457,36 @@
        "result": "pending"
       }
      ]
+    },
+    {
+     "id": 92,
+     "type": "Points & Assists",
+     "book": "",
+     "status": "pending",
+     "legs": [
+      {
+       "player": "Sidney Crosby",
+       "team": "PIT",
+       "market": "1+ ast",
+       "price": "+130",
+       "result": "pending"
+      }
+     ]
+    },
+    {
+     "id": 93,
+     "type": "Goals",
+     "book": "",
+     "status": "pending",
+     "legs": [
+      {
+       "player": "Rickard Rakell",
+       "team": "PIT",
+       "market": "Anytime goal",
+       "price": "+230",
+       "result": "pending"
+      }
+     ]
     }
    ]
   }
