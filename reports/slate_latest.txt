@@ -1,7 +1,7 @@
 ICE ENGINE SLATE REPORT  2026-11-22
-Lineups pulled: Nov 22, 5:17 PM ET
+Lineups pulled: Nov 22, 5:36 PM ET
 Prices pulled:  Nov 22, 4:08 PM ET
-Goalies pulled: Nov 22, 5:17 PM ET
+Goalies pulled: Nov 22, 5:36 PM ET
 Times are US Eastern. Read-only: built from the same models as the board.
 
 GAMES (start, projected goals, model game total; book game totals are not pulled)
@@ -30,7 +30,7 @@ INJURED / OUT (scratches in brackets)
 - TBL: Brandon Hagel (lower body); Zemgus Girgensons (upper body); Conor Geekie (upper body) [Max Crozier, Emil Lilleberg]
 - EDM: Ryan Nugent-Hopkins (undisclosed); Frederik Andersen (knee); Mattias Janmark (shoulder); Alec Regula (undisclosed); Matt Savoie (lower body) [Max Jones, Jake Walman]
 - STL: Tyler Tucker (knee); Dillon Dube (neck); Connor McMichael (undisclosed) [Nathan Walker, Calle Rosen]
-- PIT: Ryan Graves (knee); Evgeni Malkin (upper body); Nick Robertson (lower body); Bryan Rust (lower body); Elmer Soderblom (upper body) [Justin Brazeau, Declan Carlile]
+- PIT: Ryan Graves (knee); Evgeni Malkin (upper body); Nick Robertson (lower body); Bryan Rust (lower body); Elmer Soderblom (upper body); Declan Carlile (lower body) [Justin Brazeau]
 - DAL: Oskar Back (finger); Lian Bichsel (lower body); Kyle Capobianco (lower body); Matt Duchene (lower body); Tyler Myers (upper body) [Colin Blackwell, Rémi Poirier]
 - CHI: Connor Bedard (shoulder surgery); Anton Frondell (undisclosed); Bowen Byram (upper body) [Jordan Greenway, Wyatt Kaiser]
 - VAN: Elias Pettersson (upper body); Brendan Gallagher (lower body); Thatcher Demko (hip); Guillaume Brisebois (undisclosed) [Cameron Crotty, Kevin Lankinen]
@@ -295,7 +295,7 @@ Games with no prices: none
 Priced players missing from the projected lineups:
 - Jake Walman EDM (listed scratched)
 - Matthew Robertson NYR (listed scratched)
-- Declan Carlile PIT (listed scratched)
+- Declan Carlile PIT (listed injured, lower body)
 - Anton Frondell CHI (listed injured, undisclosed)
 Unconfirmed goalies:
 - CAR: Brandon Bussi (expected, not confirmed)
