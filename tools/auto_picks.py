@@ -22,7 +22,7 @@ from zoneinfo import ZoneInfo
 ET = ZoneInfo("America/New_York")
 MAX_AGE = 3.0
 MIN_EDGE = 4.0
-MAX_PA, MAX_G = 6, 1
+MAX_PA, MAX_G = 6, 0   # goals paused Nov 23 (user): 7-17 record, no goal picks posted
 MIN_PA = 2          # always post at least this many points/assists picks when anything qualifies
 FLOOR_EDGE = 2.0
 
