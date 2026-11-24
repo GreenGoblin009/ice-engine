@@ -5,7 +5,7 @@ Goalies pulled: none yet
 Times are US Eastern. Read-only: built from the same models as the board.
 
 GAMES (start, projected goals, model game total; book game totals are not pulled)
-- 8:00 PM ET  VGK 3.00 @ EDM 3.33  (total 6.33)
+- 8:00 PM ET  VGK 3.01 @ EDM 3.35  (total 6.35)
 
 GOALIES (shrunk two-season save %, raw save % and games)
 - VGK: no goalie listed
