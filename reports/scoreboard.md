@@ -1,6 +1,6 @@
 # Projection scoreboard
 
-Updated 2026-11-26 14:44 ET. Uses the last slate report committed before first puck each day.
+Updated 2026-11-27 14:34 ET. Uses the last slate report committed before first puck each day.
 Brier and log-loss: lower is better. 'Naive' guesses the same average for everyone; the model should beat it.
 
 ## Skater chances, 1+ goal / point / assist
@@ -436,3 +436,4 @@ Mean absolute error 1.83 goals, against 1.84 for a flat guess at the average.
 - 2026-11-23: 225 skaters in the report, 2 not matched to a final box score
 - 2026-11-24: 36 skaters in the report, 0 not matched to a final box score
 - 2026-11-25: 426 skaters in the report, 6 not matched to a final box score
+- 2026-11-27: 332 skaters in the report, 332 not matched to a final box score
